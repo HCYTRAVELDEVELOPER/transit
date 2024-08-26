@@ -1,0 +1,89 @@
+{
+    "name": "movilmove",
+    "include":
+            [
+                {
+                    "path": "${QOOXDOO_PATH}/tool/data/config/application.json"
+                }
+            ],
+    "export":
+            [
+                "api",
+                "api-data",
+                "build",
+                "clean",
+                "distclean",
+                "fix",
+                "info",
+                "inspector",
+                "lint",
+                "migration",
+                "pretty",
+                "profiling",
+                "source",
+                "source-all",
+                "source-hybrid",
+                "simulation-build",
+                "simulation-run",
+                "test",
+                "test-source",
+                "translation"
+            ],
+    "default-job": "source-hybrid",
+    "let":
+            {
+                "APPLICATION": "movilmove",
+                "QOOXDOO_PATH": "../qooxdoo/qooxdoo-5.0-sdk",
+                "QXTHEME": "movilmove.theme.Theme",
+                "API_EXCLUDE": ["qx.test.*", "${APPLICATION}.theme.*"],
+                "LOCALES": ["es", "en"],
+                "CACHE": "${TMPDIR}/qx${QOOXDOO_VERSION}/cache",
+                "ROOT": "."
+            },
+    "jobs":
+            {
+                "libraries":
+                        {
+                            "library":
+                                    [
+                                        {
+                                            "manifest": "./qxnw.6.0/trunk/Manifest.json"
+                                        }
+                                    ]
+                        },
+                "build-script":
+                        {
+                            "compile-options":
+                                    {
+                                        "code":
+                                                {
+                                                    "format": false
+                                                }
+                                    }
+                        },
+                "my-parts-config":
+                        {
+                            "packages":
+                                    {
+                                        "parts":
+                                                {
+                                                    "boot":
+                                                            {
+                                                                "include": ["${QXTHEME}", "${APPLICATION}.main"],
+                                                                "include": ["${APPLICATION}.lists.*"],
+                                                                "include": ["${APPLICATION}.forms.*"],
+                                                                "include": ["${QXTHEME}", "${APPLICATION}.Application"]
+                                                            }
+                                                }
+                                    }
+                        },
+                "source":
+                        {
+                            "extend": ["my-parts-config"]
+                        },
+                "build":
+                        {
+                            "extend": ["my-parts-config"]
+                        }
+            }
+}

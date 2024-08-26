@@ -1,0 +1,60 @@
+<html>
+    <title>Lazy Load Images</title>
+    <body>
+        <div>
+            <div style="">
+                <img class="lzy_img" data-src="img_1.jpg" />
+                <hr />
+            </div>
+            <div style="">
+                <img class="lzy_img" data-src="img_2.jpg" />
+                <hr />
+            </div>
+            <div style="">
+                <img class="lzy_img" data-src="img_3.jpg" />
+                <hr />
+            </div>
+            <div style="">
+                <img class="lzy_img" data-src="img_4.jpg" />
+                <hr />
+            </div>
+            <div style="">
+                <img class="lzy_img" data-src="img_5.jpg" />
+                <hr />
+            </div>
+            <div style="">
+                <div class="lzy_img_two" data-src="https://www.reddearboles.com/imagenes/home_img1.jpg" data-bg="true" style="height: 500px;" >
+                    Hola mundo
+                </div>
+                <hr />
+            </div>
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                loadAllImagesLazy('lzy_img');
+            });
+            function loadAllImagesLazy(classImages) {
+                 var imageObserver = new IntersectionObserver((entries, imgObserver) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        var lazyImage = entry.target;
+                        var data_bg = lazyImage.getAttribute("data-bg");
+                        var data_src = lazyImage.getAttribute("data-src");
+                        if(data_bg === "true") {
+                          lazyImage.style.backgroundImage = "url(" + data_src + ")";
+                        } else {
+                          lazyImage.src = lazyImage.dataset.src;
+                        }
+                        lazyImage.classList.remove(classImages);
+                        imgObserver.unobserve(lazyImage);
+                    }
+                });
+            });
+                var arr = document.querySelectorAll("." + classImages);
+                arr.forEach((v) => {
+                    imageObserver.observe(v);
+                });
+            }
+        </script>
+    </body>
+</html>

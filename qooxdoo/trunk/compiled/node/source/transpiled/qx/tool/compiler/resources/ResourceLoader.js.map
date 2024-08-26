@@ -1,0 +1,38 @@
+{
+  "version": 3,
+  "names": [
+    "qx",
+    "Bootstrap",
+    "executePendingDefers",
+    "$$dbClassInfo",
+    "Class",
+    "define",
+    "extend",
+    "tool",
+    "compiler",
+    "resources",
+    "AbstractMatcher",
+    "type",
+    "members",
+    "needsLoad",
+    "filename",
+    "fileInfo",
+    "stat",
+    "mtime",
+    "Date",
+    "e",
+    "getTime",
+    "load",
+    "asset",
+    "Error",
+    "classname",
+    "ResourceLoader"
+  ],
+  "sources": [
+    "/home/andresf/workspace_qooxdoo/qooxdoo/qooxdoo-7.0/source/class/qx/tool/compiler/resources/ResourceLoader.js"
+  ],
+  "sourcesContent": [
+    "/* ************************************************************************\n *\n *    qooxdoo-compiler - node.js based replacement for the Qooxdoo python\n *    toolchain\n *\n *    https://github.com/qooxdoo/qooxdoo\n *\n *    Copyright:\n *      2011-2017 Zenesis Limited, http://www.zenesis.com\n *\n *    License:\n *      MIT: https://opensource.org/licenses/MIT\n *\n *      This software is provided under the same licensing terms as Qooxdoo,\n *      please see the LICENSE file in the Qooxdoo project's top-level directory\n *      for details.\n *\n *    Authors:\n *      * John Spackman (john.spackman@zenesis.com, @johnspackman)\n *\n * *********************************************************************** */\n\n/**\n * Instances of Handler are used by the resource manager to handle different types of resources that\n *  need compilation.\n */\nqx.Class.define(\"qx.tool.compiler.resources.ResourceLoader\", {\n  extend: qx.tool.compiler.resources.AbstractMatcher,\n  type: \"abstract\",\n\n  members: {\n    /**\n     * Detects whether the file needs to be recompiled/coverted/analysed/ etc; this should\n     * not take any time or be asynchronous, if you need to do any real work it should be\n     * in `compile` because that is throttled.\n     *\n     * @param filename {String} absolute path to the file\n     * @param fileInfo {Map?} this is the object in the resource database, contains info about the resource;\n     *  this will be null if not yet in the resource database\n     * @param stat {fs.Stats} Stats object from fs.stat\n     *\n     * @return {Boolean}\n     */\n    needsLoad(filename, fileInfo, stat) {\n      var mtime = null;\n      try {\n        mtime = fileInfo.mtime && new Date(fileInfo.mtime);\n      } catch (e) {}\n      return !mtime || mtime.getTime() != stat.mtime.getTime();\n    },\n\n    /**\n     * Allows a file to be loadeddata can be stored in the resource database by modifying the fileInfo\n     *\n     * @param asset {Asset} the asset to load\n     */\n    async load(asset) {\n      throw new Error(\"No implementation for \" + this.classname + \".compile\");\n    }\n  }\n});\n"
+  ],
+  "mappings": ";;;;;;;;;;;;EAAAA,EAAE,CAACC,SAAH,CAAaC,oBAAb,CAAkCC,aAAlC;;EAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;;EAEA;AACA;AACA;AACA;EACAH,EAAE,CAACI,KAAH,CAASC,MAAT,CAAgB,2CAAhB,EAA6D;IAC3DC,MAAM,EAAEN,EAAE,CAACO,IAAH,CAAQC,QAAR,CAAiBC,SAAjB,CAA2BC,eADwB;IAE3DC,IAAI,EAAE,UAFqD;IAI3DC,OAAO,EAAE;MACP;AACJ;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;MACIC,SAAS,CAACC,QAAD,EAAWC,QAAX,EAAqBC,IAArB,EAA2B;QAClC,IAAIC,KAAK,GAAG,IAAZ;;QACA,IAAI;UACFA,KAAK,GAAGF,QAAQ,CAACE,KAAT,IAAkB,IAAIC,IAAJ,CAASH,QAAQ,CAACE,KAAlB,CAA1B;QACD,CAFD,CAEE,OAAOE,CAAP,EAAU,CAAE;;QACd,OAAO,CAACF,KAAD,IAAUA,KAAK,CAACG,OAAN,MAAmBJ,IAAI,CAACC,KAAL,CAAWG,OAAX,EAApC;MACD,CAnBM;;MAqBP;AACJ;AACA;AACA;AACA;MACI,MAAMC,IAAN,CAAWC,KAAX,EAAkB;QAChB,MAAM,IAAIC,KAAJ,CAAU,2BAA2B,KAAKC,SAAhC,GAA4C,UAAtD,CAAN;MACD;;IA5BM;EAJkD,CAA7D;EA1BAxB,EAAE,CAACO,IAAH,CAAQC,QAAR,CAAiBC,SAAjB,CAA2BgB,cAA3B,CAA0CtB,aAA1C,GAA0DA,aAA1D"
+}

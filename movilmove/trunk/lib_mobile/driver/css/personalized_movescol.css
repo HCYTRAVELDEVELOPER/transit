@@ -1,0 +1,92 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 4, 2019, 1:25:54 PM
+    Author     : alexf
+*/
+:root {
+    --color_empresarial: #1a003b;
+}
+body .ui-page .logotipoHeader_home{
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+body .ui-page .logotipoHeader img {
+    margin-top: 10px;
+}
+body .createLoginFoo .logotipoHeader{
+    margin: auto;
+    padding: 0;
+}
+body .createLoginFoo .logotipoHeader img {
+    height: auto;
+    max-width: 80%;
+}
+body .centrar_mapa .material-icons {
+    font-size: 35px;
+    background-color: var(--color_empresarial);
+}
+body .ui-page .logotipoHeader_home img{
+    height: 50px;
+    top: -6px;
+    position: relative;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #000;
+    background-color: #ffffff;
+    padding: 2px 10px;
+}
+
+.centrar_mapa{
+    position: fixed;
+    /* bottom: calc(0% + 153px); */
+    /* top: auto; */
+    z-index: 10;
+    left: auto;
+    right: 10px;
+    top: 4px;
+}
+.centrar_mapa .material-icons{
+    font-size: 35px;
+    background-color: #f64512;
+    color: #fff!important;
+    border-radius: 50%;
+    padding: 3px;
+}
+html body .ui-page .my-header .btnMenuHeader,
+html body .createLoginFoo .contentCenterInLogin .aceptar
+{
+    background: #f64514!important;
+}
+body .ui-page .my-header .btnMenuHeader .menuBarEnc {
+    color: #fff;
+}
+html .ui-page .ui-btn-corner-all .material-icons{
+    color: #fff!important;
+}
+html body .contenedor_adondevamos .button_adondevas .material-icons {
+    /*color: #f64514;*/
+}
+
+body .createLoginFoo .home_background_image{
+    background-size: contain;
+    background-color: #1a001e;
+}
+body .footCredits{
+    display: none;
+}
+body #status_driver{
+    background-color: #E8461C!important;
+}
+body .iconlinksNavLeft{
+    color: #E8461C!important;
+}
+.l_historico_viajes .rowName_valor_total_servicio{
+    display: none;
+}

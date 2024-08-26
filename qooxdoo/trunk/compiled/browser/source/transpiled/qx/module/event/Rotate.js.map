@@ -1,0 +1,36 @@
+{
+  "version": 3,
+  "names": [
+    "qx",
+    "Bootstrap",
+    "executePendingDefers",
+    "$$dbClassInfo",
+    "define",
+    "statics",
+    "TYPES",
+    "BIND_METHODS",
+    "getAngle",
+    "_original",
+    "angle",
+    "normalize",
+    "event",
+    "element",
+    "bindMethods",
+    "module",
+    "Rotate",
+    "i",
+    "l",
+    "length",
+    "bind",
+    "defer",
+    "qxWeb",
+    "$registerEventNormalization"
+  ],
+  "sources": [
+    "/home/andresf/workspace_qooxdoo/qooxdoo/qooxdoo-7.0/source/class/qx/module/event/Rotate.js"
+  ],
+  "sourcesContent": [
+    "/* ************************************************************************\n\n   qooxdoo - the new era of web development\n\n   http://qooxdoo.org\n\n   Copyright:\n     2014 1&1 Internet AG, Germany, http://www.1und1.de\n\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n\n   Authors:\n     * Daniel Wagner (danielwagner)\n\n************************************************************************ */\n\n/**\n * Normalization for the rotate gesture.\n *\n * @require(qx.module.Event)\n *\n * @group (Event_Normalization)\n */\nqx.Bootstrap.define(\"qx.module.event.Rotate\", {\n  statics: {\n    /**\n     * List of event types to be normalized\n     */\n    TYPES: [\"rotate\"],\n\n    BIND_METHODS: [\"getAngle\"],\n\n    /**\n     * Returns a number with the current calculated angle between the primary and secondary active pointers.\n     *\n     * @return {Number} the angle of the two active pointers.\n     */\n    getAngle() {\n      return this._original.angle;\n    },\n\n    /**\n     * Manipulates the native event object, adding methods if they're not\n     * already present\n     *\n     * @param event {Event} Native event object\n     * @param element {Element} DOM element the listener was attached to\n     * @return {Event} Normalized event object\n     * @internal\n     */\n    normalize(event, element) {\n      if (!event) {\n        return event;\n      }\n      // apply mouse event normalizations\n      var bindMethods = qx.module.event.Rotate.BIND_METHODS;\n      for (var i = 0, l = bindMethods.length; i < l; i++) {\n        if (typeof event[bindMethods[i]] != \"function\") {\n          event[bindMethods[i]] =\n            qx.module.event.Rotate[bindMethods[i]].bind(event);\n        }\n      }\n\n      return event;\n    }\n  },\n\n  defer(statics) {\n    qxWeb.$registerEventNormalization(\n      qx.module.event.Rotate.TYPES,\n      statics.normalize\n    );\n  }\n});\n"
+  ],
+  "mappings": ";;;;;;;;;;;;;;;;EAAAA,EAAE,CAACC,SAAH,CAAaC,oBAAb,CAAkCC,aAAlC;;EAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;;EAEA;AACA;AACA;AACA;AACA;AACA;AACA;EACAH,EAAE,CAACC,SAAH,CAAaG,MAAb,CAAoB,wBAApB,EAA8C;IAC5CC,OAAO,EAAE;MACP;AACJ;AACA;MACIC,KAAK,EAAE,CAAC,QAAD,CAJA;MAMPC,YAAY,EAAE,CAAC,UAAD,CANP;;MAQP;AACJ;AACA;AACA;AACA;MACIC,QAAQ,GAAG;QACT,OAAO,KAAKC,SAAL,CAAeC,KAAtB;MACD,CAfM;;MAiBP;AACJ;AACA;AACA;AACA;AACA;AACA;AACA;AACA;MACIC,SAAS,CAACC,KAAD,EAAQC,OAAR,EAAiB;QACxB,IAAI,CAACD,KAAL,EAAY;UACV,OAAOA,KAAP;QACD,CAHuB,CAIxB;;;QACA,IAAIE,WAAW,GAAGd,EAAE,CAACe,MAAH,CAAUH,KAAV,CAAgBI,MAAhB,CAAuBT,YAAzC;;QACA,KAAK,IAAIU,CAAC,GAAG,CAAR,EAAWC,CAAC,GAAGJ,WAAW,CAACK,MAAhC,EAAwCF,CAAC,GAAGC,CAA5C,EAA+CD,CAAC,EAAhD,EAAoD;UAClD,IAAI,OAAOL,KAAK,CAACE,WAAW,CAACG,CAAD,CAAZ,CAAZ,IAAgC,UAApC,EAAgD;YAC9CL,KAAK,CAACE,WAAW,CAACG,CAAD,CAAZ,CAAL,GACEjB,EAAE,CAACe,MAAH,CAAUH,KAAV,CAAgBI,MAAhB,CAAuBF,WAAW,CAACG,CAAD,CAAlC,EAAuCG,IAAvC,CAA4CR,KAA5C,CADF;UAED;QACF;;QAED,OAAOA,KAAP;MACD;;IAxCM,CADmC;;IA4C5CS,KAAK,CAAChB,OAAD,EAAU;MACbiB,KAAK,CAACC,2BAAN,CACEvB,EAAE,CAACe,MAAH,CAAUH,KAAV,CAAgBI,MAAhB,CAAuBV,KADzB,EAEED,OAAO,CAACM,SAFV;IAID;;EAjD2C,CAA9C;EAzBAX,EAAE,CAACe,MAAH,CAAUH,KAAV,CAAgBI,MAAhB,CAAuBb,aAAvB,GAAuCA,aAAvC"
+}

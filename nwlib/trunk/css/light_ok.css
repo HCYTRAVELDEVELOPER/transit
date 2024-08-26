@@ -1,0 +1,387 @@
+body div{
+    /*     -webkit-transition: all 0.1s ease;
+        -moz-transition: all 0.1s ease;
+        -o-transition: all 0.1s ease;
+        transition: all 0.1s ease;*/
+}
+.circle_green{
+    background: #5dc594;
+    width: 0px;
+    height: 0px;
+    padding: 10px;
+    display: -webkit-inline-box;
+    border-radius: 20%;
+}
+.div_footer{
+    /*    position: relative;
+        float: right;
+        right: -90%;
+        width: 100%;*/
+    position: fixed;
+    right: 100px;
+    height: 0px;
+}
+.div_full_title{
+    width: 100%;
+    position: relative;
+    min-width: 750px;
+    border-bottom: 1px solid transparent;
+}
+.div_footer h1{
+    font-weight: 300;
+    text-rendering: optimizelegibility;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #869690;
+    font-size: 20px;
+    margin: -10px 0;
+}
+.div_footer p{
+    color: #666;
+}
+.div_full_title h1{
+    font-weight: 300;
+    text-rendering: optimizelegibility;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #869690;
+    font-size: 20px;
+    margin: 0px;
+}
+.div_full_title p{
+    margin: 11px 0;
+    font-weight: 300;
+    text-rendering: optimizelegibility;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #555;
+    font-size: 11px;
+}
+.h1_full_text {
+    margin: 11px 0;
+    font-family: inherit;
+    font-weight: 300;
+    line-height: 22px;
+    color: inherit;
+    text-rendering: optimizelegibility;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #869690;
+    line-height: 66px;
+    margin: 44px 0;
+    font-size: 48px;
+}
+.qx-abstract-field{
+
+}
+.pie_foot{
+    background: #e1e1e1;
+    width: 100%!important;
+    min-width: 100%;
+    margin-left: -10px;
+    border-top: 1px solid #ccc;
+    height: 100%!important;
+}
+.button_accept{
+
+}
+.qx-button{
+    border: 1px solid #ccc!important;
+    background: linear-gradient(rgb(240, 240, 240) 27%, rgb(207, 200, 200) 100%)!important;
+}
+.qx-input-disabled {
+    background: transparent!important;
+    border: 1px solid transparent!important;
+    color: #555!important;
+    box-shadow: none!important;
+    border-bottom: 1px dotted #ccc!important;
+    font-size: 12px!important;
+    font-weight: 400;
+    border-top: 1px solid #f1f1f1!important;
+}
+.qx-button-disabled {
+    background: transparent!important;
+    border: 1px solid transparent!important;
+    color: #555!important;
+    box-shadow: none!important;
+    border-bottom: 1px dotted #ccc!important;
+
+    font-size: 12px!important;
+    font-weight: 400;
+    border-top: 1px solid #f1f1f1!important;
+}
+.qx-button-disabled div{
+
+}
+.qx-input{
+    border: 1px solid #999!important;
+    color: #222!important;
+
+    box-shadow: none!important;
+}
+.qx-input-focused{
+    color: #444!important;
+}
+.qx-input-focused-invalid{
+    border: 3px solid firebrick!important;
+    background: #fff!important;
+}
+.qx-border-invalid{
+
+}
+.qx-tooltip-error{
+
+}
+.qx-menu-separator {
+    border-top: 1px solid #D3D3D3!important;
+    border-bottom: 1px solid #F0F0F0!important;
+}
+.qx-menubar{
+    /*    border: 0!important;
+        box-shadow: -6px 3px 1px rgba(0,0,0,0.2);
+        background: transparent;*/
+    border: 0!important;
+    background: #e7e7e7!important;
+    border-bottom: 1px solid #ccc!important;
+    position: fixed!important;
+    width: 100%!important;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+
+}
+.qx-menubar div{
+    font-weight: 400;
+    text-rendering: optimizelegibility!important;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif!important;
+    /*color: #555!important;*/
+    font-size: 11px!important;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.qx-group {
+    border-radius: 2px!important;
+
+    border: 1px solid #ccc!important;
+}
+.qx-menu{
+    border: 1px solid #e1e1e1!important;
+    box-shadow: 2px 4px 4px rgba(0,0,0,0.2)!important;
+    border-top: 1px solid #dd4b39!important;
+    border-right: 1px solid #ccc!important;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.qx-selected-css{
+
+}
+.qx-menu div{
+    font-weight: 300;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif!important;
+    font-size: 10px!important;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.qx-selected {
+
+}
+.qx-table-scroller-focus-indicator{
+
+}
+.qooxdoo-table-cell{
+    border: 1px solid #e1e1e1;
+    /*color: #555;*/
+}
+.qooxdoo-table-cell:hover{
+    border: 1px solid firebrick;
+    color: #fff;
+    background:#999;
+}
+.qx-tabview-pane{
+    border: 1px solid #e6e6e6!important;
+    background: #f9f9f9!important;
+}
+.qx-window-pane{
+    border:0!important;
+    /*   padding: 0!important;
+    margin-top: -13px!important;
+    z-index: 0!important;*/
+
+}
+.qx-window-pane div {
+    /*font-weight: 400!important;*/
+    text-rendering: optimizelegibility!important;
+    /*color: #555!important;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif!important;
+    font-size: 12px!important;
+    font-size: 11px!important;
+    */
+    /*    -webkit-transition: all 0.2s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.2s ease;*/
+}
+.qx-window-pane h1{
+    /*    font-weight: 300!important;
+        text-rendering: optimizelegibility!important;
+        font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif!important;
+        color: #869690!important;
+        font-size: 30px!important;
+        margin: -15px 0!important;*/
+}
+.qx-window-pane h2{
+    font-weight: 300!important;
+    text-rendering: optimizelegibility!important;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif!important;
+    color: #869690!important;
+    font-size: 16px!important;
+}
+.qx-window{
+    border: none!important;
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.3)!important;
+    border-radius: 3px!important;
+}
+.qx-main{
+    border: 1px solid #e6e6e6!important;
+    background: #e6e6e6!important;
+}
+.qx-splitpane{
+    border: 0!important;
+    margin-top: 0!important;
+    height: 100%!important;
+    width: 100%!important;
+
+}
+.qx-scrollbar-vertical{
+    background: #e9e9e9!important;
+}
+.qx-scrollbar-slider-vertical{
+    border: 1px solid transparent!important;
+    background: #cdcdcd!important;
+    border-radius: 0!important;
+}
+.qx-scrollbar-slider-vertical:hover{
+    border: 1px solid transparent!important;
+    background: #999!important;
+    border-radius: 0!important;
+}
+.qx-scrollbar-slider-horizontal{
+    border: 1px solid transparent!important;
+    background: #c1c1c1!important;
+    border-radius: 0!important;
+}
+.qx-scrollbar-slider-horizontal:hover{
+    border: 1px solid transparent!important;
+    background: #999!important;
+    border-radius: 0!important;
+}
+.qx-tabview-page-button-top-active{
+    border-top: 1px solid #dd4b39!important;
+    border-radius: 0!important;
+    border-left: 1px solid #e6e6e6!important;
+    border-right: 1px solid #e6e6e6!important;
+
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.2s ease;
+}
+.qx-tabview-page-button-top-active div{
+    font-weight: 300;
+    text-rendering: optimizelegibility!important;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif!important;
+    color: #555!important;
+    font-size: 11px!important;
+}
+.qx-tabview-page-button-top-inactive{
+    border-bottom: 0!important;
+    border-top: 1px solid #ccc!important;
+    border-left: 1px solid #ccc!important;
+    background: #e6e6e6!important;
+    color: #fff!important;
+    border-radius: 0!important;
+    border-right: 1px solid #ccc!important;
+    opacity: 0.7;
+
+    -webkit-transition: none!important;
+    -moz-transition: none!important;
+    -o-transition: none!important;
+    transition: none!important;
+
+}
+.qx-tabview-page-button-top-inactive:hover{
+    border-bottom: 0!important;
+    border-top: 1px solid green!important;
+    border-left: 1px solid #ccc!important;
+    background: #e6e6e6!important;
+    color: #fff!important;
+    border-radius: 0!important;
+    border-right: 1px solid #ccc!important;
+    opacity: 1;
+}
+.qx-table-header-cell{
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    box-shadow: none!important;
+    border-right: 1px solid #999!important;
+}
+.qx-table-header-cell div{
+    color: #444!important;
+    font-weight: bold;
+    font-size: 11px!important;
+}
+.qx-table-scroller-header{
+    border-bottom: 1px solid #c1c1c1!important;
+}
+.qx-table-statusbar{
+    border-top: 1px solid #ccc!important;
+    color: #777!important;
+}
+.qx-toolbar{
+    background: transparent!important;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.qx-toolbar-part{
+    background: transparent!important;
+    border-right: 1px solid #ccc!important;
+}
+.qx-toolbar-part div:hover{
+    /*    -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        box-shadow: 1px 1px 5px #000;
+        font-size: 12px!important;*/
+}
+.qx-toolbar-part div{
+    /*color: #555!important;*/
+    font-size: 11px!important;
+}
+
+/*.qx-popup {
+    border: 1px solid #ccc!important;
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.5)!important;
+    background: #f9f9f9!important;
+}
+.qx-popup div {
+    color: #666!important;
+}*/
+.qx-window-captionbar-active {
+    border-radius: 0!important;
+}
+.qx-3933-0{
+    background: darkcyan;
+    border: 0;
+    border-top: 1px solid firebrick;
+    color: #fff!important;   
+}
+.qx-separator-horizontal {
+    border-left: 1px solid #ccc!important;
+}

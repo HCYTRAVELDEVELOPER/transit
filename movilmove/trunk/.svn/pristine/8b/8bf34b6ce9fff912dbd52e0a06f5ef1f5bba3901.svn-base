@@ -1,0 +1,402 @@
+nw.Class.define("f_save_pedir_servicio", {
+    extend: nw.lists,
+    construct: function (self) {
+//        if (self.debugConstruct) {
+        console.log("START:::f_save_pedir_servicio");
+//        }
+
+        var up = nw.userPolicies.getUserData();
+        var data = self.getRecord(true);
+
+        self.pedirSelf = this;
+
+        self.pedirSelf.selfDocument = self;
+
+//        if (self.configCliente.usa_servicios === "SI") {
+//            if (self.servicio_nom == undefined || self.servicio_nom == null || self.servicio_nom == false) {
+//                nw.dialog("Por favor seleccione un servicio");
+//                self.pedirVar = false;
+//                if (self.debugConstruct) {
+//                    console.log("SELECCIONE_SERVICIO:::f_save_pedir_servicio");
+//                }
+//                return false;
+//            }
+//        }
+//        if (!self.validate()) {
+//            console.log("data", data);
+//            var campos = "";
+//            for (var item in data) {
+//                console.log("item", item);
+//                console.log("data[item]", data[item]);
+//                if (!nw.utils.evalueData(data[item])) {
+//                    campos += "" + item + " - ";
+//                }
+//            }
+//            nw.dialog("Los siguientes campos no están completos: " + campos);
+//            self.pedirVar = false;
+//            if (self.debugConstruct) {
+//                console.log("FALTAN_CAMPOS_COMPLETAR:::f_save_pedir_servicio");
+//            }
+//            return false;
+//        }
+        if (typeof up.centro_costo !== 'undefined' && up.centro_costo != "" && up.centro_costo != 'null' && up.centro_costo != null) {
+            data.centro_costo = up.centro_costo;
+        }
+//        if (self.configCliente.usa_codigos_verificacion_servicio === "SI") {
+        data.code_verifi_service = self.generateCodeVerifi(1000, 9999);
+        data.code_verifi_service_fin = self.generateCodeVerifi(1000, 9999);
+//        }
+        if (data.tipo_servicio == undefined || data.tipo_servicio == null) {
+            data.tipo_servicio = 'ahora';
+        }
+
+        self.cleanPre();
+        self.ui.favoritos_group.removeClass("favoritos_group_show");
+//            self.ui.favoritos_group.setVisibility(false);
+        self.ui.fijar_en_mapa_destino.setVisibility(false);
+        self.ui.fijar_en_mapa_origen.setVisibility(false);
+
+        data.descuento_maximo = self.descuento_maximo;
+        data.cliente_nombre = up.nombre;
+        data.celular = up.celular;
+        data.email = up.email;
+        data.nombre = up.nombre;
+        data.apellido = up.apellido;
+        data.id_usuario = up.id_usuario;
+        data.usuario = up.usuario;
+        data.foto_perfil = up.foto_perfil;
+        data.empresa = up.empresa;
+        data.terminal = up.terminal;
+        data.nom_terminal = up.nom_terminal;
+        data.domain_rpc = config.domain_rpc;
+        if (typeof up.cupon === "string" && up.cupon != "") {
+            var cupon = JSON.parse(up.cupon);
+            var aplicar_cupon = true;
+            if (nw.evalueData(cupon.servicio) && cupon.servicio != null && cupon.servicio != "") {
+                if (cupon.servicio != self.servicio_nom) {
+                    aplicar_cupon = false;
+                }
+            }
+            if (aplicar_cupon == true) {
+                data.datos_cupon = up.cupon;
+            }
+        }
+        data.subservicio = self.__subservice;
+
+        data.paradas = [];
+        if (typeof self.navTable != "undefined") {
+            data.paradas = self.navTable.getAllData();
+        }
+
+        data.geo = self.geo;
+        data.geoDestino = self.geoDestino;
+        data.localidad_dataorigen = self.geo.localidad_origen;
+        data.barrio_origen = self.geo.barrio_origen;
+        data.ciudad = self.geo.ciudad;
+        data.ciudad_origen = self.geo.ciudad_origen;
+        if (!nw.utils.evalueData(data.ciudad_origen) && nw.utils.evalueData(data.ciudad)) {
+            data.ciudad_origen = data.ciudad;
+        }
+        data.pais_origen = self.geo.pais_origen;
+        data.latitude = self.geo.latitude;
+        data.longitude = self.geo.longitude;
+        data.latitudOri = self.geo.latitudOri;
+        data.longitudOri = self.geo.longitudOri;
+        data.ciudad_destino = self.geoDestino.ciudad_destino;
+        data.latitudDes = self.geoDestino.latitudDes;
+        data.longitudDes = self.geoDestino.longitudDes;
+        data.subcategoria_servicio = self.servicio_nom;
+        data.subcategoria_servicio_text = self.subcategoria_servicio_text;
+        data.tiempo = Math.round(self.poly.tiempo / 60);
+        data.tiempo_text = self.poly.tiempo_text;
+        data.total_metros = self.poly.total_metros;
+        data.total_metros_text = self.poly.total_metros_text;
+        data.valor = self.valor_total.toFixed(2);
+        data.servicio_nom = self.servicio_nom;
+        data.servicio_array = self.servicio_array;
+        data.num_mascota = self.num_mascota;
+        var jsonArray = JSON.stringify(self.dataGeoTwo);
+        data.dataGeoTwo = jsonArray;
+        data.dataGeoTwoName = self.dataGeoTwoName;
+        data.reservado_text = "NO";
+        var token = null;
+        if (nw.evalueData(window.localStorage.getItem("token"))) {
+            token = window.localStorage.getItem("token");
+        }
+        data.token_usuario = token;
+        if (data.tipo_servicio === "ahora") {
+            data.reservado_text = "SI";
+        }
+        if (self.configCliente.tipo_pago === "EFECTIVO") {
+            data.tipo_pago = "efectivo";
+        } else
+        if (self.configCliente.tipo_pago === "CREDITO") {
+            data.tipo_pago = "tarjeta_credito";
+        } else {
+            if (data.tipo_pago == "") {
+                data.tipo_pago = "efectivo";
+            }
+        }
+        if (data.tipo_pago === "tarjeta_credito") {
+            data.id_tarjeta_credito = data.tarjeta_id;
+        }
+        if (self.servicioAllData.reservar !== false && self.configCliente.usa_servicios === "SI") {
+            if (self.servicioAllData.reservar === "SI") {
+                data.tipo_servicio = 'reservado';
+                data.reservado_text = "SI";
+//                    data.estado = "ASIGNADO";
+                textLoading = "Programando viaje...";
+            }
+        }
+        data.sentido = "EJECUTIVO";
+        data.concepto_recargo_ruta_fija = self.concepto_recargo_ruta_fija;
+        data.valor_recargo_ruta_fija = self.valor_recargo_ruta_fija;
+        data.metros_cobro_recargo = self.metros_cobro_recargo;
+        data.valor_peajes = self.valor_peajes;
+        data.metros_cobro_peaje = self.metros_cobro_peaje;
+        data.valor_metros_add = self.valor_metros_add;
+        data.inicia_metros_add = self.inicia_metros_add;
+        data.valorbase = self.valorbase;
+        data.valorminutos = self.valorminutos;
+        data.valordistancia = self.valordistancia;
+        data.valor_unidad_tiempo = self.valor_unidad_tiempo;
+        data.valor_unidad_metros = self.valor_unidad_metros;
+
+        if (data.tipo_pago === "tarjeta_credito") {
+            if (nw.evalueData(self.configCliente.valor_minimo_pago_credito) && parseFloat(data.valor) < parseFloat(self.configCliente.valor_minimo_pago_credito)) {
+                nw.dialog("El valor del servicio ($" + nw.addNumber(data.valor) + ") supera el mínimo ($" + nw.addNumber(self.configCliente.valor_minimo_pago_credito) + ") en pagos con tarjeta de crédito, vuelva a intentarlo por favor.")
+                self.loadInitial();
+                self.activeNormal();
+                self.pedirVar = false;
+                if (self.debugConstruct) {
+                    console.log("VALOR_SERVICE_SUPERA_MINIMO_CREDITO:::f_save_pedir_servicio::DATA, self.configCliente", data, self.configCliente);
+                }
+                return false;
+            }
+        }
+
+        if (data.tipo_servicio === "ahora") {
+            self.showWaitingDriver();
+        }
+        if (nw.evalueData(up.bodega)) {
+            data.bodega = up.bodega;
+            data.cliente_empresa_id = up.bodega;
+        }
+        data.pathOriginToDestiny = self.pathOriginToDestiny;
+
+        console.log("self.data_aeropuerto_servicio", self.data_aeropuerto_servicio);
+        if (nw.evalueData(self.data_aeropuerto_servicio)) {
+//        if (self.configCliente.pedir_datos_viaje_airpot == "SI" && self.__typeOrigin == "airport") {
+//            data.num_personas = self.__datAirpot.ui.num_personas.getValue();
+//            data.num_maletas = self.__datAirpot.ui.num_maletas.getValue();
+//            data.vuelo_numero = self.__datAirpot.ui.vuelo_numero.getValue();
+            data.num_personas = self.data_aeropuerto_servicio.num_maletas;
+            data.num_maletas = self.data_aeropuerto_servicio.num_maletas;
+            data.vuelo_numero = self.data_aeropuerto_servicio.vuelo_numero;
+        }
+
+        console.log("self.configCliente.app_para", self.configCliente.app_para);
+        console.log("self.detalle", self.detalle);
+        console.log("self.data_carga", self.data_carga);
+
+        if (self.configCliente.app_para == "CARGA") {
+            data.carga = "SI";
+            if (nw.utils.evalueData(self.data_carga)) {
+                data.numero_auxiliares = self.data_carga.numero_auxiliares;
+                data.salida_periferia = self.data_carga.salida_periferia;
+                data.despacho = self.data_carga.despacho;
+                data.retorno = self.data_carga.retorno;
+                data.cargue = self.data_carga.cargue;
+                data.descargue = self.data_carga.descargue;
+                data.observaciones_servicio = self.data_carga.observaciones_servicio;
+                data.contacto_recogida = self.data_carga.contacto_recogida;
+                data.telefono_recogida = self.data_carga.telefono_recogida;
+                data.observaciones_recogida = self.data_carga.observaciones_recogida;
+                data.contacto_entrega = self.data_carga.contacto_entrega;
+                data.telefono_entrega = self.data_carga.telefono_entrega;
+                data.observaciones_entrega = self.data_carga.observaciones_entrega;
+                data.descripcion_carga = self.data_carga.descripcion_carga;
+                data.cantidad = self.data_carga.cantidad;
+                data.volumen = self.data_carga.volumen;
+                data.peso = self.data_carga.peso;
+                data.empaque = self.data_carga.empaque;
+                data.valor_declarado = self.data_carga.valor_declarado;
+            } else {
+                if (typeof self.dataServiceActive !== 'undefined') {
+                    console.log(self.dataServiceActive.numero_auxiliares);
+                    self.num_mascota = self.dataServiceActive.numero_auxiliares;
+                    data.numero_auxiliares = self.dataServiceActive.numero_auxiliares;
+                    data.salida_periferia = self.dataServiceActive.salida_periferia;
+                    data.despacho = self.dataServiceActive.despacho;
+                    data.retorno = self.dataServiceActive.retorno;
+                    data.cargue = self.dataServiceActive.cargue;
+                    data.descargue = self.dataServiceActive.descargue;
+                    data.observaciones_servicio = self.dataServiceActive.observaciones_servicio;
+                    data.contacto_recogida = self.dataServiceActive.contacto_recogida;
+                    data.telefono_recogida = self.dataServiceActive.telefono_recogida;
+                    data.observaciones_recogida = self.dataServiceActive.observaciones_recogida;
+                    data.contacto_entrega = self.dataServiceActive.contacto_entrega;
+                    data.telefono_entrega = self.dataServiceActive.telefono_entrega;
+                    data.observaciones_entrega = self.dataServiceActive.observaciones_entrega;
+                    data.descripcion_carga = self.dataServiceActive.descripcion_carga;
+                    data.cantidad = self.dataServiceActive.cantidad;
+                    data.volumen = self.dataServiceActive.volumen;
+                    data.peso = self.dataServiceActive.peso;
+                    data.empaque = self.dataServiceActive.empaque;
+                    data.valor_declarado = self.dataServiceActive.valor_declarado;
+                }
+            }
+        }
+        data.id_tarifa = self.__id_tarifa;
+        data.domain_rpc = config.domain_rpc;
+        if (main.configCliente.driver_puede_ofertar_valor_servicio === "SI") {
+            data.ofertado = "SI";
+
+        }
+
+        var btnback = document.querySelector(".nw_widget_div_backAdondevamos_show");
+        if (btnback) {
+            nw.utils.removeClass(btnback, "nw_widget_div_backAdondevamos_show", true);
+        }
+
+        var rpc = new nw.rpc(self.getRpcUrl(), "servicios");
+        rpc.setAsync(true);
+        rpc.setLoading(true);
+//        if (self.debugConstruct) {
+        console.log("PRE_SEND_SERVER_DATA:::f_save_pedir_servicio::DATA", data);
+//        }
+
+//        self.pedirSelf.notificaConductoresCerca(data);
+
+        var func = function (r) {
+//            if (self.debugConstruct) {
+            console.log("RESULT_SERVER_DATA:::f_save_pedir_servicio::r", r);
+//            }
+            if (typeof r === "object") {
+                if (nw.evalueData(r.error)) {
+                    if (nw.evalueData(r.error.message)) {
+                        return false;
+                    }
+                }
+            }
+
+            if (self.configCliente.notifica_admin_por_correo === "SI") {
+                self.pedirSelf.notificaAdminNewService(data, r);
+            }
+
+//            if (self.configCliente.notifica_drivers_offline_servicio === "SI") {
+            self.pedirSelf.notificaConductoresCerca(data, r, function () {
+                main.registerServiceInFirebase(r);
+            });
+//            }
+
+            self.pedirVar = false;
+            nw.loadingRemove();
+            main.id_service_active = r;
+            self.cleanMarkerDestino();
+            nwgeo.removeAllPolyLines();
+
+//            self.ui.descricion_carga.setValue("");
+
+            if (data.tipo_servicio === "reservado") {
+                self.ui.tipo_servicio.setValue('ahora');
+                self.reziseNormalMap();
+                nw.loading({text: "Finalizando", title: "Terminando de programar su viaje..."});
+                setTimeout(function () {
+                    nw.loadingRemove();
+                    nw.dialog(nw.utils.tr("Servicio programado") + " #" + r + ", " + nw.utils.tr("fecha") + " " + data.fecha + " " + data.hora);
+                    self.loadInitial();
+                    self.activeNormal();
+                    if (self.debugConstruct) {
+                        console.log("END_PROGRAMAR_VIAJE:::f_save_pedir_servicio");
+                    }
+                    if (main.configCliente.driver_puede_ofertar_valor_servicio == "SI") {
+                        window.location.reload();
+                    }
+                }, 3000);
+                return true;
+            }
+            if (self.circu == false) {
+                self.clearCircul();
+                self.circu = true;
+            }
+            self.initIntervalo();
+        };
+        rpc.exec("save", data, func);
+    },
+    destruct: function () {
+    },
+    members: {
+        notificaAdminNewService: function notificaAdminNewService(data, r_serv) {
+            data.id = r_serv;
+            console.log("notificaAdminNewService:::data", data);
+            var self = this;
+            var selfdoc = self.selfDocument;
+            var rpc = new nw.rpc(self.getRpcUrl(), "app_user");
+            rpc.setAsync(true);
+            rpc.setLoading(false);
+            console.log("sendData:::notificaAdminNewService::data", data);
+            console.log("sendData:::notificaAdminNewService::r_serv", r_serv);
+            var func = function (r) {
+                console.log("responseServer:::notificaAdminNewService::r", r);
+            };
+            rpc.exec("notificaAdminNewService", data, func);
+        },
+        notificaConductoresCerca: function notificaConductoresCerca(data, r_serv, callback) {
+            var self = this;
+            var selfdoc = self.selfDocument;
+            var rpc = new nw.rpc(self.getRpcUrl(), "app_user");
+            rpc.setAsync(true);
+            rpc.setLoading(false);
+            console.log("sendData:::notificaConductoresCerca::data:::r_serv", r_serv, data);
+            var func = function (r) {
+                console.log("responseServer:::notificaConductoresCerca::r", r);
+                if (!r) {
+                    callback();
+                    return false;
+                }
+                var drivers = [];
+                for (var i = 0; i < r.length; i++) {
+                    var ra = r[i];
+                    if (!nw.utils.evalueData(ra.token) || !nw.utils.evalueData(ra.latitud) || !nw.utils.evalueData(ra.longitud)) {
+                        continue;
+                    }
+                    var d = nwgeo.distance(parseFloat(data.latitudOri), parseFloat(data.longitudOri), parseFloat(ra.latitud), parseFloat(ra.longitud));
+                    d = d.toFixed(0);
+                    var distanceDriverMetros = parseFloat(d);
+                    var metros_para_aceptar_servicio = parseFloat(selfdoc.configCliente.metros_para_aceptar_servicio);
+                    console.log("ra", ra);
+                    if (distanceDriverMetros > metros_para_aceptar_servicio) {
+                        continue;
+                    }
+                    console.log("NOTIFICA_A_DRIVER::::ra", ra);
+                    nw.sendNotificacion({
+                        title: nw.utils.tr("¡Nuevo viaje cerca en") + " " + config.name + "!",
+                        body: nw.utils.tr("Solicitud de nuevo viaje !Abre la app") + " " + config.name + " " + nw.utils.tr("ahora! Y no pierdas servicios."),
+                        icon: "fcm_push_icon",
+                        sound: "default",
+//                            data: "main.crearViaje('" + r[i].token + "')",
+//                        data: "nw.dialog('Solicitud de nuevo viaje')",
+                        data: "",
+                        callback: "FCM_PLUGIN_ACTIVITY",
+                        to: ra.token
+                    });
+                    drivers.push(ra);
+                }
+                console.log("drivers", drivers);
+                data.drivers = JSON.stringify(drivers);
+                data.id_servicio = r_serv;
+                var rpc = new nw.rpc(self.getRpcUrl(), "app_user");
+                rpc.setAsync(true);
+                rpc.setLoading(false);
+                console.log("sendData:::guardaConductoresCerca::data", data);
+                var func = function (r) {
+                    console.log("responseServer:::guardaConductoresCerca::r", r);
+                    callback();
+                };
+                rpc.exec("guardaConductoresCerca", data, func);
+            };
+            rpc.exec("traeConductoresCerca", data, func);
+        }
+    }
+});

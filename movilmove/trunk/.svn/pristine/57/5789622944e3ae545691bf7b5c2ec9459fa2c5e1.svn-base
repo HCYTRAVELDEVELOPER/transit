@@ -1,0 +1,34 @@
+[
+    {
+        "ip_destination": "test.movilmove.com",
+        "path_destination": "test/html",
+        "qxnw_release": "release-1.6.5-beta",
+        "pem": "netwoods_sao_paulo.pem",
+        "user": "ubuntu",
+        "www_path": "0",
+        "qooxdoo_release": "7",
+        "db_ip": "0",
+        "db_user": "0",
+        "db_password": "0",
+        "db": "0",
+        "type": "t",
+        "nwlib_release": "release-0.0.2.2-beta",
+        "name": "Pruebas test.movilmove.com"
+    },
+    {
+        "ip_destination": "app.movilmove.com",
+        "path_destination": "movilmove/html",
+        "qxnw_release": "release-1.6.5-beta",
+        "pem": "netwoods_sao_paulo.pem",
+        "user": "ubuntu",
+        "www_path": "0",
+        "qooxdoo_release": "7",
+        "db_ip": "0",
+        "db_user": "0",
+        "db_password": "0",
+        "db": "0",
+        "type": "p",
+        "nwlib_release": "release-0.0.2.2-beta",
+        "name": "Producción app.movilmove.com"
+    }
+]

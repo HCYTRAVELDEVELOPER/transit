@@ -1,0 +1,6111 @@
+# Andrés Flórez <direccion@netwoods.net>, 2015.
+# Flórez <direccion@netwoods.net>, 2019.
+#
+msgid ""
+msgstr ""
+#"Project-Id-Version: 1.0\n"
+#"Report-Msgid-Bugs-To: assdres@gmail.com\n"
+#"POT-Creation-Date: 2013-04-08 12:56-0500\n"
+#"PO-Revision-Date: 2019-10-03 12:26-0500\n"
+#"Last-Translator: Flórez <direccion@netwoods.net>\n"
+#"Language-Team: Español; Castellano <>\n"
+#"MIME-Version: 1.0\n"
+#"Content-Type: text/plain; charset=UTF-8\n"
+#"Content-Transfer-Encoding: 8bit\n"
+#"Language: es\n"
+#"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+#"X-Generator: Gtranslator 2.91.7\n"
+
+#: qxnw/alerts/f_alerts.js:23
+msgid "Procesamiento de alarmas"
+msgstr "Alarms processing"
+
+#: qxnw/alerts/l_alerts.js:6
+msgid "Administración de alarmas"
+msgstr "Alarms administration"
+
+#: qxnw/basics/forms/f_asociateComponent.js:7 qxnw/main.js:1222
+#: qxnw/main.js:1252 qxnw/main.js:1921
+msgid "Perfiles"
+msgstr "Profiles"
+
+#: qxnw/basics/forms/f_asociateComponent.js:11 qxnw/basics/forms/f_menu.js:31
+msgid "Módulo"
+msgstr "Modules"
+
+#: qxnw/basics/forms/f_asociateComponent.js:17 qxnw/basics/forms/f_menu.js:38
+msgid "Componente"
+msgstr "Components"
+
+#: qxnw/basics/forms/f_cambiar_clave.js:6
+msgid "Cambiar clave"
+msgstr "Change password"
+
+#: qxnw/basics/forms/f_cambiar_clave.js:76
+msgid "La longitud mínima es de %s"
+msgstr "The minimum length is% s"
+
+#: qxnw/basics/forms/f_cambiar_clave.js:79
+msgid "Debe contener al menos un caracter en <b>MAYÚSCULA</b>"
+msgstr "It must contain at least one character in <b>MAYUS</b>"
+
+#: qxnw/basics/forms/f_cambiar_clave.js:82
+msgid "Debe contener al menos un <b>NÚMERO</b>"
+msgstr "It must contain at least one <b>NUMBER</b>"
+
+#: qxnw/basics/forms/f_cambiar_clave.js:85
+msgid "Debe contener al menos un caracter especial <b>(#$@)</b>"
+msgstr "It must contain at least one special character <b>(#$@)</b>"
+
+#: qxnw/basics/forms/f_cambiar_clave_actualizar_datos.js:8
+msgid "<h2>Bienvenido!</h2>Para iniciar cambie su contraseña."
+msgstr "<h2>Welcome!</h2>To start change your password."
+
+#: qxnw/basics/forms/f_cambiar_empresa.js:21 qxnw/main.js:1286
+msgid "Cambiar empresa"
+msgstr "Change company"
+
+#: qxnw/security/entradas_salidas/l_entradas_salidas.js:56
+#: qxnw/security/registro/l_registro.js:52
+#: qxnw/security/registro/l_registro.js:56 qxnw/basics/forms/f_perfiles.js:25
+#: qxnw/basics/lists/l_paises.js:13 qxnw/basics/forms/f_ciudades.js:38
+#: qxnw/basics/forms/f_cambiar_empresa.js:26
+#: qxnw/nw_printer/lists/l_printer.js:70 qxnw/basics/forms/f_modulos.js:56
+#: qxnw/basics/lists/l_modulos.js:61 qxnw/basics/lists/l_menu.js:68
+#: qxnw/basics/lists/l_perfiles.js:37 qxnw/basics/forms/f_menu.js:18
+#: qxnw/login.js:89 qxnw/basics/forms/f_terminales.js:18
+msgid "Empresa"
+msgstr "Company"
+
+#: qxnw/basics/forms/f_cambiar_empresa.js:70
+msgid "Empresa modificada correctamente"
+msgstr "Company successfully modified"
+
+#: qxnw/basics/forms/f_captura_pantalla.js:6
+msgid "Capturar Pantalla"
+msgstr "Capture display"
+
+#: qxnw/dynamicTable/f_graphicAdvanced.js:416
+#: qxnw/nw_printer/forms/f_printer.js:210 qxnw/nw_sync/main.js:167
+#: qxnw/basics/lists/l_paises.js:11 qxnw/basics/lists/l_paises.js:21
+#: qxnw/basics/forms/f_ciudades.js:18 qxnw/basics/forms/f_usuarios.js:141
+#: qxnw/nw_html_forms/forms/f_ne_html_forms.js:18
+#: qxnw/basics/forms/f_componentes.js:25 qxnw/mobile/treeAdmin.js:40
+#: qxnw/nw_admin_db/forms/f_server_db.js:25
+#: qxnw/nw_printer/lists/l_printer.js:14 qxnw/basics/forms/f_paises.js:19
+#: qxnw/lists.js:2089 qxnw/lists.js:5746 qxnw/dynamicTable/f_graphic.js:159
+#: qxnw/nw_import_data/imp_chars_len.js:82 qxnw/basics/lists/l_usuarios.js:14
+#: qxnw/nw_import_data/main.js:39 qxnw/nw_import_data/main.js:84
+#: qxnw/nw_file_manager/trees/vista_general.js:1119
+#: qxnw/nw_admin_db/forms/f_server.js:24 qxnw/basics/forms/f_menu.js:25
+#: qxnw/basics/forms/f_terminales.js:25 qxnw/nw_exp/main.js:391
+#: qxnw/nw_exp/main.js:427 qxnw/nw_excel_reports/forms/f_ne_er.js:52
+#: qxnw/tmp/ckeditor.js:13
+msgid "Nombre"
+msgstr "Name"
+
+#: qxnw/basics/forms/f_ciudades.js:24 qxnw/forms/permissions.js:659
+#: qxnw/widgets/addressFinder.js:27
+msgid "País"
+msgstr "Country"
+
+#: qxnw/examples/form_payu.js:124 qxnw/examples/form_payu.js:189
+#: qxnw/basics/forms/f_ciudades.js:31
+msgid "Departamento"
+msgstr "Department"
+
+#: qxnw/basics/forms/f_componentes.js:31
+msgid "Clase"
+msgstr "Class"
+
+#: qxnw/basics/forms/f_componentes.js:37
+msgid "Grupo"
+msgstr "Group"
+
+#: qxnw/basics/forms/f_componentes.js:43
+msgid "Iconos Home"
+msgstr "Home icons"
+
+#: qxnw/basics/forms/f_empresas.js:6
+msgid "Empresas nuevo-editar"
+msgstr "Company new-edit"
+
+#: qxnw/nw_import_data/forms/f_addField.js:40
+#: qxnw/nw_sync/forms/f_addConnection.js:50
+#: qxnw/nw_import_data/imp_chars_len.js:25
+#: qxnw/nw_exp/forms/f_addConnection.js:50 qxnw/basics/forms/f_menu.js:45
+msgid "Orden"
+msgstr "Order"
+
+#: qxnw/basics/lists/l_tickets.js:19 qxnw/basics/forms/f_menu.js:51
+msgid "Nivel"
+msgstr "Level"
+
+#: qxnw/basics/forms/f_menu.js:57
+msgid "Nivel padre"
+msgstr "Parent level"
+
+#: qxnw/basics/forms/f_menu.js:63
+msgid "Padre"
+msgstr "Parent"
+
+#: qxnw/basics/forms/f_menu.js:70
+msgid "Tipo ícono"
+msgstr "Icon type"
+
+#: qxnw/basics/forms/f_menu.js:76
+msgid "Tamaño ícono"
+msgstr "Icon size"
+
+#: qxnw/basics/forms/f_menu.js:83
+msgid "Ícono"
+msgstr "Icon"
+
+#: qxnw/basics/forms/f_menu.js:90
+msgid "Móvil"
+msgstr "Mobile"
+
+#: qxnw/basics/forms/f_menu.js:98
+msgid "Orden móvil"
+msgstr "Mobile order"
+
+#: qxnw/basics/lists/l_paises.js:12 qxnw/basics/forms/f_paises.js:25
+msgid "Abreviatura"
+msgstr ""
+
+#: qxnw/basics/forms/f_paises.js:31
+msgid "Idioma"
+msgstr ""
+
+#: qxnw/basics/forms/f_pqr.js:11
+msgid "Tipo de solicitud"
+msgstr "Type of request"
+
+#: qxnw/basics/forms/f_pqr.js:17
+msgid "Nombres"
+msgstr "Names"
+
+#: qxnw/basics/forms/f_pqr.js:23
+msgid "Correo electronico"
+msgstr "Email"
+
+#: qxnw/basics/forms/f_pqr.js:29
+msgid "Asunto de la PQR"
+msgstr "PQR subject"
+
+#: qxnw/basics/forms/f_pqr.js:35
+msgid "Mensaje"
+msgstr "Message"
+
+#: qxnw/basics/forms/f_pqr.js:72
+msgid "Se ha enviado la información"
+msgstr "The information has been sent"
+
+#: qxnw/examples/form_payu.js:119 qxnw/examples/form_payu.js:184
+#: qxnw/widgets/addressFinder.js:33 qxnw/basics/forms/f_terminales.js:31
+msgid "Ciudad"
+msgstr "City"
+
+#: qxnw/basics/forms/f_terminales.js:38
+msgid "Telefono"
+msgstr "Telephone"
+
+#: qxnw/widgets/addressFinder.js:21 qxnw/basics/forms/f_terminales.js:44
+msgid "Dirección"
+msgstr "Address"
+
+#: qxnw/basics/forms/f_terminales.js:50
+msgid "Codigo"
+msgstr ""
+
+#: qxnw/mapsWidget.js:803 qxnw/widgets/addressFinder.js:39
+#: qxnw/basics/forms/f_terminales.js:57
+msgid "Latitud"
+msgstr "Latitude"
+
+#: qxnw/mapsWidget.js:825 qxnw/widgets/addressFinder.js:44
+#: qxnw/basics/forms/f_terminales.js:63
+msgid "Longitud"
+msgstr "Longitude"
+
+#: qxnw/nw_printer/forms/f_printer.js:204
+#: qxnw/nw_printer/forms/f_printer.js:325 qxnw/basics/forms/f_ticket.js:38
+#: qxnw/nw_import_data/forms/f_addField.js:28
+#: qxnw/security/entradas_salidas/l_entradas_salidas.js:24
+#: qxnw/security/registro/l_registro.js:24 qxnw/basics/lists/l_paises.js:10
+#: qxnw/nw_sync/forms/f_addField.js:28
+#: qxnw/nw_html_forms/forms/f_ne_html_forms.js:12
+#: qxnw/nw_printer/lists/l_printer.js:10 qxnw/nw_cron/l_cron.js:24
+#: qxnw/nw_exp/forms/f_addFieldCondi.js:28 qxnw/nw_exp/forms/f_addField.js:28
+#: qxnw/nw_exp/forms/f_addFilter.js:28
+msgid "ID"
+msgstr "ID"
+
+#: qxnw/basics/forms/f_ticket.js:59 qxnw/basics/lists/l_tickets.js:14
+msgid "Fecha reporte"
+msgstr "Report date"
+
+#: qxnw/basics/forms/f_ticket.js:288
+msgid ""
+"<b style='font-size:14px; background:#F56F5C;'>Ya que no tiene incluido este"
+" servicio a la cuenta de este cliente, verifique con el lider de "
+"proyectos</b>"
+msgstr ""
+"<b style='font-size:14px; background:#F56F5C;'>Since this service is not "
+"included in this client's account, check with the project leader</b>"
+
+#: qxnw/basics/forms/f_usuarios.js:145 qxnw/forms/permissions.js:20
+#: qxnw/forms/permissions.js:265 qxnw/basics/lists/l_usuarios.js:46
+msgid "Perfil"
+msgstr "Profile"
+
+#: qxnw/basics/forms/f_usuarios.js:152 qxnw/forms/permissions.js:644
+#: qxnw/basics/lists/l_usuarios.js:34
+msgid "Terminal"
+msgstr "Seat"
+
+#: qxnw/basics/forms/f_usuarios.js:159 qxnw/mobile/treeAdmin.js:44
+msgid "Asociado"
+msgstr "Associated"
+
+#: qxnw/basics/forms/f_usuarios.js:203
+msgid "La fecha de nacimiento no puede ser mayor a la fecha actual"
+msgstr "The date of birth can not be longer than the current date"
+
+#: qxnw/security/entradas_salidas/l_entradas_salidas.js:28
+#: qxnw/security/registro/l_registro.js:40 qxnw/basics/lists/l_paises.js:14
+#: qxnw/nw_printer/lists/l_printer.js:62 qxnw/nw_cron/l_cron.js:56
+#: qxnw/nw_cron/l_cron.js:64 qxnw/basics/lists/l_usuarios.js:26
+#: qxnw/examples/formListEdit.js:198 qxnw/login.js:77 qxnw/forms/smtp.js:56
+msgid "Usuario"
+msgstr "User"
+
+#: qxnw/basics/lists/l_paises.js:20 qxnw/mapsWidget.js:174
+msgid "Filtro..."
+msgstr "Filter..."
+
+#: qxnw/basics/lists/l_tickets.js:10
+msgid "N° Ticket"
+msgstr "Ticket Number"
+
+#: qxnw/basics/lists/l_tickets.js:24 qxnw/basics/lists/l_tickets.js:149
+#: qxnw/basics/lists/l_usuarios.js:79
+msgid "Estado"
+msgstr "State"
+
+#: qxnw/basics/lists/l_tickets.js:29
+msgid "Proceso"
+msgstr "Process"
+
+#: qxnw/basics/lists/l_tickets.js:35
+msgid "Tiempo Transcurrido"
+msgstr "Time elapsed"
+
+#: qxnw/basics/lists/l_tickets.js:43
+msgid "Tiempo de respuesta(m)"
+msgstr "Answer tme (m)"
+
+#: qxnw/basics/lists/l_tickets.js:50
+msgid "Indicador"
+msgstr "Indicator"
+
+#: qxnw/basics/lists/l_tickets.js:58
+msgid "Avance"
+msgstr "Advance"
+
+#: qxnw/basics/lists/l_tickets.js:64
+msgid "Cliente ID"
+msgstr "Client ID"
+
+#: qxnw/basics/lists/l_tickets.js:70 qxnw/basics/lists/l_tickets.js:142
+#: qxnw/basics/lists/l_usuarios.js:62 qxnw/basics/lists/l_usuarios.js:66
+msgid "Cliente"
+msgstr "Customer"
+
+#: qxnw/basics/lists/l_tickets.js:75
+msgid "Descripción de novedad"
+msgstr "Novelty description"
+
+#: qxnw/basics/lists/l_tickets.js:81
+msgid "Medio ingreso"
+msgstr "Entry medium"
+
+#: qxnw/basics/lists/l_tickets.js:86
+msgid "Tipo servicio id"
+msgstr "Type of service id"
+
+#: qxnw/basics/lists/l_tickets.js:92
+msgid "Tipo servicio"
+msgstr "Type of service"
+
+#: qxnw/basics/lists/l_tickets.js:97
+msgid "Quien reporto"
+msgstr "Who reports"
+
+#: qxnw/basics/lists/l_tickets.js:102
+msgid "Correo Quien Reporto"
+msgstr "Email who reports"
+
+#: qxnw/basics/lists/l_tickets.js:107
+msgid "Quien atendio"
+msgstr "Who attended"
+
+#: qxnw/basics/lists/l_tickets.js:113
+msgid "Responsable de atencion ID"
+msgstr "Responsible for attention ID"
+
+#: qxnw/basics/lists/l_tickets.js:119
+msgid "Responsable de atencion"
+msgstr "Responsible for attention"
+
+#: qxnw/basics/lists/l_tickets.js:124
+msgid "Telefono Responsable de atencion"
+msgstr "Telephone Responsible for attention"
+
+#: qxnw/basics/lists/l_tickets.js:129
+msgid "Email Responsable de atencion"
+msgstr "Email Responsible for attention"
+
+#: qxnw/basics/lists/l_tickets.js:134
+#: qxnw/nw_admin_db/trees/vista_general.js:719
+msgid "Adjunto"
+msgstr "Attached"
+
+#: qxnw/basics/lists/l_tickets.js:154
+msgid "Fecha incial"
+msgstr "Start date"
+
+#: qxnw/nw_exp/lists/l_view.js:57
+#: qxnw/security/entradas_salidas/l_entradas_salidas.js:98
+#: qxnw/security/registro/l_registro.js:89 qxnw/basics/lists/l_tickets.js:159
+#: qxnw/lists.js:3098 qxnw/table/table.js:321
+msgid "Fecha final"
+msgstr "Final date"
+
+#: qxnw/basics/lists/l_tickets.js:255 qxnw/navtable.js:2080 qxnw/lists.js:2827
+#: qxnw/lists.js:2914 qxnw/lists.js:5652
+msgid "Seleccione un registro"
+msgstr "Select a register"
+
+#: qxnw/basics/lists/l_usuarios.js:18
+msgid "Apellido"
+msgstr "Last name"
+
+#: qxnw/basics/lists/l_usuarios.js:22
+msgid "Documento"
+msgstr "Document"
+
+#: qxnw/basics/lists/l_usuarios.js:30 qxnw/forms/smtp.js:61
+msgid "Clave"
+msgstr "Key"
+
+#: qxnw/dynamicTable/f_graphicAdvanced.js:425
+#: qxnw/dynamicTable/f_graphic.js:167 qxnw/basics/lists/l_usuarios.js:38
+msgid "E-mail"
+msgstr "E-mail"
+
+#: qxnw/basics/lists/l_usuarios.js:42
+msgid "ID Terminal"
+msgstr "Seat ID"
+
+#: qxnw/basics/lists/l_usuarios.js:50
+msgid "ID Perfil"
+msgstr "Profile ID"
+
+#: qxnw/basics/lists/l_usuarios.js:54 qxnw/rtc/init.js:279
+#: qxnw/rtc/init.js:298 qxnw/chat/rooms.js:737 qxnw/chat/rooms.js:1051
+#: qxnw/chat/rooms.js:1075
+msgid "Conectado"
+msgstr "Connected"
+
+#: qxnw/basics/lists/l_usuarios.js:58
+msgid "Ver Chat"
+msgstr "See chat"
+
+#: qxnw/basics/lists/l_usuarios.js:70
+msgid "Fecha Nacimiento"
+msgstr "Birth date"
+
+#: qxnw/basics/lists/l_usuarios.js:74
+msgid "Foto"
+msgstr "Photo"
+
+#: qxnw/basics/lists/l_usuarios.js:83
+msgid "Estado Empleado"
+msgstr "Employee Status"
+
+#: qxnw/calc/init.js:23 qxnw/main.js:2902
+msgid "Calculadora"
+msgstr "Calculator"
+
+#: qxnw/camera.js:226
+msgid ""
+"<br /><br /><br /><font color='gray'>Espacio para procesar \n"
+"\la imagen<br /><br /><br /></font>"
+msgstr ""
+
+#: qxnw/camera.js:232
+msgid ""
+"<b style='color: red;'>Recuerde CONFIRMAR la imagen cuando esté lista</b>"
+msgstr ""
+"<b style='color: red;'>Remember to CONFIRM the image when it is ready</b>"
+
+#: qxnw/widgets/camera.js:251 qxnw/camera.js:253
+msgid "Disparar"
+msgstr "Shoot"
+
+#: qxnw/camera.js:283
+msgid "Subir desde PC"
+msgstr "Upload from PC"
+
+#: qxnw/widgets/camera.js:302 qxnw/camera.js:288
+msgid "Cortar"
+msgstr "Cut"
+
+#: qxnw/camera.js:302
+msgid "Confirmar"
+msgstr "Confirm"
+
+#: qxnw/widgets/camera.js:336 qxnw/forms.js:1206 qxnw/camera.js:316
+msgid "Descargar"
+msgstr "Download"
+
+#: qxnw/widgets/dateField.js:434 qxnw/examples/digitalPersona.js:91
+#: qxnw/dynamicTable/initAlterComplete.js:517 qxnw/widgets/camera.js:354
+#: qxnw/widgets/camera.js:381 qxnw/table/table.js:883
+#: qxnw/widgets/canvasWriter.js:206 qxnw/camera.js:330 qxnw/nw_exp/main.js:115
+#: qxnw/widgets/camera_old.js:128
+msgid "Limpiar"
+msgstr "Clean"
+
+#: qxnw/widgets/camera.js:509 qxnw/camera.js:446
+msgid "Procesar imagen"
+msgstr "Process image"
+
+#: qxnw/widgets/camera.js:596 qxnw/camera.js:533
+msgid "<b>Seleccione una parte de la imagen</b><br />"
+msgstr "<b>Select a part of the image</b><br />"
+
+#: qxnw/widgets/camera.js:668 qxnw/widgets/camera.js:671
+#: qxnw/widgets/camera.js:677 qxnw/camera.js:594 qxnw/camera.js:597
+#: qxnw/camera.js:600 qxnw/camera.js:603
+msgid ""
+"Permiso denegado a la cámara: para activarla vaya a la configuración del "
+"navegador"
+msgstr ""
+"Permission denied to the camera: to activate it go to the browser settings"
+
+#: qxnw/widgets/camera.js:680 qxnw/widgets/camera.js:683 qxnw/camera.js:606
+#: qxnw/camera.js:609
+msgid "No posee una cámara instalada"
+msgstr "Does not have a camera installed"
+
+#: qxnw/widgets/camera.js:686 qxnw/widgets/camera.js:689 qxnw/camera.js:612
+#: qxnw/camera.js:615
+msgid "No posee una cámara instalada o no se puede leer"
+msgstr "Does not have a camera installed or can not be read"
+
+#: qxnw/treeWidget.js:1344 qxnw/treeWidget.js:1551
+#: qxnw/nw_admin_db/forms/f_tables.js:63 qxnw/nw_sync/main.js:49
+#: qxnw/reports.js:130 qxnw/forms.js:1113 qxnw/forms.js:1568
+#: qxnw/lists.js:4530 qxnw/lists.js:4754 qxnw/chartReport.js:105
+#: qxnw/mapsWidget.js:762 qxnw/nw_file_manager/trees/vista_general.js:34
+#: qxnw/nw_exp/main.js:66 qxnw/nw_sync/forms/f_syncAll.js:87
+msgid "Actualizar"
+msgstr "Reload"
+
+#: qxnw/chat/rooms.js:234 qxnw/chat/forms/newRoom.js:23 qxnw/chat/init.js:180
+msgid "Nueva sala"
+msgstr "New room"
+
+#: qxnw/nw_forms_designer/terminal.js:47
+#: qxnw/nw_import_data/imp_chars_len.js:31
+#: qxnw/dynamicTable/options/f_grid.js:121 qxnw/chat/forms/newRoom.js:31
+msgid "Título"
+msgstr "Title"
+
+#: qxnw/chat/forms/newRoom.js:50
+msgid "Usuarios vinculados"
+msgstr "Vinculated users"
+
+#: qxnw/chat/forms/newRoom.js:110
+msgid "Editando la sala: "
+msgstr "Editing the room: "
+
+#: qxnw/forms/behavior.js:98 qxnw/chat/privado/form.js:24 qxnw/main.js:1181
+#: qxnw/chat/init.js:32
+msgid "Chat"
+msgstr "Chat"
+
+#: qxnw/chat/privado/form.js:74 qxnw/chat/rooms.js:69
+msgid "Recargar"
+msgstr "Reload"
+
+#: qxnw/chat/privado/form.js:76 qxnw/chat/rooms.js:71
+msgid "Recargar mensajes"
+msgstr "Reload messages"
+
+#: qxnw/chat/privado/form.js:116 qxnw/chat/rooms.js:136
+msgid "Ingrese su mensaje..."
+msgstr "Put your message..."
+
+#: qxnw/nw_sync/forms/f_addField.js:48 qxnw/chat/privado/form.js:128
+#: qxnw/chat/rooms.js:148
+msgid "Enviar"
+msgstr "Send"
+
+#: qxnw/chat/privado/form.js:130 qxnw/chat/rooms.js:150
+msgid "Envíe su mensaje"
+msgstr "Send your message"
+
+#: qxnw/chat/privado/form.js:141 qxnw/chat/rooms.js:167
+msgid "Enviar al dar Enter"
+msgstr "Send on enter"
+
+#: qxnw/chat/rooms.js:80 qxnw/chat/rooms.js:95 qxnw/chat/rooms.js:673
+msgid "Llamar"
+msgstr "Call"
+
+#: qxnw/chat/rooms.js:87
+msgid "Tiene una llamada en progreso"
+msgstr "Have a call in progress"
+
+#: qxnw/examples/digitalPersona.js:104 qxnw/utils.js:4126 qxnw/forms.js:4952
+#: qxnw/chat/rooms.js:91
+msgid "Cancelar"
+msgstr "Cancel"
+
+#: qxnw/chat/rooms.js:102
+msgid "Recarga automática"
+msgstr "Automatic reload"
+
+#: qxnw/chat/rooms.js:120
+msgid "# mensajes:"
+msgstr "# messages:"
+
+#: qxnw/chat/rooms.js:177
+msgid "Abrir al inicio"
+msgstr "Open at start"
+
+#: qxnw/chat/rooms.js:214
+msgid "Cargando chat privado..."
+msgstr "Loading private chat ..."
+
+#: qxnw/chat/rooms.js:239
+msgid "Agregar usuarios"
+msgstr "Add users"
+
+#: qxnw/chat/rooms.js:267
+msgid "Mostrar mi terminal"
+msgstr "Show my stand"
+
+#: qxnw/chat/rooms.js:280 qxnw/chat/rooms.js:296 qxnw/chat/rooms.js:297
+msgid "Sala principal"
+msgstr "Principal room"
+
+#: qxnw/chat/rooms.js:288
+msgid "Cargando sala principal..."
+msgstr "Loading main room ..."
+
+#: qxnw/chat/rooms.js:328
+msgid "¿Desea eliminar la sala?"
+msgstr "Are you sure to delete the room?"
+
+#: qxnw/rtc/init.js:89 qxnw/chat/rooms.js:695
+msgid "Creando interfaz..."
+msgstr "Creating interface ..."
+
+#: qxnw/chat/rooms.js:747
+msgid "En pausa"
+msgstr "Pause"
+
+#: qxnw/rtc/init.js:182 qxnw/chat/rooms.js:818
+msgid "Verificando llamada..."
+msgstr "Verifying call..."
+
+#: qxnw/rtc/init.js:126 qxnw/chat/rooms.js:824 qxnw/chat/rooms.js:886
+msgid "Guardando información de conexión"
+msgstr "Saving connection information"
+
+#: qxnw/rtc/init.js:203 qxnw/chat/rooms.js:850
+msgid "Respondiendo interfaz..."
+msgstr "Responding interface ..."
+
+#: qxnw/rtc/init.js:132 qxnw/chat/rooms.js:895
+msgid "Generando llamada"
+msgstr "Generating call"
+
+#: qxnw/rtc/init.js:144 qxnw/chat/rooms.js:908
+msgid "Enviando información de llamada"
+msgstr "Sending call information"
+
+#: qxnw/rtc/init.js:146 qxnw/chat/rooms.js:910
+msgid "Información de llamada enviada... esperando respuesta"
+msgstr "Call information sent ... waiting for an answer"
+
+#: qxnw/rtc/init.js:267 qxnw/chat/rooms.js:1039
+msgid "Marcando..."
+msgstr "Marking ..."
+
+#: qxnw/rtc/init.js:277 qxnw/chat/rooms.js:1049
+msgid "Llamada exitosa"
+msgstr "Successful call"
+
+#: qxnw/rtc/init.js:288 qxnw/chat/rooms.js:1062
+msgid "Recuperando información de conexión"
+msgstr "Retrieving connection information"
+
+#: qxnw/cmi/main.js:20
+msgid "Cuadro de mando integral :: NW Group"
+msgstr "Balanced scorecard :: NW Group"
+
+#: qxnw/cmi/main.js:36
+msgid "Refrescar"
+msgstr "Refresh"
+
+#: qxnw/cmi/main.js:57 qxnw/cmi/main.js:91 qxnw/cmi/main.js:173
+#: qxnw/forms.js:5578 qxnw/forms.js:5605
+msgid "Minimizar"
+msgstr "Minimize"
+
+#: qxnw/cmi/main.js:76 qxnw/forms.js:5600 qxnw/forms.js:5962
+msgid "Maximizar"
+msgstr "Maximize"
+
+#: qxnw/cmi/main.js:110
+msgid "<b>No hay informes integrales para mostrar.</b>"
+msgstr "<b>No CMI to show.</b>"
+
+#: qxnw/cmi/main.js:186 qxnw/nw_sync/main.js:39 qxnw/nw_sync/main.js:346
+#: qxnw/nw_sync/main.js:391 qxnw/nw_sync/main.js:411
+#: qxnw/forms/permissions.js:609 qxnw/forms.js:2718 qxnw/lists.js:3368
+#: qxnw/lists.js:4801 qxnw/nw_file_manager/trees/vista_general.js:67
+#: qxnw/nw_exp/main.js:44 qxnw/nw_exp/main.js:614 qxnw/nw_exp/main.js:660
+#: qxnw/nw_exp/main.js:679 qxnw/nw_exp/main.js:700
+msgid "Eliminar"
+msgstr "Delete"
+
+#: qxnw/cmi/main.js:238
+msgid "Trabajando"
+msgstr "Working"
+
+#: qxnw/config.js:338 qxnw/config.js:344
+msgid "Para ordenar un listado dar click sobre el encabezado de una columna"
+msgstr "To order a list click on the column heading"
+
+#: qxnw/config.js:339
+msgid "Para filtrar datos click derecho sobre el encabezado de una columna"
+msgstr "To filter data right click on the column header"
+
+#: qxnw/config.js:341
+msgid "Puede sumar los valores de una columna"
+msgstr "You can add the values of a column"
+
+#: qxnw/config.js:389 qxnw/config.js:407
+msgid "Su conexión a internet es deficiente o nula"
+msgstr "Your internet connection is poor or nil"
+
+#: qxnw/config.js:396 qxnw/config.js:409
+msgid "Verificando conectividad con sistema central...   Intentos: 0"
+msgstr "Verifying connectivity with central system ... Attempts: 0"
+
+#: qxnw/config.js:433
+msgid "Sistema central:"
+msgstr "Central system:"
+
+#: qxnw/config.js:435
+msgid "Conexión restablecida"
+msgstr ""
+
+#: qxnw/dev/andresf.js:243
+msgid "Empleados"
+msgstr "Employees"
+
+#: qxnw/dev/andresf.js:373
+msgid "Movimientos Generales"
+msgstr "General movements"
+
+#: qxnw/dev/andresf.js:451 qxnw/lists.js:4169
+#: qxnw/nw_file_manager/trees/vista_general.js:992
+msgid "Test"
+msgstr "Test"
+
+#: qxnw/dev/andresf.js:477 qxnw/dev/andresf.js:481 qxnw/main.js:2003
+msgid "Reportes en Excel"
+msgstr "Excel reports"
+
+#: qxnw/dev/andresf.js:783 qxnw/main.js:1224 qxnw/main.js:1869
+msgid "Usuarios"
+msgstr "Users"
+
+#: qxnw/dragDropWidget.js:23
+msgid "Maestro de selección de asistentes :: PepsiCo"
+msgstr "Teacher selection of assistants"
+
+#: qxnw/dragDropWidget.js:249 qxnw/dragDropWidget.js:311 qxnw/lists.js:4826
+#: qxnw/nw_file_manager/trees/vista_general.js:65
+msgid "Seleccionar todo"
+msgstr "Select All"
+
+#: qxnw/dragDropWidget.js:251 qxnw/dragDropWidget.js:313
+#: qxnw/treeWidget.js:1142 qxnw/lists.js:5844
+msgid "Seleccione todos los registros"
+msgstr "Select all lines"
+
+#: qxnw/dragDropWidget.js:254 qxnw/dragDropWidget.js:316 qxnw/lists.js:4833
+#: qxnw/nw_file_manager/trees/vista_general.js:66
+msgid "Desactivar todo"
+msgstr "Deactivate all"
+
+#: qxnw/dragDropWidget.js:256 qxnw/dragDropWidget.js:318
+msgid "Libere todos los registros"
+msgstr "Release all records"
+
+#: qxnw/dragDropWidget.js:278
+msgid "Mueva los registros seleccionados al panel derecho"
+msgstr "Move the selected records to the right panel"
+
+#: qxnw/dragDropWidget.js:284 qxnw/dragDropWidget.js:340 qxnw/lists.js:3418
+msgid "No hay registros seleccionados"
+msgstr "No records selected"
+
+#: qxnw/dragDropWidget.js:305
+msgid "Mueva los registros seleccionados al panel izquierdo"
+msgstr "Move the selected records to the left panel"
+
+#: qxnw/dragDropWidget.js:575 qxnw/navtable.js:1257 qxnw/forms.js:4785
+#: qxnw/lists.js:6737
+msgid "Error en el tipo de objeto:"
+msgstr "Error in type object"
+
+#: qxnw/dynamicTable/f_graphicAdvanced.js:254
+#: qxnw/dynamicTable/f_graphic.js:53
+msgid "Barras"
+msgstr "Bar"
+
+#: qxnw/dynamicTable/f_graphicAdvanced.js:255
+#: qxnw/dynamicTable/f_graphic.js:54
+msgid "Líneas"
+msgstr "Lines"
+
+#: qxnw/dynamicTable/f_graphicAdvanced.js:256
+#: qxnw/dynamicTable/f_graphic.js:55
+msgid "Torta"
+msgstr "Pie"
+
+#: qxnw/dynamicTable/f_graphicAdvanced.js:607 qxnw/reports.js:173
+#: qxnw/forms/permissions.js:616 qxnw/forms.js:1066 qxnw/forms.js:1198
+#: qxnw/lists.js:4879 qxnw/dynamicTable/f_graphic.js:124
+msgid "Imprimir"
+msgstr "Print"
+
+#: qxnw/dynamicTable/f_graphicAdvanced.js:389 qxnw/forms/permissions.js:623
+#: qxnw/lists.js:4887 qxnw/dynamicTable/f_graphic.js:140
+msgid "Enviar por correo"
+msgstr "Send by email"
+
+#: qxnw/dynamicTable/f_graphicAdvanced.js:419
+#: qxnw/dynamicTable/f_graphic.js:161
+msgid "Ingrese el nombre del destinatario"
+msgstr "Enter the recipient's name"
+
+#: qxnw/dynamicTable/f_graphicAdvanced.js:427
+#: qxnw/dynamicTable/f_graphic.js:169
+msgid "Ingrese el correo electrónico"
+msgstr "Enter the email"
+
+#: qxnw/dynamicTable/f_graphicAdvanced.js:432
+#: qxnw/dynamicTable/f_graphic.js:174
+msgid "Enviar a un grupo"
+msgstr "Send to a group"
+
+#: qxnw/dynamicTable/f_graphicAdvanced.js:438
+#: qxnw/dynamicTable/f_graphicAdvanced.js:559 qxnw/utils.js:1803
+#: qxnw/dynamicTable/f_graphic.js:180 qxnw/dynamicTable/f_graphic.js:182
+#: qxnw/examples/form_light.js:100
+msgid "Observaciones"
+msgstr "Observations"
+
+#: qxnw/dynamicTable/f_graphicAdvanced.js:444
+#: qxnw/dynamicTable/f_graphic.js:185
+msgid "Envío de gráfico por correo electrónico"
+msgstr "Sending of graphic by email"
+
+#: qxnw/dynamicTable/f_graphicAdvanced.js:478
+#: qxnw/dynamicTable/f_graphic.js:222
+msgid "Correos enviados correctamente"
+msgstr "Correos sent correctly"
+
+#: qxnw/dynamicTable/f_graphicAdvanced.js:253
+msgid "Barras apiladas"
+msgstr "Stacked bars"
+
+#: qxnw/dynamicTable/f_graphicAdvanced.js:257
+msgid "Tunel"
+msgstr "Tunnel"
+
+#: qxnw/dynamicTable/f_graphicAdvanced.js:270 qxnw/lists.js:1929
+#: qxnw/nw_import_data/imp_chars_len.js:115 qxnw/nw_import_data/main.js:118
+msgid "Opciones"
+msgstr "Options"
+
+#: qxnw/dynamicTable/f_graphicAdvanced.js:375
+msgid "Imprimir informe"
+msgstr "Print report"
+
+#: qxnw/dynamicTable/f_graphicAdvanced.js:408
+msgid "Asunto"
+msgstr "Subject"
+
+#: qxnw/dynamicTable/f_graphicAdvanced.js:411
+msgid "Ingrese el asunto del correo"
+msgstr "Enter the subject of the mail"
+
+#: qxnw/dynamicTable/f_graphicAdvanced.js:434
+msgid "Puede crear sus grupos por el menú Configuración->Listas de correos"
+msgstr "You can create your groups through the menu Settings-> Mailing Lists"
+
+#: qxnw/dynamicTable/f_graphicAdvanced.js:441
+msgid "Observaciones que saldrán en el cuerpo del mensaje"
+msgstr "Observations that will appear in the body of the message"
+
+#: qxnw/dynamicTable/f_graphicAdvanced.js:550
+msgid "Opciones de impresión"
+msgstr "Print options"
+
+#: qxnw/dynamicTable/f_graphicAdvanced.js:554
+msgid "Mostrar tabla de datos"
+msgstr "Observations that will appear in the body of the message"
+
+#: qxnw/dynamicTable/f_graphicAdvanced.js:605
+msgid "Impresión de informe"
+msgstr "Report printing"
+
+#: qxnw/dynamicTable/f_graphicAdvanced.js:609 qxnw/reports.js:175
+msgid "Imprimir el informe"
+msgstr "Print report"
+
+#: qxnw/treeWidget.js:1097 qxnw/dynamicTable/init.js:24 qxnw/lists.js:5799
+#: qxnw/dynamicTable/initAlter.js:29
+msgid "Tabla dinámica avanzada"
+msgstr "Advanced dynamic table"
+
+#: qxnw/dynamicTable/init.js:34 qxnw/dynamicTable/initAlterComplete.js:68
+#: qxnw/forms/permissions.js:630 qxnw/lists.js:4853
+#: qxnw/dynamicTable/initAlter.js:36
+msgid "Exportar"
+msgstr "Export"
+
+#: qxnw/dynamicTable/init.js:45 qxnw/dynamicTable/initAlterComplete.js:210
+#: qxnw/dynamicTable/initAlter.js:71
+msgid "Debe tener registros dinámicos para realizar la exportación"
+msgstr "You must have dynamic records to export"
+
+#: qxnw/dynamicTable/init.js:80 qxnw/dynamicTable/initAlter.js:284
+msgid "Seleccione los campos para agregar:"
+msgstr "Select the fields to add"
+
+#: qxnw/dynamicTable/init.js:143 qxnw/dynamicTable/initAlterComplete.js:655
+#: qxnw/dynamicTable/initAlter.js:351
+msgid "Rótulos de fila:"
+msgstr "Row label"
+
+#: qxnw/dynamicTable/init.js:154
+msgid "Por el momento opción disponible para 3 dimensiones"
+msgstr "In this moment only 3 dimentions"
+
+#: qxnw/dynamicTable/init.js:199 qxnw/dynamicTable/initAlterComplete.js:861
+#: qxnw/dynamicTable/initAlter.js:403
+msgid "Valores:"
+msgstr "Values"
+
+#: qxnw/dynamicTable/init.js:235 qxnw/nw_admin_db/forms/f_tables.js:134
+#: qxnw/nw_admin_db/forms/f_description_table.js:118
+#: qxnw/dynamicTable/initAlterComplete.js:998
+#: qxnw/dynamicTable/initAlter.js:443 qxnw/nw_exp/main.js:290
+msgid "Data"
+msgstr "Datos"
+
+#: qxnw/dynamicTable/init.js:258 qxnw/dynamicTable/initAlterComplete.js:1094
+#: qxnw/dynamicTable/initAlter.js:505
+msgid "Filtros disponibles"
+msgstr "Filters"
+
+#: qxnw/dynamicTable/init.js:285 qxnw/dynamicTable/initAlterComplete.js:1132
+#: qxnw/dynamicTable/initAlter.js:560
+msgid "No hay filtros disponibles"
+msgstr "No filters"
+
+#: qxnw/dynamicTable/init.js:306 qxnw/dynamicTable/initAlterComplete.js:1246
+#: qxnw/dynamicTable/initAlter.js:602
+msgid "Rótulos de fila"
+msgstr "Row label"
+
+#: qxnw/dynamicTable/init.js:542 qxnw/dynamicTable/init.js:605
+#: qxnw/dynamicTable/initAlterComplete.js:1782
+#: qxnw/dynamicTable/initAlterComplete.js:1986
+#: qxnw/dynamicTable/initAlterComplete.js:1996
+#: qxnw/dynamicTable/initAlter.js:847 qxnw/dynamicTable/initAlter.js:945
+msgid "Quitar"
+msgstr "Quit"
+
+#: qxnw/dynamicTable/init.js:543 qxnw/dynamicTable/initAlterComplete.js:1783
+#: qxnw/dynamicTable/initAlter.js:848
+msgid "Tipo de operación"
+msgstr "Operation type"
+
+#: qxnw/dynamicTable/init.js:545 qxnw/dynamicTable/initAlterComplete.js:1785
+#: qxnw/dynamicTable/initAlter.js:850
+msgid "Contar"
+msgstr "Count"
+
+#: qxnw/dynamicTable/init.js:547 qxnw/navtable.js:245
+#: qxnw/dynamicTable/initAlterComplete.js:1787
+#: qxnw/dynamicTable/initAlter.js:852
+msgid "Sumar"
+msgstr "Amount"
+
+#: qxnw/dynamicTable/initAlter.js:513
+msgid "Guardar CMI"
+msgstr "Save CMI"
+
+#: qxnw/treeWidget.js:1093 qxnw/dynamicTable/initAlterComplete.js:54
+#: qxnw/lists.js:5786 qxnw/dynamicTable/initAlter.js:515
+msgid ""
+"Guardar en el cuadro de mando integral. Una forma de mantener la información de este \n"
+"\\n"
+"                                            listado disponible para estadísticas de seguimiento."
+msgstr ""
+"Save on the scorecard. One way to keep the information in this list "
+"available for tracking statistics."
+
+#: qxnw/dynamicTable/initAlterComplete.js:1162
+#: qxnw/dynamicTable/initAlter.js:589
+msgid "Gráfico"
+msgstr "Graphic"
+
+#: qxnw/dynamicTable/initAlterComplete.js:1789 qxnw/lists.js:4408
+#: qxnw/dynamicTable/initAlter.js:854
+msgid "Promedio"
+msgstr "Average"
+
+#: qxnw/dynamicTable/initAlterComplete.js:1791
+#: qxnw/dynamicTable/initAlter.js:856
+msgid "Valor absoluto"
+msgstr "Absolute value"
+
+#: qxnw/dynamicTable/initAlterComplete.js:29
+msgid "Tablas dinámicas avanzadas :: NW Group"
+msgstr "Advanced dynamic tables :: NW Group"
+
+#: qxnw/dynamicTable/initAlterComplete.js:39
+msgid "Guardar informe"
+msgstr "Save report"
+
+#: qxnw/dynamicTable/initAlterComplete.js:44
+msgid "Ver mis informes"
+msgstr "Show reports"
+
+#: qxnw/dynamicTable/initAlterComplete.js:484
+#: qxnw/dynamicTable/initAlterComplete.js:496 qxnw/nw_exp/main.js:95
+#: qxnw/nw_exp/main.js:107
+msgid "Ocultar campos"
+msgstr "Hide fields"
+
+#: qxnw/dynamicTable/initAlterComplete.js:490
+#: qxnw/dynamicTable/initAlterComplete.js:546 qxnw/nw_exp/main.js:101
+#: qxnw/nw_exp/main.js:146
+msgid "Mostrar campos"
+msgstr "Show fields"
+
+#: qxnw/dynamicTable/initAlterComplete.js:504
+msgid "Refrescar data"
+msgstr "Refresh data"
+
+#: qxnw/dynamicTable/initAlterComplete.js:512
+msgid "No se encontró el metodo {applyFilters} en el listado"
+msgstr "The {applyFilters} method was not found in the list"
+
+#: qxnw/dynamicTable/initAlterComplete.js:524 qxnw/nw_exp/main.js:122
+msgid "Ayuda"
+msgstr "Help"
+
+#: qxnw/dynamicTable/initAlterComplete.js:725
+msgid "Calculando..."
+msgstr "Calculated..."
+
+#: qxnw/dynamicTable/initAlterComplete.js:756
+msgid "Rótulos de columna:"
+msgstr "Column label"
+
+#: qxnw/dynamicTable/initAlterComplete.js:783
+msgid "Temporalmente soporte sólo a una columna"
+msgstr "Temporarily support only one column"
+
+#: qxnw/dynamicTable/initAlterComplete.js:934
+msgid "Temporalmente sólo puede usar un valor por columna"
+msgstr "Temporarily you can only use one value per column"
+
+#: qxnw/dynamicTable/initAlterComplete.js:993
+msgid "Ordenar meses"
+msgstr "Order months"
+
+#: qxnw/dynamicTable/initAlterComplete.js:993
+msgid "Ordenar por meses en caso de que sea posible"
+msgstr "Sort by months if possible"
+
+#: qxnw/dynamicTable/initAlterComplete.js:1050
+msgid ""
+"La información del listado no es apta para el ordenamiento seleccionado"
+msgstr "The information in the list is not suitable for the selected order"
+
+#: qxnw/dynamicTable/initAlterComplete.js:1793
+msgid "Porcentaje (disponible si hay columnas)"
+msgstr "Percentage (available if there are columns)"
+
+#: qxnw/dynamicTable/initAlterComplete.js:1843
+msgid "Debe seleccionar un item"
+msgstr "You must select an item"
+
+#: qxnw/dynamicTable/initAlterComplete.js:1884
+msgid "Para los cálculos por porcentaje debe tener un solo valor"
+msgstr "For calculations by percentage you must have a single value"
+
+#: qxnw/main.js:1292 qxnw/dynamicTable/options/f_grid.js:21
+msgid "Opciones generales"
+msgstr "General options"
+
+#: qxnw/dynamicTable/options/f_grid.js:33
+msgid "Mostrar títulos en X y Y"
+msgstr "Show titles in X and Y"
+
+#: qxnw/dynamicTable/options/f_grid.js:38
+msgid "Mostrar líneas verticales"
+msgstr "Show vertical lines"
+
+#: qxnw/dynamicTable/options/f_grid.js:43
+msgid "Mostrar líneas horizontales"
+msgstr "Show horizontal lines"
+
+#: qxnw/dynamicTable/options/f_grid.js:48
+msgid "Ancho barras"
+msgstr "Bar width"
+
+#: qxnw/dynamicTable/options/f_grid.js:53
+msgid "Color fondo"
+msgstr "Background color"
+
+#: qxnw/dynamicTable/options/f_grid.js:58
+msgid "Sombra"
+msgstr "Shadow"
+
+#: qxnw/dynamicTable/options/f_grid.js:63
+msgid "Color línea"
+msgstr "Line color"
+
+#: qxnw/dynamicTable/options/f_grid.js:68
+msgid "Ancho línea"
+msgstr "Line width"
+
+#: qxnw/dynamicTable/options/f_grid.js:83
+msgid "Mostrar leyenda"
+msgstr "Show legend"
+
+#: qxnw/dynamicTable/options/f_grid.js:90
+msgid "¿Dentro?"
+msgstr "¿Inside?"
+
+#: qxnw/dynamicTable/options/f_grid.js:97
+msgid "Tamaño letra X y Y (px)"
+msgstr "Size font X y Y (px)"
+
+#: qxnw/dynamicTable/options/f_grid.js:104
+msgid "Tamaño letra leyenda (1-6)"
+msgstr "Letter size legend (1-6)"
+
+#: qxnw/dynamicTable/options/f_grid.js:126
+msgid "Tamaño letra título"
+msgstr "Title font size"
+
+#: qxnw/dynamicTable/options/f_grid.js:131
+msgid "Imprimir encabezado"
+msgstr "Print header"
+
+#: qxnw/dynamicTable/options/f_grid.js:141
+msgid ""
+"Puede configurar los colores de los primeros 10 campos. El resto aparecerá "
+"en forma aleatoria. NO APLICA para el informe en pastel."
+msgstr ""
+"You can set the colors of the first 10 fields. The rest will appear "
+"randomly. DO NOT APPLY for the cake report."
+
+#: qxnw/dynamicTable/options/f_grid.js:182
+msgid "Volver"
+msgstr "Back"
+
+#: qxnw/dynamicTable/options/f_grid.js:183
+msgid "Aplicar"
+msgstr "Apply"
+
+#: qxnw/errorReporting.js:143
+msgid "Respuesta del servidor:"
+msgstr "Server answer:"
+
+#: qxnw/errorReporting.js:151
+msgid "Para esta función sólo se admiten conexiones por HTTPS (puerto 443)"
+msgstr "Only HTTPS connections are allowed for this function (port 443)"
+
+#: qxnw/errorReporting.js:155
+msgid "Una función no está compilada correctamente"
+msgstr "A function is not compiled correctly"
+
+#: qxnw/errorReporting.js:159
+msgid ""
+"Se ha presentado un error en la conexión. Al parecer es demasiado lenta"
+msgstr "An error has occurred in the connection. It seems too slow"
+
+#: qxnw/errorReporting.js:163
+msgid ""
+"Hay una llave duplicada que viola la consistencia del registro. Uno de los "
+"campos que está ingresando debe ser único"
+msgstr ""
+"There is a duplicate key that violates the consistency of the record. One of"
+" the fields you are entering must be unique"
+
+#: qxnw/errorReporting.js:167
+msgid "Hay una columna que es ambigua"
+msgstr "There is a column that is ambiguous"
+
+#: qxnw/errorReporting.js:171
+msgid "No tiene permisos para la tabla"
+msgstr "You do not have permissions for the table"
+
+#: qxnw/errorReporting.js:175
+msgid ""
+"Hay un problema de sintaxis al consultar, actualizar o insertar un registro."
+" Verifique que esté ingresando los valores numéricos/fechas/horas "
+"correctamente o que no tenga campos vacíos."
+msgstr ""
+"There is a syntax problem when consulting, updating or inserting a record. "
+"Verify that you are entering the numeric values / dates / times correctly or"
+" that you do not have empty fields."
+
+#: qxnw/errorReporting.js:179
+msgid "No posee los permisos suficientes en una carpeta del servidor."
+msgstr "You do not have enough permissions in a server folder."
+
+#: qxnw/errorReporting.js:183 qxnw/errorReporting.js:187
+msgid ""
+"Se ha presentado un error en la conexión y se ha abortado desde el servidor."
+" Al parecer es demasiado lenta. Inténtelo de nuevo."
+msgstr ""
+"An error has occurred in the connection and has been aborted from the "
+"server. Apparently it is too slow. Try again."
+
+#: qxnw/errorReporting.js:191
+msgid ""
+"Se ha presentado un error al realizar la consulta en su sintaxis. Pruebe "
+"verificando los filtros de búsqueda. Al parecer su conexión es demasiado "
+"lenta. Por favor inténtelo de nuevo."
+msgstr ""
+"An error has occurred when performing the query in its syntax. Try checking "
+"the search filters. Apparently your connection is too slow. Please try "
+"again."
+
+#: qxnw/errorReporting.js:195
+msgid ""
+"Está intentando ingresar un valor tipo FECHA con un dato inválido. Por favor"
+" revise los campos de fecha y vuelva a intentarlo."
+msgstr ""
+"You are trying to enter a DATE type value with an invalid data. Please check"
+" the date fields and try again."
+
+#: qxnw/errorReporting.js:199
+msgid ""
+"Está intentando ingresar un valor tipo NÚMERO con un dato inválido. Por "
+"favor revise los campos numéricos y vuelva a intentarlo."
+msgstr ""
+"You are trying to enter a NUMBER type value with an invalid data. Please "
+"check the numeric fields and try again."
+
+#: qxnw/errorReporting.js:203
+msgid ""
+"Está intentando ingresar un valor tipo moneda con decimales con un dato "
+"inválido. Por favor revise los campos numéricos y vuelva a intentarlo."
+msgstr ""
+"You are trying to enter a currency value with decimals with invalid data. "
+"Please check the numeric fields and try again."
+
+#: qxnw/errorReporting.js:207
+msgid ""
+"Está intentando ingresar un valor más largo de lo permitido en la base de "
+"datos. Por favor revise los campos y vuelva a intentarlo."
+msgstr ""
+"You are trying to enter a value that is longer than what is allowed in the "
+"database. Please review the fields and try again."
+
+#: qxnw/errorReporting.js:221
+msgid ""
+"Su conexión a internet es deficiente. Por favor contacte a su proveedor de "
+"servicios"
+msgstr ""
+"Your internet connection is poor. Please contact your service provider"
+
+#: qxnw/errorReporting.js:225
+msgid ""
+"El tiempo máximo permitido de consulta a expirado. Puede aumentarlo por "
+"Configuración->Configuración de comportamientos"
+msgstr ""
+"The maximum time allowed for consultation expired. You can increase it by "
+"Settings-> Configure behavior"
+
+#: qxnw/errorReporting.js:229
+msgid ""
+"Debe ingresar correctamente al programa para ver esta impresión. Intente "
+"refrescando el navegador"
+msgstr ""
+"You must correctly enter the program for this impression. Try refreshing the"
+" browser"
+
+#: qxnw/errorreporting/form.js:24
+msgid "Enviar comentarios"
+msgstr "Send comments"
+
+#: qxnw/errorreporting/form.js:41
+msgid ""
+"Se ha generado una novedad en el sistema <br /><br />Comentarios si desea "
+"generar un ticket:"
+msgstr ""
+"A novelty has been generated in the system <br /> <br /> Comments if you "
+"want to generate a ticket:"
+
+#: qxnw/errorreporting/form.js:47
+msgid ""
+"Escriba sus comentarios o la acción que realizó en el momento de la novedad"
+msgstr "Write your comments or the action you took at the time of the novelty"
+
+#: qxnw/errorreporting/form.js:55
+msgid "Enviar captura de pantalla"
+msgstr "Send screenshot"
+
+#: qxnw/errorreporting/form.js:79
+msgid "Preguntar antes de enviar"
+msgstr "Ast before send"
+
+#: qxnw/errorreporting/form.js:92
+msgid ""
+"Acceda a nuestra sección de <a style='cursor: pointer; color: #0099ff; ' target='_blank' href='https://www.gruponw.com/politicas'>políticas</a> para solicitar cambios <br />\n"
+"\\n"
+"                    en el contenido por motivos legales. Sus comentarios e <br /> información adicional serán enviadas a las centrales de <br />\n"
+"\\n"
+"                    <b>Grupo NW</b>"
+msgstr ""
+"Access our section of <a style = 'cursor: pointer; color: # 0099ff; 'target =' _ blank 'href =' https: //www.gruponw.com/politicas'> policies </a> to request changes <br />\n"
+"\\ n in the content for legal reasons. Your comments and additional information will be sent to the central offices of <br />\n"
+"\\ n <b> NW Group </b>"
+
+#: qxnw/errorreporting/form.js:103
+msgid "Ver detalles específicos para desarrolladores"
+msgstr "See specific details for developers"
+
+#: qxnw/examples/digitalPersona.js:22
+msgid "Captura biométrico Digital Persona :: QXNW "
+msgstr "Digital Person Biometric Capture :: QXNW"
+
+#: qxnw/examples/digitalPersona.js:56
+msgid "Seleccione dispositivo"
+msgstr "Select device"
+
+#: qxnw/examples/digitalPersona.js:61
+msgid "Calidad muestra"
+msgstr "Sample quality"
+
+#: qxnw/examples/digitalPersona.js:67
+msgid "En espera..."
+msgstr "On hold..."
+
+#: qxnw/examples/digitalPersona.js:85
+msgid "Capturar huella"
+msgstr "Capture footprint"
+
+#: qxnw/examples/digitalPersona.js:97 qxnw/forms.js:4950
+#: qxnw/table/table.js:873
+msgid "Aceptar"
+msgstr "Accept"
+
+#: qxnw/examples/digitalPersona.js:141
+msgid "Excelente"
+msgstr "Excelent"
+
+#: qxnw/examples/digitalPersona.js:144
+msgid "Sin imagen"
+msgstr "No image"
+
+#: qxnw/examples/digitalPersona.js:147
+msgid "Mucha luz"
+msgstr "Too much light"
+
+#: qxnw/examples/digitalPersona.js:150
+msgid "Muy oscura"
+msgstr "Too dark"
+
+#: qxnw/examples/digitalPersona.js:153
+msgid "Borrosa"
+msgstr "Blurry"
+
+#: qxnw/examples/digitalPersona.js:156
+msgid "Bajo contraste"
+msgstr "Low contrast"
+
+#: qxnw/examples/digitalPersona.js:159
+msgid "No es una muestra completa"
+msgstr "It is not a complete sample"
+
+#: qxnw/examples/digitalPersona.js:162
+msgid "No está en el centro"
+msgstr "It is not in the center"
+
+#: qxnw/examples/digitalPersona.js:165
+msgid "No es un dedo"
+msgstr "It is not a finger"
+
+#: qxnw/examples/digitalPersona.js:168
+msgid "Muy arriba"
+msgstr "Very high"
+
+#: qxnw/examples/digitalPersona.js:171
+msgid "Muy abajo"
+msgstr "Very low"
+
+#: qxnw/examples/digitalPersona.js:174
+msgid "Muy a la izquierda"
+msgstr "Very on the left"
+
+#: qxnw/examples/digitalPersona.js:177
+msgid "Muy a la derecha"
+msgstr "Very on the right"
+
+#: qxnw/examples/digitalPersona.js:180
+msgid "Muestra extraña"
+msgstr "Strange sample"
+
+#: qxnw/examples/digitalPersona.js:183
+msgid "Muy rápido"
+msgstr "Very fast"
+
+#: qxnw/examples/digitalPersona.js:186
+msgid "Sesgada"
+msgstr "Skewed"
+
+#: qxnw/examples/digitalPersona.js:189
+msgid "Muy corta"
+msgstr "Very short"
+
+#: qxnw/examples/digitalPersona.js:192
+msgid "Muy despacio"
+msgstr "Very slow"
+
+#: qxnw/examples/digitalPersona.js:195
+msgid "Movimiento inverso"
+msgstr "Reverse movement"
+
+#: qxnw/examples/digitalPersona.js:198
+msgid "Muy oprimido"
+msgstr "Very oppressed"
+
+#: qxnw/examples/digitalPersona.js:201
+msgid "Muy suave"
+msgstr "Very soft"
+
+#: qxnw/examples/digitalPersona.js:204
+msgid "Dedo húmedo"
+msgstr "Wet finger"
+
+#: qxnw/examples/digitalPersona.js:207
+msgid "No parece un dedo"
+msgstr "It does not look like a finger"
+
+#: qxnw/examples/digitalPersona.js:210
+msgid "Muy pequeña"
+msgstr "Too small"
+
+#: qxnw/examples/digitalPersona.js:213
+msgid "Girar más"
+msgstr "Turn more"
+
+#: qxnw/examples/digitalPersona.js:300
+msgid "Tomando muestra..."
+msgstr "Taking sample ..."
+
+#: qxnw/examples/f_testing.js:6
+msgid "Psicologia Antecedentes"
+msgstr "Psychology Background"
+
+#: qxnw/examples/f_testing.js:140 qxnw/forms.js:2385
+msgid "Seleccione"
+msgstr ""
+
+#: qxnw/examples/f_testing.js:141
+msgid "SI"
+msgstr "YES"
+
+#: qxnw/examples/f_testing.js:142
+msgid "NO"
+msgstr "NOT"
+
+#: qxnw/examples/form.js:155 qxnw/examples/form.js:182
+#: qxnw/widgets/selectListCheck.js:295 qxnw/widgets/list.js:297
+msgid "Copiar"
+msgstr "Copy"
+
+#: qxnw/examples/form.js:158 qxnw/examples/form.js:185
+msgid "Normal"
+msgstr "Normal"
+
+#: qxnw/examples/form.js:164 qxnw/examples/form.js:191
+msgid "Moderado"
+msgstr "Moderate"
+
+#: qxnw/examples/form.js:170 qxnw/examples/form.js:197
+msgid "Severo"
+msgstr "Several"
+
+#: qxnw/examples/formListEdit.js:33 qxnw/examples/form_light.js:1296
+#: qxnw/examples/formNav.js:279
+msgid "Id"
+msgstr "Id"
+
+#: qxnw/examples/form_payu.js:23 qxnw/nw_admin_db/forms/f_ordenar.js:63
+#: qxnw/nw_admin_db/forms/f_tables.js:53
+#: qxnw/nw_admin_db/forms/f_tables.js:155 qxnw/nw_cron/f_cronNe.js:31
+#: qxnw/nw_admin_db/forms/f_new_table.js:90 qxnw/examples/formListEdit.js:39
+#: qxnw/main.js:3187 qxnw/nw_excel_reports/forms/f_ne_er.js:73
+msgid "Descripción"
+msgstr "Description"
+
+#: qxnw/examples/formListEdit.js:45
+msgid "Servicio"
+msgstr ""
+
+#: qxnw/examples/formListEdit.js:51
+msgid "Unidad Servicio"
+msgstr ""
+
+#: qxnw/examples/formListEdit.js:57
+msgid "Tarifa Ministerio"
+msgstr ""
+
+#: qxnw/examples/formListEdit.js:75
+#: qxnw/nw_file_manager/trees/vista_general.js:1065
+#: qxnw/nw_file_manager/trees/vista_general.js:1112
+msgid "Ruta"
+msgstr "Path"
+
+#: qxnw/examples/formListEdit.js:80
+msgid "Origen"
+msgstr ""
+
+#: qxnw/examples/formListEdit.js:86
+msgid "Destino"
+msgstr ""
+
+#: qxnw/examples/formListEdit.js:92
+msgid "% Tolerancia"
+msgstr ""
+
+#: qxnw/examples/formListEdit.js:98
+msgid "Consolidable"
+msgstr ""
+
+#: qxnw/examples/formListEdit.js:115
+msgid "Fecha Inicial"
+msgstr ""
+
+#: qxnw/examples/formListEdit.js:121
+msgid "Fecha Final"
+msgstr ""
+
+#: qxnw/examples/formListEdit.js:127
+msgid "Vigencia días"
+msgstr ""
+
+#: qxnw/examples/formListEdit.js:145
+msgid "Clase Vehiculo"
+msgstr ""
+
+#: qxnw/examples/formListEdit.js:151
+msgid "Tipo Remolque"
+msgstr ""
+
+#: qxnw/examples/form_payu.js:29 qxnw/lists.js:6053
+#: qxnw/examples/formListEdit.js:157
+msgid "Valor"
+msgstr "Value"
+
+#: qxnw/examples/formListEdit.js:176
+msgid "Tipo Vehiculo ID"
+msgstr ""
+
+#: qxnw/examples/formListEdit.js:180
+msgid "Tipo Vehiculo"
+msgstr ""
+
+#: qxnw/examples/formListEdit.js:184
+msgid "Flete Conductor Valor Máximo"
+msgstr ""
+
+#: qxnw/examples/formListEdit.js:191
+msgid "% Máximo Anticipo"
+msgstr ""
+
+#: qxnw/security/entradas_salidas/l_entradas_salidas.js:36
+#: qxnw/security/registro/l_registro.js:48
+#: qxnw/nw_printer/lists/l_printer.js:66 qxnw/nw_cron/l_cron.js:60
+#: qxnw/examples/formListEdit.js:202 qxnw/nw_exp/forms/f_addFieldCondi.js:137
+#: qxnw/nw_exp/forms/f_addField.js:117 qxnw/nw_exp/forms/f_addFilter.js:72
+#: qxnw/nw_exp/forms/f_addFilter.js:177
+msgid "Fecha"
+msgstr "Date"
+
+#: qxnw/examples/formListEdit.js:214
+msgid "Procedimientos"
+msgstr ""
+
+#: qxnw/examples/formListEdit.js:216
+msgid "Vehiculos"
+msgstr ""
+
+#: qxnw/examples/formNav.js:283
+msgid "<strong style='margin-left: 30px;'>Movimiento</strong>"
+msgstr ""
+
+#: qxnw/examples/formNav.js:289 qxnw/examples/formNav.js:316
+msgid "<strong style='margin-left: 9px;'>Movilidad</strong>"
+msgstr ""
+
+#: qxnw/examples/formNav.js:298 qxnw/examples/formNav.js:325
+msgid "&nbsp;&nbsp;<strong>Articular (RM)</strong>"
+msgstr ""
+
+#: qxnw/examples/formNav.js:308 qxnw/examples/formNav.js:335
+msgid "<strong style='margin-left: 2px;'>Fuerza Muscular</strong>"
+msgstr ""
+
+#: qxnw/navtable.js:1497 qxnw/examples/formNav.js:538
+msgid "No hay registros para exportar"
+msgstr "There are no records to export"
+
+#: qxnw/examples/form_light.js:94
+msgid "Ubicación del grafico"
+msgstr "Location of the graph"
+
+#: qxnw/examples/form_light.js:118
+msgid "LABEL"
+msgstr ""
+
+#: qxnw/examples/form_light.js:186
+msgid ""
+"Aquí podrás configurar los comportamientos de ocultar o mostrar campos o "
+"grupos de acuerdo a los valores seleccionados"
+msgstr ""
+
+#: qxnw/examples/form_light.js:546
+msgid "SelectTokenField"
+msgstr ""
+
+#: qxnw/examples/form_light.js:551
+msgid "SelectTokenField 2"
+msgstr ""
+
+#: qxnw/examples/form_light.js:556
+msgid "SelectTokenField 3"
+msgstr ""
+
+#: qxnw/examples/form_light.js:561
+msgid "Telefono Acompañante"
+msgstr ""
+
+#: qxnw/examples/form_light.js:567
+msgid "Contrato y/o Convenio"
+msgstr ""
+
+#: qxnw/nw_forms_designer/terminal.js:57 qxnw/nw_forms_designer/terminal.js:62
+#: qxnw/examples/form_light.js:572
+msgid "Cámara"
+msgstr "Camera"
+
+#: qxnw/examples/form_light.js:577 qxnw/examples/form_light.js:609
+msgid "Time"
+msgstr "Time"
+
+#: qxnw/examples/form_light.js:583
+msgid "SLC"
+msgstr ""
+
+#: qxnw/examples/form_light.js:588
+msgid "Direccion"
+msgstr ""
+
+#: qxnw/examples/form_light.js:593
+msgid "Token Field"
+msgstr ""
+
+#: qxnw/examples/form_light.js:598
+msgid "Money"
+msgstr ""
+
+#: qxnw/examples/form_light.js:604
+msgid "Enfasis Evaluación"
+msgstr ""
+
+#: qxnw/examples/form_light.js:614
+msgid "Liquidacion"
+msgstr ""
+
+#: qxnw/examples/form_light.js:619
+msgid "Nombre Acompañante"
+msgstr ""
+
+#: qxnw/examples/form_light.js:625
+msgid "Empresa Contratante"
+msgstr ""
+
+#: qxnw/examples/form_light.js:630
+msgid "Misión"
+msgstr ""
+
+#: qxnw/examples/form_light.js:635
+msgid "Nombre Cargo"
+msgstr ""
+
+#: qxnw/examples/form_light.js:640
+msgid "Autorización"
+msgstr ""
+
+#: qxnw/examples/form_light.js:645
+msgid "Ver Empresa"
+msgstr ""
+
+#: qxnw/examples/form_light.js:650
+msgid "Crear Empresa Misión"
+msgstr ""
+
+#: qxnw/examples/form_light.js:655
+msgid "Tipo Evaluación"
+msgstr ""
+
+#: qxnw/examples/form_light.js:660
+msgid "Prioridad Ingreso"
+msgstr ""
+
+#: qxnw/examples/form_light.js:665
+msgid "Radiografía"
+msgstr ""
+
+#: qxnw/examples/form_light.js:670
+msgid "Exámenes"
+msgstr ""
+
+#: qxnw/examples/form_light.js:1091 qxnw/examples/form_light.js:1398
+msgid "Físicos"
+msgstr ""
+
+#: qxnw/examples/form_light.js:1097 qxnw/examples/form_light.js:1404
+msgid "Químicos"
+msgstr ""
+
+#: qxnw/examples/form_light.js:1103 qxnw/examples/form_light.js:1410
+msgid "Biomecánicos"
+msgstr ""
+
+#: qxnw/examples/form_light.js:1109 qxnw/examples/form_light.js:1416
+msgid "Biológicos"
+msgstr ""
+
+#: qxnw/examples/form_light.js:1115 qxnw/examples/form_light.js:1422
+msgid "Psicosocial"
+msgstr ""
+
+#: qxnw/main.js:1215 qxnw/main.js:1288 qxnw/examples/form_light.js:1121
+#: qxnw/examples/form_light.js:1428
+msgid "Seguridad"
+msgstr "Security"
+
+#: qxnw/examples/form_light.js:1300
+msgid "<div> Empresa</div>"
+msgstr ""
+
+#: qxnw/examples/form_light.js:1355
+msgid "Observación"
+msgstr ""
+
+#: qxnw/examples/form_light.js:1383
+msgid "Parte del Cuerpo"
+msgstr ""
+
+#: qxnw/examples/form_payu.js:17
+msgid "Referencia"
+msgstr ""
+
+#: qxnw/examples/form_payu.js:35
+msgid "Api Key"
+msgstr ""
+
+#: qxnw/examples/form_payu.js:41
+msgid "Api Login"
+msgstr ""
+
+#: qxnw/examples/form_payu.js:47
+msgid "Merchant Id"
+msgstr ""
+
+#: qxnw/examples/form_payu.js:53
+msgid "En modo pruebas"
+msgstr "In test mode"
+
+#: qxnw/examples/form_payu.js:59
+msgid "URL de Pagos"
+msgstr "Payment URL"
+
+#: qxnw/examples/form_payu.js:64
+msgid "URL de Reportes"
+msgstr "Reports URL"
+
+#: qxnw/examples/form_payu.js:69
+msgid "URL de Suscripciones"
+msgstr "Subscription URL"
+
+#: qxnw/examples/form_payu.js:74
+msgid "Cuenta PaYU"
+msgstr "PaYU account"
+
+#: qxnw/examples/form_payu.js:89 qxnw/examples/form_payu.js:153
+msgid "Nombre y apellido"
+msgstr "Name and surname"
+
+#: qxnw/examples/form_payu.js:94 qxnw/examples/form_payu.js:159
+msgid "Correo"
+msgstr "E-mail"
+
+#: qxnw/examples/form_payu.js:99 qxnw/examples/form_payu.js:164
+#: qxnw/main.js:3181
+msgid "Teléfono"
+msgstr "Telephone"
+
+#: qxnw/examples/form_payu.js:104 qxnw/examples/form_payu.js:169
+msgid "Identificación"
+msgstr ""
+
+#: qxnw/examples/form_payu.js:109 qxnw/examples/form_payu.js:174
+msgid "Dirección principal"
+msgstr ""
+
+#: qxnw/examples/form_payu.js:114 qxnw/examples/form_payu.js:179
+msgid "Dirección secundaria"
+msgstr ""
+
+#: qxnw/examples/form_payu.js:129 qxnw/examples/form_payu.js:194
+msgid "Pais"
+msgstr ""
+
+#: qxnw/examples/form_payu.js:134 qxnw/examples/form_payu.js:204
+msgid "Teléfono fijo"
+msgstr ""
+
+#: qxnw/examples/form_payu.js:139 qxnw/examples/form_payu.js:199
+msgid "Código postal"
+msgstr ""
+
+#: qxnw/examples/form_payu.js:218
+msgid "Número tarjeta"
+msgstr ""
+
+#: qxnw/examples/form_payu.js:224
+msgid "Fecha vencimiento"
+msgstr ""
+
+#: qxnw/examples/form_payu.js:230
+msgid "Código seguridad"
+msgstr ""
+
+#: qxnw/examples/form_payu.js:236
+msgid "Banco"
+msgstr ""
+
+#: qxnw/examples/form_payu.js:242
+msgid "Cuotas"
+msgstr ""
+
+#: qxnw/examples/form_payu.js:315
+msgid "Respuesta"
+msgstr ""
+
+#: qxnw/examples/form_payu.js:346
+msgid "La identificación es requerida"
+msgstr ""
+
+#: qxnw/examples/listEdit.js:38
+msgid "hola andres"
+msgstr ""
+
+#: qxnw/examples/listEdit.js:83 qxnw/examples/listEdit.js:90
+msgid "test header tool tip"
+msgstr ""
+
+#: qxnw/forms.js:129 qxnw/forms.js:611
+msgid "¿Está segur@ de cerrar la ventana?"
+msgstr "Are you sure you close the window?"
+
+#: qxnw/forms.js:1123 qxnw/forms.js:1239
+msgid "Cerrar"
+msgstr "Close"
+
+#: qxnw/forms.js:1717
+msgid "Detalle"
+msgstr "Detail"
+
+#: qxnw/forms.js:2339
+msgid "Nuevo/Editar "
+msgstr "New/edit"
+
+#: qxnw/nw_sync/main.js:344 qxnw/nw_sync/main.js:410
+#: qxnw/forms/permissions.js:602 qxnw/forms.js:2665 qxnw/lists.js:3356
+#: qxnw/lists.js:4791 qxnw/nw_exp/main.js:54 qxnw/nw_exp/main.js:612
+#: qxnw/nw_exp/main.js:698
+msgid "Editar"
+msgstr "Edit"
+
+#: qxnw/forms.js:2719 qxnw/forms.js:2763
+msgid "¿Está segur@ de eliminar definitivamente el registro?"
+msgstr "Is Secure, definitely delete the record?"
+
+#: qxnw/forms.js:3656
+msgid "Para un tipo GRID debe agregar la columna (i.e column: 0) "
+msgstr "For a GRID type you must add the column (i.e column: 0)"
+
+#: qxnw/forms.js:3660
+msgid "Para un tipo GRID debe agregar la row (i.e row: 0) "
+msgstr "For a GRID type you must add the column (i.e column: 0)"
+
+#: qxnw/forms.js:3763
+msgid "Se requiere información mínima "
+msgstr "Minimum information is required "
+
+#: qxnw/forms.js:3779 qxnw/forms.js:3810
+msgid " para el campo "
+msgstr " for the field "
+
+#: qxnw/treeWidget.js:464 qxnw/treeWidget.js:466 qxnw/forms.js:3823
+#: qxnw/forms.js:3825 qxnw/lists.js:663 qxnw/lists.js:665
+msgid " no puede estar vacío."
+msgstr " can't be empty"
+
+#: qxnw/forms.js:3926
+msgid " no es válido."
+msgstr " is not valid."
+
+#: qxnw/forms.js:3982
+msgid " debe ser un número con estructura numérica lógica"
+msgstr " it must be a number with a logical number structure"
+
+#: qxnw/treeWidget.js:538 qxnw/forms.js:4005 qxnw/lists.js:740
+msgid " debe ser un número entero, sin decimales"
+msgstr " should be an integer, without decimals"
+
+#: qxnw/treeWidget.js:548 qxnw/forms.js:4016 qxnw/lists.js:750
+msgid " debe ser un texto"
+msgstr " should be a text"
+
+#: qxnw/treeWidget.js:558 qxnw/forms.js:4027 qxnw/forms.js:4477
+#: qxnw/forms.js:4708 qxnw/lists.js:760
+msgid " debe ser un correo electrónico válido"
+msgstr "must be an electronic valid mail"
+
+#: qxnw/forms.js:4178 qxnw/forms.js:4180
+msgid "Subir archivo(s)"
+msgstr "Upload file (s)"
+
+#: qxnw/forms.js:5392
+msgid "Palabras: 0"
+msgstr "Words: 0"
+
+#: qxnw/forms.js:5450
+msgid "Letras: 0"
+msgstr "Letters: 0"
+
+#: qxnw/forms.js:5939
+msgid "Editor"
+msgstr "Editor"
+
+#: qxnw/forms.js:5946
+msgid "Vista WYSIWYG :: QXNW"
+msgstr "View WYSIWYG :: QXNW"
+
+#: qxnw/forms/behavior.js:27
+msgid "Formularios"
+msgstr "Forms"
+
+#: qxnw/forms/behavior.js:34
+msgid "Buscar al escribir"
+msgstr "Search when writing"
+
+#: qxnw/nw_printer/forms/f_printer.js:278 qxnw/forms/behavior.js:42
+#: qxnw/main.js:1202
+msgid "Configuraciones generales"
+msgstr "General configurations"
+
+#: qxnw/forms/behavior.js:49
+msgid "Mostrar/ocultar menú izquierdo automáticamente"
+msgstr "Show / hide left menu automatically"
+
+#: qxnw/forms/behavior.js:54
+msgid "Minimizar menú izquierdo en las vistas operativas automáticamente"
+msgstr "Minimize left menu in operational views automatically"
+
+#: qxnw/forms/behavior.js:59
+msgid "Sonido al iniciar el programa"
+msgstr "Sound at startup"
+
+#: qxnw/forms/behavior.js:64
+msgid "Ocultar el texto de los botones"
+msgstr "Hidde text in buttons"
+
+#: qxnw/forms/behavior.js:69
+msgid "Agitar al validar formularios"
+msgstr "Shake on form validate"
+
+#: qxnw/forms/behavior.js:74
+msgid ""
+"Guardar configuraciones de listados (ancho de columnas, orden, columnas "
+"visibles)"
+msgstr "Save lists configurations (columns width, order, columns visibles)"
+
+#: qxnw/forms/behavior.js:79
+msgid "Guardar posiciones de las ventanas (medidas, posición)"
+msgstr "Save windows positions (size, position)"
+
+#: qxnw/forms/behavior.js:84
+msgid "Tiempo máximo de espera por consulta (120 segundos por defecto)"
+msgstr "Maximum waiting time per query (120 seconds by default)"
+
+#: qxnw/forms/behavior.js:90
+msgid "Abrir página de inicio al empezar el programa"
+msgstr "Open start page on start program"
+
+#: qxnw/forms/behavior.js:105
+msgid "Tiempo de actualización del chat"
+msgstr "Actualization time chat"
+
+#: qxnw/forms/behavior.js:110
+msgid "Tiempo de actualización del estado de usuarios chat"
+msgstr "Time status update users chat"
+
+#: qxnw/forms/behavior.js:115
+msgid "Abrir el chat al inicio"
+msgstr "Open chat at start"
+
+#: qxnw/forms/behavior.js:120
+msgid "Sonidos al recibir mensajes"
+msgstr "Sounds when receiving messages"
+
+#: qxnw/forms/behavior.js:128 qxnw/main.js:2798
+msgid "Alertas"
+msgstr "Alerts"
+
+#: qxnw/forms/behavior.js:135
+msgid "Abrir las alertas al inicio"
+msgstr "Open alerts on start"
+
+#: qxnw/forms/behavior.js:143
+msgid "Tablas"
+msgstr "Tables"
+
+#: qxnw/forms/behavior.js:150
+msgid "Máximo número de filas mostradas por defecto"
+msgstr "Max shown rows on default"
+
+#: qxnw/forms/behavior.js:158
+msgid "Otros"
+msgstr "Others"
+
+#: qxnw/forms/behavior.js:165
+msgid "Mostrar una notificación al validar"
+msgstr "Show a notification when validating"
+
+#: qxnw/forms/behavior.js:170
+msgid "Mostrar el logo"
+msgstr "Show logo"
+
+#: qxnw/forms/behavior.js:175
+msgid "Estilo del menú"
+msgstr "Menu style"
+
+#: qxnw/forms/behavior.js:180
+msgid "No abrir nuevas pestañas si ya están abiertas"
+msgstr "Don't open new pages if already opened"
+
+#: qxnw/forms/behavior.js:188 qxnw/main.js:1196 qxnw/main.js:1271
+msgid "Notificaciones"
+msgstr "Notifications"
+
+#: qxnw/forms/behavior.js:195
+msgid "Activar notificaciones"
+msgstr "Start notifications"
+
+#: qxnw/forms/behavior.js:200
+msgid "Tipo de notificaciones"
+msgstr "Notifications type"
+
+#: qxnw/forms/behavior.js:205
+msgid "Tiempo para actualizar notificaciones"
+msgstr "Time to update notifications"
+
+#: qxnw/forms/behavior.js:210
+msgid "Sonido en notificaciones"
+msgstr "Sound on notifications"
+
+#: qxnw/forms/behavior.js:215
+msgid "Animación en notificaciones"
+msgstr "Animation on notifications"
+
+#: qxnw/forms/behavior.js:312 qxnw/locale/all.js:66
+msgid ""
+"Configuración guardada correctamente. Para aplicar algunos cambios, es "
+"posible que deba actualizar el navegador."
+msgstr ""
+"Configuration saved. To apply some changes, isposible that must update your "
+"browser."
+
+#: qxnw/forms/cronometer.js:23 qxnw/main.js:2934
+msgid "Cronómetro"
+msgstr "Cronometer"
+
+#: qxnw/forms/cronometer.js:92
+msgid "Reiniciar"
+msgstr "Restart"
+
+#: qxnw/forms/notes.js:29
+msgid "Mis notas"
+msgstr "Notes"
+
+#: qxnw/forms/notes.js:204
+msgid "La nota no está vacía. ¿Estás segur@ de borrarla?"
+msgstr "The note is not empty. Are you sure to delete it?"
+
+#: qxnw/forms/notes.js:363
+msgid "Nueva nota"
+msgstr "New note"
+
+#: qxnw/forms/notes.js:366
+msgid "Agregar notas"
+msgstr "Add notes"
+
+#: qxnw/forms/permissionsProducts.js:47 qxnw/forms/permissions.js:63
+msgid "Copiar perfil"
+msgstr "Copy profile"
+
+#: qxnw/forms/permissions.js:69
+msgid "Guardar"
+msgstr "Save"
+
+#: qxnw/forms/permissions.js:144
+msgid "Vista de menú"
+msgstr "Menu view"
+
+#: qxnw/forms/permissions.js:217
+msgid "Permisos dinámicos"
+msgstr "Dinamic permissions"
+
+#: qxnw/forms/permissions.js:287
+msgid "Seleccione un item"
+msgstr "Select an item"
+
+#: qxnw/forms/permissions.js:346
+msgid "Usuarios asociados:"
+msgstr "Associated users:"
+
+#: qxnw/forms/permissions.js:588
+msgid "Crear"
+msgstr "Create"
+
+#: qxnw/forms/permissions.js:595
+msgid "Consultar"
+msgstr "Consult"
+
+#: qxnw/forms/permissions.js:637 qxnw/lists.js:4865
+#: qxnw/nw_import_data/imp_chars_len.js:136 qxnw/nw_import_data/main.js:185
+#: qxnw/nw_import_data/main.js:289
+msgid "Importar"
+msgstr "Import"
+
+#: qxnw/forms/permissions.js:651
+msgid "Ocultar columnas"
+msgstr "Hide columns"
+
+#: qxnw/forms/permissionsProducts.js:43
+msgid "Copiar de"
+msgstr "Copy from"
+
+#: qxnw/forms/permissionsProducts.js:52
+msgid "Perfil copiado correctamente"
+msgstr "Profile copied correctly"
+
+#: qxnw/security/f_security_keys.js:7 qxnw/forms/securityQuestions.js:23
+msgid "Configuraciones de seguridad"
+msgstr "Security configurations"
+
+#: qxnw/forms/securityQuestions.js:27
+msgid "Su correo electrónico de recuperación"
+msgstr "Your recovery email"
+
+#: qxnw/forms/securityQuestions.js:35
+msgid "Actualice su correo"
+msgstr "Update your mail"
+
+#: qxnw/forms/securityQuestions.js:47 qxnw/forms/securityQuestions.js:88
+msgid "Actualice su correo de contacto"
+msgstr "Update your contact email"
+
+#: qxnw/forms/securityQuestions.js:53 qxnw/forms/securityQuestions.js:94
+msgid "Correo electrónico"
+msgstr "Email"
+
+#: qxnw/forms/securityQuestions.js:85
+msgid "¿Desea configurar su correo?"
+msgstr "Do you want to configure your mail?"
+
+#: qxnw/forms/smtp.js:23
+msgid "Configuración de SMTP"
+msgstr "SMTP configurations"
+
+#: qxnw/nw_admin_db/forms/f_server_db.js:32
+#: qxnw/nw_admin_db/forms/f_server.js:30 qxnw/forms/smtp.js:28
+msgid "Host"
+msgstr "Host"
+
+#: qxnw/forms/smtp.js:34
+msgid "Debug de errores"
+msgstr "Error debug"
+
+#: qxnw/forms/smtp.js:37
+msgid ""
+"Valores diferentes a 0 únicamente para pruebas de desarrollo. Se recomienda "
+"mantener este valor en cero(0) para evitar errores en el sistema."
+msgstr ""
+"Values other than 0 only for development testing. It is recommended to keep "
+"this value to zero (0) to prevent system errors."
+
+#: qxnw/forms/smtp.js:41
+msgid "¿Requiere autenticación?"
+msgstr "Does it require authentication?"
+
+#: qxnw/forms/smtp.js:46
+msgid "Tipo de autenticación"
+msgstr "Autentication type"
+
+#: qxnw/forms/smtp.js:51
+msgid "Puerto"
+msgstr "Port"
+
+#: qxnw/forms/smtp.js:66
+msgid "Enviado desde"
+msgstr "Send from"
+
+#: qxnw/forms/smtp.js:69
+msgid ""
+"Configuración de correo desde el que se enviarán todos los comunicados. "
+"También quedará como correo de respuesta"
+msgstr ""
+"Mail settings from which all communications are sent. He also remain as "
+"reply mail"
+
+#: qxnw/forms/smtp.js:95
+msgid "Configuración guardada"
+msgstr "Saved configurations"
+
+#: qxnw/treeWidget.js:385 qxnw/listEdit.js:664 qxnw/lists.js:8210
+msgid "Total páginas: "
+msgstr "Total pages: "
+
+#: qxnw/listEdit.js:847 qxnw/lists.js:8392 qxnw/lists.js:8396
+msgid ", Total no posible para esta columna"
+msgstr ", Total no posible for this column"
+
+#: qxnw/listEdit.js:1192
+msgid "Debe instanciar primero las columnas antes de la función {setListEdit}"
+msgstr "Instanciate first columns before function {setListEdit}"
+
+#: qxnw/listEdit.js:1278
+msgid "¿Desea eliminar los registros seleccionados?"
+msgstr "Do you want to remove the selected records?"
+
+#: qxnw/treeWidget.js:697 qxnw/lists.js:50
+msgid "Listado general de datos"
+msgstr "General data list"
+
+#: qxnw/treeWidget.js:528 qxnw/lists.js:729
+msgid " debe ser un número con decimales"
+msgstr " should be a number with decimals"
+
+#: qxnw/treeWidget.js:418 qxnw/lists.js:1349 qxnw/lists.js:1401
+msgid "Filtro rápido"
+msgstr "Fast filter"
+
+#: qxnw/lists.js:1926
+msgid "Seleccione las opciones para exportar"
+msgstr "Select the columns to export"
+
+#: qxnw/lists.js:1936
+msgid "Vista previa hoja de cálculo"
+msgstr "Preview"
+
+#: qxnw/lists.js:1941
+msgid "Especial (recomendada para menos de 10000 registros)"
+msgstr "Special (recommended for less than 10,000 records)"
+
+#: qxnw/lists.js:1946
+msgid "Sencilla (Separado por tabulaciones para más de 10000 registros)"
+msgstr "Single (Separated by tabs for more than 10,000 records)"
+
+#: qxnw/lists.js:1951
+msgid "Separado por"
+msgstr "Separated by"
+
+#: qxnw/lists.js:1958
+msgid "Formatos"
+msgstr "Header"
+
+#: qxnw/lists.js:1965
+msgid "Administrar encabezado"
+msgstr "Manage header"
+
+#: qxnw/lists.js:1970
+msgid "Filas"
+msgstr "Rows"
+
+#: qxnw/lists.js:1975
+msgid "Usar encabezado"
+msgstr "Use header"
+
+#: qxnw/lists.js:1982
+msgid "Seleccionar modelo"
+msgstr "Select model"
+
+#: qxnw/lists.js:1989
+msgid "Todas las columnas"
+msgstr "All columns"
+
+#: qxnw/lists.js:1994
+msgid "Seleccionar plantilla"
+msgstr "Select template"
+
+#: qxnw/lists.js:1998
+msgid "Nueva plantilla"
+msgstr "New template"
+
+#: qxnw/lists.js:2004
+msgid "Guardar plantilla"
+msgstr "Save template"
+
+#: qxnw/lists.js:2010
+msgid "Eliminar plantilla"
+msgstr "Delete template"
+
+#: qxnw/lists.js:2020 qxnw/nw_import_data/main.js:78
+msgid "Columnas disponibles"
+msgstr "Columns"
+
+#: qxnw/lists.js:2056
+msgid "Tabulaciones"
+msgstr "Tabs"
+
+#: qxnw/lists.js:2057
+msgid "Comas"
+msgstr "Quotes"
+
+#: qxnw/lists.js:2058
+msgid "Punto y coma"
+msgstr "Semicolon"
+
+#: qxnw/lists.js:2079
+msgid "Modelo guardado correctamente"
+msgstr "Model saved successfully"
+
+#: qxnw/lists.js:2084
+msgid "Nuevo modelo de exportación"
+msgstr "New export model"
+
+#: qxnw/lists.js:2156 qxnw/lists.js:2255 qxnw/lists.js:2263
+msgid "Por defecto"
+msgstr "Deffect"
+
+#: qxnw/lists.js:2311 qxnw/main.js:1380
+msgid "Edición de encabezado de exportación por NW-Calculate"
+msgstr "Editing export header by NW-Calculate"
+
+#: qxnw/lists.js:2319
+msgid "¿Está segur@ de reiniciar su configuración?"
+msgstr "Are you sure to restart your configuration?"
+
+#: qxnw/lists.js:2324 qxnw/main.js:1418
+msgid "Configuración reiniciada correctamente"
+msgstr "Configuration restarted correctly"
+
+#: qxnw/lists.js:2334
+msgid "Reiniciar configuración"
+msgstr "Restart configuration"
+
+#: qxnw/lists.js:2465
+msgid ""
+"Para mantener la eficiencia del servidor no es recomendable exportar más de "
+"10000 registros con esta opción, por favor use la exportación sencila o "
+"contáctese con el administrador"
+msgstr ""
+"To maintain the efficiency of the server it is not recommended to export "
+"more than 10,000 records with this option, please use simple export or "
+"contact the administrator"
+
+#: qxnw/lists.js:2629
+msgid "Seleccione los registros a exportar"
+msgstr "Select the lines to export"
+
+#: qxnw/lists.js:2863
+msgid "No se usó el setParamRecord"
+msgstr "No use the setParamRecord function"
+
+#: qxnw/lists.js:3084
+msgid "Filtro fechas"
+msgstr "Date filters"
+
+#: qxnw/nw_exp/lists/l_view.js:50
+#: qxnw/security/entradas_salidas/l_entradas_salidas.js:91
+#: qxnw/security/registro/l_registro.js:82 qxnw/lists.js:3091
+#: qxnw/table/table.js:315
+msgid "Fecha inicial"
+msgstr "Initial date"
+
+#: qxnw/lists.js:3362 qxnw/nw_exp/main.js:699
+msgid "Duplicar"
+msgstr "Duplicate"
+
+#: qxnw/lists.js:3369
+msgid ""
+"¿Está seguro de eliminar el registro? Recuerde que de estos ítems depende la"
+" funcionalidad del sistema."
+msgstr ""
+"Are you sure to erase row? Remember the significant risks on the system "
+"functionality."
+
+#: qxnw/lists.js:3421
+msgid "¿Está segur@ de eliminar el registro?"
+msgstr "Are you sure to delete the record?"
+
+#: qxnw/lists.js:3758
+msgid "Seleccione el registro a enviar"
+msgstr "Select the register to send"
+
+#: qxnw/lists.js:3763
+msgid "Enviar líneas por correo electrónico"
+msgstr "Send lines by electronic mail"
+
+#: qxnw/lists.js:4013
+msgid "Ordenar por"
+msgstr "Order by"
+
+#: qxnw/lists.js:4019 qxnw/nw_import_data/main.js:484
+msgid "Ninguno"
+msgstr "None"
+
+#: qxnw/lists.js:4056
+msgid "<b><font color='red'>Registros por <br />página</font></b>"
+msgstr "<b><font color='red'>Records by <br />page</font></b>"
+
+#: qxnw/lists.js:4090
+msgid "Página <br />actual"
+msgstr "Current <br />page"
+
+#: qxnw/lists.js:4118
+msgid "Total <br />páginas: 0"
+msgstr "Total <br />pages: 0"
+
+#: qxnw/lists.js:4196
+msgid "Mantener columna inmóvil"
+msgstr "Keep inmobile column"
+
+#: qxnw/lists.js:4336
+msgid "<b><font color='red'>Cálculos</font></b>"
+msgstr "<b><font color='red'>Calculate</font></b>"
+
+#: qxnw/lists.js:4406
+msgid "Suma"
+msgstr "Sum"
+
+#: qxnw/lists.js:4407
+msgid "Suma con condicional"
+msgstr "Conditional sum"
+
+#: qxnw/lists.js:4409
+msgid "Recuento"
+msgstr "Count"
+
+#: qxnw/lists.js:4538
+msgid "Favoritos"
+msgstr "Favorites"
+
+#: qxnw/lists.js:4594
+msgid "Minimizar/maximizar opciones del listado"
+msgstr "Minimize / maximize listing options"
+
+#: qxnw/lists.js:4595
+msgid "Pie"
+msgstr "Pie"
+
+#: qxnw/navtable.js:1767 qxnw/lists.js:4740 qxnw/lists.js:8676
+#: qxnw/widgets/selectListCheck.js:245 qxnw/widgets/list.js:329
+msgid "Texto a copiar: (Presiona nuevamente CTRL+C)"
+msgstr "Texto to copy: (Press again CTRL+C)"
+
+#: qxnw/nw_admin_db/forms/f_tables.js:68 qxnw/lists.js:4781
+#: qxnw/nw_file_manager/trees/vista_general.js:70
+msgid "Nuevo"
+msgstr "New"
+
+#: qxnw/navtable.js:1579 qxnw/lists.js:4892 qxnw/table/table.js:552
+msgid "Limpiar filtros"
+msgstr "Clean filters"
+
+#: qxnw/lists.js:4904
+msgid "Informes"
+msgstr "Charts"
+
+#: qxnw/lists.js:4911
+msgid "Funciones"
+msgstr "Functions"
+
+#: qxnw/lists.js:4918
+msgid "Ancho automático de columnas"
+msgstr "Automatic width of columns"
+
+#: qxnw/lists.js:4927
+msgid "Copiar todo"
+msgstr "Copy all"
+
+#: qxnw/lists.js:4935 qxnw/main.js:1293 qxnw/main.js:1296
+msgid "Herramientas"
+msgstr "Tools"
+
+#: qxnw/lists.js:5107
+msgid "Exportación directa a NWCalculate"
+msgstr "Direct export to NWCalculate"
+
+#: qxnw/lists.js:5381
+msgid "El nombre de la columna ya existe en otras funciones pre-existentes"
+msgstr "The name of the column already exists in other pre-existing functions"
+
+#: qxnw/lists.js:5392
+msgid "Seleccione una función"
+msgstr "Select a function"
+
+#: qxnw/lists.js:5398
+msgid "No hay filas para realizar la función"
+msgstr "There are no rows to perform the function"
+
+#: qxnw/lists.js:5506
+msgid "Funciones dinámicas"
+msgstr "Dynamic functions"
+
+#: qxnw/lists.js:5510
+msgid "Funciones disponibles"
+msgstr "Available functions"
+
+#: qxnw/lists.js:5516
+msgid "Fórmula"
+msgstr "Formula"
+
+#: qxnw/lists.js:5522
+msgid "Resultado fila 1"
+msgstr "Result row 1"
+
+#: qxnw/lists.js:5528 qxnw/lists.js:5618
+msgid "Nombre columna"
+msgstr "Column name"
+
+#: qxnw/lists.js:5534
+msgid "Guardar en el navegador"
+msgstr "Save in the browser"
+
+#: qxnw/lists.js:5539
+msgid "Separador"
+msgstr "Separator"
+
+#: qxnw/navtable.js:2331 qxnw/lists.js:5547
+msgid "Seleccione..."
+msgstr "Select..."
+
+#: qxnw/lists.js:5568 qxnw/lists.js:6045
+msgid "Columna"
+msgstr "Column"
+
+#: qxnw/lists.js:5572
+msgid "Agregue las columnas para el cálculo"
+msgstr "Add the columns for the calculation"
+
+#: qxnw/lists.js:5572 qxnw/lists.js:5622
+msgid "Columnas"
+msgstr "Columns"
+
+#: qxnw/lists.js:5578 qxnw/lists.js:5928
+msgid "Seleccione la columna"
+msgstr "Select the column"
+
+#: qxnw/lists.js:5582
+msgid "Seleccione las columnas para el cálculo"
+msgstr "Select the columns for the calculation"
+
+#: qxnw/lists.js:5614
+msgid "Función"
+msgstr "Function"
+
+#: qxnw/lists.js:5626
+msgid "Funciones guardadas"
+msgstr "Saved functions"
+
+#: qxnw/lists.js:5626
+msgid "Vea las funciones guardadas"
+msgstr "See the saved functions"
+
+#: qxnw/lists.js:5669
+msgid ""
+"No hay registros para generar la tabla dinámica. Intente modificar los "
+"filtros y consulte de nuevo."
+msgstr ""
+"No records to create the PivotTable. Try changing the filters and check "
+"again."
+
+#: qxnw/lists.js:5688
+msgid "Ver data"
+msgstr "See data"
+
+#: qxnw/lists.js:5691
+msgid "Maximizar gráficos"
+msgstr "Maximize graphs"
+
+#: qxnw/lists.js:5749
+msgid "Indique el título para este reporte"
+msgstr "Indicate the title to this report"
+
+#: qxnw/lists.js:5783
+msgid "Establezca automáticamente el ancho de las columnas."
+msgstr "Automatically set the width of the columns"
+
+#: qxnw/lists.js:5790
+msgid "Cree funciones sobre su tabla"
+msgstr "Create functions on your table"
+
+#: qxnw/lists.js:5793
+msgid ""
+"Exporte su tabla a nuestra nueva hoja de cálculo NWCalculate (versión BETA) "
+msgstr "Export your table to our new spreadsheet NWCalculate (BETA version)"
+
+#: qxnw/lists.js:5796
+msgid "Copie todo el listado en HTML (sólo para desarroladores)"
+msgstr "Copy the entire listing in HTML (only for developers)"
+
+#: qxnw/treeWidget.js:1100 qxnw/lists.js:5802
+msgid "Minimizar filtros"
+msgstr "Minimize filters"
+
+#: qxnw/treeWidget.js:1103 qxnw/lists.js:5805
+msgid "Minimizar opciones"
+msgstr "Maxize options"
+
+#: qxnw/treeWidget.js:1106 qxnw/lists.js:5808
+msgid "Limpiar todos los filtros configurados en el listado"
+msgstr "Clear all filters configured in the list"
+
+#: qxnw/treeWidget.js:1109 qxnw/lists.js:5811
+msgid "Ingrese la página del total general del listado"
+msgstr "Enter the grand total page listing"
+
+#: qxnw/treeWidget.js:1112 qxnw/lists.js:5814
+msgid ""
+"Seleccione la columna para ordenar el listado. Para ser ascendente o "
+"descendente puede dar click en el encabezado de la columna."
+msgstr ""
+"Select the column to order the list. Can be order up or down on header "
+"column"
+
+#: qxnw/treeWidget.js:1115 qxnw/lists.js:5817
+msgid "Agregar a favoritos"
+msgstr "Add to favorites"
+
+#: qxnw/treeWidget.js:1118 qxnw/lists.js:5820
+msgid "Actualizar al abrir el listado"
+msgstr "Update on list open"
+
+#: qxnw/treeWidget.js:1121 qxnw/lists.js:5823
+msgid "Envíe uno o varios registros por correo electrónico"
+msgstr "Send one or many records by email"
+
+#: qxnw/treeWidget.js:1124 qxnw/lists.js:5826
+msgid ""
+"Seleccione si desea que siempre que ingrese a esta vista, se actualize "
+"automáticamente"
+msgstr ""
+"Select if you always want to reload automatically when you open the list"
+
+#: qxnw/treeWidget.js:1127 qxnw/lists.js:5829
+msgid "Ingrese el máximo de filas mostradas"
+msgstr "Enter the max rows shown"
+
+#: qxnw/treeWidget.js:1130 qxnw/lists.js:5832
+msgid ""
+"Mantener una columna inmóvil (puede desactivar la opción de filtros en "
+"algunos casos)"
+msgstr "Keep a stationary column (you can disable the filters in some cases)"
+
+#: qxnw/treeWidget.js:1133 qxnw/lists.js:5835
+msgid "Click aquí para crear un nuevo ítem"
+msgstr "Click here to create a new item"
+
+#: qxnw/treeWidget.js:1136 qxnw/lists.js:5838
+msgid "Edite un registro"
+msgstr "Edit record"
+
+#: qxnw/treeWidget.js:1139 qxnw/lists.js:5841
+msgid "Elimine un registro"
+msgstr "Delete record"
+
+#: qxnw/treeWidget.js:1145 qxnw/lists.js:5847
+msgid "Desactive todos los registros seleccionados previamente"
+msgstr "Inactive all selected lines"
+
+#: qxnw/treeWidget.js:1148 qxnw/lists.js:5850
+msgid "Exporte todos los elementos a un archivo en Excel"
+msgstr "Export all data to Excel file"
+
+#: qxnw/treeWidget.js:1151 qxnw/lists.js:5853
+msgid "Importe registros desde un archivo en delimitado por tabulaciones"
+msgstr "Print records from delimited tab file"
+
+#: qxnw/treeWidget.js:1154 qxnw/lists.js:5856
+msgid "Imprima todos los datos de esta vista en un formulario dinámico"
+msgstr "Print all data in a dinamyc form"
+
+#: qxnw/treeWidget.js:1157 qxnw/lists.js:5859
+msgid "Desde aquí puede administrar la configuración de esta vista"
+msgstr "Manage the configuration of this view"
+
+#: qxnw/treeWidget.js:1160 qxnw/lists.js:5862
+msgid "Configuración personalizada de los colores de las celdas"
+msgstr "Personalized configuraton to cells colors"
+
+#: qxnw/treeWidget.js:1163 qxnw/lists.js:5865
+msgid "Acceda al menú de ayuda en línea de la aplicación"
+msgstr "Open the application help menu"
+
+#: qxnw/treeWidget.js:1166 qxnw/lists.js:5868
+msgid "Herramientas de hoja de cálculo"
+msgstr "Spreadsheet tools"
+
+#: qxnw/treeWidget.js:1169 qxnw/lists.js:5871
+msgid "Seleccione la columna sobre la que desea realizar el cálculo"
+msgstr "Select the column to make the calculation"
+
+#: qxnw/treeWidget.js:1172 qxnw/lists.js:5874
+msgid "Seleccione el operador de comparación"
+msgstr "Select the comparison operator"
+
+#: qxnw/treeWidget.js:1175 qxnw/lists.js:5877
+msgid "Seleccione la columna sobre la que desea realizar la comparación"
+msgstr "Select the column to make the calculation"
+
+#: qxnw/treeWidget.js:1178 qxnw/lists.js:5880
+msgid "Seleccione el tipo de cálculo que desea realizar"
+msgstr "Select calculation type"
+
+#: qxnw/treeWidget.js:1181 qxnw/lists.js:5883
+msgid "Ingrese los segundos para actualizar el listado automáticamente"
+msgstr "Enter the seconds to update automatically the list"
+
+#: qxnw/treeWidget.js:1184 qxnw/lists.js:5886
+msgid "Actualice los registros en este listado"
+msgstr "Update the records on this list"
+
+#: qxnw/lists.js:5917
+msgid ""
+"Desde este espacio puede poner colores en los listados. Ej: En la columna "
+"'id' que sea igual a 5 será verde. <b>Es posible que deba actualizar el "
+"listado</b>"
+msgstr ""
+"\n"
+"From this space you can put colors in the listings. Example: In the 'id' equals column 5 is green. <b> You may need to update the list </ b>"
+
+#: qxnw/lists.js:5924
+msgid "Colores de las celdas"
+msgstr "Cells colors"
+
+#: qxnw/lists.js:5933 qxnw/lists.js:6049
+msgid "Condición"
+msgstr "Condition"
+
+#: qxnw/lists.js:5938 qxnw/nw_exp/forms/f_addFieldCondi.js:60
+msgid "Valor a comparar"
+msgstr "Value to compare"
+
+#: qxnw/lists.js:5944 qxnw/lists.js:6057
+msgid "Color"
+msgstr "Color"
+
+#: qxnw/lists.js:5949
+msgid "Tipo de coloreado"
+msgstr "Color type"
+
+#: qxnw/lists.js:5954 qxnw/lists.js:6065
+msgid "Comentario"
+msgstr "Comment"
+
+#: qxnw/nw_sync/forms/f_addField.js:40 qxnw/lists.js:6061
+#: qxnw/mapsWidget.js:866 qxnw/nw_exp/forms/f_addFieldCondi.js:34
+#: qxnw/nw_exp/forms/f_addField.js:40 qxnw/nw_import_data/main.js:43
+#: qxnw/main.js:1519 qxnw/main.js:2126 qxnw/main.js:3175
+#: qxnw/nw_exp/forms/f_addFilter.js:40 qxnw/nw_sync/forms/f_syncAll.js:47
+msgid "Tipo"
+msgstr "Type"
+
+#: qxnw/security/entradas_salidas/l_entradas_salidas.js:106
+#: qxnw/security/registro/l_registro.js:97 qxnw/lists.js:6117
+msgid "Todos"
+msgstr "All"
+
+#: qxnw/lists.js:6139 qxnw/table/table.js:581
+msgid "Filtro de colores"
+msgstr "Colors filters"
+
+#: qxnw/lists.js:6638
+msgid "Generar"
+msgstr "Generate"
+
+#: qxnw/lists.js:7251
+msgid "Filtros"
+msgstr "Filters"
+
+#: qxnw/lists.js:7925
+msgid "Visor de imágenes :: QXNW "
+msgstr ""
+
+#: qxnw/lists.js:8400
+msgid ", Recuento no posible para esta columna"
+msgstr ", ount not possible, for this column"X|
+
+#: qxnw/lists.js:8404
+msgid ", Promedio no posible para esta columna"
+msgstr ", Average not posible for this column"
+
+#: qxnw/lists.js:8551
+msgid "Actualizar cada:"
+msgstr "Update every:"
+
+#: qxnw/locale/all.js:34
+msgid "Fecha corta"
+msgstr "Short date"
+
+#: qxnw/login.js:65
+msgid ""
+"<div style='font-size: 12px; color:#444;'><h2>Bienvenid@ HCY1</h2><p>Ingrese aquí"
+" usando su nombre de usuario y hcy GGGGGG contraseña</p></div>"
+msgstr ""
+"<div style='font-size: 12px; color:#444;'><h2>Welcome</h2><p>Please type "
+"here your user and password</p></div>"
+
+#: qxnw/login.js:69
+msgid "Inicio"
+msgstr "Start"
+
+#: qxnw/login.js:71
+msgid "Datos de Ingreso"
+msgstr "Access data"
+
+#: qxnw/login.js:83
+msgid "Contraseña"
+msgstr "Password"
+
+#: qxnw/login.js:96
+msgid "No cerrar sesión"
+msgstr "Don't close session"
+
+#: qxnw/login.js:131
+msgid ""
+"¿Olvidó su contraseña?<span style='color:#666; text-decoration: underline;'>"
+" Haga clic aqui para recuperarla</span>"
+msgstr ""
+"¿Forgot your password?<span style='color:#666; text-decoration: underline;'>"
+" Click here to recover</span>"
+
+#: qxnw/login.js:146
+msgid "::Recuperación de contraseñas::"
+msgstr ":: Password recovery ::"
+
+#: qxnw/login.js:155
+msgid "Su e-mail"
+msgstr "Your e-mail"
+
+#: qxnw/login.js:252
+msgid "El correo no existe en nuestros registros"
+msgstr "The mail does not exist in our records"
+
+#: qxnw/main.js:1290 qxnw/login.js:288
+msgid "Preguntas de seguridad"
+msgstr "Security questions"
+
+#: qxnw/login.js:314
+msgid "Verifique sus respuestas"
+msgstr "Verify your answers"
+
+#: qxnw/login.js:330
+msgid "En pocos minutos recibirá un correo para cambiar su contraseña"
+msgstr "In a few minutes you will receive an email to change your password"
+
+#: qxnw/login.js:354
+msgid "Se presentó un problema iniciando la sesión. Inténtelo de nuevo."
+msgstr "Logging problem was presented. Try again"
+
+#: qxnw/login.js:386
+msgid "No tiene empresas asociadas. Consulte con el administrador."
+msgstr "No associated companies. Consult your manager."
+
+#: qxnw/login.js:391
+msgid "No tiene permisos en ninguna empresa"
+msgstr "Not authorized in any company"
+
+#: qxnw/login.js:460 qxnw/login.js:464 qxnw/login.js:560
+msgid "Usuario o clave incorrecta"
+msgstr "User or password incorrect"
+
+#: qxnw/login.js:495 qxnw/login.js:535
+msgid "Debe cambiar su primera clave :: QXNW"
+msgstr "You must change your first password: QXNW"
+
+#: qxnw/login.js:551
+msgid "No tiene empresas asociadas"
+msgstr "Does not have associate companies"
+
+#: qxnw/main.js:68
+msgid ""
+"Su navegador es IE versión 8 o inferior. Es necesario instalar unas mejoras "
+"para que la experiencia en el sistema sea óptima. ¿Desea descargar la "
+"actualización?"
+msgstr ""
+"Your browser is IE version 8 or lower. You need to install a few upgrades to"
+" the system experience is optimal. Do you want to download the update?"
+
+#: qxnw/main.js:72
+msgid ""
+"Por favor descomprima el archivo descargado y realice la instalación. No "
+"requiere ninguna configuración especial."
+msgstr ""
+"Please unzip the downloaded file and perform the installation.It requires no"
+" special configuration."
+
+#: qxnw/main.js:85
+msgid ""
+"Su sesión en el programa sigue abierta. ¿Desea regresar y cerrarla "
+"correctamente?. Recuerde que la seguridad del sistema es un compromiso de "
+"todos."
+msgstr ""
+"Your session in the program remains open. Do you want to come back and close"
+" it correctly?. Remember that the safety of the system is a commitment for "
+"all."
+
+#: qxnw/main.js:426 qxnw/main.js:507
+msgid "Soporte especializado"
+msgstr "Specialized support"
+
+#: qxnw/main.js:537 qxnw/main.js:546
+msgid "Datos guardados correctamente"
+msgstr "Data saved successfully"
+
+#: qxnw/main.js:1100
+msgid "Selector de color"
+msgstr "Color selector"
+
+#: qxnw/main.js:1160
+msgid "Developers"
+msgstr "Developers"
+
+#: qxnw/main.js:1161 qxnw/main.js:1219 qxnw/main.js:1255 qxnw/main.js:2011
+msgid "Módulos"
+msgstr "Modules"
+
+#: qxnw/main.js:1162
+msgid "Servidores DB"
+msgstr "DB servers"
+
+#: qxnw/main.js:1163
+msgid "Crear formulario HTML"
+msgstr "Create HTML form"
+
+#: qxnw/main.js:1164 qxnw/main.js:1174
+msgid "Listado general"
+msgstr "General list"
+
+#: qxnw/main.js:1165
+msgid "Ayudas desarrollador"
+msgstr "Developer aids"
+
+#: qxnw/main.js:1166
+msgid "Muestra descripciones tablas"
+msgstr "Show descriptions tables"
+
+#: qxnw/main.js:1167
+msgid "Listado normal"
+msgstr "Normal list"
+
+#: qxnw/main.js:1168
+msgid "Listado editable"
+msgstr "Editable list"
+
+#: qxnw/main.js:1169
+msgid "Formulario normal"
+msgstr "Normal form"
+
+#: qxnw/main.js:1170
+msgid "Formulario con navTables"
+msgstr "Form with navTables"
+
+#: qxnw/main.js:1171
+msgid "NavTable"
+msgstr "NavTable"
+
+#: qxnw/main.js:1172
+msgid "Tester Biostar 2"
+msgstr "Biostar 2 tester"
+
+#: qxnw/main.js:1173
+msgid "Informes SQL-Excel"
+msgstr "SQL-Excel reports"
+
+#: qxnw/main.js:1175
+msgid "Reporte"
+msgstr "report"
+
+#: qxnw/main.js:1176
+msgid "Administración general"
+msgstr "General administration"
+
+#: qxnw/main.js:1177
+msgid "Tipos de reportes"
+msgstr "Reports types"
+
+#: qxnw/main.js:1178
+msgid "Pagos"
+msgstr "Payment"
+
+#: qxnw/main.js:1179
+msgid "Prueba de pagos PaYU"
+msgstr "Payment proof PaYU"
+
+#: qxnw/main.js:1182 qxnw/main.js:2015
+msgid "Vista general"
+msgstr "General view"
+
+#: qxnw/main.js:1183
+msgid "Salas"
+msgstr "Rooms"
+
+#: qxnw/main.js:1184
+msgid "Usuarios por sala"
+msgstr "Users by room"
+
+#: qxnw/main.js:1187 qxnw/main.js:1961
+msgid "Administrador de archivos"
+msgstr "Files administrator"
+
+#: qxnw/main.js:1188
+msgid "Todos los Archivos del Servidor"
+msgstr "All Server Files"
+
+#: qxnw/main.js:1189
+msgid "Archivos disponibles"
+msgstr "Available files"
+
+#: qxnw/main.js:1190 qxnw/main.js:1948
+msgid "Listado de descargas"
+msgstr "Download list"
+
+#: qxnw/main.js:1191 qxnw/main.js:1955
+msgid "Listado de observaciones al descargar"
+msgstr "Observations on downloads list"
+
+#: qxnw/main.js:1192
+msgid "Administrador de impresiones y encabezados"
+msgstr "Impressions and headers manager"
+
+#: qxnw/main.js:1193
+msgid "Encabezado y pie de página"
+msgstr "Header and footer page"
+
+#: qxnw/main.js:1194
+msgid "Encabezados exportaciones"
+msgstr "Export headings"
+
+#: qxnw/main.js:1195
+msgid "Administrador de archivos / imágenes"
+msgstr "File / image manager"
+
+#: qxnw/main.js:1197
+msgid "Exportaciones dinámicas"
+msgstr "Dynamic exports"
+
+#: qxnw/main.js:1198
+msgid "Importaciones dinámicas"
+msgstr ""
+
+#: qxnw/main.js:1199
+msgid "Sincronización de datos"
+msgstr "Data synchronization"
+
+#: qxnw/main.js:1200
+msgid "Importación a tablas"
+msgstr "Import to tables"
+
+#: qxnw/main.js:1201 qxnw/main.js:1570
+msgid "Trabajos de servidor"
+msgstr "Server jobs"
+
+#: qxnw/main.js:1203
+msgid "Configuraciones regionales"
+msgstr "Regional configurations"
+
+#: qxnw/main.js:1204
+msgid "Imágenes y mensaje de inicio"
+msgstr "Images and start message"
+
+#: qxnw/main.js:1205
+msgid "Configuración de Diseño Home"
+msgstr "Configuration Design Home"
+
+#: qxnw/main.js:1209 qxnw/main.js:1865
+msgid "Empresas"
+msgstr "Companies"
+
+#: qxnw/main.js:1210 qxnw/main.js:1909
+msgid "Terminales"
+msgstr "Terminals"
+
+#: qxnw/main.js:1211 qxnw/main.js:1894
+msgid "Ciudades"
+msgstr "Cities"
+
+#: qxnw/main.js:1212 qxnw/main.js:1262 qxnw/main.js:1905
+msgid "Departamentos"
+msgstr "Departments"
+
+#: qxnw/main.js:1213
+msgid "Países"
+msgstr "Countries"
+
+#: qxnw/main.js:1214
+msgid "Impresiones"
+msgstr "Printers"
+
+#: qxnw/main.js:1216
+msgid "Seguridad contraseñas/ingreso"
+msgstr "Security passwords / entry"
+
+#: qxnw/nw_admin_db/forms/f_tables.js:168 qxnw/main.js:1217 qxnw/main.js:1253
+msgid "Permisos"
+msgstr "Permissions"
+
+#: qxnw/main.js:1218
+msgid "Permisos Productos"
+msgstr "Permissions products"
+
+#: qxnw/main.js:1220 qxnw/main.js:1256 qxnw/main.js:1917
+msgid "Componentes"
+msgstr "Components"
+
+#: qxnw/main.js:1221
+msgid "Módulos Especiales Home"
+msgstr "Special modules Home"
+
+#: qxnw/mobile/treeAdmin.js:68 qxnw/main.js:1223 qxnw/main.js:1251
+#: qxnw/main.js:1929
+msgid "Menú"
+msgstr "Menu"
+
+#: qxnw/main.js:1225
+msgid "Actualizar DB"
+msgstr "Update DB"
+
+#: qxnw/main.js:1226
+msgid "SMTP settings"
+msgstr "SMTP settings"
+
+#: qxnw/main.js:1227 qxnw/main.js:1816
+msgid "Equipos Terminal"
+msgstr "Terminal Equipment"
+
+#: qxnw/main.js:1228
+msgid "Mantenimiento"
+msgstr "Manteinance"
+
+#: qxnw/main.js:1229
+msgid "Log de Movimientos"
+msgstr "Movements log"
+
+#: qxnw/main.js:1230 qxnw/main.js:1456
+msgid "Entradas y salidas"
+msgstr "Tickets and departures"
+
+#: qxnw/main.js:1231
+msgid "Limpiar log de movimientos"
+msgstr "Clean movements log"
+
+#: qxnw/main.js:1243
+msgid "  de DB"
+msgstr " off DB"
+
+#: qxnw/main.js:1244
+msgid "Procesos"
+msgstr "Process"
+
+#: qxnw/main.js:1246
+msgid "Actualizar Base de Datos"
+msgstr "Update database"
+
+#: qxnw/main.js:1247
+msgid "Restablecer Menú"
+msgstr "Reset Menu"
+
+#: qxnw/treeWidget.js:130 qxnw/main.js:1248 qxnw/main.js:1284
+msgid "Configuración"
+msgstr "Configuration"
+
+#: qxnw/main.js:1249 qxnw/main.js:1264 qxnw/main.js:1309
+msgid "Idiomas"
+msgstr "Languajes"
+
+#: qxnw/main.js:1254
+msgid "Perfiles autorizados"
+msgstr "Authorized profiles"
+
+#: qxnw/main.js:1257
+msgid "Módulos Home"
+msgstr "Home Modules"
+
+#: qxnw/main.js:1258
+msgid "Usuarios registrados"
+msgstr "Registered users"
+
+#: qxnw/main.js:1259
+msgid "Config login"
+msgstr "Config login"
+
+#: qxnw/main.js:1260
+msgid "Configuración gral"
+msgstr "General configuration"
+
+#: qxnw/main.js:1261
+msgid "Profesiones"
+msgstr "Professions"
+
+#: qxnw/main.js:1263
+msgid "Domains autorizados"
+msgstr "Authorized Domains"
+
+#: qxnw/main.js:1265
+msgid "Planes"
+msgstr "Plans"
+
+#: qxnw/main.js:1266
+msgid "Términos y condiciones"
+msgstr "Terms and Conditions"
+
+#: qxnw/main.js:1267
+msgid "Log de usuarios"
+msgstr "Users log"
+
+#: qxnw/main.js:1268
+msgid "Users Empresas"
+msgstr "Bussiness users"
+
+#: qxnw/main.js:1269
+msgid "Suscriptores push"
+msgstr "Push subscribers"
+
+#: qxnw/main.js:1270
+msgid "Reset Pass"
+msgstr "Reset Pass"
+
+#: qxnw/main.js:1272
+msgid "Config nwchat"
+msgstr "Config nwchat"
+
+#: qxnw/main.js:1273
+msgid "ACTUALIZAR BASE DE DATOS ESTRUCTURA"
+msgstr "UPDATE DATABASE STRUCTURE"
+
+#: qxnw/main.js:1285
+msgid "Borrar configuración"
+msgstr "Delete settings"
+
+#: qxnw/main.js:1287 qxnw/nw_sync/forms/f_syncAll.js:62
+msgid "Sincronizar"
+msgstr "Synchronize"
+
+#: qxnw/main.js:1289
+msgid "Cambio de clave"
+msgstr "Change password"
+
+#: qxnw/main.js:1291
+msgid "Manuales"
+msgstr "Manuals"
+
+#: qxnw/main.js:1294
+msgid "Ver mi IP"
+msgstr "See my IP"
+
+#: qxnw/main.js:1295
+msgid "Captura de Pantalla"
+msgstr "Screenshot"
+
+#: qxnw/widgets/addressFinder.js:6 qxnw/main.js:1297
+msgid "Buscador de coordenadas"
+msgstr "Coordinates Finder"
+
+#: qxnw/main.js:1298
+msgid "Envío de notificaciones"
+msgstr "Send of notifications"
+
+#: qxnw/main.js:1299
+msgid "Creador de códigos QR"
+msgstr "QR Creator"
+
+#: qxnw/main.js:1300
+msgid "Listas de correos"
+msgstr "Email lists"
+
+#: qxnw/main.js:1301 qxnw/main.js:1991
+msgid "Listas de envío de correos"
+msgstr "Postal mailing lists"
+
+#: qxnw/nw_email_list/tree/groupsAndEmails.js:102 qxnw/main.js:1302
+#: qxnw/main.js:1995
+msgid "Grupos de correos"
+msgstr "Emails groups"
+
+#: qxnw/main.js:1303
+msgid "Configuracion de estilos"
+msgstr "Styles configurations"
+
+#: qxnw/main.js:1304
+msgid "Temas"
+msgstr "Themes"
+
+#: qxnw/main.js:1305
+msgid "Configuracion de alertas"
+msgstr "Alerts configurations"
+
+#: qxnw/main.js:1306
+msgid "Verificar nuevas versiones"
+msgstr "Verify new versions"
+
+#: qxnw/main.js:1307
+msgid "Configuracion de comportamientos"
+msgstr "System configuration"
+
+#: qxnw/main.js:1308
+msgid "Configuracion de impresiones"
+msgstr "Print settings"
+
+#: qxnw/main.js:1310
+msgid "Español"
+msgstr "Spanish"
+
+#: qxnw/main.js:1311
+msgid "Inglés"
+msgstr "English"
+
+#: qxnw/main.js:1312
+msgid "Acerca de..."
+msgstr "About us..."
+
+#: qxnw/main.js:1385
+msgid "Máximo de filas"
+msgstr "Maximum rows"
+
+#: qxnw/main.js:1390
+msgid "Máximo de columnas"
+msgstr "Maximum columns"
+
+#: qxnw/main.js:1414
+msgid "Limpiar configuración"
+msgstr "Clean configuration"
+
+#: qxnw/main.js:1460
+msgid "Administración de imágenes / archivos"
+msgstr "Administration of images / files"
+
+#: qxnw/main.js:1499
+msgid "Administración del móvil"
+msgstr "Mobile management"
+
+#: qxnw/main.js:1507
+msgid "Arriba"
+msgstr "Above"
+
+#: qxnw/main.js:1513
+msgid "Izquierda"
+msgstr "Left"
+
+#: qxnw/nw_printer/forms/f_printer.js:216
+#: qxnw/nw_printer/lists/l_printer.js:18 qxnw/main.js:1525
+msgid "Ancho"
+msgstr "Width"
+
+#: qxnw/main.js:1529
+msgid "Configuración de impresiones"
+msgstr "Configure print"
+
+#: qxnw/main.js:1557
+msgid "¿Desea conservar una copia del log?"
+msgstr "Do you want to keep a copy of the log?"
+
+#: qxnw/main.js:1560
+msgid "Se borrará el registro... presione aceptar"
+msgstr "The record will be deleted ... press enter"
+
+#: qxnw/main.js:1575
+msgid "Manual general"
+msgstr "General manual"
+
+#: qxnw/main.js:1584
+msgid "Manual herramientas"
+msgstr "Tools manual"
+
+#: qxnw/main.js:1591 qxnw/main.js:1604
+msgid "Es un movimiento complejo del sistema. ¿Desea continuar?"
+msgstr "It is a complex movement system. Do you want continue?"
+
+#: qxnw/main.js:1594 qxnw/main.js:1607 qxnw/main.js:1620 qxnw/main.js:1633
+msgid "Actualización realizada correctamente"
+msgstr "Update completed successfully"
+
+#: qxnw/main.js:1598 qxnw/main.js:1611 qxnw/main.js:1624
+msgid "Realizando actualización..."
+msgstr "Updating..."
+
+#: qxnw/main.js:1617
+msgid ""
+"Es un movimiento complejo del sistema. Se creará el nuevo menú de la última "
+"actualización de nwproject5, el actual desaparecerá. ¿Desea continuar?"
+msgstr ""
+"It is a complex movement of the system. The new menu of the last update of "
+"nwproject5 will be created, the current one will disappear. do you wish to "
+"continue?"
+
+#: qxnw/main.js:1630
+msgid ""
+"Es un movimiento complejo del sistema. Se actualizará la estructura de la "
+"base de datos de NWMAKER con la última versión, ¿Desea continuar?"
+msgstr ""
+"It is a complex movement of the system. The structure of the NWMAKER "
+"database will be updated with the latest version. Do you want to continue?"
+
+#: qxnw/main.js:1637
+msgid "Realizando actualización nwmaker..."
+msgstr "Performing nwmaker update ..."
+
+#: qxnw/main.js:1820
+msgid ""
+"Para el mantenimiento se bloquearán todas las tablas, habrá lentitud en las "
+"operaciones y puede tomar mucho tiempo. Sin embargo mejorará la velocidad en"
+" todos los aspectos. ¿Desea continuar?"
+msgstr ""
+"For maintenance all tables are locked, it will slow operations and may take "
+"a long time. However it improves the speed in all aspects. Do you want "
+"continue?"
+
+#: qxnw/main.js:1823
+msgid "Mantenimiento realizado correctamente"
+msgstr "Manteinance sucessful"
+
+#: qxnw/main.js:1827
+msgid "Realizando mantenimiento..."
+msgstr ""
+"\n"
+"Performing maintenance..."
+
+#: qxnw/main.js:1837
+msgid "Texto"
+msgstr "Text"
+
+#: qxnw/nw_admin_db/forms/f_ordenar.js:36
+#: qxnw/nw_admin_db/forms/f_tables.js:26
+#: qxnw/nw_admin_db/forms/f_new_table.js:55 qxnw/main.js:1843
+msgid "Tamaño"
+msgstr "Size"
+
+#: qxnw/main.js:1847
+msgid "Generador de códigos QR"
+msgstr "QR Creator"
+
+#: qxnw/main.js:1898
+msgid "Paises"
+msgstr "Countries"
+
+#: qxnw/main.js:1913
+msgid "Modulos"
+msgstr "Modules"
+
+#: qxnw/main.js:1925
+msgid "Movimientos generales"
+msgstr "General movements"
+
+#: qxnw/main.js:1941
+msgid "Administrador de notificaciones"
+msgstr "Notifications manager"
+
+#: qxnw/main.js:1952
+msgid "Administrador de impresiones"
+msgstr "Print administrator"
+
+#: qxnw/main.js:1964
+msgid "Configuración al inicio"
+msgstr "Start configurations"
+
+#: qxnw/main.js:1967
+msgid "Configuración Diseño Home"
+msgstr "Configuration Design Home"
+
+#: qxnw/main.js:1970
+msgid "Administración de Módulos Especiales Home"
+msgstr "Special Modules Administration Home"
+
+#: qxnw/main.js:1999
+msgid "Formularios HTML"
+msgstr "HTML forms"
+
+#: qxnw/main.js:2021
+msgid "Sala"
+msgstr "Room"
+
+#: qxnw/main.js:2025
+msgid "Usuario Por Salas"
+msgstr "User by rooms"
+
+#: qxnw/nw_printer/forms/f_printer.js:294
+#: qxnw/nw_printer/forms/f_printer.js:300 qxnw/main.js:2029
+msgid "Encabezado"
+msgstr "Header"
+
+#: qxnw/main.js:2114
+msgid "Procesos Activos"
+msgstr "Active process"
+
+#: qxnw/main.js:2155
+msgid "Cambio de foto de perfil :: QXNW"
+msgstr "Change of profile picture :: QXNW"
+
+#: qxnw/main.js:2175
+msgid "Para ver su foto debemos refrescar esta página, ¿desea continuar?"
+msgstr "To see your photo we must refresh this page, do you want to continue?"
+
+#: qxnw/main.js:2205
+msgid "Afiliadoras"
+msgstr "Affiliators"
+
+#: qxnw/main.js:2396
+msgid "Página Inicial"
+msgstr "Start page"
+
+#: qxnw/main.js:2677
+msgid "Configuraciones de mi perfil"
+msgstr "My profile settings"
+
+#: qxnw/main.js:2705
+msgid "Chat y llamadas interactivas con otros usuarios del sistema"
+msgstr "Chat and interactive calls with other system users"
+
+#: qxnw/main.js:2752
+msgid "Historial de notificaciones, avisos y alertas del sistema"
+msgstr "History of notifications, warnings and system alerts"
+
+#: qxnw/main.js:2804
+msgid ""
+"Alertas. Planifique horarios o alarmas y haga que el sistema le notifique"
+msgstr "Alerts Schedule schedules or alarms and have the system notify you"
+
+#: qxnw/main.js:2811
+msgid "Buscar"
+msgstr "Search"
+
+#: qxnw/main.js:2817 qxnw/main.js:2825
+msgid "Búsqueda en todo el sistema"
+msgstr "Search into the system"
+
+#: qxnw/main.js:2834
+msgid "Buscador:"
+msgstr "Search:"
+
+#: qxnw/main.js:2908
+msgid "Calculadora sencilla"
+msgstr "Calculator"
+
+#: qxnw/main.js:2915
+msgid "Configuraciones"
+msgstr "Configure"
+
+#: qxnw/main.js:2923 qxnw/main.js:2942
+msgid ""
+"Configure los estilos del programa, colores, tipos de letra, tamaños de "
+"botones, entre muchas otras opciones"
+msgstr ""
+"Configure program styles, colors, fonts, button sizes, among many other "
+"options"
+
+#: qxnw/main.js:2949 qxnw/main.js:2961
+msgid "Cuadro de mando integral"
+msgstr "Scorecard"
+
+#: qxnw/main.js:2956
+msgid "Cuadro de mando integral. Integre sus informes en una única vista"
+msgstr "Comprehensive scorecard. Integrate your reports in a single view"
+
+#: qxnw/main.js:2966
+msgid "Desarrolladores"
+msgstr "Developers"
+
+#: qxnw/main.js:2981
+msgid "Opciones avanzadas para desarrolladores"
+msgstr "Advanced options for developers"
+
+#: qxnw/main.js:2997
+msgid "Idiomas disponibles"
+msgstr "Languajes"
+
+#: qxnw/main.js:3005
+msgid "Idiomas. El sistema en su evolución seguirá integrando varios idiomas"
+msgstr ""
+"Languages. The system in its evolution will continue to integrate several "
+"languages"
+
+#: qxnw/main.js:3016
+msgid "Notas personales"
+msgstr "Notes"
+
+#: qxnw/main.js:3023
+msgid "Notas personales. Lleve sus anotaciones a cualquier lugar"
+msgstr "Personal notes Take your notes to any place"
+
+#: qxnw/main.js:3030
+msgid "NW Drive (archivos en línea)"
+msgstr "NW Drive (online files)"
+
+#: qxnw/main.js:3036
+msgid "Completo sistema de administración de archivos en la nube"
+msgstr "Complete file management system in the cloud"
+
+#: qxnw/main.js:3041
+msgid "Mis Archivos"
+msgstr "My files"
+
+#: qxnw/main.js:3044
+msgid "NW Calculate (hojas de cálculo)"
+msgstr "NW Calculate"
+
+#: qxnw/main.js:3050
+msgid ""
+"NWCalculate, Hojas de cálculo avanzadas. Edite celdas, valores, operaciones,"
+" entre muchas otras opciones"
+msgstr ""
+"NWCalculate, Advanced spreadsheets. Edit cells, values, operations, among "
+"many other options"
+
+#: qxnw/main.js:3057
+msgid "Soporte"
+msgstr "Support"
+
+#: qxnw/main.js:3065
+msgid "Soporte especializado con el equipo de NW Group"
+msgstr "Specialized support with the NW Group team"
+
+#: qxnw/main.js:3089
+msgid "Problemas, quejas y soluciones"
+msgstr "Solutions"
+
+#: qxnw/main.js:3095
+msgid "Sistema en línea con el equipo NW de peticiones, quejas y reclamos"
+msgstr "Online system with the NW team of petitions, complaints and claims"
+
+#: qxnw/nw_sync/main.js:10 qxnw/nw_import_data/imp_chars_len.js:143
+#: qxnw/nw_import_data/main.js:192 qxnw/main.js:3101 qxnw/nw_exp/main.js:10
+#: qxnw/nw_sync/forms/f_syncAll.js:63
+msgid "Salir"
+msgstr "Out"
+
+#: qxnw/main.js:3108
+msgid "Salir del sistema con seguridad"
+msgstr "Exit the system safely"
+
+#: qxnw/main.js:3190
+msgid "Para nosotros es muy importante su opinión"
+msgstr "For us it is very important your opinion"
+
+#: qxnw/main.js:3434
+msgid "¿Realmente desea borrar toda su configuración?"
+msgstr "Are you sure to delete all your configurations?"
+
+#: qxnw/main.js:3657
+msgid "Fecha: "
+msgstr "Date: "
+
+#: qxnw/main.js:3667
+msgid "Click para abrir el calendario"
+msgstr "Click to open calendar"
+
+#: qxnw/main.js:3678
+msgid "Calendario"
+msgstr "Calendar"
+
+#: qxnw/main.js:3692
+msgid "BD: "
+msgstr "DB:"
+
+#: qxnw/main.js:3695
+msgid "Empresa: "
+msgstr "Company: "
+
+#: qxnw/main.js:3699
+msgid "Usuario: "
+msgstr "User: "
+
+#: qxnw/main.js:3705
+msgid "Perfil: "
+msgstr "Profile: "
+
+#: qxnw/main.js:3708
+msgid "Sede: "
+msgstr "Area: "
+
+#: qxnw/main.js:3722
+msgid "Idioma: "
+msgstr "Lang: "
+
+#: qxnw/main.js:3727
+msgid "<span style='font-zize: 11; color: gray'>Versión: <b>"
+msgstr "<span style='font-zize: 11; color: gray'>Version: "
+
+#: qxnw/main.js:4019
+msgid "Barra de herramientas"
+msgstr "Tools bar"
+
+#: qxnw/main.js:4114
+msgid "Home"
+msgstr "Home"
+
+#: qxnw/mapsWidget.js:167
+msgid "Mostrar todos"
+msgstr "Show all"
+
+#: qxnw/mapsWidget.js:279
+msgid "Total: "
+msgstr "Total: "
+
+#: qxnw/mapsWidget.js:400
+msgid "La latitud para el punto no está registrada"
+msgstr "The latitude for the point is not registered"
+
+#: qxnw/mapsWidget.js:404
+msgid "La longitud para el punto no está registrada"
+msgstr "The length for the point is not registered"
+
+#: qxnw/mapsWidget.js:408
+msgid "La latitud asociada al punto no es válida"
+msgstr "Latitude associated point is not valid"
+
+#: qxnw/mapsWidget.js:412
+msgid "La longitud asociada al punto no es válida"
+msgstr "Latitude associated point is not valid"
+
+#: qxnw/mapsWidget.js:487
+msgid "Actualice la vista del mapa"
+msgstr "Update the maps view"
+
+#: qxnw/mapsWidget.js:490
+msgid "Controle la longitud del mapa"
+msgstr "Check the longitude of the map"
+
+#: qxnw/mapsWidget.js:493
+msgid "Controle la latitud del mapa"
+msgstr "Check the latitude of the map"
+
+#: qxnw/mapsWidget.js:496
+msgid "Controle el zoom del mapa"
+msgstr "Check the map zoom"
+
+#: qxnw/mapsWidget.js:499
+msgid "Controle el tipo del mapa"
+msgstr "Check the map type"
+
+#: qxnw/mapsWidget.js:781
+msgid "Zoom"
+msgstr "Zoom"
+
+#: qxnw/menu.js:395
+msgid "Cargando elemento..."
+msgstr "Loading element..."
+
+#: qxnw/menu.js:449
+msgid "Exportación dinámica"
+msgstr "Dynamic export"
+
+#: qxnw/menu.js:468
+msgid "::Descarga de archivos::"
+msgstr "::Downloading files::"
+
+#: qxnw/menu.js:476
+msgid "Escriba el motivo de descarga"
+msgstr "Your motivation to download"
+
+#: qxnw/menu.js:574 qxnw/menu.js:603
+#: qxnw/nw_excel_reports/forms/f_ne_er.js:136
+#: qxnw/nw_excel_reports/forms/f_ne_er.js:166
+msgid "No se crearon los datos"
+msgstr "Cant't create data"
+
+#: qxnw/menu.js:588 qxnw/nw_excel_reports/forms/f_ne_er.js:151
+msgid "Reporte automatizado para Excel"
+msgstr "Automatized report for Excel"
+
+#: qxnw/mobile/treeAdmin.js:22
+msgid "Administrador de propiedades del sistema móvil"
+msgstr "Mobile system property manager"
+
+#: qxnw/mobile/treeAdmin.js:50
+msgid "Página principal"
+msgstr "Homepage"
+
+#: qxnw/mobile/treeAdmin.js:72
+msgid "Perfiles disponibles"
+msgstr "Available profiles"
+
+#: qxnw/navtable.js:244
+msgid "Calcular..."
+msgstr "Calculate..."
+
+#: qxnw/navtable.js:917
+msgid "Seleccione el archivo..."
+msgstr "Select the file"
+
+#: qxnw/widgets/imageSelector.js:135 qxnw/navtable.js:920
+msgid "Administrador de imágenes"
+msgstr "Images administrator"
+
+#: qxnw/navtable.js:1471
+msgid "Exportar los datos a un formato Excel"
+msgstr "Export the data to an Excel format"
+
+#: qxnw/navtable.js:1551
+msgid "Ordenar el ancho de las columnas automáticamente"
+msgstr "Sort the width of the columns automatically"
+
+#: qxnw/navtable.js:1562
+msgid "Maximizar la tabla para mejorar la visualización de los datos"
+msgstr "Maximize the table to improve data visualization"
+
+#: qxnw/navtable.js:1580
+msgid "Limpie los filtros que haya usado sobre esta tabla"
+msgstr "Clean the filters that you have used on this table"
+
+#: qxnw/navtable.js:1631
+msgid "Vista tabla :: QXNW"
+msgstr "Table view :: QXNW"
+
+#: qxnw/widgets/imageViewer.js:80 qxnw/navtable.js:2444 qxnw/uploader.js:356
+#: qxnw/uploader.js:537 qxnw/widgets/camera_old.js:353
+msgid "Visor de imágenes"
+msgstr "Image preview"
+
+#: qxnw/notifications.js:124
+msgid "::Nueva notificación::"
+msgstr "::New notification::"
+
+#: qxnw/nw_admin_db/forms/f_configurations.js:22
+msgid "Ver compilación de codigo antes de ejecutar"
+msgstr "See compilation of code before running"
+
+#: qxnw/nw_admin_db/forms/f_configurations.js:27
+msgid "Backup .tar/.sql"
+msgstr "Backup .tar/.sql"
+
+#: qxnw/nw_admin_db/forms/f_description_table.js:20
+msgid "<strong>Clean Html</strong>"
+msgstr "<strong>Clean Html</strong>"
+
+#: qxnw/nw_admin_db/forms/f_description_table.js:25
+msgid "<strong>Uniqiue Fields</strong>"
+msgstr "<strong>Uniqiue Fields</strong>"
+
+#: qxnw/nw_admin_db/forms/f_description_table.js:43
+msgid "Nombre Navtable"
+msgstr "Navtable name"
+
+#: qxnw/nw_admin_db/forms/f_description_table.js:47
+msgid "Titulo"
+msgstr "Title"
+
+#: qxnw/security/registro/l_registro.js:28
+#: qxnw/nw_admin_db/forms/f_description_table.js:51
+#: qxnw/nw_exp/forms/f_addFieldCondi.js:40 qxnw/nw_sync/forms/f_syncAll.js:43
+msgid "Tabla"
+msgstr "Table"
+
+#: qxnw/nw_admin_db/forms/f_description_table.js:55
+#: qxnw/nw_exp/forms/f_addFieldCondi.js:45
+msgid "Campo"
+msgstr "Field"
+
+#: qxnw/nw_admin_db/forms/f_ordenar.js:67
+#: qxnw/nw_admin_db/forms/f_description_table.js:59
+msgid "NavTables"
+msgstr ""
+
+#: qxnw/nw_admin_db/forms/f_description_table.js:114
+msgid "Name"
+msgstr ""
+
+#: qxnw/nw_admin_db/forms/f_description_table.js:122
+msgid "SelectBox"
+msgstr ""
+
+#: qxnw/nw_admin_db/forms/f_description_table.js:162
+msgid "label"
+msgstr ""
+
+#: qxnw/nw_admin_db/forms/f_description_table.js:166
+msgid "Icon"
+msgstr ""
+
+#: qxnw/nw_admin_db/forms/f_description_table.js:170
+msgid "Slot"
+msgstr ""
+
+#: qxnw/nw_admin_db/forms/f_description_table.js:174
+msgid "Question"
+msgstr ""
+
+#: qxnw/nw_admin_db/forms/f_description_table.js:178
+msgid "Question Ask"
+msgstr ""
+
+#: qxnw/nw_admin_db/forms/f_description_table.js:183
+msgid "ContexMenu"
+msgstr ""
+
+#: qxnw/nw_admin_db/forms/f_description_table.js:197
+#: qxnw/nw_admin_db/forms/f_new_table.js:205
+msgid "<strong>Tipo Icono</strong>"
+msgstr "<strong>Type icon</strong>"
+
+#: qxnw/nw_admin_db/forms/f_description_table.js:202
+#: qxnw/nw_admin_db/forms/f_new_table.js:210
+msgid "<strong>Tamaño Icono</strong>"
+msgstr "<strong>Size icon</strong>"
+
+#: qxnw/nw_admin_db/forms/f_description_table.js:207
+#: qxnw/nw_admin_db/forms/f_new_table.js:215
+msgid "<strong>Icono</strong>"
+msgstr "<strong>Icon</strong>"
+
+#: qxnw/nw_admin_db/forms/f_description_table.js:212
+msgid "<strong>Slot</strong>"
+msgstr "<strong>Slot</strong>"
+
+#: qxnw/nw_admin_db/forms/f_description_table.js:218
+msgid "<strong>Question</strong>"
+msgstr "<strong>Question</strong>"
+
+#: qxnw/nw_admin_db/forms/f_description_table.js:223
+msgid "<strong>Question Ask</strong>"
+msgstr "<strong>Question Ask</strong>"
+
+#: qxnw/nw_admin_db/forms/f_field.js:22
+msgid "<strong>Nombre Campo</strong>"
+msgstr "<strong>Field name</strong>"
+
+#: qxnw/nw_admin_db/forms/f_field.js:28
+msgid "<strong>Table_name</strong>"
+msgstr "<strong>Table_name</strong>"
+
+#: qxnw/nw_admin_db/forms/f_field.js:34
+msgid "<strong>Tipo Campo</strong>"
+msgstr "<strong>Field type</strong>"
+
+#: qxnw/nw_admin_db/forms/f_field.js:51
+msgid "<strong>Tamaño</strong>"
+msgstr "<strong>Size</strong>"
+
+#: qxnw/nw_admin_db/forms/f_field.js:58
+msgid "<strong>Número de dimensiones de array</strong>"
+msgstr "<strong> Number of array dimensions </ strong>"
+
+#: qxnw/nw_admin_db/forms/f_field.js:86
+msgid "<strong>Valor Default</strong>"
+msgstr "<strong>Default value</strong>"
+
+#: qxnw/nw_admin_db/forms/f_field.js:102
+msgid "<strong>Primary Key</strong>"
+msgstr "<strong>Primary Key</strong>"
+
+#: qxnw/nw_admin_db/forms/f_field.js:107
+msgid "<strong>No Nulo</strong>"
+msgstr "<strong>No Null</strong>"
+
+#: qxnw/nw_admin_db/forms/f_field.js:112
+msgid "<strong>Unico</strong>"
+msgstr "<strong>Unique</strong>"
+
+#: qxnw/nw_admin_db/forms/f_field.js:117
+msgid "<strong>Descripción</strong>"
+msgstr "<strong>Description</strong>"
+
+#: qxnw/nw_admin_db/forms/f_field.js:133
+msgid "<strong>Widget</strong>"
+msgstr "<strong>Widget</strong>"
+
+#: qxnw/nw_admin_db/forms/f_field.js:138
+msgid "<strong>Populate</strong>"
+msgstr "<strong>Populate</strong>"
+
+#: qxnw/nw_admin_db/forms/f_field.js:143
+msgid "<strong>tabla</strong>"
+msgstr "<strong>table</strong>"
+
+#: qxnw/nw_admin_db/forms/f_field.js:148
+msgid "<strong>Clase/Metodo</strong>"
+msgstr "<strong>Class/Metod</strong>"
+
+#: qxnw/nw_admin_db/forms/f_field.js:153
+msgid "<strong>Mode</strong>"
+msgstr "<strong>Mode</strong>"
+
+#: qxnw/nw_admin_db/forms/f_field.js:158
+msgid "<strong>Parametro</strong>"
+msgstr "<strong>Parameter</strong>"
+
+#: qxnw/nw_admin_db/forms/f_field.js:163
+msgid "<strong>Label</strong>"
+msgstr "<strong>Label</strong>"
+
+#: qxnw/nw_admin_db/forms/f_field.js:179
+msgid "<strong>Visible</strong>"
+msgstr "<strong>Visible</strong>"
+
+#: qxnw/nw_admin_db/forms/f_field.js:184
+msgid "<strong>Required</strong>"
+msgstr "<strong>Required</strong>"
+
+#: qxnw/nw_admin_db/forms/f_field.js:189 qxnw/nw_admin_db/forms/f_field.js:194
+msgid "<strong>Filter</strong>"
+msgstr "<strong>Filter</strong>"
+
+#: qxnw/nw_admin_db/forms/f_new_table.js:22
+msgid "<strong>Nombre</strong>"
+msgstr "<strong>Name</strong>"
+
+#: qxnw/nw_admin_db/forms/f_new_table.js:28
+msgid "<strong>Owner</strong>"
+msgstr "<strong>Owner</strong>"
+
+#: qxnw/nw_admin_db/forms/f_new_table.js:33
+msgid "<strong>Descripcion</strong>"
+msgstr "<strong>Description</strong>"
+
+#: qxnw/nw_admin_db/forms/f_new_table.js:38
+msgid "<strong>Menú</strong>"
+msgstr "<strong>Menu</strong>"
+
+#: qxnw/nw_admin_db/forms/f_ordenar.js:28
+#: qxnw/nw_admin_db/forms/f_tables.js:18
+#: qxnw/nw_admin_db/forms/f_new_table.js:47
+msgid "Nombre Campo"
+msgstr "Field name"
+
+#: qxnw/nw_admin_db/forms/f_ordenar.js:32
+#: qxnw/nw_admin_db/forms/f_tables.js:22
+#: qxnw/nw_admin_db/forms/f_new_table.js:51
+msgid "Tipo Campo"
+msgstr "Field type"
+
+#: qxnw/nw_admin_db/forms/f_new_table.js:59
+msgid "Número de dimensión de arrays"
+msgstr "Dimension number of arrays"
+
+#: qxnw/nw_admin_db/forms/f_ordenar.js:40
+#: qxnw/nw_admin_db/forms/f_tables.js:30
+#: qxnw/nw_admin_db/forms/f_new_table.js:63 qxnw/nw_import_data/main.js:278
+msgid "Posición"
+msgstr "Position"
+
+#: qxnw/nw_admin_db/forms/f_ordenar.js:44
+#: qxnw/nw_admin_db/forms/f_tables.js:34
+#: qxnw/nw_admin_db/forms/f_new_table.js:67
+msgid "Llave"
+msgstr "Key"
+
+#: qxnw/nw_admin_db/forms/f_ordenar.js:49
+#: qxnw/nw_admin_db/forms/f_tables.js:39
+#: qxnw/nw_admin_db/forms/f_new_table.js:73
+msgid "Unico"
+msgstr "Unique"
+
+#: qxnw/nw_admin_db/forms/f_ordenar.js:54
+#: qxnw/nw_admin_db/forms/f_tables.js:44
+#: qxnw/nw_admin_db/forms/f_new_table.js:79
+msgid "No nulo"
+msgstr "Not null"
+
+#: qxnw/nw_admin_db/forms/f_ordenar.js:59
+#: qxnw/nw_admin_db/forms/f_tables.js:49
+#: qxnw/nw_admin_db/forms/f_new_table.js:86
+msgid "Default"
+msgstr "Default"
+
+#: qxnw/nw_admin_db/forms/f_tables.js:57
+#: qxnw/nw_admin_db/forms/f_new_table.js:94
+msgid "Campos"
+msgstr "Fields"
+
+#: qxnw/nw_admin_db/forms/f_new_table.js:101
+msgid "Descripción Tabla"
+msgstr "Table description"
+
+#: qxnw/nw_admin_db/forms/f_new_table.js:154
+msgid "<strong>Nombre Componente</strong>"
+msgstr "<strong>Name Component</strong>"
+
+#: qxnw/nw_admin_db/forms/f_new_table.js:159
+msgid "<strong>Grupo</strong>"
+msgstr "<strong>Group</strong>"
+
+#: qxnw/nw_admin_db/forms/f_new_table.js:164
+msgid "<strong>Icono Componente</strong>"
+msgstr "<strong>Component icon</strong>"
+
+#: qxnw/nw_admin_db/forms/f_new_table.js:169
+msgid "<strong>Nombre Menú</strong>"
+msgstr "<strong>Menu name</strong>"
+
+#: qxnw/nw_admin_db/forms/f_new_table.js:174
+msgid "<strong>Orden</strong>"
+msgstr "<strong>Order</strong>"
+
+#: qxnw/nw_admin_db/forms/f_new_table.js:190
+msgid "<strong>Nivel</strong>"
+msgstr "<strong>Level</strong>"
+
+#: qxnw/nw_admin_db/forms/f_new_table.js:195
+msgid "<strong>Nivel Padre</strong>"
+msgstr "<strong>Parent level</strong>"
+
+#: qxnw/nw_admin_db/forms/f_new_table.js:200
+msgid "<strong>Padre</strong>"
+msgstr "<strong>Parent</strong>"
+
+#: qxnw/nw_admin_db/forms/f_new_table.js:231
+msgid "<strong>Perfil</strong>"
+msgstr "<strong>Profile</strong>"
+
+#: qxnw/nw_admin_db/forms/f_new_table.js:236
+msgid "<strong>Todos</strong>"
+msgstr "<strong>All</strong>"
+
+#: qxnw/nw_admin_db/forms/f_new_table.js:241
+msgid "<strong>Crear</strong>"
+msgstr "<strong>Create</strong>"
+
+#: qxnw/nw_admin_db/forms/f_new_table.js:246
+msgid "<strong>Consultar</strong>"
+msgstr "<strong>Search</strong>"
+
+#: qxnw/nw_admin_db/forms/f_new_table.js:251
+msgid "<strong>Editar</strong>"
+msgstr "<strong>Edit</strong>"
+
+#: qxnw/nw_admin_db/forms/f_new_table.js:256
+msgid "<strong>Elimnar</strong>"
+msgstr "<strong>Delete</strong>"
+
+#: qxnw/nw_admin_db/forms/f_new_table.js:261
+msgid "<strong>Imprimir</strong>"
+msgstr "<strong>Print</strong>"
+
+#: qxnw/nw_admin_db/forms/f_new_table.js:266
+msgid "<strong>Enviar por Correo</strong>"
+msgstr "<strong>Send by E-Mail</strong>"
+
+#: qxnw/nw_admin_db/forms/f_new_table.js:271
+msgid "<strong>Exportar</strong>"
+msgstr "<strong>Export</strong>"
+
+#: qxnw/nw_admin_db/forms/f_new_table.js:276
+msgid "<strong>Importar</strong>"
+msgstr "<strong>Import</strong>"
+
+#: qxnw/nw_admin_db/forms/f_new_table.js:281
+msgid "<strong>Terminal</strong>"
+msgstr "<strong>Terminal</strong>"
+
+#: qxnw/nw_admin_db/forms/f_new_table.js:286
+msgid "<strong>Ocultar Columnas</strong>"
+msgstr "<strong>Hide columns</strong>"
+
+#: qxnw/nw_admin_db/forms/f_ordenar.js:24
+#: qxnw/nw_admin_db/forms/f_tables.js:14
+msgid "Tabla Pública"
+msgstr "Public table"
+
+#: qxnw/security/registro/l_registro.js:32
+#: qxnw/nw_admin_db/forms/f_query.js:15
+msgid "Query"
+msgstr ""
+
+#: qxnw/nw_admin_db/forms/f_server_db.js:18
+#: qxnw/nw_admin_db/forms/f_server.js:18
+msgid "Driver"
+msgstr "Driver"
+
+#: qxnw/nw_admin_db/forms/f_server_db.js:39
+#: qxnw/nw_admin_db/forms/f_server.js:36
+msgid "User Name"
+msgstr ""
+
+#: qxnw/nw_admin_db/forms/f_server_db.js:45
+#: qxnw/nw_admin_db/forms/f_server.js:42
+msgid "Password"
+msgstr ""
+
+#: qxnw/nw_admin_db/forms/f_server_db.js:51
+msgid "Base datos"
+msgstr "Database"
+
+#: qxnw/nw_admin_db/forms/f_tables.js:167
+msgid "Indices"
+msgstr "Index"
+
+#: qxnw/nw_admin_db/forms/f_tables.js:169
+msgid "DDL"
+msgstr "DDL"
+
+#: qxnw/nw_admin_db/lists/l_process.js:11
+msgid "Data ID"
+msgstr ""
+
+#: qxnw/nw_admin_db/lists/l_process.js:15
+msgid "Proceso ID"
+msgstr "Process ID"
+
+#: qxnw/nw_admin_db/trees/vista_general.js:333
+msgid "Nueva Disparador"
+msgstr "New Trigger"
+
+#: qxnw/nw_admin_db/trees/vista_general.js:338
+msgid "Editar Base datos"
+msgstr "Edit Database"
+
+#: qxnw/nw_admin_db/trees/vista_general.js:343
+msgid "Registrar Base datos"
+msgstr "Register database"
+
+#: qxnw/nw_admin_db/trees/vista_general.js:346
+msgid "Editar Configuración"
+msgstr "Edit configuration"
+
+#: qxnw/nw_admin_db/trees/vista_general.js:349
+msgid "Borrar Host"
+msgstr "Delete host"
+
+#: qxnw/nw_admin_db/trees/vista_general.js:352
+msgid "Desconectar Host"
+msgstr "Disconnect Host"
+
+#: qxnw/nw_admin_db/trees/vista_general.js:725
+msgid "Limpiar DB"
+msgstr "Clean DB"
+
+#: qxnw/nw_admin_db/trees/vista_general.js:728
+msgid "Elija el archivo a subir"
+msgstr "Choose the file to upload"
+
+#: qxnw/nw_cron/f_cronNe.js:37 qxnw/nw_cron/l_cron.js:32
+msgid "Trabajo"
+msgstr "Work"
+
+#: qxnw/nw_cron/f_cronNe.js:43
+msgid "Minutos (0-60)"
+msgstr "Minutes (0-60)"
+
+#: qxnw/nw_cron/f_cronNe.js:48
+msgid "Hora (0-24)"
+msgstr "Hour (0-24)"
+
+#: qxnw/nw_cron/f_cronNe.js:53 qxnw/nw_cron/l_cron.js:44
+msgid "Día del mes (0-31)"
+msgstr "Month day (0-31)"
+
+#: qxnw/nw_cron/f_cronNe.js:58
+msgid "Mes (0-12)"
+msgstr "Mont (0-12)"
+
+#: qxnw/nw_cron/f_cronNe.js:63
+msgid "Día de la semana (0-7)"
+msgstr "Week day (0-7)"
+
+#: qxnw/nw_cron/l_cron.js:28
+msgid "Descripción trabajo"
+msgstr "Job description"
+
+#: qxnw/nw_cron/l_cron.js:36
+msgid "Minutos (0-59)"
+msgstr "Minutes (0-59)"
+
+#: qxnw/nw_cron/l_cron.js:40
+msgid "Hora (0-23)"
+msgstr "Hour (0-23)"
+
+#: qxnw/nw_cron/l_cron.js:48
+msgid "Mes (0-11)"
+msgstr "Month (0-11)"
+
+#: qxnw/nw_cron/l_cron.js:52
+msgid "Día de la semana (0-6)"
+msgstr "Wekk day (0-6)"
+
+#: qxnw/nw_drive/trees/vista_general.js:509
+msgid "<div style='font-size: 12px;'><h2>Compartición de Carpetas</h2></div>"
+msgstr "<div style='font-size: 12px;'><h2>Share files</h2></div>"
+
+#: qxnw/nw_drive/trees/vista_general.js:587
+msgid "<div style='font-size: 12px;'><h2>Agregar Usuario</h2></div>"
+msgstr "<div style='font-size: 12px;'><h2>Add user</h2></div>"
+
+#: qxnw/nw_drive/trees/vista_general.js:656
+msgid "Seleccione un registro para eliminar"
+msgstr "Select a record to delete"
+
+#: qxnw/nw_drive/trees/vista_general.js:662
+msgid "¿Está seguro dejar de compartir con esta persona?"
+msgstr "Are you sure to stop sharing with this person?"
+
+#: qxnw/nw_drive/trees/vista_general.js:721
+msgid "<div style='font-size: 12px;'><h2>Enviar enlace por correo</h2></div>"
+msgstr "<div style='font-size: 12px;'><h2>Send link by E-Mail</h2></div>"
+
+#: qxnw/nw_email_list/tree/groupsAndEmails.js:35
+msgid "¿Desea eliminar el grupo junto a sus correos asociados?"
+msgstr "Do you want to delete the group with their associated emails?"
+
+#: qxnw/nw_email_list/tree/groupsAndEmails.js:62
+msgid "Seleccione el usuario"
+msgstr "Select the user"
+
+#: qxnw/nw_excel_reports/forms/f_ne_er.js:6
+msgid "Reporte dinámico en Excel"
+msgstr "Dynamic report in Excel"
+
+#: qxnw/nw_excel_reports/forms/f_ne_er.js:56
+msgid "Label"
+msgstr ""
+
+#: qxnw/nw_excel_reports/forms/f_ne_er.js:60
+msgid "Type"
+msgstr ""
+
+#: qxnw/nw_excel_reports/forms/f_ne_er.js:64
+#: qxnw/nw_excel_reports/forms/f_ne_er.js:69
+msgid "Required"
+msgstr ""
+
+#: qxnw/nw_excel_reports/forms/f_ne_er.js:103
+msgid "Generar informe"
+msgstr "Generate report"
+
+#: qxnw/nw_excel_reports/forms/f_ne_er.js:122
+msgid "Debe guardar el informe para la vista previa"
+msgstr "Must save the report to activa the preview"
+
+#: qxnw/nw_reports/forms/f_encabezado.js:228
+#: qxnw/nw_excel_reports/forms/f_ne_er.js:228
+msgid "Guardado correctamente. ¿Desea cerrar la ventana?"
+msgstr "Saved Ok. You wish to close the window?"
+
+#: qxnw/nw_sync/forms/f_add.js:23 qxnw/nw_exp/forms/f_add.js:23
+msgid "Agregar tabla :: QXNW"
+msgstr "Add table :: QXNW"
+
+#: qxnw/nw_sync/forms/f_add.js:143 qxnw/nw_exp/forms/f_add.js:80
+#: qxnw/nw_import_data/forms/f_addField.js:98 qxnw/nw_sync/main.js:227
+#: qxnw/nw_sync/main.js:299 qxnw/nw_sync/forms/f_addField.js:81
+#: qxnw/nw_sync/forms/f_addConnection.js:93
+#: qxnw/nw_exp/forms/f_addFieldCondi.js:154
+#: qxnw/nw_exp/forms/f_addField.js:135 qxnw/nw_exp/forms/f_addConnection.js:93
+#: qxnw/nw_exp/forms/f_addFilter.js:193 qxnw/nw_exp/main.js:306
+#: qxnw/nw_exp/main.js:378
+msgid "Registro guardado correctamente"
+msgstr "Record saved successfully"
+
+#: qxnw/nw_sync/forms/f_add.js:55 qxnw/nw_exp/forms/f_add.js:200
+msgid "<b>Tablas disponibles:</b>"
+msgstr "<b> Available tables: </b>"
+
+#: qxnw/nw_exp/forms/f_add.js:225
+msgid "<b>Campos seleccionados:</b>"
+msgstr "<b>Selected fields:</b>"
+
+#: qxnw/nw_sync/forms/f_add.js:81 qxnw/nw_exp/forms/f_add.js:267
+msgid "<b>Campos disponibles:</b>"
+msgstr "<b>Available fields:</b>"
+
+#: qxnw/nw_sync/forms/f_add.js:98 qxnw/nw_exp/forms/f_add.js:353
+msgid "<b>Data asociada a la tabla:</b>"
+msgstr "<b>Data associated with the table:</b>"
+
+#: qxnw/nw_sync/forms/f_addConnection.js:23
+#: qxnw/nw_exp/forms/f_addConnection.js:23
+msgid "Agregar conexión :: QXNW"
+msgstr "Add connection :: QXNW"
+
+#: qxnw/nw_sync/forms/f_addConnection.js:27
+#: qxnw/nw_exp/forms/f_addConnection.js:27
+msgid "Campo a conectar de la tabla"
+msgstr "Field to connect from the table"
+
+#: qxnw/nw_sync/forms/f_addConnection.js:33
+#: qxnw/nw_exp/forms/f_addConnection.js:33
+msgid "Tabla a conectar"
+msgstr "Table to connect"
+
+#: qxnw/nw_sync/forms/f_addConnection.js:39
+#: qxnw/nw_exp/forms/f_addConnection.js:39
+msgid "Campo a conectar"
+msgstr "Field to connect"
+
+#: qxnw/nw_sync/forms/f_addConnection.js:45
+#: qxnw/nw_exp/forms/f_addConnection.js:45
+msgid "Mostrar como"
+msgstr "Show as"
+
+#: qxnw/nw_sync/forms/f_addConnection.js:199
+#: qxnw/nw_exp/forms/f_addConnection.js:199
+msgid "Tablas disponibles:"
+msgstr "Tables available:"
+
+#: qxnw/nw_sync/forms/f_addConnection.js:220
+#: qxnw/nw_exp/forms/f_addConnection.js:220
+msgid "Campos seleccionados:"
+msgstr "Selected Fields:"
+
+#: qxnw/nw_sync/forms/f_addConnection.js:261
+#: qxnw/nw_exp/forms/f_addConnection.js:261
+msgid "Campos disponibles:"
+msgstr "Available fields:"
+
+#: qxnw/nw_import_data/forms/f_addField.js:24
+#: qxnw/nw_exp/forms/f_addField.js:24
+msgid "Agregar campo :: QXNW"
+msgstr "Add field :: QXNW"
+
+#: qxnw/nw_import_data/forms/f_addField.js:34
+#: qxnw/nw_sync/forms/f_addField.js:34 qxnw/nw_exp/forms/f_addField.js:34
+#: qxnw/nw_exp/forms/f_addFilter.js:34
+msgid "Nombre campo"
+msgstr "Field name"
+
+#: qxnw/nw_exp/forms/f_addFieldCondi.js:50 qxnw/nw_exp/forms/f_addField.js:46
+#: qxnw/nw_exp/forms/f_addFilter.js:46
+msgid "Nombre a mostrar"
+msgstr "Display Name"
+
+#: qxnw/nw_exp/forms/f_addField.js:59
+msgid "Vacío"
+msgstr "Empty"
+
+#: qxnw/nw_exp/forms/f_addField.js:60
+msgid "Consecutivo"
+msgstr "Consecutive"
+
+#: qxnw/nw_exp/forms/f_addField.js:61
+msgid "Fijo"
+msgstr "Permanent"
+
+#: qxnw/nw_exp/forms/f_addField.js:67
+msgid "Asigne el número inicial del consecutivo"
+msgstr "Assign the initial number of the consecutive"
+
+#: qxnw/nw_exp/forms/f_addFieldCondi.js:138
+#: qxnw/nw_exp/forms/f_addField.js:118
+msgid "Campo modificado"
+msgstr "Modified field"
+
+#: qxnw/nw_exp/forms/f_addFieldCondi.js:24
+msgid "Agregar campo CONDICIONAL :: QXNW"
+msgstr "Add CONDITIONAL field :: QXNW"
+
+#: qxnw/nw_exp/forms/f_addFieldCondi.js:55
+msgid "Operación"
+msgstr "Operation"
+
+#: qxnw/nw_exp/forms/f_addFieldCondi.js:65
+msgid "Campo condicional verdadero"
+msgstr "True conditional field"
+
+#: qxnw/nw_exp/forms/f_addFieldCondi.js:70
+msgid "Campo condicional falso"
+msgstr "Conditional Fake Field"
+
+#: qxnw/nw_exp/forms/f_addFieldCondi.js:79
+msgid "Condicional"
+msgstr "Conditional"
+
+#: qxnw/nw_exp/forms/f_addFieldCondi.js:82
+msgid "="
+msgstr "="
+
+#: qxnw/nw_exp/forms/f_addFieldCondi.js:83
+msgid ">"
+msgstr ">"
+
+#: qxnw/nw_exp/forms/f_addFieldCondi.js:84
+msgid "<"
+msgstr "<"
+
+#: qxnw/nw_exp/forms/f_addFilter.js:24
+msgid "Agregar filtro :: QXNW"
+msgstr ""
+
+#: qxnw/nw_exp/forms/f_addFilter.js:51
+msgid "Comparativo"
+msgstr "Comparative"
+
+#: qxnw/nw_exp/forms/f_addFilter.js:56
+msgid "Tabla asociada"
+msgstr "Associated table"
+
+#: qxnw/nw_exp/forms/f_addFilter.js:62
+msgid "Campo a mostrar"
+msgstr "Field to show"
+
+#: qxnw/nw_exp/forms/f_addFilter.js:71
+msgid "Cuadro de texto"
+msgstr "Text box"
+
+#: qxnw/nw_exp/forms/f_addFilter.js:73
+msgid "Lista desplegable"
+msgstr "Drop-down list"
+
+#: qxnw/nw_exp/forms/f_addFilter.js:105 qxnw/nw_exp/forms/f_addFilter.js:117
+#: qxnw/nw_exp/forms/f_addFilter.js:128
+msgid "Igual"
+msgstr "Equal"
+
+#: qxnw/nw_exp/forms/f_addFilter.js:112
+msgid "Entre"
+msgstr "Between"
+
+#: qxnw/nw_exp/forms/f_addFilter.js:118 qxnw/nw_exp/forms/f_addFilter.js:129
+msgid "Diferente"
+msgstr "Different"
+
+#: qxnw/nw_exp/forms/f_addFilter.js:119 qxnw/nw_exp/forms/f_addFilter.js:130
+msgid "Mayor que"
+msgstr "Greater than"
+
+#: qxnw/nw_exp/forms/f_addFilter.js:120 qxnw/nw_exp/forms/f_addFilter.js:131
+msgid "Menor que"
+msgstr "Smaller than"
+
+#: qxnw/nw_exp/forms/f_addFilter.js:121 qxnw/nw_exp/forms/f_addFilter.js:132
+msgid "Parecido"
+msgstr "Similar"
+
+#: qxnw/nw_exp/lists/l_view.js:103
+msgid "Debe ingresar una conexión adicional"
+msgstr "You must enter an additional connection"
+
+#: qxnw/nw_exp/lists/l_view.js:111
+msgid "No se encontraron registros"
+msgstr "No records found"
+
+#: qxnw/nw_exp/main.js:6
+msgid "QXNW :: Exportación de datos dinámica"
+msgstr "QXNW :: Dynamic data export"
+
+#: qxnw/nw_exp/main.js:46
+msgid "Está segur@ de eliminar la interfaz?"
+msgstr "Are you sure you delete the interface?"
+
+#: qxnw/nw_exp/main.js:60
+msgid "Nuevo listado"
+msgstr "New listing"
+
+#: qxnw/nw_sync/main.js:61 qxnw/nw_exp/main.js:72
+msgid "Agregar tabla"
+msgstr "Add table"
+
+#: qxnw/nw_import_data/imp_chars_len.js:228 qxnw/nw_exp/main.js:78
+msgid "Agregar campo"
+msgstr "Add field"
+
+#: qxnw/nw_exp/main.js:83
+msgid "Agregar campo CONDICIONAL"
+msgstr "Add CONDITIONAL field"
+
+#: qxnw/nw_exp/main.js:89
+msgid "Agregar filtro"
+msgstr "Add filter"
+
+#: qxnw/nw_exp/main.js:157
+msgid "Campos:"
+msgstr "Fields:"
+
+#: qxnw/nw_sync/main.js:86 qxnw/nw_exp/main.js:194
+msgid "Tablas:"
+msgstr "Tables:"
+
+#: qxnw/nw_sync/main.js:121 qxnw/nw_exp/main.js:219
+msgid "Conexiones:"
+msgstr "Connections:"
+
+#: qxnw/nw_exp/main.js:247
+msgid "Filtros:"
+msgstr "Filters:"
+
+#: qxnw/nw_exp/main.js:387
+msgid "Nuevo listado dinámico :: QXNW"
+msgstr "New dynamic listing :: QXNW"
+
+#: qxnw/nw_exp/main.js:423
+msgid "Editar listado dinámico :: QXNW"
+msgstr "Edit Dynamic Listing :: QXNW"
+
+#: qxnw/nw_sync/main.js:149 qxnw/nw_exp/main.js:438 qxnw/nw_exp/main.js:758
+msgid "No hay interfaces para eliminar"
+msgstr "There are no interfaces to remove"
+
+#: qxnw/nw_sync/main.js:345 qxnw/nw_exp/main.js:613
+msgid "Conexiones"
+msgstr "Connections"
+
+#: qxnw/nw_sync/main.js:372 qxnw/nw_exp/main.js:641
+msgid "¿Desea eliminar la conexión a esta tabla y los campos asociados?"
+msgstr ""
+"Do you want to remove the connection to this table and the associated "
+"fields?"
+
+#: qxnw/nw_sync/main.js:393 qxnw/nw_exp/main.js:662
+msgid "¿Desea eliminar ésta conexión de tablas?"
+msgstr "Do you want to remove this connection from tables?"
+
+#: qxnw/nw_exp/main.js:681
+msgid "¿Desea eliminar ésta conexión de filtros?"
+msgstr "Do you want to remove this filter connection?"
+
+#: qxnw/nw_sync/main.js:413 qxnw/nw_exp/main.js:702
+msgid "¿Desea eliminar este campo?"
+msgstr "Do you want to delete this field?"
+
+#: qxnw/nw_exp/main.js:720
+msgid ""
+"Un campo CONDICIONAL no se puede editar. Se debe eliminar y crear de nuevo"
+msgstr ""
+"A CONDITIONAL field cannot be edited. It must be deleted and created again"
+
+#: qxnw/nw_file_manager/trees/vista_general.js:6
+msgid "Administrador de archivos :: NW Group"
+msgstr "Files manager :: NW Group"
+
+#: qxnw/nw_file_manager/trees/vista_general.js:11
+#: qxnw/nw_file_manager/trees/vista_general.js:1200
+msgid "Escritorio"
+msgstr "Desk"
+
+#: qxnw/nw_file_manager/trees/vista_general.js:42
+msgid "Buscar en árbol..."
+msgstr "Search in tree..."
+
+#: qxnw/nw_file_manager/trees/vista_general.js:48
+msgid "Buscar en servidor..."
+msgstr "Search on server ..."
+
+#: qxnw/nw_file_manager/trees/vista_general.js:54
+msgid "Selección múltiple"
+msgstr "Multiple choice"
+
+#: qxnw/nw_file_manager/trees/vista_general.js:64
+msgid "Seleccionar"
+msgstr "Select"
+
+#: qxnw/nw_file_manager/trees/vista_general.js:68
+#: qxnw/widgets/camera_old.js:110
+msgid "Subir"
+msgstr "Up"
+
+#: qxnw/nw_file_manager/trees/vista_general.js:294
+msgid "¿Está segur@ de eliminar el/los item/s?"
+msgstr "Are you sure to eliminate the item / s?"
+
+#: qxnw/nw_file_manager/trees/vista_general.js:514
+#: qxnw/nw_file_manager/trees/vista_general.js:706
+msgid "<b>Total archivos en esta vista: "
+msgstr "<b> Total files in this view:"
+
+#: qxnw/treeWidget.js:973 qxnw/nw_file_manager/trees/vista_general.js:519
+#: qxnw/nw_file_manager/trees/vista_general.js:920
+msgid "Total páginas: 0"
+msgstr "Total pages: 0"
+
+#: qxnw/nw_file_manager/trees/vista_general.js:727
+msgid "No hay items seleccionados"
+msgstr "No selected items"
+
+#: qxnw/nw_file_manager/trees/vista_general.js:764
+msgid "<b>Ruta: </b>"
+msgstr "<b>Path: </b>"
+
+#: qxnw/nw_file_manager/trees/vista_general.js:766
+msgid "<b>Nombre: </b>"
+msgstr "<b>Name: </b>"
+
+#: qxnw/nw_file_manager/trees/vista_general.js:768
+msgid "<b>Extensión: </b>"
+msgstr "<b>Ext: </b>"
+
+#: qxnw/nw_file_manager/trees/vista_general.js:770
+msgid "<b>Tipo: </b>"
+msgstr "<b>Type: </b>"
+
+#: qxnw/nw_file_manager/trees/vista_general.js:772
+msgid "<b>Tamaño: </b>"
+msgstr "<b>Size: </b>"
+
+#: qxnw/nw_file_manager/trees/vista_general.js:777
+msgid "<b>Permisos: </b>"
+msgstr "<b>Permissions: </b>"
+
+#: qxnw/nw_file_manager/trees/vista_general.js:785
+msgid "<b>Propietario: </b>"
+msgstr "<b>Owner: </b>"
+
+#: qxnw/nw_file_manager/trees/vista_general.js:806
+msgid "<b>Total archivos servidor: "
+msgstr "<b>Total files on server: </b>"
+
+#: qxnw/nw_file_manager/trees/vista_general.js:809
+msgid "<b>Total directorios: "
+msgstr "<b>Total directories: </b>"
+
+#: qxnw/nw_file_manager/trees/vista_general.js:856
+msgid "<b><font color='red'>Registros por página</font></b>"
+msgstr "<b><font color='red'>Records by page</font></b>"
+
+#: qxnw/treeWidget.js:947 qxnw/nw_file_manager/trees/vista_general.js:894
+msgid "Página actual"
+msgstr "Current page"
+
+#: qxnw/nw_file_manager/trees/vista_general.js:1072
+msgid "Código"
+msgstr "Code"
+
+#: qxnw/nw_file_manager/trees/vista_general.js:1102
+msgid "Nueva carpeta :: NW Group"
+msgstr "New folder :: NW Group"
+
+#: qxnw/nw_file_manager/trees/vista_general.js:1168
+msgid "Subir archivos::NW Group"
+msgstr "Upload files :: NW Group"
+
+#: qxnw/nw_file_manager/trees/vista_general.js:1174
+msgid "Archivo"
+msgstr "File"
+
+#: qxnw/nw_file_manager/trees/vista_general.js:1287
+msgid "Cambiar nombre :: NW Group"
+msgstr "Change name :: NW Group"
+
+#: qxnw/nw_forms_designer/terminal.js:22
+msgid "Terminal de desarrolladores"
+msgstr "Developer terminal"
+
+#: qxnw/nw_forms_designer/terminal.js:27
+msgid "Grabadora"
+msgstr "Recorder"
+
+#: qxnw/nw_forms_designer/terminal.js:32
+msgid "Direcciones"
+msgstr "Addresses"
+
+#: qxnw/nw_forms_designer/terminal.js:37
+msgid "Subir varios archivos"
+msgstr "Upload many files"
+
+#: qxnw/nw_forms_designer/terminal.js:42
+msgid "Botón de colores"
+msgstr "Color button"
+
+#: qxnw/nw_forms_designer/terminal.js:52
+msgid "Vista de colores"
+msgstr "Colors view"
+
+#: qxnw/nw_forms_designer/terminal.js:103
+msgid "Widgets"
+msgstr "Widgets"
+
+#: qxnw/nw_forms_designer/terminal.js:108
+msgid "Lady"
+msgstr ""
+
+#: qxnw/nw_html_forms/forms/f_ne_html_forms.js:7
+msgid "Nuevo espacio HTML"
+msgstr "New HTMl space"
+
+#: qxnw/nw_html_forms/forms/f_ne_html_forms.js:24 qxnw/tmp/ckeditor.js:19
+msgid "Html"
+msgstr "Html"
+
+#: qxnw/nw_import_data/forms/f_addField.js:46
+#: qxnw/nw_import_data/imp_chars_len.js:37
+msgid "Tipo de dato"
+msgstr ""
+
+#: qxnw/nw_import_data/forms/f_addField.js:52
+msgid "Se usa"
+msgstr ""
+
+#: qxnw/nw_import_data/forms/f_addField.js:58
+msgid "Número de caracteres"
+msgstr ""
+
+#: qxnw/nw_import_data/forms/f_addField.js:63
+#: qxnw/nw_import_data/imp_chars_len.js:55
+msgid "Limpiar espacios"
+msgstr ""
+
+#: qxnw/nw_import_data/forms/f_addField.js:68
+#: qxnw/nw_import_data/imp_chars_len.js:61
+msgid "Limpiar ceros a la izquierda"
+msgstr ""
+
+#: qxnw/nw_import_data/imp_chars_len.js:6
+msgid "Sistema de importación por caracteres :: QXNW"
+msgstr ""
+
+#: qxnw/nw_import_data/imp_chars_len.js:13 qxnw/nw_import_data/main.js:11
+msgid ""
+"<font style='color: #20282F;font-size: 2em;'>Importación masiva de datos "
+"desde archivo CSV/TXT.</font>"
+msgstr ""
+"<font style = 'color: # 20282F; font-size: 2em;'> Massive data import from "
+"CSV / TXT file. </ font>"
+
+#: qxnw/nw_import_data/imp_chars_len.js:43
+msgid "Uso"
+msgstr ""
+
+#: qxnw/nw_import_data/imp_chars_len.js:49
+msgid "Num caracteres"
+msgstr ""
+
+#: qxnw/nw_import_data/imp_chars_len.js:74
+msgid "Parametrizacioń columnas"
+msgstr ""
+
+#: qxnw/nw_import_data/imp_chars_len.js:89
+msgid "Líneas importadas"
+msgstr ""
+
+#: qxnw/nw_import_data/imp_chars_len.js:120 qxnw/nw_import_data/main.js:153
+msgid "Ignorar la primera línea:"
+msgstr "Ignore the first line:"
+
+#: qxnw/nw_import_data/imp_chars_len.js:123 qxnw/nw_import_data/main.js:156
+msgid ""
+"Puede excluir la primera línea de su archivo en caso de que contenga títulos"
+msgstr "You can exclude the first line of your file if it contains titles"
+
+#: qxnw/nw_import_data/imp_chars_len.js:129 qxnw/nw_import_data/main.js:178
+msgid "Seleccionar archivo:"
+msgstr "Select file:"
+
+#: qxnw/nw_import_data/main.js:6
+msgid "Sistema de importación :: QXNW"
+msgstr "Import system :: QXNW"
+
+#: qxnw/nw_import_data/main.js:19
+msgid ""
+"<font style='font-size: 1em;color: #A32027;width: 80%;margin: "
+"auto;'>Recuerde crear el archivo en Excel y guardarlo como archivo separado "
+"por tabulaciones o comas(,) (.CSV/.TXT)</font>"
+msgstr ""
+"<font style = 'font-size: 1em; color: # A32027; width: 80%; margin: auto;'> "
+"Remember to create the file in Excel and save it as a file separated by tabs"
+" or commas (,) (.CSV /. TXT) </ font>"
+
+#: qxnw/nw_import_data/main.js:27
+msgid ""
+"<font style='color: #20282F;font-size: 2em;'>Estructura tabla _____</font>"
+msgstr ""
+"<font style = 'color: # 20282F; font-size: 2em;'> Table structure _____ </ "
+"font>"
+
+#: qxnw/nw_import_data/main.js:47
+msgid "¿Puede estar vacía?"
+msgstr "Can it be empty?"
+
+#: qxnw/nw_import_data/main.js:51
+msgid "Max caracteres"
+msgstr "Max characters"
+
+#: qxnw/nw_import_data/main.js:55
+msgid "Importar campo"
+msgstr "Import field"
+
+#: qxnw/nw_import_data/main.js:61
+msgid "Columna asociada"
+msgstr "Associated column"
+
+#: qxnw/nw_import_data/main.js:92
+msgid "Líneas a importar"
+msgstr ""
+
+#: qxnw/nw_import_data/main.js:130
+msgid "Tabla seleccionada"
+msgstr "Selected table"
+
+#: qxnw/nw_import_data/main.js:137
+msgid "Datos por defecto:"
+msgstr "Default data:"
+
+#: qxnw/nw_import_data/main.js:140
+msgid ""
+"Seleccione si los campos usuario, fecha y empresa se dejan por defecto de "
+"esta sesión"
+msgstr ""
+"Select if the user, date and company fields are left by default for this "
+"session"
+
+#: qxnw/nw_import_data/main.js:145
+msgid "Delimitar por:"
+msgstr "Delimit by:"
+
+#: qxnw/nw_import_data/main.js:148
+msgid "Seleccione el separador de campos de su archivo"
+msgstr "Select the field separator of your file"
+
+#: qxnw/nw_import_data/main.js:161
+msgid "Serial en campo ID"
+msgstr "Serial in ID field"
+
+#: qxnw/nw_import_data/main.js:164
+msgid "Puede hacer que el ID de la tabla se ennumere automáticamente"
+msgstr "You can have the table ID automatically enumerated"
+
+#: qxnw/nw_import_data/main.js:169
+msgid "Actualizar por la columna"
+msgstr "Update by column"
+
+#: qxnw/nw_import_data/main.js:172
+msgid ""
+"En vez de insertar puede actualizar un registro cuando encuentre valores "
+"iguales a la columna seleccionada"
+msgstr ""
+"Instead of inserting you can update a record when you find values equal to "
+"the selected column"
+
+#: qxnw/nw_import_data/main.js:228
+msgid "Excel"
+msgstr "Excel"
+
+#: qxnw/nw_import_data/main.js:229
+msgid "Tabulaciones (r) "
+msgstr "Tabulations (r)"
+
+#: qxnw/nw_import_data/main.js:230
+msgid "Comas (,) "
+msgstr "Quotes (,)"
+
+#: qxnw/nw_import_data/main.js:231
+msgid "Punto y coma (;) "
+msgstr "Semicolon (;)"
+
+#: qxnw/nw_import_data/main.js:232
+msgid "Espacios ( )"
+msgstr "Spaces ( )"
+
+#: qxnw/nw_import_data/main.js:312
+msgid ""
+"El archivo a importar tiene más de 100 columnas. <b>Es posible que el "
+"archivo haya sido guardado con columnas vacías</b>, ¿desea continuar?"
+msgstr ""
+"The file to import has more than 100 columns. <b> It is possible that the "
+"file was saved with empty columns </ b>, do you want to continue?"
+
+#: qxnw/nw_import_data/main.js:369
+msgid "<b>Archivo importado satisfactoriamente. En total se insertaron  "
+msgstr ""
+
+#: qxnw/nw_import_data/main.js:371
+msgid " líneas.</b>"
+msgstr ""
+
+#: qxnw/nw_import_data/main.js:374
+msgid "<b>Se actualizaron "
+msgstr "Have been updated"
+
+#: qxnw/nw_import_data/main.js:376
+msgid " registros. "
+msgstr " registers."
+
+#: qxnw/nw_import_data/main.js:380
+msgid "<b>Archivo importado: "
+msgstr "Imported file"
+
+#: qxnw/nw_import_data/main.js:386
+msgid "Informe de importación :: QXNW"
+msgstr ""
+
+#: qxnw/nw_import_data/main.js:408
+msgid "Error"
+msgstr ""
+
+#: qxnw/nw_import_data/main.js:420
+msgid "Líneas no importadas"
+msgstr ""
+
+#: qxnw/nw_import_data/main.js:436
+msgid "<b>Se han importado "
+msgstr ""
+
+#: qxnw/nw_import_data/main.js:438
+msgid " líneas </b>"
+msgstr ""
+
+#: qxnw/nw_import_data/main.js:440
+msgid "<b>No se importó el registro en la línea "
+msgstr ""
+
+#: qxnw/nw_import_data/main.js:443
+msgid "¿Desea continuar sin insertar el registro?"
+msgstr "Do you want to continue without inserting the record?"
+
+#: qxnw/nw_import_data/main.js:448
+msgid "Importación cancelada"
+msgstr "Import canceled"
+
+#: qxnw/nw_import_data/main.js:455
+msgid "Ver error"
+msgstr ""
+
+#: qxnw/nw_notifications/f_newEdit.js:23
+msgid "Nuevo-editar Notificaciones"
+msgstr "New-edit notifications"
+
+#: qxnw/nw_printer/forms/f_printer.js:7
+msgid "Configuraciones de impresión"
+msgstr "Printer configurations"
+
+#: qxnw/nw_printer/forms/f_printer.js:63
+msgid "Ingresar paŕametros"
+msgstr "Enter pameters"
+
+#: qxnw/nw_printer/forms/f_printer.js:72
+msgid "Ingrese los parámetros separados por comas (i.e id:1,factura=345)"
+msgstr "Enter the parameters separated by commas (i.e id: 1, invoice = 345)"
+
+#: qxnw/nw_printer/forms/f_printer.js:101
+msgid "Vista previa"
+msgstr "Preview"
+
+#: qxnw/nw_printer/forms/f_printer.js:110
+#: qxnw/nw_printer/forms/f_printer.js:115
+msgid "Código oculto"
+msgstr "Hidden code"
+
+#: qxnw/nw_printer/forms/f_printer.js:193
+msgid "Consultas"
+msgstr "Search"
+
+#: qxnw/nw_printer/forms/f_printer.js:194
+msgid "Datos"
+msgstr "Data"
+
+#: qxnw/nw_printer/forms/f_printer.js:222
+#: qxnw/nw_printer/lists/l_printer.js:22
+msgid "Alto"
+msgstr "Height"
+
+#: qxnw/nw_printer/forms/f_printer.js:228
+#: qxnw/nw_printer/lists/l_printer.js:30
+msgid "Ancho tabla"
+msgstr "Width table"
+
+#: qxnw/nw_printer/forms/f_printer.js:233
+msgid "Texto en mayúsculas"
+msgstr "Upper text"
+
+#: qxnw/nw_printer/forms/f_printer.js:239
+#: qxnw/nw_printer/lists/l_printer.js:34
+msgid "Margen superior"
+msgstr "Up margin"
+
+#: qxnw/nw_printer/forms/f_printer.js:245
+#: qxnw/nw_printer/lists/l_printer.js:38
+msgid "Margen inferior"
+msgstr "Down margin"
+
+#: qxnw/nw_printer/forms/f_printer.js:251
+#: qxnw/nw_printer/lists/l_printer.js:46
+msgid "Margen izquierda"
+msgstr "Left margin"
+
+#: qxnw/nw_printer/forms/f_printer.js:256
+#: qxnw/nw_printer/forms/f_printer.js:359
+#: qxnw/nw_printer/lists/l_printer.js:50
+msgid "Fuente"
+msgstr "Font"
+
+#: qxnw/nw_printer/forms/f_printer.js:262
+#: qxnw/nw_printer/forms/f_printer.js:354
+#: qxnw/nw_printer/lists/l_printer.js:54
+msgid "Tamaño fuente"
+msgstr "Font size"
+
+#: qxnw/nw_printer/forms/f_printer.js:268
+#: qxnw/nw_printer/lists/l_printer.js:42
+msgid "Margen derecha"
+msgstr "Right margin"
+
+#: qxnw/nw_printer/forms/f_printer.js:273
+#: qxnw/nw_printer/lists/l_printer.js:58
+msgid "Centrar contenido"
+msgstr "Center content"
+
+#: qxnw/nw_printer/forms/f_printer.js:309
+#: qxnw/nw_printer/forms/f_printer.js:315
+msgid "Pie de página"
+msgstr "Page footer"
+
+#: qxnw/nw_printer/forms/f_printer.js:331
+msgid "¿Texto?"
+msgstr "Text?"
+
+#: qxnw/nw_printer/forms/f_printer.js:336
+msgid "Imagen"
+msgstr "Image"
+
+#: qxnw/nw_printer/forms/f_printer.js:341
+msgid "Texto para la imagen"
+msgstr "Image text"
+
+#: qxnw/nw_printer/forms/f_printer.js:348
+msgid "Rotación"
+msgstr "Rotation"
+
+#: qxnw/nw_printer/forms/f_printer.js:366
+msgid "Espaciado"
+msgstr "Spacing"
+
+#: qxnw/nw_printer/forms/f_printer.js:371
+msgid "¿Fondo transparente?"
+msgstr "Transparent background?"
+
+#: qxnw/nw_printer/forms/f_printer.js:402
+msgid "Marca de agua"
+msgstr "Wather mark"
+
+#: qxnw/nw_printer/forms/f_printer.js:411
+msgid "Centro de página"
+msgstr "Page center"
+
+#: qxnw/nw_printer/forms/f_printer.js:417
+msgid "Centro"
+msgstr "Center"
+
+#: qxnw/nw_printer/forms/f_printer.js:439
+msgid "Datos guardados..."
+msgstr "Saved data..."
+
+#: qxnw/nw_printer/lists/l_printer.js:26
+msgid "Transformación del texto"
+msgstr ""
+
+#: qxnw/nw_printer/lists/l_printer.js:80
+msgid "¿Está seguro de eliminar el registro?"
+msgstr "Are you sure to delete the record?"
+
+#: qxnw/nw_printer/lists/l_printer.js:116
+msgid "¿Está seguro de eliminar la impresión?"
+msgstr "Are you sure to delete the printer?"
+
+#: qxnw/nw_reports/forms/f_encabezado.js:246
+msgid "Vista Previa"
+msgstr "Preview"
+
+#: qxnw/nw_sync/forms/f_addField.js:24
+msgid "Modificar campo :: QXNW"
+msgstr "Modify field :: QXNW"
+
+#: qxnw/nw_sync/forms/f_addField.js:49
+msgid "Recibir"
+msgstr "Receive"
+
+#: qxnw/nw_sync/forms/f_syncAll.js:23
+msgid "Sincronización inteligente de información :: QXNW"
+msgstr "Intelligent information synchronization :: QXNW"
+
+#: qxnw/nw_sync/forms/f_syncAll.js:27
+msgid "Interface"
+msgstr "Interface"
+
+#: qxnw/nw_sync/forms/f_syncAll.js:51
+msgid "Registros procesados"
+msgstr "Records Processed"
+
+#: qxnw/nw_sync/forms/f_syncAll.js:59
+msgid "Tablas a sincronizar"
+msgstr "Tables to synchronize"
+
+#: qxnw/nw_sync/forms/f_syncAll.js:73
+msgid "Líneas importadas: 0"
+msgstr "Imported lines: 0"
+
+#: qxnw/nw_sync/forms/f_syncAll.js:80
+msgid "Conexión a internet: "
+msgstr "Internet connection:"
+
+#: qxnw/nw_sync/forms/f_syncAll.js:140
+msgid "Debe tener conexión a internet para sincronizar"
+msgstr "You must have an internet connection to synchronize"
+
+#: qxnw/nw_sync/forms/f_syncAll.js:147
+msgid "Sincronizando datos remotos..."
+msgstr "Synchronizing remote data ..."
+
+#: qxnw/nw_sync/forms/f_syncAll.js:158
+msgid "Se ha presentado un error"
+msgstr "There was an error"
+
+#: qxnw/nw_sync/main.js:6
+msgid "QXNW :: Sincronización de datos dinámica"
+msgstr "QXNW :: Dynamic data synchronization"
+
+#: qxnw/nw_sync/main.js:41
+msgid "¿Está seguro/a de eliminar la sincronización y todos sus componentes?"
+msgstr "Are you sure to eliminate synchronization and all its components?"
+
+#: qxnw/nw_sync/main.js:55
+msgid "Nueva sincronización"
+msgstr "New synchronization"
+
+#: qxnw/nw_sync/main.js:163
+msgid "Nueva sincronización dinámica :: QXNW"
+msgstr "New dynamic synchronization :: QXNW"
+
+#: qxnw/nw_sync/main.js:173
+msgid "URL"
+msgstr "URL"
+
+#: qxnw/rpc.js:564
+msgid "Su conexión de Internet es inestable"
+msgstr "Your Internet connection is unstable"
+
+#: qxnw/security/entradas_salidas/l_entradas_salidas.js:32
+msgid "Nombre usuario"
+msgstr "User name"
+
+#: qxnw/security/entradas_salidas/l_entradas_salidas.js:40
+msgid "IP"
+msgstr "IP"
+
+#: qxnw/security/entradas_salidas/l_entradas_salidas.js:44
+#: qxnw/security/entradas_salidas/l_entradas_salidas.js:85
+#: qxnw/security/registro/l_registro.js:36
+#: qxnw/security/registro/l_registro.js:76
+msgid "Acción"
+msgstr "Action"
+
+#: qxnw/security/entradas_salidas/l_entradas_salidas.js:48
+msgid "Terminal ID"
+msgstr "ID terminal"
+
+#: qxnw/security/entradas_salidas/l_entradas_salidas.js:52
+msgid "Sede"
+msgstr "Headquarters"
+
+#: qxnw/security/entradas_salidas/l_entradas_salidas.js:60
+msgid "Estado usuario"
+msgstr "User state"
+
+#: qxnw/security/entradas_salidas/l_entradas_salidas.js:64
+msgid "Empresa ID"
+msgstr "Company ID"
+
+#: qxnw/treeWidget.js:195
+#: qxnw/security/entradas_salidas/l_entradas_salidas.js:79
+#: qxnw/security/registro/l_registro.js:70 qxnw/table/headRender.js:29
+#: qxnw/table/table.js:745 qxnw/widgets/list.js:238
+msgid "Buscar..."
+msgstr "Search..."
+
+#: qxnw/security/entradas_salidas/l_entradas_salidas.js:107
+msgid "Ingreso"
+msgstr "Entry"
+
+#: qxnw/security/entradas_salidas/l_entradas_salidas.js:108
+msgid "Salida"
+msgstr "Departure"
+
+#: qxnw/security/f_security_keys.js:12
+msgid "Número de intentos para bloquear:"
+msgstr "Number of attempts to block:"
+
+#: qxnw/security/f_security_keys.js:17
+msgid "Minutos de bloqueo:"
+msgstr "Blocking minutes:"
+
+#: qxnw/security/f_security_keys.js:22
+msgid "Días para cambiar la contraseña obligatoriamente:"
+msgstr "Mandatory days to change the password:"
+
+#: qxnw/security/f_security_keys.js:27
+msgid "¿Permitir concurrencia?"
+msgstr "Allow concurrency?"
+
+#: qxnw/security/f_security_keys.js:32
+msgid "Días de inactividad para obligar a cambiar la clave:"
+msgstr "Days of inactivity to force change the key:"
+
+#: qxnw/security/f_security_keys.js:37
+msgid "Días de consulta de claves antíguas:"
+msgstr "Days of consultation of previous keys:"
+
+#: qxnw/security/f_security_keys.js:42
+msgid "Longitud mínima para las claves:"
+msgstr "Minimum length for the keys:"
+
+#: qxnw/security/f_security_keys.js:47
+msgid "Exigir caracteres numéricos:"
+msgstr "Require numeric characters:"
+
+#: qxnw/security/f_security_keys.js:52
+msgid "Exigir caracteres en mayúscula:"
+msgstr "Require uppercase characters:"
+
+#: qxnw/security/f_security_keys.js:57
+msgid "Exigir caracteres especiales:"
+msgstr "Require special characters:"
+
+#: qxnw/security/f_security_keys.js:62
+msgid "Cambio de contraseña la primera vez de uso"
+msgstr "Change password the first time of use"
+
+#: qxnw/security/f_security_keys.js:67
+msgid "Revisar sede vs IP"
+msgstr "Review headquarters vs IP"
+
+#: qxnw/security/registro/l_registro.js:44
+msgid "Nombr usuario"
+msgstr "User name"
+
+#: qxnw/security/registro/l_registro.js:98
+msgid "Inserta"
+msgstr "Insert"
+
+#: qxnw/security/registro/l_registro.js:99
+msgid "Actualiza"
+msgstr "Update"
+
+#: qxnw/security/registro/l_registro.js:100
+msgid "Borra"
+msgstr "Delete"
+
+#: qxnw/selectTokenField.js:126 qxnw/widgets/selectListCheck.js:156
+msgid "Digite para buscar..."
+msgstr "Keypress to search"
+
+#: qxnw/selectTokenField.js:128 qxnw/widgets/textField.js:207
+msgid "Enter para buscar..."
+msgstr "Enter to search ..."
+
+#: qxnw/selectTokenField.js:205
+msgid "Pistola"
+msgstr "Gun"
+
+#: qxnw/table/table.js:128
+msgid "Mostrar todas"
+msgstr "Show all"
+
+#: qxnw/table/table.js:131
+msgid "Ocultar todas"
+msgstr "Hide all"
+
+#: qxnw/table/table.js:331
+msgid "Buscar después de:"
+msgstr "Search after:"
+
+#: qxnw/table/table.js:341
+msgid "Buscar antes de:"
+msgstr "Search before:"
+
+#: qxnw/table/table.js:351
+msgid "Número inicial:"
+msgstr "Initial number:"
+
+#: qxnw/table/table.js:357
+msgid "Número final:"
+msgstr "Final number:"
+
+#: qxnw/table/table.js:367 qxnw/table/table.js:417
+msgid "Registros diferentes a:"
+msgstr "Records other than:"
+
+#: qxnw/table/table.js:377
+msgid "Registros mayores a:"
+msgstr "Records greater than:"
+
+#: qxnw/table/table.js:387
+msgid "Registros mayores o iguales a:"
+msgstr "Records greater than or equal to:"
+
+#: qxnw/table/table.js:397
+msgid "Registros menores a:"
+msgstr "Minor records to:"
+
+#: qxnw/table/table.js:407
+msgid "Registros menores o iguales a:"
+msgstr "Records less than or equal to:"
+
+#: qxnw/table/table.js:423
+msgid "Autofiltro"
+msgstr "Autofilter"
+
+#: qxnw/table/table.js:481
+msgid "La fecha inicial no puede ser mayor a la fecha final"
+msgstr "The initial date can not be longer than the final date"
+
+#: qxnw/table/table.js:485
+msgid "La fechas no pueden ser iguales"
+msgstr "The dates can not be the same"
+
+#: qxnw/table/table.js:491
+msgid "El número final no puede ser menor al número inicial"
+msgstr "The final number can not be less than the initial number"
+
+#: qxnw/table/table.js:541
+msgid "Seleccione el filtro que desea:"
+msgstr "Select the filter you want:"
+
+#: qxnw/table/table.js:551
+msgid "<b>&nbsp;No hay grupos disponibles&nbsp;</b>"
+msgstr "<b>&nbsp;No groups&nbsp;</b>"
+
+#: qxnw/table/table.js:605
+msgid "Filtros de fecha"
+msgstr "Date filters"
+
+#: qxnw/table/table.js:608
+msgid "Filtros de número"
+msgstr "Number filters"
+
+#: qxnw/table/table.js:611
+msgid "Filtros de texto"
+msgstr "Text filters"
+
+#: qxnw/table/table.js:622 qxnw/table/table.js:626
+msgid "Entre..."
+msgstr "Between..."
+
+#: qxnw/table/table.js:623
+msgid "Después..."
+msgstr "After..."
+
+#: qxnw/table/table.js:624
+msgid "Antes..."
+msgstr "Before"
+
+#: qxnw/table/table.js:627 qxnw/table/table.js:633
+msgid "No es igual a..."
+msgstr "It is not equal to..."
+
+#: qxnw/table/table.js:628
+msgid "Mayor que..."
+msgstr "Greater than..."
+
+#: qxnw/table/table.js:629
+msgid "Mayor o igual que..."
+msgstr "Greater than or equal..."
+
+#: qxnw/table/table.js:630
+msgid "Menor que..."
+msgstr "Smaller than..."
+
+#: qxnw/table/table.js:631
+msgid "Menor o igual que..."
+msgstr "Less than or equal to ..."
+
+#: qxnw/table/table.js:666
+msgid "Búsqueda por meses"
+msgstr "Month search"
+
+#: qxnw/table/table.js:691
+msgid "Búsqueda por años"
+msgstr "Year search"
+
+#: qxnw/table/table.js:781
+msgid "<b>Seleccionar todos</b>"
+msgstr "<b>Select all</b>"
+
+#: qxnw/tmp/ckeditor.js:7
+msgid "CKEditor test"
+msgstr "CKEditor text"
+
+#: qxnw/treeWidget.js:135
+msgid "Opciones generales de configuración"
+msgstr "Configuration general options"
+
+#: qxnw/treeWidget.js:162 qxnw/widgets/list.js:218
+msgid "Auto filtro"
+msgstr "Autofilter"
+
+#: qxnw/treeWidget.js:168 qxnw/widgets/list.js:223
+msgid ""
+"Filtro rápido sin ejecutar la base de datos. (Los datos no se actualizarán "
+"directamente del servidor)"
+msgstr ""
+"Quick filter without running the database. (The data will not be updated "
+"directly from the server)"
+
+#: qxnw/treeWidget.js:641
+msgid "Información adicional"
+msgstr "Additional Information"
+
+#: qxnw/treeWidget.js:910
+msgid "Registros por <br />página"
+msgstr "Records per page"
+
+#: qxnw/uploader.js:177
+msgid "Buscar en servidor"
+msgstr "Search in server"
+
+#: qxnw/uploader.js:447
+msgid "¿Está segur@ de eliminar la imagen del servidor?"
+msgstr "Are you sure to delete the server image?"
+
+#: qxnw/utils.js:1793
+msgid "Enviar por correo electrónico"
+msgstr "Send by e-mail"
+
+#: qxnw/utils.js:1798
+msgid "Fecha entrega"
+msgstr "Deliver date"
+
+#: qxnw/utils.js:1809
+msgid "Lista de usuarios"
+msgstr "Users list"
+
+#: qxnw/utils.js:3570
+msgid ""
+"Su conexión a internet es inestable. Esto puede reducir su experiencia en el"
+" sistema."
+msgstr ""
+"Your internet connection is unstable. This can reduce your experience in the"
+" system."
+
+#: qxnw/utils.js:3742
+msgid ""
+"<div style='font-size: 12px; color:#444;'><h2>Tu sesión ha "
+"caducado...</h2><p>Confirma tu usuario y contraseña para continuar</p></div>"
+msgstr ""
+"<div style = 'font-size: 12px; color: # 444; '> <h2> Your session has "
+"expired ... </ h2> <p> Confirm your username and password to continue </ p> "
+"</ div>"
+
+#: qxnw/utils.js:3823
+msgid "Alerta"
+msgstr "Alert"
+
+#: qxnw/utils.js:3897
+msgid "Información"
+msgstr "Information"
+
+#: qxnw/utils.js:4001
+msgid "Error report"
+msgstr "Error report"
+
+#: qxnw/utils.js:4066
+msgid "Confirmación"
+msgstr "Confirmation"
+
+#: qxnw/utils.js:4118
+msgid "Ok"
+msgstr "Ok"
+
+#: qxnw/widgets/addressWidget.js:18
+msgid "Complementos"
+msgstr "Complements"
+
+#: qxnw/widgets/addressWidget.js:36
+msgid "Dirección completa"
+msgstr "Full address"
+
+#: qxnw/widgets/addressWidget.js:86
+msgid ""
+"Por las características de este widget (addressWidget) no acepta ser "
+"requerido obligatorio"
+msgstr ""
+"Due to the characteristics of this widget (addressWidget) it does not accept"
+" being required"
+
+#: qxnw/widgets/camera.js:265
+msgid "Subiendo..."
+msgstr "Uploading..."
+
+#: qxnw/widgets/camera.js:674
+msgid ""
+"Permiso denegado a la cámara o no posee seguridad SSL: para activarla vaya a"
+" la configuración del navegador"
+msgstr ""
+"Permission denied to the camera or does not have SSL security: to activate "
+"it go to the browser settings"
+
+#: qxnw/widgets/camera_old.js:103
+msgid "Tomar foto"
+msgstr "Take picture"
+
+#: qxnw/widgets/canvasWriter.js:33 qxnw/widgets/signer.js:33
+msgid "Firmar"
+msgstr "Sign"
+
+#: qxnw/widgets/canvasWriter.js:67
+msgid "Espacio de dibujo :: QXNW"
+msgstr "Drawing space :: QXNW"
+
+#: qxnw/widgets/canvasWriter.js:211 qxnw/widgets/canvasWriter.js:217
+msgid "Coordenadas de trazo..."
+msgstr "Stroke Coordinates ..."
+
+#: qxnw/widgets/colorButton.js:116
+msgid "Abrir colores"
+msgstr "Open colors"
+
+#: qxnw/widgets/dateField.js:68 qxnw/widgets/dateField.js:297
+#: qxnw/widgets/dateTimeField.js:59 qxnw/widgets/dateTimeFieldOld.js:36
+msgid "La fecha es incorrecta"
+msgstr "The date is incorrect"
+
+#: qxnw/widgets/dateField.js:84 qxnw/widgets/dateField.js:313
+#: qxnw/widgets/dateTimeField.js:75 qxnw/widgets/dateTimeFieldOld.js:52
+msgid "El año debe tener 4 digitos"
+msgstr "The year must have 4 digits"
+
+#: qxnw/widgets/dateField.js:92 qxnw/widgets/dateField.js:321
+#: qxnw/widgets/dateTimeField.js:86 qxnw/widgets/dateTimeFieldOld.js:63
+msgid "El mes no puede ser superior a 12"
+msgstr "The month can not be longer than 12"
+
+#: qxnw/widgets/dateField.js:100 qxnw/widgets/dateField.js:329
+#: qxnw/widgets/dateTimeField.js:97 qxnw/widgets/dateTimeFieldOld.js:74
+msgid "El día no puede ser superior a 31"
+msgstr "The day can not be more than 31"
+
+#: qxnw/widgets/dateField.js:112 qxnw/widgets/dateField.js:122
+#: qxnw/widgets/dateField.js:341 qxnw/widgets/dateField.js:351
+#: qxnw/widgets/dateTimeField.js:125 qxnw/widgets/dateTimeFieldOld.js:102
+msgid "Por favor ingrese una fecha válida"
+msgstr "Please enter a valid date"
+
+#: qxnw/widgets/dateField.js:422 qxnw/widgets/dateTimeField.js:618
+msgid "Hoy"
+msgstr "Today"
+
+#: qxnw/widgets/dateTimeField.js:147 qxnw/widgets/dateTimeFieldOld.js:124
+msgid "Por favor ingrese un horario válido"
+msgstr "Please enter a valid schedule"
+
+#: qxnw/widgets/dynamicImage.js:146
+msgid "X=0, Y=0"
+msgstr "X=0, Y=0"
+
+#: qxnw/widgets/imageViewer.js:67
+msgid "Ver en dimensiones reales"
+msgstr "See real dimentions"
+
+#: qxnw/widgets/imageViewer.js:88
+msgid "Uzar zoom"
+msgstr "Use zoom"
+
+#: qxnw/widgets/selectListCheck.js:240 qxnw/widgets/list.js:309
+#: qxnw/widgets/list.js:324
+msgid "Debe seleccionar un ítem para copiar"
+msgstr "You must select an item to copy"
+
+#: qxnw/widgets/notifications.js:75
+msgid "<center><strong style='color: red'>Mostrar más...</strong></center>"
+msgstr ""
+"<center> <strong style = 'color: red'> Show more ... </ strong> </ center>"
+
+#: qxnw/widgets/notifications.js:171
+msgid "<b style='color: gray'>No hay notificaciones pendientes</b>"
+msgstr "<b style='color: gray'>No pending notifications</b>"
+
+#: qxnw/widgets/notifications.js:222
+msgid "<b>No. Registros: </b>"
+msgstr "<b> No. Records: </ b>"
+
+#: qxnw/widgets/signer.js:55
+msgid "<font color='gray'>Sólo disponible para Windows</font>"
+msgstr "<font color = 'gray'> Only available for Windows </ font>"
+
+#: qxnw/widgets/textFieldSearch.js:23
+msgid "Debe ingresar datos en la opción de búsqueda"
+msgstr "You must enter data in the search option"
+
+#: qxnw/widgets/timeField.js:105 qxnw/widgets/timeFieldOld.js:22
+msgid "La hora es incorrecta. Verifique por favor."
+msgstr "The time is incorrect Verify please."
+
+#: qxnw/widgets/timeField.js:120 qxnw/widgets/timeFieldOld.js:37
+msgid "La hora debe tener 2 digitos"
+msgstr "The time must have 2 digits"
+
+#: qxnw/widgets/timeField.js:128 qxnw/widgets/timeFieldOld.js:45
+msgid "La hora no puede ser superior a 24"
+msgstr "The time cannot be more than 24"
+
+#: qxnw/widgets/timeField.js:137 qxnw/widgets/timeFieldOld.js:54
+msgid "Los minutos no pueden ser superiores a 60"
+msgstr "The minutes cannot exceed 60"
+
+#: qxnw/widgets/timeField.js:147 qxnw/widgets/timeFieldOld.js:64
+msgid "Los segundos no pueden ser superiores a 60"
+msgstr "Seconds cannot exceed 60"
+
+#: qxnw/widgets/timeField.js:240
+msgid "Horas"
+msgstr "Hours"
+
+#: qxnw/widgets/timeField.js:287
+msgid "Minutos"
+msgstr "Minutes"
+
+#: qxnw/widgets/timeField.js:319
+msgid "Segundos"
+msgstr "Seconds"
+
+#: qxnw/widgets/uploaderAdmin.js:12
+msgid "Selecctio..."
+msgstr "Select..."
+
+#~ msgid " debe ser un correo electrónico"
+#~ msgstr " should be a e-mail"
+
+#~ msgid ""
+#~ " es un campo especial de filtrado de datos. Borre la información y vuelva a "
+#~ "intentarlo."
+#~ msgstr ""
+#~ " is an special field to filter data. Delete all information and try again"
+
+#~ msgid ""
+#~ "<br /><br /><br /><font color='gray'>Espacio para procesar \n"
+#~ " la imagen<br /><br /><br /></font>"
+#~ msgstr ""
+#~ "<br /><br /><br /><font color='gray'>Space to process \n"
+#~ "\the image<br /><br /><br /></font>"
+
+#~ msgid "Agregar filter :: QXNW"
+#~ msgstr "Aff filter :: QXNW"
+
+#~ msgid "<b>No se pudieron importar los registros en la línea "
+#~ msgstr "<b> Could not import records on line"
+
+#~ msgid ""
+#~ "<div style='font-size: 12px; color:#444;'><h2>Bienvenido</h2>\n"
+#~ " <p>Entre aquí usando su nombre de usuario hcy2 y contraseña</p></div>"
+#~ msgstr ""
+#~ "<div style='font-size: 12px; color:#444;'><h2>Welcome</h2>\n"
+#~ " <p>Please type here your user and password</p></div>"
+
+#~ msgid ""
+#~ "<div style='font-size: 12px; color:#444;'><h2>Bienvenido</h2>\n"
+#~ "\\n"
+#~ "                                     <p>Entre aquí usando su nombre de usuario  hcy y contraseña</p></div>"
+#~ msgstr ""
+#~ "<div style='font-size: 12px; color:#444;'><h2>Welcome</h2>\n"
+#~ "                                     <p>Please type your access data</p></div>"
+
+#~ msgid ""
+#~ "<div style='font-size: 12px; color:#444;'><h2>Bienvenido</h2><p>Entre aquí "
+#~ "usando su nombre de usuario y chcy ontraseña</p></div>"
+#~ msgstr ""
+#~ "<div style='font-size: 12px; color:#444;'><h2>Welcome</h2><p>Please type "
+#~ "here your user and password</p></div>"
+
+#~ msgid "<font color='red'>Cálculos</font>"
+#~ msgstr "<font color='red'>Computation</font>"
+
+#~ msgid "<span style='font-zize: 11; color: gray'>Versión: "
+#~ msgstr "<span style='font-zize: 11; color: gray'>Version: "
+
+#~ msgid "Acceda al menú de ayuda de la aplicación"
+#~ msgstr "Open the application help menu"
+
+#~ msgid "Actualice la vista"
+#~ msgstr "Reload this view"
+
+#~ msgid "Actualizar cada X segundos"
+#~ msgstr "Update every X seconds"
+
+#~ msgid "Actualizar por defecto"
+#~ msgstr "Update automatically"
+
+#~ msgid "Actualizar registros por la columna"
+#~ msgstr "Update records by column"
+
+#~ msgid "Actualizar versión"
+#~ msgstr "Update version"
+
+#~ msgid "Adjuntos Asociados"
+#~ msgstr "Attachments associates"
+
+#~ msgid "Administrador de contenidos"
+#~ msgstr "Contents administrator"
+
+#~ msgid "Administrator DB"
+#~ msgstr "DB Administrator"
+
+#~ msgid "Conexión reestablecida"
+#~ msgstr "Connection reestablished"
+
+#~ msgid "Psicastenia"
+#~ msgstr ""
+
+#~ msgid "Antecedentes Clinicos"
+#~ msgstr "Clinical Background"
+
+#~ msgid "Archivos"
+#~ msgstr "Files"
+
+#~ msgid "Avanzado para developers"
+#~ msgstr "Only for developers"
+
+#~ msgid "Base Datos"
+#~ msgstr "Database"
+
+#~ msgid "Base de datos: "
+#~ msgstr "Database: "
+
+#~ msgid "Borrar perfil"
+#~ msgstr "Delete profile"
+
+#~ msgid "Buscar despues de:"
+#~ msgstr "Search after:"
+
+#~ msgid "Búsqueda"
+#~ msgstr "Search"
+
+#~ msgid "CMI"
+#~ msgstr "CMI"
+
+#~ msgid "Campo de descripción incompleto para la tabla  "
+#~ msgstr "Incomplete description field for the table"
+
+#~ msgid "Cargos-usuarios"
+#~ msgstr "Positions-users"
+
+#~ msgid "Comentarios si desea generar un ticket:"
+#~ msgstr "Comments if you wish generate a ticket"
+
+#~ msgid "Crear nuevo modelo de exportación :: QXNW"
+#~ msgstr "Create new export model :: QXNW"
+
+#~ msgid "Cuadro de mando integral :: Netwoods.net"
+#~ msgstr "CMI :: Netwoods.net"
+
+#~ msgid "Datos de inicio"
+#~ msgstr "Start data"
+
+#~ msgid ""
+#~ "Desde este espacio puede poner colores en los listados. Ej: En la columna "
+#~ "'id' que sea igual a 5 será verde."
+#~ msgstr ""
+#~ "From this part you can put colors on lists. i.e On column 'id' equal 5 will "
+#~ "be green."
+
+#~ msgid "Esquizofrenia"
+#~ msgstr "Schizophrenia"
+
+#~ msgid "Hipomania"
+#~ msgstr ""
+
+#~ msgid "Otra"
+#~ msgstr "Other"
+
+#~ msgid ""
+#~ "Ha tenido acompañamiento psicológico <br /> o psiquiátrico a nivel personal "
+#~ "o familiar?"
+#~ msgstr ""
+#~ "Have you had psychological or psychiatric <br /> support on a personal or "
+#~ "family level?"
+
+#~ msgid "Consume o ha consumido <br /> sustancias psicoactivas?"
+#~ msgstr "Consume or have you used <br /> psychoactive substances?"
+
+#~ msgid "Ha tenido problemas con el <br /> alcohol a nivel personal o familiar?"
+#~ msgstr ""
+
+#~ msgid "&nbsp<br />&nbsp"
+#~ msgstr ""
+
+#~ msgid "Hipocondriasis"
+#~ msgstr ""
+
+#~ msgid "Depresión"
+#~ msgstr ""
+
+#~ msgid "Histeria"
+#~ msgstr ""
+
+#~ msgid "Paranoia"
+#~ msgstr ""
+
+#~ msgid "Desviación Psicopatica"
+#~ msgstr ""
+
+#~ msgid "Digite para selecionar la hora..."
+#~ msgstr "Type to select time"
+
+#~ msgid "Digite..."
+#~ msgstr "Type in..."
+
+#~ msgid "Eliminar Historial (Caché)"
+#~ msgstr "Drop history (cache)"
+
+#~ msgid "Eliminar modelo"
+#~ msgstr "Delete model"
+
+#~ msgid "Especial (recomendada para menos de 2000 registros)"
+#~ msgstr "Special"
+#~ "\n"
+#~ "Special (recommended for fewer than 2000 records)"
+
+#~ msgid "Exportación de datos"
+#~ msgstr "Export data"
+
+#~ msgid "Exportar todo"
+#~ msgstr "Export all"
+
+#~ msgid "Flash"
+#~ msgstr "Flash"
+
+#~ msgid "Generales"
+#~ msgstr "Generals"
+
+#~ msgid "Gestor de tickets nuevo-editar"
+#~ msgstr "Ticket manager new-edit"
+
+#~ msgid "ID Ticket"
+#~ msgstr "Ticket ID"
+
+#~ msgid "Identificador cliente"
+#~ msgstr "Costumer identifier"
+
+#~ msgid "Importación automática de datos"
+#~ msgstr "Automatic data import"
+
+#~ msgid "Imprimir todo"
+#~ msgstr "Print all"
+
+#~ msgid "Imágenes"
+#~ msgstr "Images"
+
+#~ msgid "Ingrese su usuario"
+#~ msgstr "Enter your user"
+
+#~ msgid "Iniciar importación"
+#~ msgstr "Start import"
+
+#~ msgid "La nota no está vacía. ¿Está segur@ de borrarla?"
+#~ msgstr "The note is not empty. Are you sure to erase it?"
+
+#~ msgid "Manejar Central"
+#~ msgstr "Manage Central"
+
+#~ msgid "Mantener una columna inmóvil"
+#~ msgstr "Keep stopped a column"
+
+#~ msgid "Mensajes mostrados:"
+#~ msgstr "Messages shown:"
+
+#~ msgid "Mi Perfil"
+#~ msgstr "My profile"
+
+#~ msgid "NWDRIVE"
+#~ msgstr "NWDRIVE"
+
+#~ msgid "No hay registros a exportar"
+#~ msgstr "No data to export"
+
+#~ msgid "No hay registros a imprimir"
+#~ msgstr "No records to print"
+
+#~ msgid "Notas"
+#~ msgstr "Notes"
+
+#~ msgid "Nuevo modelo"
+#~ msgstr "New model"
+
+#~ msgid "Nuevo perfil"
+#~ msgstr "New profile"
+
+#~ msgid "PQR"
+#~ msgstr "PQR"
+
+#~ msgid "Poda"
+#~ msgstr "Pruning"
+
+#~ msgid "Recuperación de contrasenas"
+#~ msgstr "Password recovery"
+
+#~ msgid "Registros por página"
+#~ msgstr "Records by page"
+
+#~ msgid "Reporte de novedades para desarrollador"
+#~ msgstr "Newness report to developer"
+
+#~ msgid "Requiere autenticación?"
+#~ msgstr "Need authentication?"
+
+#~ msgid "Seguridad en contraseñas"
+#~ msgstr "Passwords security"
+
+#~ msgid "Seleccione la columna para realizar el cálculo"
+#~ msgstr "Select the column to make the calculation"
+
+#~ msgid "Seleccione la columna para totalizar el listado"
+#~ msgstr "Select the column to totalize the list"
+
+#~ msgid "Seleccione las columnas a exportar"
+#~ msgstr "Select the columns to export"
+
+#~ msgid "Sencilla (CSV más rápida para más de 2000 registros)"
+#~ msgstr "Simple (faster CSV for over 2000 records)"
+
+#~ msgid "Sencilla (Separado por tabulaciones para más de 2000 registros)"
+#~ msgstr "Simple (recomended for more than 2000 rows)"
+
+#~ msgid "Tabla dinámica"
+#~ msgstr "Dynamic table"
+
+#~ msgid "Tiempo máximo de espera por consulta (50 segundos por defecto)"
+#~ msgstr "Max wait time on consult (50 seconds by default)"
+
+#~ msgid "Totalizar por"
+#~ msgstr "Totalize by"
+
+#~ msgid "Tranformación del texto"
+#~ msgstr "Text Transformation"
+
+#~ msgid "Ver detalles específicos"
+#~ msgstr "See specific details"
+
+#~ msgid "Verifique su conexión a Internet. Es indispensable para ver los mapas."
+#~ msgstr "Check your Internet connection. It is essential to see the maps."
+
+#~ msgid "aceptar"
+#~ msgstr "Ok"
+
+#~ msgid "acerca_de..."
+#~ msgstr "About of..."
+
+#~ msgid "ayuda"
+#~ msgstr "Help"
+
+#~ msgid "borrar_datos_guardados"
+#~ msgstr "Delete offline data stored"
+
+#~ msgid "cancelar"
+#~ msgstr "Cancel"
+
+#~ msgid "clave"
+#~ msgstr "Password"
+
+#~ msgid "configuracion_de_alertas"
+#~ msgstr "Alerts configuration"
+
+#~ msgid "configuracion_de_comportamientos"
+#~ msgstr "Behavior configurations"
+
+#~ msgid "configuracion_de_estilos"
+#~ msgstr "Styles configuration"
+
+#~ msgid "datos_de_ingreso"
+#~ msgstr "Start data"
+
+#~ msgid "empresa"
+#~ msgstr "Company"
+
+#~ msgid "idiomas"
+#~ msgstr "Idioms"
+
+#~ msgid "ingrese_su_correo_electronico"
+#~ msgstr "Enter your e-mail"
+
+#~ msgid "ingrese_su_usuario"
+#~ msgstr "Your user"
+
+#~ msgid "inicio"
+#~ msgstr "Start"
+
+#~ msgid "loading"
+#~ msgstr "Loading"
+
+#~ msgid "no_tiene_permisos_en_ninguna_empresa"
+#~ msgstr "You don't have any permissions on companiesF"
+
+#~ msgid "recuperacion_de_contrasenas"
+#~ msgstr "Recover your password"
+
+#~ msgid "seleccione_la_empresa"
+#~ msgstr "Select your company"
+
+#~ msgid "select_record"
+#~ msgstr "Select record"
+
+#~ msgid "temas"
+#~ msgstr "Themes"
+
+#~ msgid "usuario"
+#~ msgstr "User"
+
+#~ msgid "verificar_nuevas_versiones"
+#~ msgstr "Verify new versions"
+
+#~ msgid "¿Desea cerrar la ventana?"
+#~ msgstr "Are you sure to close the window?"
+
+#~ msgid "¿Desea eliminar el registro?"
+#~ msgstr "Are you sure to erase register?"
+
+#~ msgid "¿Olvidó su contrasena?"
+#~ msgstr "¿Forgot you password?"
+
+#~ msgid ""
+#~ "¿Olvidó su contraseña?<span style='color:#666;'> Haga clic aqui para "
+#~ "recuperarla</span>"
+#~ msgstr ""
+#~ "Forgot your password?<span style='color:#666;'> Click here to recover "
+#~ "it</span>"
+
+#~ msgid "¿olvido_su_contrasena?"
+#~ msgstr "Forgot your password?"

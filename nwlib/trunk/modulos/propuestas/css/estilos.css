@@ -1,0 +1,187 @@
+@charset "utf-8";
+/* CSS Document */
+.title_modulos{
+    display: block!important;
+}
+.valor_letras{
+    position: relative;
+    float: right;
+    top: -10px;    
+}
+.bloque_indice{
+ display: none;   
+}
+body{
+    position: relative;
+    background: #f7f7f7;
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+}
+#contenedor1 {
+    position:relative;
+    width:900px;
+    height:1300px;
+    z-index:1;
+    margin:auto;
+    padding:0px 90px;
+    background:#f7f7f7 url(http://www.netwoods.net/imagenes/propuestas/fondo_propuestas.jpg) no-repeat;
+}
+#contenedor2 {
+    position:relative;
+    width:800px;
+    height:1100px;
+    z-index:1;
+    margin:auto;
+    padding:5px 20px;
+    background-color: #fff;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+}
+.title1{
+    color: #C0504D;
+    font-style: normal;
+    text-align: center;
+    font-size: 36px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    font-weight: lighter;
+    font-family: helvetica;
+    text-transform: uppercase;
+}
+.title2{
+    color: #C0504D;
+    font-style: normal;
+    text-align: center;
+    font-size: 36px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    font-weight: lighter;
+    font-family: helvetica;
+    border-top: solid #A7BFDE 1.0pt;
+    border-left: none;
+    border-bottom: solid #9BBB59 3.0pt;
+    border-right: none;
+    padding: 10.0pt 0cm 15.0pt 0cm;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.title3{
+    color: #595959;
+    font-style: normal;
+    text-align: center;
+    font-size: 30px;
+    font-weight: lighter;
+    font-family: helvetica;
+    border-left: none;
+    border-bottom: solid #9BBB59 3.0pt;
+    border-right: none;
+    padding: 10.0pt 0cm 15.0pt 0cm;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.cabezote{
+    width: 830px;
+    position: relative;
+    padding: 10px 0px;
+    margin: auto;
+    height: 70px;
+    margin-top: 60px;
+}
+.cabezote img{
+    float: left;	
+}
+.cabezote p{
+    width: 500px;
+    left: 200px;
+    position: relative;
+    top: 40px;
+    font-size: 14px;
+    color: #999;
+    text-transform: capitalize;	
+}
+.cabezote strong{
+    position: relative;
+    float: right;
+    top: 10px;
+    color: #31849b;
+}
+.logo_home{
+    position: absolute;
+    top: 250px;
+    right: 150px;	
+}
+.logo_home img{
+    width: 180px;
+}
+
+.logo_home h2{
+    color: #c0504d;
+    font-size: 40px;
+    text-align: center;
+}
+
+.bloques_text_center{
+    color: #595959;
+    margin-top: 5px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    text-align: justify;
+    font-size: 13px;	
+}
+.bloques_text_center p{
+    padding: 10px;	
+    text-align: initial;
+}
+.bloques_text_center strong{
+    line-height: 30px;
+}
+.bloques_text_center h1{
+    color: #C0504D;
+    font-size: 22px;
+    font-weight: lighter;
+}
+
+.table_1{
+    margin: 20px;
+    border: 1px solid #999;
+    border-collapse: collapse;
+}
+.table_1 td{
+    padding: 10px;
+    border: 1px solid #999;
+    border-collapse: collapse;
+}
+.table_1 p{
+    padding: 0;
+    margin: 0;
+
+}
+.bloques_text_center h5{
+    color: #333;
+    font-size: 16px;
+    font-weight: lighter;
+    padding: 5px;
+    margin-bottom: 20px;
+    text-align: right;
+}
+.file_price{
+
+}
+.file_price span{
+    margin-left: 30px;
+}
+.file_price p{
+
+}
+.div_adicionales{
+    text-align: right;
+}
+.div_adicionales p{
+
+}
+.total_price{
+    text-align: right;
+}
+.total_price span{
+    font-size: 16px!important;
+}

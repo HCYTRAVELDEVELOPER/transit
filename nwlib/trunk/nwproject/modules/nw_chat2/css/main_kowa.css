@@ -1,0 +1,40 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 23, 2017, 10:55:48 PM
+    Author     : alexf
+*/
+body {
+    font-family: arial;
+    font-size: 13px;
+}
+.containNwChat2{
+    top: 0;
+    float: none;
+    max-width: initial;
+    max-height: 100%;
+}
+.containerConvers {
+    height: 100%;
+}
+.divDisconecUserNwChat{
+    position: relative;
+    padding: 20px;
+    font-size: 22px;
+    margin-top: 50px;
+}
+.userOperator {
+    display: none;
+}
+.containerEncChat{
+    position: relative;
+}
+@media screen and (max-width: 1000px) {
+    .containerConvers .addHeaderNote {
+        /*padding-bottom: 150px!important;*/
+        /*padding-bottom: 0px!important;*/
+    }
+}

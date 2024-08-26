@@ -1,0 +1,45 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 14, 2016, 10:09:42 AM
+    Author     : alexf
+*/
+
+.l_carrito_flotante{
+    position: relative;
+    right: 0;
+    top: 0;
+    max-width: 600px!important;
+    width: auto;
+    margin: auto;
+    float: none;
+    z-index: initial;
+    margin-top: 50px;
+}
+.l_carrito_flotante .container-table-list {
+    max-height: initial;
+}
+.solicitarCarrito {
+    display: none;
+}
+.containerValores {
+    max-width: 400px;
+    width: auto;
+    float: none;
+    max-width: initial;
+}
+.containerValores p {
+    font-size: 18px;
+}
+.colMobilLabel_nombre_producto{
+    width: auto!important;
+}
+.pColsIntListName_imagen_producto{
+    width: 100px!important;
+}
+.colMobilLabel_imagen_producto{
+    width: auto!important;
+}

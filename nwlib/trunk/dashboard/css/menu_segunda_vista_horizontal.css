@@ -1,0 +1,59 @@
+/* 
+    Document   : menu_segunda_vista_horizontal
+    Created on : Jul 13, 2016, 6:58:43 PM
+    Author     : root
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.img_home{
+    width: 100%;
+    height: 60px;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+.contend_modules{
+    width: auto!important;
+    float: none;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+.containerBoxM_home{
+    float: left;
+    width: 150px;
+    margin: 0 0px;
+}
+.img_contend_modules_divEnc {
+    /*height: 40px;*/
+    background: transparent;
+}
+.containerBoxM_home .contend_modules_div{
+    background: transparent;
+    border-left: 1px solid #1b344b;
+    border-right: 1px solid #32516e;
+}
+.loadOthers{
+    position: relative;
+    height: auto;
+    width: 100%;
+    float: none;
+    overflow: auto;
+}
+.contend_modules_div_buttonmodule {
+    background: transparent!important;
+}
+.div_salir{
+    line-height: 50px;
+    background: #293b4b!important;
+    width: 80px!important;
+    margin: auto!important;
+}
+.contend_specialsIntern {
+    float: none!important;
+    overflow: hidden;
+}
+body {
+    overflow: auto;
+}

@@ -1,0 +1,6 @@
+@media screen and (max-width: 1000px) {
+    .container-box-bottom{
+        position: fixed!important;
+        width: 100%!important;
+    }
+}

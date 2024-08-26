@@ -1,0 +1,35 @@
+{
+  "version": 3,
+  "names": [
+    "qx",
+    "Bootstrap",
+    "executePendingDefers",
+    "$$dbClassInfo",
+    "Class",
+    "define",
+    "extend",
+    "core",
+    "Object",
+    "type",
+    "properties",
+    "endpoint",
+    "check",
+    "v",
+    "nullable",
+    "event",
+    "events",
+    "message",
+    "construct",
+    "setEndpoint",
+    "io",
+    "transport",
+    "AbstractTransport"
+  ],
+  "sources": [
+    "/home/andresf/workspace_qooxdoo/qooxdoo/qooxdoo-7.0/source/class/qx/io/transport/AbstractTransport.js"
+  ],
+  "sourcesContent": [
+    "/**\n * Abstract class for JSON-RPC transports\n *\n * For the moment, any special configuration of the transport, such as\n * authentication, must be done on the level of the underlying implementation,\n * an abstract API will be added later.\n */\nqx.Class.define(\"qx.io.transport.AbstractTransport\", {\n  extend: qx.core.Object,\n  type: \"abstract\",\n\n  properties: {\n    /**\n     *  A representation of the the endpoint, which is either a uri (a String)\n     *  or an object (such as in the case of the PostMessage transport)\n     */\n    endpoint: {\n      check: v => typeof v == \"string\" || typeof v == \"object\",\n      nullable: true,\n      event: \"changeEndpoint\"\n    }\n  },\n\n  events: {\n    /**\n     * Event fired when a message is received from the endpoint. Event data\n     * is an UTF-8 encoded string\n     */\n    message: \"qx.event.type.Data\"\n  },\n\n  /**\n   * Constructor\n   * @param {String|Object} endpoint\n   */\n  construct(endpoint) {\n    super();\n    this.setEndpoint(endpoint);\n  }\n});\n"
+  ],
+  "mappings": ";;;;;;;;;;;;;EAAAA,EAAE,CAACC,SAAH,CAAaC,oBAAb,CAAkCC,aAAlC;;EAAA;AACA;AACA;AACA;AACA;AACA;AACA;EACAH,EAAE,CAACI,KAAH,CAASC,MAAT,CAAgB,mCAAhB,EAAqD;IACnDC,MAAM,EAAEN,EAAE,CAACO,IAAH,CAAQC,MADmC;IAEnDC,IAAI,EAAE,UAF6C;IAInDC,UAAU,EAAE;MACV;AACJ;AACA;AACA;MACIC,QAAQ,EAAE;QACRC,KAAK,EAAEC,CAAC,IAAI,OAAOA,CAAP,IAAY,QAAZ,IAAwB,OAAOA,CAAP,IAAY,QADxC;QAERC,QAAQ,EAAE,IAFF;QAGRC,KAAK,EAAE;MAHC;IALA,CAJuC;IAgBnDC,MAAM,EAAE;MACN;AACJ;AACA;AACA;MACIC,OAAO,EAAE;IALH,CAhB2C;;IAwBnD;AACF;AACA;AACA;IACEC,SAAS,CAACP,QAAD,EAAW;MAClB;MACA,KAAKQ,WAAL,CAAiBR,QAAjB;IACD;;EA/BkD,CAArD;EAPAX,EAAE,CAACoB,EAAH,CAAMC,SAAN,CAAgBC,iBAAhB,CAAkCnB,aAAlC,GAAkDA,aAAlD"
+}

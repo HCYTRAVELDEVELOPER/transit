@@ -1,0 +1,36 @@
+{
+  "version": 3,
+  "names": [
+    "qx",
+    "Bootstrap",
+    "executePendingDefers",
+    "$$dbClassInfo",
+    "Class",
+    "define",
+    "extend",
+    "core",
+    "Object",
+    "construct",
+    "name",
+    "include",
+    "exclude",
+    "set",
+    "properties",
+    "nullable",
+    "check",
+    "combine",
+    "init",
+    "minify",
+    "tool",
+    "compiler",
+    "app",
+    "Part"
+  ],
+  "sources": [
+    "/home/andresf/workspace_qooxdoo/qooxdoo/qooxdoo-7.0/source/class/qx/tool/compiler/app/Part.js"
+  ],
+  "sourcesContent": [
+    "/* ************************************************************************\n *\n *    qooxdoo-compiler - node.js based replacement for the Qooxdoo python\n *    toolchain\n *\n *    https://github.com/qooxdoo/qooxdoo\n *\n *    Copyright:\n *      2011-2017 Zenesis Limited, http://www.zenesis.com\n *\n *    License:\n *      MIT: https://opensource.org/licenses/MIT\n *\n *      This software is provided under the same licensing terms as Qooxdoo,\n *      please see the LICENSE file in the Qooxdoo project's top-level directory\n *      for details.\n *\n *    Authors:\n *      * John Spackman (john.spackman@zenesis.com, @johnspackman)\n *\n * *********************************************************************** */\n\n/**\n * Code is divided up into Parts, where each is a non-overlapping set of URIs for segmented\n * loading; the Part can support specific attributes, such as whether to be combined into\n * one file for the boot loader, whether to be minified, etc\n */\nqx.Class.define(\"qx.tool.compiler.app.Part\", {\n  extend: qx.core.Object,\n\n  construct(name, include, exclude) {\n    super();\n    this.set({\n      name: name,\n      include: include,\n      exclude: exclude || []\n    });\n  },\n\n  properties: {\n    name: {\n      nullable: false,\n      check: \"String\"\n    },\n\n    combine: {\n      init: false,\n      nullable: false,\n      check: \"Boolean\"\n    },\n\n    minify: {\n      init: false,\n      nullable: false,\n      check: \"Boolean\"\n    },\n\n    include: {\n      nullable: false,\n      check: \"Array\"\n    },\n\n    exclude: {\n      nullable: false,\n      check: \"Array\"\n    }\n  }\n});\n"
+  ],
+  "mappings": ";;;;;;;;;;;;;EAAAA,EAAE,CAACC,SAAH,CAAaC,oBAAb,CAAkCC,aAAlC;;EAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;;EAEA;AACA;AACA;AACA;AACA;EACAH,EAAE,CAACI,KAAH,CAASC,MAAT,CAAgB,2BAAhB,EAA6C;IAC3CC,MAAM,EAAEN,EAAE,CAACO,IAAH,CAAQC,MAD2B;;IAG3CC,SAAS,CAACC,IAAD,EAAOC,OAAP,EAAgBC,OAAhB,EAAyB;MAChC;MACA,KAAKC,GAAL,CAAS;QACPH,IAAI,EAAEA,IADC;QAEPC,OAAO,EAAEA,OAFF;QAGPC,OAAO,EAAEA,OAAO,IAAI;MAHb,CAAT;IAKD,CAV0C;;IAY3CE,UAAU,EAAE;MACVJ,IAAI,EAAE;QACJK,QAAQ,EAAE,KADN;QAEJC,KAAK,EAAE;MAFH,CADI;MAMVC,OAAO,EAAE;QACPC,IAAI,EAAE,KADC;QAEPH,QAAQ,EAAE,KAFH;QAGPC,KAAK,EAAE;MAHA,CANC;MAYVG,MAAM,EAAE;QACND,IAAI,EAAE,KADA;QAENH,QAAQ,EAAE,KAFJ;QAGNC,KAAK,EAAE;MAHD,CAZE;MAkBVL,OAAO,EAAE;QACPI,QAAQ,EAAE,KADH;QAEPC,KAAK,EAAE;MAFA,CAlBC;MAuBVJ,OAAO,EAAE;QACPG,QAAQ,EAAE,KADH;QAEPC,KAAK,EAAE;MAFA;IAvBC;EAZ+B,CAA7C;EA3BAhB,EAAE,CAACoB,IAAH,CAAQC,QAAR,CAAiBC,GAAjB,CAAqBC,IAArB,CAA0BpB,aAA1B,GAA0CA,aAA1C"
+}

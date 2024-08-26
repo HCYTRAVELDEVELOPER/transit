@@ -1,0 +1,43 @@
+{
+    "name": "qxnw",
+    "include":
+            [
+                {
+                    "path": "${QOOXDOO_PATH}/tool/data/config/application.json"
+                }
+            ],
+    "export":
+            [
+                "api",
+                "api-data",
+                "build",
+                "clean",
+                "distclean",
+                "fix",
+                "info",
+                "inspector",
+                "lint",
+                "migration",
+                "source-all",
+                "source-hybrid",
+                "pretty",
+                "test",
+                "test-source",
+                "translation"
+            ],
+    "default-job": "build",
+    "let":
+            {
+                "APPLICATION": "qxnw",
+                "QOOXDOO_PATH": "../qooxdoo/qooxdoo-5.0-sdk",
+                "API_EXCLUDE": ["qx.test.*", "qxnw.demo.*", "${APPLICATION}.theme.*", "${APPLICATION}.test.*", "${APPLICATION}.srv"],
+                "LOCALES": ["es", "en"],
+                "CACHE": "${TMPDIR}/qx${QOOXDOO_VERSION}/cache",
+                "ROOT": "."
+            },
+    "includes": {
+        "include": [
+            "qxnw.themes.qxnw"
+        ]
+    }
+}

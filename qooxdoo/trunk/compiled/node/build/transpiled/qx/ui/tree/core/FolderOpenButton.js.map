@@ -1,0 +1,48 @@
+{
+  "version": 3,
+  "names": [
+    "qx",
+    "Bootstrap",
+    "executePendingDefers",
+    "$$dbClassInfo",
+    "Class",
+    "define",
+    "extend",
+    "ui",
+    "basic",
+    "Image",
+    "include",
+    "core",
+    "MExecutable",
+    "construct",
+    "initOpen",
+    "addListener",
+    "_onTap",
+    "_stopPropagation",
+    "properties",
+    "open",
+    "check",
+    "init",
+    "event",
+    "apply",
+    "members",
+    "_applyOpen",
+    "value",
+    "old",
+    "addState",
+    "removeState",
+    "execute",
+    "e",
+    "stopPropagation",
+    "toggleOpen",
+    "tree",
+    "FolderOpenButton"
+  ],
+  "sources": [
+    "/home/andresf/workspace_qooxdoo/qooxdoo/qooxdoo-7.0/source/class/qx/ui/tree/core/FolderOpenButton.js"
+  ],
+  "sourcesContent": [
+    "/* ************************************************************************\n\n   qooxdoo - the new era of web development\n\n   http://qooxdoo.org\n\n   Copyright:\n     2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n\n   Authors:\n     * Fabian Jakobs (fjakobs)\n\n************************************************************************ */\n\n/**\n * The small folder open/close button\n */\nqx.Class.define(\"qx.ui.tree.core.FolderOpenButton\", {\n  extend: qx.ui.basic.Image,\n  include: qx.ui.core.MExecutable,\n\n  /*\n  *****************************************************************************\n     CONSTRUCTOR\n  *****************************************************************************\n  */\n\n  construct() {\n    super();\n\n    this.initOpen();\n\n    this.addListener(\"tap\", this._onTap);\n    this.addListener(\"pointerdown\", this._stopPropagation, this);\n    this.addListener(\"pointerup\", this._stopPropagation, this);\n  },\n\n  /*\n  *****************************************************************************\n     PROPERTIES\n  *****************************************************************************\n  */\n\n  properties: {\n    /**\n     * Whether the button state is \"open\"\n     */\n    open: {\n      check: \"Boolean\",\n      init: false,\n      event: \"changeOpen\",\n      apply: \"_applyOpen\"\n    }\n  },\n\n  /*\n  *****************************************************************************\n     MEMBERS\n  *****************************************************************************\n  */\n\n  members: {\n    // property apply\n    _applyOpen(value, old) {\n      value ? this.addState(\"opened\") : this.removeState(\"opened\");\n      this.execute();\n    },\n\n    /**\n     * Stop tap event propagation\n     *\n     * @param e {qx.event.type.Event} The event object\n     */\n    _stopPropagation(e) {\n      e.stopPropagation();\n    },\n\n    /**\n     * Pointer tap event listener\n     *\n     * @param e {qx.event.type.Pointer} Pointer event\n     */\n    _onTap(e) {\n      this.toggleOpen();\n      e.stopPropagation();\n    }\n  }\n});\n"
+  ],
+  "mappings": ";;;;;;;;;;;;;;;;EAAAA,EAAE,CAACC,SAAH,CAAaC,oBAAb,CAAkCC,aAAlC;;EAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;;EAEA;AACA;AACA;EACAH,EAAE,CAACI,KAAH,CAASC,MAAT,CAAgB,kCAAhB,EAAoD;IAClDC,MAAM,EAAEN,EAAE,CAACO,EAAH,CAAMC,KAAN,CAAYC,KAD8B;IAElDC,OAAO,EAAEV,EAAE,CAACO,EAAH,CAAMI,IAAN,CAAWC,WAF8B;;IAIlD;AACF;AACA;AACA;AACA;IAEEC,SAAS,GAAG;MACV;MAEA,KAAKC,QAAL;MAEA,KAAKC,WAAL,CAAiB,KAAjB,EAAwB,KAAKC,MAA7B;MACA,KAAKD,WAAL,CAAiB,aAAjB,EAAgC,KAAKE,gBAArC,EAAuD,IAAvD;MACA,KAAKF,WAAL,CAAiB,WAAjB,EAA8B,KAAKE,gBAAnC,EAAqD,IAArD;IACD,CAlBiD;;IAoBlD;AACF;AACA;AACA;AACA;IAEEC,UAAU,EAAE;MACV;AACJ;AACA;MACIC,IAAI,EAAE;QACJC,KAAK,EAAE,SADH;QAEJC,IAAI,EAAE,KAFF;QAGJC,KAAK,EAAE,YAHH;QAIJC,KAAK,EAAE;MAJH;IAJI,CA1BsC;;IAsClD;AACF;AACA;AACA;AACA;IAEEC,OAAO,EAAE;MACP;MACAC,UAAU,CAACC,KAAD,EAAQC,GAAR,EAAa;QACrBD,KAAK,GAAG,KAAKE,QAAL,CAAc,QAAd,CAAH,GAA6B,KAAKC,WAAL,CAAiB,QAAjB,CAAlC;QACA,KAAKC,OAAL;MACD,CALM;;MAOP;AACJ;AACA;AACA;AACA;MACIb,gBAAgB,CAACc,CAAD,EAAI;QAClBA,CAAC,CAACC,eAAF;MACD,CAdM;;MAgBP;AACJ;AACA;AACA;AACA;MACIhB,MAAM,CAACe,CAAD,EAAI;QACR,KAAKE,UAAL;QACAF,CAAC,CAACC,eAAF;MACD;;IAxBM;EA5CyC,CAApD;EArBAhC,EAAE,CAACO,EAAH,CAAM2B,IAAN,CAAWvB,IAAX,CAAgBwB,gBAAhB,CAAiChC,aAAjC,GAAiDA,aAAjD"
+}

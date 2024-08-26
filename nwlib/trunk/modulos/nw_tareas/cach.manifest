@@ -1,0 +1,20 @@
+CACHE MANIFEST
+# version 4.70
+CACHE:
+/nwlib6/includes/jquery/jquery-1.4.2.min.js
+/nwlib6/includes/jquery/jquery.validate.1.5.2.js
+/nwlib6/includes/jquery/jquery-ui-1.8.1.custom.min.js
+css/style.css
+css/lists_1.css
+imagenes/icons.png
+imagenes/bg1.jpg
+
+# si el usuario está offline se mostrará este archivo
+FALLBACK:
+
+/ offline_task.html
+
+# todos los demás recursos requieren que el usuario esté conectado
+NETWORK:
+/ loadInternet.php
+*

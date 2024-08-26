@@ -1,0 +1,41 @@
+{
+  "version": 3,
+  "names": [
+    "qx",
+    "Bootstrap",
+    "executePendingDefers",
+    "$$dbClassInfo",
+    "Class",
+    "define",
+    "extend",
+    "application",
+    "Basic",
+    "members",
+    "main",
+    "tool",
+    "cli",
+    "Cli",
+    "run",
+    "e",
+    "compiler",
+    "Console",
+    "error",
+    "stack",
+    "message",
+    "process",
+    "exit",
+    "defer",
+    "statics",
+    "log",
+    "Logger",
+    "setLevel",
+    "Application"
+  ],
+  "sources": [
+    "/home/andresf/workspace_qooxdoo/qooxdoo/qooxdoo-7.0/source/class/qx/tool/cli/Application.js"
+  ],
+  "sourcesContent": [
+    "/* ************************************************************************\n\n   qooxdoo - the new era of web development\n\n   http://qooxdoo.org\n\n   Copyright:\n     2020 Henner Kollmann\n\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n\n   Authors:\n     * Henner Kollmann (Henner.Kollmann@gmx.de, @hkollmann)\n\n************************************************************************ */\n/**\n * This is the main application class of the compiler.\n *\n * @asset(qx/tool/*)\n *\n */\nqx.Class.define(\"qx.tool.cli.Application\", {\n  extend: qx.application.Basic,\n  members: {\n    /**\n     * This method contains the initial application code and gets called\n     * during startup of the application\n     */\n    async main() {\n      try {\n        await new qx.tool.cli.Cli().run();\n      } catch (e) {\n        qx.tool.compiler.Console.error(\"Error: \" + (e.stack || e.message));\n        process.exit(1);\n      }\n    }\n  },\n\n  defer(statics) {\n    qx.log.Logger.setLevel(\"error\");\n  }\n});\n"
+  ],
+  "mappings": ";;;;;;;;;;;;;;;;;EAAAA,EAAE,CAACC,SAAH,CAAaC,oBAAb,CAAkCC,aAAlC;;EAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;;EACA;AACA;AACA;AACA;AACA;AACA;EACAH,EAAE,CAACI,KAAH,CAASC,MAAT,CAAgB,yBAAhB,EAA2C;IACzCC,MAAM,EAAEN,EAAE,CAACO,WAAH,CAAeC,KADkB;IAEzCC,OAAO,EAAE;MACP;AACJ;AACA;AACA;MACI,MAAMC,IAAN,GAAa;QACX,IAAI;UACF,MAAM,IAAIV,EAAE,CAACW,IAAH,CAAQC,GAAR,CAAYC,GAAhB,GAAsBC,GAAtB,EAAN;QACD,CAFD,CAEE,OAAOC,CAAP,EAAU;UACVf,EAAE,CAACW,IAAH,CAAQK,QAAR,CAAiBC,OAAjB,CAAyBC,KAAzB,CAA+B,aAAaH,CAAC,CAACI,KAAF,IAAWJ,CAAC,CAACK,OAA1B,CAA/B;UACAC,OAAO,CAACC,IAAR,CAAa,CAAb;QACD;MACF;;IAZM,CAFgC;;IAiBzCC,KAAK,CAACC,OAAD,EAAU;MACbxB,EAAE,CAACyB,GAAH,CAAOC,MAAP,CAAcC,QAAd,CAAuB,OAAvB;IACD;;EAnBwC,CAA3C;EAvBA3B,EAAE,CAACW,IAAH,CAAQC,GAAR,CAAYgB,WAAZ,CAAwBzB,aAAxB,GAAwCA,aAAxC"
+}

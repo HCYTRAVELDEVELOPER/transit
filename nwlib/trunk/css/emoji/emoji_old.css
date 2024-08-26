@@ -1,0 +1,34 @@
+.emoji_nw {
+    height: 1.5em;
+    width: 1.5em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    vertical-align: middle;
+}
+.emoji_nw_face {
+    border-radius: 50%;
+    overflow: hidden;
+}
+.em-smiley {
+    background-image: url(emoji/smiley.png);
+}
+.em-smileyBig {
+    background-image: url(emoji/smileyBig.png);
+}
+.em-sunglasses {
+    background-image: url(emoji/sunglasses.png);
+}
+.em-wink {
+    background-image: url(emoji/wink.png);
+}
+.em-open_mouth {
+    background-image: url(emoji/open_mouth.png);
+}
+.em---1 {
+    background-image: url(emoji/+1.png);
+}
+.em-angry {
+    background-image: url(emoji/angry.png);
+}

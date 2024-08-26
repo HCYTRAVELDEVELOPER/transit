@@ -1,0 +1,31 @@
+/* 
+    Document   : styleOffline
+    Created on : Feb 5, 2016, 11:01:02 AM
+    Author     : alexf
+    Description:
+        Purpose of the stylesheet follows.
+*/
+#nwform {
+    max-width: inherit;
+}
+.containOfflineAll{
+    position: relative;
+    width: 100%;
+    float: left;
+    margin: 10px 0;
+}
+.divContainInput{
+    float: left;
+}
+#nwform input, select {
+    height: 30px;
+    padding: 5px!important;
+}
+.divSendNwForm{
+    position: relative;
+    float: left;
+    width: 100%;
+}
+#sendNwForm {
+    max-width: 150px;
+}

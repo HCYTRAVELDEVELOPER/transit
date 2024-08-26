@@ -1,0 +1,456 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:fb="http://www.facebook.com/2008/fbml"
+      xmlns:og="http://ogp.me/ns#"
+      xml:lang="es-ES" >
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+        <link href="/app/img/favicon.ico" rel="shortcut icon" type="image/x-icon"></link>
+            <style>
+                body {
+                    margin: 0;
+                    padding: 0;
+                    font-family: Arial;
+                    font-size: 12px;
+                }
+                .playground1 {
+                    width: 100%;
+                    height: 100%;
+                    min-height: 100%;
+                    position: absolute;
+                    left: 0px;
+                    top: 0px;
+                    background-color: #f1f1f1;
+                    color: #818181;
+                    font-weight: bold;
+                    text-shadow: 1px 1px 2px #CACACA;
+                }
+                .h1_carga {
+                    position: relative;
+                    top: 30%;
+                    text-align: center;
+                    width: 30%;
+                    height: auto;
+                    margin: auto;
+                    overflow: hidden;
+                    display: block;
+                    padding: 35px 5px;
+                    font-size: 16px;
+                    font-weight: lighter;
+                }
+                .enlace_powered {
+                    color: #818181;
+                    text-shadow: none;
+                    text-decoration: none;
+                    text-align: center;
+                    font-size: 12px;
+                }
+                .la-anim-10 {
+                    position: relative;
+                    top: 0;
+                    right: 0;
+                    width: 100px;
+                    height: 100px;
+                    margin: auto;
+                    pointer-events: none;
+                    margin-top: 40px;
+                }
+                .la-anim-10::before, .la-anim-10::after {
+                    position: absolute;
+                    bottom: 30px;
+                    left: 50%;
+                    display: block;
+                    border: 5px solid #fff;
+                    border-radius: 50%;
+                    content: '';
+                }
+                .la-anim-10::before, .la-anim-10::after {
+                    position: absolute;
+                    bottom: 30px;
+                    left: 50%;
+                    display: block;
+                    border: 5px solid #fff;
+                    border-radius: 50%;
+                    content: '';
+                    box-shadow: 0px 0px 15px #000;
+                }
+                .la-anim-10::before {
+                    margin-left: -40px;
+                    width: 80px;
+                    height: 80px;
+                    border-top-color: firebrick;
+                    border-bottom-color: rgb(137, 137, 137);
+                    -webkit-animation: rotation 3s linear infinite;
+                    animation: rotation 3s linear infinite;
+                    content: "N";
+                    line-height: 82px;
+                    font-size: 3em;
+                    color: firebrick;
+                    font-weight: bold;
+                }
+                .la-anim-10::after {
+                    /*       bottom: 50px;
+                                    margin-left: -20px;*/
+                    bottom: 20px;
+                    margin-left: 10px;
+                    width: 40px;
+                    height: 40px;
+                    border-top-color: rgb(153, 32, 32);
+                    border-bottom-color: rgb(197, 197, 197);
+                    -webkit-animation: rotation_circle 1s linear infinite;
+                    animation: rotation_circle 1s linear infinite;
+                    background: #5C5C5C;
+                    content: "W";
+                    line-height: 42px;
+                    color: #fff;
+                    font-weight: bold;
+                    font-size: 16px;
+                }
+                .version_div{
+                    position: relative;
+                    margin-top: -20px;
+                    top: -10px;
+                    left: 75px;
+                    font-size: 12px;
+                }
+                @-webkit-keyframes rotation {
+                    0% 		{
+                        -webkit-transform: rotate(0deg);
+                    }
+                    50% 	{
+                        -webkit-transform: rotate(180deg);
+                    }
+                    100% 	{
+                        -webkit-transform: rotate(360deg);
+                    }
+                }
+
+                @keyframes rotation {
+                    0% 		{
+                        transform: rotate(0deg);
+                    }
+                    50% 	{
+                        transform: rotate(180deg);
+                    }
+                    100% 	{
+                        transform: rotate(360deg);
+                    }
+                }
+                @-webkit-keyframes rotation_circle {
+                    0% 		{
+                        -webkit-transform: rotate(0deg);
+                    }
+                    50% 	{
+                        -webkit-transform: rotate(180deg);
+                    }
+                    100% 	{
+                        -webkit-transform: rotate(360deg);
+                    }
+                }
+
+                @keyframes rotation_circle {
+                    0% 		{
+                        transform: rotate(0deg);
+                    }
+                    50% 	{
+                        transform: rotate(180deg);
+                    }
+                    100% 	{
+                        transform: rotate(360deg);
+                    }
+                }
+            </style>
+            <title>Operaciones</title>
+    </head>
+    <body>
+        <div id="playground" class="playground1"> 
+            <h1 class="h1_carga">
+                Cargando... por favor espere
+                <div class="la-anim-10 la-animate"></div>
+                <div class="version_div">V9</div>
+                <a class="enlace_powered" href="https://www.gruponw.com" target="_blank">Powered By Grupo <span style="color:red;">N</span><span>w</span></a>
+            </h1>
+        </div>
+        <script type="text/javascript" id="nw-script-main" version="{version}" src="main.inc.php?{version}"></script>
+
+        <!--/*/////////////////INICIA WIDGET SOPORTE \\\\\\\\\\\\\\\\\\\\\*/-->
+        <style>
+            .widgetTicketNw {
+                position: fixed;
+                bottom: 29px;
+                left: 4px;
+                width: 57px;
+                height: 57px;
+                background: #ffffff;
+                z-index: 214748397;
+                border-radius: 50%;
+                box-shadow: 0px 0px 4px 1px #94282b;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+                box-sizing: border-box;
+                overflow: hidden;
+                cursor: pointer;
+            }
+            .ticketnw {
+                display: none!important;
+            }
+            iframe#widgetCrear{
+                position: relative;
+                width: 100%;
+                height: 100%;
+                padding-top: 59px;
+            }
+            .contain-widget {
+                position: fixed;
+                bottom: 0px;
+                left: 0px;
+                right: 0px;
+                top: 0px;
+                /*                width: 1048px;
+                                height: 535px;*/
+                background: #e03f3f;
+                z-index: 214748397;
+                border-radius: 20px;
+                box-shadow: 0px 0px 8px 4px #a29090;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0px;
+                box-sizing: border-box;
+                overflow: hidden;
+                margin: auto;
+            }
+            .btn_close_wid:hover {
+                transform: scale(0.9);
+                box-shadow: 4px 0px 0px 33px #ffffff5c;
+            }
+            .btn_close_wid {
+                position: absolute;
+                top: 3px;
+                right: 15px;
+                width: 22px;
+                height: 22px;
+                border: 1px solid;
+                z-index: 3;
+                border-radius: 50%;
+                background-image: url(/nwlib6/icons/cancelar_negro_32.png);
+                background-repeat: no-repeat;
+                background-position-y: center;
+                background-position-x: 4.2px;
+                background-size: 12px;
+                padding: 10px;
+                box-sizing: border-box;
+                cursor: pointer;
+                transition: 1s;
+            }
+            .contText{
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                flex-wrap: wrap;
+                width: 309px;
+                position: absolute;
+                left: -7px;
+                top: 3px;
+                margin: auto!important;
+            }
+            .header-bar {
+                width: 100%;
+                position: absolute;
+                top: 0px;
+                height: 28px;
+                background: linear-gradient(rgb(182, 15, 2) 30%, rgb(146, 24, 14) 70%);
+                z-index: 3;
+            }
+            .img_nw{
+                width: 100%;
+                max-width: 81px;
+                width: 30%;
+                left: -4px;
+                position: absolute;
+                top: -6px;
+            }
+            .expandWidget .img_nw {
+                transition: 1s;
+                width: 31%;
+                max-width: 142px;
+                left: 4px;
+            }
+            .textWidget{
+                transition: 3s;
+                width: 70%;
+                font-size: 16px;
+                font-weight: bold;
+                color: #000;
+                position: relative;
+                left: 39px;
+                margin: 1em;
+            }
+
+            body .expandWidget {
+                transition: 1s;
+                width: 278px;
+                border-radius: 20px;
+                height: 281px;
+            }
+            .btn_crear, .btn_ver, .btn_chat{
+                font-size: 16px;
+                font-weight: bold;
+                color: #483a3a;
+                width: 42%;
+                padding: 14px 0px;
+                text-align: center;
+                border: 1px solid #94282b;
+                /* border: 1px solid #ffff; */
+                margin-top: 20px;
+                margin-left: -15px;
+                border-radius: 8px;
+                transition: 1s;
+                min-width: 220px;
+            }
+            .btn_ver:hover, .btn_crear:hover, .btn_chat:hover {
+                background: #94282b;
+                transform: scale(1.1);
+                color: #fff;
+            }
+        </style>
+        <div class='widgetTicketNw' id='widgetTicketNw' onmouseleave="this.classList.remove('expandWidget')" >
+            <div class='contText'>
+                <img class='img_nw' alt=''src='/nwlib6/icons/asistente.gif' />
+                <p class='textWidget'> ¿Te podemos ayudar?</p>
+                <div class='btn_chat' onclick="frameCrear('chat')"> Chat de atención</div>
+                <div class='btn_crear' onclick="frameCrear('crear')"> Crear ticket</div>
+                <div class='btn_ver' onclick="frameCrear('listar')"> Histórico de tickets</div>    
+            </div>
+        </div>
+        <script type="text/javascript">
+            document.querySelector("#widgetTicketNw").addEventListener("click", function () {
+                var up = {};
+                if (document.querySelector(".qx-window")) {
+                    up = qxnw.userPolicies.getUserData();
+                    if (typeof up.user === 'undefined') {
+                        this.classList.remove('expandWidget');
+                        frameCrear('mensaje');
+                    } else {
+                        this.classList.add('expandWidget')
+                    }
+                } else {
+                    up = getUserInfo();
+                    up.lib = "nwmaker";
+                    if (typeof up.usuario === 'undefined') {
+                        this.classList.remove('expandWidget');
+                        frameCrear("mensaje");
+                    } else {
+                        this.classList.add('expandWidget')
+                    }
+                }
+            });
+            function frameCrear(tipo) {
+                var up = {};
+                if (document.querySelector(".qx-window")) {
+                    up = qxnw.userPolicies.getUserData();
+                    up.lib = "qxnw";
+                } else {
+                    up = getUserInfo();
+                    up.lib = "nwmaker";
+                }
+                if (typeof up.lib === 'undefined') {
+                    document.querySelector("#widgetTicketNw").classList.remove('expandWidget');
+                    return
+                }
+                if (tipo == "chat") {
+                    var ancho = 400, alto = 600;
+                    var posicion_x;
+                    var posicion_y;
+                    posicion_x = (screen.width / 2) - (ancho / 2);
+                    posicion_y = (screen.height / 2) - (alto / 2);
+                    window.open('https://app.ringow.com/ringowEmbed/2/66480?onlyChat=true&callingChat=true', "popup", "width=" + ancho + ",height=" + alto + ",menubar=0,toolbar=0,directories=0,scrollbars=no,resizable=no,left=" + posicion_x + ",top=" + posicion_y + "");
+                    return;
+                }
+                up = JSON.stringify(up);
+                var body = document.querySelector('body');
+                var div = document.createElement('div');
+                div.innerHTML = "<div class='header-bar'><div class='btn_close_wid'></div></div>"
+                if (tipo == "listar") {
+                    div.style = "width: 1048px; height: 535px;"
+                } else if (tipo == "mensaje") {
+                    div.style = "width: 551px; height: 235px; background: #f6f6f6;"
+                } else {
+                    div.style = "width: 551px; height: 535px;"
+                }
+                div.className = "contain-widget";
+                var frame = document.createElement('iframe');
+                frame.className = 'widgetCrear';
+                frame.id = 'widgetCrear';
+                frame.src = "https://nwadmin.gruponw.com/app/tickets_widget/index.php?action=" + tipo + "&up=" + up;
+                div.appendChild(frame);
+
+                if (tipo == "mensaje") {
+                    div.innerHTML = "<div class='header-bar'><div class='btn_close_wid'></div></div><p style='font-size: 18px;'>Lo sentimos, para usar helpdesk es necesario iniciar sesión.</p>";
+                }
+
+                body.appendChild(div);
+                document.querySelector(".btn_close_wid").addEventListener("click", function () {
+                    div.remove();
+                });
+            }
+            dragElement: function dragElement(elmnt) {
+                var self = this;
+                var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+                if (document.getElementById(elmnt.id)) {
+                    /* if present, the header is where you move the DIV from:*/
+                    document.getElementById(elmnt.id).onmousedown = dragMouseDown;
+                } else {
+                    /* otherwise, move the DIV from anywhere inside the DIV:*/
+                    elmnt.onmousedown = dragMouseDown;
+                }
+
+                function dragMouseDown(e) {
+                    e = e || window.event;
+                    e.preventDefault();
+                    // get the mouse cursor position at startup:
+                    pos3 = e.clientX;
+                    pos4 = e.clientY;
+                    document.onmouseup = closeDragElement;
+                    // call a function whenever the cursor moves:
+                    document.onmousemove = elementDrag;
+                }
+
+                function elementDrag(e) {
+                    elmnt.classList.remove('expandWidget');
+                    e = e || window.event;
+                    e.preventDefault();
+                    // calculate the new cursor position:
+                    pos1 = pos3 - e.clientX;
+                    pos2 = pos4 - e.clientY;
+                    pos3 = e.clientX;
+                    pos4 = e.clientY;
+                    // set the element's new position:
+                    console.log(pos1)
+                    console.log(elmnt.offsetLeft)
+                    console.log(screen.height - 150)
+//                            console.log(pos2)
+                    if (elmnt.offsetTop < -11 && pos2 > 0 || elmnt.offsetTop > screen.height - 150 && pos2 < 0 || elmnt.offsetLeft < -11 && pos1 > 0 || elmnt.offsetLeft > screen.width - 50 && pos1 < 0) {
+                        return;
+                    }
+                    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+                    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+
+                }
+
+                function closeDragElement() {
+                    /* stop moving when mouse button is released:*/
+                    document.onmouseup = null;
+                    document.onmousemove = null;
+                }
+            }
+            dragElement(document.querySelector("#widgetTicketNw"));
+        </script>
+        <!--/*/////////////////FINALIZA WIDGET SOPORTE \\\\\\\\\\\\\\\\\\\\\*/-->
+
+    </body>
+</html>

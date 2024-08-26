@@ -1,0 +1,47 @@
+{
+  "version": 3,
+  "names": [
+    "qx",
+    "Bootstrap",
+    "executePendingDefers",
+    "$$dbClassInfo",
+    "Class",
+    "define",
+    "extend",
+    "core",
+    "Object",
+    "construct",
+    "id",
+    "minLevel",
+    "set",
+    "properties",
+    "check",
+    "members",
+    "is",
+    "level",
+    "tool",
+    "utils",
+    "LogManager",
+    "getInstance",
+    "_levels",
+    "getMinLevel",
+    "log",
+    "msg",
+    "_output",
+    "output",
+    "trace",
+    "debug",
+    "info",
+    "warn",
+    "error",
+    "fatal",
+    "Logger"
+  ],
+  "sources": [
+    "/home/andresf/workspace_qooxdoo/qooxdoo/qooxdoo-7.0/source/class/qx/tool/utils/Logger.js"
+  ],
+  "sourcesContent": [
+    "/* ************************************************************************\n *\n *    qooxdoo-compiler - node.js based replacement for the Qooxdoo python\n *    toolchain\n *\n *    https://github.com/qooxdoo/qooxdoo\n *\n *    Copyright:\n *      2011-2017 Zenesis Limited, http://www.zenesis.com\n *\n *    License:\n *      MIT: https://opensource.org/licenses/MIT\n *\n *      This software is provided under the same licensing terms as Qooxdoo,\n *      please see the LICENSE file in the Qooxdoo project's top-level directory\n *      for details.\n *\n *    Authors:\n *      * John Spackman (john.spackman@zenesis.com, @johnspackman)\n *\n * *********************************************************************** */\nqx.Class.define(\"qx.tool.utils.Logger\", {\n  extend: qx.core.Object,\n\n  construct(id, minLevel) {\n    super();\n    this.set({ id: id, minLevel: minLevel });\n  },\n\n  properties: {\n    id: {\n      check: \"String\"\n    },\n\n    minLevel: {\n      check: \"Integer\"\n    }\n  },\n\n  members: {\n    is(level) {\n      if (typeof level == \"string\") {\n        level = qx.tool.utils.LogManager.getInstance()._levels[level];\n      }\n      return this.getMinLevel() <= level;\n    },\n\n    log(level, msg) {\n      if (this.is(level)) {\n        this._output(level, msg);\n      }\n    },\n\n    _output(level, msg) {\n      qx.tool.utils.LogManager.getInstance().output(this, level, msg);\n    },\n\n    trace(msg) {\n      return this.log(\"trace\", msg);\n    },\n\n    debug(msg) {\n      return this.log(\"debug\", msg);\n    },\n\n    info(msg) {\n      return this.log(\"info\", msg);\n    },\n\n    warn(msg) {\n      return this.log(\"warn\", msg);\n    },\n\n    error(msg) {\n      return this.log(\"error\", msg);\n    },\n\n    fatal(msg) {\n      return this.log(\"fatal\", msg);\n    }\n  }\n});\n"
+  ],
+  "mappings": ";;;;;;;;;;;;;;EAAAA,EAAE,CAACC,SAAH,CAAaC,oBAAb,CAAkCC,aAAlC;;EAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;EACAH,EAAE,CAACI,KAAH,CAASC,MAAT,CAAgB,sBAAhB,EAAwC;IACtCC,MAAM,EAAEN,EAAE,CAACO,IAAH,CAAQC,MADsB;;IAGtCC,SAAS,CAACC,EAAD,EAAKC,QAAL,EAAe;MACtB;MACA,KAAKC,GAAL,CAAS;QAAEF,EAAE,EAAEA,EAAN;QAAUC,QAAQ,EAAEA;MAApB,CAAT;IACD,CANqC;;IAQtCE,UAAU,EAAE;MACVH,EAAE,EAAE;QACFI,KAAK,EAAE;MADL,CADM;MAKVH,QAAQ,EAAE;QACRG,KAAK,EAAE;MADC;IALA,CAR0B;IAkBtCC,OAAO,EAAE;MACPC,EAAE,CAACC,KAAD,EAAQ;QACR,IAAI,OAAOA,KAAP,IAAgB,QAApB,EAA8B;UAC5BA,KAAK,GAAGjB,EAAE,CAACkB,IAAH,CAAQC,KAAR,CAAcC,UAAd,CAAyBC,WAAzB,GAAuCC,OAAvC,CAA+CL,KAA/C,CAAR;QACD;;QACD,OAAO,KAAKM,WAAL,MAAsBN,KAA7B;MACD,CANM;;MAQPO,GAAG,CAACP,KAAD,EAAQQ,GAAR,EAAa;QACd,IAAI,KAAKT,EAAL,CAAQC,KAAR,CAAJ,EAAoB;UAClB,KAAKS,OAAL,CAAaT,KAAb,EAAoBQ,GAApB;QACD;MACF,CAZM;;MAcPC,OAAO,CAACT,KAAD,EAAQQ,GAAR,EAAa;QAClBzB,EAAE,CAACkB,IAAH,CAAQC,KAAR,CAAcC,UAAd,CAAyBC,WAAzB,GAAuCM,MAAvC,CAA8C,IAA9C,EAAoDV,KAApD,EAA2DQ,GAA3D;MACD,CAhBM;;MAkBPG,KAAK,CAACH,GAAD,EAAM;QACT,OAAO,KAAKD,GAAL,CAAS,OAAT,EAAkBC,GAAlB,CAAP;MACD,CApBM;;MAsBPI,KAAK,CAACJ,GAAD,EAAM;QACT,OAAO,KAAKD,GAAL,CAAS,OAAT,EAAkBC,GAAlB,CAAP;MACD,CAxBM;;MA0BPK,IAAI,CAACL,GAAD,EAAM;QACR,OAAO,KAAKD,GAAL,CAAS,MAAT,EAAiBC,GAAjB,CAAP;MACD,CA5BM;;MA8BPM,IAAI,CAACN,GAAD,EAAM;QACR,OAAO,KAAKD,GAAL,CAAS,MAAT,EAAiBC,GAAjB,CAAP;MACD,CAhCM;;MAkCPO,KAAK,CAACP,GAAD,EAAM;QACT,OAAO,KAAKD,GAAL,CAAS,OAAT,EAAkBC,GAAlB,CAAP;MACD,CApCM;;MAsCPQ,KAAK,CAACR,GAAD,EAAM;QACT,OAAO,KAAKD,GAAL,CAAS,OAAT,EAAkBC,GAAlB,CAAP;MACD;;IAxCM;EAlB6B,CAAxC;EArBAzB,EAAE,CAACkB,IAAH,CAAQC,KAAR,CAAce,MAAd,CAAqB/B,aAArB,GAAqCA,aAArC"
+}

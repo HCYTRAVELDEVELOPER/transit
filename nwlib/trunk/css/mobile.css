@@ -1,0 +1,36 @@
+/* 
+    Document   : mobile
+    Created on : Apr 9, 2016, 1:48:42 PM
+    Author     : alexf
+    Description:
+        Purpose of the stylesheet follows.
+*/
+.nw_containerMenu{
+    z-index: 100000000000000000000000!important;
+    height: auto!important;
+    position: relative!important;
+}
+.nw_containerMenu div {
+    /* max-width: 50px; */
+    position: relative!important;
+    z-index: 1000000000000000000000000000;
+    left: 0!important;
+    /* height: auto!important; */
+    top: 0!important;
+}
+.qx-menubar {
+    max-width: 100%!important;
+    height: auto!important;
+}
+.nw_centralWidget {
+    position: relative!important;
+}
+div {
+    overflow: auto!important;
+}
+.nw_dateContainer {
+    display: none;
+}
+.qx-window {
+    width: 100%!important;
+}

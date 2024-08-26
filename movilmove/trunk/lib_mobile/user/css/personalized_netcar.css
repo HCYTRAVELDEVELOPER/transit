@@ -1,0 +1,51 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 4, 2019, 1:25:54 PM
+    Author     : alexf
+*/
+:root {
+    /*--color_empresarial: #c04025;*/
+    /*--color_empresarial: #e0471e;*/
+    /*--color_empresarial: #f64514;*/
+    --color_empresarial: #dc471e;
+}
+body .ui-page .logotipoHeader_home{
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+body .ui-page .logotipoHeader_home img{
+    height: 23px;
+    top: 5px;
+    position: relative;
+}
+.centrar_mapa{
+    position: fixed;
+    /* bottom: calc(0% + 153px); */
+    /* top: auto; */
+    z-index: 10;
+    left: auto;
+    right: 10px;
+    top: 4px;
+}
+.centrar_mapa .material-icons{
+    font-size: 35px;
+    background-color: #f64512;
+    color: #fff!important;
+    border-radius: 50%;
+    padding: 3px;
+}
+body .ui-page .my-header .btnMenuHeader {
+    background: #f64514;
+}
+body .ui-page .my-header .btnMenuHeader .menuBarEnc {
+    color: #fff;
+}
+html body .contenedor_adondevamos .button_adondevas .material-icons {
+    /*color: #f64514;*/
+}

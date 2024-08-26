@@ -1,0 +1,55 @@
+#content{
+   text-align: center; 
+}
+#import_text{
+    font-family: arial;
+    color: #20282F;
+}
+.tittle h4 {
+    font-size: 2em;
+        width: 80%;
+    margin: 15px auto;
+}
+.tittle p {
+    font-size: 1em;
+        color: #A32027;
+    width: 80%;
+            margin: auto;
+}
+
+table {
+    text-align: center;
+        margin: 0 auto;
+    background: #20283B;
+    color: rgb(228, 14, 14);
+    font-family: arial;
+        border-radius: 10px;
+}
+.action_text h1{
+    text-align: center;
+    padding: 20px 0 10px;
+    color: #A32027;
+    font-size: 1.5em;
+    font-family: arial;
+}
+.table_tittle p {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+.guidelines {
+    font-family: arial;
+    color: #A32027;
+    font-size: 0.8em;
+}
+input#importar {
+    background-image: none;
+    background-color: #20283B;
+    border-radius: 5px;
+    color: white;
+    border: 0;
+    padding: 7px;
+    cursor: pointer;
+}
+.select_field {
+    color: #20283B;
+}

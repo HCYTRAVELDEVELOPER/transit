@@ -1,0 +1,74 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 13, 2016, 2:03:52 AM
+    Author     : alexf
+*/
+@media screen and (max-width: 900px) {
+    .container-main-nwdelivery{
+        margin: 0;
+        margin-bottom: 100px;
+    }
+    .showmenmovilNwmaker {
+        margin: 0;
+    }
+    #menu, .header, .encMovilBox, .menMovilButtonFix  {
+        display: none;
+    }
+    .f_ver_producto {
+        z-index: 100000000;
+        height: 100%;
+    }
+    .loadModulosCenter {
+        margin: 0;
+    }
+    .containerCenter {
+        top: 60px;
+        float: none;
+    }
+    .menuDashBoard, .loadModulesHome, .containFileDir {
+        margin: 0;
+        padding: 0;
+    }
+    .encMenuMobile {
+        top: 0px!important;
+    }
+    .f_busca_direccion, .l_categorias_lista, .l_productos_lista, .l_carrito_flotante, .container-productosgrupos-delivery{
+        position: relative;
+        max-width: inherit!important;
+        top: 0;
+        float: none;
+        left: 0!important;
+        margin: 0;
+    }
+
+    .f_busca_direccion{
+
+    }
+    .l_categorias_lista {
+    }
+    .l_productos_lista {
+    }
+    .l_carrito_flotante {
+        position: fixed;
+        top: 0;
+        z-index: 100000000000;
+        height: 100%;
+        width: 100%;
+    }
+    .container-productosgrupos-delivery  .container-table-list{
+        display: none;
+    }
+    .titleCategories{
+        margin: 0px 0;
+        border-bottom: 1px solid #ccc;
+        padding: 15px 5px;
+        cursor: pointer;
+        /* border-left: 1px solid #535f69; */
+        /* border-right: 1px solid #535f69; */
+        font-size: 20px;
+    }
+}

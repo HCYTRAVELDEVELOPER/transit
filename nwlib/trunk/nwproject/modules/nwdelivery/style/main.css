@@ -1,0 +1,458 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 12, 2016, 10:31:36 PM
+    Author     : alexf
+*/
+.containerButtonListEnc {
+    padding: 0;
+    border: 0;
+}
+.container-delivery-center{
+    position: relative;
+    overflow: hidden;
+}
+.imageListNwMaker2 {
+
+}
+.container-main-nwdelivery{
+    position: relative;
+    /* outline: 1px solid; */
+    margin: auto;
+    max-width: 1200px;
+    overflow: hidden;
+    margin-top: 70px;
+    /*left: auto;*/
+    border-radius: initial;
+    box-shadow: none;
+    background: transparent;
+    margin-bottom: 100px;
+}
+.l_categorias_lista{
+    position: relative;
+    float: left;
+    margin: 0 10px;
+    background: #fff;
+    padding: 0px 10px 10px 10px;
+    width: auto;
+
+    position: fixed;
+    top: 110px;
+    left: auto;
+    padding: 0;
+}
+.l_productos_lista{
+    position: relative;
+    float: left;
+    margin: 0 10px;
+    background: #fff;
+    padding: 10px;
+    left: 190px;
+}
+.container-productosgrupos-delivery{
+    position: relative;
+    float: left;
+    margin: 0 10px;
+    background: #fff;
+    padding: 10px;
+    left: 190px;
+}
+.titleCategories{
+    position: relative;
+    font-size: 26px;
+}
+.l_carrito_flotante{
+    position: relative;
+    float: left;
+    background: #fff;
+    min-width: 200px;
+    min-height: 200px;
+    position: fixed;
+    right: 8px;
+    top: 110px;
+    box-shadow: 0px 0px 5px #ccc;
+    left: auto;
+    left: auto;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    z-index: 100000000;
+}
+
+.containDataCols {
+    /*min-height: initial;*/
+}
+
+.f_busca_direccion{
+    position: relative;
+    margin: 0px 0px 20px 0px;
+    background: #fff;
+    padding: 0px 10px;
+}
+.solicitarCarrito{
+    position: relative;
+    text-align: center;
+    background: #26d526;
+    color: #fff;
+    padding: 10px;
+    font-weight: lighter;
+    font-size: 20px;
+    cursor: pointer;    
+}
+.containerValoresAndButtons{
+    position: relative;
+    overflow: hidden;
+}
+.containerButtonsVals{ 
+    position: relative;
+    float: left;
+    width: 100%;
+}
+.containerValores{
+    position: relative;
+    max-width: 150px;
+    float: right;
+    width: 100%;
+    margin: 5px 0;
+}
+.containerValores p{
+    position: relative;
+    padding: 1px 5px;
+    overflow: hidden;
+}
+.colRigth{
+    float: right;
+}
+.colLeft{
+    position: relative;
+    font-weight: bold;
+}
+.l_carrito_flotante .container-table-list{
+    position: relative;
+    max-height: 320px;
+    overflow-y: auto;
+    border-bottom: 1px solid #ccc;
+}
+.login_delivery{
+    /*    position: relative;
+        width: auto;
+        max-width: 300px;*/
+}
+.login_delivery .containerInitSession{
+    padding: 10px 0px;
+}
+.login_delivery .ui-button{
+    margin: 0;
+    padding: 0!important;
+}
+.container-pasos-delivery{
+    position: relative;
+    overflow: hidden;
+    /*border-bottom: 1px solid #ccc;*/
+    text-align: center;
+    padding: 0px 0px 10px 0px;
+}
+.circle-pasos-delivery{
+    position: relative;
+    /* float: left; */
+    margin: 5px;
+    padding: 5px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #bd271f;
+    text-align: center;
+    color: #fff;
+    margin: auto 10px;
+    display: inline-block;
+    background: #fff;
+    color: #b4b4b4;
+}
+.circle-pasos-delivery p{
+    position: relative;
+    font-size: 18px;
+    margin-top: 14px;
+    font-weight: bold;
+}
+.circle-pasos-delivery span{
+    position: relative;
+    display: block;
+    max-height: 12px;
+    overflow: hidden;
+}
+.circle-active{
+    background: #bd271f;
+    color: #fff;
+}
+.container-main-nwdelivery .btnBlueBig{
+    background: #4889F0;
+    color: #fff;
+     padding: 10px; 
+     font-weight: lighter; 
+     font-size: 20px; 
+     margin: 10px auto; 
+     max-width: 300px; 
+     display: block; 
+     width: 100%; 
+     text-align: center; 
+     cursor: pointer; 
+}
+.btnBlueBig .btnm_news_span{
+    background: #4889F0;
+    color: #fff;
+    /* padding: 10px; */
+    /* font-weight: lighter; */
+    /* font-size: 20px; */
+    /* margin: 10px auto; */
+    /* max-width: 300px; */
+    /* display: block; */
+    /* width: 100%; */
+    /* text-align: center; */
+    /* cursor: pointer; */
+}
+.volverAtrasPasosBig{
+    position: relative;
+    text-align: center;
+    background: #cbcbcb;
+    color: #000;
+    padding: 10px;
+    font-weight: lighter;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 0px auto;
+    margin-bottom: 50px;
+    max-width: 300px;
+    margin-top: 0px;
+    display: block;
+    width: 100%;
+    border: 0;
+}
+.f_direcciones{
+    position: relative;
+    margin: auto;
+}
+.noproductoscarrito{
+    position: relative;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+.f_ver_producto{
+    z-index: 100000000;
+}
+.containDialogNwForm_f_ver_producto{
+    margin-top: 60px;
+}
+.pantallaEsperafinal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    text-align: center;
+    font-size: 22px;
+}
+.imgEsperandoPedido{
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    background-image: url(/nwlib6/nwproject/modules/nwdelivery/img/Orden1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 100%;
+    max-height: 400px;
+    margin: auto;
+}
+.textEsperaASerA{
+    word-break: break-word;
+    margin: 20px;
+    width: auto;
+    position: relative;
+    display: block;
+}
+.showCarrito{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 15px 0;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 10000;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    background-color: #4d90fe;
+    background-image: -webkit-linear-gradient(top,#4d90fe,#4787ed);
+    background-image: -moz-linear-gradient(top,#4d90fe,#4787ed);
+    background-image: -ms-linear-gradient(top,#4d90fe,#4787ed);
+    background-image: -o-linear-gradient(top,#4d90fe,#4787ed);
+    background-image: linear-gradient(top,#4d90fe,#4787ed);
+    border: 1px solid #3079ed;
+    z-index: 100000000000;
+}
+.btn_forms_addproduct{
+    display: block;
+    width: 100%;
+    padding: 5px 0px;
+    margin: 5px 0;
+    background: rgb(60, 186, 111);
+    border: 0;
+    font-size: 18px;
+    font-weight: lighter;
+}
+.cerrarCarrito{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000000000000;
+    background: #a2a2a2;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+.titleCategoriesActive{
+    background: #747474;
+    color: #fff;
+}
+.containerFilters {
+    padding: 0;
+    border: 0;
+}
+.colsMobil{
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.activeLInkMenu{
+    background: #fff!important;
+    color: #bd271f;
+}
+.contain_moto{
+    position: relative;
+    text-align: left;
+    overflow: hidden;
+    background-image: url(/modules/nwsites/img/Orden1.png);
+    background-repeat: no-repeat;
+    background-position: -140px 6px;
+    background-size: 25%;
+    -webkit-animation: animeCasa 10s;
+    -moz-animation: animeCasa 10s;
+    -o-animation: animeCasa 10s;
+    animation: animeCasa 10s;
+    -ms-animation: animeCasa 10s;
+    filter: animeCasa 10s infinite;
+}
+.piso_moto{
+    position: relative;
+    background: #333;
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    bottom: 0px;
+    z-index: 0;
+}
+.img_moto{
+    position: relative;
+    left: 0;
+    width: 40%;
+    -webkit-animation: animeMoto 1s infinite;
+    -moz-animation: animeMoto 1s infinite;
+    -o-animation: animeMoto 1s infinite;
+    animation: animeMoto 1s infinite;
+    -ms-animation: animeMoto 1s infinite;
+    filter: animeMoto 1s infinite;
+    z-index: 1;
+}
+/*ani person1*/
+@-webkit-keyframes animeCasa{
+    0% {background-position: 160px 0px;}	
+    50% {background-position: 130px 0px;}
+    100% {background-position: 100px 0px;}
+}
+
+@-moz-keyframes animeCasa{
+    0% {background-position: 160px 0px;}	
+    50% {background-position: 130px 0px;}
+    100% {background-position: 100px 0px;}
+}
+
+@-o-keyframes animeCasa{
+    0% {background-position: 160px 0px;}	
+    50% {background-position: 130px 0px;}
+    100% {background-position: 100px 0px;}
+}
+
+@-ms-keyframes animeCasa{
+    0% {background-position: 160px 0px;}	
+    50% {background-position: 130px 0px;}
+    100% {background-position: 100px 0px;}
+}
+@keyframes animeCasa{
+    0% {background-position: 50px 6px;}	
+    100% {background-position: -140px 6px;}
+}
+/*ani person1*/
+@-webkit-keyframes animeMoto{
+    0% {top: 0px;}	
+    50% {top: 10px;}
+    100% {top: 0px;}
+}
+
+@-moz-keyframes animeMoto{
+    0% {top: 0px;}	
+    50% {top: 10px;}
+    100% {top: 0px;}
+}
+
+@-o-keyframes animeMoto{
+    0% {top: 0px;}	
+    50% {top: 10px;}
+    100% {top: 0px;}
+}
+
+@-ms-keyframes animeMoto{
+    0% {top: 0px;}	
+    50% {top: 10px;}
+    100% {top: 0px;}
+}
+@keyframes animeMoto{
+    0% {top: 0px;}	
+    50% {top: 10px;}
+    100% {top: 0px;}
+}
+.btnContinuarPedido{
+    padding: 10px 100px;
+    font-size: 20px!important;
+}
+.containerShowCerrado{
+    position: relative;
+    display: block;
+    width: 100%;
+    float: left;
+    background: #919191;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
+    top: -4px;
+}
+.cancelarPedidoEspera{
+    background: #cacaca;
+    max-width: 150px;
+    margin: 10px auto;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+}

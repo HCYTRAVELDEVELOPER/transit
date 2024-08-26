@@ -1,0 +1,822 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 25/10/2017, 08:09:12 PM
+    Author     : duvanb
+*/
+
+.nw-group_recomendaciones.isgruoupinitial.qxuigroupboxGroupBox.qx-group_padre.qxuigroupboxGroupBox_7.qx-group_padre_7 {
+    background: white!important;
+}
+.nw-group_recomendaciones.isgruoupinitial.qxuigroupboxGroupBox.qx-group_padre.qxuigroupboxGroupBox_6.qx-group_padre_6 {
+    background: white!important;
+}
+.qx-window.window_recomendaciones.historia_clinicaformsf_exam_medico_concepto.qx-window-pane_padre {
+    left: -10px!important;
+}
+
+
+.datosSoa{
+    height: 60px; 
+    width:100%;
+}
+.datosPaciente{
+    width: 100%;
+}
+.qr{
+    height: 119px;margin-top: -10px;
+}
+.separatorGreen{
+    BACKGROUND-COLOR: #226f90;
+    position: relative;
+    color: #fff;
+    padding: 4px;
+    font-weight: bold;
+}
+#datospaciente {
+    position: relative;
+    border: 1px solid;
+}
+.encUsers{
+    position: relative;
+    width: 100%;
+}
+#datospaciente h3{
+    background: #008578;
+    height: auto;
+    width: 100%;
+    padding: 3px;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+}
+#datospaciente td {
+    width: 33.33%;
+}
+#datospaciente td:nth-child(1) {
+    width: 40%;
+    /*border-right: 1px solid;*/
+}
+#datospaciente td:nth-child(2) {
+    width: 40%;
+    /*border-right: 1px solid;*/
+}
+#datospaciente td:nth-child(3) {
+    width: 20%;
+}
+
+.containerBody_Examen_Medico_Ocupacional
+{
+    /*min-width: 100%;*/
+    /*max-width: 100%;*/
+}
+/*ROTAR MATRIZ*/
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_2,
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_2 .qx-group
+{
+    height: auto!important;    
+    position: relative!important;
+}
+
+.newprue1 .qooxdoo-table-cell_padre,
+.newprue1 .qx-table-scroller-header_padre_padre,
+.newprue2 .qooxdoo-table-cell_padre,
+.newprue2 .qx-table-scroller-header_padre_padre
+{
+    min-width: 20000px!important;
+}
+.newprue2 .qooxdoo-table-cell_padre,
+.newprue2 .qx-table-scroller-header_padre_padre
+{
+    /*transform: translateX(-688px);*/
+    transform: translateX(-995px);
+}
+.nw_login_box_prue {
+    /*    transform: rotate(90deg);
+        top: 850px!important;
+        left: 20px!important;*/
+}
+/*FIN ROTAR MATRIZ*/
+
+/*DIVIDE EN DOS MATRIZ*/
+.newprue1, newprue2{
+    margin-top: -30px;
+
+    max-width: 965px;
+}
+.newprue2 {
+    position: relative;
+}
+
+/*.containerBody_Audiometria .containerForm_2,*/
+.containerBody_Fisioterapia  .containerForm_0 .qxuigroupboxGroupBox_4,
+.containerBody_Psicologia .containerForm_3,
+.containerBody_Audiometria .containerForm_3,
+.containerBody_Audiometria .containerForm_4,
+/*.containerBody_Optometria .qxuigroupboxGroupBox_10*/
+/*.containerBody_Espirometria .qxuigroupboxGroupBox_8*/
+/*.containerBody_Optometria .qxuigroupboxGroupBox_18*/
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_3,
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_6
+{
+    page-break-before: always;
+    /*margin-top: 40px*/
+}
+
+.newprue1 .qx-table-scroller-header,
+.newprue2 .qx-table-scroller-header
+{
+    max-height: 199px;
+}
+.newprue2 .qx-table-scroller-header_padre > div:nth-child(2) > div > div:nth-child(3),
+.newprue2 .qx-table-scroller-header_padre > div:nth-child(2) > div > div:nth-child(2)
+{
+    /*display: none;*/
+}
+.newprue1 .qx-table-scroller-header_padre > div:nth-child(2) > div > div:nth-child(1),
+.newprue2 .qx-table-scroller-header_padre > div:nth-child(2) > div > div:nth-child(1),
+.newprue1 .qx-table-scroller-header_padre > div:nth-child(2) > div > div:nth-child(2),
+.newprue2 .qx-table-scroller-header_padre > div:nth-child(2) > div > div:nth-child(2),
+.newprue1 .qx-table-scroller-header_padre > div:nth-child(2) > div > div:nth-child(3),
+.newprue2 .qx-table-scroller-header_padre > div:nth-child(2) > div > div:nth-child(3),
+.newprue1 .qx-table-scroller-header_padre > div:nth-child(2) > div > div:nth-child(4),
+.newprue2 .qx-table-scroller-header_padre > div:nth-child(2) > div > div:nth-child(4),
+.newprue1 .qx-table-scroller-header_padre > div:nth-child(2) > div > div:nth-child(5),
+.newprue2 .qx-table-scroller-header_padre > div:nth-child(2) > div > div:nth-child(5),
+.newprue1 .qx-table-scroller-header_padre > div:nth-child(2) > div > div:nth-child(6),
+.newprue2 .qx-table-scroller-header_padre > div:nth-child(2) > div > div:nth-child(6)
+{
+    width: 230px!important;
+    left: auto!important;
+    position: relative!important;
+    float: left;
+}
+.newprue1 .qx-table-scroller-header_padre > div:nth-child(2) > div > div:nth-child(1),
+.newprue2 .qx-table-scroller-header_padre > div:nth-child(2) > div > div:nth-child(1)
+{
+    width: 230px!important;
+    margin-left: 200px!important;
+}
+.newprue1 .qx-table-scroller-header_padre > div:nth-child(2) > div > div:nth-child(2),
+.newprue2 .qx-table-scroller-header_padre > div:nth-child(2) > div > div:nth-child(2)
+{
+    width: 166px!important;
+}
+.newprue1 .qx-table-scroller-header_padre > div:nth-child(2) > div > div:nth-child(3),
+.newprue2 .qx-table-scroller-header_padre > div:nth-child(2) > div > div:nth-child(3)
+{
+    width: 164px!important;
+}
+.newprue1 .qx-table-scroller-header_padre > div:nth-child(2) > div > div:nth-child(4),
+.newprue2 .qx-table-scroller-header_padre > div:nth-child(2) > div > div:nth-child(4)
+{
+    width: 199px!important;
+}
+.newprue1 .qx-table-scroller-header_padre > div:nth-child(2) > div > div:nth-child(5),
+.newprue2 .qx-table-scroller-header_padre > div:nth-child(2) > div > div:nth-child(5)
+{
+    width: 132px!important;
+}
+.newprue1 .qx-table-scroller-header_padre > div:nth-child(2) > div > div:nth-child(6),
+.newprue2 .qx-table-scroller-header_padre > div:nth-child(2) > div > div:nth-child(6)
+{
+    width: 230px!important;
+}
+.newprue1 .qx-table-header-cell div:first-child,
+.newprue2 .qx-table-header-cell div:first-child
+{
+    width: auto!important;
+    top: 0px!important;
+    padding: 0!important;
+}
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_2 .qx-table-header-cell,
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_2 .qooxdoo-table-cell
+{
+    width: 33px!important;
+    overflow: hidden!important;
+    transform: translateX(0px);
+    margin: 0!important;
+    padding: 0!important;
+}
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_2 .qx-table-header-cell:nth-last-child(1),
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_2 .qooxdoo-table-cell:nth-last-child(1)
+{
+    width: 200px!important;
+}
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_2 .qx-table-header-cell:nth-child(1),
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_2 .qooxdoo-table-cell:nth-child(1)
+{
+    width: 200px!important;
+}
+/* FIN DIVIDE EN DOS MATRIZ*/
+
+
+
+
+
+.qxuigroupboxGroupBox{
+    background-color: #226f90!important;    
+}
+.table_con{
+    background-color: #226f90!important;
+    padding: 1px;
+}
+.titleElementsProt{
+    color: #fff!important;
+    background: #226e8f!important;
+    position: absolute!important;
+    width: 300px!important;
+    height: 25px!important;
+    left: -133px!important;
+    text-align: center!important;
+}
+.qx-table-scroller-header{
+    background: #226e8f!important;
+}
+.titleGroup {
+    position: relative;
+    font-weight: bold;
+    padding: 3px 0px 3px 0px;
+    text-align: center;
+    /* background: #226e8f; */
+    color: #fff;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color: #000;
+    /* border-bottom: 9px solid #226e8f; */
+    /* border-top: 4px solid #226e8f; */
+    /* background: #358677; */
+    background: #d6d6d6;
+}
+.containerBody_Examen_Medico_Ocupacional .containerForm_3 .qxuigroupboxGroupBox_21{
+    height: 250px!important;
+}
+.groupAbsolute{
+    position: absolute!important;
+    min-width: inherit;
+    max-width: inherit;
+}
+.groupAbsoluteLeftImagenolo{
+    left: 406px!important;
+}
+.groupAbsoluteLeftGrafic{
+    left: 120px!important;
+}
+
+.containerBody_Audiometria .qxuigroupboxGroupBox_2 .jqplot-base-canvas{
+    background-image: url(/imp/imagenes/fondo_osea.png);
+    background-repeat: no-repeat;
+    background-position: 11px 21px;
+    background-size: 697px;
+}
+.containerBody_Audiometria .qxuigroupboxGroupBox_1 .jqplot-base-canvas{
+    background-image: url(/imp/imagenes/grafica_aerea.png);
+    background-repeat: no-repeat;
+    background-position: 0px 21px;
+    background-size: auto;
+}
+
+.containerBody_Examen_Medico_Ocupacional .qxuigroupboxGroupBox_5 .nw_container_fields_form .qx-button-disabled {
+    display: block;
+}
+.containerBody_Examen_Medico_Ocupacional .qxuigroupboxGroupBox_5 .nw_container_fields_form,
+.containerBody_Alturas .qxuigroupboxGroupBox_1 .nw_container_fields_form,
+.containerBody_Alturas .qxuigroupboxGroupBox_2 .nw_container_fields_form,
+.containerBody_Optometria .qxuigroupboxGroupBox_1 .nw_container_fields_form,
+.containerBody_Optometria .qxuigroupboxGroupBox_2 .nw_container_fields_form, 
+.containerBody_Optometria .qxuigroupboxGroupBox_3 .nw_container_fields_form, 
+.containerBody_Optometria .qxuigroupboxGroupBox_4 .nw_container_fields_form, 
+.containerBody_Optometria .qxuigroupboxGroupBox_5 .nw_container_fields_form, 
+.containerBody_Optometria .qxuigroupboxGroupBox_6 .nw_container_fields_form, 
+.containerBody_Optometria .qxuigroupboxGroupBox_11 .nw_container_fields_form, 
+.containerBody_Optometria .qxuigroupboxGroupBox_12 .nw_container_fields_form, 
+.containerBody_Optometria .qxuigroupboxGroupBox_13 .nw_container_fields_form, 
+.containerBody_Optometria .qxuigroupboxGroupBox_17 .nw_container_fields_form, 
+.containerBody_Audiometria .qxuigroupboxGroupBox_1 .nw_container_fields_form, 
+.containerBody_Audiometria .qxuigroupboxGroupBox_2 .nw_container_fields_form, 
+.containerBody_Audiometria .qxuigroupboxGroupBox_3 .nw_container_fields_form, 
+.containerBody_Audiometria .qxuigroupboxGroupBox_4 .nw_container_fields_form,
+.containerBody_Audiometria .qxuigroupboxGroupBox_5 .nw_container_fields_form,
+.containerBody_Audiometria .qxuigroupboxGroupBox_6 .nw_container_fields_form,
+.containerBody_Audiometria .qxuigroupboxGroupBox_7 .nw_container_fields_form,
+.containerBody_Espirometria .qxuigroupboxGroupBox_1 .nw_container_fields_form,
+.containerBody_Espirometria .qxuigroupboxGroupBox_2 .nw_container_fields_form,
+.containerBody_Espirometria .qxuigroupboxGroupBox_3 .nw_container_fields_form,
+.containerBody_Espirometria .qxuigroupboxGroupBox_4 .nw_container_fields_form
+{
+    min-width: 185px!important;
+    max-width: 185px!important;
+}
+.consentimiento_info{
+    border: 1px solid;
+    width: 100%;
+    /*margin-top: -30px;*/
+    border-collapse: collapse;
+}
+.consentimiento_info td {
+    padding: 5px;
+}
+.boxFirmas{
+    width: 100%;margin-top: -1px; border:1px solid;
+}
+.containerBody_Apoyo_Diagnostico .containerForm_0 .qxuigroupboxGroupBox_3 .qx-group > div:first-child,
+.containerBody_Imagenologia .containerForm_0 .qxuigroupboxGroupBox_2 .qx-group > div:first-child,
+.containerBody_Optometria .containerForm_0 .qxuigroupboxGroupBox_15 .qx-group > div:first-child,
+.containerBody_General .containerForm_1 .qxuigroupboxGroupBox_10 .qx-group > div:first-child,
+.containerBody_Examen_Medico_Ocupacional .containerForm_3 .qxuigroupboxGroupBox_3 .qx-group > div:first-child,
+.containerBody_Examen_Medico_Ocupacional .containerForm_4 .qxuigroupboxGroupBox_1 .qx-group > div:first-child,
+.containerBody_Audiometria .containerForm_5 .qxuigroupboxGroupBox_1 .qx-group > div:first-child,
+.containerBody_Examen_Medico_Ocupacional .containerForm_3 .qxuigroupboxGroupBox_16 .qx-group > div:first-child,
+.containerBody_Examen_Medico_Ocupacional .containerForm_3 .qxuigroupboxGroupBox_14 .qx-group > div:first-child,
+.containerBody_Examen_Medico_Ocupacional .containerForm_3 .qxuigroupboxGroupBox_12 .qx-group > div:first-child
+{
+    width: auto!important;
+}
+
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_1 .qx-table-statusbar_padre{
+    top: -50px!important;
+}
+.containerBody_Examen_Medico_Ocupacional .containerForm_3 .qxuigroupboxGroupBox_21{
+    display: none!important;
+}
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_1,
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_1 .nw_container_fields_form_qxnwfield_endGroup_padre,
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_1 .qx-tabview-pane_padre,
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_1 .qx-tabview-pane
+{
+    height: auto!important;
+}
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_1 .qooxdoo-table-cell_padre_qooxdoo-table-cell_qooxdoo-table-cell-icon_padre_padre,
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_1 .qooxdoo-table-cell_padre_qooxdoo-table-cell_qooxdoo-table-cell-icon_padre_padre_padre,
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_1 .qooxdoo-table-cell_padre_qooxdoo-table-cell_qooxdoo-table-cell-icon_padre_padre_padre_padre,
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_1 .qx-table-scroller-header_padre_padre_padre,
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_1 .qx-table-scroller-header_padre_padre_padre_padre,
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_1 .qx-table-statusbar_padre,
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_1 .qx-table-statusbar_padre_padre,
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_1 .qx-toolbar_padre_padre,
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_1 .qx-toolbar_padre_padre_padre,
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_1 .qx-toolbar_padre_padre_padre_padre,
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_1 .qx-tabview-pane_padre,
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_1 .qx-tabview-pane_padre_padre,
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_1 .convertedInputs,
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_1 .nw_container_fields_form_qxnwfield_endGroup_padre,
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_1 .qx-scrollbar-horizontal_padre_qx-scrollbar-vertical_padre_padre,
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_1,
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_4 .qooxdoo-table-cell_padre_qooxdoo-table-cell_qooxdoo-table-cell-icon_padre_padre,
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_4 .qooxdoo-table-cell_padre_qooxdoo-table-cell_qooxdoo-table-cell-icon_padre_padre_padre,
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_4 .qooxdoo-table-cell_padre_qooxdoo-table-cell_qooxdoo-table-cell-icon_padre_padre_padre_padre,
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_4 .qx-table-scroller-header_padre_padre_padre,
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_4 .qx-table-scroller-header_padre_padre_padre_padre,
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_4 .qx-table-statusbar_padre,
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_4 .qx-table-statusbar_padre_padre,
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_4 .qx-toolbar_padre_padre,
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_4 .qx-toolbar_padre_padre_padre,
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_4 .qx-toolbar_padre_padre_padre_padre,
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_4 .qx-tabview-pane_padre,
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_4 .qx-tabview-pane_padre_padre,
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_4 .convertedInputs,
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_4 .nw_container_fields_form_qxnwfield_endGroup_padre,
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_4 .qx-scrollbar-horizontal_padre_qx-scrollbar-vertical_padre_padre,
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_4 .qx-tabview-pane_padre_padre_padre,
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_4
+{
+    height: auto!important;
+    position: relative!important;
+    top: 0px!important;
+    padding: 0!important;
+}
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_1 .qx-table-scroller-header_padre_padre
+{
+    height: 54px!important;
+    position: relative!important;
+}
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_1 .nwContainFields,
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_4 .nwContainFields
+{
+    margin-top: 20px;
+}
+.qooxdoo-table-cell_padre {
+    background: transparent!important;
+    color: #000!important;
+}
+
+
+.containerBody_Audiometria .containerForm_5 .convertedInputs_textarea 
+{
+    width: max-content;
+    position: relative!important;    
+}
+.containerBody_Audiometria .containerForm_5 .qxuigroupboxGroupBox_1
+{
+    width: 100%!important;
+    position: relative!important;
+    height: auto!important;   
+    margin-bottom: 50px!important;
+    padding-bottom: 10px;
+}
+.containerBody_Audiometria .containerForm_5 .nwContainFields
+{
+    width: 100%!important;
+    position: relative!important;
+    height: auto!important;   
+}
+.containerBody_Audiometria .containerForm_5 .nw_container_fields_form
+{
+    position: relative!important;
+    top: auto!important;
+    min-width: 100%;
+    min-width: 100%!important;
+    max-width: 100%!important;
+    left: auto!important;
+    min-width: 50%!important;
+    max-width: 50%!important;
+    float: left;
+    padding: 1px 0px 5px 0px;
+    box-sizing: border-box!important;
+}
+.containerBody_Audiometria .containerForm_5 .nw_container_fields_form  div
+{
+    position: relative!important;
+    top: auto!important;
+    min-width: 100%!important;
+    max-width: 100%!important;
+    width: 100%!important;
+    height: auto!important;
+    left: auto!important;
+    padding: 0!important;
+}
+.containerBody_Audiometria .containerForm_2 .convertedInputs_textarea 
+{
+    width: max-content;
+    position: relative!important;    
+}
+.containerBody_Audiometria .containerForm_2 .qxuigroupboxGroupBox_1
+{
+    width: 100%!important;
+    position: relative!important;
+    height: auto!important;   
+    /*margin-bottom: 50px!important;*/
+    padding-bottom: 10px;
+}
+.containerBody_Audiometria .containerForm_2 .nwContainFields
+{
+    width: 100%!important;
+    position: relative!important;
+    height: auto!important;   
+}
+.containerBody_Audiometria .containerForm_2 .qxuigroupboxGroupBox_1 .nw_container_fields_form
+{
+    position: relative!important;
+    top: auto!important;
+    min-width: 100%;
+    min-width: 100%!important;
+    max-width: 100%!important;
+    left: auto!important;
+    min-width: 50%!important;
+    max-width: 50%!important;
+    /* float: left; */
+    padding: 1px 0px 5px 0px;
+    box-sizing: border-box!important;
+    display: inline-block;
+}
+.containerBody_Audiometria .containerForm_2 .nw_container_fields_form  div
+{
+    position: relative!important;
+    top: auto!important;
+    min-width: 100%!important;
+    max-width: 100%!important;
+    width: 100%!important;
+    height: auto!important;
+    left: auto!important;
+}
+.containerBody_Audiometria .containerForm_2 .qxuigroupboxGroupBox_1 .nw_container_fields_form:nth-child(1),
+.containerBody_Audiometria .containerForm_2 .qxuigroupboxGroupBox_1 .nw_container_fields_form:nth-child(9)
+{
+    min-width: 100%!important;
+    max-width: 100%!important;
+    border-bottom: 1px solid #ccc;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.containerBody_General .containerForm_2 .qxuigroupboxGroupBox_1 .qx-tabview-pane_padre_padre,
+.containerBody_General .containerForm_2 .qxuigroupboxGroupBox_1 .nw_container_fields_form,
+.containerBody_General .containerForm_2 .qxuigroupboxGroupBox_1 .nw_container_fields_form div,
+.containerBody_General .containerForm_2 .qxuigroupboxGroupBox_1 .nw_container_fields_form_qxnwfield_endGroup_padre
+{
+    position: relative!important;
+    width: 100%!important;
+    left: auto!important;
+    height: auto!important;
+    word-break: break-all;
+    top: auto!important;
+}
+.containerBody_General .containerForm_2 .qxuigroupboxGroupBox_1,
+.containerBody_General .containerForm_2 .qxuigroupboxGroupBox_1 .qx-group
+{
+    position: relative!important;
+    width: 100%!important;
+    height: auto!important;
+}
+.containerBody_General .containerForm_2 .qxuigroupboxGroupBox_1 .qx-group
+{
+    margin-top: 25px!important;
+}
+.containerBody_General .containerForm_2 .qxuigroupboxGroupBox_1 .convertedInputs_textarea
+{
+    position: relative!important;
+    width: 100%!important;
+    height: 100%!important;
+}
+.containerBody_General .containerForm_2 .qxuigroupboxGroupBox_1 .qx-tabview-pane_padre,
+.containerBody_General .containerForm_2 .qxuigroupboxGroupBox_1 .qx-tabview-pane_padre .qx-tabview-pane,
+.containerBody_General .containerForm_2 .qxuigroupboxGroupBox_1 .qx-tabview-pane_padre .qx-tabview-pane .qx-toolbar_padre_padre_padre,
+.containerBody_General .containerForm_2 .qxuigroupboxGroupBox_1 .qx-tabview-pane_padre .qx-tabview-pane .qx-toolbar_padre_padre_padre .qx-toolbar_padre_padre,
+.containerBody_General .containerForm_2 .qxuigroupboxGroupBox_1 .qx-tabview-pane_padre .qx-tabview-pane .qx-toolbar_padre_padre_padre .qx-toolbar_padre_padre .qx-table-statusbar_padre_padre,
+.containerBody_General .containerForm_2 .qxuigroupboxGroupBox_1 .qx-tabview-pane_padre .qx-tabview-pane .qx-toolbar_padre_padre_padre .qx-toolbar_padre_padre .qx-table-statusbar_padre_padre .qx-table-statusbar_padre,
+.containerBody_General .containerForm_2 .qxuigroupboxGroupBox_1 .qx-tabview-pane_padre .qx-tabview-pane .qx-toolbar_padre_padre_padre .qx-toolbar_padre_padre .qx-table-statusbar_padre_padre .qx-table-statusbar_padre .qx-scrollbar-horizontal_padre_qx-scrollbar-vertical_padre_padre,
+.containerBody_General .containerForm_2 .qxuigroupboxGroupBox_1 .qx-tabview-pane_padre .qx-tabview-pane .qx-toolbar_padre_padre_padre .qx-toolbar_padre_padre .qx-table-statusbar_padre_padre .qx-table-statusbar_padre .qx-scrollbar-horizontal_padre_qx-scrollbar-vertical_padre_padre .qx-scrollbar-horizontal_padre,
+.containerBody_General .containerForm_2 .qxuigroupboxGroupBox_1 .qx-tabview-pane_padre .qx-tabview-pane .qx-toolbar_padre_padre_padre .qx-toolbar_padre_padre .qx-table-statusbar_padre_padre .qx-table-statusbar_padre .qx-scrollbar-horizontal_padre_qx-scrollbar-vertical_padre_padre .qx-scrollbar-horizontal_padre .qx-table-scroller-header_padre_padre,
+.containerBody_General .containerForm_2 .qxuigroupboxGroupBox_1 .qx-tabview-pane_padre .qx-tabview-pane .qx-toolbar_padre_padre_padre .qx-toolbar_padre_padre .qx-table-statusbar_padre_padre .qx-table-statusbar_padre .qx-scrollbar-horizontal_padre_qx-scrollbar-vertical_padre_padre .qx-scrollbar-horizontal_padre .qx-table-scroller-header_padre_padre .qx-table-scroller-header_padre,
+.containerBody_General .containerForm_2 .qxuigroupboxGroupBox_1 .qx-tabview-pane_padre .qx-tabview-pane .qx-toolbar_padre_padre_padre .qx-toolbar_padre_padre .qx-table-statusbar_padre_padre .qx-table-statusbar_padre .qx-scrollbar-horizontal_padre_qx-scrollbar-vertical_padre_padre .qx-scrollbar-horizontal_padre .qx-table-scroller-header_padre_padre .qx-table-scroller-header_padre .qx-table-scroller-header,
+.containerBody_General .containerForm_2 .qxuigroupboxGroupBox_1 .qx-tabview-pane_padre .qx-tabview-pane .qx-toolbar_padre_padre_padre .qx-toolbar_padre_padre .qx-table-statusbar_padre_padre .qx-table-statusbar_padre .qx-scrollbar-horizontal_padre_qx-scrollbar-vertical_padre_padre .qx-scrollbar-horizontal_padre .qx-table-scroller-focus-indicator_padre,
+.containerBody_General .containerForm_2 .qxuigroupboxGroupBox_1 .qx-tabview-pane_padre .qx-tabview-pane .qx-toolbar_padre_padre_padre .qx-toolbar_padre_padre .qx-table-statusbar_padre_padre .qx-table-statusbar_padre .qx-scrollbar-horizontal_padre_qx-scrollbar-vertical_padre_padre .qx-scrollbar-horizontal_padre .qooxdoo-table-cell_padre_qooxdoo-table-cell_qooxdoo-table-cell-icon_padre_padre_padre
+{
+    position: relative!important;
+    width: 100%!important;
+    height: auto!important;
+    top: auto!important;
+}
+.containerBody_General .containerForm_2 .qxuigroupboxGroupBox_1 .qx-tabview-pane_padre .qx-tabview-pane .qx-toolbar_padre_padre_padre .qx-toolbar_padre_padre .qx-table-statusbar_padre_padre .qx-table-statusbar_padre .qx-scrollbar-horizontal_padre_qx-scrollbar-vertical_padre_padre .qx-scrollbar-horizontal_padre .qx-table-scroller-header_padre_padre .qx-table-scroller-header_padre .qx-table-scroller-header .qx-table-header-cell{
+    position: relative!important;
+    float: left;
+    word-break: break-word;
+    height: 30px!important;
+    left: auto!important;
+    top: auto!important;
+}
+.containerBody_General .containerForm_2 .qxuigroupboxGroupBox_1 .qx-tabview-pane_padre .qx-tabview-pane .qx-toolbar_padre_padre_padre .qx-toolbar_padre_padre .qx-table-statusbar_padre_padre .qx-table-statusbar_padre .qx-scrollbar-horizontal_padre_qx-scrollbar-vertical_padre_padre .qx-scrollbar-horizontal_padre .qx-table-scroller-header_padre_padre .qx-table-scroller-header_padre .qx-table-scroller-header .qx-table-header-cell div{
+    position: relative!important;
+}
+.containerBody_General .containerForm_2 .qxuigroupboxGroupBox_1 .qooxdoo-table-cell_padre .qooxdoo-table-cell:nth-child(6){
+    width: max-content!important;
+    position: relative!important;
+    word-break: break-word!important;
+    max-width: 450px!important;
+}
+.containerBody_Optometria .containerForm_0 .qxuigroupboxGroupBox_17 .convertedInputs_convertedInputs_textarea_padre
+{
+    min-width: 100%!important;
+    max-width: 100%!important;    
+}
+.containerBody_Optometria .containerForm_0 .qxuigroupboxGroupBox_11 .convertedInputs,
+.containerBody_Optometria .containerForm_0 .qxuigroupboxGroupBox_12 .convertedInputs,
+.containerBody_Optometria .containerForm_0 .qxuigroupboxGroupBox_13 .convertedInputs
+{
+    max-width: 900px;
+    line-height: 10px;
+}
+.containerBody_Optometria .containerForm_0 .qxuigroupboxGroupBox_10 .convertedInputs
+{
+    max-width: 350px;
+    line-height: 10px;
+}
+
+.containerBody_Optometria .containerForm_0 .qxuigroupboxGroupBox_8 .nw_container_fields_form_qxnwfield_textArea_qxnw_column_padre:nth-child(2),
+.containerBody_Optometria .containerForm_0 .qxuigroupboxGroupBox_8 .nw_container_fields_form_qxnwfield_textArea_qxnw_column_padre:nth-child(4)
+{
+    margin-top: 15px!important;
+}
+
+.containerBody_Fisioterapia .convertedInputs
+{
+    width: 100%!important;
+}
+.containerBody_Optometria .qxuigroupboxGroupBox_16 .convertedInputs,
+.containerBody_Optometria .qxuigroupboxGroupBox_18 .convertedInputs
+{
+    width: 100%!important;
+    overflow: hidden!important;
+    line-height: 10px;
+    max-height: 31px;
+}
+
+
+
+
+
+
+.containerBody_Fisioterapia .containerForm_0 .qxuigroupboxGroupBox_3 .convertedInputs
+{
+    overflow: hidden!important;
+    max-height: 47px;    
+}
+
+.fieldsOrgan .nw_container_fields_form > div{
+    display: block!important;
+}
+
+
+.containerBody_Espirometria .containerForm_0 .qxuigroupboxGroupBox_5 .qx-group.nw_container_fields_form_qxnwfield_endGroup_padre.nwContainFields div {
+    transform: translateX(-40px);
+}
+
+.containerBody_Audiometria .containerForm_4 .qxuigroupboxGroupBox_1 .nw_container_fields_form:nth-child(15),
+.containerBody_Audiometria .containerForm_4 .qxuigroupboxGroupBox_1 .nw_container_fields_form:nth-child(22),
+.containerBody_Optometria .containerForm_0 .qxuigroupboxGroupBox_2 .nw_container_fields_form:nth-child(8)
+{
+    min-width: 100%!important;
+    max-width: 100%!important;
+}
+.containerBody_Audiometria .containerForm_5 .qxuigroupboxGroupBox_1 .nw_container_fields_form:nth-child(4)
+{
+    display: none;
+}
+
+.containerBody_Vacunacion .qxuigroupboxGroupBox_2 .qx-button-disabled{
+    display: none;
+}
+.containerBody_Vacunacion .qxuigroupboxGroupBox_1 .qx-table-header-cell:nth-last-child(1),
+.containerBody_Vacunacion .qxuigroupboxGroupBox_1 .qooxdoo-table-cell:nth-last-child(1)
+{
+    display: none;
+}
+
+.containerBody_Evolucion_Espirometria .boxFirmas{
+    margin-top: -73px;
+    z-index: 1000000000000000000;
+    position: relative;
+    background: #fff;
+}
+
+
+.containerBody_Optometria .qxuigroupboxGroupBox_18 .nwContainFields .nw_container_fields_form > div:nth-child(2){
+    min-width: 250px;
+}
+
+.containerBody_Optometria .qx-button {
+    display: none!important;
+}
+
+.containerBody_Audiometria .containerForm_3 .qxuigroupboxGroupBox_3 .convertedInputs,
+.containerBody_Audiometria .containerForm_3 .qxuigroupboxGroupBox_4 .convertedInputs
+{
+    width: 100%;
+    outline: 1px solid #ccc;
+    padding: 0 2px;
+    height: 25px;
+    overflow: hidden!important;
+    word-break: break-all;
+}
+.containerBody_Audiometria .containerForm_3 .qxuigroupboxGroupBox_3 .field_no_refiere,
+.containerBody_Audiometria .containerForm_3 .qxuigroupboxGroupBox_4 .field_no_refiere
+{
+    color: #fff;
+}
+.containerBody_Audiometria .qxuigroupboxGroupBox_0,
+.containerBody_Psicologia .qxuigroupboxGroupBox_0,
+.containerBody_Examen_Medico_Ocupacional .qxuigroupboxGroupBox_0
+{
+    display: none!important;
+}
+.containerBody_Audiometria .containerForm_1 .qxuigroupboxGroupBox_0,
+.containerBody_Psicologia .containerForm_1 .qxuigroupboxGroupBox_0,
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_0
+{
+    display: block!important;
+}
+
+
+.containerBody_Audiometria .qxuigroupboxGroupBox_1 .contaFieldsIndex_130,
+.containerBody_Audiometria .qxuigroupboxGroupBox_1 .contaFieldsIndex_135
+{
+    min-width: 100%!important;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.containerBody_Psicologia .containerForm_2 .qxuigroupboxGroupBox_1 .contaFieldsIndex_12 
+{
+    margin-top: 10px;
+}
+.containerBody_Psicologia .containerForm_2 .qxuigroupboxGroupBox_1 .contaFieldsIndex_13,
+.containerBody_Psicologia .containerForm_2 .qxuigroupboxGroupBox_1 .contaFieldsIndex_15,
+.containerBody_Psicologia .containerForm_2 .qxuigroupboxGroupBox_1 .contaFieldsIndex_17,
+.containerBody_Psicologia .containerForm_2 .qxuigroupboxGroupBox_1 .contaFieldsIndex_19,
+.containerBody_Psicologia .containerForm_2 .qxuigroupboxGroupBox_1 .contaFieldsIndex_21
+{
+    width: 100%!important;
+    margin-bottom: 5px;
+}
+
+table {
+    border-collapse: collapse;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+td {
+    margin: 0!important;
+    padding: 0!important;
+    line-height: normal;
+    /* border: 1px solid #dadada!important; */
+    position: relative;
+}
+.divEmptya{
+
+}
+
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_4 *{
+    min-height: auto!important;
+}
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_4 .qx-tabview-pane_padre_padre_padre{
+    margin-top: -26px;
+}
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_3 .qx-tabview-pane_padre_padre{
+    margin-top: -26px;
+}
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_3 .nw_container_fields_form_qxnwfield_endGroup_contaFieldsIndex_4_padre{
+    position: relative!important;
+    top: 0!important;
+    left: 0!important;
+}
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_5 br
+{
+    display: none;
+}
+/*.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_5 .nw_container_fields_form:nth-child(9),
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_5 .nw_container_fields_form:nth-child(27),
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_5 .nw_container_fields_form:nth-child(29)
+{
+    border-bottom: 1px solid #adadad;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-bottom: 5px;
+}
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_5 .nw_container_fields_form:nth-child(1),
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_5 .nw_container_fields_form:nth-child(11),
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_5 .nw_container_fields_form:nth-child(17),
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_5 .nw_container_fields_form:nth-child(20),
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_5 .nw_container_fields_form:nth-child(24),
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_5 .nw_container_fields_form:nth-child(28)
+{
+     border-top: 1px solid #adadad; 
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #ccc;
+    background: #efefef!important;
+}
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_5 .nw_container_fields_form:nth-child(1) *,
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_5 .nw_container_fields_form:nth-child(28) *
+{
+    float: left;
+    padding: 0!important;
+    margin-left: 5px!important;
+}*/
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_5 .nw_container_fields_form div{
+    display: block;
+}
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_6 .qx-group > div,
+.containerBody_Examen_Medico_Ocupacional .containerForm_2 .qxuigroupboxGroupBox_3 .qx-group > div,
+.containerBody_Examen_Medico_Ocupacional .containerForm_2 .qxuigroupboxGroupBox_4 .qx-group > div
+{
+    position: relative!important;
+    width: auto!important;
+    left: auto!important;
+    top: auto!important;
+    margin: auto!important;
+    padding: 0!important;
+}
+.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_6 .nw_container_fields_form div,
+.containerBody_Examen_Medico_Ocupacional .containerForm_2 .qxuigroupboxGroupBox_3 .nw_container_fields_form div,
+.containerBody_Examen_Medico_Ocupacional .containerForm_2 .qxuigroupboxGroupBox_4 .nw_container_fields_form div
+{
+    margin: auto!important;    
+}
+/*.containerBody_Examen_Medico_Ocupacional .containerForm_1 .qxuigroupboxGroupBox_7 .qx-tabview-pane_padre_padre:nth-child(2) {
+
+}*/
+/*.containerBody_Examen_Medico_Ocupacional .containerForm_3 .qxuigroupboxGroupBox_3 {
+    height: 300px!important;
+}*/
+/*.containerBody_Examen_Medico_Ocupacional .containerForm_4 .qxuigroupboxGroupBox_1 {
+    height: 1160px!important;
+}*/
+.nw_container_fields_form *{
+    resize: inherit;
+}
+.containerBody_Visiometria .containerForm_0 .qxuigroupboxGroupBox_1 .fieldsOrganEnded_form_0_group_1_item_3 *{
+    margin: 0!important;
+}
+.containerBody_Evolucion_EMO .qx-group_padre_2
+{
+    position: relative!important;
+    top: 0!important;
+    left: 0!important;
+    background-color: #226f90!important;
+    min-width: 1000px;
+    max-width: 1000px;
+}

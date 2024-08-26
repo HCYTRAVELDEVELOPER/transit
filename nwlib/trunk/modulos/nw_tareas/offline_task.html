@@ -1,0 +1,35 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+<script type="text/javascript" src="/nwlib/includes/jquery/jquery-1.4.2.min.js" ></script>
+<script type="text/javascript" src="/nwlib/modulos//nw_tareas/js/srv.js" ></script>
+<script type="text/javascript" src="/nwlib/modulos//nw_tareas/js/storage.js" ></script>
+<div style="
+     position: fixed;
+     z-index: 10000000;
+     background: rgba(0, 0, 0, 0.66);
+     width: 100%;
+     text-align: center;
+     color: #fff;
+     top: 0px;
+     left: 0px;
+     ">
+    No hay conexion a internet
+</div>
+<script type="text/javascript">
+    document.write(localStorage["descarga"]);
+    $(document).ready(function() {
+        loadInternetSi();
+    });
+    function loadInternetSi() {
+        if (!$("#hayInternet").load('/nwlib/modulos/nw_tareas/loadInternet.php')) {
+            alert("no se pudo cargar loadInternet");
+        }
+        setTimeout(function() {
+            var htmlInternet = $("#hayInternet").text();
+            if (htmlInternet != "") {
+                window.location = "/tareas";
+            }
+        }, 4000);
+    }
+</script>
+<div id="hayInternet" style="display: none;"></div>

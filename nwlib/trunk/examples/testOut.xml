@@ -1,0 +1,91 @@
+
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">
+   <soap:Header/>
+   <soap:Body>
+      <tem:UNOEE_Factura_Venta>
+         <!--Optional:-->
+         <tem:tranDocumento>
+            <!--Zero or more repetitions:-->
+            <tem:DOC_FACTURA_VENTA_01ENC>
+               <!--Optional:-->
+               <tem:F350_ID_CO>'001'</tem:F350_ID_CO>
+               <!--Optional:-->
+               <tem:F350_ID_TIPO_DOCTO>'FDV'</tem:F350_ID_TIPO_DOCTO>
+               <!--Optional:-->
+               <tem:F350_CONSEC_DOCTO>1</tem:F350_CONSEC_DOCTO>
+               <!--Optional:-->
+               <tem:f461_id_tercero_vendedor>1234566</tem:f461_id_tercero_vendedor>
+               <!--Optional:-->
+               <tem:f461_num_docto_referencia>'4345345'</tem:f461_num_docto_referencia>
+               <!--Optional:-->
+               <tem:f461_id_cond_pago>'0D'</tem:f461_id_cond_pago>
+               <!--Optional:-->
+               <tem:f461_notas>'PRUEBAS ENVIO INFO'</tem:f461_notas>
+               <!--Optional:-->
+               <tem:F160_ID>1</tem:F160_ID>
+               <tem:F160_IND_TIPO_TERCERO>1</tem:F160_IND_TIPO_TERCERO>
+               <!--Optional:-->
+               <tem:F160_RAZON_SOCIAL>PRUEBAS LTDA'</tem:F160_RAZON_SOCIAL>
+               <!--Optional:-->
+               <tem:F160_APELLIDO_1>'PRUEBAS'</tem:F160_APELLIDO_1>
+               <!--Optional:-->
+               <tem:F160_NOMBRE>'SIMISIM</tem:F160_NOMBRE>
+               <!--Optional:-->
+               <tem:F160_FECHA_NACIMIENTO>19941218</tem:F160_FECHA_NACIMIENTO>
+               <!--Optional:-->
+               <tem:F015_DIRECCION1>'AVENIDA SIEMPRE VIVA'</tem:F015_DIRECCION1>
+               <!--Optional:-->
+               <tem:F015_ID_PAIS>169</tem:F015_ID_PAIS>
+               <!--Optional:-->
+               <tem:F015_ID_DEPTO>'05'</tem:F015_ID_DEPTO>
+               <!--Optional:-->
+               <tem:F015_ID_CIUDAD>'10'</tem:F015_ID_CIUDAD>
+               <!--Optional:-->
+               <tem:F015_TELEFONO>'5555555'</tem:F015_TELEFONO>
+               <!--Optional:-->
+               <tem:F015_EMAIL>'PRUEBASENVIO@SOAP.COM'</tem:F015_EMAIL>
+               <!--Optional:-->
+               <tem:MOVIMIENTOS>
+                  <!--Zero or more repetitions:-->
+                  <tem:DOC_FACTURA_VENTA_02MOV>
+                     <!--Optional:-->
+                     <tem:f470_id_bodega>'01'</tem:f470_id_bodega>
+                     <!--Optional:-->
+                     <tem:f470_id_lote>'2'</tem:f470_id_lote>
+                     <!--Optional:-->
+                     <tem:f470_id_lista_precio>'1'</tem:f470_id_lista_precio>
+                     <!--Optional:-->
+                     <tem:f470_cant_base>1</tem:f470_cant_base>
+                     <!--Optional:-->
+                     <tem:f470_referencia_item>'13'</tem:f470_referencia_item>
+                     <!--Optional:-->
+                     <tem:f470_id_un_movto>2</tem:f470_id_un_movto>
+                     <!--Optional:-->
+                     <tem:F358_ID_MEDIOS_PAGO>'EFE'</tem:F358_ID_MEDIOS_PAGO>
+                     <!--Optional:-->
+                     <tem:F_VLR_MEDIO_PAGO>2000</tem:F_VLR_MEDIO_PAGO>
+                     <!--Optional:-->
+                     <tem:F358_NRO_CUENTA>'1'</tem:F358_NRO_CUENTA>
+                     <!--Optional:-->
+                     <tem:F358_COD_SEGURIDAD>'1'</tem:F358_COD_SEGURIDAD>
+                     <!--Optional:-->
+                     <tem:F358_NRO_AUTORIZACION>'12'</tem:F358_NRO_AUTORIZACION>
+                     <!--Optional:-->
+                     <tem:F358_FECHA_VCTO>2016/01/04</tem:F358_FECHA_VCTO>
+                     <!--Optional:-->
+                     <tem:F358_NOTAS>'PRUEBA ENVIO DATOS'</tem:F358_NOTAS>
+                     <!--Optional:-->
+                     <tem:F472_ID_LLAVE_IMPUESTO>'1'</tem:F472_ID_LLAVE_IMPUESTO>
+                     <!--Optional:-->
+                     <tem:F472_VLR_UNI>2300?</tem:F472_VLR_UNI>
+                     <!--Optional:-->
+                     <tem:F472_VLR_TOT>123456</tem:F472_VLR_TOT>
+                     <!--Optional:-->
+                     <tem:F358_ID_BANCO>'001'</tem:F358_ID_BANCO>
+                  </tem:DOC_FACTURA_VENTA_02MOV>
+               </tem:MOVIMIENTOS>
+            </tem:DOC_FACTURA_VENTA_01ENC>
+         </tem:tranDocumento>
+      </tem:UNOEE_Factura_Venta>
+   </soap:Body>
+</soap:Envelope>

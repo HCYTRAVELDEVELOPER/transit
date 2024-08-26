@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Use Api Ringow</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                font-size: 12px;
+                font-family: arial;
+                margin: 0;
+                padding: 0;
+                height: auto;
+                position: relative;
+            }
+            pre, xmp{
+                font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+                margin-bottom: 10px;
+                overflow: auto;
+                width: auto;
+                padding: 5px;
+                background-color: #eee;
+                width: 650px;
+                padding-bottom: 20px;
+                max-height: 600px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            Primero traer la api, en onload ejecutar las otras funciones:
+            <xmp>
+                <script>
+                    (function () {
+                        var jrw = document.createElement('script');
+                        jrw.type = 'text/javascript';
+                        jrw.async = true;
+                        jrw.id = 'nwRtcMaker';
+                        jrw.src = 'https://app.ringow.com/ringowapi';
+                        jrw.onload = function () {
+                            //exec code initwebrtcNW...
+                        };
+                        var srw = document.getElementsByTagName('script')[0];
+                        srw.parentNode.insertBefore(jrw, srw);
+                    })();
+                </script>
+            </xmp>
+            Traer operadores por terminal y/o servicio y/o búsqueda:
+            <xmp>
+                <script>
+                    initwebrtcNW.getUsers({
+                        id: ID_ACCOUNT,
+                        apikey: "YOUR_APIKEY",
+                        domain: "https://app.ringow.com",
+                        service: false, //optional id service
+                        search: false, //optional text search
+                        username: false //optional
+                    }, function (results) {
+                        console.log(results);
+                    });
+                </script>
+            </xmp>
+            Traer servicios por padre o todos:
+            <xmp>
+                <script>
+                    initwebrtcNW.getServices({
+                        id: ID_ACCOUNT,
+                        apikey: "YOUR_APIKEY",
+                        domain: "https://app.ringow.com",
+                        parent: true //optional id parent service or false if is only fathers or true if only childrens
+                    }, function (results) {
+                        console.log("getServices", results);
+                    });
+                </script>
+            </xmp>
+            Abrir chat entre dos usuarios:
+            <xmp>
+                <script>
+                    var room = "myroom";
+                    initwebrtcNW.startRoom(myroom, {
+                        domain: location.origin,
+                        myUser: "myuser@mydomain.com",
+                        myPhoto: "https://app.taskenter.com/imagenes/2019_04_17_00_35_20378417555.png",
+                        myName: "Testing NW",
+                        heName: "Alexander Flórez",
+                        heUser: "alexf@netwoods.net",
+                        useServer: false,
+                        audio: false,
+                        video: false,
+                        chat: true,
+                        openchat: true,
+                        body: document.querySelector(".cargaMiChat")
+                    });
+                </script>
+            </xmp>
+            Traer datos por GET de la url:
+            <xmp>
+                <script>
+                    var get = initwebrtcNW.GET();
+                </script>
+            </xmp>
+        </div>
+
+        <script type='text/javascript' src='/nwlib6/nwproject/modules/webrtc/v2/js/main.js'></script>
+        <script src="/nwlib6/nwproject/modules/webrtc/v2/js/lib/simplewebrtc.bundle.js"></script>
+        <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+
+                        initwebrtcNW.getUsers({
+                            id: 351,
+                            domain: "https://app.ringow.com",
+                            service: false, //optional
+                            search: false, //optional
+                            username: false //optional
+                        }, function (results) {
+                            console.log("getUsers", results);
+                        });
+
+                        initwebrtcNW.getServices({
+                            id: 351,
+                            domain: "https://app.ringow.com",
+                            parent: true //optional
+                        }, function (results) {
+                            console.log("getServices fathers", results);
+                        });
+
+                        initwebrtcNW.getServices({
+                            id: 351,
+                            domain: "https://app.ringow.com",
+                            parent: false //optional
+                        }, function (results) {
+                            console.log("getServices childrens", results);
+                        });
+
+                        initwebrtcNW.getServices({
+                            id: 351,
+                            domain: "https://app.ringow.com",
+                            parent: 62 //optional
+                        }, function (results) {
+                            console.log("getServices childrens of one father", results);
+                        });
+                    });
+        </script>
+
+        <!--        <script>
+                    (function () {
+                        var jrw = document.createElement('script');
+                        jrw.type = 'text/javascript';
+                        jrw.async = true;
+                        jrw.id = 'nwRtcMaker';
+                        jrw.src = '/ringowapi';
+                        jrw.onload = function () {
+        
+                            var get = initwebrtcNW.GET();
+                            console.log("GET", get);
+        
+                            initwebrtcNW.getUsers({
+                                id: 36,
+          apikey: "YOUR_APIKEY",
+                                service: 36, //optional
+                                search: "Alexander Flórez" //optional
+                            }, function (results) {
+                                console.log("getUsers", results);
+                            });
+        
+                            initwebrtcNW.getServices({
+                            id: 2,
+          apikey: "YOUR_APIKEY",
+                            parent: true //optional
+                        }, function (results) {
+                            console.log("getServices fathers", results);
+                        });
+        
+                            initwebrtcNW.getServices({
+                            id: 2,
+          apikey: "YOUR_APIKEY",
+                            parent: false //optional
+                        }, function (results) {
+                            console.log("getServices childrens", results);
+                        });
+                        };
+                        var srw = document.getElementsByTagName('script')[0];
+                        srw.parentNode.insertBefore(jrw, srw);
+                    })();
+                </script>-->
+    </body>
+</html>

@@ -1,0 +1,557 @@
+.buttonGreen{
+    position: relative;
+    padding: 5px;
+    background: rgb(39, 194, 39);
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+}
+.se_paso{
+    position: fixed;
+    top: 77px;
+    left: 0;
+    width: 100%;
+}
+.normal_altura{
+    position: relative!important;
+}
+.tr_fecha_enc td {
+    width: 100%;
+    padding: 0;
+    max-width: 100%;
+    border: 0;
+}
+.tr_fecha_enc h2 {
+    font-size: 14px;
+    font-weight: lighter;
+    margin: 0;
+    padding: 6px;
+}
+.tr_fecha_enc{
+    /*background: rgb(218, 233, 218);*/
+    /*background: #00a2dd;*/
+    background: rgb(149, 228, 149); 
+    color: #fff;
+    /*background: #E8E8E8;*/
+    /*border-bottom: 1px solid #ccc;*/    
+}
+.commentTask{
+    position: relative;
+    padding: 5px;
+    background: rgb(255, 102, 0)!important;
+    color: #fff;
+    border-radius: 3px;
+    font-weight: bold;
+    width: 60px;
+    cursor: pointer;
+}
+.respuesta_p{
+    text-align: left;
+    margin: 5px 0;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 3px 0;
+}
+.tdTask:hover .descriptionTask {
+    display: block;
+}
+.tdTask {
+    text-align: center;
+}
+.descriptionTask{
+    display: none;
+    position: absolute;
+    margin-top: 15px;
+    background: #fff;
+    box-shadow: 0px 0px 5px;
+    padding: 5px 7px;
+    border: 1px solid #ccc;
+    color: #999;
+    width: auto;
+    max-width: 200px;
+    text-align: left;
+}
+.boxStadistic{
+    float: left;
+}
+.a_selected{
+    position: relative;
+    padding: 5px;
+    background: rgb(255, 102, 0)!important;
+    color: #fff;
+    border-radius: 3px;
+    font-weight: bold;
+}
+.div_show{
+    position: relative;
+    text-align: center;
+    padding: 20px;
+}
+.newTask{
+    position: relative;
+    padding: 5px;
+    background: rgb(39, 194, 39);
+    color: #fff;
+    width: 100px;
+    text-align: center;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline;
+    margin-right: 10px;
+}
+.titleTables{
+    background: #f1f1f1;
+}
+.titleTables td{
+    text-transform: inherit!important;
+}
+.titleTables h3{
+    font-weight: lighter!important;
+    color: #707070;
+    padding: 0;
+    margin: 0;
+    font-size: 11px;
+}
+.filtros {
+    background: #E4E4E4;
+    border: 1px solid #FFF;
+    padding: 5px;
+    position: relative;
+    width: 100%;
+    float: left;
+}
+.divAllPorcent{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000000000;
+    transition: none!important;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.23);
+    display: none;
+}
+.divAllPorcent h3{
+    text-align: center;
+    background: rgb(255, 102, 0)!important;
+    width: 200px;
+    margin: auto;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px 1px #000;
+    top: 0;
+    position: relative;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+.filtros a{
+    margin-right: 10px;
+}
+.filtros p{
+    color: #999;
+}
+.divsFiltrosInter{
+
+}
+.divsFiltrosInter span{
+    background: rgb(255, 102, 0);
+    color: #fff;
+    padding: 3px;
+    border-radius: 5px;
+    font-size: 10px;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.buttonsEnc{
+    float: right;
+    margin: 0px 5px 0 0;
+}
+.buttonsEnc a {
+    float: right;
+    background: #f3f3f3;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+.activeButton {
+    background: rgb(255, 102, 0)!important;
+    color: #fff;
+}
+.adicionales{
+    position: relative;
+    background: #fff;
+    box-shadow: 0px 0px 5px #ccc;
+    width: 100%;
+}
+.adicionales td, .tareas td{
+    /*text-transform: lowercase;*/
+}
+.tareas {
+    position: relative;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0px 0px 5px #ccc;
+}
+.tareas tr {
+
+}
+.tareas tr:hover, .adicionales tr:hover {
+    background: #f6f6f6;
+    cursor: default;
+}
+
+.no_padding{
+    padding: 0;
+}
+.tdLast{
+
+}
+.trNormalB{
+    border-bottom: 1px solid #d3d3d3;    
+}
+body, div, tr, td {
+    transition: all 0.5s ease 0s;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; 
+}
+body{
+    font-family: Arial;
+    font-size: 12px;
+    background: #f5f5f5;
+}
+.ui-dialog-buttonpane {
+    position: relative;
+    display: block!important;
+}
+#contenedor{
+
+}
+.contenedor_crono{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background: #f3f3f3;
+    height: auto;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 1px 5px #999;
+}
+.contenedor_cronoFixed{
+    /*position: fixed;*/
+    width: 100%;
+    height: 90%;
+    overflow: scroll;
+}
+#enc{
+    border: 1px solid #ccc;
+    overflow: hidden;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0px 0px 5px #ccc;
+    z-index: 1000;
+    position: relative;
+}
+#encAll {
+
+}
+#enc h1{
+    font-weight: 300;
+    text-rendering: optimizelegibility;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #869690;
+    font-size: 14px;
+    padding-bottom: 10px;
+    margin: 5px;
+    float: left;
+    width: 40%;
+}
+.porcent{
+    position: relative;
+    width: 100%;
+    float: left;
+    background: #fff;
+}
+.porcentTotal{
+    position: relative;
+    background: #BEBEBE;
+    width: 100%;
+    height: 15px;
+    margin: 0;
+    padding: 0;
+}
+.porcentCrece{
+    position: relative;
+    background: #00a2dd;
+    width: 0;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    transition: none!important;
+}
+.titlePorcent{
+    opacity: 0;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-weight: lighter;
+    position: absolute;
+    z-index: 1000000000;
+    width: 100%;
+    font-size: 12px;
+    color: #fff;
+    top: 0px;
+}
+table{
+    border: 0;
+    border-collapse: collapse;
+}
+th {
+    font-size: 10px;
+    font-weight: bold;
+    background: #E9E9E9;
+    /*border: 1px solid #ccc;*/
+    min-width: 40px;
+    padding: 5px;
+}
+td{
+    font-size: 11px;
+    border: 1px solid #E6E6E6; 
+    padding: 1px 0px;
+    border-collapse: collapse;
+    word-wrap: break-word;
+    max-width: 500px;
+    min-width: 16px;
+    /*        white-space: pre;
+    white-space: pre-wrap;
+    white-space: pre-line;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -hp-pre-wrap;
+    word-wrap: break-word;
+    max-width: 400px;*/
+}
+.tr_etapa{
+    /*background: #FFD600;*/
+    background: #CBD7E5;
+    font-weight: bold;
+}
+.tr_etapa td{
+    border: 0;
+    /* text-align: center; */
+    padding: 5px;
+    font-size: 13px;
+}
+.enc_etapas_dias{
+    background-color: #FF8F00;
+}
+.enc_etapas_dias td{
+    background-color: #0A79B1;
+    color: #fff;
+    font-weight: bold;
+    font-size: 10px;
+    border: 0;
+    text-align: center;
+}
+.encTdFil{
+    min-width: 200px;
+}
+.class_show_hoy{
+    width: 25px;
+    font-weight: bold;
+    text-align: center;
+    position: fixed;
+    height: 100%;
+    pointer-events: none;
+    border: 1px solid #cb7e87;
+}
+.tr_show_hoy{
+
+}
+.tr_show_hoy td{
+    border: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: #C56914;
+}
+.bloque_tarea_span{
+    display: none;
+    position: absolute;
+    margin-top: 10px;
+    background: #fff;
+    box-shadow: 0px 0px 5px;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    color: #999;
+    width: 200px;
+}
+.bloque_tarea {
+    border: 1px solid #F1F1F1;
+    box-shadow: 0px 0px 4px #f1f1f1;
+}
+.bloque_tarea:hover {
+    background: #ccc!important;
+}
+.max_width_td{
+    width: 100px;
+    max-width: 100px;
+    height: 23px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.column_min{
+
+}
+.column_max{
+    display: none;
+    height: auto;
+    font-size: 12px;
+    font-weight: bold;
+}
+.tr_tar_fil_click{
+    background: #B85800;
+}
+.tr_tar_fil_click td{
+    color: #fff!important;
+    font-weight: bold;
+}
+.day_happy{
+    background: #FAFAFA!important;
+    color: #FAFAFA!important;
+}
+.day_happy:hover .bloque_tarea_span{
+    display: none!important;
+}
+.day_happy_et_tr{
+    /*background: #C0D1E4!important;
+        color: #93A2B3!important;*/
+    opacity: 0.7;
+}
+tr.tr_tar_fil:hover td {
+    cursor: pointer;
+    /*background: #E6E6E6!important;*/
+    /*background: #C9B7BF!important;*/
+    /*background: #B2D9E4!important;*/
+    /*color: #000!important;*/
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.day_happy_et{
+    /*    background: rgba(255, 194, 0, 0.2)!important;
+        color: rgba(255, 194, 0, 0.2)!important;*/
+    background: #F1F1F1!important;
+    color: #f1f1f1!important;
+    border: 1px solid #E6E6E6!important;
+}
+.tableAvances{
+    color: #666;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.tableAvances td{
+    border: 0;
+}
+#loading{
+    position: fixed;
+    top: 0;
+    left: 0%;
+    background: #000;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    opacity: 0.5;
+    display: none;
+    z-index: 1000000;
+}
+#loading div{
+    position: relative;
+    margin: auto;
+    top: 50%;
+    font-size: 16px;
+}
+.sortat {
+    color: inherit!important;
+}
+.td_task{
+    position: relative;
+    border-bottom: 1px solid #ccc;
+    padding: 3px 0px 3px 3px;
+    box-shadow: 4px 1px 3px 0px rgba(0, 0, 0, 0.21);
+}
+.fechastd_etapa{
+    position: relative;
+    text-align: right;
+    margin: 2px 3px 0px 0px;
+    line-height: 8px;
+    font-size: 10px;
+    padding: 0;
+    word-spacing: 0px;
+}
+.fechastd{
+    position: relative;
+    text-align: right;
+    margin: 2px 3px 0px 0px;
+    line-height: 8px;
+    font-size: 10px;
+    padding: 0;
+    word-spacing: 0px;
+
+}
+.td_hoy{
+
+}
+.dia_number{
+    font-weight: 100;
+    display: block;
+    font-size: 10px;
+}
+.dia_month{
+    font-weight: 100;
+    display: block;
+    font-size: 8px;
+}
+.dia_text {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+}
+.usuarios{
+    position: relative;
+    background: #f3f3f3;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+.days_etapa_active{
+    background-color: rgb(102, 123, 149);
+    color: #fff;
+    text-align: center;
+}
+.tarea_activa{
+    /*    background: #e6e6e6;
+        color: #000;*/
+    background-color: rgb(0, 143, 255);
+    color: #fff;
+}
+.tarea_activa_pasada{
+    background: #ffffff;
+    color: #000;
+}

@@ -1,0 +1,246 @@
+.title_main{
+    display: none;
+} 
+.loadOthers{
+    position: relative;
+    width: 90%;
+    float: right;
+    overflow: hidden;
+    margin-top: 40px;
+}
+.loadOthers h1 {
+    color: #dd4b39;
+    font-size: 18px;
+    line-height: 29px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-bottom: 1px solid #e6e6e6;
+    text-align: left;
+    padding: 10px 15px 15px 15px;
+    background: #fff;
+    margin: 0;
+    font-weight: lighter;
+}
+
+.buttonBuscar{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #fff!important;
+    color: #999!important;
+    margin: 0!important;
+    padding: 3px!important;
+    text-align: center;
+    font-size: 12px;
+    height: 40px;
+    width: 130px!important;
+}
+.divFrameWall_h2 {
+}
+.img_home{
+    background: transparent;
+    width: 100%;
+    left: 0;
+    /*top: 23px;*/
+    top: 0px;
+    position: relative;
+    overflow: hidden;
+}
+.title_main{
+    color: #777;
+    border: 0;
+    padding-bottom: 0;
+    font-size: 14px;
+}
+.contend_modules{
+    width: 75%!important;
+    margin: 10px 0 10px 3px;
+    padding: 0;
+    margin: 0;
+}
+.contend_modules_div{
+    /*    background-color: #FFF;
+        box-shadow: 0 1px 1px rgba(0,0,0,.25);
+        border-top: 1px solid #E6E6E6;
+        margin: 0;
+        font-size: 12px;
+        border-radius: 0;
+        background-image: none;
+        border: 0;*/
+}
+.div_salir {
+    /*background: #ec534d;*/
+    background: transparent!important;
+}
+.div_salirOther {
+    background: #ec534d;
+    position: relative;
+    float: right;
+}
+.div_home_left{
+    width: 100%;
+    max-width: 100%;
+    height: 37px;
+    padding: 0;
+    /*    position: fixed;*/
+    position: relative;
+    min-height: 30px;
+    z-index: 100;
+    left: 0px;
+    margin: 0;
+    display: none;
+}
+.into_enc_user{
+    float: left;
+    width: 300px;
+    padding: 0px;
+    border: 0;
+    margin: 0px;
+    height: 20px;
+    overflow: inherit;
+}
+.div_home_left_into p {
+    width: auto;
+}
+.divOtherDataUser{
+    position: relative;
+    float: left;
+    width: 50%;
+}
+
+.box_users_apps {
+    float: left;
+    width: 110px;
+    padding: 3px;
+    border: 0;
+    margin: 1px;
+    height: 26px;
+    /*overflow: inherit;*/
+}
+.buttonTask{
+    display: none;
+}
+.box_users_apps span{
+    float: none;
+}
+.box_users_chat {
+    height: auto;
+    background: transparent;
+    margin: 0;
+    padding: 0;
+    width: 150px;
+    float: left;
+    color: inherit;
+}
+.img_user{
+    width: 30px;
+    height: 30px;
+}
+.div_home_left_into{
+    font-size: 10px;
+    box-shadow: none;
+    border-radius: 0;
+    background: #444444;
+    border-bottom: 1px solid #9B3535;
+    overflow: inherit!important;
+}
+.div_home_left_into h3{
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+.box_users_chat h3{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    text-align: left;
+}
+.user_chat{
+    width: 100%;
+    float: left;
+    margin: 1px;
+    overflow: hidden;
+    height: auto;
+    border: 1px solid #e6e6e6;
+    font-size: 8px;
+}
+.img_user_chat{
+    width: 50px;
+    height: 25px;
+    border-radius: 0;
+    margin: 0 auto;
+    float: none;
+    float: left;
+}
+.contain_data_chat{
+    position: relative;
+    float: left;
+    margin-left: 7px;
+    word-break: break-all;
+    max-width: 200px;
+}
+.user_chat p {
+    margin: 0;
+    padding: 0;
+    /* float: left; */
+    width: auto;
+    text-align: left;
+}
+
+
+
+
+@media screen and (max-width: 600px) { 
+    #contend_modules, .contend_modules {
+        width: 100%!important;
+        margin: 0;
+    }  
+    .box_users{
+        width: 50%;
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+    .special_1000294 {
+        width: 50%;
+        margin: 0;
+        padding: 0;
+        float: right;
+        display: none;
+    }
+    .containerBoxM{
+        width: 50%;
+    }
+    .divNewsNwEnc{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .contend_favorites{
+        width: 100%;
+    }
+    .into_enc_user{
+        width: 70%;
+    }
+    .box_users_apps {
+        display: none;
+    }
+    .imgSlide{
+        display: none;
+    }
+    .special_1000294 h3 {
+        margin: 5px;
+        font-size: 1.2em;
+        padding: 5px;
+    }
+    .special_1000294 p {
+
+    }
+    #contend_prods_home_dos {
+        width: 50%!important;
+    }
+    .title_nov_h2 {
+        font-size: 1em;
+    }
+}

@@ -1,0 +1,27 @@
+.separate_calendar, .blockDayLeftBola, .blockDayRightBola, .box_contend_notesOthers, .h3_others{
+    display: none;
+}
+.blockDayRight, .blockDayLeft{
+    float: left;
+}
+.days_enc{
+    color: #000;
+    background: #EBEBEB;
+}
+#calendar_nw h1 {
+    font-weight: 500;
+}
+.list_tarea_calendar {
+    font-size: 10px;
+}
+.days {
+    width: 200px;
+    height: 250px;
+   margin: 7px;
+}
+.day_intern{
+/*overflow-y: auto;*/
+}
+#calendar_nw {
+    overflow: auto!important;
+}

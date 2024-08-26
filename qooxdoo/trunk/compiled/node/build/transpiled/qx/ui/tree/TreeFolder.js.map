@@ -1,0 +1,34 @@
+{
+  "version": 3,
+  "names": [
+    "qx",
+    "Bootstrap",
+    "executePendingDefers",
+    "$$dbClassInfo",
+    "Class",
+    "define",
+    "extend",
+    "ui",
+    "tree",
+    "core",
+    "AbstractTreeItem",
+    "properties",
+    "appearance",
+    "refine",
+    "init",
+    "members",
+    "_addWidgets",
+    "addSpacer",
+    "addOpenButton",
+    "addIcon",
+    "addLabel",
+    "TreeFolder"
+  ],
+  "sources": [
+    "/home/andresf/workspace_qooxdoo/qooxdoo/qooxdoo-7.0/source/class/qx/ui/tree/TreeFolder.js"
+  ],
+  "sourcesContent": [
+    "/* ************************************************************************\n\n   qooxdoo - the new era of web development\n\n   http://qooxdoo.org\n\n   Copyright:\n     2004-2011 1&1 Internet AG, Germany, http://www.1und1.de\n\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n\n   Authors:\n     * Fabian Jakobs (fjakobs)\n     * Sebastian Werner (wpbasti)\n     * Andreas Ecker (ecker)\n     * Derrell Lipman (derrell)\n     * Christian Hagendorn (chris_schmidt)\n\n************************************************************************ */\n\n/**\n * The tree folder is a tree element, which can have nested tree elements.\n */\nqx.Class.define(\"qx.ui.tree.TreeFolder\", {\n  extend: qx.ui.tree.core.AbstractTreeItem,\n\n  properties: {\n    appearance: {\n      refine: true,\n      init: \"tree-folder\"\n    }\n  },\n\n  members: {\n    // overridden\n    _addWidgets() {\n      this.addSpacer();\n      this.addOpenButton();\n      this.addIcon();\n      this.addLabel();\n    }\n  }\n});\n"
+  ],
+  "mappings": ";;;;;;;;;;;;EAAAA,EAAE,CAACC,SAAH,CAAaC,oBAAb,CAAkCC,aAAlC;;EAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;;EAEA;AACA;AACA;EACAH,EAAE,CAACI,KAAH,CAASC,MAAT,CAAgB,uBAAhB,EAAyC;IACvCC,MAAM,EAAEN,EAAE,CAACO,EAAH,CAAMC,IAAN,CAAWC,IAAX,CAAgBC,gBADe;IAGvCC,UAAU,EAAE;MACVC,UAAU,EAAE;QACVC,MAAM,EAAE,IADE;QAEVC,IAAI,EAAE;MAFI;IADF,CAH2B;IAUvCC,OAAO,EAAE;MACP;MACAC,WAAW,GAAG;QACZ,KAAKC,SAAL;QACA,KAAKC,aAAL;QACA,KAAKC,OAAL;QACA,KAAKC,QAAL;MACD;;IAPM;EAV8B,CAAzC;EAzBApB,EAAE,CAACO,EAAH,CAAMC,IAAN,CAAWa,UAAX,CAAsBlB,aAAtB,GAAsCA,aAAtC"
+}

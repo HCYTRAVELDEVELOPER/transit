@@ -1,0 +1,19 @@
+/* 
+    Document   : only_login
+    Created on : May 6, 2016, 11:41:48 AM
+    Author     : alexf
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.bloqueInitSession{
+    width: auto;
+    float: none;
+    margin: 10px auto;
+    max-width: 500px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+.iniciarSessionFaceboookNwMaker{
+    
+}

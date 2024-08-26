@@ -1,0 +1,3382 @@
+@media screen and (orientation:portrait){
+    .ui-mobile .ui-page {
+        min-height: 100%!important;
+        max-height: 100%!important;
+        height: 100%!important;
+    }
+}
+body {
+    overflow: hidden!important;
+}
+.home_background_image{
+    background-size: cover;
+}
+*:not(.material-icons) {
+    white-space: initial!important;
+}
+.createLoginFoo .headerEnc_relative{
+    position: relative;
+    height: auto!important;
+    margin: auto;
+    padding: 0;
+}
+.createAccount .accept_politics{
+    width: 40px;
+    height: 40px;
+    margin: -7px 18px 5px 5px;
+}
+#foo .createAccount{
+    padding: 10px;
+    background-color: #ffffff;
+}
+html body .f_crear_viaje{
+    display: block!important;
+    visibility: visible!important;
+    opacity: 1!important;
+    /*z-index: -1!important;*/
+}
+.f_crear_viaje.ui-page-active{
+    /*z-index: initial!important;*/
+}
+html body .f_crear_viaje:before {
+    content: ".";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    z-index: 100000000;
+    font-size: 0;
+}
+.f_crear_viaje.ui-page-active:before {
+    display: none;
+}
+#foo {
+    /*display: block!important;*/
+}
+#configuration .contentCenter{
+    height: auto;
+}
+.contentCenter,
+.containerCenterHome{
+    /*height: -webkit-fill-available;*/
+}
+.menuProfile>.contentCenter{
+    height: auto;
+}
+.contentCenterInLogin .createLogin .cambiar_clave{
+    margin-top: 60px!important;
+}
+body #createAccount #label_accept_politics {
+    pointer-events: all;
+}
+.paradas_group .containTable {
+    min-height: initial;
+}
+.google-login-button {
+    border-radius: 76px 76px 76px 76px!important;
+}
+a.btnExec.btnForm.needsclick.ui-shadow.ui-btn.ui-corner-all.ui-btn-inline.Btn.facebook.fb-login-button {
+    border-radius: 76px 76px 76px 76px;
+}
+.ui-field-contain, .ui-mobile fieldset.ui-field-contain {
+    display: block;
+    position: relative;
+    overflow: visible;
+    clear: both;
+    padding: .8em 0;
+    width: 80%;
+    margin: 0 auto;
+}
+/*///////////////////////// mapa edita direccion  ///////////////////////////*/
+#f_mapa #mapa_edit {
+    /*z-index: 3;*/
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    border-width: 0px;
+    margin: 0px;
+    left: 0px;
+    top: 0px;
+}
+#f_mapa  .containBtnFooter {
+    position: absolute;
+    bottom: 0;
+    margin: 0px!important;
+    width: 100%;
+    padding: 0px!important;
+    left: 0px;
+}
+#f_mapa .cancelar, #f_mapa .guardar {
+    margin: 0px!important;
+    width: 50%!important;
+    border-radius: 0px!important;
+}
+#f_mapa #address, #f_mapa #address_destino {
+    background-color: #fff;
+}
+#f_mapa .contentCenter {
+    margin: 0px!important;
+}
+#f_mapa .cancelar{
+    color: #fff!important;
+    background: black!important;
+}
+#f_mapa .guardar {
+    background: #e2e2e2!important;
+}
+/*/////////////////////////fin edita direccion ///////////////////////////*/
+
+
+
+/*/////////////////////////ajuste al listado de codigos promociona ///////////////////////////*/
+
+.l_cupones_group .rowlist {
+    height: 112px!important;
+    margin: 24px 0px!important;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: -4px -5px 12px 0px #c5c3c3!important;
+    /* background: linear-gradient(45deg, #f76c48, #da1f04); */
+}
+.l_cupones_group .containerListRow {
+    z-index: 2;
+    position: relative;
+}
+.l_cupones_group .contened-div-line {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: -80px;
+    left: -1px;
+    z-index: 1;
+}
+path.card__line1 {
+    d: path("M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500");
+    stroke: transparent;
+    fill: #f76c48;
+    opacity: 0;
+    animation: LineFadeIn1 .8s .8s forwards ease-in;
+}
+path.card__line {
+    d: path("M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400");
+    stroke: #ffc0cb00;
+    stroke-width: 3;
+    fill: transparent;
+}
+path.card__line {
+    opacity: 0;
+    animation: LineFadeIn .8s .8s forwards ease-in;
+}
+@keyframes LineFadeIn {
+    0% {
+        opacity: 0;
+        d: path("M 0 300 Q 0 300 0 300 Q 0 300 0 300 C 0 300 0 300 0 300 Q 0 300 0 300 ");
+        stroke: #fff;
+    }
+    50% {
+        opacity: 1;
+        d: path("M 0 300 Q 50 300 100 300 Q 250 300 350 300 C 350 300 500 300 650 300 Q 750 300 800 300");
+        stroke: #888BFF;
+    }
+    100% {
+        opacity: 1;
+        d: path("M -2 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 802 400");
+        stroke: #f64316;
+    }
+}
+@keyframes LineFadeIn1 {
+    0% {
+        opacity: 0;
+        d: path("M 0 300 Q 0 300 0 300 Q 0 300 0 300 C 0 300 0 300 0 300 Q 0 300 0 300 ");
+        stroke: #fff;
+    }
+    50% {
+        opacity: 1;
+        d: path("M 0 300 Q 50 300 100 300 Q 250 300 350 300 C 350 300 500 300 650 300 Q 750 300 800 300");
+        stroke: #fff;
+    }
+    100% {
+        opacity: 1;
+        d: path("M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500");
+        stroke: #f76c48;
+    }
+}
+.btn_usu {
+    background: black;
+    width: 82px;
+    padding: 5px;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 13px;
+    text-align: center;
+    position: absolute;
+    z-index: 3;
+    bottom: 13px;
+    right: 16px;
+}
+
+body .l_cupones_group .activo_cupon {
+    background: transparent;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: green;
+}
+.spanDesc{
+    background: #dc461e;
+    color: #fff;
+    width: auto;
+    height: auto;
+    text-align: center;
+    text-decoration: line-through;
+    font-weight: bold;
+    border-radius: 2px 0px 0px 2px;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+/*span.spanDesc:after {
+    content: "";
+    position: absolute;
+    top: 34px;
+    left: 19px;
+    width: 0;
+    height: 0;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent #dc461e transparent transparent;
+}*/
+/*/////////////////////////fin ajuste ///////////////////////////*/
+
+
+/*/////////////////////////ajuste al listado de historico de servicios ///////////////////////////*/
+.l_historico_viajes .contentCenter {
+    background: #f3f4f5;
+}
+.l_historico_viajes .uiListRows {
+    box-shadow: 0px 0px 0px 0px;
+}
+.l_historico_viajes .nwlist {
+    background: #f3f4f5;
+    padding: 19px 11px;
+    margin-top: -1px;
+}
+.l_historico_viajes .rowlist {
+    background: #fff;
+    margin-bottom: 12px;
+}
+.l_historico_viajes .contConsole{
+    width: 94%;
+    height: 140px;
+    margin: auto;
+    box-shadow: 0px 0px 5px 0px #696868;
+    display: flex;
+    flex-wrap: wrap;
+    background: linear-gradient(302deg, #0b92f0, #19191a);
+    color: #fff;
+}
+.cont-left {
+    width: 37%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.l_historico_viajes .cont-left .lupa .rad i{
+    transform: scale(1.5);
+    color:#fff!important;
+}
+.l_historico_viajes .cont-left .rad i{
+    font-size: 43px;
+    color:#fff!important;
+}
+.l_historico_viajes .cont-left .lupa .rad{
+    left: -30px;
+    top: 24px;
+    transform: scale(1.4);
+}
+.l_historico_viajes .cont-left .rad{
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    background: #03A9F4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transform: scale(1.0);
+}
+
+.l_historico_viajes .cont-left .lupa{
+    position: absolute;
+    left: 55px;
+    top: 17px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0px 0px 4px -1px;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0px 0px 3px 0px #3d3d3d;
+}
+.cont-right {
+    width: 60%;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 21px;
+}
+/*/////////////////////////fin ajuste ///////////////////////////*/
+
+/*/////////////////////////ajuste al cambio de la libreria ///////////////////////////*/
+.buscando_driver .containIntStartGroup_buscando_driver{
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px #000;
+}
+/*/////////////////////////fin ajuste ///////////////////////////*/
+
+
+
+/*/////////////////////////PARADAS ADICIONALES ///////////////////////////*/
+
+body .f_crear_viaje .ui-page .nw_widget_div {
+    margin: 9px 1px;
+    width: 99%;
+    float: left;
+}
+body #l_visitantes .des_carga_con_paradas {
+    width: 46%!important;
+    float: right;
+    margin: 0px 6px 0px 0px!important;
+}
+body #l_visitantes .des_carga_con_paradas .nw_widget_div{
+    margin: 8px 0!important;
+}
+body #l_visitantes #paradas_group {
+    width: 97%;
+    max-height: 90px;
+    overflow-x: auto;
+}
+body .f_crear_viaje .paradas_group .uiListRows {
+    margin: 0em 0;
+}
+.f_crear_parada .nw_widget_div_direccion .ui-input-text {
+    margin-left: 0px;
+}
+.f_crear_parada #label_direccion {
+    margin-left: 3px;
+}
+/*/////////////////////////FIN PARADAS///////////////////////////*/
+
+
+
+/*/////////////////////////SOPORTE RINGOW///////////////////////////*/
+.f_soporte .my-header{
+    left: auto;
+    right: 0;
+    z-index: 100000000000000;
+    background-color: transparent!important;
+    width: 40px!important;
+    color: #fff;
+    border-radius: 50%;
+    height: 30px;
+    min-height: 40px!important;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.f_soporte .my-header .btn_head_close{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    display: block;
+    position: relative;
+    line-height: normal;
+    padding: 0;
+    left: 8px;
+    top: 0;
+    min-width: 30px;
+    margin: 0;
+}
+.f_soporte .my-header .btn_head_close .material-icons{
+    color: #fff!important;
+}
+/*/////////////////////////FIN SOPORTE RINGOW///////////////////////////*/
+
+/*/////////////////////////REFERIDOS PROMOCIONES Y RECARGAS///////////////////////////*/
+/*jason*/
+body .containIntStartGroup.containIntStartGroup_contenedor_refiere_amigos_buttons {
+    display: flex!important;
+    align-items: center;
+}
+/*fin jason*/
+
+.contentCenter .contenedor_refiere_amigos,
+.contentCenter .contenedor_refiere_conductores,
+.contentCenter .contenedor_promociones,
+.contentCenter .contenedor_recargas
+{
+    background-color: var(--color_empresarial);
+    color: #fff;
+    overflow: hidden;
+    border-radius: 15px;
+    margin: 10px 0;
+}
+.contentCenter .contenedor_recargas{
+    background-color: #151738;
+}
+
+.contentCenter .contenedor_refiere_conductores {
+    margin-top: 30px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contentCenter .contenedor_promociones,  .contentCenter .contenedor_recargas{
+    margin-top: 30px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 30px;
+}
+.contentCenter .contenedor_refiere_conductores .ui-input-text,
+.contentCenter .contenedor_refiere_conductores .nw_widget_div,
+.contentCenter .contenedor_refiere_amigos .ui-input-text,
+.contentCenter .contenedor_refiere_amigos .nw_widget_div,
+.contentCenter .contenedor_promociones .ui-input-text,
+.contentCenter .contenedor_promociones .nw_widget_div
+{
+    margin: 0!important;
+}
+.contentCenter .contenedor_refiere_conductores .containIntStartGroup,
+.contentCenter .contenedor_refiere_amigos .containIntStartGroup,
+.contentCenter .contenedor_promociones .containIntStartGroup,
+.contentCenter .contenedor_recargas .containIntStartGroup
+{
+    overflow: hidden;
+}
+.contentCenter .contenedor_recargas .containIntStartGroup
+{
+    width: 100%;
+}
+.contentCenter .contenedor_refiere_conductores .nw_label_my_link_description,
+.contentCenter .contenedor_refiere_amigos .nw_label_my_link_description,
+.contentCenter .contenedor_promociones .nw_label_my_link_description,
+.contentCenter .contenedor_recargas .nw_label_my_link_description
+{
+    color: #fff;
+}
+.contentCenter .contenedor_refiere_conductores .nw_widget_div_my_link_description,
+.contentCenter .contenedor_refiere_amigos .nw_widget_div_my_link_description,
+.contentCenter .contenedor_promociones .nw_widget_div_my_link_description,
+.contentCenter .contenedor_recargas .nw_widget_div_my_link_description
+{
+    margin: 10px 0px 0px 0px;
+    display: flex;
+    padding: 5px;
+    width: auto;
+}
+.contenedor_service_recargas .nw_widget_div_my_link_description {
+    justify-content: center;
+}
+.contentCenter .contenedor_refiere_conductores .nw_widget_div_my_link_img,
+.contentCenter .contenedor_refiere_amigos .nw_widget_div_my_link_img,
+.contentCenter .contenedor_promociones .nw_widget_div_my_link_img,
+.contentCenter .contenedor_recargas .nw_widget_div_my_link_img
+{
+    float: left;
+    width: auto;
+}
+.contentCenter .contenedor_refiere_conductores .imgRefiereAmigos,
+.contentCenter .contenedor_refiere_amigos .imgRefiereAmigos,
+.contentCenter .contenedor_promociones .imgRefiereAmigos,
+.contentCenter .contenedor_recargas .imgRecargas
+{
+    position: relative;
+    display: block;
+    width: 180px;
+    height: 125px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/*.contentCenter .contenedor_recargas .imgRecargas{
+    width: 148px;
+}*/
+.contentCenter .descpRefiereAmigos,
+.contentCenter .descpRecargas{
+    font-weight: lighter;
+    font-size: 12px;
+}
+.contentCenter .titleRefiereAmigos,
+.contentCenter .titleRecargas{
+    display: block;
+    font-size: 1.3em;
+    margin-bottom: 5px;
+}
+.contentCenter .contenedor_refiere_amigos_buttons{
+    position: absolute;
+    top: 0px;
+    /*top: 6px;*/
+    right: 0;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    text-align: center;
+    background-color: #fff;
+}
+.contentCenter .contenedor_recargas_buttons{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+}
+#contenedor_recargas_buttons .nw_widget_div_recargar {
+    width: 137px;
+}
+.contentCenter .contenedor_refiere_amigos_actions{
+    padding: 7px 0;
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 95%;
+    margin: 10px auto;
+    box-sizing: border-box;
+}
+.contentCenter .contenedor_refiere_amigos_buttons button,
+.contentCenter .contenedor_recargas_buttons button{
+    margin: 0 5px;
+    padding: 10px 19px;
+    border-radius: 25px;
+}
+.contentCenter .contenedor_refiere_amigos_buttons .my_link_copy_driver,
+.contentCenter .contenedor_refiere_amigos_buttons .my_link_copy
+{
+    background-color: transparent;
+    box-shadow: none;
+    border: 0;
+    padding: 0;
+    margin: auto;
+}
+.contentCenter .contenedor_refiere_amigos_buttons .my_link_shared_driver,
+.contentCenter .contenedor_refiere_amigos_buttons .my_link_shared,
+.contentCenter .contenedor_refiere_amigos_buttons .redimir{
+    background-color: var(--color_empresarial);
+    /*background-color: #f64316;*/
+    color: #fff;
+    font-size: 13px;
+    padding: 9px 13px;
+}
+.contentCenter .contenedor_recargas_buttons .recargar
+{
+    background-color: #f64316;
+    color: #fff;
+    font-size: 13px;
+    padding: 9px 35px;
+}
+.contentCenter .contenedor_refiere_amigos_buttons .redimir{
+    padding: 9px 25px;
+}
+.contentCenter .contenedor_refiere_amigos_buttons .my_link_shared_driver{
+    background-color: #000000;
+}
+.contentCenter .contenedor_refiere_amigos_buttons .my_link_shared_driver .material-icons,
+.contentCenter .contenedor_refiere_amigos_buttons .my_link_shared .material-icons
+{
+    font-size: 13px;
+    top: 2px;
+    position: relative;
+}
+.contentCenter .contenedor_refiere_amigos_actions .my_link_driver,
+.contentCenter .contenedor_refiere_amigos_actions .my_link,
+.contentCenter .contenedor_refiere_amigos_actions .nombre
+{
+    border: 0;
+    font-size: 12px;
+    padding: 10px 5px;
+    /*padding: 9px 5px;*/
+}
+.contentCenter .contenedor_refiere_amigos_actions .nombre
+{
+    text-indent: 17px;
+}
+.contenedor_service_recargas .nw_widget_div_my_link_saldo .containerLabel,
+.contenedor_service_recargas .nw_widget_div_my_link_planes .containerLabel {
+    background: #f64316;
+    color: #ffff;
+    text-align: center;
+    width: 84%;
+    margin: auto;
+    padding: 17px;
+    border-radius: 15px;
+    padding-top: 31px;
+}
+.contenedor_service_recargas .nw_widget_div_my_link_saldo .containerLabel{
+    height: 65px;
+    margin-top: 33px;
+}
+/*.contenedor_service_recargas .nw_widget_div_my_link_planes .containerLabel {
+    margin-bottom: 48px;
+}*/
+.contenedor_service_recargas .nw_widget_div_my_link_saldo .iconRecargas,
+.contenedor_service_recargas .nw_widget_div_my_link_planes .iconContPlanes    {
+    font-size: 10px;
+    position: absolute;
+    top: -53px;
+    left: 0;
+    right: 0px;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #151738;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 2px 0px #5d5654cc;
+}
+.contenedor_service_recargas #label_my_link_saldo,
+.contenedor_service_recargas #label_my_link_planes {
+    font-size: 20px;
+    font-weight: 100;
+}
+.contenedor_service_recargas #label_my_link_saldo .iconRecargas i,
+.contenedor_service_recargas #label_my_link_planes .iconContPlanes i {
+    font-size: 42px;
+}
+.contenedor_service_recargas #my_link_saldo,
+.contenedor_service_recargas #my_link_planes {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.contenedor_recargas_actions .nw_widget_div.nw_widget_div_valor_recarga {
+    width: 90%;
+}
+.contenedor_recargas_actions .nw_widget_div.nw_widget_div_valor_recarga .ui-input-text {
+    border-radius: 18px;
+}
+.contenedor_recargas_actions .nw_widget_div.nw_widget_div_valor_recarga #valor_recarga {
+    border: 0;
+    padding: 0.7em;
+}
+#contenedor_recargas_buttons_actions {
+    position: absolute;
+    top: -5px;
+    right: 4vw;
+}
+#contenedor_recargas_buttons_actions button#recargar {
+    padding: 7px 24px;
+    background: #f64316;
+    color: #ffff;
+    border-radius: 20px;
+}
+#contenedor_service_recargas #contenedor_recargas_actions {
+    top: -61px;
+    width: 96vw;
+    margin: auto;
+}
+.nw_widget_div.nw_widget_div_my_link_planes {
+    margin-bottom: 48px!important;
+    top: -24px;
+}
+#f_recargas .contentCenter {
+    margin-top: 0px!important;
+    padding: 0px!important;
+}
+#label_my_link_description_saldo {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 21px;
+    color: #fff;
+}
+.saldo_tit_tot{
+    color:#f64316;
+}
+.liBarEncNotify.notifyRedirect .barTexts {
+    padding: 30px;
+    text-align: center;
+}
+.liBarEncNotify.notifyRedirect .barTitle {
+    padding: 10px;
+    font-size: 24px;
+    color: #dc461e;
+}
+#f_recargas .nw_widget_div {
+    margin: 0 auto;
+}
+/*///////////////////////// FIN REFERIDOS///////////////////////////*/
+
+
+
+
+/*.createAccount .my-header {
+    top: 0;
+    left: 0;
+}*/
+.ingresaPhoneParaValidar{
+    background-color: #fff;
+}
+.ui-page .nw_widget_div_labelname_adondevas{
+    margin: auto;
+    padding: 5px 0px 3px 0px;
+    border-bottom: 1px solid #e2e2e2;
+    max-width: 85%;
+    width: 100%;
+    min-width: 85%;
+    display: block;
+}
+.ui-page .nw_widget_div_labelname_adondevas .ui-input-text{
+    margin: 0;
+}
+.ui-page .nw_widget_div_labelname_adondevas .ui-input-text .labelname_adondevas{
+    color: #000;
+    font-weight: 500;
+    font-size: 15px;
+}
+.panelHomeLeft{
+    border-top-right-radius: 25px;
+    overflow: auto;
+    border-bottom-right-radius: 25px;
+}
+#l_visitantes .nw_widget_div_button_adondevas {
+    width: 100%;
+    min-width: 100%;
+    display: block;
+}
+
+body .f_referidos{
+    height: 100%!important;
+    min-height: 100%!important;
+}
+#countdown {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 100000000000000;
+    color: #fff;
+    /*pointer-events: none;*/
+}
+.containCountDown{
+    width: 150px;
+    padding: 6px;
+    border-radius: 10px;
+    background-color: rgba(217, 72, 34, 0.77);
+}
+.titleCountDown{
+    /*text-transform: uppercase;*/
+    text-align: center;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+}
+.containNumsCountDown{
+    position: relative;
+    display: flex;
+}
+.daysCountDown{
+    background-color: #c54228;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: middle;
+}
+.titlesCountDown {
+    font-size: 12px;
+    display: block
+}
+.ddCountDown {
+    background-color: #d94822;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: middle;
+    border-right: 1px solid #c54228;
+}
+.textdesCountDown{
+    font-size: 12px;
+    margin: 0;
+    text-align: center;
+    display: block;
+    font-weight: bold;
+}
+.closeCountDown{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: #c04025;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.closeCountDown .material-icons{
+    font-size: 14px;
+    margin: auto;
+}
+
+
+
+.spanInfoService{
+    position: relative;
+    bottom: -4px;
+    right: -4px;
+    float: right;
+}
+.loading_home_localiz{
+    text-align: center;
+    background-color: transparent;
+}
+.loading_home_localiz .loadingCenter {
+    width: auto;
+}
+.loading_home_localiz .titleLoading{
+    margin: 0;
+    font-size: 1em;
+}
+.loading_home_localiz .cEftVf{
+    border: 3px solid #f15127;
+    border-top: 3px solid transparent;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+.spanDireccFavir{
+    font-size: 13px;
+    color: gray;
+    left: 46px;
+    position: relative;
+}
+.spanNameFavir{
+    font-weight: bold;
+    font-size: 14px;
+    display: block;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+}
+.spanIconFavir{
+    color: #fff;
+    margin-right: 10px;
+    background-color: #e8e8e8;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+.spanIconFavir .material-icons{
+    font-size: 24px;
+    margin: auto;
+}
+.listFavAdd .spanIconFavir{
+    /*background-color: #f64413;*/
+    background-color: var(--color_empresarial);
+}
+.classdataDir{
+    font-weight: lighter;
+}
+.container-grid-all {
+    position: absolute;
+    width: 10000px;
+    height: 10000px;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    overflow: auto;
+    background-color: #14223c;
+    background-color: #585858;
+    background-image: url(../img/grid.png);
+    background-position: 0;
+    background-size: 80px;
+    transition: transform .2s;
+}
+.pens-link{
+    margin-top: 0;
+}
+#radar-icons path{
+    opacity: 0;
+    transition: 5s;
+}
+#radar-hand{
+    transition: 1s;
+    animation: infinite 3s toad;
+    transform-origin: center;
+}
+#radar-radius{
+    transition: 1s;
+    animation: infinite 3s grand;
+    transform-origin: center;
+}
+#radar-gradient{
+    transition: 1s;
+    height: 100%;
+    width: 100%;
+    animation: infinite 3s toad;
+    transform-origin: center;
+}
+.cont-radar p{
+    width: 157px;
+    position: absolute;
+    bottom: 31px;
+    left: -24px;
+    right: 0px;
+    margin: auto;
+    text-align: center;
+    /*background: radial-gradient(rgb(204, 0, 0), transparent);*/
+    background: #d1553e;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+}
+.cont-radar{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    width: 111px;
+    margin: auto;
+    height: 175px;
+    z-index: 100;
+
+    position: relative;
+    top: 50px;
+}
+@keyframes grand{
+    to {
+        r: 173;
+    }
+}
+@keyframes toad{
+    to {
+        transform: rotate(360deg);
+    }
+}
+.frame_chat_form {
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    max-height: calc(100% - 50px);
+}
+.frame_chat_form iframe {
+    border: 0;
+    width: 100%;
+    height: 100%;
+}
+.btn_chat_initservice, .btn_warning_initservice, .btn_sharetravel_initservice{
+    border: 0;
+    position: relative;
+    padding: 5px;
+    font-weight: bold;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #ffff;
+    box-shadow: 0px 0px 5px 0px #c8c5c5;
+    color: var(--color_empresarial);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*margin: 10px;*/
+    margin: auto;
+}
+.btn_warning_initservice{
+    /*position: fixed;*/
+    /*top: 55px;*/
+    /*right: 8px;*/
+    background-color: var(--color_empresarial);
+    color: #ffffff!important;
+}
+.btn_sharetravel_initservice{
+    /*position: fixed;*/
+    /*top: 116px;*/
+    /*right: 8px;*/
+    background-color: var(--color_empresarial);
+    color: #ffffff!important;
+    margin: 0px 0px 10px 0px;
+}
+.containBtnsShareWarn{
+    position: fixed;
+    top: 55px;
+    right: 9px;
+    z-index: 1000;
+    margin: 0px 0px 10px 0px;
+}
+html body .f_crear_viaje .headerEnc_relative{
+    /*height: auto;*/
+}
+.btn_chat_initservice i,
+.btn_warning_initservice i,
+.btn_sharetravel_initservice i
+{
+    /*font-size: 33px;*/
+}
+.Infotel a {
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+    position: absolute;
+}
+.Infotel {
+    border: 0;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 50%;
+    background: #ffff;
+    box-shadow: 0px 0px 5px 0px #c8c5c5;
+    color: var(--color_empresarial);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*margin: 10px;*/
+    margin: auto;
+    position: relative;
+}
+.Infotel i {
+    font-size: 33px;
+}
+.resumenfinaldiv{
+
+}
+.resumenfinaldiv h1{
+    text-align: center!important;
+    width: 100%;
+    color: #ff7700;
+    font-size: 30px;
+}
+.resumenfinaldiv p{
+    margin: 8px 5px;
+    font-size: 14px;
+}
+.datafindrivres{
+    display: flex;
+    align-items: center;
+}
+.datafindrivres span {
+    margin: 0 4px;
+}
+.fotodrivresumenfin{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+}
+.f_calificar_estrellas .nw_widget_div_comentarios{
+    margin: 0px;
+}
+.f_calificar_estrellas .containBtnFooter{
+    padding: 0px;
+}
+.f_calificar_estrellas .nw_widget_div_label_puntaje_en_texto {
+    margin: 0px;
+}
+.f_calificar_estrellas .nw_widget_div_puntaje{
+    margin: 0px;
+}
+.f_calificar_estrellas .nw_widget_div_puntaje .label_radio_nw .material-icons {
+    margin: 0;
+    color: var(--color_empresarial)!important;
+}
+#f_resumen_final .aceptar {
+    background-color: var(--color_empresarial)!important;
+}
+/*.ui-page .nw_label_usuario{
+    color: #fff;
+}*/
+
+/*jasond*/
+body .btn_eliminar_cuenta p {
+    text-align: center;
+    font-weight: bold!important;
+}
+.modalidad {
+    position: relative;
+    padding: 4px 8px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1.1px solid #db0e32;
+    margin-left: 5px;
+    background: linear-gradient(239deg, rgba(211, 200, 203, 0.85), #f1f5f6);
+    border-radius: 5px;
+    transition: 1s;
+    min-width: fit-content;
+    color: #db0e32;
+}
+.conta_mod {
+    position: relative;
+    padding: 4px 0px;
+    width: 100%;
+    margin: auto;
+    font-size: 13px;
+    border-bottom: 1px solid #e4e4e4;
+    display: flex;
+    overflow: auto;
+}
+.mod_options {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+.mod_options img {
+    width: 87%;
+}
+.mod_text {
+    position: relative;
+    max-width: 91px;
+    text-align: left;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+body #l_visitantes .des_carga {
+    width: 93%;
+    margin: auto;
+}
+
+/*fin jasond*/
+
+.f_metodo_pago .ui-btn.ui-radio-on.ui-btn-a:after {
+    border-color: var(--color_empresarial);
+}
+.f_metodo_pago .ui-controlgroup-controls .ui-radio{
+    margin: 13px 0px 0px 0px;
+}
+body .f_metodo_pago .ui-controlgroup-controls  .ui-radio-off,
+body .f_metodo_pago .ui-controlgroup-controls  .ui-radio-on
+{
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    padding: 15px 10px;
+    box-shadow: 0px 0px 5px #e4e4e4;
+}
+body .f_crear_viaje .ui-controlgroup-controls  .ui-radio-off,
+body .f_crear_viaje .ui-controlgroup-controls  .ui-radio-on
+{
+    border: 1px solid var(--color_empresarial)!important;
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    padding-top: 9px;
+    box-shadow: 0px 0px 5px #e4e4e4;
+    margin: 3px 0px;
+    padding-bottom: 11px;
+    font-size: 12px;
+}
+.mi_ubication_pin_geo{
+    color: var(--color_empresarial)!important;
+    top: 0!important;
+    left: 0!important;
+    position: relative!important;
+}
+html .ui-page .centrar_mapa{
+    height: auto;
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+body .dataUserLeft{
+    background-color: var(--color_empresarial);
+}
+.ui-header.ui-bar-a.my-header.header.headerEnc_relative.ui-bar-inherit {
+    background-color: var(--color_empresarial)!important;
+    z-index: 1;
+}
+body #buscando_driver .buscando_driver_show, body .driver_en_camino_show{
+    height: auto!important;
+    bottom: 0px;
+    top: auto!important;
+}
+#frameChat{
+    display: none;
+}
+.btn_head_back {
+    background:var(--color_empresarial)!important;
+    color: white!important;
+    box-shadow: 0px 0px 0px 0px;
+}
+.btn_head_back .material-icons {
+    color: white!important;
+}
+.ui-title {
+    color: white;
+    margin: auto!important;
+}
+#address, #address_destino {
+    padding-right: 2rem;
+    height: 37px;
+}
+.favorit{
+    animation: palp 1s infinite;
+}
+@keyframes palp{
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.3);
+    }
+}
+.btn-favoritos {
+    position: absolute;
+    right: 3px;
+    top: 7px;
+    color: #c1bfbf;
+    transition: 1s;
+}
+
+.fb-login-button {
+    /*background: transparent!important;*/
+    /*    box-shadow: 0px 0px 0px 0px;*/
+    /*display: none;*/
+}
+#usuario::placeholder, #clave::placeholder {
+    color: #fff;
+}
+#usuario, #clave{
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-radius: 0px;
+    color: rgba(255, 255, 255, 1);
+}
+h1.titleEnc {
+    height: 80px;
+    background-image: url(../img/icono_login.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    color: transparent!important;
+}
+.nw_label_usuario, .nw_label_clave {
+    /*display: none!important;*/
+}
+.nw_widget_div_usuario .material-icons, .nw_widget_div_clave .material-icons{
+    /*left: 27px;*/
+    /*top: 2px;*/
+    /*font-size: 33px;*/
+}
+.ui-input-text.ui-body-inherit.ui-corner-all.ui-shadow-inset.modeiconField {
+    background: transparent;
+    border: 0px;
+}
+a.btnExec.btnForm.ui-shadow.ui-btn.ui-corner-all.ui-btn-inline.Btn.aceptar.btn_maxwidth {
+    background: var(--color_empresarial)!important;
+    border-radius: 20px;
+    min-width: 200px!important;
+    /*width: 247px!important;*/
+    margin: auto;
+}
+a.btnExec.btnForm.ui-shadow.ui-btn.ui-corner-all.ui-btn-inline.Btn.cambiar_clave {
+    background: transparent;
+    color: #fff;
+    box-shadow: 0px 0px 0px 0px!important;
+    border: 0px!important;
+}
+a.btnExec.btnForm.ui-shadow.ui-btn.ui-corner-all.ui-btn-inline.Btn.crear_cuenta {
+    background: transparent;
+    color: #fff;
+    box-shadow: 0px 0px 0px 0px!important;
+    border: 0px!important;
+}
+body .ui-page .ui-slider-switch {
+    box-shadow: inset 0px 0px 0px 2px #878787;
+}
+.l_visitantes .tiuo_enc{
+    font-size: 5vw;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 55vw;
+    text-align: left;
+    position: absolute;
+    left: 33vw;
+    bottom: 19px;
+}
+.l_visitantes .tiuo_enc_1{
+    font-size: 6vw;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 63vw;
+    text-align: left;
+    position: absolute;
+    left: 34vw;
+    bottom: 19px;
+}
+body .addHeaderNote-show{
+    /*bottom: 0px!important;*/
+    left: -6rem!important;
+}
+.conf-material{
+    position: absolute;
+    left: 26%;
+    top: 65px;
+    color: transparent;
+    background-image: url(../img/camion.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 23px;
+    width: 49%;
+    height: 50px;
+}
+.l_visitantes .addHeaderNote {
+    overflow: hidden;
+    position: absolute;
+    width: 94%;
+    z-index: 3;
+    font-size: 35px;
+    text-align: center;
+    height: 179px;
+    font-weight: bold;
+    transition: all 0.5s ease;
+    background-color: rgba(6, 21, 54, 0.65)!important;
+    color: white;
+    border-radius: 0px 228px 0px 0px;
+    left: -30rem;
+    padding-inline-end: 2px;
+    padding-block-start: 50px;
+    bottom: 0px;
+}
+.btn-conf-ori, .btn-conf-des {
+    font-size: 5vw;
+    padding: 6px 54px;
+    background: var(--color_empresarial);
+    position: absolute;
+    bottom: 8px;
+    border-radius: 10px;
+    width: 25vw;
+    left: 32vw;
+}
+/*.form_l_visitantes_top{
+    top: -23px;
+}*/
+#form_l_visitantes{
+    transition: all 1.5s ease;
+    position: relative;
+}
+body {
+    color: #fff;
+}
+.ui-page .logotipoHeader img{
+    max-height: 130px;
+    height: 100%;
+}
+#foo .headerEnc_relative {
+    /*min-height: 0!important;*/
+    /* max-height: 0px; */
+    border: 0;
+    box-shadow: none;
+    background-color: transparent!important;
+}
+#foo .contentCenter{
+    padding: 0;
+    margin: auto!important;
+}
+#foo .mapa{
+    position: fixed!important;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 5px;
+    overflow: hidden;
+}
+
+/*/////////////////////////////////////////////////TEMA*/
+body .ui-page .my-header .btnMenuHeader{
+    display: inline;
+    margin: 0;
+    min-height: inherit;
+    padding: 0;
+    background: #fff;
+    width: 42px;
+    height: 40px;
+    min-height: 42px;
+    min-width: 42px;
+    max-height: 42px;
+    max-width: 42px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.59);
+    border-radius: 50%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    vertical-align: middle;
+    z-index: 100000;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    top: 7px;
+    left: 8px;
+    opacity: 1;
+    position: fixed;
+}
+body .f_crear_viaje .my-header .btnMenuHeader{
+    position: relative;
+
+}
+body .f_crear_viaje .headerHome{
+    height: auto!important;
+}
+body .ui-page .my-header .btnMenuHeader_hidden{
+    left: -50px;
+    opacity: 0;
+}
+body .ui-page .my-header .btnMenuHeader .menuBarEnc{
+    position: relative;
+    margin: 0;
+    line-height: normal;
+    padding: 0;
+    top: 0;
+    left: 0;
+    color: #000;
+    width: auto;
+    height: auto;
+    font-size: 26px;
+    margin: auto;
+    font-size: 24px;
+    font-weight: lighter;
+}
+body .contenedor_adondevamos{
+    z-index: 3;
+    background-color: #fff;
+    display: flex;
+    display: block;
+    align-items: center;
+    text-align: center;
+    border-top: 1px solid #f6f6f6;
+    box-shadow: 0px 0px 5px #ccc;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+body .contenedor_adondevamos_hidden{
+    bottom: -200px;
+    display: none;
+}
+html body .contenedor_adondevamos .button_adondevas{
+    background: #e2e2e2;
+    width: 100%;
+    max-width: 85%;
+    text-align: left;
+    box-shadow: none;
+    border: 0;
+    /* font-weight: bold; */
+    font-size: 20px;
+    margin: 0px 0px 10px 0px;
+    /* color: #000; */
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    margin: 0px auto 10px auto;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: center;
+    align-items: flex-start;
+}
+html body .contenedor_adondevamos .button_adondevas .material-icons{
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-right: 5px;
+    font-size: 21px;
+}
+#form_l_visitantes .nw_widget_div_backAdondevamos{
+    margin: 0;
+    z-index: 100000;
+    opacity: 0;
+    position: fixed;
+    top: -50px;
+    left: 0;
+}
+body .contenedor_direcciones_enc{
+    box-shadow: 0px 0px 5px #888;
+    position: relative;
+    display: block;
+    z-index: 6;
+}
+#form_l_visitantes .nw_widget_div_backAdondevamos .ui-input-text {
+    margin: 0;
+}
+#form_l_visitantes .backAdondevamos{
+    min-height: inherit;
+    padding: 0;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    /* box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.59); */
+    border-radius: 50%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    vertical-align: middle;
+    margin: 0;
+    box-shadow: none;
+}
+#form_l_visitantes .nw_widget_div_backAdondevamos_show{
+    top: 0;
+    opacity: 1;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+#form_l_visitantes .nw_widget_div_backAdondevamos .material-icons{
+    margin: auto;
+    /*color: #000;*/
+    color: var(--color_empresarial);
+}
+.backInShowServices{
+    margin: 0;
+    z-index: 100000;
+    opacity: 0;
+    position: fixed;
+    top: -50px;
+    left: 6px;
+    min-height: inherit;
+    padding: 0;
+    background: #fff;
+    width: 42px;
+    height: 42px;
+    min-height: 42px;
+    min-width: 42px;
+    max-height: 42px;
+    max-width: 42px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.59);
+    border-radius: 50%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    vertical-align: middle;
+}
+.backInShowServices_show{
+    top: 6px;
+    opacity: 1;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.backInShowServices .material-icons{
+    color: #000;
+    margin: auto;
+}
+
+body .contenedor_address{
+    z-index: 1;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    top: -50%;
+    top: -150%;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*background-color: rgba(255, 255, 255, 0.64);*/
+    background-color: #fff;
+    pointer-events: none;
+    opacity: 0;
+}
+body .contenedor_address_show{
+    top: 0px;
+    opacity: 1;
+    pointer-events: all;
+    z-index: 5;
+}
+body .nw_widget_div_fijar_en_mapa_origen,
+body .nw_widget_div_fijar_en_mapa_destino,
+body .nw_widget_div_address,
+body .nw_widget_div_address_destino
+{
+    /*    max-width: calc(100% - 45px);
+        float: right;*/
+    width: 100%;
+}
+body .nw_widget_div_address{
+    margin-top: 42px!important;
+}
+body .nw_widget_div_fijar_en_mapa_destino {
+    max-width: 100%;
+}
+body #form_l_visitantes  .nw_widget_div_listo_fijar_label{
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 5px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+
+
+
+.contenedor_address .ui-input-text{
+    margin-top: 0;
+    margin-bottom: 0;
+    border: 0;
+    font-size: 13px;
+    background-color: transparent;
+}
+body .contenedor_address input{
+    background-color: #fff;
+    border: 2px solid #797979;
+    border-radius: 9px;
+    background-color: #ececec;
+    border: 0;
+    border-radius: 5px;
+    right: 5px;
+    position: relative;
+    font-size: 13px!important;
+}
+body .contenedor_address .nw_widget_div_address input{
+    /*max-width: calc(100% - 10px);*/
+    margin: auto;
+}
+body .contenedor_address .nw_widget_div_address_destino input{
+    font-size: 15px;
+}
+.contenedor_btn_fijar{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.f_mapa .contenedor_btn_fijar{
+    top: 0px;
+    bottom: auto;
+    left: 0;
+}
+.contenedor_btn_fijar .ui-input-text {
+    margin: 0;
+}
+.contenedor_btn_fijar .ui-input-text button{
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    margin: auto;
+    max-width: calc(100% - 20px);
+    position: relative;
+    display: block;
+}
+#foo .changePass h1,
+#foo .changePass p,
+#foo .changePass .nw_label
+{
+    color: #fff;
+    text-shadow: none;
+}
+.titleEnc{
+    color: #fff;
+}
+body .ui-page .createLogin .material-icons,
+body .ui-page .createLogin .nw_label
+{
+    color: #fff;
+}
+body .ui-page .logotipoHeader_home{
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+    min-height: initial;
+    text-align: left;
+    position: fixed;
+    top: 15px;
+    left: 52px;
+    pointer-events: none;
+}
+body .f_crear_viaje .logotipoHeader_home{
+    top: -38px;
+    position: relative;
+    min-height: 80px;
+}
+body .ui-page .logotipoHeader_home img{
+    height: 22px;
+    width: auto;
+}
+.mapa_fix{
+    position: fixed!important;
+    width: 100%;
+    height: calc(100% - 47px)!important;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.buttons_group_fix{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 3;
+    background-color: rgba(204, 204, 204, 0.52);
+    display: block!important;
+}
+body .ui-page .nw_widget_div_volver{
+    width: auto;
+    position: absolute;
+    top: -38px;
+    right: 12px;
+    margin: 0px;
+    background-color: var(--color_empresarial);
+    border-radius: 50%;
+    padding: 5px;
+    border: 1px solid #ccc;
+
+    display: none;
+    position: fixed;
+    top: 0;
+    right: auto;
+    left: 0;
+}
+body .ui-page .nw_widget_div_tipo_servicio,
+body .ui-page .nw_widget_div_forma
+{
+    float: left;
+    margin: auto;
+    width: 50%;
+    /*width: 33%;*/
+    text-align: center
+}
+body .ui-page .nw_widget_div_tipo_pago{
+    float: left;
+    margin: auto;
+    /* width: 50%; */
+    /*width: 45%!important;*/
+    width: 50%!important;
+    text-align: center;
+    width: auto;
+    margin: 0 0px 0px 10px;
+}
+body .ui-page .nw_widget_div_tipo_pago .ui-input-text-radio {
+    padding: 0px 20px 0px 0px;
+}
+body .ui-page .nw_widget_div_tarjeta{
+    width: calc(100% - 110px);
+    float: left;
+    margin: 3px 0px;
+    /* margin: 0; */
+    /*width: auto;*/
+    width: 50%;
+}
+body .ui-page .nw_widget_div_tarjeta .ui-input-text{
+    padding: 0px 0px 0px 10px;
+    max-width: calc(100% - 19px);
+}
+body .ui-page .nw_widget_div_tarjeta input{
+    /* border: 0; */
+    padding: 6px 3px 6px 0px;
+    font-size: 12px;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 22px;
+    text-align: center;
+    /*width: 192px;*/
+}
+body .ui-page .nw_widget_div_cambiar_tarjeta{
+    width: 80px;
+    float: right;
+    margin: 0px 10px 0px 0px;
+}
+body .ui-page .nw_widget_div_pedir {
+    float: right;
+    width: 100%;
+    margin: 0;
+}
+body .ui-page .nw_widget_div_pedir .ui-input-text,
+body .ui-page .nw_widget_div_cambiar_tarjeta .ui-input-text,
+body .ui-page .nw_widget_div_tarjeta .ui-input-text
+{
+    margin: 0;
+    background: transparent;
+}
+body .ui-page .nw_widget_div_pedir button{
+    width: calc(100% - 20px);
+    background-color: var(--color_empresarial);
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0px 0px 3px #000!important;
+    /*text-transform: uppercase;*/
+    margin: 10px auto;
+    display: block;
+}
+body .ui-page .nw_widget_div_volver .ui-input-text {
+    margin: 0;
+}
+body .ui-page .nw_widget_div_volver button{
+    height: auto;
+    margin: auto;
+    width: auto;
+    line-height: normal;
+    padding: 0;
+    color: #fff;
+}
+body .ui-page .driver_en_camino{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    top: 100%;
+    background-color: #fff;
+    display: none;
+}
+body .ui-page .driver_en_camino_show{
+    /*background-color: rgba(0, 0, 0, 0.74);*/
+    top: 0px;
+    display: initial;
+}
+body .ui-page .driver_en_camino_show .nw_widget_div_html_driver_en_camino
+{
+    background-color: #fff;
+    text-align: center;
+    padding: 0px;
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+    bottom: 0;
+}
+body .ui-page .driver_en_camino_show .nw_widget_div_cancelar_pedido_en_ruta{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    background-color: #fff;
+    position: relative;
+}
+body .ui-page .driver_en_camino_show .nw_widget_div_cancelar_pedido_en_ruta button{
+    width: 45%;
+    background-color: #000;
+    color: #fff;
+    margin-right: 0px;
+}
+.nw_widget_div_cancelar_pedido_en_ruta .ui-input-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+body .ui-page .buscando_driver{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    top: 100%;
+    display: none;
+}
+body .ui-page .buscando_driver_show{
+    /*background-color: rgba(0, 0, 0, 0.74);*/
+    top: 0px;
+    display: initial;
+}
+.buttons_group_fix_pago_group_hidden{
+    display: none!important;
+}
+body .ui-page .buscando_driver .nw_widget_div_html_buscando{
+    background-color: #fff;
+    text-align: center;
+    padding: 35px;
+    /*padding: 50px;*/
+    /*position: absolute;*/
+    /*bottom: 64px;*/
+    left: 0;
+    position: relative;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    min-height: 115px;
+
+
+    padding: 0;
+    padding-top: 12px;
+    min-height: initial;
+    padding-bottom: 10px;
+}
+body .ui-page .buscando_driver .nw_widget_div_cancelar_pedido{
+    /*position: absolute;*/
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    background-color: #fff;
+    height: 66px;
+}
+body .ui-page .buscando_driver .nw_widget_div_cancelar_pedido button{
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    max-width: 85%;
+    margin: auto;
+    display: block;
+}
+body .ui-page .buscando_driver .nw_widget_div_html_buscando_icon{
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 220px);
+    display: flex;
+    align-items: center;
+}
+body .ui-page .buscando_driver .nw_widget_div_html_buscando_icon .material-icons{
+    margin: auto;
+    font-size: 140px;
+    color: #bb3e20;
+    box-shadow: 0px 0px 95px #fff;
+    border-radius: 50%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.78);
+}
+body .ui-page .buscando_driver .nw_widget_div_html_buscando_icon .containerLabel{
+    display: none;
+}
+.ui-page .favoritos_group .colRow{
+    overflow: hidden;
+}
+body .ui-page .nw_widget_div_volver .material-icons{
+    position: relative;
+    top: auto;
+    left: auto;
+    float: none;
+}
+body .ui-page .ui-slider-switch {
+    width: 11em;
+    /*width: 6em;*/
+    margin: 0;
+    top: 3px;
+    background-color: transparent;
+    box-shadow: none;
+    border: 0;
+}
+.f_crear_viaje .ui-input-text,.f_crear_viaje .ui-input-search{
+    margin: 3px 0;
+}
+.f_crear_viaje .ui-content {
+    padding: 0px;
+}
+.nw_label_tipo_servicio,
+.nw_label_tipo_pago,
+.nw_label_forma
+{
+    display:none!important;
+}
+.createLogin{
+    padding: 10px;
+}
+body .ui-page .btn_maxwidth {
+    background-color: var(--color_empresarial)!important;
+    /*color: #fff!important;*/
+    color: #fff;
+    text-shadow: none!important;
+}
+.f_crear_viaje .btn_head_close{
+    background-color: rgb(82, 82, 82)!important;
+    border: 0px!important;
+    text-shadow: none!important;
+    padding: 0px;
+    border-radius: 50%;
+    height: 26px!important;
+    width: 26px!important;
+    text-align: center;
+}
+.f_crear_viaje .ui_btn_icon_vacio .material-icons{
+    top: 3px;
+    left: 3px;
+}
+.f_crear_viaje .elinicon {
+    top: 5px;
+    font-size: 20px;
+}
+.f_crear_viaje .modeiconField {
+    margin-left: 25px
+}
+
+.ui-page .ui-input-text{
+    box-shadow: none;
+}
+body .ui-page .nw_widget_div_fijar_en_mapa_destino,
+body .ui-page .nw_widget_div_fijar_en_mapa_origen
+{
+    margin: 0;
+    text-align: right;
+}
+body .ui-page .nw_widget_div_fijar_en_mapa_destino .ui-input-text,
+body .ui-page .nw_widget_div_fijar_en_mapa_origen .ui-input-text
+{
+    margin: 0;
+}
+body .ui-page .nw_widget_div_fijar_en_mapa_destino .ui-input-text button,
+body .ui-page .nw_widget_div_fijar_en_mapa_origen .ui-input-text button
+{
+    margin: 0;
+    width: calc(100% - 36px);
+    /* width: 100%; */
+    font-size: 12px;
+    border: 0;
+    box-shadow: none;
+    background: lavender;
+    text-align: left;
+    color: #939393;
+    padding: 8px;
+    padding-left: 32px;
+    background-color: transparent;
+    text-align: right;
+    color: #000;
+    width: auto;
+    color: var(--color_empresarial);
+}
+body .ui-page .nw_widget_div_fecha,
+body .ui-page .nw_widget_div_hora
+{
+    width: calc(50% - 5px);
+    float: left;
+    margin: 6px 0;
+}
+body .ui-page .nw_widget_div_hora
+{
+    float: right;
+}
+body .ui-page .nw_widget_div_fecha .ui-input-text,
+body .ui-page .nw_widget_div_hora .ui-input-text
+{
+    background: transparent;
+    margin: 0;
+}
+body .ui-page .nw_widget_div_fecha input,
+body .ui-page .nw_widget_div_hora input
+{
+    background: #fff;
+    width: 100%;
+    box-sizing: border-box;
+    border: 0;
+    text-align: center;
+}
+.visibe_promo{
+    display: block!important;
+}
+body .ui-page .nw_widget_div_codigo_promo{
+    margin: 0;
+    position: absolute;
+    top: 7px;
+    display: none;
+    position: fixed;
+    top: 7px;
+    /*right: 44px;*/
+
+    right: 6px;
+}
+.nw_widget_div_codigo_promo .ui-input-text {
+    margin: 0;
+}
+.nw_widget_div_codigo_promo .ui-input-text button{
+    margin: 0;
+    padding: 2px 10px;
+    /*background: #000;*/
+    color: #fff;
+    font-size: 13px;
+    /* padding: 6px 3px 6px 0px; */
+    font-size: 12px;
+    /* margin: 0; */
+    box-sizing: border-box;
+    line-height: 22px;
+    padding-left: 30px;
+    background-color: var(--color_empresarial);
+    /*padding: 13px;*/
+    height: auto;
+}
+.nw_widget_div_codigo_promo .ui-input-text .material-icons{
+    top: 2px!important;
+}
+.nw_widget_div_address .material-icons
+{
+    top: 3px;
+}
+.nw_widget_div_address .material-icons,
+.nw_widget_div_address_destino .material-icons
+{
+    width: auto;
+    height: auto;
+    font-size: 15px;
+    top: 12px;
+    color: var(--color_empresarial);
+}
+.nw_widget_div_address_uni .material-icons:after {
+    content: ".";
+    width: 1px;
+    height: 20px;
+    background-color: #000;
+    padding: 0;
+    font-size: 0;
+    position: absolute;
+    top: 22px;
+    left: 12px;
+}
+.ui-slider-handle.ui-slider-handle-snapping.ui-btn.ui-shadow {
+    width: 25px;
+    height: 27px;
+    top: 1px;
+    /*background: var(--color_empresarial);*/
+}
+.ui-slider-switch .ui-slider-label-b, .ui-slider-switch .ui-slider-label-a,
+.ui-page-theme-a .ui-slider-track .ui-btn-active
+{
+    font-size: 15px;
+    line-height: 33px;
+    /*text-indent: 25px;*/
+    background-color: transparent;
+    box-shadow: inset 0px 0px 0px 2px #878787;
+    color: #000;
+    font-weight: lighter;
+
+    background: #dc4934;
+    color: #fff;
+    box-shadow: inset 0px 0px 0px 2px transparent;
+}
+.f_crear_viaje .ui-slider-track .ui-btn.ui-slider-handle{
+    /*height: 20px;*/
+}
+.f_crear_viaje .ui-slider-track .ui-btn-active{
+    background-color: #e88a1d;
+}
+.f_crear_viaje{
+    background: #ffffff;
+    height: 100%;
+}
+.f_crear_viaje .containBtnFooter{
+    background-color: rgba(37, 33, 65, 0.8);
+    padding: 0;
+    display: none;
+}
+.containBtnFooter_group_fix{
+    /*display: none;*/
+}
+.f_crear_viaje .contenedor_azul,
+.f_crear_viaje .paradas_group
+{
+    background-color: #ffffff;
+    /*color: #fff;*/
+    text-shadow: none;
+    padding: 0 5px;
+    /*display: none;*/
+}
+.estimado{
+    position: relative;
+    padding: 4px 0px;
+    width: 100%;
+    margin: auto;
+    font-size: 13px;
+    /*border-bottom: 1px solid #e4e4e4;*/
+    display: flex;
+    overflow: auto;
+}
+body .estimadoInt{
+    position: relative;
+    padding: 4px 8px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1.1px solid var(--color_empresarial)!important;
+    /*border: 1.1px solid #a0a2a2;*/
+    margin-left: 5px;
+    background: rgba(27, 187, 215, 0.1);
+    border-radius: 5px;
+    min-width: fit-content;
+    background: transparent;
+    border: 0;
+    opacity: 0.5;
+    /*transition: 1s;*/
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.spanSaldo i.material-icons {
+    background: var(--color_empresarial);
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    transform: rotate(180deg);
+}
+body .acti{
+    box-shadow: inset 0px 0px 0px 2px rgb(27, 187, 215);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.42);
+    opacity: 1;
+}
+html .ui-page .btnForm{
+    font-weight: normal;
+    text-shadow: none;
+}
+#cambiar_tarjeta{
+    width: 100%;
+    padding: 6px 3px 6px 0px;
+    font-size: 12px;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 22px;
+}
+body .ui-page .nw_widget_div_cambiar_tarjeta .ui_btn_icon_left .material-icons{
+    left: 3px;
+    top: 0px;
+}
+.dataUserLeft{
+    background-color: #000;
+    color: #fff;
+    text-shadow: none;
+}
+.favoritos_group .uiListRows{
+    margin: 0px;
+}
+#favoritos_group{
+    position: absolute;
+    z-index: 5;
+    width: calc(100% - 56px);
+    right: 10px;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    margin: 0;
+    right: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    opacity: 0;
+    pointer-events: none;
+    top: -300px;
+    overflow-y: auto;
+    /*max-height: 350px;*/
+    max-height: calc(100% - 100px);
+    /*box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.39);*/
+}
+.favoritos_group_show{
+    opacity: 1!important;
+    pointer-events: all!important;
+    top: 0px!important;
+}
+.favoritos_group .uiListRows .ui-btn {
+    background-color: #fff;
+    padding: 20px 5px;
+    border: 0;
+    border-bottom: 1px solid #ddd;
+}
+.favoritos_group .uiListRows .ui-btn .datacol{
+    font-size: 15px;
+}
+.pac-container {
+    margin-top: 34px;
+    left: 0!important;
+    width: 100%!important;
+
+    overflow: auto;
+    height: calc(100% - 118px);
+    z-index: 10000000!important;
+}
+.pac-item {
+    background-color: #fff;
+    padding: 20px 5px;
+    font-size: 15px;
+}
+.pac-item-query{
+    font-size: 15px!important;
+}
+button.btnExec.btnForm.ui-shadow.ui-btn.ui-corner-all.ui-btn-inline.Btn.ui_btn_icon_left.aceptar.ui-btn-position-center {
+    background: var(--color_empresarial);
+    color: #fff;
+}
+body .ui-page .pago_group{
+    background-color: rgba(204, 204, 204, 0.52);
+    background-color: #eaeaea;
+    background-color: #fff;
+    box-shadow: 0px -4px 5px rgba(0, 0, 0, 0.3);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    /*bottom: -200px;*/
+    /*bottom: -330px;*/
+    bottom: -630px;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 3;
+}
+
+body .ui-page .buttons_group_fix_pago_group{
+    bottom: 0px;
+    min-height: 180px;
+    /*background: linear-gradient(to top,rgb(255, 255, 255) 60%, rgb(123, 121, 121) 61%,rgba(0, 0, 0, 0) 9%);*/
+    /*box-shadow: none;*/
+
+    overflow-y: auto;
+    max-height: 450px;
+}
+body .ui-page .buttons_group_fix_pago_group .nw_widget_div_codigo_promo,
+body .ui-page .buttons_group_fix_pago_group .nw_widget_div_volver
+{
+    display: block;
+}
+.containInfoDriver{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    /*align-items: center;*/
+    align-items: start;
+    width: 100%;
+    padding: 10px;
+    min-height: 120px;
+    box-sizing: border-box;
+}
+.containInfoDriver_enrutafinal{
+    min-height: 174px;
+}
+.photoDriver{
+    position: relative;
+    width: 80px;
+    height: 45px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 45px;
+
+    float: left;
+    margin-right: 5px;
+}
+.nameDriver{
+    margin: 0px 10px 0px 10px;
+}
+.placaDriver{
+    position: relative;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.titleInfoDriver{
+    font-size: 13px;
+    margin-top: 5px;
+    width: 100%;
+    float: left;
+}
+.titleInfoColor{
+    color:var(--color_empresarial);
+}
+.tiempoEstimadoDriver{
+    text-align: center;
+    margin: auto;
+    display: none;
+}
+
+
+/************************DRIVER**************/
+body .ui-page .buttons_driver,
+body .ui-page .grupo_nueva_solicitud
+{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+body .ui-page .buttons_driver button{
+    background-color: mediumspringgreen;
+}
+body .ui-page .grupo_nueva_solicitud {
+    background-color: #fff;
+    z-index: 2;
+    box-shadow: 0px 0px 5px;
+}
+body .ui-page .grupo_nueva_solicitud .nw_widget_div_rechazar_pedido_driver,
+body .ui-page .grupo_nueva_solicitud .nw_widget_div_aceptar_pedido_driver
+{
+    display: inline-block;
+}
+body .ui-page .grupo_nueva_solicitud .nw_widget_div_aceptar_pedido_driver button {
+    background-color: mediumspringgreen;
+}
+body .ui-page .grupo_nueva_solicitud .nw_widget_div_rechazar_pedido_driver button {
+    background-color: red;
+    color: #fff;
+}
+.ui-page-theme-a .centrar_mapa,
+.ui-page-theme-a .centrar_mapa:hover,
+html .ui-bar-a .centrar_mapa:hover{
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+}
+.gm-style .gm-style-iw-c{
+    max-width: 150px!important;
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 10px 0px 0px 0px;
+}
+body .mapa_maxheight{
+    max-height: calc(100% - 180px);
+}
+.InfoDriverPhotoAndTitle{
+    position: relative;
+    /* display: flex; */
+    /* margin-bottom: 10px; */
+    text-align: left;
+    width: 60%;
+    /*margin: auto;*/
+    /* margin-left: 20px; */
+    display: block;
+}
+.InfoDriverPhotoAndTitleAll{
+    width: 100%;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+span.infoDriverText, span.nameDriverSpan {
+    font-weight: bold;
+}
+span.nameDriverSpan{
+    color: grey;
+    max-height: 40px;
+    overflow: hidden;
+    display: block;
+}
+span.infoDriverText{
+    color: var(--color_empresarial);
+}
+.puntajeDriverSpan{
+    display: block;
+    font-size: 12px;
+}
+.puntajeDriverSpan .material-icons{
+    font-size: 12px;
+    top: 2px;
+    position: relative;
+    color: gray;
+
+}
+.InfoDriverPlacasEtc{
+    position: relative;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    /* padding-top: 12px; */
+    /* padding-bottom: 12px; */
+    flex-wrap: wrap;
+    width: 40%;
+    margin: 0 auto;
+}
+#f_guardar_celular{
+    background-color: #fff;
+    margin: 15px;
+    padding: 0 10px;
+    box-shadow: 0px 0px 5px #ccc;
+    border-radius: 5px;
+}
+#f_guardar_celular .titlecelular{
+    text-align: center;
+    margin-top: 40px;
+    position: relative;
+    font-size: 1.3em;
+    padding: 10px
+}
+.icon_service{
+    height: auto;
+    max-height: 40px;
+}
+.textContainServices{
+    font-size: 12px;
+    margin: auto auto auto 10px;
+}
+.nameService{
+    display: block;
+    max-width: 110px;
+}
+.spanValueEnd{
+    font-weight: bold;
+}
+.cars_options{
+    position: relative;
+    margin: auto 0;
+}
+body #l_visitantes .fechas_group{
+    width: 100%;
+}
+body #l_visitantes .nw_widget_div_datos_vehiculo_elegido{
+    padding: 0 20px;
+}
+.spanSaldo{
+    font-weight: 400px;
+    font-size: 11px;
+    display: block;
+}
+
+.f_ver_viaje .contentCenter{
+    padding: 5px 5px;
+}
+.f_ver_viaje .containBtnFooter{
+    display: flex;
+}
+.f_ver_viaje .fotoConductorLista{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+}
+body .f_ver_viaje .contentCenter{
+    padding: 0;
+}
+body .f_ver_viaje .nw_widget_div_observaciones_html{
+    box-shadow: 0px -2px 5px #888;
+    margin: 0;
+    padding: 0px 10px 10px 10px;
+    font-size: 13px;
+    background-color: #fff;
+    width: 100%;
+}
+body .f_ver_viaje .nw_widget_div_observaciones_html p{
+
+}
+body .f_ver_viaje .containBtnFooter{
+    display: none;
+}
+body .f_ver_viaje .mapa .gm-style{
+    position: fixed!important;
+    max-height: 400px;
+    top: 48px!important;
+}
+.separatorLine{
+    position: relative;
+    width: 40px;
+    height: 4px;
+    background-color: #ccc;
+    margin: auto;
+    border-radius: 15px;
+    top: 5px;
+}
+.l_visitantes .nw_label_tipo_pago .label_radio_nw{
+
+}
+.gm-style img {
+    -webkit-transition: transform .3s linear;
+    -moz-transition: transform .3s linear;
+    -o-transition: transform .3s linear;
+    -ms-transition: transform .3s linear;
+    transition: transform .3s linear;
+}
+
+.f_ver_viaje .ui-grid-b>.ui-block-a,
+.f_ver_viaje .ui-grid-b>.ui-block-b,
+.f_ver_viaje .ui-grid-b>.ui-block-c{
+    width: auto;
+}
+.countWait{
+    position: relative;
+    display: block;
+    font-size: 2em;
+}
+
+.encCustomerComp{
+    position: fixed;
+    top: 9px;
+    right: 56px;
+    left: auto;
+    z-index: 2;
+    font-size: 10px;
+    background-color: rgb(255 255 255 / 37%);
+    padding: 1px 6px;
+    box-shadow: 0px 0px 5px;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: center;
+    max-width: 150px;
+    overflow: hidden;
+    pointer-events: none;
+    width: fit-content;
+    height: fit-content;
+    flex-direction: column;
+}
+.custome{
+
+}
+.custName{
+
+}
+.custLogo{
+    position: relative;
+    width: 50px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    min-width: 50px;
+    min-height: 30px;
+    margin-left: 4px;
+}
+.foo_editprofile #foo{
+    background-color: #ffffff!important;
+    box-sizing: border-box;
+}
+.foo_editprofile #foo .contentCenter{
+    padding: 0px 15px;
+    box-sizing: border-box;
+    margin-top: 78px!important;
+}
+.foo_editprofile #foo .containBtnFooter{
+    display: block!important;
+    background: transparent;
+}
+.foo_editprofile #foo .containBtnFooter .aceptar{
+    width: 100%;
+}
+.foo_editprofile #foo .containBtnFooter .aceptar .material-icons{
+    display: none;
+}
+.foo_editprofile .centrar_mapa{
+    display: none!important;
+}
+.foo_editprofile .headerHome{
+    background: #ffffff!important;
+    box-shadow: 0px 0px 4px #ccc!important;
+    height: 58px!important;
+}
+.origienesYDestinos{
+    position: relative;
+    text-align: left;
+    padding: 0px 15px 5px 10px;
+    background-color: #f5bf0c;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.l_tarjetas_credito .menuList{
+    top: -8px;
+}
+.descarga_popup{
+
+}
+.descarga_popup .btnpil_acept{
+    background-color: green!important;
+    color: #fff!important;
+    width: 100%!important;
+    max-width: 90%!important;
+    margin: auto auto 9px auto!important;
+}
+.titleesperaviaje{
+    display: block;
+    font-size: 18px;
+}
+.countWaitShow{
+
+}
+.verviaje_iframe{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+.citiesdif{
+    display: block;
+}
+.l_historico_viajes .rowName_conductor_foto .imgListType {
+    border-radius: 50%;
+}
+
+
+.f_crear_viaje .paradas_group .containTable {
+    min-height: initial;
+}
+.poing_green{
+    position: relative;
+}
+.poing_green:before {
+    width: 6px;
+    height: 6px;
+    background: #2af525;
+    border-radius: 50%;
+    position: absolute;
+    top: 4px;
+    left: -8px;
+    content: ".";
+    font-size: 0px;
+    display: block;
+}
+.poing_red{
+    position: relative;
+}
+.poing_red:before {
+    width: 6px;
+    height: 6px;
+    background: #dc461e;
+    border-radius: 50%;
+    position: absolute;
+    top: 4px;
+    left: -8px;
+    content: ".";
+    font-size: 0px;
+    display: block;
+}
+.nw_widget_div_texto_confirmar_ciudad .ui-input-text{
+    border: 0;
+}
+.nw_widget_div_texto_confirmar_ciudad .nw_label_texto_confirmar_ciudad{
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.valuedesc_end, .valuedesc_end_dos{
+    /*display: flex;*/
+    flex-wrap: wrap;
+    position: relative;
+    text-align: right;
+}
+.valuedesc_end_padd .spanDesc{
+    padding-right: 10px;
+}
+
+.imgRecargas{
+    background-size: 144px;
+    background-position: center;
+}
+.imgRefiereAmigos{
+    background-size: 158px;
+    background-position: center;
+}
+
+
+/*html.ui-mobile body .ui-page{
+    min-height: 1000000px!important;
+    max-height: 1000000px!important;
+    height: 1000000px!important;
+}
+html.ui-mobile body #foo{
+    min-height: 100%!important;
+    max-height: 100%!important;
+    height: 100%!important;
+}
+html body .contentCenter,
+html body .containerCenterHome{
+    height: inherit!important;
+}*/
+
+.spantimewait{
+    position: relative;
+    display: inherit;
+    font-size: 28px;
+    background-color: green;
+    color: #fff;
+    border-radius: 5px;
+    max-width: 80%;
+    margin: auto;
+}
+.containMoreInfoService .origienesYDestinos{
+    background-color: #d5d5d5;
+    padding: 8px 8px;
+    font-size: 12px;
+    margin-top: 20px;
+}
+.mapEmbedNw{
+    max-height: calc(100% - 115px);
+    top: 40px;
+}
+.f_ver_viaje_mapstatic .mapa{
+    position: relative;
+    z-index: 1;
+}
+.f_ver_viaje_mapstatic .nw_widget_div_observaciones_html{
+    background-color: #fff;
+    box-shadow: 0px 0px 5px #303030;
+    padding: 8px;
+    box-sizing: border-box;
+    z-index: 2;
+    position: relative;
+}
+.titleencviajeexte{
+    position: fixed;
+    top: 5px;
+    right: 3px;
+    max-width: 100px;
+}
+.titleencviajeexte  img{
+    width: 100%;
+    height: auto;
+    max-height: initial;
+    max-width: initial;
+    border-radius: 9px;
+}
+
+.containIntStartGroup_detalle_ubica{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.containIntStartGroup_detalle_ubica .nw_widget_div{
+    max-width: 50%;
+}
+.containIntStartGroup_detalle_ubica .nw_widget_div .ui-slider-switch{
+    max-width: 80%;
+}
+.spannumeroauxiliarespricesshow{
+    position: relative;
+    font-weight: bold;
+    display: block;
+    color: orange;
+    font-style: italic;
+    font-size: 11px;
+}
+
+.formapago{
+    display: block;
+    font-weight: bold;
+}
+.formapagobtn{
+
+}
+.formapagobtn_btn{
+    border: 0;
+    background-color: rgb(26, 69, 148);
+    color: #fff;
+    padding: 10px 12px;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.swiperight{
+    /*display: none!important;*/
+    max-height: calc(100% - 145px)!important;
+    width: 10px!important;
+}
+
+
+.valorfijo .ui-input-text{
+    border: 0;
+    box-shadow: none!important;
+}
+.valorfijo .nw_textField{
+    font-size: 26px!important;
+    text-align: center;
+    font-weight: bold;
+    border: 0!important;
+    box-shadow: none!important;
+    border-bottom: 1px solid #a4a4a4!important;
+    border-radius: 0!important;
+}
+.valorfijo .valor_fijado{
+    text-align: left;
+}
+.containIntStartGroup_valorfijargrupo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.containIntStartGroup_valorfijargrupo .nw_label{
+    display: none!important;
+}
+.containIntStartGroup_valorfijargrupo .nw_widget_div{
+
+}
+.containIntStartGroup_valorfijargrupo .nw_widget_div_moneda{
+    max-width: 90px;
+}
+.containIntStartGroup_valorfijargrupo .nw_widget_div_valor_fijado{
+    width: 100%;
+}
+
+.ofertas_container{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    /*height: 100%;*/
+    height: auto;
+    overflow: auto;
+    max-height: calc(100% - 100px);
+    z-index: 10000000;
+}
+.ofertas_offer{
+    position: relative;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 5px #ccc;
+    margin: 5px;
+}
+.offer_datatravel{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+.offer_foto{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+    border-radius: 50%;
+}
+.offer_datos{
+
+}
+.offer_row{
+
+}
+.offer_nombre{
+    font-weight: bold;
+}
+.offer_marcacarro{
+
+}
+.offer_precios{
+
+}
+.offer_oferta{
+    font-size: 20px;
+    font-weight: bolder;
+}
+.offer_buttons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+.offer_btn{
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    padding: 14px 52px;
+    font-weight: bold;
+    font-size: 17px;
+
+    padding: 14px 14px;
+    width: -webkit-fill-available;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: calc(100% - 150px)!important;
+    margin: 5px;
+}
+.offer_aceptar{
+    background-color: green;
+}
+.offer_rechazar{
+    background-color: red;
+}
+
+
+.containIntStartGroup_actualizar_precio{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.containIntStartGroup_actualizar_precio .actual_precio{
+    font-size: 26px!important;
+    text-align: center;
+    font-weight: bold;
+    border: 0!important;
+    box-shadow: none!important;
+    border-bottom: 1px solid #a4a4a4!important;
+    border-radius: 0!important;
+}
+.containIntStartGroup_actualizar_precio .nw_widget_div_bajar_precio,
+.containIntStartGroup_actualizar_precio .nw_widget_div_aumentar_precio
+{
+    width: 50px;
+    margin: auto;
+}
+.containIntStartGroup_actualizar_precio .nw_widget_div_actual_precio{
+    width: 100%;
+    max-width: calc(100% - 100px);
+    margin: auto;
+}
+.containIntStartGroup_actualizar_precio .nw_widget_div_confirmar_precio{
+    margin: auto;
+}
+
+
+
+
+html .ui-page .btnForm,
+body .ui-slider-switch .ui-slider-label-b, body .ui-slider-switch .ui-slider-label-a, body .ui-page-theme-a .ui-slider-track .ui-btn-active
+{
+    border-radius: 25px;
+    font-weight: bold;
+}
+body .popup_pil .Btn{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+body .popup_pil .Btn .material-icons{
+    position: relative!important;
+    top: 0px!important;
+    line-height: normal;
+    margin-right: 2px;
+}
+
+.containIntStartGroup_actualizar_precio .btnForm{
+    background-color: var(--color_verde);
+    color: #fff;
+    font-weight: bold!important;
+}
+.containIntStartGroup_actualizar_precio .aumentar_precio,
+.containIntStartGroup_actualizar_precio .bajar_precio
+{
+    width: 40px;
+    height: 40px;
+}
+
+html body .contenedor_adondevamos .button_adondevas .material-icons{
+    color: var(--color_verde)!important;
+}
+.titlepaxintravel{
+    font-weight: bold;
+}
+
+.l_historico_viajes .my-header .ui-block-b .btnForm{
+    border-radius: 0;
+    font-weight: lighter;
+}
+.l_historico_viajes .colRow {
+    /*margin-top: 10px;*/
+    /*margin-bottom: 8px;*/
+    /*color: gray;*/
+    color: #3c4b64;
+    padding: 0px 10px;
+}
+.l_historico_viajes .rowName_fecha_hora_format,
+.l_historico_viajes .rowName_estado,
+.l_historico_viajes .rowName_origen,
+.l_historico_viajes .rowName_destino
+{
+    color: #000;
+}
+.l_historico_viajes .rowName_origen,
+.l_historico_viajes .rowName_destino
+{
+    font-size: 14px;
+    /* width: 81%; */
+    text-overflow: ellipsis;
+    overflow: hidden;
+    /*margin-left: 3px;*/
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+.l_historico_viajes .rowName_origen .divorigdes,
+.l_historico_viajes .rowName_destino .divorigdes
+{
+    width: 65px;
+    display: inline-block;
+}
+.l_historico_viajes .rowName_estado{
+
+}
+.l_historico_viajes .rowName_fecha_hora_format{
+
+}
+.divOrigenDest {
+    background-color: blue;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    text-align: center;
+    line-height: 15px;
+    border: 0;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 9px;
+    position: relative;
+    top: -1px;
+    margin-right: 3px;
+}
+.divOrigenA {
+    background-color: blue;
+}
+.divOrigenB {
+    background-color: orange;
+}
+
+
+.l_historico_viajes .rowName_id_enc{
+    padding: 16px;
+    background-color: #f7f8f8;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /*border-radius: 8px 8px 0 0;*/
+    box-sizing: border-box;
+}
+.enc_trav_ids{
+
+}
+.enc_trav_estado{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 5px;
+    color: #88b537;
+}
+.colorstado{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin-right: 8px;
+    background-color: #88b537;
+    display: inline-block;
+}
+
+.l_historico_viajes .rowlist{
+    background: #fff;
+    margin-bottom: 12px;
+    max-width: 985px;
+    border: 1px solid #dfe2e5;
+    border-radius: 8px;
+    padding: 0;
+    overflow: hidden;
+}
+.l_historico_viajes .rowName_descricion_carga{
+    margin-top: 5px;
+    color: gray;
+}
+.l_historico_viajes .fechas_horas{
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+.l_historico_viajes .fechas_horas_e{
+    margin-right: 19px;
+}
+.l_historico_viajes .divcol{
+    /*display: block;*/
+    /*width: 100%;*/
+}
+
+
+.enc_trav{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 12px;
+}
+.rowcolorstado{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 10px;
+}
+.enc_trav_ids_idsorparada{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: flex-start;
+    font-weight: bold;
+}
+.rowestadoids{
+
+}
+
+.icon-historico{
+
+}
+.icon-historicoA{
+    color: blue;
+}
+.icon-historicoB{
+    color: orange;
+}
+
+
+.conductor_html {
+    position: relative;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.vehiculo_contain_html_placa {
+    background: #e0e0e0;
+    padding: 2px 4px;
+    color: rgba(0,0,0,0.87);
+    font-size: 10px;
+    border: 1px solid #afafaf;
+    border-radius: 5px;
+}
+.conductor_html span {
+    margin-right: 5px;
+}
+
+
+.l_historico_viajes .rowName_iniciar_servicio,
+.l_historico_viajes .rowName_chat_conductor {
+    max-width: 120px;
+    display: inline-block;
+}
+.l_historico_viajes .rowName_iniciar_servicio button,
+.l_historico_viajes .rowName_chat_conductor button
+{
+    background-color: #828282;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    box-shadow: none;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 2px rgba(97,97,97,.2), 0 2px 4px rgba(97,97,97,.2);
+    background-color: #0083a8;
+    background-color: #ffffff;
+    color: #0083a8!important;
+}
+.l_historico_viajes .rowName_iniciar_servicio .material-icons,
+.l_historico_viajes .rowName_chat_conductor .material-icons
+{
+    color: #fff!important;
+    top: auto!important;
+    font-size: 28px!important;
+    color: #0083a8!important;
+}
+
+.l_historico_viajes .ui-navbar ul{
+    background-color: rgb(246, 246, 246);
+}

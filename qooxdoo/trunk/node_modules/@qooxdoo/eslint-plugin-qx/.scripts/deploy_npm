@@ -1,0 +1,21 @@
+#!/bin/bash
+exe() { echo "\$ ${@/eval/}" ; "$@" ; }
+
+exe node -v
+exe npm -v
+
+git config --global user.email "deploy@tqooxdoo.org"
+git config --global user.name "qooxdoo deploy"
+
+NEW_VERSION=$(npm version patch -m "[ci skip] new npm version: %s")
+echo "new version: $NEW_VERSION"
+
+GIT_URL="$(git config remote.origin.url)"
+GIT_URL=${GIT_URL/https:\/\//https:\/\/$GH_TOKEN@}
+exe git push $GIT_URL HEAD:master
+exe git push $GIT_URL $NEW_VERSION
+
+# fill .npmrc with access token
+echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN:-}" > ~/.npmrc
+exe npm ci
+exe npm publish --access public

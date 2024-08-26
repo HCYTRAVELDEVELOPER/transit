@@ -1,0 +1,227 @@
+html,body{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: Arial;
+}
+.conversaciones{
+    /*margin-bottom: 100px;*/
+    /*height: 80%;*/
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: fixed;
+    width: 100%;
+    top:0;
+    left: 0;
+}
+.text_bienvenido{
+    position: relative;
+    background: #E2FFF2;
+    padding: 10px;
+}
+.text_bienvenido h1{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.chats_conversations{
+    position: relative;
+    padding: 5px;
+    margin: 0px;
+    overflow: hidden;
+    float: left;
+    width: 100%;
+}
+
+#form_chat{
+    position: relative;
+    background: #f1f1f1;
+    padding: 5px;
+    height: 90%;
+}
+#texto{
+    height: 90%;
+    width: 80%;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+#envia_message{
+    height: 90%;
+    width: 18%;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+.box_text_envia{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    /*height: 20%;*/
+    height: 100px;
+    clear: both;
+}
+#conversations{
+    position: relative;
+    background: #fff;
+    padding: 0 5px;
+    overflow: hidden;
+}
+.chat_visitante {
+    float: right!important;
+}
+.message_all{
+    position: relative;
+    float: left;
+    background: #efefef;
+    padding: 5px;
+    border-radius: 3px;
+    min-height: 50px;
+    max-width: 80%;
+    width: 150px;
+}
+.message_visitvisitante {
+    float: right;
+}
+.photo{
+    position: relative;
+    background: #fff;
+    height: 30px;
+    border-radius: 2px;
+    border: 1px solid #f1f0f0;
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 30px;
+    margin-right: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.photo_visitante {
+    float: right;
+    margin-left: 5px;
+}
+.usuario{
+    padding: 0;
+    margin: 0;
+    color: #A5A3A3;
+    font-size: 10px;
+    position: relative;
+}
+.usuario span{
+    font-weight: bold;
+    font-size: 12px;
+}
+.mensaje{
+    position: relative;
+    padding: 0;
+    margin: 3px;
+}
+.inactive{
+    position: relative;
+    background: #F86D00;
+    padding: 5px;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-button{
+    /*background: #999;*/
+}
+
+::-webkit-scrollbar-track {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: #e6e6e6;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #ccc;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: #999;
+}
+::-webkit-scrollbar-corner{
+    background: #999;
+}
+.contain_button{
+    position: relative;
+    width: 100%;
+    height: 20%;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 5px;
+}
+.contain_button p{
+    margin: 0;
+    padding: 0;
+    float: left;
+    cursor: pointer;
+    border-right: 1px solid #ccc;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #666;
+}
+.contain_cajas{
+    position: relative;
+    width: 100%;
+    height: 50%;
+    margin: 0;
+    padding: 0;
+}
+.calificar{
+    position: relative;
+    float: left;
+    display: block;
+}
+.calificar div{
+    position: relative;
+    float: left;
+    display: block;
+    width: auto;
+    height: 20px;
+    border-top-left-radius: 40%;
+    font-size: 11px;
+    text-align: center;
+    margin: 0 2px;
+    cursor: pointer;
+    color: #fff;
+    line-height: 20px;
+    text-shadow: 0px 0px 3px #000;
+    border-bottom-left-radius: 40%;
+    opacity: 0.6;
+    padding: 0 5px;
+}
+.calificar1{
+    background: red;    
+}
+.calificar2{
+    background: rgb(255, 155, 0);    
+}
+.calificar3{
+    background: rgb(255, 252, 0);
+}
+.calificar4{
+    background: rgb(181, 255, 0);
+}
+.calificar5{
+    background: rgb(0, 255, 42);
+}
+.califica_selected{
+    opacity: 1!important;
+    font-weight: bold;
+    font-size: 14px!important;
+}
+.calificar{
+    display: none;
+}

@@ -1,0 +1,34 @@
+<script>
+    function get() {
+        var loc = document.location.href;
+        var getString = loc.split('?')[1];
+        if (typeof getString === "undefined" || getString === undefined) {
+            return false;
+        }
+        var GET = getString.split('&');
+        var get = {};
+        for (var i = 0, l = GET.length; i < l; i++) {
+            var tmp = GET[i].split('=');
+            get[tmp[0]] = unescape(decodeURI(tmp[1]));
+        }
+        return get;
+    }
+</script>
+<script src="https://rtcmulticonnection.herokuapp.com/dist/RTCMultiConnection.min.js"></script>
+<script src="https://rtcmulticonnection.herokuapp.com/socket.io/socket.io.js"></script>
+
+<script>
+    var connection = new RTCMultiConnection();
+
+// this line is VERY_important
+    connection.socketURL = 'https://rtcmulticonnection.herokuapp.com:443/';
+
+// if you want audio+video conferencing
+    connection.session = {
+        audio: true,
+        video: true
+    };
+
+    var room = get().room;
+    connection.openOrJoin(room);
+</script>

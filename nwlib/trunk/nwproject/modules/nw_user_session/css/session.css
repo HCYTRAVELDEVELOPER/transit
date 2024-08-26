@@ -1,0 +1,156 @@
+/* 
+    Document   : session
+    Created on : Jan 27, 2016, 2:32:09 PM
+    Author     : alexf
+    Description:
+        Purpose of the stylesheet follows.
+*/
+/*.containerInitSession label{*/
+.box_info_popup label{
+    position: relative;
+    width: 100%;
+    display: inline-block;
+}
+
+
+.box_info_popup input[type="number"],.box_info_popup input[type="text"], .box_info_popup input[type="password"], .box_info_popup textarea{
+    border: 1px solid #ccc;
+    padding: 10px 10px;
+    border-radius: 5px;
+    margin: 5px 0px;
+    /*width: 65%;*/
+    width: 90%;
+}
+.containerInitSession{
+    position: relative;
+    margin: auto;
+    /*max-width: 1200px;*/
+    max-width: 900px;
+    padding: 60px;
+    overflow: hidden;
+}
+.bloqueInitSession:nth-child(2) {
+    /* float: left; */
+    width: auto;
+    /* border-left: 1px solid #e1e1e1; */
+    /* padding-left: 50px; */
+    /* margin-left: 50px; */
+    margin: auto;
+}
+.bloqueInitSessionInt {
+    padding: 10px;
+    /* border: 1px solid #E1E1E1; */
+    margin: 5px;
+    min-height: 200px;
+}
+.bloqueInitSession h2 {
+    position: relative;
+    margin: 0px;
+    /*background-color: #E7E7E7;*/
+    /*color: #6E6E6E;*/
+    -webkit-border-top-left-radius: 6px;
+    -moz-border-top-left-radius: 6px;
+    border-top-left-radius: 6px;
+    -webkit-border-top-right-radius: 6px;
+    -moz-border-top-right-radius: 6px;
+    border-top-right-radius: 6px;
+    margin-bottom: 15px;
+    /*padding: 15px 15px;*/
+    padding: 15px 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.bloqueInitSession h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    padding: 10px 0;
+}
+.bloqueInitSession h3 span {
+    border: 1px solid #cccccc;
+    width: 30px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    height: 30px;
+    border-radius: 50%;
+    line-height: 30px;
+    margin-right: 5px;
+    font-size: 12px;
+}
+.button_login{
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+.lnk_olvido{
+    text-align: center;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 12px;
+    text-decoration: none;
+    color: #427fed;
+}
+.button_login div {
+    display: block;
+    max-width: 100px;
+    margin: auto;
+}
+.lnk_crear{
+    max-width: inherit!important;
+}
+.dataUserAll{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+}
+.dataUserAll li{
+    position: relative;
+    padding: 10px 0;
+}
+.divContainInputIntern{
+    /*    margin: 0;
+        padding: 0;*/
+}
+#nwform input, select {
+    /*    border: 1px solid #ccc;
+        padding: 10px 10px;
+        border-radius: 3px;
+        margin: 5px 0px;
+        width: 100%;
+        font-size: 1em;*/
+}
+.containerInitSession .ui-button{
+    position: relative;
+    float: none;
+    display: block;
+    margin: 5px auto;
+}
+.containerInitSession .button_crear_cuenta_maker, .containerInitSession  .button_recordar_cuenta_maker, .containerInitSession  .button_yatengo_cuenta_maker {
+    background: transparent;
+    border: 0;
+    color: #4888ef;
+}
+.footerButtonsNwForms{
+    background: transparent;
+    border: 0;
+    text-align: center
+}
+.addHeaderNote{
+    margin: 0;
+    padding: 0;
+}
+.bloqueInitSessionNew {
+    position: relative;
+    width: auto;
+    float: none;
+    max-width: 350px;
+    margin: auto;
+}
+
+
+@media screen and (max-width: 900px) {
+    .containerInitSession {
+        padding: 0!important;
+    }  
+}

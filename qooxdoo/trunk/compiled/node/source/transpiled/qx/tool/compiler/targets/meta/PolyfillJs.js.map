@@ -1,0 +1,53 @@
+{
+  "version": 3,
+  "names": [
+    "qx",
+    "Bootstrap",
+    "executePendingDefers",
+    "$$dbClassInfo",
+    "fs",
+    "tool",
+    "utils",
+    "Promisify",
+    "path",
+    "require",
+    "Class",
+    "define",
+    "extend",
+    "compiler",
+    "targets",
+    "meta",
+    "AbstractJavascriptMeta",
+    "construct",
+    "appMeta",
+    "getApplicationRoot",
+    "properties",
+    "needsWriteToDisk",
+    "init",
+    "refine",
+    "members",
+    "writeSourceCodeToStream",
+    "ws",
+    "__write",
+    "join",
+    "resolve",
+    "Promise",
+    "write",
+    "srcFilename",
+    "rs",
+    "createReadStream",
+    "reject",
+    "on",
+    "pipe",
+    "end",
+    "getSourceMap",
+    "PolyfillJs"
+  ],
+  "sources": [
+    "/home/andresf/workspace_qooxdoo/qooxdoo/qooxdoo-7.0/source/class/qx/tool/compiler/targets/meta/PolyfillJs.js"
+  ],
+  "sourcesContent": [
+    "/* ************************************************************************\n *\n *    qooxdoo-compiler - node.js based replacement for the Qooxdoo python\n *    toolchain\n *\n *    https://github.com/qooxdoo/qooxdoo-compiler\n *\n *    Copyright:\n *      2011-2021 Zenesis Limited, http://www.zenesis.com\n *\n *    License:\n *      MIT: https://opensource.org/licenses/MIT\n *\n *      This software is provided under the same licensing terms as Qooxdoo,\n *      please see the LICENSE file in the Qooxdoo project's top-level directory\n *      for details.\n *\n *    Authors:\n *      * John Spackman (john.spackman@zenesis.com, @johnspackman)\n *\n * ************************************************************************/\n\nconst fs = qx.tool.utils.Promisify.fs;\nconst path = require(\"upath\");\n\n/**\n * Represents a \"polyfill.js\" that is generated as part of a compile\n */\nqx.Class.define(\"qx.tool.compiler.targets.meta.PolyfillJs\", {\n  extend: qx.tool.compiler.targets.meta.AbstractJavascriptMeta,\n\n  construct(appMeta) {\n    super(appMeta, `${appMeta.getApplicationRoot()}polyfill.js`);\n  },\n\n  properties: {\n    needsWriteToDisk: {\n      init: true,\n      refine: true\n    }\n  },\n\n  members: {\n    /**\n     * @Override\n     */\n    async writeSourceCodeToStream(ws) {\n      await this.__write(\n        path.join(require.resolve(\"core-js-bundle\"), \"../minified.js\"),\n        ws\n      );\n\n      await new Promise(resolve => {\n        ws.write(\"\\n\", resolve);\n      });\n      await this.__write(\n        path.join(require.resolve(\"regenerator-runtime\"), \"../runtime.js\"),\n        ws\n      );\n    },\n\n    async __write(srcFilename, ws) {\n      let rs = fs.createReadStream(srcFilename, \"utf8\");\n      await new Promise((resolve, reject) => {\n        rs.on(\"end\", resolve);\n        rs.on(\"error\", reject);\n        rs.pipe(ws, { end: false });\n      });\n    },\n\n    /**\n     * @Override\n     */\n    async getSourceMap() {\n      return null;\n    }\n  }\n});\n"
+  ],
+  "mappings": ";;;;;;;;;;;;;;;;EAAAA,EAAE,CAACC,SAAH,CAAaC,oBAAb,CAAkCC,aAAlC;;EAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;EAEA,MAAMC,EAAE,GAAGJ,EAAE,CAACK,IAAH,CAAQC,KAAR,CAAcC,SAAd,CAAwBH,EAAnC;;EACA,MAAMI,IAAI,GAAGC,OAAO,CAAC,OAAD,CAApB;EAEA;AACA;AACA;;;EACAT,EAAE,CAACU,KAAH,CAASC,MAAT,CAAgB,0CAAhB,EAA4D;IAC1DC,MAAM,EAAEZ,EAAE,CAACK,IAAH,CAAQQ,QAAR,CAAiBC,OAAjB,CAAyBC,IAAzB,CAA8BC,sBADoB;;IAG1DC,SAAS,CAACC,OAAD,EAAU;MACjB,4EAAMA,OAAN,EAAgB,GAAEA,OAAO,CAACC,kBAAR,EAA6B,aAA/C;IACD,CALyD;;IAO1DC,UAAU,EAAE;MACVC,gBAAgB,EAAE;QAChBC,IAAI,EAAE,IADU;QAEhBC,MAAM,EAAE;MAFQ;IADR,CAP8C;IAc1DC,OAAO,EAAE;MACP;AACJ;AACA;MACI,MAAMC,uBAAN,CAA8BC,EAA9B,EAAkC;QAChC,MAAM,KAAKC,eAAL,CACJnB,IAAI,CAACoB,IAAL,CAAUnB,OAAO,CAACoB,OAAR,CAAgB,gBAAhB,CAAV,EAA6C,gBAA7C,CADI,EAEJH,EAFI,CAAN;QAKA,MAAM,IAAII,OAAJ,CAAYD,OAAO,IAAI;UAC3BH,EAAE,CAACK,KAAH,CAAS,IAAT,EAAeF,OAAf;QACD,CAFK,CAAN;QAGA,MAAM,KAAKF,eAAL,CACJnB,IAAI,CAACoB,IAAL,CAAUnB,OAAO,CAACoB,OAAR,CAAgB,qBAAhB,CAAV,EAAkD,eAAlD,CADI,EAEJH,EAFI,CAAN;MAID,CAjBM;;MAmBP,MAAMC,eAAN,CAAcK,WAAd,EAA2BN,EAA3B,EAA+B;QAC7B,IAAIO,EAAE,GAAG7B,EAAE,CAAC8B,gBAAH,CAAoBF,WAApB,EAAiC,MAAjC,CAAT;QACA,MAAM,IAAIF,OAAJ,CAAY,CAACD,OAAD,EAAUM,MAAV,KAAqB;UACrCF,EAAE,CAACG,EAAH,CAAM,KAAN,EAAaP,OAAb;UACAI,EAAE,CAACG,EAAH,CAAM,OAAN,EAAeD,MAAf;UACAF,EAAE,CAACI,IAAH,CAAQX,EAAR,EAAY;YAAEY,GAAG,EAAE;UAAP,CAAZ;QACD,CAJK,CAAN;MAKD,CA1BM;;MA4BP;AACJ;AACA;MACI,MAAMC,YAAN,GAAqB;QACnB,OAAO,IAAP;MACD;;IAjCM;EAdiD,CAA5D;EA5BAvC,EAAE,CAACK,IAAH,CAAQQ,QAAR,CAAiBC,OAAjB,CAAyBC,IAAzB,CAA8ByB,UAA9B,CAAyCrC,aAAzC,GAAyDA,aAAzD"
+}

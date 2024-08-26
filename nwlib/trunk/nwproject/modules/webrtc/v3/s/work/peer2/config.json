@@ -1,0 +1,95 @@
+{
+    "version": "0.0.0.6",
+    "name": "Ringow App",
+    "short_name": "Ringow Lite",
+    "product_id": 8,
+    "productnw": true,
+    "language": true,
+    "alias": "ringow",
+    "description": "Ringow Chat",
+    "co_creator": "Ringow Chat",
+    "keywords": "Ringow Chat",
+    "start_url": "/",
+    "launch_path": "/",
+    "appcache_path": "/nw.manifest",
+    "fullscreen": "true",
+    "installs_allowed_from": ["*"],
+    "theme_color": "#248ace",
+    "background_color": "#248ace",
+    "display": "standalone",
+    "gcm_sender_id": "736200767364",
+    "orientation": "portrait",
+    "type": "privileged",
+    "default_locale": "es",
+    "icon_install": "/app/nwchat/img/logor1.png",
+    "favicon": "/app/nwchat/img/favicon.ico",
+    "apple-touch-icon": "/app/nwchat/img/apple-touch-icon.png",
+    "icon32x32": "/app/nwchat/img/favicon-32x32.png",
+    "icon16x16": "/app/nwchat/img/favicon-16x16.png",
+    "safari-pinned-tab": "/app/nwchat/img/safari-pinned-tab.svg",
+    "related_applications": [
+        {
+            "platform": "web",
+            "url": "https://ringow.com"
+        },
+        {
+            "platform": "play",
+            "url": "https://play.google.com/store/apps/details?id=com.gruponw.nwchat",
+            "id": "com.gruponw.nwchat"
+        }
+    ],
+    "icons": [
+        {
+            "src": "/app/nwchat/img/android-chrome-72x72.png",
+            "sizes": "72x72",
+            "type": "image/png"
+        }
+    ],
+    "locales": {
+        "es": {
+            "description": "Ringow Chat",
+            "developer": {
+                "url": "https://www.app.ringow.com"
+            }
+        },
+        "en": {
+            "description": "Ringow Chat",
+            "developer": {
+                "url": "https://www.app.ringow.com"
+            }
+        }
+    },
+    "developer": {
+        "name": "Grupo Nw",
+        "url": "https://www.gruponw.com"
+    },
+    "permissions": {
+        "storage": {
+            "description": "Requiere storage",
+            "access": "readcreate"
+        },
+        "geolocation": {
+            "description": "Requiere geolocation",
+            "access": "readcreate"
+        },
+        "backgroundservice": {
+            "description": "Requiere backgroundservice",
+            "access": "readcreate"
+        },
+        "camera": {
+            "description": "Requiere camera",
+            "access": "readcreate"
+        },
+        "desktop-notification": {
+            "description": "Requiere storage desktop-notification",
+            "access": "readcreate"
+        },
+        "power": {
+            "description": "Requiere power",
+            "access": "readcreate"
+        },
+        "alarms": {
+            "description": "Required to schedule notifications"
+        }
+    }
+}

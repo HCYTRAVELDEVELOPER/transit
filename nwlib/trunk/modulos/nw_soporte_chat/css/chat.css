@@ -1,0 +1,59 @@
+body{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    font-size: 12px;
+}
+.contend_chat_log{
+
+}
+.contend_chat_log h1{
+    font-size: 14px;
+    font-weight: lighter;
+}
+.enc_log{
+    padding: 10px;
+    background: #DDDDDD;
+    box-shadow: 0px 0px 5px;
+    margin: 0px;
+    overflow: hidden;
+}
+.img_log_enc{
+    position: relative;
+    float: left;
+    margin: 0px 10px 0 0px;
+    max-height: 130px;
+}
+#pasa_form{
+    padding: 15px;
+    background: #f1f1f1;
+    border: 1px solid #D1D1D1;
+    margin: 15px;
+    color: #555;
+}
+#pasa_form input {
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 2px;
+    padding: 10px;
+    width: 80%;
+}
+#pasa_form p {
+    font-size: 12px;
+}
+.submit_input{
+    background: #0072ce;
+    color: #fff;
+    margin-top: 10px;
+    font-weight: bold;
+    max-width: 150px;
+}
+table {
+    position: relative;
+    border-collapse: collapse;
+    margin: auto;
+    width: 100%;
+}
+#pasa_form table {
+    max-width: 400px;    
+}

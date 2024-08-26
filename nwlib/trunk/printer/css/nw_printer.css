@@ -1,0 +1,20 @@
+/* 
+    Document   : nw_printer
+    Created on : 9/01/2014, 11:32:39 PM
+    Author     : andresf
+    Description:
+        Purpose of the stylesheet follows.
+
+@page {
+    size: landscape
+}
+*/
+body { 
+    display: block
+}
+
+@media print {
+    .orphans     {
+        orphans: 5;
+    }
+}

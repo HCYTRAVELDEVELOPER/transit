@@ -1,0 +1,176 @@
+/* 
+    Document   : style_nwtask
+    Created on : Oct 5, 2016, 6:49:12 PM
+    Author     : root
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.container-main-left-nwtask {
+
+}
+.container-main-center-nwtask{
+    position: relative;
+    max-width: 700px;
+    box-shadow: none;
+    background: transparent;
+}
+.f_muro_publico{
+    background: #fff;
+    border: 1px solid #dfe0e4;
+    margin: 20px 0;
+}
+.l_muro_publico {
+
+}
+.l_muro_publico .colsMobil{
+    background: #fff;
+    border: 1px solid #dfe0e4;
+    margin: 10px 0px;
+    width: auto;
+    float: none;
+    height: auto;
+    max-height: initial;
+    padding: 0px;
+}
+.l_muro_publico .colMobil{
+    padding: 0 10px!important;
+}
+.container-main-right-nwtask{
+
+}
+#nwform select {
+    padding: 7px 10px!important;
+    background: rgb(248, 248, 248)!important;
+    border: 1px solid rgb(221, 221, 221)!important;
+    box-shadow: none;
+}
+#nwform textarea {
+    padding: 7px 10px!important;
+    border: 1px solid rgb(221, 221, 221)!important;
+    box-shadow: none;  
+}
+.subtitles_bloques{
+    margin: 10px 0;
+    position: relative;
+    padding: 10px;
+}
+
+.chats_conversations{
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid rgb(223, 224, 228);
+    margin: 5px 0;
+    padding: 5px;
+    border-left: 0;
+    border-right: 0;
+}
+.photo{
+    position: relative;
+    width: 40px;
+    height: 45px;
+    float: left;
+    margin: 5px 5px 0px 0px;
+    overflow: hidden;
+    border-radius: 3px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.chats_conversations .usuario {
+    margin: 5px 0;
+    padding: 0;
+    font-weight: bold;
+}
+.message_all{
+    position: relative;
+    overflow: hidden;
+    float: left;
+    max-width: 70%;
+    max-width: 220px;
+}
+.message_only{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    word-break: break-word;
+}
+.usuario{
+}
+.mensaje_muro{
+    padding: 0!important;
+    margin: 0!important;
+}
+.fecha_conversation{
+    padding: 0!important;
+    color: #a7a7a7;
+    font-size: 10px;
+}
+.listParticipantes{
+    margin-bottom: 30px;
+}
+.name_menu_li {
+    margin: 7px 0px 5px 40px;
+}
+.container-comments-task{
+    position: relative;
+    margin: 0;
+    background: #f7f7f7;
+    border-top: 1px solid #ecedef;
+    -moz-border-radius: 0 0 2px 2px;
+    border-radius: 0 0 2px 2px;
+}
+.containers-row-comments-task{
+    position: relative;
+    margin: 5px;
+    padding: 2px 1px;
+}
+.comentarios_task{
+    margin: 4px 7px!important;
+    font-weight: bold;
+    display: block;
+}
+.row-descripcion-comment{
+    position: relative;
+    display: inline-block;
+    margin-left: 6px;
+}
+.username-comment-task{
+    position: relative;
+    font-weight: bold;
+    color: rgb(76, 125, 200);
+    font-size: 13px;
+}
+.photouser-comment-task{
+    position: relative;
+    display: inline-block;
+    width: 35px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    cursor: pointer;
+}
+.row-others-comment{
+    color: #9b9b9b;
+    font-size: 11px;
+}
+.adjunto_comment_task{
+    color: #3daebd;
+    margin: 5px;
+    font-weight: bold;
+}
+.like-comment-wall{
+    color: #4c7dcd;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+@media screen and (max-width: 900px) {
+    .containFileDir, .menuDashBoard, .loadModulesHome {
+        margin: 0;
+        padding: 0;
+    }
+}

@@ -1,0 +1,37 @@
+{
+  "version": 3,
+  "names": [
+    "qx",
+    "Bootstrap",
+    "executePendingDefers",
+    "$$dbClassInfo",
+    "Class",
+    "define",
+    "extend",
+    "tool",
+    "cli",
+    "commands",
+    "Package",
+    "statics",
+    "getYargsCommand",
+    "command",
+    "desc",
+    "builder",
+    "yargs",
+    "Cli",
+    "addYargsCommands",
+    "demandCommand",
+    "showHelpOnFail",
+    "help",
+    "handler",
+    "argv",
+    "Pkg"
+  ],
+  "sources": [
+    "/home/andresf/workspace_qooxdoo/qooxdoo/qooxdoo-7.0/source/class/qx/tool/cli/commands/Pkg.js"
+  ],
+  "sourcesContent": [
+    "/* ************************************************************************\n\n   qooxdoo - the new era of web development\n\n   http://qooxdoo.org\n\n   Copyright:\n     2017 Christian Boulanger\n\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n\n   Authors:\n     * Christian Boulanger (info@bibliograph.org, @cboulanger)\n\n************************************************************************ */\n/**\n * \"qx pkg\" is an alias for \"qx package\"\n */\nqx.Class.define(\"qx.tool.cli.commands.Pkg\", {\n  extend: qx.tool.cli.commands.Package,\n  statics: {\n    /**\n     * The yargs command data\n     * @return {{}}\n     */\n    getYargsCommand() {\n      return {\n        command: \"pkg <command> [options]\",\n        desc: \"alias for 'qx package'\",\n        builder(yargs) {\n          qx.tool.cli.Cli.addYargsCommands(\n            yargs,\n            [\n              \"Install\",\n              \"List\",\n              \"Publish\",\n              \"Remove\",\n              \"Update\",\n              \"Upgrade\",\n              \"Migrate\"\n            ],\n\n            \"qx.tool.cli.commands.package\"\n          );\n\n          return yargs.demandCommand().showHelpOnFail().help();\n        },\n        handler(argv) {\n          // Nothing\n        }\n      };\n    }\n  }\n});\n"
+  ],
+  "mappings": ";;;;;;;;;;;;;EAAAA,EAAE,CAACC,SAAH,CAAaC,oBAAb,CAAkCC,aAAlC;;EAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;;EACA;AACA;AACA;EACAH,EAAE,CAACI,KAAH,CAASC,MAAT,CAAgB,0BAAhB,EAA4C;IAC1CC,MAAM,EAAEN,EAAE,CAACO,IAAH,CAAQC,GAAR,CAAYC,QAAZ,CAAqBC,OADa;IAE1CC,OAAO,EAAE;MACP;AACJ;AACA;AACA;MACIC,eAAe,GAAG;QAChB,OAAO;UACLC,OAAO,EAAE,yBADJ;UAELC,IAAI,EAAE,wBAFD;;UAGLC,OAAO,CAACC,KAAD,EAAQ;YACbhB,EAAE,CAACO,IAAH,CAAQC,GAAR,CAAYS,GAAZ,CAAgBC,gBAAhB,CACEF,KADF,EAEE,CACE,SADF,EAEE,MAFF,EAGE,SAHF,EAIE,QAJF,EAKE,QALF,EAME,SANF,EAOE,SAPF,CAFF,EAYE,8BAZF;YAeA,OAAOA,KAAK,CAACG,aAAN,GAAsBC,cAAtB,GAAuCC,IAAvC,EAAP;UACD,CApBI;;UAqBLC,OAAO,CAACC,IAAD,EAAO,CACZ;UACD;;QAvBI,CAAP;MAyBD;;IA/BM;EAFiC,CAA5C;EApBAvB,EAAE,CAACO,IAAH,CAAQC,GAAR,CAAYC,QAAZ,CAAqBe,GAArB,CAAyBrB,aAAzB,GAAyCA,aAAzC"
+}

@@ -1,0 +1,40 @@
+{
+  "version": 3,
+  "names": [
+    "qx",
+    "Bootstrap",
+    "executePendingDefers",
+    "$$dbClassInfo",
+    "Class",
+    "define",
+    "extend",
+    "core",
+    "Object",
+    "type",
+    "members",
+    "parseCommand",
+    "pdoc",
+    "classname",
+    "analyser",
+    "Error",
+    "resolveType",
+    "pos",
+    "indexOf",
+    "lastIndexOf",
+    "pkg",
+    "substring",
+    "match",
+    "getCachedClassInfo",
+    "tool",
+    "compiler",
+    "jsdoc",
+    "CommandParser"
+  ],
+  "sources": [
+    "/home/andresf/workspace_qooxdoo/qooxdoo/qooxdoo-7.0/source/class/qx/tool/compiler/jsdoc/CommandParser.js"
+  ],
+  "sourcesContent": [
+    "/* ************************************************************************\n *\n *    qooxdoo-compiler - node.js based replacement for the Qooxdoo python\n *    toolchain\n *\n *    https://github.com/qooxdoo/qooxdoo\n *\n *    Copyright:\n *      2011-2017 Zenesis Limited, http://www.zenesis.com\n *\n *    License:\n *      MIT: https://opensource.org/licenses/MIT\n *\n *      This software is provided under the same licensing terms as Qooxdoo,\n *      please see the LICENSE file in the Qooxdoo project's top-level directory\n *      for details.\n *\n *    Authors:\n *      * John Spackman (john.spackman@zenesis.com, @johnspackman)\n *\n * *********************************************************************** */\n\n/**\n * Abstract base class for JSDoc command parsers\n */\nqx.Class.define(\"qx.tool.compiler.jsdoc.CommandParser\", {\n  extend: qx.core.Object,\n  type: \"abstract\",\n\n  members: {\n    parseCommand(pdoc, classname, analyser) {\n      throw new Error(\n        \"No implementation for \" + this.classname + \".parseCommand\"\n      );\n    },\n\n    resolveType(type, classname, analyser) {\n      if (type) {\n        var pos = type.indexOf(\".\");\n        if (pos < 0) {\n          pos = classname.lastIndexOf(\".\");\n          if (pos > -1) {\n            var pkg = classname.substring(0, pos + 1);\n            if (analyser) {\n              var match = analyser.getCachedClassInfo(pkg + type);\n              if (match) {\n                return pkg + type;\n              }\n            }\n          }\n        }\n      }\n      return type;\n    }\n  }\n});\n"
+  ],
+  "mappings": ";;;;;;;;;;;;EAAAA,EAAE,CAACC,SAAH,CAAaC,oBAAb,CAAkCC,aAAlC;;EAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;;EAEA;AACA;AACA;EACAH,EAAE,CAACI,KAAH,CAASC,MAAT,CAAgB,sCAAhB,EAAwD;IACtDC,MAAM,EAAEN,EAAE,CAACO,IAAH,CAAQC,MADsC;IAEtDC,IAAI,EAAE,UAFgD;IAItDC,OAAO,EAAE;MACPC,YAAY,CAACC,IAAD,EAAOC,SAAP,EAAkBC,QAAlB,EAA4B;QACtC,MAAM,IAAIC,KAAJ,CACJ,2BAA2B,KAAKF,SAAhC,GAA4C,eADxC,CAAN;MAGD,CALM;;MAOPG,WAAW,CAACP,IAAD,EAAOI,SAAP,EAAkBC,QAAlB,EAA4B;QACrC,IAAIL,IAAJ,EAAU;UACR,IAAIQ,GAAG,GAAGR,IAAI,CAACS,OAAL,CAAa,GAAb,CAAV;;UACA,IAAID,GAAG,GAAG,CAAV,EAAa;YACXA,GAAG,GAAGJ,SAAS,CAACM,WAAV,CAAsB,GAAtB,CAAN;;YACA,IAAIF,GAAG,GAAG,CAAC,CAAX,EAAc;cACZ,IAAIG,GAAG,GAAGP,SAAS,CAACQ,SAAV,CAAoB,CAApB,EAAuBJ,GAAG,GAAG,CAA7B,CAAV;;cACA,IAAIH,QAAJ,EAAc;gBACZ,IAAIQ,KAAK,GAAGR,QAAQ,CAACS,kBAAT,CAA4BH,GAAG,GAAGX,IAAlC,CAAZ;;gBACA,IAAIa,KAAJ,EAAW;kBACT,OAAOF,GAAG,GAAGX,IAAb;gBACD;cACF;YACF;UACF;QACF;;QACD,OAAOA,IAAP;MACD;;IAxBM;EAJ6C,CAAxD;EAzBAT,EAAE,CAACwB,IAAH,CAAQC,QAAR,CAAiBC,KAAjB,CAAuBC,aAAvB,CAAqCxB,aAArC,GAAqDA,aAArD"
+}

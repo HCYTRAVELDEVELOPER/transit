@@ -1,0 +1,435 @@
+/* 
+    Document   : media
+    Created on : Jan 31, 2016, 11:23:40 PM
+    Author     : alexf
+*/
+/*************************CONTAINERS MOBILE******************************/
+.containerCenter{
+    width: 100%;
+}
+/*************************MENU MOBILE******************************/
+.encMenuMobile{
+    position: fixed;
+    top: 0px;
+    right: 0;
+    width: 100%;
+    height: 30px;
+    z-index: 1000000000;
+    border-bottom: 1px solid #d7d7d7;
+}
+.menMovilButtonNwm {
+    position: relative;
+    right: 0;
+    width: 55px;
+    height: 45px;
+    padding: 0;
+    z-index: 10000000;
+    cursor: pointer;
+    float: left;
+}
+.movilEquisNwmaker {
+    border-bottom: 2px solid #727272;
+    position: relative;
+    color: transparent;
+    height: 5px;
+    font-size: 0px;
+    width: 50%;
+    display: block;
+    margin: auto;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.movilEquisNwmaker1{
+    margin-top: 6px;    
+}
+.menuEquisNwmaker1 {
+    transform: rotate(50deg);
+    border-top: 0;
+    top: 11px;
+    left: 10px;
+}
+.menuEquisNwmaker2 {
+    transform: rotate(-50deg);
+    top: 5px;
+    left: 5px;
+}
+.buttonEncMobile{
+    position: relative;
+    float: left;
+    height: 100%;
+    width: 40px;
+    margin: 0 5px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.menu_inside_movshowNwMaker{
+    transform: translate3d(0px,0px,0px)!important;
+}
+.colsMobil_show_menu{
+    display: block;  
+}
+/**************************************INICIA SE AGREGA PARA MOSTRAR LISTADO EN PC ***********************/
+.showRowMax .menuList span{
+    background: #fff;
+}
+.newContainerInRow .menuList span{
+    background: #717171;
+}
+.showRowMax{
+    top: 10%;
+    left: 10%;
+    z-index: 100000000!important;
+    opacity: 1;
+    display: block;
+    visibility: visible;
+    width: 100%!important;
+    height: 80%!important;
+    background: #fff;
+    background: transparent;
+    overflow: inherit;
+    max-height: inherit!important;
+    left: 104%;
+    top: 0px;
+    height: auto!important;
+    margin: 0!important;
+    padding: 0!important;
+    float: none!important;
+    top: -140px!important;
+    max-width: 1200px;
+    position: fixed;
+    position: absolute;
+    margin: auto!important;
+}
+.colsMenuInWindowSlide{
+    position: absolute;
+    top: 0;
+    z-index: 10000;   
+}
+.colsMenuInWindowSlide span{
+    background: #fff;
+    width: 4px;
+    height: 4px;
+}
+.colsMobil{
+    max-height: 50px;
+}
+/**************************************FINALIZA SE AGREGA PARA MOSTRAR LISTADO EN PC ***********************/
+@media screen and (max-width: 900px) {
+    .container-treen_left, .container-treen_rigth{
+        position: absolute;
+    }
+    .container-treen_rigth{
+        min-width: auto;
+        margin-left: 0px;
+    }
+    .container-nwmakerchat #chats, .container-nwmakerchat #contactos, .container-nwmakerchat #llamadas {
+        font-weight: bold;
+        width: 100%;
+        padding: 8px;
+        font-size: 13px;
+        border-radius: 0;
+    }
+    .bgUserEncShow{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 100000000;
+        display: block;
+    }
+    .menuMain li {
+        color: #fff!important;
+    }
+    .infoUserFloatEnc li {
+        color: #000!important;
+    }
+    .selectedMenuLeft {
+        border: 0!important;
+        box-shadow: none!important;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.31)!important;
+    }
+    .buttonEncMobile{
+        margin: 0px 5px;
+        width: 40px;
+    }
+    .logotipoMain img {
+        width: 100%;
+        height: auto;
+    }
+    #div_buscar_nw{
+        display: none;
+    }
+    .encMenuMobile{
+        /*height: auto!important;*/
+        position: relative;
+    }
+    .container_formall{
+        width: auto!important;
+    }
+    .namedColMob {
+        font-weight: bold;
+        margin-right: 3px;
+        text-transform: capitalize;
+        display: inline;
+        display: block;
+    }
+    .namedColMobFirst {
+        display: none;
+    }
+    #nwform {
+        padding: 0;
+    }
+    .loadModulosCenter, .loadMenuModules{
+        margin: 5px;
+    }
+    .loadModulosCenter{
+        /*left:  100%;*/
+    }
+    .loadModulosCenterShow{  
+        left: 0px;
+    }
+    .liMenuDash {
+        width: 40%;
+        margin: 5px;
+    }
+    .loadModulesHome{
+        padding: 5px;
+        margin: 0px;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    .loadModulesUnitary{
+        float: none;
+        margin: 0px;
+        min-width: inherit;
+    }
+    .containerLeft{
+        height: 100%!important;
+        top: 0!important;
+        background-color: #2c2d32;
+        transform: translate3d(-100%,0px,0px);
+        left: 0;
+    }
+    .menuLeftModules {
+        border: 0!important;
+        margin: 10px!important;
+    }
+    .containInfoAccountEnc {
+        width: 100%;
+        position: fixed;
+    }
+    .menuDashBoard {
+        width: auto!important;
+        float: none!important;
+        margin: 15px 0;
+    }
+    body {
+        overflow-x: hidden!important;
+    }
+    .container-treen_left{
+        left: 0px;
+    }
+    .container-treen_rigth{
+        left: 150%;
+    }
+    .container-treen_left, .container-treen_rigth{
+        float: none;
+        width: 100%!important;
+        margin: 10px 0;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+    .backIntreeNw{
+        display: block;
+        position: absolute;
+        top: 6px;
+        right: 10px;
+    }
+    .backIntreeNwForm{
+        top: 0;
+        position: relative;
+        width: auto;
+        display: inline-block;
+    }
+    .hiddenMenuCenter {
+        transform: translate3d(-100%,0px,0px);
+    }
+    .pColsIntList{
+        margin: 0px 0px 0px 2px;
+        padding: 10px 5px 3px 8px;
+    }
+    .childrenValuesList{
+        font-size: 12px;
+        padding: 0;
+        border: 0;
+        text-align: left;
+        border-radius: 0;
+        display: block;
+        font-weight: lighter;
+        height: auto;
+    }
+    .nw_dialog_intern {
+        width: auto!important;
+        padding: 0!important;
+    }
+    .moveWindowSlideFormAbs{
+        left: -180%;
+    }
+    .moveWindowSlideFormContainer{
+        left: 0%;
+        position: fixed;
+        top: 0px;
+        height: 100%;
+        overflow-y: auto;
+        z-index: 1000000000000;
+    }
+    .noOverflow{
+        overflow: hidden!important;
+    }
+    .showRowMax{
+        position: fixed;
+        top: 0!important;
+        left: 0;
+        z-index: 10000000000000000!important;
+        opacity: 1;
+        display: block;
+        visibility: visible;
+        width: 100%!important;
+        height: 100%!important;
+        background: #fbfbfb;
+        overflow: auto;
+        max-height: inherit!important;
+    }
+    .barraEncWindowSlide{
+        position: relative;
+        background: rgba(77, 144, 253, 0.82);
+        color: #fff;
+        padding: 7px;
+        max-width: 100%;
+        float: none;
+        padding-left: 15px;
+    }
+    .colsMenuInWindowSlide{
+        position: absolute;
+        top: 0;
+        z-index: 10000;   
+    }
+    .colsMenuInWindowSlide span{
+        background: #fff;
+        width: 4px;
+        height: 4px;
+    }
+    .menuMain li, .separatorsLeftUser {
+        font-size: 13px;
+    }
+    .containNwChat {
+        margin: 0!important;
+    }
+    .titleEncNwChat {
+        z-index: 4!important;
+    }
+    .newContainerInRow {
+        float: none!important;
+        width: auto!important;
+        margin: 5px!important;
+    }
+    .startGroupVertical{
+        width: auto;
+        float: none;
+        border: 1px solid #dfdfdf;
+        margin: 10px 0;
+        background: #f9f9f9;
+    }
+    .footerToolsOpen {
+        right: auto;
+        z-index: 21474836471;
+    }
+    .dialog_classMobile .nwformFoot{
+        position: absolute!important;
+    }
+    .dialog_classMobile .nwformFootIntern {
+        padding: 0;
+    }
+    .btnm_news_span{
+        margin: 0;
+        border-radius: 0;
+        padding: 8px 5px;
+    }
+    .menMovilButtonNwm_pcnormal{
+        display: block;
+    }
+    .hiddenShowLeftMenu{
+        display: none!important;
+    }
+    body .containerCenter{
+        padding: 0;
+        margin: auto;
+    }
+    body .containerCenter_pcnormal {
+        left: auto;
+    }
+    body .encMenuMobile .logotipoMain {
+        margin: 0;
+    }
+
+    .containInfoNotifications{
+        width: 100%;
+        position: fixed;
+        box-sizing: border-box;
+        margin: auto;
+        height: 100%;
+        max-height: 100%;
+        top: 39px;
+    }
+    .containCloseNotifyMobile {
+        display: block;
+        text-align: center;
+        position: fixed;
+        top: 0;
+        background-color: #fff;
+        width: 100%;
+        left: 0;
+        height: 40px;
+        z-index: 1000000000;
+    }
+    .containCloseNotifyMobile .closeNotMob{
+        font-size: 3em;
+        cursor: pointer;
+    }
+    .f_perfil_user_2019 .imagen,
+    .f_perfil_user_2019 .datos_basicos
+    {
+        width: 100%;
+        margin: auto;
+        box-sizing: border-box;
+    }
+    .f_perfil_user_2019 .footerButtonsNwForms{
+        display: flex;
+        flex-direction: column;
+    }
+    .f_perfil_user_2019 .footerButtonsNwForms .ui-button{
+        margin: 5px 0px;
+    }
+}
+@media screen and (max-width: 620px) {
+    .containerLeft {
+        width: 80%!important;
+    }
+    .ui-resizable-handle{
+        display: none!important;
+    }
+}
+@media screen and (max-width: 520px) {
+    body .encMenuMobile .logotipoMain {
+        max-width: 50px;
+        margin: 0;
+    }
+}

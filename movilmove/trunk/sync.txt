@@ -1,0 +1,6 @@
+ultravans.movilmove.com ultravans/html release-1.3.0 netwoods_sao_paulo.pem ubuntu
+transdal.movilmove.com transdal/html release-1.3.0 netwoods_sao_paulo.pem ubuntu
+app.movilmove.com movilmove/html release-1.3.0 netwoods_sao_paulo.pem ubuntu
+limocars.gruponw.com limocars/html release-1.3.6 netwoods_sao_paulo.pem ubuntu
+transprotours.gruponw.com transprotours/html release-1.3.0 netwoods_sao_paulo.pem ubuntu
+rmovil.gruponw.com rmovil/html release-1.3.0 netwoods_sao_paulo.pem ubuntu

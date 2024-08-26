@@ -1,0 +1,43 @@
+/* 
+    Document   : frame
+    Created on : Apr 5, 2016, 10:58:36 PM
+    Author     : alexf
+    Description:
+        Purpose of the stylesheet follows.
+*/
+.nw_col_right, .nw_dateContainer, .qx-tabview-page-button-top-inactive {
+    display: none!important;
+}
+div, body {
+    background-color: transparent!important;
+    font-size: 13px!important;
+    color: #504D4D!important;
+}
+.qx-window-pane {
+    background: #FFF!important;
+}
+.qx-splitpane, .nw_verticalLayout {
+    background: transparent!important;
+}
+.qx-tabview-pane {
+
+}
+.qx-table-scroller-header {
+    border: 1px solid #BAC4CB!important;
+    background: #F1F5F6!important;
+    font-weight: 600;
+}
+.qx-table-header-cell {
+    border-right: 1px solid #BAC4CB!important;
+}
+.qooxdoo-table-cell {
+    border-right: transparent!important;
+    padding: 1px 7px!important;
+}
+.qx-tabview-page-button-top-active {
+    left: 0!important;
+    display: none;
+}
+.nw_MainWindow {
+    left: 0!important;
+}

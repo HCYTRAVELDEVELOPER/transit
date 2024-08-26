@@ -1,0 +1,16 @@
+/* 
+    Document   : recoverPass
+    Created on : May 10, 2016, 12:19:55 PM
+    Author     : alexf
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.containRecoverPass{
+    position: relative;
+    margin: 30px auto;
+    max-width: 1000px;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}

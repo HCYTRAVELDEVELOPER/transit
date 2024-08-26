@@ -1,0 +1,53 @@
+{
+  "version": 3,
+  "names": [
+    "qx",
+    "Bootstrap",
+    "executePendingDefers",
+    "$$dbClassInfo",
+    "path",
+    "require",
+    "fs",
+    "Class",
+    "define",
+    "extend",
+    "core",
+    "Object",
+    "properties",
+    "rootDir",
+    "check",
+    "nullable",
+    "configuration",
+    "init",
+    "members",
+    "load",
+    "getConfiguration",
+    "initialize",
+    "module",
+    "mod",
+    "join",
+    "process",
+    "cwd",
+    "existsSync",
+    "mkdirSync",
+    "exists",
+    "loadNpmModule",
+    "execSync",
+    "s",
+    "tool",
+    "compiler",
+    "Console",
+    "info",
+    "stdio",
+    "cli",
+    "api",
+    "AbstractApi"
+  ],
+  "sources": [
+    "/home/andresf/workspace_qooxdoo/qooxdoo/qooxdoo-7.0/source/class/qx/tool/cli/api/AbstractApi.js"
+  ],
+  "sourcesContent": [
+    "/* ************************************************************************\n *\n *    qooxdoo-compiler - node.js based replacement for the Qooxdoo python\n *    toolchain\n *\n *    https://github.com/qooxdoo/qooxdoo\n *\n *    Copyright:\n *      2011-2019 Zenesis Limited, http://www.zenesis.com\n *\n *    License:\n *      MIT: https://opensource.org/licenses/MIT\n *\n *      This software is provided under the same licensing terms as Qooxdoo,\n *      please see the LICENSE file in the Qooxdoo project's top-level directory\n *      for details.\n *\n *    Authors:\n *      * John Spackman (john.spackman@zenesis.com, @johnspackman)\n *\n * *********************************************************************** */\nconst path = require(\"path\");\nconst fs = require(\"fs\");\n\n/**\n * Base class for the compiler API classes\n */\nqx.Class.define(\"qx.tool.cli.api.AbstractApi\", {\n  extend: qx.core.Object,\n\n  properties: {\n    rootDir: {\n      check: \"String\",\n      nullable: false\n    },\n\n    /** Configuration data for the compiler */\n    configuration: {\n      init: {}\n    }\n  },\n\n  members: {\n    /**\n     * Loads the configuration\n     *\n     * @return {Map} configuration data\n     */\n    async load() {\n      return this.getConfiguration();\n    },\n\n    /**\n     * Called by the compiler API during initialisation - this is an ideal\n     * place to install additional commands, because a command has not yet\n     * been selected\n     */\n    async initialize() {\n      // Nothing\n    },\n\n    /**\n     *\n     * helper to load an npm module. Check if it can be loaded before\n     * If not install the module with 'npm install --no-save --no-package-lock' to the current library\n     *\n     * @param module {String} module to check\n     */\n    require(module) {\n      let mod = path.join(process.cwd(), \"node_modules\");\n      if (!fs.existsSync(mod)) {\n        fs.mkdirSync(mod);\n      }\n      mod = path.join(mod, module);\n      let exists = fs.existsSync(mod);\n      if (!exists) {\n        this.loadNpmModule(module);\n      }\n      return require(mod);\n    },\n    /**\n     *\n     * install an npm module with 'npm install --no-save --no-package-lock' to the current library\n     *\n     * @param module {String} module to load\n     */\n    loadNpmModule(module) {\n      const { execSync } = require(\"child_process\");\n      // since npm 7 --no-save deletes the node_modules folder\n      // see https://github.com/npm/cli/pull/3907\n//       let s = `npm install --no-save --no-package-lock ${module}`;\n      let s = `npm install --no-package-lock ${module}`;\n      qx.tool.compiler.Console.info(s);\n      execSync(s, {\n        stdio: \"inherit\"\n      });\n    }\n  }\n});\n"
+  ],
+  "mappings": ";;;;;;;;;;;;;EAAAA,EAAE,CAACC,SAAH,CAAaC,oBAAb,CAAkCC,aAAlC;;EAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;EACA,MAAMC,IAAI,GAAGC,OAAO,CAAC,MAAD,CAApB;;EACA,MAAMC,EAAE,GAAGD,OAAO,CAAC,IAAD,CAAlB;EAEA;AACA;AACA;;;EACAL,EAAE,CAACO,KAAH,CAASC,MAAT,CAAgB,6BAAhB,EAA+C;IAC7CC,MAAM,EAAET,EAAE,CAACU,IAAH,CAAQC,MAD6B;IAG7CC,UAAU,EAAE;MACVC,OAAO,EAAE;QACPC,KAAK,EAAE,QADA;QAEPC,QAAQ,EAAE;MAFH,CADC;;MAMV;MACAC,aAAa,EAAE;QACbC,IAAI,EAAE;MADO;IAPL,CAHiC;IAe7CC,OAAO,EAAE;MACP;AACJ;AACA;AACA;AACA;MACI,MAAMC,IAAN,GAAa;QACX,OAAO,KAAKC,gBAAL,EAAP;MACD,CARM;;MAUP;AACJ;AACA;AACA;AACA;MACI,MAAMC,UAAN,GAAmB,CACjB;MACD,CAjBM;;MAmBP;AACJ;AACA;AACA;AACA;AACA;AACA;MACIhB,OAAO,CAACiB,MAAD,EAAS;QACd,IAAIC,GAAG,GAAGnB,IAAI,CAACoB,IAAL,CAAUC,OAAO,CAACC,GAAR,EAAV,EAAyB,cAAzB,CAAV;;QACA,IAAI,CAACpB,EAAE,CAACqB,UAAH,CAAcJ,GAAd,CAAL,EAAyB;UACvBjB,EAAE,CAACsB,SAAH,CAAaL,GAAb;QACD;;QACDA,GAAG,GAAGnB,IAAI,CAACoB,IAAL,CAAUD,GAAV,EAAeD,MAAf,CAAN;QACA,IAAIO,MAAM,GAAGvB,EAAE,CAACqB,UAAH,CAAcJ,GAAd,CAAb;;QACA,IAAI,CAACM,MAAL,EAAa;UACX,KAAKC,aAAL,CAAmBR,MAAnB;QACD;;QACD,OAAOjB,OAAO,CAACkB,GAAD,CAAd;MACD,CArCM;;MAsCP;AACJ;AACA;AACA;AACA;AACA;MACIO,aAAa,CAACR,MAAD,EAAS;QACpB,MAAM;UAAES;QAAF,IAAe1B,OAAO,CAAC,eAAD,CAA5B,CADoB,CAEpB;QACA;QACN;;;QACM,IAAI2B,CAAC,GAAI,iCAAgCV,MAAO,EAAhD;QACAtB,EAAE,CAACiC,IAAH,CAAQC,QAAR,CAAiBC,OAAjB,CAAyBC,IAAzB,CAA8BJ,CAA9B;QACAD,QAAQ,CAACC,CAAD,EAAI;UACVK,KAAK,EAAE;QADG,CAAJ,CAAR;MAGD;;IAtDM;EAfoC,CAA/C;EA3BArC,EAAE,CAACiC,IAAH,CAAQK,GAAR,CAAYC,GAAZ,CAAgBC,WAAhB,CAA4BrC,aAA5B,GAA4CA,aAA5C"
+}

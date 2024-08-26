@@ -1,0 +1,838 @@
+.contextmenu{
+    position: absolute;
+    z-index: 100000000000000000;
+    background: #F5F5F5;
+    width: auto;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    display: block;
+    color: #343434;
+    font-weight: lighter;
+    font-size: 12px;
+    overflow: hidden;
+}
+.contextmenuIntern{
+    position: relative;
+    padding: 10px;
+}
+.contextmenuButtons{
+    position: relative;
+    padding: 5px;
+    cursor: pointer;
+}
+.contextmenu h3{
+    position: relative;
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+    font-size: 12px;
+}
+.capaRecortada{
+    background-color: rgba(0, 255, 226, 0.39);
+    /*z-index: 100000;*/
+}
+.capaRecortadaBloque{
+
+}
+.divBloqueado{
+    pointer-events: none;
+    opacity: 0.8;
+}
+.buttonAddaCapa{
+    top: 93px;
+}
+.buttonBloquear{
+    top: 75px;
+}
+.circleNw{
+    border-radius: 50%;    
+}
+.cuadroRedondoNw{
+    border-radius: 10%;
+}
+.button_controls{
+    width: 50px;
+}
+.fotogramaLineTime{
+    position: absolute;
+    width: 2px;
+    height: 18px;
+    background: firebrick;
+    top: 10px;
+    /* border-radius: 50%; */
+    margin-top: 4px; 
+    /* margin-left: 200px; */
+}
+.fotogramaLineTimeGrant{
+    z-index: 1000000000000000000;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: rgb(239, 255, 0);
+}
+.rastroOne{
+    position: absolute;
+    /*position: fixed;*/
+    background: transparent;
+    width: 30px;
+    height: 0px;
+    z-index: 100000000;
+    /*    top: 80px;
+        left: 400px;*/
+    border-bottom: 1px dotted red; /* IE 9 */      /* Chrome, Safari, Opera */      /* IE 9 */      /* Chrome, Safari, Opera */     
+    -ms-transform: rotate(45deg); /* IE 9 */     -ms-transform-origin: 20% 40%; /* IE 9 */     -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */     -webkit-transform-origin: 20% 40%; /* Chrome, Safari, Opera */     
+    transform: rotate(0deg);     
+    -webkit-transform:rotate(0deg);
+    -o-transform:rotate(0deg);
+    -ms-transform:rotate(0deg);
+    -moz-transform:rotate(120deg); 
+    -moz-transform:skewx(25deg) translatex(150px);
+    progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+    transform-origin: 0% 0%;
+}
+.buttonPlay{
+    position: fixed;
+    top: 4px;
+    right: 70px;
+    z-index: 100000;
+    width: 50px;
+    text-decoration: none;
+}
+.buttonActualizar{
+    position: fixed;
+    top: 4px;
+    right: 140px;
+    z-index: 100000;
+    width: 50px;
+    text-decoration: none;
+}
+.container_left{
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 5%;
+    background: #333;
+    z-index: 100000;
+    top: 0;
+    left: 0;
+}
+.encOptions{
+    position: fixed;
+    top: 0;
+    left: 200px;
+    width: 100%;
+    height: 30px;
+    /*background: #000;*/
+    display: none;
+    color: #fff;
+    z-index: 10;
+}
+.encOptions input {
+    position: relative;
+    width: 50px;
+    text-align: center;
+}
+.tr_img_prop{
+    max-width: 250px;
+    overflow: auto;
+    min-width: 250px;
+}
+#form {
+
+}
+#form input {
+    position: relative;
+    max-width: 100px;
+}
+#form label {
+    position: relative;
+    display: block;
+}
+#form td {
+
+}
+.name_input_edit{
+    max-width: 100%!important;
+    min-width: 100%;
+    height: 150px;
+}
+.movimientosTest{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: rgba(237, 126, 0, 0.13);
+    margin: 80px 100px;
+    display: -webkit-inline-box;
+    border-bottom: 20px solid rgba(237, 126, 0, 0.13);
+}
+.movimientosPuntos{
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: red;
+    /*    position: relative;
+        display: table-caption;*/
+}
+
+.encOptions ul {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.encOptions li {
+    position: relative;
+    margin: 5px;
+    padding: 1px 5px;
+    list-style: none;
+    float: left;
+    border-left: 1px solid #373737;
+}
+.cerrarAnimationStart{
+
+}
+.capas{
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    /*    width: 200px;*/
+    width: 100%;
+    /*height: 100%;*/
+    height: 220px;
+    /*background: #333;*/
+    /*z-index: 1000000;*/
+    z-index: 1;
+    top: 0%;
+    left: 0;
+    color: #fff;
+    top: 25px;
+}
+.contain_right {
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    float: right;
+    /*overflow-y: auto;*/
+    /*height: 100%;*/
+}
+.center{
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    width: 85%;
+    height: 77%;
+    background: #ccc;
+    top: 160px!important;
+    overflow: auto;
+    left: 0px;
+    /*position: relative;*/
+    transform: scale(1); 
+    transform-origin: 0% 0%;
+    z-index: 100000;
+}
+.listObjectLeft{
+    position: relative;
+    height: 26px;
+    overflow: hidden;
+}
+.contendFotogramas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*height: 100%;*/
+    /*height: 80px;*/
+    height: 115px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.firsFotogram{
+    width: 5px;
+    height: 300px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    margin-top: 17px;
+}
+.box_sc{
+    position: relative;
+    overflow: hidden;
+    width: 200px;
+
+    display: none;
+}
+.codigo{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.controls_objects{
+    position: relative;
+    overflow: hidden;
+}
+.zoom{
+    position: relative;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    right: 210px;;
+    z-index: 100000;
+}
+.buttonZoom{
+    position: relative;
+    float: left;
+    background: #fff;
+    color: #000;
+    padding: 5px 0px;
+    margin: 1px;
+    font-size: 16px;
+    width: 40px;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.zoomMas{
+
+}
+.zoomMenos{
+
+}
+.opacityObjecTemp{
+
+}
+.opacityObjecTemp label {
+    display: block;
+}
+.opacityObjecTemp input {
+    width: 50%;
+}
+.opacityObjecTemp{
+    /*display: none;*/
+}
+.opacityObjecTempInput{
+    width: 40px;
+}
+.rotacion{
+    width: 40px;
+}
+.border_plano{
+    position: absolute;
+    background: #000;
+    margin: 0;
+    padding: 0;
+    z-index: 1000000;
+    box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.65);
+}
+.border_plano_left{
+    left: 0;
+    width: 1px;
+    height: 100%;
+}
+.border_plano_right{
+    right: 0;
+    width: 1px;
+    height: 100%
+}
+.border_plano_top {
+    top: 0;
+    height: 1px;
+    width: 100%;
+}
+.border_plano_bottom{
+    bottom: 0;
+    height: 1px;
+    width: 100%;
+}
+.contendImg{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    transform: scale(1);
+    /*transform-origin: 0% 0%;*/
+}
+.ui-dialog{
+    left: 30%;
+    top: 30px;
+    z-index: 10000000000000000000000000000000000!important;
+}
+.imgSeleccionada{
+    border: 1px solid #D3D3D3!important;
+    box-shadow: 0px 0px 1px 4px #FFF;
+}
+.addCuadroBox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 7px solid red;
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+}
+.box_object{
+    z-index: 4000;
+    position: absolute;
+    width: 120px;
+    height: 100px;
+    top: 0;
+    left: 0;
+    background-size: contain;
+    /*background-size: inherit!important;*/
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    cursor: pointer;
+    /*transform-origin: 0% 0%;*/
+    transform-origin: center;
+    perspective: 150px;
+}
+.box_object:hover {
+    /*box-shadow: 0px 0px 1px 1px #000;*/
+    /*z-index: 10000000;*/
+    /*outline: 1px solid rgb(6, 0, 250);*/
+    outline: 1px solid #4d90fe;
+    cursor: -webkit-grab;
+}
+.imgObject{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    /*transition: all 0.5s ease 0s;*/
+}
+.imgObject:hover {
+    /*box-shadow: 0px 0px 1px 1px #000;*/
+    /*z-index: 10000000;*/
+    /*outline: 1px solid #4d90fe;*/
+}
+.selectedObjectHandler{
+    cursor: -webkit-grabbing!important;
+}
+.box_object:hover .ui-resizable-handle  {
+    display: block!important;
+}
+.ui-resizable-handle {
+    display: none!important;
+}
+.ui-resizable-se {
+    /*    border: 1px solid;
+        width: 5px;
+        height: 5px;
+        background: transparent;
+        bottom: -3px;
+        right: -3px;*/
+    background-position: -80px -224px;
+    background-color: rgba(255, 255, 255, 0.29);
+    box-shadow: 0px 0px 5px #fff;
+    /*outline: 1px solid #999;*/
+}
+.ui-resizable-s{
+    /*    border-top: 1px solid #000;
+        bottom: -7px;
+        width: 98%;*/
+}
+.ui-resizable-e{
+    /*    border-left: 1px solid #000;
+        height: 97%;
+        right: 0;
+        width: 1px;*/
+}
+.selectedObject {
+    /*box-shadow: 0px 0px 1px 1px #000;*/
+    /*z-index: 10000000;*/    
+    outline: 2px solid #4d90fe;
+}
+.selectedObjectLeft{
+    background: #101010
+}
+.box_object_hover {
+    box-shadow: 0px 0px 1px 1px #fff;
+    z-index: 10000000;
+    outline: 1px solid #000;
+}
+.buttonAnimarButton{
+    display: none;
+    float: left;
+    /*width: 100%;*/
+    font-weight: lighter!important;
+    font-size: 10px!important;
+    padding: 2px!important;
+    position: absolute;
+    left: 100%;
+}
+.box_object:hover .buttonAnimarButton {
+    display: block;
+}
+.buttonDeleteAnimar{
+    top: 47px;
+}
+.buttonAnimar{
+    top: 30px;
+}
+.buttonEditar{
+    top: 0;
+}
+.buttonEliminar{
+    top: 15px;
+}
+.display_none{
+    display: none!important;
+}
+.mensajeStartAnimation{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    display: none;
+}
+.mensajeStartAnimation h1 {
+    font-size: 12px!important;
+    font-weight: lighter;
+    padding: 0;
+    margin: 0;
+}
+.mensajeStartAnimation div {
+    position: relative;
+    margin: auto;
+    /*width: 50%;*/
+}
+.mover_inicial{
+    opacity: 1!important;
+    pointer-events: all!important;
+    box-shadow: 0px 0px 15px 5px #fff;
+    border-radius: 5px;
+    z-index: 10000000000;
+}
+.mover_inicial_final{
+    opacity: 1!important;
+    pointer-events: all!important;
+    box-shadow: 0px 0px 15px 5px #fff;
+    border-radius: 5px;
+}
+.no_anima{
+    opacity: 0.5!important;
+    pointer-events: none;
+    background-position: 0 0!important;
+}
+.box{
+    position: relative;
+    width: auto;
+    color: #fff;
+    overflow: auto;
+    position: fixed;
+    right: 300px;
+    z-index: 1000;
+    top: 0;
+}
+.imagenes{
+    height: 70%;
+    overflow-y: auto;
+    /* overflow: hidden; */
+    /* position: absolute; */
+    position: relative;
+    /*background: #222;*/
+    text-align: center;
+    width: 100%;
+    /* bottom: 0; */
+    overflow-x: hidden;
+}
+.objectList{
+    position: relative;
+    height: auto;
+    overflow: hidden;
+    border-bottom: 1px solid #3C3C3C;
+    /*padding: 10px 0 0px 0px;*/
+    cursor: pointer;
+    opacity: 0.5;
+}
+.titleTags{
+    width: 150px;
+    overflow: hidden;
+    height: 15px;
+}
+.objectList:hover{
+    background: #101010;
+}
+.objectList h1 {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 11px;
+    font-weight: lighter;
+    text-align: left;
+}
+.objectList img {
+    position: relative;
+    height: 10px;
+    float: left;
+    width: 40px;
+    z-index: 10000000;
+}
+.pestana_left{
+    position: relative;
+    background: #222;
+    margin: 15px 0 0 0;
+    padding: 5px 0;
+    width: 50px;
+    border-top-right-radius: 5px;
+    border: 1px solid #111;
+    border-bottom: 1px solid #222;
+    float: left;
+}
+.ulLeftObjects{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+    height: 115px;
+    overflow-x: hidden;
+}
+.code_ocult{
+
+}
+.optionsLeftObject{
+    position: relative;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.12);
+}
+.buttonsLeft{
+    position: relative;
+    cursor: pointer;
+    float: left;
+    margin-right: 5px;
+    font-size: 9px;
+}
+.ImgSelect:hover  {
+    border: 1px solid #fff;
+}
+.ImgSelect {
+    width: 90%;
+    border: 1px solid #333;
+    margin: 2px 0 0 0;
+}
+.imgSelector{
+    position: relative;
+    float: left;
+    width: 50%;
+    float: none;
+    width: 60%;
+    margin: auto;
+}
+.box_img {
+    position: absolute;
+    margin: 0 0;
+    top: 0;
+    left: 0;
+}
+.btInsertar{
+    position: relative;
+    width: 100px;
+    float: left;
+}
+.addBox {
+    width: auto;
+    margin: 5px 0;
+    /* float: left; */
+    display: none;
+    position: relative;
+}
+.btInsertar:hover .addBox{
+    display: block;
+}
+.buttonBlue{
+    cursor: pointer;
+    padding: 5px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    background-color: #4d90fe;
+    background-image: -webkit-linear-gradient(top,#4d90fe,#4787ed);
+    background-image: -moz-linear-gradient(top,#4d90fe,#4787ed);
+    background-image: -ms-linear-gradient(top,#4d90fe,#4787ed);
+    background-image: -o-linear-gradient(top,#4d90fe,#4787ed);
+    background-image: linear-gradient(top,#4d90fe,#4787ed);
+    border: 1px solid #3079ed;
+    color: #fff;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+}
+.buttonGreen {
+    cursor: pointer;
+    padding: 5px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    background-color: #44C704;
+    background-image: -webkit-linear-gradient(top,#60EF00,#44C704);
+    background-image: -moz-linear-gradient(top,#60EF00,#4787ed);
+    background-image: -ms-linear-gradient(top,#60EF00,#4787ed);
+    background-image: -o-linear-gradient(top,#60EF00,#4787ed);
+    background-image: linear-gradient(top,#60EF00,#4787ed);
+    border: 1px solid #44C704;
+    color: #fff;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+}
+.buttonWhite {
+    cursor: pointer;
+    padding: 5px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    background-color: #f9f9f9;
+    background-image: -webkit-linear-gradient(top,#f9f9f9,#999);
+    background-image: -moz-linear-gradient(top,#f9f9f9,#cccccc);
+    background-image: -ms-linear-gradient(top,#f9f9f9,#cccccc);
+    background-image: -o-linear-gradient(top,#f9f9f9,#cccccc);
+    background-image: linear-gradient(top,#f9f9f9,#cccccc);
+    border: 1px solid #333;
+    color: #333;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+}
+.buttonSave{
+    position: fixed;
+    top: 4px;
+    right: 5px;
+    z-index: 100000;
+}
+.textAreaUbics{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    font-size: 12px;
+    color: #444;
+    font-family: Arial;
+}
+.remove{
+    position: absolute;
+    top: -18px;
+    right: 0;
+    background: #C3C3C3;
+    width: 15px;
+    height: 15px;
+    z-index: 10000;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.delayText{
+    position: absolute;
+    top: -20px;
+    right: 18px;
+    background: #767676;
+    color: #fff;
+    padding: 0px;
+    font-size: 10px;
+}
+.delayText input {
+    width: 50px;
+    height: 12px;
+}
+.ordenShow{
+    position: absolute;
+    top: 0;
+    left: 4px;
+    z-index: 10;
+    cursor: pointer;
+    color: #fff;
+}
+.descripcion{
+    position: relative;
+    width: 450px;
+    height: 100%;
+    border: 0;
+    font-size: 12px;
+    color: #444;
+    font-family: Arial;
+}
+.div_pos {
+    position: absolute;
+    width: 120px;
+    display: none;
+    left: 0px;
+    top: -15px;
+}
+.box_object:hover .div_pos {
+    display: block;
+}
+#loading{
+    position: relative;
+    z-index: 10000000000;
+}
+#lineTimeContend {
+    /*position: fixed;*/
+    position: absolute;
+    width: 100%;
+    height: 135px;
+    background: #202020;
+    top: 0px;
+    /*z-index: 100000000;*/
+    overflow-x: auto;
+    left: 200px;
+}
+#form {
+
+}
+#form table{
+    position: relative;
+    border: 0;
+    border-collapse: collapse;
+    width: 100%;    
+}
+#SubHtmlEditor{
+    position: relative;
+    width: 100%;  
+}
+.lineTime{
+    position: relative;
+    /*width: 200%;*/
+    width: 1000%;
+    height: 100%
+}
+.separateSeg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 1px;
+    background: #555;
+}
+.separateSeg p{
+    color: #797979;
+    font-size: 9px;
+    right: 5px;
+    position: relative;
+}
+.punteroLinetime{
+    position: absolute;
+    left: 1px;
+    height: 100%;
+    width: 10px;
+    background: #4d90fe;
+    z-index: 10;
+    top: 0!important;
+    cursor: col-resize;
+}
+.leftStatic{
+    left: 0!important;
+}

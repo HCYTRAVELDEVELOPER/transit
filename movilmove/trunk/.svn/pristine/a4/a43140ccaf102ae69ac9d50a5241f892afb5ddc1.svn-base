@@ -1,0 +1,220 @@
+{
+    "version": "0.0.1.5",
+    "name": "Movilmove",
+    "short_name": "Movilmove",
+    "product_id": 6,
+    "productnw": false,
+    "alias": "Movilmove",
+    "description": "Movilmove",
+    "co_creator": "Grupo Nw",
+    "keywords": "Movilmove",
+    "start_url": "/",
+    "launch_path": "/",
+    "appcache_path": "/nw.manifest",
+    "fullscreen": "true",
+    "installs_allowed_from": ["*"],
+    "theme_color": "#e98a1d",
+    "background_color": "#e98a1d",
+    "display": "standalone",
+    "gcm_sender_id": "736200767364",
+    "orientation": "portrait",
+    "type": "privileged",
+    "default_locale": "es",
+    "icon_install": "/app/img/logo.png",
+    "favicon": "/app/img/favicon.ico",
+    "apple-touch-icon": "/app/img/logo.png",
+    "icon32x32": "/app/img/logo.png",
+    "icon16x16": "/app/img/logo.png",
+    "safari-pinned-tab": "/app/img/logo.svg",
+    "related_applications": [
+        {
+            "platform": "web",
+            "url": "https://www.movilmove.com"
+        },
+        {
+            "platform": "play",
+            "url": "https://play.google.com/store/apps/details?id=com.go4.edolli",
+            "id": "com.gruponw.nwtask"
+        }
+    ],
+    "icons": [
+        {
+            "src": "/app/img/icon_install.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ],
+    "locales": {
+        "es": {
+            "description": "MovilMove",
+            "developer": {
+                "url": "https://www.gruponw.com"
+            }
+        },
+        "en": {
+            "description": "MovilMove",
+            "developer": {
+                "url": "https://www.gruponw.com"
+            }
+        }
+    },
+    "configjson": true,
+    "use_workkeep": false,
+    "userSMS": "NETCAR",
+    "passSMS": "NC729272",
+    "descarga_saldo_sms_by_empresa": true,
+    "config_login":
+            {
+                "configjson": true,
+                "id_nueva_terminal": false,
+                "comprobar_via_email_login_user_only": null,
+                "html_encabezado": "",
+                "html_footer": "",
+                "link_politicas": "https://www.movilmove.com/politicas",
+                "pedir_celular": "SI",
+                "pedir_code_promo": "NO",
+                "pedir_documento": "SI",
+                "pedir_fecha_nacimiento": "SI",
+                "pedir_genero": "SI",
+                "pedir_empresa": "SI",
+                "pedir_nombre_y_apellidos": "SI",
+                "pedir_apellido": "SI",
+                "pedir_profesion": "NO",
+                "pedir_pagina_web": "NO",
+                "pedir_pais": "NO",
+                "pedir_departamento_geo": "NO",
+                "pedir_ciudad": "SI",
+                "pedir_direccion": "NO",
+                "permitir_acceso_sin_login": "NO",
+                "permitir_crear_cuentas": "SI",
+                "permitir_login_user_only": null,
+                "pedir_formas_pago": "NO",
+                "type_input_forma_pago": "checkbox",
+                "permitir_registro_login_con_facebook": "NO",
+                "permitir_registro_login_con_twitter": "SI",
+                "politicas_texto": null,
+                "tipo_login": "qxnw",
+                "tipo_login_app": "nwproject",
+                "usar_redireccion_login": "SI",
+                "url_redireccion_login": "/index.html",
+                "id_empresa_de_nuevas_cuentas": false,
+                "apply_css_loginBox": false,
+                "logotipo_login": "/app/img/logo.png",
+                "verificar_email_via_correo": "NO",
+                "background_img_login": "/app/img/fondo-go4.png",
+                "background_color_login": "#fff",
+                "usar_datos_envio_tarjetabiente": false,
+                "loguear_alcrear_siexiste": false,
+                "no_usar_clave": false,
+                "country_change_url": false,
+                "show_login_and_makeaccount": "NO",
+                "concurrencia": "SI",
+                "fb_app_id": "1042641042579033",
+                "permitir_registro_login_con_google": false,
+                "google_cliente_id": "187735317725-rnv6f4u1eds9om4ku5gsnfntbb27bf6e.apps.googleusercontent.com",
+                "google_api_key": "AIzaSyANioRYIGLPZU6_ZF83K2HA6z-lvJspOJY",
+                "url_css_principal_login": "/app/css/login.css",
+                "pedir_confirmar_pass": false,
+                "pedir_suscribirse": "https://www.ringow.com/politica-email-suscribe",
+                "pedir_suscribirse_texto": false,
+                "desti_emailreply_bienvenido_registro": "info@ringow.com",
+                "desti_nombre_bienvenido_registro": "Ringow",
+                "asunto_bienvenido_registro": "Bienvenido a Ringow {userFullName}",
+                "html_bienvenido_registro": "<h1>Hola {userFullName}</h1> Ahora puedes usar tu cuenta de Ringow. Ingresa a <a href='https://www.ringow.com' target='_BLANK'>www.ringow.com</a> para ver todos los beneficios."
+            },
+    "config":
+            {
+                "workLocal": true,
+                "menu_cache": false,
+                "offlineNwDual": false,
+                "configjson": true,
+                "show_about": false,
+                "show_log_console_compress": false,
+                "alto_barra_enc": "73px",
+                "ancho_menu_left": "250",
+                "buscar_minimizado": "NO",
+                "codigo_css": "",
+                "codigo_libre": "<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css'><link rel='stylesheet' type='text/css' href='/app/css/stilos.css'><link rel='stylesheet' type='text/css' href='/app/css/stilosproducts.css'>",
+                "fondo_barra_enc": "rgb(234, 138, 1)",
+                "lateral_left_alto_completo": "NO",
+                "logotipo": "/app/img/logo.png",
+                "menu_movil_en_pc": "SI",
+                "menu_vertical": "NO",
+                "mostrar_info_user_left": "SI",
+                "mostrar_primero_menu_que_modulos_home": "SI",
+                "multi_terminal": "NO",
+                "no_mostrar_foto_name_email_left": "SI",
+                "pedir_aceptar_terminos_interno": "NO",
+                "permitir_cargar_moduleshome_get": "SI",
+                "permitir_chat": "SI",
+                "solicitar_completar_perfil": "NO",
+                "solicitar_pago": "NO",
+                "tipo_menu": "cuadros",
+                "tipo_menu_mobile": "cuadros",
+                "version_compress": "2",
+                "url_js_forms_lists": "/app/js/",
+                "url_css_principal": "/app/css/solicitudes_all.css",
+                "url_javascript_principal": "/app/js/products.js",
+                "url_javascript_principal_ruta": "/app/js/",
+                "url_javascript_principal_name": "products.js",
+                "usar_permisos_por_pagina": "NO",
+                "usar_permisos_por_perfiles": "NO",
+                "useApiGoogleMaps": "NO",
+                "backgroundPage": "#1d1e1c",
+                "activeServerWorker": false,
+                "menu_para_qxnw": "SI",
+                "mostrar_chat_al_inicio": true,
+                "logotipo_movil": "/app/img/logo.png",
+                "use_translate": false,
+                "use_menu_of_bd": true,
+                "fondo_menu": "rgb(234, 144, 0)",
+                "color_links_menu": "#f1f1f1",
+                "activar_notificaciones": false,
+                "permitir_buscar_personas_invitaciones": false,
+                "permitir_crear_usuarios": false,
+                "use_geolocation": false,
+                "use_inactive_notify": false,
+                "use_inactive_sound": false,
+                "config_datauser": {
+                    "professional_data": false,
+                    "salas": true
+                },
+                "url_al_salir": "/"
+            },
+    "developer": {
+        "name": "Grupo Nw",
+        "url": "https://www.gruponw.com"
+    },
+    "permissions": {
+        "storage": {
+            "description": "Requiere storage",
+            "access": "readcreate"
+        },
+        "geolocation": {
+            "description": "Requiere geolocation",
+            "access": "readcreate"
+        },
+        "backgroundservice": {
+            "description": "Requiere backgroundservice",
+            "access": "readcreate"
+        },
+        "camera": {
+            "description": "Requiere camera",
+            "access": "readcreate"
+        },
+        "desktop-notification": {
+            "description": "Requiere storage desktop-notification",
+            "access": "readcreate"
+        },
+        "power": {
+            "description": "Requiere power",
+            "access": "readcreate"
+        },
+        "alarms": {
+            "description": "Required to schedule notifications"
+        }
+    },
+    "share_target": {
+        "url_template": "compose/tweet?title={title}&text={text}&url={url}"
+    }
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests default-src 'unsafe-inline' android-webview-video-poster: 'unsafe-eval' 'self' data: gap: *; style-src 'self' 'unsafe-inline' *; media-src *; connect-src *">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta charset="utf-8">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <style class='styleLoadingFirstTime styleLoadingFirstTime_index'>
+            .containerLoadingFirstTime {  opacity: 1;  z-index: 100000000000000000000000000!important;background-color: #fff;position:fixed; -webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease; height: 100vh; width: 100vw; font-family: Helvetica; } .loader { height: 20px; width: 250px; position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto; } .loader--dot { animation-name: loader; animation-timing-function: ease-in-out; animation-duration: 3s; animation-iteration-count: infinite; height: 20px; width: 20px; border-radius: 100%; background-color: black; position: absolute; border: 2px solid white; } .loader--dot:first-child { background-color: #8cc759; animation-delay: 0.5s; } .loader--dot:nth-child(2) { background-color: #8c6daf; animation-delay: 0.4s; } .loader--dot:nth-child(3) { background-color: #ef5d74; animation-delay: 0.3s; } .loader--dot:nth-child(4) { background-color: #f9a74b; animation-delay: 0.5s; } .loader--dot:nth-child(5) { background-color: #60beeb; animation-delay: 0.1s; } .loader--dot:nth-child(6) { background-color: #fbef5a; animation-delay: 0s; } .loader--text {    word-break: normal; position: absolute; top: 200%; left: 0; right: 0; width: 4rem; margin: auto; } .loader--text:after { content: "Loading"; font-weight: bold; animation-name: loading-text; animation-duration: 3s; animation-iteration-count: infinite; } @keyframes loader { 15% { transform: translateX(0); } 45% { transform: translateX(230px); } 65% { transform: translateX(230px); } 95% { transform: translateX(0); } } @keyframes loading-text { 0% { content: "Loading"; } 25% { content: "Loading."; } 50% { content: "Loading.."; } 75% { content: "Loading..."; } }
+        </style>
+    <div class="containerLoadingFirstTime containerLoadingFirstTime_index"> <div class="loader"> <div class="loader--dot"></div> <div class="loader--dot"></div> <div class="loader--dot"></div> <div class="loader--dot"></div> <div class="loader--dot"></div> <div class="loader--dot"></div> <div class="loader--text"></div> </div> </div>
+    <style>
+        @font-face {
+            font-family: 'Material Icons';
+            font-style: normal;
+            font-weight: 400;
+            src: url('nwmaker/css/fonts/material_icons/MaterialIcons-Regular.eot');
+            src: local('☺'),
+                url('nwmaker/css/fonts/material_icons/MaterialIcons-Regular.woff2') format('woff2'),
+                url('nwmaker/css/fonts/material_icons/MaterialIcons-Regular.woff') format('woff'),
+                url('nwmaker/css/fonts/material_icons/MaterialIcons-Regular.ttf') format('truetype')
+        }
+        body {
+            background: #ffffff!important;
+        }
+        .ui-page .my-header {
+            background-color: transparent;
+            border: 0;
+        }
+        #foo {
+            background-color: transparent!important;
+        }
+        .loadingNwChat{
+            background: transparent!important;
+        }
+        .cEftVf{
+            border: 4px solid #f64514!important;
+            border-top: 4px solid transparent!important;
+        }
+        .foo_noshow{
+            display: none!important;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="js/libs/jquery-mobile/jquery.mobile.min.css?v=1.0.0.1">
+    <script type="text/javascript" src="js/libs/jquery/jquery.min.js?v=1.0.0.1"></script>
+    <script type="text/javascript" src="js/libs/jquery-mobile/jquery.mobile.js?v=1.0.0.1"></script>
+
+    <link rel="stylesheet" class='css_nwmaker2' type="text/css" >
+    <link rel="stylesheet" class='css_personalized' type="text/css" >
+    <link rel="stylesheet" class='css_main' type="text/css" >
+
+    <title>Home</title>
+</head>
+<body>
+    <div data-role='page' id='foo' class="foo foo_noshow">
+        <div data-role='header' class='ui-header header headerHome ui-bar-a my-header headerHome_noshow' >
+            <button href='#leftpanel1' class='ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left btnMenuHeader' style="display: none;" ></button>
+            <h1 class='logotipoHeader'></h1>
+        </div>
+        <div role='main' class='ui-content contentCenter'></div>
+    </div>
+    <div class="swiperight"></div>
+    <div class='home_background_color'></div>
+    <div class='home_background_image'></div>
+
+    <script type="text/javascript" src="cordova.js"></script>
+
+    <script>
+        
+        var host = window.location.origin;
+        domainLib = host + "/lib_mobile/user/nwmaker/";
+        console.log("HOST", host);
+        console.log("domainLib", domainLib);
+        
+        var domFromMatrix = host;
+        var dom = host;
+        if (typeof window.localStorage.getItem("domainRPCReleaseLocal") != "undefined") {
+            if (window.localStorage.getItem("domainRPCReleaseLocal") != null
+                    && window.localStorage.getItem("domainRPCReleaseLocal") != "null"
+                    && window.localStorage.getItem("domainRPCReleaseLocal") != "0"
+                    && window.localStorage.getItem("domainRPCReleaseLocal") != "false"
+                    && window.localStorage.getItem("domainRPCReleaseLocal") != false
+                    && window.localStorage.getItem("domainRPCReleaseLocal") != "") {
+                dom = window.localStorage.getItem("domainRPCReleaseLocal");
+            }
+        }
+
+        domainExtern = dom + "/lib_mobile/user/";
+        domainExternConfig = dom + "/lib_mobile/user/";
+//        domainExternConfigName = "config_tecapser.js";
+
+        versionInAppLibDevice = "1.0.0.1";
+        var functionsDeviceReady = function () {
+            if (typeof navigator.splashscreen !== "undefined") {
+//                    navigator.splashscreen.show();
+            }
+        };
+
+
+        var versionCache = "1";
+        if (typeof window.localStorage.getItem("lastVersionCacheCloud") != "undefined") {
+            versionCache = window.localStorage.getItem("lastVersionCacheCloud");
+        }
+        var urlc = host + "/lib_mobile/user/nwmaker/nwmaker-2.min.min.js?v=1.0.0.1&v1=" + versionCache;
+
+        var url_css_nwmakerlib = host + "/lib_mobile/user/nwmaker/css/nwmaker-2.css?v=1.0.0.1";
+        var url_css_per = host + "/lib_mobile/user/css/personalized_tecapser.css?v=1.0.0.1";
+        var url_css_main = host + "/lib_mobile/user/css/main.css?v=1.0.0.1";
+
+        console.log("dom", dom);
+        console.log("domFromMatrix", domFromMatrix);
+        if (dom != domFromMatrix) {
+            urlc = urlc.replace(domFromMatrix, dom);
+            domainLib = domainLib.replace(domFromMatrix, dom);
+            url_css_nwmakerlib = url_css_nwmakerlib.replace(domFromMatrix, dom);
+            url_css_per = url_css_per.replace(domFromMatrix, dom);
+            url_css_main = url_css_main.replace(domFromMatrix, dom);
+
+            console.log("REPLACE NEW urlc", urlc);
+            console.log("REPLACE NEW url_css_nwmakerlib", url_css_nwmakerlib);
+            console.log("REPLACE NEW url_css_per", url_css_per);
+            console.log("REPLACE NEW url_css_main", url_css_main);
+        }
+
+        //Start load release
+        newRouteRelease = "/lib_mobile/release_estable";
+        if (typeof window.localStorage.getItem("newRouteReleaseLocal") != "undefined") {
+            if (window.localStorage.getItem("newRouteReleaseLocal") != null
+                    && window.localStorage.getItem("newRouteReleaseLocal") != "null"
+                    && window.localStorage.getItem("newRouteReleaseLocal") != "0"
+                    && window.localStorage.getItem("newRouteReleaseLocal") != "false"
+                    && window.localStorage.getItem("newRouteReleaseLocal") != false
+                    && window.localStorage.getItem("newRouteReleaseLocal") != "") {
+                newRouteRelease = window.localStorage.getItem("newRouteReleaseLocal");
+            }
+        }
+        //if route exist
+        var urlimg = dom + "/" + newRouteRelease + "/cleardot.gif";
+        var img = new Image();
+        img.onload = function () {
+        };
+        img.onerror = function (e) {
+            console.log("e", e);
+            window.localStorage.setItem("newRouteReleaseLocal", null);
+            window.localStorage.setItem("domainRPCReleaseLocal", null);
+            alert("error on load new release, reset local storage (" + urlimg + ")");
+            window.location.reload();
+        };
+        img.src = urlimg;
+
+        urlc = urlc.replace("lib_mobile", newRouteRelease);
+        domainLib = domainLib.replace("lib_mobile", newRouteRelease);
+        domainExtern = domainExtern.replace("lib_mobile", newRouteRelease);
+        domainExternConfig = domainExternConfig.replace("lib_mobile", newRouteRelease);
+
+        url_css_nwmakerlib = url_css_nwmakerlib.replace("lib_mobile", newRouteRelease) + versionCache;
+        url_css_per = url_css_per.replace("lib_mobile", newRouteRelease) + versionCache;
+        url_css_main = url_css_main.replace("lib_mobile", newRouteRelease) + versionCache;
+
+        //End load release
+
+        document.querySelector(".css_nwmaker2").href = url_css_nwmakerlib;
+        document.querySelector(".css_personalized").href = url_css_per;
+        document.querySelector(".css_main").href = url_css_main;
+
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.id = "nw_libscript_preload";
+        script.className = "nw_libscript_preload";
+        script.charset = "UTF-8";
+        script.src = urlc + "&versionCache=" + versionCache;
+        script.onload = function () {
+        };
+        document.getElementsByTagName('head')[0].appendChild(script);
+        script.setAttribute("async", "async");
+        script.setAttribute("defer", "defer");
+    </script>
+    <!--<script type="text/javascript" src=host + host + "/lib_mobile/user/nwmaker/nwmaker-2.min.min.js?v=1.0.0.1"></script>-->
+    <!--<script type="text/javascript" src="http://nwmaker.loc/nwmaker-2.lib.js?v=1.0.0.1"></script>-->
+    <!--<script type="text/javascript" src="http://192.168.1.45/nwmaker/nwmaker-2.lib.js?v=1.0.0.1"></script>-->
+</body>
+</html>

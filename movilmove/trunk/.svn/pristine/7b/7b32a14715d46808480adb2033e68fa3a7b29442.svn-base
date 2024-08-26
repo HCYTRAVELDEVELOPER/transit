@@ -1,0 +1,774 @@
+qx.Class.define("transmovapp.lists.l_vehiculos", {
+    extend: qxnw.lists,
+    construct: function (rs) {
+        var self = this;
+        this.base(arguments);
+        this.buttonsAutomatic = true;
+        this.createBase();
+        var conf = main.getConfiguracion();
+
+        self.setGroupHeader(self.tr("Vehículos"));
+        self.setTitle(self.tr("Vehículos"));
+
+        self.datadriver = false;
+        if (qxnw.utils.evalueData(rs)) {
+            self.datadriver = rs;
+        }
+
+        console.log("self.datadriver", self.datadriver);
+
+        qxnw.local.storeData(self.getAppWidgetName() + "_max_show_rows", 20);
+
+        var columns = [
+            {
+                label: self.tr("ID"),
+                caption: "id"
+            },
+            {
+                label: self.tr("Usuario ID"),
+                caption: "id_usuario"
+            },
+            {
+                label: self.tr("Fecha"),
+                caption: "fecha"
+            },
+            {
+                label: self.tr("Conductor"),
+                caption: "usuario_text"
+            },
+            {
+                label: self.tr("Conductor principal"),
+                caption: "usuario"
+            },
+            {
+                label: self.tr("ID otros conductores"),
+                caption: "id_otros_conductores"
+            },
+            {
+                label: self.tr("Conductor usando"),
+                caption: "usuario_usando"
+            },
+            {
+                label: self.tr("Imagen Vehículo"),
+                caption: "imagen_vehi",
+                type: "image",
+                mode: "expand"
+            },
+            {
+                label: self.tr("Usando"),
+                caption: "activacion_cliente"
+            },
+            {
+                label: self.tr("Estado"),
+                caption: "estado_activacion_text"
+            },
+            {
+                label: self.tr("Vehículo público, particular o taxi"),
+                caption: "vehiculo_publico_particular"
+            },
+            {
+                label: self.tr("Tipo Vehículo ID "),
+                caption: "tipo_vehiculo"
+            },
+            {
+                label: self.tr("Tipo Vehículo"),
+                caption: "tipo_vehiculo_text"
+            },
+            {
+                label: self.tr("Descripción carroceria"),
+                caption: "descripcion_carroceria_text"
+            },
+            {
+                label: self.tr("Descripción carroceria Id"),
+                caption: "descripcion_carroceria"
+            },
+            {
+                label: self.tr("Placa"),
+                caption: "placa"
+            },
+            {
+                label: self.tr("Tarjeta propiedad adjunto"),
+                caption: "tarjeta_propiedad",
+                type: "image",
+                mode: "expand"
+            },
+            {
+                label: self.tr("SOAT semáforo"),
+                caption: "soat_semaforo",
+                type: "html",
+                colorHeader: "#4d90fe"//azul
+            },
+            {
+                label: self.tr("SOAT días para vencer"),
+                caption: "soat_semaforo_dias",
+                type: "html",
+                colorHeader: "#4d90fe"//azul
+            },
+            {
+                label: self.tr("Fecha Vencimiento Soat"),
+                caption: "fecha_vencimiento_soat",
+                colorHeader: "#4d90fe"//azul
+            },
+            {
+                label: self.tr("SOAT Número"),
+                caption: "soat",
+                colorHeader: "#4d90fe"//azul
+            },
+            {
+                label: self.tr("SOAT adjunto"),
+                caption: "foto_soat",
+                type: "image",
+                mode: "expand",
+                colorHeader: "#4d90fe"//azul
+            },
+            {
+                label: self.tr("Póliza contractual semáforo"),
+                caption: "polizacontractual_semaforo",
+                type: "html",
+                colorHeader: "#FF8000"
+            },
+            {
+                label: self.tr("Póliza contractual días vencimiento"),
+                caption: "polizacontractual_semaforo_dias",
+                type: "html",
+                colorHeader: "#FF8000"
+            },
+            {
+                label: self.tr("Póliza contractual fecha vencimiento"),
+                caption: "vehiculo_poliza_contractual",
+                colorHeader: "#FF8000"
+            },
+            {
+                label: self.tr("Póliza todoriesgo semáforo"),
+                caption: "polizatodoriesgo_semaforo",
+                type: "html",
+                colorHeader: "#2fff00"
+            },
+            {
+                label: self.tr("Póliza todoriesgo días vencimiento"),
+                caption: "polizatodoriesgo_semaforo_dias",
+                type: "html",
+                colorHeader: "#2fff00"
+            },
+            {
+                label: self.tr("Póliza todoriesgo fecha vencimiento"),
+                caption: "vehiculo_poliza_todoriesgo",
+                colorHeader: "#2fff00"
+            },
+            {
+                label: self.tr("Tecnomecánica semáforo"),
+                caption: "tegnomecanica_semaforo",
+                type: "html",
+                colorHeader: "#8bc4ef"
+            },
+            {
+                label: self.tr("Tecnomecánica días vencimiento"),
+                caption: "tegnomecanica_semaforo_dias",
+                type: "html",
+                colorHeader: "#8bc4ef"
+            },
+            {
+                label: self.tr("Tecnomecánica fecha vencimiento"),
+                caption: "fecha_vencimiento_tegnomecanica",
+                colorHeader: "#8bc4ef"
+            },
+            {
+                label: self.tr("Tecnomecánica adjunto"),
+                caption: "revision_tegnomecanica",
+                type: "image",
+                mode: "expand",
+                colorHeader: "#8bc4ef"
+            },
+            {
+                label: self.tr("Marca ID"),
+                caption: "marca"
+            },
+            {
+                label: self.tr("Marca"),
+                caption: "marca_text"
+            },
+            {
+                label: self.tr("Modelo"),
+                caption: "modelo"
+            },
+            {
+                label: self.tr("Color"),
+                caption: "color"
+            },
+            {
+                label: self.tr("# Puertas"),
+                caption: "numero_puertas"
+            },
+            {
+                label: self.tr("Capacidad Pasajeros"),
+                caption: "capacidad_pasajeros"
+            },
+            {
+                label: self.tr("Disponible Para Servicios"),
+                caption: "servicio_activo_text"
+            },
+
+            {
+                label: self.tr("Capacidad Carga en Kg"),
+                caption: "capacidad_carga_kg"
+            },
+            {
+                label: self.tr("Capacidad Volumen en M3"),
+                caption: "capacidad_volumen_m3"
+            },
+            {
+                label: self.tr("Tarjeta Propiedad Trasera"),
+                caption: "tarjeta_propiedad_trasera",
+                type: "image",
+                mode: "expand"
+            },
+            {
+                label: self.tr("Nombre Propietario"),
+                caption: "nombre_propietario"
+            },
+            {
+                label: self.tr("Identificación Propietario"),
+                caption: "identificacion_propietario"
+            },
+            {
+                label: self.tr("RUT"),
+                caption: "rut",
+                type: "image",
+                mode: "expand"
+            },
+            {
+                label: self.tr("Dirección Proietario"),
+                caption: "direccion_proietario"
+            },
+            {
+                label: self.tr("Teléfono Proietario"),
+                caption: "telefono_proietario"
+            },
+            {
+                label: self.tr("Número interno"),
+                caption: "numero_interno"
+            },
+            {
+                label: self.tr("Número tarjeta operación"),
+                caption: "numero_tarjeta_operacion"
+            },
+            {
+                label: self.tr("Vencimiento tarjeta operación"),
+                caption: "fecha_vencimiento_numero_tarjeta_operacion"
+            },
+            {
+                label: self.tr("Activar Servicios"),
+                caption: "activar_servicios"
+            },
+            {
+                label: self.tr("Numero maletas"),
+                caption: "num_maletas"
+            },
+            {
+                label: self.tr("Empresa"),
+                caption: "empresa",
+                visible: false
+            }
+        ];
+        self.setColumns(main.labels(columns));
+//        self.hideColumn("id");
+//        self.hideColumn("usuario");
+        self.hideColumn("marca");
+//        self.hideColumn("id_usuario");
+        self.hideColumn("tipo_vehiculo");
+        self.hideColumn("activacion_cliente");
+//        self.hideColumn("id_otros_conductores");
+        var filters = [
+            {
+                name: "buscar",
+                label: self.tr("Buscar..."),
+                type: "textField"
+            },
+            {
+                name: "placav",
+                label: self.tr("Placa"),
+                type: "textField"
+            },
+            {
+                name: "usuario",
+                label: self.tr("Usuario"),
+                type: "selectTokenField"
+            },
+            {
+                name: "tipo_vehiculo",
+                label: self.tr("Tipo Vehículo"),
+                type: "selectBox"
+            },
+            {
+                name: "estado",
+                label: self.tr("Estado"),
+                type: "selectBox"
+            },
+            {
+                name: "ids",
+                caption: "ids",
+                label: "ID conductor",
+                visible: true,
+                enabled: false,
+                type: "textField"
+            },
+            {
+                name: "usuario_cliente",
+                caption: "usuario_cliente",
+                label: "Usuario conductor",
+                visible: true,
+                enabled: false,
+                type: "textField"
+            },
+            {
+                name: "tipo_semaforo",
+                label: self.tr("Tipo semaforo"),
+                type: "selectBox"
+            }
+        ];
+        self.createFilters(filters);
+
+        self.excludeColumn("descripcion_carroceria");
+        if (conf.usar_descripcion_carroceria != "SI") {
+            self.excludeColumn("descripcion_carroceria_text");
+        }
+
+        if (conf.capacidad_carga_kg != "SI") {
+            self.excludeColumn("capacidad_carga_kg");
+        }
+        if (conf.capacidad_volumen_m3 != "SI") {
+            self.excludeColumn("capacidad_volumen_m3");
+        }
+        if (conf.tarjeta_propiedad_trasera != "SI") {
+            self.excludeColumn("tarjeta_propiedad_trasera");
+        }
+        if (conf.revision_tegnomecanica != "SI") {
+            self.excludeColumn("revision_tegnomecanica");
+            self.excludeColumn("tegnomecanica_semaforo");
+            self.excludeColumn("fecha_vencimiento_tegnomecanica");
+            self.setFieldVisibility(self.ui.tipo_semaforo, "excluded");
+        }
+        if (conf.pedir_datos_propietario_vehiculo != "SI") {
+            self.excludeColumn("nombre_propietario");
+            self.excludeColumn("identificacion_propietario");
+            self.excludeColumn("rut");
+            self.excludeColumn("direccion_proietario");
+            self.excludeColumn("telefono_proietario");
+        }
+
+        var colors = ["white", "green", "yellow", "red"];
+        var name = "soat";
+        self.createSemaphore(colors, name);
+
+//        self.ui.usuario.hideColumn("id");
+
+        if (qxnw.utils.evalueData(self.datadriver)) {
+            self.ui.ids.setValue(rs.id.toString());
+            self.ui.usuario_cliente.setValue(rs.usuario_cliente);
+        } else {
+            self.ui.ids.setValue("");
+            self.ui.usuario_cliente.setValue("");
+        }
+
+        var t = {};
+        t[""] = self.tr("Todos");
+        t["solicitud_aprobacion"] = self.tr("Solicitud Aprobación");
+        t["activo"] = self.tr("Aceptado");
+        t["inactivo"] = self.tr("Rechazado");
+        t["bloqueado"] = self.tr("Bloqueado por sistema");
+        qxnw.utils.populateSelectFromArray(self.ui.estado, t);
+
+        var t = {};
+        t["soat"] = self.tr("Soat");
+        t["tegnomecanica"] = self.tr("TecnoMecánica");
+        t["poliza_contractual"] = self.tr("Póliza contractual");
+        t["poliza_todoriesgo"] = self.tr("Póliza todo riesgo");
+        qxnw.utils.populateSelectFromArray(self.ui.tipo_semaforo, t);
+
+        var t = {};
+        t[""] = self.tr("Todos");
+        qxnw.utils.populateSelectFromArray(self.ui.tipo_vehiculo, t);
+
+        t = {};
+        t.table = "edo_tipo_vehiculo";
+        qxnw.utils.populateSelect(self.ui.tipo_vehiculo, "master", "populate", t);
+
+        self.ui.usuario.addListener("loadData", function (e) {
+            var data = {};
+            data["token"] = e.getData();
+            var rpc = new qxnw.rpc(self.getRpcUrl(), "servicios_admin");
+            rpc.setAsync(true);
+            var func = function (r) {
+                self.ui.usuario.setModelData(r);
+            };
+            rpc.exec("populateTokenConductor", data, func);
+        }, this);
+
+
+        self.ui.editButton.setVisibility("excluded");
+        self.ui.editButton.addListener("click", function () {
+            self.slotEditar();
+        });
+        self.ui.updateButton.addListener("click", function () {
+            self.applyFilters();
+        });
+        self.ui.searchButton.addListener("execute", function () {
+            self.applyFilters();
+        });
+
+        if (rs != undefined) {
+            self.ui.deleteButton.setIcon(qxnw.config.execIcon("zoom-fit-best"));
+            qxnw.utils.addClassToElement(self.ui.deleteButton, "btn_redAdmi");
+            qxnw.utils.addClassToElement(self.ui.deleteButton, "btn_others");
+            self.ui.deleteButton.setLabel(self.tr("Vincular vehículo existente"));
+            self.ui.deleteButton.setShow("both");
+            self.ui.deleteButton.setMaxWidth(250);
+            self.ui.deleteButton.setMinWidth(250);
+            self.ui.deleteButton.setMaxHeight(30);
+            self.ui.deleteButton.setMinHeight(30);
+            self.ui.deleteButton.addListener("click", function () {
+                self.slotVehiculoExistente();
+            });
+        } else {
+            self.ui.deleteButton.setVisibility("excluded");
+        }
+
+        qxnw.utils.addClassToElement(self.ui.newButton, "btn_blueAdmi");
+        self.ui.newButton.setLabel(self.tr("Crear nuevo vehículo"));
+        self.ui.newButton.setShow("both");
+        self.ui.newButton.setMaxWidth(200);
+        self.ui.newButton.setMinWidth(200);
+        self.ui.newButton.setMaxHeight(30);
+        self.ui.newButton.setMinHeight(30);
+        self.ui.newButton.addListener("click", function () {
+            self.slotNuevo();
+        });
+
+        self.ui.emailButton.setVisibility("excluded");
+        self.ui.printButton.setVisibility("excluded");
+
+        self.table.addListener("cellTap", function (e) {
+            var col = e.getColumn();
+            console.log(col);
+        });
+        var render = new qxnw.rowRenderer();
+        render.setHandleData(21, "Aceptado", "rgb(109, 220, 167)");
+        self.table.setDataRowRenderer(render);
+//        var render = new qxnw.rowRenderer();
+
+        render.setHandleData(21, "Rechazado", "rgb(214, 72, 85)");
+        self.table.setDataRowRenderer(render);
+
+        self.creado = false;
+        self.addListener("appear", function () {
+            if (!self.creado) {
+                self.ui.buscar.setValue("");
+                self.ui.estado.setValue("");
+                self.ui.tipo_vehiculo.setValue("");
+                self.ui.placav.setValue("");
+                self.creado = true;
+            }
+//            if (qxnw.utils.evalueData(self.datadriver)) {
+//
+//            }
+        });
+
+//        self.execSettings();
+        self.applyFilters();
+    },
+    destruct: function () {
+    },
+    members: {
+        contextMenu: function contextMenu(pos) {
+            var self = this;
+            var data = self.selectedRecord();
+            var up = qxnw.userPolicies.getUserData();
+            var rechazar_aprobar_vehiculos = true;
+            var eliminar_vehiculos = false;
+            var r = main.getPermiserv();
+//            if (typeof up.bodega === "string") {
+            if (qxnw.utils.evalue(r)) {
+                if (r.rechazar_aprobar_vehiculos == "false" || r.rechazar_aprobar_vehiculos == false) {
+                    rechazar_aprobar_vehiculos = false;
+                }
+                if (r.eliminar_vehiculos == "true" || r.eliminar_vehiculos == true) {
+                    eliminar_vehiculos = true;
+                }
+            }
+//            }
+            var m = new qxnw.contextmenu(this);
+
+            if (qxnw.utils.evalueData(data.id_otros_conductores) && qxnw.utils.evalueData(self.datadriver)) {
+                m.addAction("Desvincular vehículo asociado", "icon/16/actions/format-text-direction-rtl.png", function (e) {
+                    self.slotDesvincularVehiculo(data);
+                });
+            }
+            m.addAction("Editar", "icon/16/actions/format-text-direction-rtl.png", function (e) {
+                self.slotEditar(data);
+            });
+            if (qxnw.utils.evalueData(self.datadriver)) {
+                m.addAction("Usar, dejar por defecto para realizar viajes", "icon/16/actions/format-text-direction-rtl.png", function (e) {
+                    self.slotUsar(data);
+                });
+            }
+            console.log("data", data);
+//            if (rechazar_aprobar_vehiculos == true) {
+//                if (data.estado_activacion_text == "Rechazado" || data.estado_activacion_text == "Solicitud Aprobación") {
+            m.addAction("Aprobar", "icon/16/actions/dialog-apply.png", function (e) {
+                qxnw.utils.question(self.tr("¿Esta seguro de activar el vehículo?"), function (e) {
+                    if (e) {
+                        data.estado_activo = 1;
+                        data.estado_activo_text = "activo";
+                        self.slotActivar(data);
+                    }
+                });
+            });
+//                }
+//                if (data.estado_activacion_text == "Aceptado" || data.estado_activacion_text == "Solicitud Aprobación") {
+            m.addAction("Rechazar", "icon/16/actions/edit-delete.png", function (e) {
+                qxnw.utils.question(self.tr("¿Esta seguro de inactivar el vehículo?"), function (e) {
+                    if (e) {
+                        data.estado_activo = 2;
+                        data.estado_activo_text = "inactivo";
+                        self.slotActivar(data);
+                    }
+                });
+            });
+//                }
+//            }
+
+            m.addAction("Ver conductores asociados", "icon/16/actions/format-text-direction-rtl.png", function (e) {
+                self.slotVerConductores(data);
+            });
+
+            if (eliminar_vehiculos === true) {
+                m.addAction("Eliminar", "icon/16/actions/dialog-close.png", function (e) {
+                    self.slotEliminar(data);
+                });
+            }
+
+            m.exec(pos);
+        },
+        slotEliminar: function slotEliminar() {
+            var self = this;
+            var r = self.selectedRecord();
+            if (typeof r == 'undefined') {
+                qxnw.utils.alert(self.tr("Seleccione un registro"));
+                return;
+            }
+            qxnw.utils.question(self.tr("¿Está seguro de eliminar el registro?"), function (e) {
+                if (e) {
+                    var rpc = new qxnw.rpc(self.getRpcUrl(), "vehiculo", true);
+                    var func = function (r) {
+                        self.removeSelectedRow();
+                        self.applyFilters();
+                    };
+                    rpc.exec("eliminarVehiculo", r, func);
+                } else {
+                    return;
+                }
+            });
+        },
+        setSemaforo: function setSemaforo(dataend) {
+            var self = this;
+            var divi = "<div style='width: 100%;height: 100%;display: flex;justify-content: center;align-items: center;background: #f3f3f3c9;'>";
+            var divf = "</div>";
+            var rta = "";
+            var fecha_actual = new Date();
+            var fecha_soat = new Date(dataend);
+            fecha_actual.setDate(fecha_actual.getDate() + 31);
+            if (fecha_soat >= fecha_actual) {
+                rta = divi + "<img  alt='' src='/nwlib6/icons/green.png' />" + divf;
+            }
+            var fecha_actual = new Date();
+            fecha_actual.setDate(fecha_actual.getDate());
+
+            var fecha_actual2 = new Date();
+            fecha_actual2.setDate(fecha_actual.getDate() + 30);
+            if (fecha_soat > fecha_actual && fecha_soat <= fecha_actual2) {
+                rta = divi + "<img  alt='' src='/nwlib6/icons/yellow.png' />" + divf;
+            }
+            var fecha_actual = new Date();
+            if (fecha_soat <= fecha_actual) {
+                rta = divi + "<img  alt='' src='/nwlib6/icons/red.png' />" + divf;
+            }
+
+            var fechaInicio = new Date().getTime();
+            var fechaFin = new Date(dataend).getTime();
+
+            var diff = fechaFin - fechaInicio;
+            var difend = diff / (1000 * 60 * 60 * 24);
+
+            var r = {};
+            r.semaforo = rta;
+            r.dias_diferencia = parseInt(difend);
+            return r;
+        },
+        applyFilters: function applyFilters() {
+            var self = this;
+            var data = {};
+            data.filters = self.getFiltersData();
+            var rpc = new qxnw.rpc(self.getRpcUrl(), "servicios_admin", true);
+            var func = function (r) {
+                console.log(r);
+                var ar = [];
+                for (var i = 0; i < r.records.length; i++) {
+                    var row = r.records[i];
+
+                    if (row.estado_activacion_text == "activo") {
+                        row.estado_activacion_text = "Aceptado";
+                    }
+                    if (row.estado_activacion_text == "inactivo") {
+                        row.estado_activacion_text = "Rechazado";
+                    }
+                    if (row.estado_activacion_text == "solicitud_aprobacion") {
+                        row.estado_activacion_text = "Solicitud Aprobación";
+                    }
+                    if (row.estado_activacion_text == "bloqueado") {
+                        row.estado_activacion_text = "Bloqueado por sistema";
+                    }
+
+                    row.soat_semaforo = self.setSemaforo(row.fecha_vencimiento_soat).semaforo;
+                    row.soat_semaforo_dias = self.setSemaforo(row.fecha_vencimiento_soat).dias_diferencia;
+
+                    row.polizacontractual_semaforo = self.setSemaforo(row.vehiculo_poliza_contractual).semaforo;
+                    row.polizacontractual_semaforo_dias = self.setSemaforo(row.vehiculo_poliza_contractual).dias_diferencia;
+
+                    row.polizatodoriesgo_semaforo = self.setSemaforo(row.vehiculo_poliza_todoriesgo).semaforo;
+                    row.polizatodoriesgo_semaforo_dias = self.setSemaforo(row.vehiculo_poliza_todoriesgo).dias_diferencia;
+
+                    row.tegnomecanica_semaforo = self.setSemaforo(row.fecha_vencimiento_tegnomecanica).semaforo;
+                    row.tegnomecanica_semaforo_dias = self.setSemaforo(row.fecha_vencimiento_tegnomecanica).dias_diferencia;
+
+                    ar.push(row);
+                }
+                console.log("ar", ar);
+                self.setModelData(r);
+//                self.setModelData(ar);
+            };
+            rpc.exec("consultaVehiculos", data, func);
+        },
+        slotVerConductores: function slotVerConductores(data) {
+            var self = this;
+            var d = new transmovapp.lists.l_vehiculo_conductores();
+            d.setParamRecord(data);
+            d.settings.accept = function () {
+                self.applyFilters();
+            };
+            d.show();
+            d.setModal(true);
+        },
+        slotNuevo: function slotNuevo() {
+            var self = this;
+            var d = new transmovapp.forms.f_vehiculo(self.datadriver);
+
+            console.log("self.datadriver", self.datadriver);
+            if (qxnw.utils.evalueData(self.datadriver)) {
+                var da = {};
+                da.activar_servicios = self.datadriver.servicios_activos;
+                da.id_usuario = self.datadriver.id;
+                da.usuario = self.datadriver.usuario_cliente;
+                da.usuario_text = self.datadriver.nombre + " " + self.datadriver.apellido;
+//                da.propietario_vehiculo = self.datadriver.id;
+//                da.propietario_vehiculo_text = self.datadriver.nombre + " " + self.datadriver.apellido;
+                d.setParamRecord(da);
+            }
+
+            d.settings.accept = function () {
+                self.applyFilters();
+            };
+            d.show();
+            d.setModal(true);
+        },
+        slotUsar: function slotUsar(data) {
+            var self = this;
+            if (data == undefined) {
+                qxnw.utils.alert(self.tr("Seleccione un registro"));
+                return;
+            }
+            var da = {};
+            da.usuario = self.datadriver.usuario_cliente;
+            da.id_usuario = self.datadriver.id;
+            da.empresa = self.datadriver.empresa;
+            da.id_vehiculo = data.id;
+            da.placa = data.placa;
+            console.log("data", data);
+            console.log("da", da);
+            console.log("self.datadriver", self.datadriver);
+            qxnw.utils.question(self.tr("¿Esta seguro de usar este vehículo? Quedará por defecto de uso para que el conductor pueda realizar viajes."), function (e) {
+                if (e) {
+                    var rpc = new qxnw.rpc(self.getRpcUrl(), "vehiculo", true);
+                    var func = function (r) {
+                        console.log(r);
+                        qxnw.utils.alert(self.tr("Se ejecutó correctamente"));
+                        self.applyFilters();
+                    };
+                    rpc.exec("activarVehiculo", da, func);
+                }
+            });
+        },
+        slotActivar: function slotActivar(data) {
+            var self = this;
+            if (data == undefined) {
+                qxnw.utils.alert(self.tr("Seleccione un registro"));
+                return;
+            }
+            var rpc = new qxnw.rpc(self.getRpcUrl(), "servicios_admin", true);
+            var func = function (r) {
+                console.log(r);
+                qxnw.utils.alert(self.tr("Se ejecutó correctamente"));
+                self.applyFilters();
+            };
+            rpc.exec("activarVehiculo", data, func);
+        },
+        slotEditar: function slotEditar() {
+            var self = this;
+            var r = self.selectedRecord();
+            if (r == undefined) {
+                qxnw.utils.alert(self.tr("Seleccione un registro"));
+                return;
+            }
+            var t = main.getConfiguracion();
+            var d = new transmovapp.forms.f_vehiculo(t);
+            d.setParamRecord(r);
+            d.settings.accept = function () {
+                self.applyFilters();
+            };
+            d.setModal(true);
+            d.show();
+        },
+        slotVehiculoExistente: function slotVehiculoExistente() {
+            var self = this;
+            console.log("self.datadriver", self.datadriver);
+            var d = new transmovapp.forms.f_vehiculo_existente(self.datadriver);
+            d.settings.accept = function () {
+                self.applyFilters();
+            };
+            d.setModal(true);
+            d.show();
+        },
+        slotDesvincularVehiculo: function slotDesvincularVehiculo(data) {
+            var self = this;
+            var up = qxnw.userPolicies.getUserData();
+            console.log("up", up);
+            console.log("data", data);
+            console.log("self.datadriver", self.datadriver);
+            qxnw.utils.question(self.tr("¿Esta segur@ de desvincular el vehículo del conductor?"), function (e) {
+                if (e) {
+                    var d = {};
+                    d.id_usuario = self.datadriver.id;
+                    d.vehiculo_id = data.id;
+                    d.id_otros_conductores = data.id_otros_conductores;
+                    console.log("slotDesvincularVehiculo:::", d);
+                    var rpc = new qxnw.rpc(self.getRpcUrl(), "servicios_admin", true);
+                    var func = function (r) {
+                        console.log(r);
+                        qxnw.utils.alert(self.tr("¡Desvinculado correctamente!"));
+                        self.applyFilters();
+                    };
+                    rpc.exec("desvincularVehiculoExisteConductor", d, func);
+                }
+            });
+        }
+    }
+});

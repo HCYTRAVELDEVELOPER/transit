@@ -1,0 +1,15 @@
+COMPILAR: 10001
+1. cordova build --release
+ESTE ES MEJOR PORQUE SUBE LA VERSIÓN: cordova build --release android -- --versionCode=10008
+
+Si no la ha creado debe hacer el paso dos...
+2. keytool -genkey -v -keystore android.keystore -alias android-app-key -keyalg RSA -keysize 2048 -validity 10000
+
+Debe copiar de la ruta platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk a la ruta raíz
+3. jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore android.keystore app-release-unsigned.apk android-app-key
+clave padre08
+
+4. # if zipalign is not installed
+$ sudo apt install zipalign
+$ zipalign -v 4 app-release-unsigned.apk app-release_8.apk
+

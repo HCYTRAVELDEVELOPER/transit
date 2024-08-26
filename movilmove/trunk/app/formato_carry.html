@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<style>
+    *{
+        font-family: sans-serif;
+        font-size: 12px;
+    }
+    label{
+        font-weight: bold;
+    }
+    .label-top{
+        position: absolute;
+        top: 0px;
+        left: 2px;
+    }
+    span{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        font-weight: bold;
+    }
+    .conte-cor{
+        overflow: hidden; 
+        display: flex; 
+        flex-wrap: wrap; 
+        align-items: center; 
+        max-width: 1191px; 
+        margin: auto; 
+        position: relative;
+    }
+</style>
+<div class="conten-cor">
+    <table border="1" cellpadding="7" cellspacing="0" style="border-style: none; width: 100%">
+        <tr>
+            <td style="width: 300px; height: 100px; padding: 0px; position: relative; border: 0px;"><img src="{logo}" alt="" style="width:80%; height:80%;" /></td>
+            <td  colspan="2" style="height: 100px; padding: 0px; position: relative; text-align: center; font-weight: bold; border: 0px;" > 
+                <div style="display: flex; flex-wrap: wrap; position: relative; justify-content: center; align-items: center;">
+                    <div style="width: 60%;">
+                        CARRY EXPRESS S.A.S</br>
+                        NIT. 830.037.696-7</br>
+                        WWW.CARRYEXPRESS.COM.CO</br>
+                        CALLE 74 No. 28-36  PBX. 2250105  BOGOTA D.C.</br>
+                        Habilitaci&oacuten Mintransporte 317 del 30 de Octubre de 2013
+                    </div>
+                    <div>
+                        <img src="https://test.movilmove.com/imagenes/logo_supertransporte.jpg" alt="" style="width: 128px;"/>
+                    </div>
+                </div>
+            </td>
+            <td style="width: 240px; height: 100px; padding: 0px; position: relative; border: 0px; text-align: center; font-weight: bold;">
+                Remesa Terrestre</br>
+                No.  RTU {remesa}</br>
+                <hr>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 300px; height: 30px; padding: 0px; position: relative;"><label class="label-top">FECHA</label><div style="text-align: center;">{fecha}</div></td>
+            <td style="width: 300px; padding: 0px; position: relative; position: relative;"><label class="label-top">CLIENTE</label><div style="text-align: center;">{nombre_cliente}</div></td>
+            <td style="width: 270px; padding: 0px; position: relative; position: relative;"><label class="label-top">NIT.</label><div style="text-align: center;">{nit}</div></td>
+            <td style="width: 240px; padding: 0px; position: relative; position: relative;"><label class="label-top">TELEFONO</label><div style="text-align: center;">{telefono}</div></td>
+        </tr>
+        <tr>
+            <td style="width: 300px; height: 30px; padding: 0px; position: relative;"><label class="label-top">REMITENTE</label><div style="text-align: center;">{remitente}</div></td>
+            <td style="width: 300px; padding: 0px; position: relative; position: relative;" colspan="2"><label class="label-top">DIRECCION - ORIGEN</label><div style="text-align: center;">{origen}</div></td>
+            <td style="width: 240px; padding: 0px; position: relative; position: relative;"><label class="label-top">TELEFONO</label><div style="text-align: center;"> {telefono_recogida} </div></td>
+        </tr>
+        <tr>
+            <td style="width: 300px; height: 30px; padding: 0px; position: relative;"><label class="label-top">DESTINATARIO</label><div style="text-align: center;"> {destinatario} </div></td>
+            <td style="width: 300px; padding: 0px; position: relative; position: relative;" colspan="2"><label class="label-top">DIRECCION - DESTINO</label><div style="text-align: center;"> {destino} </div></td>
+            <td style="width: 240px; padding: 0px; position: relative; position: relative;"><label class="label-top">TELEFONO</label><div style="text-align: center;"> {telefono_entrega} </div></td>
+        </tr>
+    </table>
+    <table border="1" cellpadding="7" cellspacing="0" style="border-style: none; width: 100%; margin-top: 6px;">
+        <tr>
+            <td colspan="4" style="text-align: center; position: relative; border-radius: 3px 3px 0px 0px;" >
+                <span>DATOS DEL VEHICULO</span>
+            </td>
+        </tr>
+        <tr style="text-align: center;">
+            <td style="width: 300px; height: 20px; padding: 0px; position: relative;"><label>PLACA</label></td>
+            <td style="width: 300px; padding: 0px; position: relative; position: relative;"><label>CONDUCTOR</label></td>
+            <td style="width: 270px; padding: 0px; position: relative; position: relative;"><label>CEDULA</label></td>
+            <td style="width: 240px; padding: 0px; position: relative; position: relative;"><label>TIPO VEHICULO</label></td>
+        </tr>
+        <tr style="text-align: center;">
+            <td style="width: 300px; height: 40px; padding: 0px; position: relative;"><div style="text-align: center;"> {placa} </div></td>
+            <td style="width: 300px; padding: 0px; position: relative; position: relative;"><div style="text-align: center;"> {conductor} </div></td>
+            <td style="width: 270px; padding: 0px; position: relative; position: relative;"><div style="text-align: center;"> {identificacion_conductor} </div></td>
+            <td style="width: 240px; padding: 0px; position: relative; position: relative;"><div style="text-align: center;"> {tipo_vehiculo} </div></td>
+        </tr>
+    </table>
+    <table border="1" cellpadding="7" cellspacing="0" style="border-style: none; width: 100%; margin-top: 6px;">
+        <tr style="text-align: center;">
+            <td style="width: 300px; height: 20px; padding: 0px; position: relative;" colspan="2"><label>TIPO SERVICIO</label></td>
+            <td style="width: 300px; padding: 0px; position: relative; position: relative;" colspan="2"><label>TIEMPOS DE SERVICIO</label></td>
+            <td style="width: 270px; padding: 0px; position: relative; position: relative;" colspan="4"><label>CONDICIONES DEL SERVICIO</label></td>
+        </tr>
+        <tr style="text-align: center;">
+            <td style="height: 40px;padding: 0px;position: relative;width: 119px; text-indent: 3px; font-weight: bold;">DIA</td>
+            <td style="height: 40px;padding: 0px;position: relative;width: 193px;"><div style="text-align: center;"> {dia} </div></td>
+            <td style="height: 40px;padding: 0px;position: relative;width: 119px; text-indent: 3px; font-weight: bold;">HORA ENTRADA</td>
+            <td style="height: 40px;padding: 0px;position: relative;width: 180px;"><div style="text-align: center;"> {hora_inicio} </div></td>
+            <td style="height: 40px;padding: 0px;position: relative;width: 119px; text-indent: 3px; font-weight: bold;">AUXILIAR</td>
+            <td style="height: 40px;padding: 0px;position: relative;width: 180px; text-indent: 3px; font-weight: bold;"><div style="text-align: center;"> {numero_auxiliares} </div></td>
+            <td style="height: 40px;padding: 0px;position: relative;width: 119px; text-indent: 3px; font-weight: bold;">EMPAQUE</td>
+            <td style="height: 40px;padding: 0px;position: relative;width: 171px;"><div style="text-align: center;"> {empaque} </div></td>
+        </tr>
+        <tr style="text-align: center;">
+            <td style="height: 40px;padding: 0px;position: relative;width: 119px; text-indent: 3px; font-weight: bold;">MEDIO DIA</td>
+            <td style="height: 40px;padding: 0px;position: relative;width: 193px;"><div style="text-align: center;"> {medio_dia} </div></td>
+            <td style="height: 40px;padding: 0px;position: relative;width: 119px; text-indent: 3px; font-weight: bold;">HORA SALIDA</td>
+            <td style="height: 40px;padding: 0px;position: relative;width: 180px;"><div style="text-align: center;"> {hora_fin} </div></td>
+            <td style="height: 40px;padding: 0px;position: relative;width: 119px; text-indent: 3px; font-weight: bold;">SALIDA DE BOGOTA</td>
+            <td style="height: 40px;padding: 0px;position: relative;width: 180px; text-indent: 3px; font-weight: bold;"></td>
+            <td style="height: 40px;padding: 0px;position: relative;width: 119px; text-indent: 3px; font-weight: bold;">CANTIDAD</td>
+            <td style="height: 40px;padding: 0px;position: relative;width: 171px;"><div style="text-align: center;"> {cantidad} </div></td>
+        </tr>
+        <tr style="text-align: center;">
+            <td style="height: 40px;padding: 0px;position: relative;width: 119px; text-indent: 3px; font-weight: bold;">HORAS ADICIONALES</td>
+            <td style="height: 40px;padding: 0px;position: relative;width: 193px;"></td>
+            <td style="height: 40px;padding: 0px;position: relative;width: 119px; text-indent: 3px; font-weight: bold;">HORAS SERVICIO</td>
+            <td style="height: 40px;padding: 0px;position: relative;width: 180px;"><div style="text-align: center;"> {total_tiempo} </div></td>
+            <td style="height: 40px;padding: 0px;position: relative;width: 119px; text-indent: 3px; font-weight: bold;">PARQUEADERO</td>
+            <td style="height: 40px;padding: 0px;position: relative;width: 180px; text-indent: 3px; font-weight: bold;"></td>
+            <td style="height: 40px;padding: 0px;position: relative;width: 119px; text-indent: 3px; font-weight: bold;">DESCRIPCION</td>
+            <td style="height: 40px;padding: 0px;position: relative;width: 171px;"><div style="text-align: center;"> {descricion_carga} </div></td>
+        </tr>
+        <tr style="text-align: center;">
+            <td style="height: 40px;padding: 0px;position: relative;width: 119px; text-indent: 3px; font-weight: bold;">PUNTO A PUNTO</td>
+            <td style="height: 40px;padding: 0px;position: relative;width: 193px;"><div style="text-align: center;"> {punto_punto} </div></td>
+            <td style="height: 40px;padding: 0px;position: relative;width: 119px; text-indent: 3px; font-weight: bold;">HORAS ADICIONALES</td>
+            <td style="height: 40px;padding: 0px;position: relative;width: 180px;"></td>
+            <td style="height: 40px;padding: 0px;position: relative;width: 119px; text-indent: 3px; font-weight: bold;">PEAJES</td>
+            <td style="height: 40px;padding: 0px;position: relative;width: 180px; text-indent: 3px; font-weight: bold;"><div style="text-align: center;"> {aplico_peaje} </div></td>
+            <td style="height: 40px;padding: 0px;position: relative;width: 119px; text-indent: 3px; font-weight: bold;">PESO / VOLUMEN</td>
+            <td style="height: 40px;padding: 0px;position: relative;width: 171px;"><div style="text-align: center;"> {volumen} </div></td>
+        </tr>
+        <tr style="text-align: center;">
+            <td style="height: 40px;padding: 0px;position: relative;width: 119px; text-indent: 3px; font-weight: bold;">CON RETORNO</td>
+            <td style="height: 40px;padding: 0px;position: relative;width: 193px;"><div style="text-align: center;"> {retorno} </div></td>
+            <td style="height: 40px;padding: 0px;position: relative;width: 119px; text-indent: 3px; font-weight: bold;">TOTAL ENTREGAS</td>
+            <td style="height: 40px;padding: 0px;position: relative;width: 180px;"></td>
+            <td style="height: 40px;padding: 0px;position: relative;width: 119px; text-indent: 3px; font-weight: bold;">STAND BY</td>
+            <td style="height: 40px;padding: 0px;position: relative;width: 180px; text-indent: 3px; font-weight: bold;"></td>
+            <td style="height: 40px;padding: 0px;position: relative;width: 119px; text-indent: 3px; font-weight: bold;">MANIFIESTO No.</td>
+            <td style="height: 40px;padding: 0px;position: relative;width: 171px;"></td>
+        </tr>
+    </table>
+    <table border="1" cellpadding="7" cellspacing="0" style="border-style: none; width: 100%; margin-top: 6px;">
+        <tr style="text-align: center;">
+            <td style="height: 40px;padding: 0px;position: relative;width: 117px;text-indent: 3px;font-weight: bold;">TARIFA</td>
+            <td style="height: 40px;padding: 0px;position: relative;width: 187px;"></td>
+            <td style="height: 40px;padding: 0px;position: relative;width: 119px; text-indent: 3px; font-weight: bold;">FLETE</td>
+            <td style="height: 40px;padding: 0px;position: relative;width: 175px;"></td>
+            <td style="height: 40px;padding: 0px;position: relative;width: 119px; text-indent: 3px; font-weight: bold;">VALOR DECLARADO</td>
+            <td style="height: 40px;padding: 0px;position: relative;width: 180px; text-indent: 3px; font-weight: bold;" colspan="2"><div style="text-align: center;"> {valor_declarado} </div></td>
+        </tr>
+    </table>
+    <table border="1" cellpadding="7" cellspacing="0" style="border-style: none; width: 100%; margin-top: 6px;">
+        <tr>
+            <td style="height: 109px;width: 291px; position: relative;" rowspan="2"><label class="label-top">OBSERVACIONES:</label></td>
+            <td style="height: 109px; position: relative;"><label class="label-top">LAS OBSERVACIONES SOBRE FALTANTES, AVERIAS, Y SAQUEOS SI LOS HUBIERE, DEBERAN REGISTRARSE EN EL ORIGINAL DE LA PRESENTE REMESA EN PRESENCIA DEL TRANSPORTADOR, QUEDANDO CUMPLIDO EL CONTRATO.</label><div style="display: flex;justify-content: center;align-items: center;margin-top: 23px;"><img src="{firma_usuario}" alt="" style="width: 120px;  height: 100px;"/></div></td>
+        </tr>
+        <tr>
+            <td style="height: 1px; position: relative;">
+                <label class="label-top">RECIBI CONFORME :  NOMBRE - FIRMA Y SELLO</label></td>
+        </tr>
+    </table>
+
+</div>

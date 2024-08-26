@@ -1,0 +1,52 @@
+{
+  "version": 3,
+  "names": [
+    "qx",
+    "Bootstrap",
+    "executePendingDefers",
+    "$$dbClassInfo",
+    "process",
+    "require",
+    "semver",
+    "Class",
+    "define",
+    "extend",
+    "tool",
+    "cli",
+    "commands",
+    "Package",
+    "statics",
+    "migrationInProcess",
+    "getYargsCommand",
+    "command",
+    "describe",
+    "builder",
+    "check",
+    "argv",
+    "valid",
+    "qxVersion",
+    "members",
+    "runner",
+    "migration",
+    "Runner",
+    "set",
+    "dryRun",
+    "Boolean",
+    "verbose",
+    "applied",
+    "pending",
+    "runMigrations",
+    "compiler",
+    "Console",
+    "info",
+    "checkMigrations",
+    "Migrate"
+  ],
+  "sources": [
+    "/home/andresf/workspace_qooxdoo/qooxdoo/qooxdoo-7.0/source/class/qx/tool/cli/commands/Migrate.js"
+  ],
+  "sourcesContent": [
+    "/* ************************************************************************\n\n   qooxdoo - the new era of web development\n\n   http://qooxdoo.org\n\n   Copyright:\n     2017-2021 Christian Boulanger\n\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n\n   Authors:\n     * Christian Boulanger (info@bibliograph.org, @cboulanger)\n\n************************************************************************ */\n\nconst process = require(\"process\");\nconst semver = require(\"semver\");\n\n/**\n * Migrates an application to a higher version\n */\nqx.Class.define(\"qx.tool.cli.commands.Migrate\", {\n  extend: qx.tool.cli.commands.Package,\n\n  statics: {\n    /**\n     * Flag to prevent recursive call to process()\n     */\n    migrationInProcess: false,\n    /**\n     * Return the Yargs configuration object\n     * @return {{}}\n     */\n    getYargsCommand() {\n      return {\n        command: \"migrate\",\n        describe: \"migrate a library/application to a newer qooxdoo version\",\n        builder: {\n          \"dry-run\": {\n            describe: \"Do not apply migrations\"\n          },\n\n          \"qx-version\": {\n            check: argv => semver.valid(argv.qxVersion),\n            describe:\n              \"A semver string. If given, the maximum qooxdoo version for which to run migrations\"\n          }\n        }\n      };\n    }\n  },\n\n  members: {\n    /**\n     * Announces or applies a migration\n     */\n    async process() {\n      let runner = new qx.tool.migration.Runner().set({\n        dryRun: Boolean(this.argv.dryRun),\n        verbose: Boolean(this.argv.verbose),\n        qxVersion: this.argv.qxVersion || null\n      });\n\n      let { applied, pending } = await runner.runMigrations();\n      qx.tool.compiler.Console.info(\n        `Finished ${\n          this.argv.dryRun ? \"checking\" : \"running\"\n        } migrations: ${applied} migrations applied, ${pending} migrations pending.`\n      );\n    },\n\n    /**\n     * @override\n     */\n    async checkMigrations() {}\n  }\n});\n"
+  ],
+  "mappings": ";;;;;;;;;;;;;;EAAAA,EAAE,CAACC,SAAH,CAAaC,oBAAb,CAAkCC,aAAlC;;EAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;EAEA,MAAMC,OAAO,GAAGC,OAAO,CAAC,SAAD,CAAvB;;EACA,MAAMC,MAAM,GAAGD,OAAO,CAAC,QAAD,CAAtB;EAEA;AACA;AACA;;;EACAL,EAAE,CAACO,KAAH,CAASC,MAAT,CAAgB,8BAAhB,EAAgD;IAC9CC,MAAM,EAAET,EAAE,CAACU,IAAH,CAAQC,GAAR,CAAYC,QAAZ,CAAqBC,OADiB;IAG9CC,OAAO,EAAE;MACP;AACJ;AACA;MACIC,kBAAkB,EAAE,KAJb;;MAKP;AACJ;AACA;AACA;MACIC,eAAe,GAAG;QAChB,OAAO;UACLC,OAAO,EAAE,SADJ;UAELC,QAAQ,EAAE,0DAFL;UAGLC,OAAO,EAAE;YACP,WAAW;cACTD,QAAQ,EAAE;YADD,CADJ;YAKP,cAAc;cACZE,KAAK,EAAEC,IAAI,IAAIf,MAAM,CAACgB,KAAP,CAAaD,IAAI,CAACE,SAAlB,CADH;cAEZL,QAAQ,EACN;YAHU;UALP;QAHJ,CAAP;MAeD;;IAzBM,CAHqC;IA+B9CM,OAAO,EAAE;MACP;AACJ;AACA;MACI,MAAMpB,OAAN,GAAgB;QACd,IAAIqB,MAAM,GAAG,IAAIzB,EAAE,CAACU,IAAH,CAAQgB,SAAR,CAAkBC,MAAtB,GAA+BC,GAA/B,CAAmC;UAC9CC,MAAM,EAAEC,OAAO,CAAC,KAAKT,IAAL,CAAUQ,MAAX,CAD+B;UAE9CE,OAAO,EAAED,OAAO,CAAC,KAAKT,IAAL,CAAUU,OAAX,CAF8B;UAG9CR,SAAS,EAAE,KAAKF,IAAL,CAAUE,SAAV,IAAuB;QAHY,CAAnC,CAAb;QAMA,IAAI;UAAES,OAAF;UAAWC;QAAX,IAAuB,MAAMR,MAAM,CAACS,aAAP,EAAjC;QACAlC,EAAE,CAACU,IAAH,CAAQyB,QAAR,CAAiBC,OAAjB,CAAyBC,IAAzB,CACG,YACC,KAAKhB,IAAL,CAAUQ,MAAV,GAAmB,UAAnB,GAAgC,SACjC,gBAAeG,OAAQ,wBAAuBC,OAAQ,sBAHzD;MAKD,CAjBM;;MAmBP;AACJ;AACA;MACI,MAAMK,eAAN,GAAwB,CAAE;;IAtBnB;EA/BqC,CAAhD;EAxBAtC,EAAE,CAACU,IAAH,CAAQC,GAAR,CAAYC,QAAZ,CAAqB2B,OAArB,CAA6BpC,aAA7B,GAA6CA,aAA7C"
+}

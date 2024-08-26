@@ -1,0 +1,41 @@
+{
+    "$schema": "https://qooxdoo.org/schema/compile-1-0-0.json",
+    "targets": [
+        {
+            "type": "source",
+            "outputPath": "compiled/source",
+            "bundle": {
+                "include": ["qx.*"]
+            }
+        },
+        {
+            "type": "build",
+            "outputPath": "compiled/build"
+        }
+    ],
+    "libraries": [
+        "./qxnw.6.0/trunk",
+        "."
+    ],
+    "defaultTarget": "source",
+    "locales": ["en", "es"],
+    "environment": {
+        "qx.icontheme": "Tango"
+    },
+    "applications": [
+        {
+            "class": "movilmove.Application",
+            "theme": "movilmove.theme.Theme",
+            "name": "movilmove",
+            "bootPath": "source/boot"
+        }
+    ],
+    "parts":
+            {
+                "boot":
+                        {
+                            "include": ["${QXTHEME}", "${APPLICATION}.*"],
+                            "include": ["${QXTHEME}", "${APPLICATION}.Application"]
+                        }
+            }
+}

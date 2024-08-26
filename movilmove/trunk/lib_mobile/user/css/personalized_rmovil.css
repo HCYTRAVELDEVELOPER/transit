@@ -1,0 +1,97 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 4, 2019, 1:25:54 PM
+    Author     : alexf
+*/
+:root {
+    /*--color_empresarial: #c04025;*/
+    /*--color_empresarial: #e0471e;*/
+    /*--color_empresarial: #f64514;*/
+    --color_empresarial: #5A2CA0;
+}
+body .ui-page .logotipoHeader_home{
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+body .ui-page .logotipoHeader_home img{
+    height: 47px!important;
+    top: -5px;
+    width: 108px!important;
+    position: relative;
+    object-fit: contain;
+    object-position: left;
+}
+.centrar_mapa{
+    position: fixed;
+    /* bottom: calc(0% + 153px); */
+    /* top: auto; */
+    z-index: 10;
+    left: auto;
+    right: 10px;
+    top: 4px;
+}
+.centrar_mapa .material-icons{
+    font-size: 35px;
+    background-color: var(--color_empresarial);
+    color: #fff!important;
+    border-radius: 50%;
+    padding: 3px;
+}
+body .listFavAdd .spanIconFavir {
+    background-color: var(--color_empresarial);
+}
+body .ui-slider-switch .ui-slider-label-b,body .ui-slider-switch .ui-slider-label-a,
+body .ui-page-theme-a .ui-slider-track .ui-btn-active {
+    background: var(--color_empresarial);;
+}
+body .cont-radar p {
+    background: var(--color_empresarial);;
+}
+.cont-radar circle {
+    fill: var(--color_empresarial);
+}
+.cont-radar #radar-pattern {
+    stroke: var(--color_empresarial);
+}
+.cont-radar #radar-bg path:nth-child(2n) {
+    fill: var(--color_empresarial);
+}
+.cont-radar #radar-hand {
+    stroke: var(--color_empresarial);
+}
+html body .ui-page .my-header .btnMenuHeader {
+    background: var(--color_empresarial);
+}
+html body .ui-page .my-header .btnMenuHeader .menuBarEnc {
+    color: #fff;
+}
+html body .contenedor_adondevamos .button_adondevas .material-icons {
+    /*color: #f64514;*/
+}
+.spanValueEnd{
+    font-size: 22px;
+}
+body .contenedor_service_recargas .nw_widget_div_my_link_saldo .containerLabel,
+body .contenedor_service_recargas .nw_widget_div_my_link_planes .containerLabel {
+    background: var(--color_empresarial);
+}
+body #contenedor_recargas_buttons_actions button#recargar {
+    background: var(--color_empresarial);
+}
+body .saldo_tit_tot {
+    color: var(--color_empresarial);
+}
+body .ui-header.ui-bar-a.my-header.header.headerEnc_relative.ui-bar-inherit {
+    height: 50px;
+}
+body #payConekta .logotipoHeader img{
+    width: 65px;
+    top: -4px;
+    position: relative;
+}

@@ -1,0 +1,11 @@
+{
+  "name": "NwMaker App",
+  "short_name": "NwMaker App",
+  "icons": [{
+        "src": "images/icon-192x192.png",
+        "sizes": "192x192"
+      }],
+  "start_url": "./index.php",
+  "display": "standalone",
+  "gcm_sender_id": "736200767364"
+}

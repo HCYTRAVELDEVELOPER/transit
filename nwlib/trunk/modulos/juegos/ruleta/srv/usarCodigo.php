@@ -1,0 +1,23 @@
+<?php
+$file_nwlib = $_SERVER['DOCUMENT_ROOT'] . "/rpcsrv/_mod.inc.php";
+$ruta_enlaces = "";
+if (file_exists($file_nwlib)) {
+//NWLIB
+    include_once $_SERVER['DOCUMENT_ROOT'] . "/rpcsrv/_mod.inc.php";
+    $ruta_enlaces = "";
+} else {
+//NWPROJECT
+    $ruta_enlaces = "/nwproject/php/modulos/";
+    include_once $_SERVER["DOCUMENT_ROOT"] . '/nwproject/php/modulos/nwcommerce/_mod.php';
+}
+$db = NWDatabase::database();
+$ca = new NWDbQuery($db);
+$ca->prepareUpdate("nwplay_ruleta_codigos", "estado", "id_enc=:id_enc and code=:code");
+$ca->bindValue(":id_enc", $_POST["id_enc"], true);
+$ca->bindValue(":code", $_POST["code"], true);
+$ca->bindValue(":estado", "usado");
+if (!$ca->exec()) {
+    echo "Error: " . $ca->lastErrorText();
+    return;
+}
+?>

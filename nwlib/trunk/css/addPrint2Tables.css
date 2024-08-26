@@ -1,0 +1,82 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 6/02/2018, 08:03:46 PM
+    Author     : duvanb
+*/
+
+/*////////////////////////////////////////////////////////////INICIA TABLA*/
+/*CONTAINER DEBAJO DEL TITLE*/
+.containerBody_Fisioterapia .containerForm_0 .qxuigroupboxGroupBox_27 .qx-group {
+    margin-top: 25px!important;
+}
+/*CUERPO TABLA*/
+.containerBody_Fisioterapia .containerForm_0 .qxuigroupboxGroupBox_27,
+.containerBody_Fisioterapia .containerForm_0 .qxuigroupboxGroupBox_27 .qx-group,
+.containerBody_Fisioterapia .containerForm_0 .qxuigroupboxGroupBox_27 .nw_container_fields_form_qxnwfield_textArea_qxnw_column_padre,
+.containerBody_Fisioterapia .containerForm_0 .qxuigroupboxGroupBox_27 .nw_container_fields_form,
+.containerBody_Fisioterapia .containerForm_0 .qxuigroupboxGroupBox_27 .nw_container_fields_form div,
+.containerBody_Fisioterapia .containerForm_0 .qxuigroupboxGroupBox_27 .qx-tabview-pane_padre_padre_padre,
+.containerBody_Fisioterapia .containerForm_0 .qxuigroupboxGroupBox_27 .qx-toolbar_padre_padre_padre,
+.containerBody_Fisioterapia .containerForm_0 .qxuigroupboxGroupBox_27 .qx-toolbar_padre_padre,
+.containerBody_Fisioterapia .containerForm_0 .qxuigroupboxGroupBox_27 .qx-tabview-pane_padre_padre,
+.containerBody_Fisioterapia .containerForm_0 .qxuigroupboxGroupBox_27 .qx-tabview-pane_padre,
+.containerBody_Fisioterapia .containerForm_0 .qxuigroupboxGroupBox_27 .qooxdoo-table-cell_padre_padre_padre_padre,
+.containerBody_Fisioterapia .containerForm_0 .qxuigroupboxGroupBox_27 .qx-scrollbar-horizontal_padre_qx-scrollbar-vertical_padre_padre,
+.containerBody_Fisioterapia .containerForm_0 .qxuigroupboxGroupBox_27 .qx-scrollbar-horizontal_padre,
+.containerBody_Fisioterapia .containerForm_0 .qxuigroupboxGroupBox_27 .qx-scrollbar-vertical_padre,
+.containerBody_Fisioterapia .containerForm_0 .qxuigroupboxGroupBox_27 .qx-table-statusbar_padre_padre_padre_padre,
+.containerBody_Fisioterapia .containerForm_0 .qxuigroupboxGroupBox_27 .qx-table-statusbar_padre_padre_padre,
+.containerBody_Fisioterapia .containerForm_0 .qxuigroupboxGroupBox_27 .qx-table-statusbar_padre_padre,
+.containerBody_Fisioterapia .containerForm_0 .qxuigroupboxGroupBox_27 .qx-table-statusbar_padre,
+.containerBody_Fisioterapia .containerForm_0 .qxuigroupboxGroupBox_27 .qx-table-scroller-focus-indicator_padre_padre_padre,
+.containerBody_Fisioterapia .containerForm_0 .qxuigroupboxGroupBox_27 .qx-table-scroller-focus-indicator_padre_padre,
+.containerBody_Fisioterapia .containerForm_0 .qxuigroupboxGroupBox_27 .qx-table-scroller-header_padre_padre,
+.containerBody_Fisioterapia .containerForm_0 .qxuigroupboxGroupBox_27 .qx-table-scroller-header_padre,
+.containerBody_Fisioterapia .containerForm_0 .qxuigroupboxGroupBox_27 .qx-table-scroller-header,
+.containerBody_Fisioterapia .containerForm_0 .qxuigroupboxGroupBox_27 .qx-table-scroller-focus-indicator_padre,
+.containerBody_Fisioterapia .containerForm_0 .qxuigroupboxGroupBox_27 .qooxdoo-table-cell_padre_padre_padre,
+.containerBody_Fisioterapia .containerForm_0 .qxuigroupboxGroupBox_27 .qooxdoo-table-cell_padre_padre,
+.containerBody_Fisioterapia .containerForm_0 .qxuigroupboxGroupBox_27 .qooxdoo-table-cell_padre,
+.containerBody_Fisioterapia .containerForm_0 .qxuigroupboxGroupBox_27 .qx-tabview-pane
+{
+    position: relative!important;
+    width: 100%!important;
+    height: auto!important;
+    top: auto!important;
+    overflow: hidden!important;
+    left: auto!important;
+}
+/*FILAS*/
+.containerBody_Fisioterapia .containerForm_0 .qxuigroupboxGroupBox_27 .qooxdoo-table-cell_padre{
+    display: inline-table;
+}
+
+/*COLUMNAS ENCABEZADO*/
+.containerBody_Fisioterapia .containerForm_0 .qxuigroupboxGroupBox_27 .qx-table-header-cell
+{
+    position: relative!important;
+    top: auto!important;
+    float: left;
+    left: auto!important;
+}
+/*COLUMNAS REGISTROS*/
+.containerBody_Fisioterapia .containerForm_0 .qxuigroupboxGroupBox_27 .qooxdoo-table-cell
+{
+    position: relative!important;
+    top: auto!important;
+    float: left;
+    left: auto!important;
+}
+/*FIN*/
+/*PERO*/
+/*LE PUEDE PONER ANCHO FIJO PARA ALGUNAS COLUMNAS*/
+.containerBody_Fisioterapia .containerForm_0 .qxuigroupboxGroupBox_27 .qx-table-header-cell:nth-child(2),
+.containerBody_Fisioterapia .containerForm_0 .qxuigroupboxGroupBox_27 .qooxdoo-table-cell:nth-child(2)
+{
+    width: 850px!important;
+}
+/*/////////////////////////////////////////////////////////////////////////AHORA SI FIN TABLA*/

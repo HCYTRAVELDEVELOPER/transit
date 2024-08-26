@@ -1,0 +1,52 @@
+{
+  "version": 3,
+  "names": [
+    "qx",
+    "Bootstrap",
+    "executePendingDefers",
+    "$$dbClassInfo",
+    "Class",
+    "define",
+    "extend",
+    "tool",
+    "compiler",
+    "jsdoc",
+    "CommandParser",
+    "members",
+    "parseCommand",
+    "pdoc",
+    "classname",
+    "analyser",
+    "m",
+    "body",
+    "match",
+    "type",
+    "paramName",
+    "trim",
+    "resolveType",
+    "description",
+    "pos",
+    "indexOf",
+    "optional",
+    "tmp",
+    "substring",
+    "defaultValue",
+    "segs",
+    "split",
+    "length",
+    "map",
+    "str",
+    "result",
+    "dims",
+    "count",
+    "dimensions",
+    "ParamParser"
+  ],
+  "sources": [
+    "/home/andresf/workspace_qooxdoo/qooxdoo/qooxdoo-7.0/source/class/qx/tool/compiler/jsdoc/ParamParser.js"
+  ],
+  "sourcesContent": [
+    "/* ************************************************************************\n *\n *    qooxdoo-compiler - node.js based replacement for the Qooxdoo python\n *    toolchain\n *\n *    https://github.com/qooxdoo/qooxdoo\n *\n *    Copyright:\n *      2011-2017 Zenesis Limited, http://www.zenesis.com\n *\n *    License:\n *      MIT: https://opensource.org/licenses/MIT\n *\n *      This software is provided under the same licensing terms as Qooxdoo,\n *      please see the LICENSE file in the Qooxdoo project's top-level directory\n *      for details.\n *\n *    Authors:\n *      * John Spackman (john.spackman@zenesis.com, @johnspackman)\n *\n * *********************************************************************** */\n/**\n * Parser for JSDoc \"@param\"\n */\nqx.Class.define(\"qx.tool.compiler.jsdoc.ParamParser\", {\n  extend: qx.tool.compiler.jsdoc.CommandParser,\n\n  members: {\n    parseCommand(pdoc, classname, analyser) {\n      var m = pdoc.body.match(/^([\\S]+)(\\s+\\{([^}]+)\\}([\\s\\S]+))??$/);\n      var type;\n      if (m) {\n        pdoc.paramName = m[1].trim();\n        type = this.resolveType((m[3] || \"\").trim(), classname, analyser);\n        pdoc.description = m[4];\n      } else {\n        m = pdoc.body.match(/^(\\{([^}]+)\\}([\\s]+))(\\S+)(\\s+[\\s\\S]*)$/);\n        if (m) {\n          pdoc.paramName = m[4].trim();\n          type = this.resolveType((m[2] || \"\").trim(), classname, analyser);\n          pdoc.description = m[5].trim();\n        }\n      }\n      if (m) {\n        var pos = type.indexOf(\"?\");\n        if (pos > -1) {\n          pdoc.optional = true;\n          var tmp = type.substring(pos + 1).trim();\n          if (tmp) {\n            pdoc.defaultValue = tmp;\n          }\n          type = type.substring(0, pos).trim();\n        }\n        var segs = type.split(\"|\");\n        if (segs.length > 1) {\n          type = segs.map(str => {\n            var result;\n            str = str.trim();\n            var pos = str.indexOf(\"[]\");\n            if (pos > -1) {\n              var dims = str.substring(pos);\n              result = {\n                type: str.substring(0, pos)\n              };\n\n              var count = 1;\n              pos = 0;\n              while (dims.length && dims.substring(pos, 2) == \"[]\") {\n                pos += 2;\n                count++;\n              }\n              result.dimensions = count;\n            } else {\n              result = str;\n            }\n            return result;\n          });\n        }\n        pdoc.type = type;\n      } else {\n        delete pdoc.paramName;\n        delete pdoc.type;\n        delete pdoc.description;\n      }\n    }\n  }\n});\n"
+  ],
+  "mappings": ";;;;;;;;;;;;EAAAA,EAAE,CAACC,SAAH,CAAaC,oBAAb,CAAkCC,aAAlC;;EAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;;EACA;AACA;AACA;EACAH,EAAE,CAACI,KAAH,CAASC,MAAT,CAAgB,oCAAhB,EAAsD;IACpDC,MAAM,EAAEN,EAAE,CAACO,IAAH,CAAQC,QAAR,CAAiBC,KAAjB,CAAuBC,aADqB;IAGpDC,OAAO,EAAE;MACPC,YAAY,CAACC,IAAD,EAAOC,SAAP,EAAkBC,QAAlB,EAA4B;QACtC,IAAIC,CAAC,GAAGH,IAAI,CAACI,IAAL,CAAUC,KAAV,CAAgB,sCAAhB,CAAR;QACA,IAAIC,IAAJ;;QACA,IAAIH,CAAJ,EAAO;UACLH,IAAI,CAACO,SAAL,GAAiBJ,CAAC,CAAC,CAAD,CAAD,CAAKK,IAAL,EAAjB;UACAF,IAAI,GAAG,KAAKG,WAAL,CAAiB,CAACN,CAAC,CAAC,CAAD,CAAD,IAAQ,EAAT,EAAaK,IAAb,EAAjB,EAAsCP,SAAtC,EAAiDC,QAAjD,CAAP;UACAF,IAAI,CAACU,WAAL,GAAmBP,CAAC,CAAC,CAAD,CAApB;QACD,CAJD,MAIO;UACLA,CAAC,GAAGH,IAAI,CAACI,IAAL,CAAUC,KAAV,CAAgB,yCAAhB,CAAJ;;UACA,IAAIF,CAAJ,EAAO;YACLH,IAAI,CAACO,SAAL,GAAiBJ,CAAC,CAAC,CAAD,CAAD,CAAKK,IAAL,EAAjB;YACAF,IAAI,GAAG,KAAKG,WAAL,CAAiB,CAACN,CAAC,CAAC,CAAD,CAAD,IAAQ,EAAT,EAAaK,IAAb,EAAjB,EAAsCP,SAAtC,EAAiDC,QAAjD,CAAP;YACAF,IAAI,CAACU,WAAL,GAAmBP,CAAC,CAAC,CAAD,CAAD,CAAKK,IAAL,EAAnB;UACD;QACF;;QACD,IAAIL,CAAJ,EAAO;UACL,IAAIQ,GAAG,GAAGL,IAAI,CAACM,OAAL,CAAa,GAAb,CAAV;;UACA,IAAID,GAAG,GAAG,CAAC,CAAX,EAAc;YACZX,IAAI,CAACa,QAAL,GAAgB,IAAhB;YACA,IAAIC,GAAG,GAAGR,IAAI,CAACS,SAAL,CAAeJ,GAAG,GAAG,CAArB,EAAwBH,IAAxB,EAAV;;YACA,IAAIM,GAAJ,EAAS;cACPd,IAAI,CAACgB,YAAL,GAAoBF,GAApB;YACD;;YACDR,IAAI,GAAGA,IAAI,CAACS,SAAL,CAAe,CAAf,EAAkBJ,GAAlB,EAAuBH,IAAvB,EAAP;UACD;;UACD,IAAIS,IAAI,GAAGX,IAAI,CAACY,KAAL,CAAW,GAAX,CAAX;;UACA,IAAID,IAAI,CAACE,MAAL,GAAc,CAAlB,EAAqB;YACnBb,IAAI,GAAGW,IAAI,CAACG,GAAL,CAASC,GAAG,IAAI;cACrB,IAAIC,MAAJ;cACAD,GAAG,GAAGA,GAAG,CAACb,IAAJ,EAAN;cACA,IAAIG,GAAG,GAAGU,GAAG,CAACT,OAAJ,CAAY,IAAZ,CAAV;;cACA,IAAID,GAAG,GAAG,CAAC,CAAX,EAAc;gBACZ,IAAIY,IAAI,GAAGF,GAAG,CAACN,SAAJ,CAAcJ,GAAd,CAAX;gBACAW,MAAM,GAAG;kBACPhB,IAAI,EAAEe,GAAG,CAACN,SAAJ,CAAc,CAAd,EAAiBJ,GAAjB;gBADC,CAAT;gBAIA,IAAIa,KAAK,GAAG,CAAZ;gBACAb,GAAG,GAAG,CAAN;;gBACA,OAAOY,IAAI,CAACJ,MAAL,IAAeI,IAAI,CAACR,SAAL,CAAeJ,GAAf,EAAoB,CAApB,KAA0B,IAAhD,EAAsD;kBACpDA,GAAG,IAAI,CAAP;kBACAa,KAAK;gBACN;;gBACDF,MAAM,CAACG,UAAP,GAAoBD,KAApB;cACD,CAbD,MAaO;gBACLF,MAAM,GAAGD,GAAT;cACD;;cACD,OAAOC,MAAP;YACD,CArBM,CAAP;UAsBD;;UACDtB,IAAI,CAACM,IAAL,GAAYA,IAAZ;QACD,CApCD,MAoCO;UACL,OAAON,IAAI,CAACO,SAAZ;UACA,OAAOP,IAAI,CAACM,IAAZ;UACA,OAAON,IAAI,CAACU,WAAZ;QACD;MACF;;IAzDM;EAH2C,CAAtD;EAxBAvB,EAAE,CAACO,IAAH,CAAQC,QAAR,CAAiBC,KAAjB,CAAuB8B,WAAvB,CAAmCpC,aAAnC,GAAmDA,aAAnD"
+}

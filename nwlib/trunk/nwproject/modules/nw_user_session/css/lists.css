@@ -1,0 +1,392 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 13, 2018, 12:18:27 PM
+    Author     : alexf
+*/
+.addDivConverted{
+    position: relative;
+    left: 0%;
+    opacity: 1;
+    border-radius: 5px; 
+    box-shadow: 0px 0px 5px #ccc;
+    background-color: #fff;
+    margin: auto;
+}
+.tableListMaker{
+    border-collapse: collapse;
+    position: relative;
+    overflow: auto;
+    margin: 10px 0;
+    width: 100%;
+    display: none;
+}
+.tableListMaker td, .tableListMaker th{
+    padding: 10px;
+    border: 1px solid #f1f1f1;
+}
+.tableListMakerMobil{
+    position: relative;
+    padding: 4px 0;
+    padding: 0;
+}
+.colsMobil{
+    position: relative;
+    border-bottom: 1px solid #F3F3F3;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.containerButtonListEnc{
+    position: relative;
+    padding: 6px 5px 6px 5px;
+    border-bottom: 1px solid #d8dfe5;
+    margin: 0px 0px 5px 0px;
+    overflow: hidden;
+    margin: 0;
+
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+}
+
+.containerFilters{
+    position: relative;
+    /*overflow: hidden;*/
+    padding: 5px 0px 5px 5px;
+    border-bottom: 1px solid #d8dfe5;
+    background: #f9f9f9;
+    border-bottom: 1px solid rgba(208,208,208,0.4);
+    border-top: 1px solid rgba(208,208,208,0.4);
+}
+.containerFilters .divContainInput {
+    min-width: initial;
+    margin: 0px 15px 0px 0px;
+}
+.containerFilters .divContainInputIntern{
+    padding: 0;
+}
+.containerFilters .inputdatanwform {
+    font-size: 12px;
+    /*width: auto;*/
+}
+.containerFilters input[type="text"]{
+    /*padding: 5px 0px;*/
+    text-indent: 5px;
+    width: 100%;
+}
+
+.containerFilters .btn-red-cuadro{
+    display: block;
+    float: left;
+    margin: 29px 10px 0px 0px;
+}
+.filterEncNw{
+    position: relative;
+    float: left;
+}
+.filterEncNwIntern{
+    position: relative;
+    margin: 5px 5px 0px 0px;
+    padding: 1px 5px 20px 3px;
+    color: #8b94a5;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 11px;
+    border-bottom: 3px solid #16a4fa;    
+}
+.colsMobilEnc {
+    border-bottom: 1px solid #D1D1D1;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    max-height: 50px;
+}
+.colsMobilEnc p{
+    position: relative;
+    word-break: break-word;
+    text-transform: capitalize;
+    padding: 5px 0px;
+    margin: 5px 0;
+    border-right: 1px solid #F3F3F3;
+}
+.hidden_col{
+    display: none;
+}
+.hiddenColumn{
+    display: none!important;
+}
+.colEncMobil{
+    font-weight: bold;
+}
+.colMobil{
+    position: relative;
+    float: left;
+}
+.colsMobil p {
+    position: relative;
+    word-break: break-word;
+    padding: 15px 0px;
+    margin: 5px 0;
+}
+.colsMobil:hover {
+    z-index: 1;
+}
+.colsMobil_show{
+    z-index: 1;
+    background: #EFEFEF;
+    z-index: 1000;
+}
+.containDataCols{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    min-width: 100%;
+    min-height: 500px;
+    box-sizing: border-box;
+}
+.containDataColsInt{
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    width: 100%; 
+    height: 100%;
+    box-sizing: border-box;
+}
+.showRowMax  .containDataColsInt{
+    position: relative;    
+}
+.row_nw_inpar{
+    background: #f9f9f9;
+}
+.rowinterlistnwmaker{
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    width: -moz-available; 
+    width: -webkit-fill-available;
+    width: fill-available;
+    /*display: flex;*/
+}
+.colsMenu {
+    position: absolute;
+    right: 0px;
+    cursor: pointer;
+    width: 30px;
+    text-align: center;
+    z-index: 10000;
+    top: 0px;
+    border-radius: 50%;
+    background: transparent;
+    height: 30px;
+}
+.colsMenuInt{
+    display: none;
+    position: absolute;
+    top: 2px;
+    right: 10px;
+    width: 140px;
+    background-color: #fff;
+    box-shadow: 1px 1px 5px 1px #A5A3A3;
+    border-radius: 2px;
+    padding: 0px;
+    /*line-height: 1px;*/
+}
+.colsMenu p{
+    padding: 4px 3px;
+    border-right: 1px solid #fff;
+    float: left;
+    margin: 1px 3px;
+}
+.namedColMob{
+    display: none;
+}
+.imageListNwMaker{
+    position: relative;
+    width: 100%;
+}
+.imageListNwMaker2{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    display: block;
+    cursor: pointer;
+}
+.containerResultselectTokenField {
+    position: absolute;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0px 5px 15px 1px #a7a7a7;
+    width: 100%;
+    left: 0px; 
+    z-index: 10000;
+    overflow-y: auto;
+    max-height: 300px;
+    display: none;
+    /*position: fixed;*/
+    position: absolute;
+    min-width: 200px;
+    overflow-x: hidden;
+}
+.divResultTokenNw{
+    position: relative;
+    padding: 5px;
+    border-bottom: 1px solid #e6e6e6;
+    cursor: pointer;
+}
+.divResultTokenNw:hover {
+    background: #ededed;
+}
+.fullTextselectTokenField{
+    background-color: rgb(232, 232, 232);
+    border-radius: 4px;
+    outline: 1px solid rgb(180, 180, 180);
+    cursor: pointer;
+}
+.resetSelectTokenField{
+    position: absolute;
+    right: 5px;
+    top: 0px;
+    font-size: 15px;
+    background: #039be5;
+    color: #fff;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    line-height: 15px;
+    text-indent: initial;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.container-pagination-nwlist{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 4px 6px;
+    border-top: 1px solid #ddd;
+    background: #ebebeb;
+    background: -moz-linear-gradient(top, #ebebeb 0%, #c6c6c6 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ebebeb), color-stop(100%,#c6c6c6));
+    background: -o-linear-gradient(top, #ebebeb 0%, #c6c6c6 100%);
+    background: -ms-linear-gradient(top, #ebebeb 0%, #c6c6c6 100%);
+    background: linear-gradient(top, #ebebeb 0%, #c6c6c6 100%);
+    border-radius: 0 0 4px 4px;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    line-height: 6;
+    background: transparent;
+    border: 4px solid #3897f0;
+    color: #3897f0;
+    font-size: 14px;
+    overflow: hidden;
+}
+.btn-linkpaglistnw {
+    position: relative;
+    padding: 10px;
+    display: inline-flex;
+    cursor: pointer;
+}
+.activeLinkPaginationList{
+    background: #3897f0;
+    color: #fff;
+}
+.span_editable{
+    background-color: #fff;
+    padding: 3px;
+    border: 1px solid #ccc;
+    cursor: text;
+    border-radius: 3px;
+    -webkit-appearance: textarea;
+    margin: 0 2px; 
+}
+
+@media screen and (max-width: 900px) {
+    .list_classmobi .colsMobil:not(.list_no_mobile){
+        max-height: initial;
+        float: none;
+        margin: auto;
+        width: auto;
+        padding: 0;
+        height: auto;
+    }
+    .list_classmobi  .colEncMobil {
+        display: none;
+    }
+    .list_classmobi  .colMobil{
+        width: 100%!important;
+        margin: 0px;
+        z-index: 1;
+    }
+    .list_classmobi  .colsMobil_show p {
+        padding: 12px 10px;
+        margin: 0;
+        display: block;
+    }
+    .list_classmobi  .containDataColsInt{
+        position: relative;
+        height: auto;
+    }
+    .list_classmobi  .hidden_column{
+        display: none;
+    }
+    .list_classmobi  .show_column{
+        display: block!important;
+    }
+    .list_classmobi  .showRowMax    .show_column{
+        float: none!important;
+    }
+    .list_classmobi   #nwformFiltersEncList{
+        position: relative;
+        overflow: hidden;
+        height: 28px;
+        text-align: center;
+        border-bottom: 1px solid #ccc;
+        background: #fff;
+        width: 100%;
+    }
+    .list_classmobi  .nwformFiltersEncListShow {
+        height: auto!important;
+    }
+    .list_classmobi  .FiltrarBtnListMobile {
+        content: " Filtrar ";
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        width: 100%;
+        background-color: #43b9c9;
+        border: 1px solid #3ba9b8;
+        color: #fff;
+        background-image: -webkit-gradient(linear,left top,left bottom,from(#43b9c9),to(#3ba9b8));
+        background-image: -webkit-linear-gradient(top,#43b9c9,#3ba9b8);
+        padding: 5px;
+        display: block;
+    }
+    .containerFilters .divContainInput {
+        width: 50%;
+        margin: 0;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+}
+@media screen and (max-width: 620px) {
+    .list_classmobi   .containDataCols{
+        min-height: initial;
+        margin-bottom: 15px;
+        height: auto;
+    }   
+}

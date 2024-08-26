@@ -1,0 +1,189 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 1/02/2018, 12:12:38 PM
+    Author     : alexf
+*/
+.tuto-box-enc{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1000000000000000000;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 5px 0px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.39);
+    margin: 1px 2px;
+    font-size: 12px!important;
+    font-family: arial!important;  
+    display: none;
+    /*    max-width: 332px;
+        width: 100%;*/
+}
+.tuto-selected{
+    background: red!important;
+    /*pointer-events: none;*/
+}
+.tuto-init, 
+.tuto-items-admin, 
+.tuto-sel-play, 
+.tuto-sel-save,
+.tuto-items-num-enc
+{
+    cursor: pointer;
+    margin: 0px 5px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+.tuto-items-num-enc{
+    background: transparent;
+    color: #000;
+    border: 0;
+    font-weight: bold;
+    text-align: left;
+    font-size: 18px;
+}
+.tuto-index-selected{
+    display: inline-block;
+    margin: 5px 5px;
+    color: #a5a4a4;
+    font-style: italic;
+    font-size: 10px;
+}
+.btnformendt{
+    position: relative;
+    display: block;
+    text-align: center;
+    margin: 5px 0px;
+}
+.inptformendt{
+    position: relative;
+    display: block;
+    margin: 5px 0px;
+}
+.inptformendt label {
+    display: block;
+}
+.inptformendt input{
+    display: block;
+}
+.tuto-items-admin-container{
+    position: absolute;
+    top: 44px;
+    left: 0px;
+    z-index: 10000;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.39);
+    margin: 1px 2px;
+    font-size: 12px!important;
+    font-family: arial!important;
+    background: #fff;
+    width: 200px;
+    max-height: 550px;
+    overflow-y: auto;
+}
+.contain-item-in-list{
+    display: block;
+    border-bottom: 1px solid #ccc;
+    padding: 5px;
+    position: relative;
+}
+.contain-item-in-list span {
+    position: relative;
+    display: block;
+}
+.tu-item{
+
+}
+.tu-title{
+    font-weight: bold;
+}
+.tu-desc{
+
+}
+.tu-remove{
+    position: absolute!important;
+    top: 0;
+    right: 0;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    font-size: 9px;
+    text-align: center;
+    cursor: pointer;
+    line-height: 9px;
+}
+.tuto-admin-enc-close{
+    position: absolute;
+    top: 0;
+    right: -11px;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: #a8a8a8;
+    text-align: center;
+    font-size: 10px;
+    color: #fff;
+    font-weight: bold;
+    line-height: 14px;
+    cursor: pointer;
+}
+.capaTutoInt{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10000000;
+    cursor: pointer;
+}
+.tu-edited{
+    cursor: pointer;
+    color: #4c89fa;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.contain-item-in-list .tu-ordened{
+    display: inline-block;
+    color: firebrick;
+    font-weight: bold;
+    cursor: pointer;
+}
+.contain-item-in-list .tu-changed:hover,
+.contain-item-in-list .tu-ordened:hover,
+.tu-edited:hover {
+    text-decoration: underline;
+}
+.contain-item-in-list .tu-changed{
+    display: none;
+    background: orange;
+}
+.tuto-admin-enc-minimice, .tuto-admin-enc-maximice{
+    position: absolute;
+    top: 20px;
+    right: -11px;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: #4b88f8;
+    text-align: center;
+    font-size: 10px;
+    color: #fff;
+    font-weight: bold;
+    line-height: 14px;
+    cursor: pointer;
+}
+.tuto-admin-enc-maximice {
+    display: none;
+    background: firebrick;
+}
+.nwtuto-enc-min{
+    top: auto;
+    bottom: 0px;
+}

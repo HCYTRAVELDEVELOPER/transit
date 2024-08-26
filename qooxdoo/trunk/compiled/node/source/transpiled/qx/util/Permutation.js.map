@@ -1,0 +1,38 @@
+{
+  "version": 3,
+  "names": [
+    "qx",
+    "Bootstrap",
+    "executePendingDefers",
+    "$$dbClassInfo",
+    "Class",
+    "define",
+    "statics",
+    "permute",
+    "options",
+    "callback",
+    "context",
+    "keys",
+    "Object",
+    "map",
+    "indices",
+    "i",
+    "length",
+    "key",
+    "_perm",
+    "index",
+    "ignore",
+    "values",
+    "call",
+    "window",
+    "util",
+    "Permutation"
+  ],
+  "sources": [
+    "/home/andresf/workspace_qooxdoo/qooxdoo/qooxdoo-7.0/source/class/qx/util/Permutation.js"
+  ],
+  "sourcesContent": [
+    "/**\n * Generate permutations of a map.\n */\nqx.Class.define(\"qx.util.Permutation\", {\n  statics: {\n    /**\n     * The first parameter is a map with array values. This function computes\n     * all combinations of the array values and call the callback for each\n     * combination.\n     *\n     * e.g. a value of\n     * <pre class=\"javascript\">\n     *   {\n     *     a: [1, 2],\n     *     b: [\"a\", \"b\"]\n     *   }\n     * </pre>\n     * would call the callback for each of these maps:\n     * <pre class=\"javascript\">\n     *  { a: 1, b: \"a\" },\n     *  { a: 1, b: \"b\" },\n     *  { a: 2, b: \"a\" },\n     *  { a: 2, b: \"b\" }\n     * </pre>\n     *\n     * @param options {Map} map with array values to generate the permutations of\n     * @param callback {Function} This callback is called for each permuted map\n     * @param context {Object} The callback's <code>this</code> context.\n     */\n    permute(options, callback, context) {\n      var keys = Object.keys(options);\n\n      // init\n      var map = {};\n      var indices = [];\n      for (var i = 0; i < keys.length; i++) {\n        indices[i] = 0;\n        var key = keys[i];\n        map[key] = options[key][0];\n      }\n\n      var _perm = function (index, ignore) {\n        if (index >= keys.length) {\n          return;\n        }\n\n        var key = keys[index];\n        var values = options[key];\n\n        for (var i = 0; i < values.length; i++) {\n          if (ignore !== i) {\n            indices[index] = i;\n            map[key] = values[i];\n            callback.call(context || window, map);\n          }\n          _perm(index + 1, indices[index + 1]);\n        }\n      };\n\n      _perm(0, -1);\n    }\n  }\n});\n"
+  ],
+  "mappings": ";;;;;;;;;EAAAA,EAAE,CAACC,SAAH,CAAaC,oBAAb,CAAkCC,aAAlC;;EAAA;AACA;AACA;EACAH,EAAE,CAACI,KAAH,CAASC,MAAT,CAAgB,qBAAhB,EAAuC;IACrCC,OAAO,EAAE;MACP;AACJ;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;MACIC,OAAO,CAACC,OAAD,EAAUC,QAAV,EAAoBC,OAApB,EAA6B;QAClC,IAAIC,IAAI,GAAGC,MAAM,CAACD,IAAP,CAAYH,OAAZ,CAAX,CADkC,CAGlC;;QACA,IAAIK,GAAG,GAAG,EAAV;QACA,IAAIC,OAAO,GAAG,EAAd;;QACA,KAAK,IAAIC,CAAC,GAAG,CAAb,EAAgBA,CAAC,GAAGJ,IAAI,CAACK,MAAzB,EAAiCD,CAAC,EAAlC,EAAsC;UACpCD,OAAO,CAACC,CAAD,CAAP,GAAa,CAAb;UACA,IAAIE,GAAG,GAAGN,IAAI,CAACI,CAAD,CAAd;UACAF,GAAG,CAACI,GAAD,CAAH,GAAWT,OAAO,CAACS,GAAD,CAAP,CAAa,CAAb,CAAX;QACD;;QAED,IAAIC,KAAK,GAAG,UAAUC,KAAV,EAAiBC,MAAjB,EAAyB;UACnC,IAAID,KAAK,IAAIR,IAAI,CAACK,MAAlB,EAA0B;YACxB;UACD;;UAED,IAAIC,GAAG,GAAGN,IAAI,CAACQ,KAAD,CAAd;UACA,IAAIE,MAAM,GAAGb,OAAO,CAACS,GAAD,CAApB;;UAEA,KAAK,IAAIF,CAAC,GAAG,CAAb,EAAgBA,CAAC,GAAGM,MAAM,CAACL,MAA3B,EAAmCD,CAAC,EAApC,EAAwC;YACtC,IAAIK,MAAM,KAAKL,CAAf,EAAkB;cAChBD,OAAO,CAACK,KAAD,CAAP,GAAiBJ,CAAjB;cACAF,GAAG,CAACI,GAAD,CAAH,GAAWI,MAAM,CAACN,CAAD,CAAjB;cACAN,QAAQ,CAACa,IAAT,CAAcZ,OAAO,IAAIa,MAAzB,EAAiCV,GAAjC;YACD;;YACDK,KAAK,CAACC,KAAK,GAAG,CAAT,EAAYL,OAAO,CAACK,KAAK,GAAG,CAAT,CAAnB,CAAL;UACD;QACF,CAhBD;;QAkBAD,KAAK,CAAC,CAAD,EAAI,CAAC,CAAL,CAAL;MACD;;IAxDM;EAD4B,CAAvC;EAHAlB,EAAE,CAACwB,IAAH,CAAQC,WAAR,CAAoBtB,aAApB,GAAoCA,aAApC"
+}

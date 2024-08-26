@@ -1,0 +1,44 @@
+{
+  "version": 3,
+  "names": [
+    "qx",
+    "Bootstrap",
+    "executePendingDefers",
+    "$$dbClassInfo",
+    "path",
+    "require",
+    "Class",
+    "define",
+    "extend",
+    "tool",
+    "compiler",
+    "resources",
+    "ResourceConverter",
+    "members",
+    "matches",
+    "filename",
+    "basename",
+    "endsWith",
+    "isDoNotCopy",
+    "ScssConverter",
+    "COPY_ORIGINAL_FILES",
+    "convert",
+    "target",
+    "asset",
+    "srcFilename",
+    "destFilename",
+    "isThemeFile",
+    "utils",
+    "files",
+    "Utils",
+    "copyFile",
+    "ScssIncludeConverter"
+  ],
+  "sources": [
+    "/home/andresf/workspace_qooxdoo/qooxdoo/qooxdoo-7.0/source/class/qx/tool/compiler/resources/ScssIncludeConverter.js"
+  ],
+  "sourcesContent": [
+    "/* ************************************************************************\n *\n *    qooxdoo-compiler - node.js based replacement for the Qooxdoo python\n *    toolchain\n *\n *    https://github.com/qooxdoo/qooxdoo\n *\n *    Copyright:\n *      2011-2017 Zenesis Limited, http://www.zenesis.com\n *\n *    License:\n *      MIT: https://opensource.org/licenses/MIT\n *\n *      This software is provided under the same licensing terms as Qooxdoo,\n *      please see the LICENSE file in the Qooxdoo project's top-level directory\n *      for details.\n *\n *    Authors:\n *      * Henner Kollmann (henner.kollmann@gmx.de)\n *\n * *********************************************************************** */\n\nvar path = require(\"upath\");\n\nqx.Class.define(\"qx.tool.compiler.resources.ScssIncludeConverter\", {\n  extend: qx.tool.compiler.resources.ResourceConverter,\n\n  members: {\n    matches(filename) {\n      filename = path.basename(filename);\n      return filename[0] == \"_\" && filename.endsWith(\".scss\");\n    },\n\n    isDoNotCopy(filename) {\n      if (qx.tool.compiler.resources.ScssConverter.COPY_ORIGINAL_FILES) {\n        return false;\n      }\n      return true;\n    },\n\n    async convert(target, asset, srcFilename, destFilename, isThemeFile) {\n      await qx.tool.utils.files.Utils.copyFile(srcFilename, destFilename);\n    }\n  }\n});\n"
+  ],
+  "mappings": ";;;;;;;;;;;;;;EAAAA,EAAE,CAACC,SAAH,CAAaC,oBAAb,CAAkCC,aAAlC;;EAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;EAEA,IAAIC,IAAI,GAAGC,OAAO,CAAC,OAAD,CAAlB;;EAEAL,EAAE,CAACM,KAAH,CAASC,MAAT,CAAgB,iDAAhB,EAAmE;IACjEC,MAAM,EAAER,EAAE,CAACS,IAAH,CAAQC,QAAR,CAAiBC,SAAjB,CAA2BC,iBAD8B;IAGjEC,OAAO,EAAE;MACPC,OAAO,CAACC,QAAD,EAAW;QAChBA,QAAQ,GAAGX,IAAI,CAACY,QAAL,CAAcD,QAAd,CAAX;QACA,OAAOA,QAAQ,CAAC,CAAD,CAAR,IAAe,GAAf,IAAsBA,QAAQ,CAACE,QAAT,CAAkB,OAAlB,CAA7B;MACD,CAJM;;MAMPC,WAAW,CAACH,QAAD,EAAW;QACpB,IAAIf,EAAE,CAACS,IAAH,CAAQC,QAAR,CAAiBC,SAAjB,CAA2BQ,aAA3B,CAAyCC,mBAA7C,EAAkE;UAChE,OAAO,KAAP;QACD;;QACD,OAAO,IAAP;MACD,CAXM;;MAaP,MAAMC,OAAN,CAAcC,MAAd,EAAsBC,KAAtB,EAA6BC,WAA7B,EAA0CC,YAA1C,EAAwDC,WAAxD,EAAqE;QACnE,MAAM1B,EAAE,CAACS,IAAH,CAAQkB,KAAR,CAAcC,KAAd,CAAoBC,KAApB,CAA0BC,QAA1B,CAAmCN,WAAnC,EAAgDC,YAAhD,CAAN;MACD;;IAfM;EAHwD,CAAnE;EAxBAzB,EAAE,CAACS,IAAH,CAAQC,QAAR,CAAiBC,SAAjB,CAA2BoB,oBAA3B,CAAgD5B,aAAhD,GAAgEA,aAAhE"
+}

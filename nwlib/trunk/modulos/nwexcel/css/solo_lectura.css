@@ -1,0 +1,13 @@
+/* 
+    Document   : solo_lectura
+    Created on : Oct 22, 2015, 1:30:22 PM
+    Author     : alexf
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.body_contain, td, tr
+{
+    pointer-events: none;
+}
+

@@ -1,0 +1,14 @@
+CACHE MANIFEST
+#v.1.1
+/modules/nw_user_session/css/styleOut.css
+/modules/nw_user_session/js/jquery/jquery-ui-1.8.16.custom.css
+/modules/nw_user_session/js/jquery/jquery.min.js
+/modules/nw_user_session/js/jquery/jquery-ui.min.js
+/modules/nw_user_session/css/media.css
+/modules/nw_user_session/js/home.js
+
+
+/nwproject/structure/js/main.js
+/offline/reviewCacheMan.js
+NETWORK:
+*

@@ -1,0 +1,80 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 4, 2019, 1:25:54 PM
+    Author     : alexf
+*/
+:root {
+    /*--color_empresarial: #c04025;*/
+    /*--color_empresarial: #e0471e;*/
+    /*--color_empresarial: #f64514;*/
+    --color_empresarial: #151328;
+}
+body .ui-page .logotipoHeader_home{
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+body .ui-page .logotipoHeader_home img{
+    height: 55px!important;
+    top: 0px;
+    position: relative;
+    max-width: 100%;
+    margin: 0;
+}
+.centrar_mapa{
+    position: fixed;
+    /* bottom: calc(0% + 153px); */
+    /* top: auto; */
+    z-index: 10;
+    left: auto;
+    right: 10px;
+    top: 4px;
+}
+.centrar_mapa .material-icons{
+    font-size: 35px;
+    background-color: #f64512;
+    color: #fff!important;
+    border-radius: 50%;
+    padding: 3px;
+}
+body .ui-page .my-header .btnMenuHeader {
+    background: #f64514;
+}
+body .ui-page .my-header .btnMenuHeader .menuBarEnc {
+    color: #fff;
+}
+html body .contenedor_adondevamos .button_adondevas .material-icons {
+    /*color: #f64514;*/
+}
+.iconlinksNavLeft{
+    color: #ffffff!important;
+}
+.home_background_image:before {
+    content: ".";
+    background-color: rgb(255 255 255 / 26%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-height: 100px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+.createLoginFoo .logotipoHeader img{
+    max-width: 100%!important;
+}
+body .createLoginFoo .btn_maxwidth{
+    border: 1px solid rgb(255 255 255 / 28%);
+}
+html body .iframeFuecForm .ui_btn_icon_vacio .material-icons{
+    color: #fff!important;
+}
+html body .ui-page .ui-btn-corner-all .material-icons{
+    color: #ffffff!important;
+}

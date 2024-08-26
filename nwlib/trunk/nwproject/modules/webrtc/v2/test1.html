@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chat NW</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                font-size: 12px;
+                font-family: arial;
+                margin: 0;
+                padding: 0;
+                height: auto;
+                position: relative;
+                overflow: hidden;
+            }
+            .containAll{
+                position: relative;
+                display: flex;
+                height: 100%;
+            }
+            .users_left{
+                position: relative;
+                outline: 1px solid;
+                display: flex;
+                flex-direction: column;
+                z-index: 2;
+            }
+            .contenedorChatAndVideo{
+                position: relative;
+                outline: 1px solid;
+                width: 100%;
+                z-index: 1;
+            }
+        </style>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                document.querySelector(".alex").addEventListener("click", function () {
+                    initwebrtcNW.startRoom("userchat_2427_2_66480", {
+                        domain: location.origin,
+                        myUser: "testing@netwoods.net",
+                        myPhoto: "https://app.taskenter.com/imagenes/2019_04_17_00_35_20378417555.png",
+                        myName: "Testing NW",
+                        heName: "Alexander Flórez",
+                        heUser: "alexf@netwoods.net",
+                        useServer: false,
+                        audio: false,
+                        video: false,
+                        chat: true,
+                        openchat: true,
+                        body: document.querySelector(".cargaMiChat")
+                    });
+                });
+
+
+                var get = initwebrtcNW.GET();
+                if (typeof get.id === "undefined") {
+                    alert("Pasa tu ID de usuario por la url");
+                    return false;
+                }
+                var id_usuario = get.id;
+                initwebrtcNW.getUsers({
+                    id: id_usuario
+                }, function (r) {
+                    console.log(r);
+                    var dm = r.data_user;
+                    var usuario = dm.usuario;
+                    var myName = dm.nombre_apellido;
+                    var terminal = dm.terminal;
+                    var apikey = dm.apikey;
+
+                    var ds = r.users;
+                    for (var i = 0; i < ds.length; i++) {
+                        var data = ds[i];
+                        var myNames = myName.replace(/ /gi, '');
+                        var tod = usuario + myNames + data.nombre_apellido + data.usuario_cliente + terminal + apikey;
+                        var tool = tod.length + parseInt(data.id) + parseInt(id_usuario);
+                        var room = "userchat_" + tool + "_" + terminal + "_" + apikey;
+                        data.room = room;
+
+                        var d = document.createElement("button");
+                        d.className = "userLi";
+                        d.innerHTML = data.nombre_apellido;
+                        d.data = data;
+                        d.onclick = function () {
+                            var room = this.data.room;
+                            var user = this.data.usuario_cliente;
+                            var name = this.data.nombre_apellido;
+                            console.log(user);
+                            initwebrtcNW.startRoom(room, {
+                                domain: location.origin,
+                                myUser: usuario,
+                                myName: myName,
+                                heName: name,
+                                heUser: user,
+                                useServer: false,
+                                audio: false,
+                                video: false,
+                                chat: true,
+                                openchat: true,
+                                body: document.querySelector(".cargaMiChat")
+                            });
+                        };
+                        document.querySelector(".users_left").appendChild(d);
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+
+        <div class="pez">
+        </div>
+        <div class="containAll cargaMiChat">
+            <div class="users_left">
+                <button class='alex'>alexf@netwoods.net</button>
+            </div>
+        </div>
+
+        <script type='text/javascript' src='/nwlib6/nwproject/modules/webrtc/v2/js/main.js'></script>
+        <script src="/nwlib6/nwproject/modules/webrtc/v2/js/lib/simplewebrtc.bundle.js"></script>
+    </body>
+</html>

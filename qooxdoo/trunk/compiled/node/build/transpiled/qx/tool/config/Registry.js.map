@@ -1,0 +1,31 @@
+{
+  "version": 3,
+  "names": [
+    "qx",
+    "Bootstrap",
+    "executePendingDefers",
+    "$$dbClassInfo",
+    "Class",
+    "define",
+    "extend",
+    "tool",
+    "config",
+    "Abstract",
+    "type",
+    "statics",
+    "fileName",
+    "version",
+    "construct",
+    "members",
+    "getLibraries",
+    "getValue",
+    "Registry"
+  ],
+  "sources": [
+    "/home/andresf/workspace_qooxdoo/qooxdoo/qooxdoo-7.0/source/class/qx/tool/config/Registry.js"
+  ],
+  "sourcesContent": [
+    "/* ************************************************************************\n\n   qooxdoo - the new era of web development\n\n   http://qooxdoo.org\n\n   Copyright:\n     2019 The qooxdoo developers\n\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n\n   Authors:\n     * Christian Boulanger (info@bibliograph.org, @cboulanger)\n\n************************************************************************ */\n\n/**\n * A model for the Manifest.json file\n */\nqx.Class.define(\"qx.tool.config.Registry\", {\n  extend: qx.tool.config.Abstract,\n  type: \"singleton\",\n  statics: {\n    config: {\n      fileName: \"qooxdoo.json\",\n      version: \"1.0.0\"\n    }\n  },\n\n  construct() {\n    super(this.self(arguments).config);\n  },\n\n  members: {\n    getLibraries() {\n      return this.getValue(\"libraries\");\n    }\n  }\n});\n"
+  ],
+  "mappings": ";;;;;;;;;;;;;EAAAA,EAAE,CAACC,SAAH,CAAaC,oBAAb,CAAkCC,aAAlC;;EAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;;EAEA;AACA;AACA;EACAH,EAAE,CAACI,KAAH,CAASC,MAAT,CAAgB,yBAAhB,EAA2C;IACzCC,MAAM,EAAEN,EAAE,CAACO,IAAH,CAAQC,MAAR,CAAeC,QADkB;IAEzCC,IAAI,EAAE,WAFmC;IAGzCC,OAAO,EAAE;MACPH,MAAM,EAAE;QACNI,QAAQ,EAAE,cADJ;QAENC,OAAO,EAAE;MAFH;IADD,CAHgC;;IAUzCC,SAAS,GAAG;MACV,+CAAM,wBAAqBN,MAA3B;IACD,CAZwC;;IAczCO,OAAO,EAAE;MACPC,YAAY,GAAG;QACb,OAAO,KAAKC,QAAL,CAAc,WAAd,CAAP;MACD;;IAHM;EAdgC,CAA3C;EArBAjB,EAAE,CAACO,IAAH,CAAQC,MAAR,CAAeU,QAAf,CAAwBf,aAAxB,GAAwCA,aAAxC"
+}

@@ -1,0 +1,514 @@
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: arial;
+    /*background: #222222;*/
+}
+.videoContainer {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    float: left;
+    top: 0px;
+    left: 0px;
+    background: #000;
+    outline: 5px solid #565656;
+    box-sizing: border-box;
+}
+.videoContainer video, .videoContainerLocal video {
+    position: absolute;
+    width: 100%!important;
+    height: 100%!important;
+}
+.volume_bar {
+    position: absolute;
+    width: 5px;
+    height: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: #12acef;
+}
+.localVideo{
+    height: 150px;
+}
+.videoContainerLocal {
+    position: fixed;
+    width: 200px;
+    height: 150px;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+.containBtns{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 100%;
+    background: #36383a;
+    color: #fff;
+}
+.containBtns * {
+    display: inline-block;
+}
+#remotes{
+    position: relative;
+    margin-top: 20px;
+}
+.usersConected{
+    margin-right: 15px;
+    margin-left: 15px
+}
+.usersConected span {
+    font-weight: bold;    
+    font-size: 13px;
+}
+.cajaShared{
+    min-width: 500px;
+    background: #787a7b;
+    border: 1px solid #36383a;
+    color: #fff;
+    padding: 2px;
+}
+.containerButtons{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+}
+.button{
+    position: relative;
+    margin: 10px 5px;
+    padding: 10px 5px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #2f2f2f;
+    background: #fff;
+    border-radius: 50%;
+    text-align: center;
+    width: 40px;
+    height: 30px;
+    border: 0;
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+.chat {
+    background-image: url(/nwlib6/nwproject/modules/nw_user_session/img/chat2.png);
+}
+.muteOn{
+    background-image: url(/nwlib6/nwproject/modules/webrtc/img/mic.png);
+}
+.muteOff{
+    background-image: url(/nwlib6/nwproject/modules/webrtc/img/mic_in.png);
+}
+.onCam{
+    background-image: url(/nwlib6/nwproject/modules/webrtc/img/cam.png);  
+}
+.offCam{
+    background-image: url(/nwlib6/nwproject/modules/webrtc/img/cam_in.png);  
+}
+.endCall{
+    background-image: url(/nwlib6/nwproject/modules/webrtc/img/tel.png);  
+}
+.hiddenButton {
+
+}
+#messages{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: #fff;
+    height: 80%;
+    height: 100%;
+    z-index: 3;
+    width: 200px;
+    box-shadow: 7px -4px 5px #000;
+    color: #494949;
+    display: none;
+}
+.encOptionsNwRtc{
+    position: relative;
+    background-color: #f2f2f2;
+    padding: 3px 0px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #eaeaea;
+    overflow: hidden;
+    height: 45px;
+    display: none;
+}
+.loadingNwChat{
+    display: none;
+}
+.boxSendChat .tooltipMaker{
+    display: none;
+    position: absolute;
+    top: 0;
+    background: transparent;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.boxSendChat .texttooltipMaker{
+    display: block;
+}
+.divContainInput:hover .tooltipMaker{
+    display: block;
+    top: 45px;
+}
+.boxSendChat .video_call,
+.boxSendChat .audio_call,
+.boxSendChat .end_call
+{
+    background-size: 50%!important;
+    background-repeat: no-repeat!important;
+    background-position: center!important;
+    position: relative!important;
+    display: block!important;
+    width: 40px!important;
+    height: 40px!important;
+    border-radius: 50%!important;
+    padding: 0!important;
+    font-size: 0!important;
+    border: 4px solid #fff!important;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.3)!important;
+}
+.boxSendChat .video_call{
+    background-color: #663399!important;
+    background-image: url(/nwlib6/icons/2017/facetime_boton.png)!important;
+}
+.boxSendChat .audio_call{
+    background-color: #009cea!important;
+    background-image: url(/nwlib6/icons/phone_call.png)!important;
+    background-size: 75%!important;
+}
+.boxSendChat .end_call{
+    background-color: firebrick!important;
+    background-image: url(/nwlib6/icons/phone_colgar2.png)!important;
+    background-size: 75%!important;
+}
+
+.showMessagesChat{
+    position: relative;
+    min-height: 200px;
+    height: 100%;
+    overflow-y: auto;
+    padding: 0 7px;
+    box-sizing: border-box;
+}
+.showMessagesChat:after {
+    content: ".";
+    position: relative;
+    display: block;
+    /*height: 140px;*/
+    font-size: 0;
+    height: 30px;
+}
+.boxSendChat{
+    position: relative;
+    left: 0px;
+    width: 100%;
+    background: #fff;
+    box-sizing: border-box;
+    border-top: 1px solid #f4f7f9;
+    bottom: 41px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 5px 40px;
+}
+.messageChat{
+    /*width: 130px;*/
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border: 0px;
+    font-size: 13px;
+    font-family: arial;
+    color: #727272;
+    max-height: 40px;
+    background: #e1eaf0;
+    font-size: 14px;
+    line-height: 1.4;
+}
+.sendMessageChat{
+    padding: 10px;
+    background: #0072ce;
+    color: #fff;
+    border: 0;
+    float: right;
+    margin-right: 10px;
+    display: none;
+}
+.containChat{
+    position: relative;
+    /*border-bottom: 1px solid #7a7a7a;*/
+    padding: 2px;
+    word-break: break-word;
+    overflow: hidden;
+}
+.containChat_one .containChatInt{
+
+}
+.photoUser{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.containChat_one .photoUser{
+    float: right;
+    margin: 5px;
+}
+.containChat_two .photoUser{
+    float: left;
+    margin: 5px;
+}
+.nameNick{
+
+}
+.msg{
+    background: #f1f0f0;
+    display: inline-block;
+    padding: 5px 8px 6px;
+    font-size: 12px;
+    border-radius: 8px;
+    margin: 5px;
+    color: #4b4f56;
+    display: inline-block;
+    padding: 17px 20px;
+    border-radius: 6px;
+    position: relative;
+    background-color: #f4f7f9;
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 0 0 10px;
+    color: #3e494e;
+    max-width: 80%;
+    /*max-width: 70%;*/
+    /*width: 100%;*/
+    box-sizing: border-box;
+}
+.msg a{
+    font-weight: bold;
+    text-decoration: underline;
+}
+.containChat_one .msg a{
+    color: #fff;
+}
+.containChat_one .leido{
+    text-align: right;
+}    
+.containChat_one .msg{
+    background-color: #0072ce;
+    color: #fff;
+    text-align: left;
+}
+.containChatInt{
+    /*max-width: 80%;*/
+    width: 100%;   
+}
+.containChat_one .containChatInt{
+    float: right;
+    text-align: right;
+}
+.containChat_one .nameNick{
+    display: none;
+    text-align: right;
+}
+.date{
+    position: relative;
+    font-size: 10px;
+    color: #959595;
+    margin-top: 3px;
+}
+.closeChat{
+    width: 17px;
+    height: 17px;
+    background: #fff;
+    border-radius: 50%;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    right: -15px;
+    top: 0px;
+    border: 1px solid;
+    cursor: pointer;
+}
+.conectando{
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+}
+.conectandoInt{
+    position: relative;
+    margin: auto;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 100px;
+}
+.conectando h2 {
+    font-size: 23px;
+    color: #fff;
+    background: #36383a;
+    padding: 10px;
+    border: 1px solid #222425;
+    box-shadow: 0px 0px 5px #000000a6 inset;
+    border-radius: 5px;
+    font-weight: lighter;
+}
+.invite{
+    position: relative;
+    background: #fff;
+    color: #000;
+    font-size: 15px;
+    padding: 10px;
+    margin: 30px 0;
+    border-radius: 5px;
+    max-width: 650px;
+}
+.boxBlo{
+    position: relative;
+    display: inline-block;
+}
+.invite p{
+
+}
+.boxInvite{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 18px;
+    color: #6d6c6c;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.OnlyOneVideo{
+
+}
+.seeRecording{
+    position: absolute;
+    /* left: 0; */
+    top: 0;
+    background: red;
+    color: #fff;
+    line-height: 11px;
+    font-size: 9px;
+}
+.escribiendoNwRtc{
+    position: fixed;
+    bottom: 48px;
+    z-index: 1000000;
+    left: 5px;
+    font-size: 12px;
+}
+.leido{
+    position: relative;
+    font-size: 9px;
+    color: #797979;
+}
+.textendcall{
+    position: relative;
+    text-align: center;
+    font-size: 17px;
+
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+.btnEncCredits{
+    position: relative;
+    float: right;
+    margin: 0px;
+    background-image: url(/nwlib6/nwproject/modules/webrtc/testing/two/img/logo_ringow_final.png);
+    background-size: contain;
+    width: 70px;
+    height: 25px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    top: 8px;
+}
+.btnEncCredits span{
+    position: absolute;
+    top: -8px;
+    left: -5px;
+    display: block;
+    font-size: 9px;
+    color: #b4b4b4;
+}
+.initVideoCall{
+    background: #25ab25;
+    color: #fff;
+    padding: 10px;
+    display: block;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+}
+.timetrans{
+    position: relative;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.seeRecordingAudio{
+    background: firebrick;
+    background-image: url(/nwlib6/icons/phone_colgar2.png);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px solid #fff;
+}
+.btnAttachment .preViewFileUploader {
+    width: 100%!important;
+    height: 100%!important;
+    background-size: contain;
+    border: 0!important;
+}
+@media screen and (max-width: 900px) {
+    body .nwformFoot{
+        bottom: 50px;
+        position: absolute!important;
+    }
+    .containBtns {
+        display: none;
+    }
+    .videoContainerLocal{
+        width: 120px;
+        height: 100px;
+    }
+    .containerButtons{
+        width: auto;
+    }
+    .button {
+        display: block;
+    }
+    .conectando{
+        top: 80px;
+        left: 0px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .videoContainer {
+        max-height: 160px;
+        min-width: 50%;
+    }
+    .OnlyOneVideo{
+        max-height: 100%;
+        background: #222;
+    }
+}

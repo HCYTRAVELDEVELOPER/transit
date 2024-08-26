@@ -1,0 +1,76 @@
+.slider{
+    position: fixed!important;
+    top: 0;
+    left: 0;
+    z-index: 100000000;
+}
+.output{
+    display: none;
+}
+.pointer_on_map_icono{
+    width: 35px;
+    height: 35px;
+    background: orangered;
+    border-radius: 50%;
+    left: -10px;
+    position: absolute;
+    top: -10px;
+}
+body{
+}
+#map_carga_img{
+width: 1000px;
+height: auto;
+display: block;
+position: relative;
+}
+#x1y1{
+    z-index: 4000!important;
+    position: absolute!important;
+    width: 120px!important;
+    height: 100px!important;
+    top: 96px;
+    left: 100px;
+}
+#x1y1 span{
+    font-size: 14px;
+}
+.img_full{
+    position: relative;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.box_img{
+
+}
+.box_object{
+    /*    position: absolute;
+        border: 1px solid #E5E5E5;
+        box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
+        border-radius: 2px;
+        background: #fff;
+        width: 270px;
+        z-index: 1;
+        font-size: 12px;
+        padding: 8px;*/
+}
+.punta_top_two{
+    display: none!important;
+    top: 4px;
+    display: block;
+    position: absolute;
+    left: -13px;
+    border: 1px solid #E5E5E5;
+    width: 25px;
+    height: 25px;
+    -webkit-transform: rotateZ(-40deg);
+    -moz-transform: rotateZ(-20deg);
+    -o-transform: rotateZ(-20deg);
+    z-index: -1;
+    box-shadow: -2px -2px 2px rgba(0,0,0,.15);
+    background: #fff;
+    border-right: none;
+    border-bottom: none;
+}

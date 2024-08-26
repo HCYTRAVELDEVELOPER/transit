@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script src="https://unpkg.com/peerjs@1.0.0/dist/peerjs.min.js"></script>
+        <script>
+
+            hints = {audio: true, video: {
+                    optional: [],
+                    mandatory: {}
+                }};
+            mediaStream = navigator.getUserMedia(hints, function (stream) {
+                var video = document.createElement('video');
+                video.srcObject = stream;
+                video.controls = true;
+                video.muted = true;
+
+//                peer.onStreamAdded({
+//                    mediaElement: video,
+//                    userid: 'self',
+//                    stream: stream
+//                });
+//
+//                callback(stream);
+            }, function() {
+                
+            });
+
+//            var peer = new Peer({key: 'lwjd5qra8257b9'});
+            var peer = new Peer({
+                id: 'uno',
+                debug: 3,
+                config: {'iceServers': [
+                        {url: 'stun:stun.l.google.com:19302'}
+//                        ,
+//                        {url: 'turn:homeo@turn.bistri.com:80', credential: 'homeo'}
+                    ]} /* Sample servers, please use appropriate ones */
+            });
+
+            peer.on('open', function (id) {
+                console.log('My peer ID is: ' + id);
+            });
+
+            var conn = peer.connect('dest-peer-id');
+//            var conn = peer.connect('uno');
+
+            peer.on('connection', function (conn) {
+                console.log("Connection");
+            });
+
+            conn.on('open', function () {
+                // Receive messages
+                conn.on('data', function (data) {
+                    console.log('Received', data);
+                });
+
+                // Send messages
+                conn.send('Hello!');
+            });
+
+            var call = peer.call('dest-peer-id',
+                    mediaStream);
+
+            conn.send({
+                strings: 'hi!',
+                numbers: 150,
+                arrays: [1, 2, 3],
+                evenBinary: new Blob([1, 2, 3]),
+                andMore: {bool: true}
+            });
+
+        </script>
+    </body>
+</html>

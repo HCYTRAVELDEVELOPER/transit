@@ -1,0 +1,317 @@
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+    font-size: 12px;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.play {
+    width: 100%;
+    padding: 20px!important;
+    position: relative;
+    background-color: #009549!important;
+    -webkit-border-radius: 15px!important;
+    -moz-border-radius: 15px!important;
+    background-image: url(../img/jugar.png)!important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 5px solid #FED602!important;
+    border-radius: 15px!important;
+    font-size: 0px!important;
+    height: 40px;
+}
+.bt_registro {
+    width: 100%;
+    padding: 20px 0!important;
+    position: relative;
+    font-size: 18px!important;
+    background: #F1D959!important;
+    border: 0!important;
+    color: #5E5E5E!important;
+}
+.bt_registro p{
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}
+.buttonGreen {
+    cursor: pointer;
+    padding: 5px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    background-color: #44C704;
+    background-image: -webkit-linear-gradient(top,#60EF00,#44C704);
+    background-image: -moz-linear-gradient(top,#60EF00,#4787ed);
+    background-image: -ms-linear-gradient(top,#60EF00,#4787ed);
+    background-image: -o-linear-gradient(top,#60EF00,#4787ed);
+    background-image: linear-gradient(top,#60EF00,#4787ed);
+    border: 1px solid #44C704;
+    color: #fff;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+}
+.objects{
+    position: relative;
+    top: 10px;
+    left: 0;
+    width: 100%;
+}
+.div_list_objets{
+    position: relative;
+    /* float: left; */
+    width: 50%;
+    display: inline-table;
+}
+.div_list_objets_inter{
+    position: relative;
+    margin: 5px;
+    padding: 5px;
+    color: #fff;
+    text-shadow: 0px 0px 5px #000;
+    height: 50px;
+}
+.div_list_objets_inter h2 {
+    position: relative;
+    display: inline;
+}
+.div_list_objets_inter p {
+    position: relative;
+    display: inline;
+}
+.contenedor {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+.enc{
+    position: relative;
+    width: auto;
+    z-index: 100000;
+    background: rgba(0, 0, 0, 0.51);
+    top: 10px;
+    padding: 10px;
+}
+.left{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: 100%;
+    overflow: hidden;
+    /*top: 25px;*/
+}
+#right{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 80%;
+    height: 100%;
+    /* margin-top: 60px; */
+    background-image: url(../img/bg_on.jpg);
+    background-size: 900px;
+    background-repeat: no-repeat;
+    background-position: center 0px;
+    /* background-attachment: fixed; */
+    padding-top: 100px;
+}
+.ruleta{
+    position: relative;
+    width: 600px;
+    height: 600px;
+    /*    width: 30vw;
+        height: 30vw;*/
+    border-radius: 50%;
+    overflow: hidden;
+    transform: rotate(0deg);
+    margin: auto;
+    border: 40px solid #B7E0DC;
+    box-shadow: 0px 0px 15px #fff;
+    border-left: 60px solid #B7E0DC;
+    border-right: 60px solid #F15E54;
+    border-bottom: 60px solid #175776;
+    border-top: 60px solid #94C33C;
+    background: #fff;
+}
+.centro_ruleta{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: 100000;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 0px 35px #000 inset;
+    border-radius: 50%;
+    background-image: url(../img/img_center.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: rotate(21deg);
+}
+
+.pasos{
+    margin: 0px auto 20px auto;
+    width: 0;
+    height: 0;
+    border-top-style: solid;
+    border-top-color: #000;
+    position: relative;
+}
+.ruleta_int1 {
+    transform: rotate(0deg);
+}
+.paso2 {
+    border-top-color: red;
+}
+.ruleta_int2 {
+    transform: rotate(52deg);
+}
+.ruleta_int3 {
+    transform: rotate(104deg);
+}
+.paso3 {
+    border-top-color: blue;
+}
+.ruleta_int4 {
+    transform: rotate(156deg);
+}
+.paso4 {
+    border-top-color: yellow;
+}
+.ruleta_int5 {
+    transform: rotate(208deg);
+}
+.paso5 {
+    border-top-color: orange;
+}
+.ruleta_int6 {
+    transform: rotate(260deg);
+}
+.paso6 {
+    border-top-color: aqua;
+}
+.ruleta_int7 {
+    transform: rotate(312deg);
+}
+.paso7 {
+    border-top-color: greenyellow;
+}
+.ruleta_int8 {
+    transform: rotate(312deg);
+}
+.paso8 {
+    border-top-color: pink;
+}
+.ruleta_int{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*box-shadow: 0px 0px 15px #000 inset;*/
+    /*box-shadow: 0px 0px 85px 0px rgba(0, 0, 0, 0.41) inset;*/
+}
+.img_paso1{
+    position: relative;
+    width: 100px;
+    top: -100px;
+    left: -50px;
+    transform: rotate(-90deg);
+}
+#div_selector{
+    position: absolute;
+    width: 100%;
+    top: 100px;
+    left: 0;
+}
+.selector{
+    /*    margin: auto;
+        width: 0;
+        height: 0;
+        border-top-style: solid;
+        border-top-color: #000;
+        position: relative;
+        border-left-width: 20px;
+        border-left-style: solid;
+        border-left-color: transparent;
+        border-right-width: 20px;
+        border-right-style: solid;
+        border-right-color: transparent;
+        border-top-width: 100px;
+        z-index: 100000;*/
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    z-index: 100000;
+    background-image: url(../img/selector.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.number_paso{
+    z-index: 100000000;
+    color: #fff;
+    position: relative;
+    width: 100px;
+    top: -250px;
+    left: 0px;
+    transform: rotateX(00deg) rotateY(0deg);
+}
+.resultado_post{
+    position: relative;
+    top: 20px;
+    color: #fff;
+    font-size: 2em;
+    text-shadow: 0px 0px 5px #000;
+}
+.premio_div{
+    position: relative;
+    padding: 10px;        
+}
+#loading {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background: #000;
+    background: rgba(0, 0, 0, 0.81);
+}
+#loading_inter {
+    position: relative;
+    margin: auto;
+    text-align: center;
+    color: #fff;
+    top: 30%;
+}
+#loading h1{
+
+}
+#credits{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 100000000;
+    background: #000;
+    background: rgba(0, 0, 0, 0.27);
+    color: #fff;
+    padding: 3px;
+    border-radius: 5px;
+    opacity: 0.8;
+}

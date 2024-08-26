@@ -1,0 +1,101 @@
+@media screen and (max-width: 1000px) {
+    .container_body, .fecha_mee_list,  .div_reus_home_right, .div_reus_home_left, .otros_mee_list, .div_place_and_objetive, .otros_mee_list h2, .p_objetive{
+        width: 100%;
+        text-align: center;
+    }
+    .ui-dialog {
+        position: fixed;
+        top: 0!important;
+        overflow-y: auto!important;
+        height: 100%!important;
+    }
+    .ui-dialog, .reuview_asistentes, .reuview_actividades, .reuview_actions, .actions_divs, .div_tems_status, .div_asis_data, #new_reu, .warp_columns {
+        width: 100%!important;
+    }
+    .input_asistentes {
+        width: 90%!important;
+        margin: 5px!important;
+    }
+    .ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+        padding: 10px;
+        width: 90%;
+    }
+    .warp_columns_inter {
+        height: auto;
+        margin: 0;
+        border: 0;
+    }
+    #new_reu {
+        padding: 0;
+        margin: 0;
+    }
+    .ui-dialog-buttonset {
+        float: none!important;
+    } 
+    .ui-dialog-buttonpane button {
+        width: 100%;
+    }
+    .ui-dialog-buttonpane {
+        width: 98%;
+        margin: 0!important;
+        padding: 0!important;
+        border: 0!important;
+    }
+    .buttonInitReu {
+        position: relative;
+        float: none;
+        width: 100%;
+        max-width: 100%;
+    }
+    .date_enc p {
+        display: block;
+        border: 0;
+    }
+    .bloque_notification{
+        height: 0px;
+        overflow: hidden;
+        display: none;
+    }
+    .title_mee_list {
+        text-align: center;
+    }
+    .meeting_overlay_list{
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+    .meeting_overlay_list ul {
+        margin-top: 0px;
+    }
+    .meeting_overlay_list li {
+        float: left;
+        width: 20%;
+        margin: 0;
+        padding: 0;
+    }
+    .meeting_overlay_list div {
+        margin: 5px;
+        padding: 10px;
+    }
+    .fecha_mee_list h3 {
+        width: 46%;
+        float: left;
+        text-align: right;
+    }
+    .fecha_mee_list h2 {
+        width: 40%;
+        float: left;
+        text-align: left;
+    }
+    .enc_meses_list li {
+        float: none;
+        width: 100%;
+        display: none;
+    }
+    .mes_actual_enc_li{
+        display: block!important;
+    }
+    .inputs_enc{
+        display: none;
+    }
+}

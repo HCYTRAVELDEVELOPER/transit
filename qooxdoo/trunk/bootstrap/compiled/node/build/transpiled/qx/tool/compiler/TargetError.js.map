@@ -1,0 +1,23 @@
+{
+  "version": 3,
+  "names": [
+    "qx",
+    "Bootstrap",
+    "executePendingDefers",
+    "$$dbClassInfo",
+    "Class",
+    "define",
+    "extend",
+    "Error",
+    "tool",
+    "compiler",
+    "TargetError"
+  ],
+  "sources": [
+    "/home/andresf/workspace_qooxdoo/qooxdoo/qooxdoo-7.0/source/class/qx/tool/compiler/TargetError.js"
+  ],
+  "sourcesContent": [
+    "/* ************************************************************************\n *\n *    qooxdoo-compiler - node.js based replacement for the Qooxdoo python\n *    toolchain\n *\n *    https://github.com/qooxdoo/qooxdoo-compiler\n *\n *    Copyright:\n *      3033 Derrell Lipman\n *\n *    License:\n *      MIT: https://opensource.org/licenses/MIT\n *\n *      This software is provided under the same licensing terms as Qooxdoo,\n *      please see the LICENSE file in the Qooxdoo project's top-level directory\n *      for details.\n *\n *    Authors:\n *      * Derrell Lipman (@derrell)\n *\n * ************************************************************************/\n\nqx.Class.define(\"qx.tool.compiler.TargetError\",\n{\n//  extend : qx.type.BaseError\n  extend : Error\n});\n"
+  ],
+  "mappings": ";;;;;;;;;EAAAA,EAAE,CAACC,SAAH,CAAaC,oBAAb,CAAkCC,aAAlC;;EAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;EAEAH,EAAE,CAACI,KAAH,CAASC,MAAT,CAAgB,8BAAhB,EACA;IACA;IACEC,MAAM,EAAGC;EAFX,CADA;EAtBAP,EAAE,CAACQ,IAAH,CAAQC,QAAR,CAAiBC,WAAjB,CAA6BP,aAA7B,GAA6CA,aAA7C"
+}

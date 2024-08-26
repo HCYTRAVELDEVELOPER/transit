@@ -1,0 +1,845 @@
+/* 
+    Author     : alexf
+*/
+@-webkit-keyframes iECmZH {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes iECmZH {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+.cEftVf {
+    border: 4px solid #358EFF;
+    border-top: 4px solid transparent;
+    height: 3rem;
+    width: 3rem;
+    box-sizing: border-box;
+    -webkit-animation: iECmZH 1100ms infinite linear;
+    animation: iECmZH 1100ms infinite linear;
+    border-radius: 50%;
+    position: relative;
+    vertical-align: middle;
+    margin: auto;
+}
+.events_click_none{
+    pointer-events: none;
+    outline: none;
+}
+.events_click_none *{
+    display: none;
+}
+.loading_into_btn{
+    display: block;
+    width: 27px;
+    height: 27px;
+}
+.containerChat, .message
+{
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.containerChat{
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    right: 0;
+    bottom: -100%;
+    height: 100%;
+    max-height: calc(100% - 100px);
+    max-width: 400px;
+}
+.containerChatVisible{
+    bottom: 0px;
+}
+.encChat {
+    position: relative;
+    top: 0px;
+    z-index: 1;
+    /*background-color: #1f8ceb;*/
+    background-color: #2676d4;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 55px;
+    height: auto;
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    -webkit-box-shadow: 0 0 18px rgba(0,0,0,.5);
+    -moz-box-shadow: 0 0 18px rgba(0,0,0,.5);
+    -o-box-shadow: 0 0 18px rgba(0,0,0,.5);
+    -moz-osx-box-shadow: 0 0 18px rgba(0,0,0,.5);
+    -ms-box-shadow: 0 0 18px rgba(0,0,0,.5);
+    box-shadow: 0 0 18px rgba(0,0,0,.5);
+    display: flex;
+    flex-wrap: wrap;
+}
+.iconsEnc {
+    cursor: pointer;
+    float: right;
+    position: relative;
+    margin: 5px 4px;
+    font-size: 28px;
+    height: 26px;
+}
+.closeChat {
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*right: 0;*/
+}
+.contentChat ::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+    -moz-osx-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 -6px 0 0 #fff, inset 0 6px 0 0 #fff;
+    -moz-box-shadow: inset 0 -6px 0 0 #fff,inset 0 6px 0 0 #fff;
+    -o-box-shadow: inset 0 -6px 0 0 #fff,inset 0 6px 0 0 #fff;
+    -moz-osx-box-shadow: inset 0 -6px 0 0 #fff,inset 0 6px 0 0 #fff;
+    -ms-box-shadow: inset 0 -6px 0 0 #fff,inset 0 6px 0 0 #fff;
+    box-shadow: inset 0 -6px 0 0 #fff, inset 0 6px 0 0 #fff;
+    background-color: rgba(209,209,209,.97);
+}
+.contentChat ::-webkit-scrollbar {
+    width: 8px;
+    background-color: #fff;
+}
+.contentChat {
+    /*box-shadow: rgba(156, 172, 172, 0.2) 0px 2px 2px, rgba(156, 172, 172, 0.2) 0px 4px 4px, rgba(156, 172, 172, 0.2) 0px 8px 8px, rgba(156, 172, 172, 0.2) 0px 16px 16px, rgba(156, 172, 172, 0.2) 0px 32px 32px, rgba(156, 172, 172, 0.2) 0px 64px 64px;*/
+    box-shadow: 0 0 10px 2px rgba(0,0,0,.16);
+    border-radius: 10px;
+    height: 100vh;
+    /* max-height: 600px; */
+    max-height: 100%;
+    width: 100vw;
+    /* max-width: 400px; */
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    background-color: #f9f9f9;
+    overflow: hidden;
+    /*    max-height: calc(100% - 15px);
+        max-width: calc(100% - 15px);*/
+    margin: auto;
+    /*margin-top: 5px;*/ 
+}
+.contentChat .messages {
+    flex-grow: 1;
+    padding: 20px 30px;
+    overflow: auto;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+}
+.contentChat .messages:before {
+    content: ".";
+    flex: 1 1 auto;
+    min-height: 12px;
+    font-size: 0;
+}
+.emojiHiddenMomment{
+    display: none;
+}
+.contentChat .message {
+    display: flex;
+    flex-direction: column;
+    /*    margin: 10px 0px 5px 0px;*/
+    margin: auto 0px 5px 0px;
+    opacity: 0;
+    top: 30px;
+    position: relative;
+    transform-origin: right;
+    transform: scale(0);
+}
+.contentChat .message--theirs{
+    transform-origin: left;
+}
+.contentChat .message_appear{
+    opacity: 1;
+    top: 0px;
+    transform: scale(1);
+}
+.contentChat .message--info {
+    width: 100%;
+    text-align: center;
+}
+.contentChat .message--info .message__see{
+    display: none;
+}
+.contentChat .message--mine {
+    align-items: flex-end;
+}
+.contentChat .message--theirs {
+    align-items: flex-start;
+}
+.contentChat .message__name {
+    padding: 10px 0;
+    padding: 10px 0px 0px 0px;
+    color: #a9a9a9;
+    font-size: 10px;
+    word-break: break-word;
+    font-weight: bold;
+    /* display: none; */
+    font-style: italic;
+    margin: 0px 0px 2px 0px;
+}
+.message__see{
+    position: relative;
+    color: #929292;
+    font-size: 11px;
+    font-size: 9px;
+}
+.message--mine .message__see { text-align: right; }
+.contentChat .message__fecha {
+    font-size: 10px;
+    padding: 0px 0px 5px 0px;
+    color: #919090;
+    word-break: break-word;
+}
+.contentChat .message--mine .message__fecha{
+    text-align: right;    
+}
+.message--mine .message__name {
+    text-align: right;
+}
+.contentChat .message__bubble {
+    padding: 10px;
+    border-radius: 3px;
+    word-break: break-word;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contentChat .message__bubble * {
+    margin: 0 5px;
+}
+.contentChat .message--theirs .message__bubble {
+    /*background: #6363bf;*/
+    /*color: white;*/
+    background: #6363bf;
+    color: white;
+    background-color: #e6ecf0;
+    color: #50565d;
+    -webkit-border-radius: 5px 5px 5px 0;
+    -moz-border-radius: 5px 5px 5px 0;
+    -o-border-radius: 5px 5px 5px 0;
+    -moz-osx-border-radius: 5px 5px 5px 0;
+    -ms-border-radius: 5px 5px 5px 0;
+    border-radius: 5px 5px 5px 0;
+    /*    display: flex;
+        align-items: center;*/
+}
+.g_translate{cursor: pointer;margin: 0px 5px 0px 0px;width: 15px;opacity: 0.5;}.g_translate:hover{opacity: 1;}
+.contentChat .message--mine .message__bubble {
+    /*background: rgba(156, 172, 172, 0.2);*/
+    /*background-color: #1f8ceb;*/
+    background-color: #3576d3;
+    color: #fff;
+    -webkit-border-radius: 5px 5px 0 5px;
+    -moz-border-radius: 5px 5px 0 5px;
+    -o-border-radius: 5px 5px 0 5px;
+    -moz-osx-border-radius: 5px 5px 0 5px;
+    -ms-border-radius: 5px 5px 0 5px;
+    border-radius: 5px 5px 0 5px;
+}
+.contentChat .message--mine .message__bubble a{
+    color: #fff;
+}
+.contentChat .message--theirs .message__bubble a{
+    color: #1f8ceb;
+}
+.contentChat .footerChat {
+    position: relative;
+    line-height: 76px;
+    border-top: 1px solid rgba(156, 172, 172, 0.2);
+    border-bottom: 1px solid rgba(156, 172, 172, 0.2);
+    display: flex;
+    flex-shrink: 0;
+    -webkit-box-shadow: 0 0 18px rgba(0,0,0,.1);
+    -moz-box-shadow: 0 0 18px rgba(0,0,0,.1);
+    -o-box-shadow: 0 0 18px rgba(0,0,0,.1);
+    -moz-osx-box-shadow: 0 0 18px rgba(0,0,0,.1);
+    -ms-box-shadow: 0 0 18px rgba(0,0,0,.1);
+    box-shadow: 0 0 18px rgba(0,0,0,.1);
+    /*background-color: #ffffff;*/
+    background-color: #f0f0f0;
+    z-index: 2;
+}
+.contentChat .messageBox,
+.contentChat input,
+.contentChat textarea
+{
+    /*height: 76px;*/
+    height: 45px;
+    border: none;
+    flex-grow: 1;
+    padding: 0 30px;
+    font-size: 16px;
+    background-color: transparent;
+}
+.contentChat .messageBox {
+    line-height: normal;
+    font-family: arial;
+    /*    display: flex;
+        align-items: center;
+        vertical-align: middle;*/
+    font-size: 16px;
+    cursor: auto;
+    -webkit-appearance: textarea;
+    outline: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    padding: 10px 0px 0px 15px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 25px;
+    margin-left: 5px;
+    height: 40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.contentChat textarea 
+{
+    font-family: arial;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    padding: 10px 0px 0px 15px;
+    height: 60px;
+    font-size: 16px;
+    cursor: auto;
+}
+.placeHolderMessageBox{
+    position: absolute;
+    top: -14px;
+    left: 20px;
+    pointer-events: none;
+    color: gray;
+    z-index: 1;
+    height: 0;
+    font-size: 12px;
+}
+.contentChat .btnEmojis,
+.contentChat button
+{
+    border: none;
+    background: transparent;
+    /*padding: 0 30px;*/
+    padding: 0 10px;
+    font-size: 16px;
+    cursor: pointer;
+    max-height: 45px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.containerEmojisEncBtns{
+    position: relative;
+    display: flex;
+    padding: 5px 0;
+}
+.contentChat .btnEmojisSel{
+    background-color: #fff;
+    margin: 0px 5px;
+    cursor: pointer;
+    padding: 5px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.containerChat_maximice{
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+.isWritten{
+    position: absolute;
+    color: #878686;
+    margin: 0;
+    padding: 0;
+    display: block;
+    bottom: 0;
+    height: 0;
+    top: -40px;
+    pointer-events: none;
+}
+.isWritten img {
+    height: 56px;
+    position: relative;
+}
+.isWritten span {
+    display: inline-block;
+    top: -5px;
+    position: relative;
+    margin: 0 3px;
+}
+body .loadMoreMessages{
+    margin: auto;
+}
+body .NoMoreMessages{
+    margin: auto;
+    text-align: center;
+}
+.speak_mic_container_cancel {
+    position: relative;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.speak_mic_cancel{
+    position: relative;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    margin: 20px auto 0px auto;
+    width: max-content;
+    padding: 5px 15px;
+    border-radius: 5px;
+    background-color: #3ea9e9;
+    color: #fff;
+    cursor: pointer;
+    margin: 0 5px;
+}
+.divTextEscuchando{
+    position: relative;
+    margin: 10px;
+    text-align: center;
+}
+.imgSpeach{
+    display: flex;
+    align-items: center;
+    border-left: 1px solid #efefef;
+    border-right: 1px solid #efefef;
+    padding: 0 7px;
+    cursor: pointer;
+    width: 30px;
+}
+.nameOtherEnc{
+    cursor: auto;
+    font-size: 11px;
+    margin: 5px 0px;
+    height: auto;
+    top: 3px;
+    overflow: hidden;
+    max-width: 150px;
+}
+.imageSendChat{
+    max-width: 150px;
+}
+.linkDownloadFileChat{
+
+}
+.imagePrev{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    background-image: url(../img/attach_file.svg);
+}
+.containerFileTransfer{
+    position: relative;
+    /*height: 76px;*/
+    width: 50px;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    text-align: center;
+}
+.footerChat .fileTransferInput{
+    background-image: url(../img/attach_file.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    /*width: 30px;*/
+    width: 50px;
+    font-size: 0;
+    text-indent: 100px;
+    padding: 0;
+    border-left: 1px solid #efefef;
+    flex-grow: unset;
+    cursor: pointer;
+}
+.contentChat .btnEmojis {
+    border-left: 1px solid #efefef;
+}
+.notifyChatButton{
+    position: absolute;
+    top: -1px;
+    left: 3px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+}
+.notifyChatButtonShow{
+    background-color: #ff6d00;
+}
+.statusTextOtherEnc{
+    position: relative;
+    width: 100%;
+    font-size: 10px;
+    margin: 0;
+    overflow: hidden;
+    height: 11px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 0 5px;
+    /*background-color: #2676d4;*/
+    background-color: #1f8ceb;
+    height: 28px;
+    margin: 0;
+    padding: 8px 8px;
+    top: 0px;
+    border-top: 1px solid #5e9be4;
+    box-shadow: 6px 10px 15px #ababab;
+    pointer-events: none;
+    z-index: -1;
+}
+.statusTextOtherEnc span {
+    display: block;
+    width: 100%;
+    position: absolute;
+    background: #3c8ceb;
+    word-break: break-all;
+    word-spacing: -1px;
+}
+.statusOtherEnc{
+    background-color: #cecece;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.statusOtherEnc_online{
+    background-color: #17f517;
+}
+.linkMsgVideoAudioCall{
+    padding: 6px;
+    background-color: green;
+    display: block;
+    margin: 10px auto;
+    width: fit-content;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.contentChat .btn_msgs_antiguos{
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin: 0;
+    height: auto;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.contentChat .message_auto{
+    width: 100%;
+    margin: 10px 0;
+    position: relative;
+    text-align: center;
+}
+.contentChat .message_auto .message--theirs{
+    text-align: center;
+    width: 100%;
+}
+.message_auto .message__fecha{
+    padding: 0;
+}
+.contentChat .message_auto .message__bubble{
+    background-color: transparent;
+    font-size: 12px;
+    font-style: italic;
+    color: gray;
+    margin: auto;
+    padding: 0;
+    display: block;
+}
+.message_auto .message__name,
+.message_auto .message__see,
+.message_auto .g_translate
+{
+    display: none;
+}
+.containerEmojis {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    position: absolute;
+    /*bottom: 0px;*/
+    /*bottom: -300px;*/
+    bottom: -1300px;
+    left: 0px;
+    width: 100%;
+    /*height: 0px;*/
+    /*height: 200px;*/
+    height: 100%;
+    /*opacity: 0;*/
+    background-color: #f0f0f0;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    z-index: 1;
+}
+.containerEmojisInt{
+    overflow-y: auto;
+    /*    height: 100%;*/
+    height: calc(100% - 110px);
+    position: relative;
+}
+.containerEmojis_show{
+    /*height: 200px;*/
+    /*bottom: 45px;*/
+    bottom: 0px;
+}
+.btnCloseEmojis{
+
+}
+.em{height:1.5em;width:1.5em;background-position:center;background-repeat:no-repeat;background-size:contain;display:inline-block;vertical-align:middle}.em---1{background-image:url("/nwlib6/css/emoji/emoji/+1.png")}.em--1{background-image:url("/nwlib6/css/emoji/emoji/-1.png")}.em-100{background-image:url("/nwlib6/css/emoji/emoji/100.png")}.em-1234{background-image:url("/nwlib6/css/emoji/emoji/1234.png")}.em-8ball{background-image:url("/nwlib6/css/emoji/emoji/8ball.png")}.em-a{background-image:url("/nwlib6/css/emoji/emoji/a.png")}.em-ab{background-image:url("/nwlib6/css/emoji/emoji/ab.png")}.em-abc{background-image:url("/nwlib6/css/emoji/emoji/abc.png")}.em-abcd{background-image:url("/nwlib6/css/emoji/emoji/abcd.png")}.em-accept{background-image:url("/nwlib6/css/emoji/emoji/accept.png")}.em-aerial_tramway{background-image:url("/nwlib6/css/emoji/emoji/aerial_tramway.png")}.em-airplane{background-image:url("/nwlib6/css/emoji/emoji/airplane.png")}.em-alarm_clock{background-image:url("/nwlib6/css/emoji/emoji/alarm_clock.png")}.em-alien{background-image:url("/nwlib6/css/emoji/emoji/alien.png")}.em-ambulance{background-image:url("/nwlib6/css/emoji/emoji/ambulance.png")}.em-anchor{background-image:url("/nwlib6/css/emoji/emoji/anchor.png")}.em-angel{background-image:url("/nwlib6/css/emoji/emoji/angel.png")}.em-anger{background-image:url("/nwlib6/css/emoji/emoji/anger.png")}.em-angry{background-image:url("/nwlib6/css/emoji/emoji/angry.png")}.em-anguished{background-image:url("/nwlib6/css/emoji/emoji/anguished.png")}.em-ant{background-image:url("/nwlib6/css/emoji/emoji/ant.png")}.em-apple{background-image:url("/nwlib6/css/emoji/emoji/apple.png")}.em-aquarius{background-image:url("/nwlib6/css/emoji/emoji/aquarius.png")}.em-aries{background-image:url("/nwlib6/css/emoji/emoji/aries.png")}.em-arrow_backward{background-image:url("/nwlib6/css/emoji/emoji/arrow_backward.png")}.em-arrow_double_down{background-image:url("/nwlib6/css/emoji/emoji/arrow_double_down.png")}.em-arrow_double_up{background-image:url("/nwlib6/css/emoji/emoji/arrow_double_up.png")}.em-arrow_down{background-image:url("/nwlib6/css/emoji/emoji/arrow_down.png")}.em-arrow_down_small{background-image:url("/nwlib6/css/emoji/emoji/arrow_down_small.png")}.em-arrow_forward{background-image:url("/nwlib6/css/emoji/emoji/arrow_forward.png")}.em-arrow_heading_down{background-image:url("/nwlib6/css/emoji/emoji/arrow_heading_down.png")}.em-arrow_heading_up{background-image:url("/nwlib6/css/emoji/emoji/arrow_heading_up.png")}.em-arrow_left{background-image:url("/nwlib6/css/emoji/emoji/arrow_left.png")}.em-arrow_lower_left{background-image:url("/nwlib6/css/emoji/emoji/arrow_lower_left.png")}.em-arrow_lower_right{background-image:url("/nwlib6/css/emoji/emoji/arrow_lower_right.png")}.em-arrow_right{background-image:url("/nwlib6/css/emoji/emoji/arrow_right.png")}.em-arrow_right_hook{background-image:url("/nwlib6/css/emoji/emoji/arrow_right_hook.png")}.em-arrow_up{background-image:url("/nwlib6/css/emoji/emoji/arrow_up.png")}.em-arrow_up_down{background-image:url("/nwlib6/css/emoji/emoji/arrow_up_down.png")}.em-arrow_up_small{background-image:url("/nwlib6/css/emoji/emoji/arrow_up_small.png")}.em-arrow_upper_left{background-image:url("/nwlib6/css/emoji/emoji/arrow_upper_left.png")}.em-arrow_upper_right{background-image:url("/nwlib6/css/emoji/emoji/arrow_upper_right.png")}.em-arrows_clockwise{background-image:url("/nwlib6/css/emoji/emoji/arrows_clockwise.png")}.em-arrows_counterclockwise{background-image:url("/nwlib6/css/emoji/emoji/arrows_counterclockwise.png")}.em-art{background-image:url("/nwlib6/css/emoji/emoji/art.png")}.em-articulated_lorry{background-image:url("/nwlib6/css/emoji/emoji/articulated_lorry.png")}.em-astonished{background-image:url("/nwlib6/css/emoji/emoji/astonished.png")}.em-atm{background-image:url("/nwlib6/css/emoji/emoji/atm.png")}.em-b{background-image:url("/nwlib6/css/emoji/emoji/b.png")}.em-baby{background-image:url("/nwlib6/css/emoji/emoji/baby.png")}.em-baby_bottle{background-image:url("/nwlib6/css/emoji/emoji/baby_bottle.png")}.em-baby_chick{background-image:url("/nwlib6/css/emoji/emoji/baby_chick.png")}.em-baby_symbol{background-image:url("/nwlib6/css/emoji/emoji/baby_symbol.png")}.em-back{background-image:url("/nwlib6/css/emoji/emoji/back.png")}.em-baggage_claim{background-image:url("/nwlib6/css/emoji/emoji/baggage_claim.png")}.em-balloon{background-image:url("/nwlib6/css/emoji/emoji/balloon.png")}.em-ballot_box_with_check{background-image:url("/nwlib6/css/emoji/emoji/ballot_box_with_check.png")}.em-bamboo{background-image:url("/nwlib6/css/emoji/emoji/bamboo.png")}.em-banana{background-image:url("/nwlib6/css/emoji/emoji/banana.png")}.em-bangbang{background-image:url("/nwlib6/css/emoji/emoji/bangbang.png")}.em-bank{background-image:url("/nwlib6/css/emoji/emoji/bank.png")}.em-bar_chart{background-image:url("/nwlib6/css/emoji/emoji/bar_chart.png")}.em-barber{background-image:url("/nwlib6/css/emoji/emoji/barber.png")}.em-baseball{background-image:url("/nwlib6/css/emoji/emoji/baseball.png")}.em-basketball{background-image:url("/nwlib6/css/emoji/emoji/basketball.png")}.em-bath{background-image:url("/nwlib6/css/emoji/emoji/bath.png")}.em-bathtub{background-image:url("/nwlib6/css/emoji/emoji/bathtub.png")}.em-battery{background-image:url("/nwlib6/css/emoji/emoji/battery.png")}.em-bear{background-image:url("/nwlib6/css/emoji/emoji/bear.png")}.em-bee{background-image:url("/nwlib6/css/emoji/emoji/bee.png")}.em-beer{background-image:url("/nwlib6/css/emoji/emoji/beer.png")}.em-beers{background-image:url("/nwlib6/css/emoji/emoji/beers.png")}.em-beetle{background-image:url("/nwlib6/css/emoji/emoji/beetle.png")}.em-beginner{background-image:url("/nwlib6/css/emoji/emoji/beginner.png")}.em-bell{background-image:url("/nwlib6/css/emoji/emoji/bell.png")}.em-bento{background-image:url("/nwlib6/css/emoji/emoji/bento.png")}.em-bicyclist{background-image:url("/nwlib6/css/emoji/emoji/bicyclist.png")}.em-bike{background-image:url("/nwlib6/css/emoji/emoji/bike.png")}.em-bikini{background-image:url("/nwlib6/css/emoji/emoji/bikini.png")}.em-bird{background-image:url("/nwlib6/css/emoji/emoji/bird.png")}.em-birthday{background-image:url("/nwlib6/css/emoji/emoji/birthday.png")}.em-black_circle{background-image:url("/nwlib6/css/emoji/emoji/black_circle.png")}.em-black_joker{background-image:url("/nwlib6/css/emoji/emoji/black_joker.png")}.em-black_medium_small_square{background-image:url("/nwlib6/css/emoji/emoji/black_medium_small_square.png")}.em-black_medium_square{background-image:url("/nwlib6/css/emoji/emoji/black_medium_square.png")}.em-black_nib{background-image:url("/nwlib6/css/emoji/emoji/black_nib.png")}.em-black_small_square{background-image:url("/nwlib6/css/emoji/emoji/black_small_square.png")}.em-black_square{background-image:url("/nwlib6/css/emoji/emoji/black_square.png")}.em-black_square_button{background-image:url("/nwlib6/css/emoji/emoji/black_square_button.png")}.em-blossom{background-image:url("/nwlib6/css/emoji/emoji/blossom.png")}.em-blowfish{background-image:url("/nwlib6/css/emoji/emoji/blowfish.png")}.em-blue_book{background-image:url("/nwlib6/css/emoji/emoji/blue_book.png")}.em-blue_car{background-image:url("/nwlib6/css/emoji/emoji/blue_car.png")}.em-blue_heart{background-image:url("/nwlib6/css/emoji/emoji/blue_heart.png")}.em-blush{background-image:url("/nwlib6/css/emoji/emoji/blush.png")}.em-boar{background-image:url("/nwlib6/css/emoji/emoji/boar.png")}.em-boat{background-image:url("/nwlib6/css/emoji/emoji/boat.png")}.em-bomb{background-image:url("/nwlib6/css/emoji/emoji/bomb.png")}.em-book{background-image:url("/nwlib6/css/emoji/emoji/book.png")}.em-bookmark{background-image:url("/nwlib6/css/emoji/emoji/bookmark.png")}.em-bookmark_tabs{background-image:url("/nwlib6/css/emoji/emoji/bookmark_tabs.png")}.em-books{background-image:url("/nwlib6/css/emoji/emoji/books.png")}.em-boom{background-image:url("/nwlib6/css/emoji/emoji/boom.png")}.em-boot{background-image:url("/nwlib6/css/emoji/emoji/boot.png")}.em-bouquet{background-image:url("/nwlib6/css/emoji/emoji/bouquet.png")}.em-bow{background-image:url("/nwlib6/css/emoji/emoji/bow.png")}.em-bowling{background-image:url("/nwlib6/css/emoji/emoji/bowling.png")}.em-bowtie{background-image:url("/nwlib6/css/emoji/emoji/bowtie.png")}.em-boy{background-image:url("/nwlib6/css/emoji/emoji/boy.png")}.em-bread{background-image:url("/nwlib6/css/emoji/emoji/bread.png")}.em-bride_with_veil{background-image:url("/nwlib6/css/emoji/emoji/bride_with_veil.png")}.em-bridge_at_night{background-image:url("/nwlib6/css/emoji/emoji/bridge_at_night.png")}.em-briefcase{background-image:url("/nwlib6/css/emoji/emoji/briefcase.png")}.em-broken_heart{background-image:url("/nwlib6/css/emoji/emoji/broken_heart.png")}.em-bug{background-image:url("/nwlib6/css/emoji/emoji/bug.png")}.em-bulb{background-image:url("/nwlib6/css/emoji/emoji/bulb.png")}.em-bullettrain_front{background-image:url("/nwlib6/css/emoji/emoji/bullettrain_front.png")}.em-bullettrain_side{background-image:url("/nwlib6/css/emoji/emoji/bullettrain_side.png")}.em-bus{background-image:url("/nwlib6/css/emoji/emoji/bus.png")}.em-busstop{background-image:url("/nwlib6/css/emoji/emoji/busstop.png")}.em-bust_in_silhouette{background-image:url("/nwlib6/css/emoji/emoji/bust_in_silhouette.png")}.em-busts_in_silhouette{background-image:url("/nwlib6/css/emoji/emoji/busts_in_silhouette.png")}.em-cactus{background-image:url("/nwlib6/css/emoji/emoji/cactus.png")}.em-cake{background-image:url("/nwlib6/css/emoji/emoji/cake.png")}.em-calendar{background-image:url("/nwlib6/css/emoji/emoji/calendar.png")}.em-calling{background-image:url("/nwlib6/css/emoji/emoji/calling.png")}.em-camel{background-image:url("/nwlib6/css/emoji/emoji/camel.png")}.em-camera{background-image:url("/nwlib6/css/emoji/emoji/camera.png")}.em-cancer{background-image:url("/nwlib6/css/emoji/emoji/cancer.png")}.em-candy{background-image:url("/nwlib6/css/emoji/emoji/candy.png")}.em-capital_abcd{background-image:url("/nwlib6/css/emoji/emoji/capital_abcd.png")}.em-capricorn{background-image:url("/nwlib6/css/emoji/emoji/capricorn.png")}.em-car{background-image:url("/nwlib6/css/emoji/emoji/car.png")}.em-card_index{background-image:url("/nwlib6/css/emoji/emoji/card_index.png")}.em-carousel_horse{background-image:url("/nwlib6/css/emoji/emoji/carousel_horse.png")}.em-cat{background-image:url("/nwlib6/css/emoji/emoji/cat.png")}.em-cat2{background-image:url("/nwlib6/css/emoji/emoji/cat2.png")}.em-cd{background-image:url("/nwlib6/css/emoji/emoji/cd.png")}.em-chart{background-image:url("/nwlib6/css/emoji/emoji/chart.png")}.em-chart_with_downwards_trend{background-image:url("/nwlib6/css/emoji/emoji/chart_with_downwards_trend.png")}.em-chart_with_upwards_trend{background-image:url("/nwlib6/css/emoji/emoji/chart_with_upwards_trend.png")}.em-checkered_flag{background-image:url("/nwlib6/css/emoji/emoji/checkered_flag.png")}.em-cherries{background-image:url("/nwlib6/css/emoji/emoji/cherries.png")}.em-cherry_blossom{background-image:url("/nwlib6/css/emoji/emoji/cherry_blossom.png")}.em-chestnut{background-image:url("/nwlib6/css/emoji/emoji/chestnut.png")}.em-chicken{background-image:url("/nwlib6/css/emoji/emoji/chicken.png")}.em-children_crossing{background-image:url("/nwlib6/css/emoji/emoji/children_crossing.png")}.em-chocolate_bar{background-image:url("/nwlib6/css/emoji/emoji/chocolate_bar.png")}.em-christmas_tree{background-image:url("/nwlib6/css/emoji/emoji/christmas_tree.png")}.em-church{background-image:url("/nwlib6/css/emoji/emoji/church.png")}.em-cinema{background-image:url("/nwlib6/css/emoji/emoji/cinema.png")}.em-circus_tent{background-image:url("/nwlib6/css/emoji/emoji/circus_tent.png")}.em-city_sunrise{background-image:url("/nwlib6/css/emoji/emoji/city_sunrise.png")}.em-city_sunset{background-image:url("/nwlib6/css/emoji/emoji/city_sunset.png")}.em-cl{background-image:url("/nwlib6/css/emoji/emoji/cl.png")}.em-clap{background-image:url("/nwlib6/css/emoji/emoji/clap.png")}.em-clapper{background-image:url("/nwlib6/css/emoji/emoji/clapper.png")}.em-clipboard{background-image:url("/nwlib6/css/emoji/emoji/clipboard.png")}.em-clock1{background-image:url("/nwlib6/css/emoji/emoji/clock1.png")}.em-clock10{background-image:url("/nwlib6/css/emoji/emoji/clock10.png")}.em-clock1030{background-image:url("/nwlib6/css/emoji/emoji/clock1030.png")}.em-clock11{background-image:url("/nwlib6/css/emoji/emoji/clock11.png")}.em-clock1130{background-image:url("/nwlib6/css/emoji/emoji/clock1130.png")}.em-clock12{background-image:url("/nwlib6/css/emoji/emoji/clock12.png")}.em-clock1230{background-image:url("/nwlib6/css/emoji/emoji/clock1230.png")}.em-clock130{background-image:url("/nwlib6/css/emoji/emoji/clock130.png")}.em-clock2{background-image:url("/nwlib6/css/emoji/emoji/clock2.png")}.em-clock230{background-image:url("/nwlib6/css/emoji/emoji/clock230.png")}.em-clock3{background-image:url("/nwlib6/css/emoji/emoji/clock3.png")}.em-clock330{background-image:url("/nwlib6/css/emoji/emoji/clock330.png")}.em-clock4{background-image:url("/nwlib6/css/emoji/emoji/clock4.png")}.em-clock430{background-image:url("/nwlib6/css/emoji/emoji/clock430.png")}.em-clock5{background-image:url("/nwlib6/css/emoji/emoji/clock5.png")}.em-clock530{background-image:url("/nwlib6/css/emoji/emoji/clock530.png")}.em-clock6{background-image:url("/nwlib6/css/emoji/emoji/clock6.png")}.em-clock630{background-image:url("/nwlib6/css/emoji/emoji/clock630.png")}.em-clock7{background-image:url("/nwlib6/css/emoji/emoji/clock7.png")}.em-clock730{background-image:url("/nwlib6/css/emoji/emoji/clock730.png")}.em-clock8{background-image:url("/nwlib6/css/emoji/emoji/clock8.png")}.em-clock830{background-image:url("/nwlib6/css/emoji/emoji/clock830.png")}.em-clock9{background-image:url("/nwlib6/css/emoji/emoji/clock9.png")}.em-clock930{background-image:url("/nwlib6/css/emoji/emoji/clock930.png")}.em-closed_book{background-image:url("/nwlib6/css/emoji/emoji/closed_book.png")}.em-closed_lock_with_key{background-image:url("/nwlib6/css/emoji/emoji/closed_lock_with_key.png")}.em-closed_umbrella{background-image:url("/nwlib6/css/emoji/emoji/closed_umbrella.png")}.em-cloud{background-image:url("/nwlib6/css/emoji/emoji/cloud.png")}.em-clubs{background-image:url("/nwlib6/css/emoji/emoji/clubs.png")}.em-cn{background-image:url("/nwlib6/css/emoji/emoji/cn.png")}.em-cocktail{background-image:url("/nwlib6/css/emoji/emoji/cocktail.png")}.em-coffee{background-image:url("/nwlib6/css/emoji/emoji/coffee.png")}.em-cold_sweat{background-image:url("/nwlib6/css/emoji/emoji/cold_sweat.png")}.em-collision{background-image:url("/nwlib6/css/emoji/emoji/collision.png")}.em-computer{background-image:url("/nwlib6/css/emoji/emoji/computer.png")}.em-confetti_ball{background-image:url("/nwlib6/css/emoji/emoji/confetti_ball.png")}.em-confounded{background-image:url("/nwlib6/css/emoji/emoji/confounded.png")}.em-confused{background-image:url("/nwlib6/css/emoji/emoji/confused.png")}.em-congratulations{background-image:url("/nwlib6/css/emoji/emoji/congratulations.png")}.em-construction{background-image:url("/nwlib6/css/emoji/emoji/construction.png")}.em-construction_worker{background-image:url("/nwlib6/css/emoji/emoji/construction_worker.png")}.em-convenience_store{background-image:url("/nwlib6/css/emoji/emoji/convenience_store.png")}.em-cookie{background-image:url("/nwlib6/css/emoji/emoji/cookie.png")}.em-cool{background-image:url("/nwlib6/css/emoji/emoji/cool.png")}.em-cop{background-image:url("/nwlib6/css/emoji/emoji/cop.png")}.em-copyright{background-image:url("/nwlib6/css/emoji/emoji/copyright.png")}.em-corn{background-image:url("/nwlib6/css/emoji/emoji/corn.png")}.em-couple{background-image:url("/nwlib6/css/emoji/emoji/couple.png")}.em-couple_with_heart{background-image:url("/nwlib6/css/emoji/emoji/couple_with_heart.png")}.em-couplekiss{background-image:url("/nwlib6/css/emoji/emoji/couplekiss.png")}.em-cow{background-image:url("/nwlib6/css/emoji/emoji/cow.png")}.em-cow2{background-image:url("/nwlib6/css/emoji/emoji/cow2.png")}.em-credit_card{background-image:url("/nwlib6/css/emoji/emoji/credit_card.png")}.em-crocodile{background-image:url("/nwlib6/css/emoji/emoji/crocodile.png")}.em-crossed_flags{background-image:url("/nwlib6/css/emoji/emoji/crossed_flags.png")}.em-crown{background-image:url("/nwlib6/css/emoji/emoji/crown.png")}.em-cry{background-image:url("/nwlib6/css/emoji/emoji/cry.png")}.em-crying_cat_face{background-image:url("/nwlib6/css/emoji/emoji/crying_cat_face.png")}.em-crystal_ball{background-image:url("/nwlib6/css/emoji/emoji/crystal_ball.png")}.em-cupid{background-image:url("/nwlib6/css/emoji/emoji/cupid.png")}.em-curly_loop{background-image:url("/nwlib6/css/emoji/emoji/curly_loop.png")}.em-currency_exchange{background-image:url("/nwlib6/css/emoji/emoji/currency_exchange.png")}.em-curry{background-image:url("/nwlib6/css/emoji/emoji/curry.png")}.em-custard{background-image:url("/nwlib6/css/emoji/emoji/custard.png")}.em-customs{background-image:url("/nwlib6/css/emoji/emoji/customs.png")}.em-cyclone{background-image:url("/nwlib6/css/emoji/emoji/cyclone.png")}.em-dancer{background-image:url("/nwlib6/css/emoji/emoji/dancer.png")}.em-dancers{background-image:url("/nwlib6/css/emoji/emoji/dancers.png")}.em-dango{background-image:url("/nwlib6/css/emoji/emoji/dango.png")}.em-dart{background-image:url("/nwlib6/css/emoji/emoji/dart.png")}.em-dash{background-image:url("/nwlib6/css/emoji/emoji/dash.png")}.em-date{background-image:url("/nwlib6/css/emoji/emoji/date.png")}.em-de{background-image:url("/nwlib6/css/emoji/emoji/de.png")}.em-deciduous_tree{background-image:url("/nwlib6/css/emoji/emoji/deciduous_tree.png")}.em-department_store{background-image:url("/nwlib6/css/emoji/emoji/department_store.png")}.em-diamond_shape_with_a_dot_inside{background-image:url("/nwlib6/css/emoji/emoji/diamond_shape_with_a_dot_inside.png")}.em-diamonds{background-image:url("/nwlib6/css/emoji/emoji/diamonds.png")}.em-disappointed{background-image:url("/nwlib6/css/emoji/emoji/disappointed.png")}.em-disappointed_relieved{background-image:url("/nwlib6/css/emoji/emoji/disappointed_relieved.png")}.em-dizzy{background-image:url("/nwlib6/css/emoji/emoji/dizzy.png")}.em-dizzy_face{background-image:url("/nwlib6/css/emoji/emoji/dizzy_face.png")}.em-do_not_litter{background-image:url("/nwlib6/css/emoji/emoji/do_not_litter.png")}.em-dog{background-image:url("/nwlib6/css/emoji/emoji/dog.png")}.em-dog2{background-image:url("/nwlib6/css/emoji/emoji/dog2.png")}.em-dollar{background-image:url("/nwlib6/css/emoji/emoji/dollar.png")}.em-dolls{background-image:url("/nwlib6/css/emoji/emoji/dolls.png")}.em-dolphin{background-image:url("/nwlib6/css/emoji/emoji/dolphin.png")}.em-donut{background-image:url("/nwlib6/css/emoji/emoji/donut.png")}.em-door{background-image:url("/nwlib6/css/emoji/emoji/door.png")}.em-doughnut{background-image:url("/nwlib6/css/emoji/emoji/doughnut.png")}.em-dragon{background-image:url("/nwlib6/css/emoji/emoji/dragon.png")}.em-dragon_face{background-image:url("/nwlib6/css/emoji/emoji/dragon_face.png")}.em-dress{background-image:url("/nwlib6/css/emoji/emoji/dress.png")}.em-dromedary_camel{background-image:url("/nwlib6/css/emoji/emoji/dromedary_camel.png")}.em-droplet{background-image:url("/nwlib6/css/emoji/emoji/droplet.png")}.em-dvd{background-image:url("/nwlib6/css/emoji/emoji/dvd.png")}.em-e-mail{background-image:url("/nwlib6/css/emoji/emoji/e-mail.png")}.em-ear{background-image:url("/nwlib6/css/emoji/emoji/ear.png")}.em-ear_of_rice{background-image:url("/nwlib6/css/emoji/emoji/ear_of_rice.png")}.em-earth_africa{background-image:url("/nwlib6/css/emoji/emoji/earth_africa.png")}.em-earth_americas{background-image:url("/nwlib6/css/emoji/emoji/earth_americas.png")}.em-earth_asia{background-image:url("/nwlib6/css/emoji/emoji/earth_asia.png")}.em-egg{background-image:url("/nwlib6/css/emoji/emoji/egg.png")}.em-eggplant{background-image:url("/nwlib6/css/emoji/emoji/eggplant.png")}.em-eight{background-image:url("/nwlib6/css/emoji/emoji/eight.png")}.em-eight_pointed_black_star{background-image:url("/nwlib6/css/emoji/emoji/eight_pointed_black_star.png")}.em-eight_spoked_asterisk{background-image:url("/nwlib6/css/emoji/emoji/eight_spoked_asterisk.png")}.em-electric_plug{background-image:url("/nwlib6/css/emoji/emoji/electric_plug.png")}.em-elephant{background-image:url("/nwlib6/css/emoji/emoji/elephant.png")}.em-email{background-image:url("/nwlib6/css/emoji/emoji/email.png")}.em-end{background-image:url("/nwlib6/css/emoji/emoji/end.png")}.em-envelope{background-image:url("/nwlib6/css/emoji/emoji/envelope.png")}.em-es{background-image:url("/nwlib6/css/emoji/emoji/es.png")}.em-euro{background-image:url("/nwlib6/css/emoji/emoji/euro.png")}.em-european_castle{background-image:url("/nwlib6/css/emoji/emoji/european_castle.png")}.em-european_post_office{background-image:url("/nwlib6/css/emoji/emoji/european_post_office.png")}.em-evergreen_tree{background-image:url("/nwlib6/css/emoji/emoji/evergreen_tree.png")}.em-exclamation{background-image:url("/nwlib6/css/emoji/emoji/exclamation.png")}.em-expressionless{background-image:url("/nwlib6/css/emoji/emoji/expressionless.png")}.em-eyeglasses{background-image:url("/nwlib6/css/emoji/emoji/eyeglasses.png")}.em-eyes{background-image:url("/nwlib6/css/emoji/emoji/eyes.png")}.em-facepunch{background-image:url("/nwlib6/css/emoji/emoji/facepunch.png")}.em-factory{background-image:url("/nwlib6/css/emoji/emoji/factory.png")}.em-fallen_leaf{background-image:url("/nwlib6/css/emoji/emoji/fallen_leaf.png")}.em-family{background-image:url("/nwlib6/css/emoji/emoji/family.png")}.em-fast_forward{background-image:url("/nwlib6/css/emoji/emoji/fast_forward.png")}.em-fax{background-image:url("/nwlib6/css/emoji/emoji/fax.png")}.em-fearful{background-image:url("/nwlib6/css/emoji/emoji/fearful.png")}.em-feelsgood{background-image:url("/nwlib6/css/emoji/emoji/feelsgood.png")}.em-feet{background-image:url("/nwlib6/css/emoji/emoji/feet.png")}.em-ferris_wheel{background-image:url("/nwlib6/css/emoji/emoji/ferris_wheel.png")}.em-file_folder{background-image:url("/nwlib6/css/emoji/emoji/file_folder.png")}.em-finnadie{background-image:url("/nwlib6/css/emoji/emoji/finnadie.png")}.em-fire{background-image:url("/nwlib6/css/emoji/emoji/fire.png")}.em-fire_engine{background-image:url("/nwlib6/css/emoji/emoji/fire_engine.png")}.em-fireworks{background-image:url("/nwlib6/css/emoji/emoji/fireworks.png")}.em-first_quarter_moon{background-image:url("/nwlib6/css/emoji/emoji/first_quarter_moon.png")}.em-first_quarter_moon_with_face{background-image:url("/nwlib6/css/emoji/emoji/first_quarter_moon_with_face.png")}.em-fish{background-image:url("/nwlib6/css/emoji/emoji/fish.png")}.em-fish_cake{background-image:url("/nwlib6/css/emoji/emoji/fish_cake.png")}.em-fishing_pole_and_fish{background-image:url("/nwlib6/css/emoji/emoji/fishing_pole_and_fish.png")}.em-fist{background-image:url("/nwlib6/css/emoji/emoji/fist.png")}.em-five{background-image:url("/nwlib6/css/emoji/emoji/five.png")}.em-flags{background-image:url("/nwlib6/css/emoji/emoji/flags.png")}.em-flashlight{background-image:url("/nwlib6/css/emoji/emoji/flashlight.png")}.em-floppy_disk{background-image:url("/nwlib6/css/emoji/emoji/floppy_disk.png")}.em-flower_playing_cards{background-image:url("/nwlib6/css/emoji/emoji/flower_playing_cards.png")}.em-flushed{background-image:url("/nwlib6/css/emoji/emoji/flushed.png")}.em-foggy{background-image:url("/nwlib6/css/emoji/emoji/foggy.png")}.em-football{background-image:url("/nwlib6/css/emoji/emoji/football.png")}.em-fork_and_knife{background-image:url("/nwlib6/css/emoji/emoji/fork_and_knife.png")}.em-fountain{background-image:url("/nwlib6/css/emoji/emoji/fountain.png")}.em-four{background-image:url("/nwlib6/css/emoji/emoji/four.png")}.em-four_leaf_clover{background-image:url("/nwlib6/css/emoji/emoji/four_leaf_clover.png")}.em-fr{background-image:url("/nwlib6/css/emoji/emoji/fr.png")}.em-free{background-image:url("/nwlib6/css/emoji/emoji/free.png")}.em-fried_shrimp{background-image:url("/nwlib6/css/emoji/emoji/fried_shrimp.png")}.em-fries{background-image:url("/nwlib6/css/emoji/emoji/fries.png")}.em-frog{background-image:url("/nwlib6/css/emoji/emoji/frog.png")}.em-frowning{background-image:url("/nwlib6/css/emoji/emoji/frowning.png")}.em-fu{background-image:url("/nwlib6/css/emoji/emoji/fu.png")}.em-fuelpump{background-image:url("/nwlib6/css/emoji/emoji/fuelpump.png")}.em-full_moon{background-image:url("/nwlib6/css/emoji/emoji/full_moon.png")}.em-full_moon_with_face{background-image:url("/nwlib6/css/emoji/emoji/full_moon_with_face.png")}.em-game_die{background-image:url("/nwlib6/css/emoji/emoji/game_die.png")}.em-gb{background-image:url("/nwlib6/css/emoji/emoji/gb.png")}.em-gem{background-image:url("/nwlib6/css/emoji/emoji/gem.png")}.em-gemini{background-image:url("/nwlib6/css/emoji/emoji/gemini.png")}.em-ghost{background-image:url("/nwlib6/css/emoji/emoji/ghost.png")}.em-gift{background-image:url("/nwlib6/css/emoji/emoji/gift.png")}.em-gift_heart{background-image:url("/nwlib6/css/emoji/emoji/gift_heart.png")}.em-girl{background-image:url("/nwlib6/css/emoji/emoji/girl.png")}.em-globe_with_meridians{background-image:url("/nwlib6/css/emoji/emoji/globe_with_meridians.png")}.em-goat{background-image:url("/nwlib6/css/emoji/emoji/goat.png")}.em-goberserk{background-image:url("/nwlib6/css/emoji/emoji/goberserk.png")}.em-godmode{background-image:url("/nwlib6/css/emoji/emoji/godmode.png")}.em-golf{background-image:url("/nwlib6/css/emoji/emoji/golf.png")}.em-grapes{background-image:url("/nwlib6/css/emoji/emoji/grapes.png")}.em-green_apple{background-image:url("/nwlib6/css/emoji/emoji/green_apple.png")}.em-green_book{background-image:url("/nwlib6/css/emoji/emoji/green_book.png")}.em-green_heart{background-image:url("/nwlib6/css/emoji/emoji/green_heart.png")}.em-grey_exclamation{background-image:url("/nwlib6/css/emoji/emoji/grey_exclamation.png")}.em-grey_question{background-image:url("/nwlib6/css/emoji/emoji/grey_question.png")}.em-grimacing{background-image:url("/nwlib6/css/emoji/emoji/grimacing.png")}.em-grin{background-image:url("/nwlib6/css/emoji/emoji/grin.png")}.em-grinning{background-image:url("/nwlib6/css/emoji/emoji/grinning.png")}.em-guardsman{background-image:url("/nwlib6/css/emoji/emoji/guardsman.png")}.em-guitar{background-image:url("/nwlib6/css/emoji/emoji/guitar.png")}.em-gun{background-image:url("/nwlib6/css/emoji/emoji/gun.png")}.em-haircut{background-image:url("/nwlib6/css/emoji/emoji/haircut.png")}.em-hamburger{background-image:url("/nwlib6/css/emoji/emoji/hamburger.png")}.em-hammer{background-image:url("/nwlib6/css/emoji/emoji/hammer.png")}.em-hamster{background-image:url("/nwlib6/css/emoji/emoji/hamster.png")}.em-hand{background-image:url("/nwlib6/css/emoji/emoji/hand.png")}.em-handbag{background-image:url("/nwlib6/css/emoji/emoji/handbag.png")}.em-hankey{background-image:url("/nwlib6/css/emoji/emoji/hankey.png")}.em-hash{background-image:url("/nwlib6/css/emoji/emoji/hash.png")}.em-hatched_chick{background-image:url("/nwlib6/css/emoji/emoji/hatched_chick.png")}.em-hatching_chick{background-image:url("/nwlib6/css/emoji/emoji/hatching_chick.png")}.em-headphones{background-image:url("/nwlib6/css/emoji/emoji/headphones.png")}.em-hear_no_evil{background-image:url("/nwlib6/css/emoji/emoji/hear_no_evil.png")}.em-heart{background-image:url("/nwlib6/css/emoji/emoji/heart.png")}.em-heart_decoration{background-image:url("/nwlib6/css/emoji/emoji/heart_decoration.png")}.em-heart_eyes{background-image:url("/nwlib6/css/emoji/emoji/heart_eyes.png")}.em-heart_eyes_cat{background-image:url("/nwlib6/css/emoji/emoji/heart_eyes_cat.png")}.em-heartbeat{background-image:url("/nwlib6/css/emoji/emoji/heartbeat.png")}.em-heartpulse{background-image:url("/nwlib6/css/emoji/emoji/heartpulse.png")}.em-hearts{background-image:url("/nwlib6/css/emoji/emoji/hearts.png")}.em-heavy_check_mark{background-image:url("/nwlib6/css/emoji/emoji/heavy_check_mark.png")}.em-heavy_division_sign{background-image:url("/nwlib6/css/emoji/emoji/heavy_division_sign.png")}.em-heavy_dollar_sign{background-image:url("/nwlib6/css/emoji/emoji/heavy_dollar_sign.png")}.em-heavy_exclamation_mark{background-image:url("/nwlib6/css/emoji/emoji/heavy_exclamation_mark.png")}.em-heavy_minus_sign{background-image:url("/nwlib6/css/emoji/emoji/heavy_minus_sign.png")}.em-heavy_multiplication_x{background-image:url("/nwlib6/css/emoji/emoji/heavy_multiplication_x.png")}.em-heavy_plus_sign{background-image:url("/nwlib6/css/emoji/emoji/heavy_plus_sign.png")}.em-helicopter{background-image:url("/nwlib6/css/emoji/emoji/helicopter.png")}.em-herb{background-image:url("/nwlib6/css/emoji/emoji/herb.png")}.em-hibiscus{background-image:url("/nwlib6/css/emoji/emoji/hibiscus.png")}.em-high_brightness{background-image:url("/nwlib6/css/emoji/emoji/high_brightness.png")}.em-high_heel{background-image:url("/nwlib6/css/emoji/emoji/high_heel.png")}.em-hocho{background-image:url("/nwlib6/css/emoji/emoji/hocho.png")}.em-honey_pot{background-image:url("/nwlib6/css/emoji/emoji/honey_pot.png")}.em-honeybee{background-image:url("/nwlib6/css/emoji/emoji/honeybee.png")}.em-horse{background-image:url("/nwlib6/css/emoji/emoji/horse.png")}.em-horse_racing{background-image:url("/nwlib6/css/emoji/emoji/horse_racing.png")}.em-hospital{background-image:url("/nwlib6/css/emoji/emoji/hospital.png")}.em-hotel{background-image:url("/nwlib6/css/emoji/emoji/hotel.png")}.em-hotsprings{background-image:url("/nwlib6/css/emoji/emoji/hotsprings.png")}.em-hourglass{background-image:url("/nwlib6/css/emoji/emoji/hourglass.png")}.em-hourglass_flowing_sand{background-image:url("/nwlib6/css/emoji/emoji/hourglass_flowing_sand.png")}.em-house{background-image:url("/nwlib6/css/emoji/emoji/house.png")}.em-house_with_garden{background-image:url("/nwlib6/css/emoji/emoji/house_with_garden.png")}.em-hurtrealbad{background-image:url("/nwlib6/css/emoji/emoji/hurtrealbad.png")}.em-hushed{background-image:url("/nwlib6/css/emoji/emoji/hushed.png")}.em-ice_cream{background-image:url("/nwlib6/css/emoji/emoji/ice_cream.png")}.em-icecream{background-image:url("/nwlib6/css/emoji/emoji/icecream.png")}.em-id{background-image:url("/nwlib6/css/emoji/emoji/id.png")}.em-ideograph_advantage{background-image:url("/nwlib6/css/emoji/emoji/ideograph_advantage.png")}.em-imp{background-image:url("/nwlib6/css/emoji/emoji/imp.png")}.em-inbox_tray{background-image:url("/nwlib6/css/emoji/emoji/inbox_tray.png")}.em-incoming_envelope{background-image:url("/nwlib6/css/emoji/emoji/incoming_envelope.png")}.em-information_desk_person{background-image:url("/nwlib6/css/emoji/emoji/information_desk_person.png")}.em-information_source{background-image:url("/nwlib6/css/emoji/emoji/information_source.png")}.em-innocent{background-image:url("/nwlib6/css/emoji/emoji/innocent.png")}.em-interrobang{background-image:url("/nwlib6/css/emoji/emoji/interrobang.png")}.em-iphone{background-image:url("/nwlib6/css/emoji/emoji/iphone.png")}.em-it{background-image:url("/nwlib6/css/emoji/emoji/it.png")}.em-izakaya_lantern{background-image:url("/nwlib6/css/emoji/emoji/izakaya_lantern.png")}.em-jack_o_lantern{background-image:url("/nwlib6/css/emoji/emoji/jack_o_lantern.png")}.em-japan{background-image:url("/nwlib6/css/emoji/emoji/japan.png")}.em-japanese_castle{background-image:url("/nwlib6/css/emoji/emoji/japanese_castle.png")}.em-japanese_goblin{background-image:url("/nwlib6/css/emoji/emoji/japanese_goblin.png")}.em-japanese_ogre{background-image:url("/nwlib6/css/emoji/emoji/japanese_ogre.png")}.em-jeans{background-image:url("/nwlib6/css/emoji/emoji/jeans.png")}.em-joy{background-image:url("/nwlib6/css/emoji/emoji/joy.png")}.em-joy_cat{background-image:url("/nwlib6/css/emoji/emoji/joy_cat.png")}.em-jp{background-image:url("/nwlib6/css/emoji/emoji/jp.png")}.em-key{background-image:url("/nwlib6/css/emoji/emoji/key.png")}.em-keycap_ten{background-image:url("/nwlib6/css/emoji/emoji/keycap_ten.png")}.em-kimono{background-image:url("/nwlib6/css/emoji/emoji/kimono.png")}.em-kiss{background-image:url("/nwlib6/css/emoji/emoji/kiss.png")}.em-kissing{background-image:url("/nwlib6/css/emoji/emoji/kissing.png")}.em-kissing_cat{background-image:url("/nwlib6/css/emoji/emoji/kissing_cat.png")}.em-kissing_closed_eyes{background-image:url("/nwlib6/css/emoji/emoji/kissing_closed_eyes.png")}.em-kissing_face{background-image:url("/nwlib6/css/emoji/emoji/kissing_face.png")}.em-kissing_heart{background-image:url("/nwlib6/css/emoji/emoji/kissing_heart.png")}.em-kissing_smiling_eyes{background-image:url("/nwlib6/css/emoji/emoji/kissing_smiling_eyes.png")}.em-koala{background-image:url("/nwlib6/css/emoji/emoji/koala.png")}.em-koko{background-image:url("/nwlib6/css/emoji/emoji/koko.png")}.em-kr{background-image:url("/nwlib6/css/emoji/emoji/kr.png")}.em-large_blue_circle{background-image:url("/nwlib6/css/emoji/emoji/large_blue_circle.png")}.em-large_blue_diamond{background-image:url("/nwlib6/css/emoji/emoji/large_blue_diamond.png")}.em-large_orange_diamond{background-image:url("/nwlib6/css/emoji/emoji/large_orange_diamond.png")}.em-last_quarter_moon{background-image:url("/nwlib6/css/emoji/emoji/last_quarter_moon.png")}.em-last_quarter_moon_with_face{background-image:url("/nwlib6/css/emoji/emoji/last_quarter_moon_with_face.png")}.em-laughing{background-image:url("/nwlib6/css/emoji/emoji/laughing.png")}.em-leaves{background-image:url("/nwlib6/css/emoji/emoji/leaves.png")}.em-ledger{background-image:url("/nwlib6/css/emoji/emoji/ledger.png")}.em-left_luggage{background-image:url("/nwlib6/css/emoji/emoji/left_luggage.png")}.em-left_right_arrow{background-image:url("/nwlib6/css/emoji/emoji/left_right_arrow.png")}.em-leftwards_arrow_with_hook{background-image:url("/nwlib6/css/emoji/emoji/leftwards_arrow_with_hook.png")}.em-lemon{background-image:url("/nwlib6/css/emoji/emoji/lemon.png")}.em-leo{background-image:url("/nwlib6/css/emoji/emoji/leo.png")}.em-leopard{background-image:url("/nwlib6/css/emoji/emoji/leopard.png")}.em-libra{background-image:url("/nwlib6/css/emoji/emoji/libra.png")}.em-light_rail{background-image:url("/nwlib6/css/emoji/emoji/light_rail.png")}.em-link{background-image:url("/nwlib6/css/emoji/emoji/link.png")}.em-lips{background-image:url("/nwlib6/css/emoji/emoji/lips.png")}.em-lipstick{background-image:url("/nwlib6/css/emoji/emoji/lipstick.png")}.em-lock{background-image:url("/nwlib6/css/emoji/emoji/lock.png")}.em-lock_with_ink_pen{background-image:url("/nwlib6/css/emoji/emoji/lock_with_ink_pen.png")}.em-lollipop{background-image:url("/nwlib6/css/emoji/emoji/lollipop.png")}.em-loop{background-image:url("/nwlib6/css/emoji/emoji/loop.png")}.em-loudspeaker{background-image:url("/nwlib6/css/emoji/emoji/loudspeaker.png")}.em-love_hotel{background-image:url("/nwlib6/css/emoji/emoji/love_hotel.png")}.em-love_letter{background-image:url("/nwlib6/css/emoji/emoji/love_letter.png")}.em-low_brightness{background-image:url("/nwlib6/css/emoji/emoji/low_brightness.png")}.em-m{background-image:url("/nwlib6/css/emoji/emoji/m.png")}.em-mag{background-image:url("/nwlib6/css/emoji/emoji/mag.png")}.em-mag_right{background-image:url("/nwlib6/css/emoji/emoji/mag_right.png")}.em-mahjong{background-image:url("/nwlib6/css/emoji/emoji/mahjong.png")}.em-mailbox{background-image:url("/nwlib6/css/emoji/emoji/mailbox.png")}.em-mailbox_closed{background-image:url("/nwlib6/css/emoji/emoji/mailbox_closed.png")}.em-mailbox_with_mail{background-image:url("/nwlib6/css/emoji/emoji/mailbox_with_mail.png")}.em-mailbox_with_no_mail{background-image:url("/nwlib6/css/emoji/emoji/mailbox_with_no_mail.png")}.em-man{background-image:url("/nwlib6/css/emoji/emoji/man.png")}.em-man_with_gua_pi_mao{background-image:url("/nwlib6/css/emoji/emoji/man_with_gua_pi_mao.png")}.em-man_with_turban{background-image:url("/nwlib6/css/emoji/emoji/man_with_turban.png")}.em-mans_shoe{background-image:url("/nwlib6/css/emoji/emoji/mans_shoe.png")}.em-maple_leaf{background-image:url("/nwlib6/css/emoji/emoji/maple_leaf.png")}.em-mask{background-image:url("/nwlib6/css/emoji/emoji/mask.png")}.em-massage{background-image:url("/nwlib6/css/emoji/emoji/massage.png")}.em-meat_on_bone{background-image:url("/nwlib6/css/emoji/emoji/meat_on_bone.png")}.em-mega{background-image:url("/nwlib6/css/emoji/emoji/mega.png")}.em-melon{background-image:url("/nwlib6/css/emoji/emoji/melon.png")}.em-memo{background-image:url("/nwlib6/css/emoji/emoji/memo.png")}.em-mens{background-image:url("/nwlib6/css/emoji/emoji/mens.png")}.em-metal{background-image:url("/nwlib6/css/emoji/emoji/metal.png")}.em-metro{background-image:url("/nwlib6/css/emoji/emoji/metro.png")}.em-microphone{background-image:url("/nwlib6/css/emoji/emoji/microphone.png")}.em-microscope{background-image:url("/nwlib6/css/emoji/emoji/microscope.png")}.em-milky_way{background-image:url("/nwlib6/css/emoji/emoji/milky_way.png")}.em-minibus{background-image:url("/nwlib6/css/emoji/emoji/minibus.png")}.em-minidisc{background-image:url("/nwlib6/css/emoji/emoji/minidisc.png")}.em-mobile_phone_off{background-image:url("/nwlib6/css/emoji/emoji/mobile_phone_off.png")}.em-money_with_wings{background-image:url("/nwlib6/css/emoji/emoji/money_with_wings.png")}.em-moneybag{background-image:url("/nwlib6/css/emoji/emoji/moneybag.png")}.em-monkey{background-image:url("/nwlib6/css/emoji/emoji/monkey.png")}.em-monkey_face{background-image:url("/nwlib6/css/emoji/emoji/monkey_face.png")}.em-monorail{background-image:url("/nwlib6/css/emoji/emoji/monorail.png")}.em-moon{background-image:url("/nwlib6/css/emoji/emoji/moon.png")}.em-mortar_board{background-image:url("/nwlib6/css/emoji/emoji/mortar_board.png")}.em-mount_fuji{background-image:url("/nwlib6/css/emoji/emoji/mount_fuji.png")}.em-mountain_bicyclist{background-image:url("/nwlib6/css/emoji/emoji/mountain_bicyclist.png")}.em-mountain_cableway{background-image:url("/nwlib6/css/emoji/emoji/mountain_cableway.png")}.em-mountain_railway{background-image:url("/nwlib6/css/emoji/emoji/mountain_railway.png")}.em-mouse{background-image:url("/nwlib6/css/emoji/emoji/mouse.png")}.em-mouse2{background-image:url("/nwlib6/css/emoji/emoji/mouse2.png")}.em-movie_camera{background-image:url("/nwlib6/css/emoji/emoji/movie_camera.png")}.em-moyai{background-image:url("/nwlib6/css/emoji/emoji/moyai.png")}.em-muscle{background-image:url("/nwlib6/css/emoji/emoji/muscle.png")}.em-mushroom{background-image:url("/nwlib6/css/emoji/emoji/mushroom.png")}.em-musical_keyboard{background-image:url("/nwlib6/css/emoji/emoji/musical_keyboard.png")}.em-musical_note{background-image:url("/nwlib6/css/emoji/emoji/musical_note.png")}.em-musical_score{background-image:url("/nwlib6/css/emoji/emoji/musical_score.png")}.em-mute{background-image:url("/nwlib6/css/emoji/emoji/mute.png")}.em-nail_care{background-image:url("/nwlib6/css/emoji/emoji/nail_care.png")}.em-name_badge{background-image:url("/nwlib6/css/emoji/emoji/name_badge.png")}.em-neckbeard{background-image:url("/nwlib6/css/emoji/emoji/neckbeard.png")}.em-necktie{background-image:url("/nwlib6/css/emoji/emoji/necktie.png")}.em-negative_squared_cross_mark{background-image:url("/nwlib6/css/emoji/emoji/negative_squared_cross_mark.png")}.em-neutral_face{background-image:url("/nwlib6/css/emoji/emoji/neutral_face.png")}.em-new{background-image:url("/nwlib6/css/emoji/emoji/new.png")}.em-new_moon{background-image:url("/nwlib6/css/emoji/emoji/new_moon.png")}.em-new_moon_with_face{background-image:url("/nwlib6/css/emoji/emoji/new_moon_with_face.png")}.em-newspaper{background-image:url("/nwlib6/css/emoji/emoji/newspaper.png")}.em-ng{background-image:url("/nwlib6/css/emoji/emoji/ng.png")}.em-nine{background-image:url("/nwlib6/css/emoji/emoji/nine.png")}.em-no_bell{background-image:url("/nwlib6/css/emoji/emoji/no_bell.png")}.em-no_bicycles{background-image:url("/nwlib6/css/emoji/emoji/no_bicycles.png")}.em-no_entry{background-image:url("/nwlib6/css/emoji/emoji/no_entry.png")}.em-no_entry_sign{background-image:url("/nwlib6/css/emoji/emoji/no_entry_sign.png")}.em-no_good{background-image:url("/nwlib6/css/emoji/emoji/no_good.png")}.em-no_mobile_phones{background-image:url("/nwlib6/css/emoji/emoji/no_mobile_phones.png")}.em-no_mouth{background-image:url("/nwlib6/css/emoji/emoji/no_mouth.png")}.em-no_pedestrians{background-image:url("/nwlib6/css/emoji/emoji/no_pedestrians.png")}.em-no_smoking{background-image:url("/nwlib6/css/emoji/emoji/no_smoking.png")}.em-non-potable_water{background-image:url("/nwlib6/css/emoji/emoji/non-potable_water.png")}.em-nose{background-image:url("/nwlib6/css/emoji/emoji/nose.png")}.em-notebook{background-image:url("/nwlib6/css/emoji/emoji/notebook.png")}.em-notebook_with_decorative_cover{background-image:url("/nwlib6/css/emoji/emoji/notebook_with_decorative_cover.png")}.em-notes{background-image:url("/nwlib6/css/emoji/emoji/notes.png")}.em-nut_and_bolt{background-image:url("/nwlib6/css/emoji/emoji/nut_and_bolt.png")}.em-o{background-image:url("/nwlib6/css/emoji/emoji/o.png")}.em-o2{background-image:url("/nwlib6/css/emoji/emoji/o2.png")}.em-ocean{background-image:url("/nwlib6/css/emoji/emoji/ocean.png")}.em-octocat{background-image:url("/nwlib6/css/emoji/emoji/octocat.png")}.em-octopus{background-image:url("/nwlib6/css/emoji/emoji/octopus.png")}.em-oden{background-image:url("/nwlib6/css/emoji/emoji/oden.png")}.em-office{background-image:url("/nwlib6/css/emoji/emoji/office.png")}.em-ok{background-image:url("/nwlib6/css/emoji/emoji/ok.png")}.em-ok_hand{background-image:url("/nwlib6/css/emoji/emoji/ok_hand.png")}.em-ok_woman{background-image:url("/nwlib6/css/emoji/emoji/ok_woman.png")}.em-older_man{background-image:url("/nwlib6/css/emoji/emoji/older_man.png")}.em-older_woman{background-image:url("/nwlib6/css/emoji/emoji/older_woman.png")}.em-on{background-image:url("/nwlib6/css/emoji/emoji/on.png")}.em-oncoming_automobile{background-image:url("/nwlib6/css/emoji/emoji/oncoming_automobile.png")}.em-oncoming_bus{background-image:url("/nwlib6/css/emoji/emoji/oncoming_bus.png")}.em-oncoming_police_car{background-image:url("/nwlib6/css/emoji/emoji/oncoming_police_car.png")}.em-oncoming_taxi{background-image:url("/nwlib6/css/emoji/emoji/oncoming_taxi.png")}.em-one{background-image:url("/nwlib6/css/emoji/emoji/one.png")}.em-open_file_folder{background-image:url("/nwlib6/css/emoji/emoji/open_file_folder.png")}.em-open_hands{background-image:url("/nwlib6/css/emoji/emoji/open_hands.png")}.em-open_mouth{background-image:url("/nwlib6/css/emoji/emoji/open_mouth.png")}.em-ophiuchus{background-image:url("/nwlib6/css/emoji/emoji/ophiuchus.png")}.em-orange_book{background-image:url("/nwlib6/css/emoji/emoji/orange_book.png")}.em-outbox_tray{background-image:url("/nwlib6/css/emoji/emoji/outbox_tray.png")}.em-ox{background-image:url("/nwlib6/css/emoji/emoji/ox.png")}.em-package{background-image:url("/nwlib6/css/emoji/emoji/package.png")}.em-page_facing_up{background-image:url("/nwlib6/css/emoji/emoji/page_facing_up.png")}.em-page_with_curl{background-image:url("/nwlib6/css/emoji/emoji/page_with_curl.png")}.em-pager{background-image:url("/nwlib6/css/emoji/emoji/pager.png")}.em-palm_tree{background-image:url("/nwlib6/css/emoji/emoji/palm_tree.png")}.em-panda_face{background-image:url("/nwlib6/css/emoji/emoji/panda_face.png")}.em-paperclip{background-image:url("/nwlib6/css/emoji/emoji/paperclip.png")}.em-parking{background-image:url("/nwlib6/css/emoji/emoji/parking.png")}.em-part_alternation_mark{background-image:url("/nwlib6/css/emoji/emoji/part_alternation_mark.png")}.em-partly_sunny{background-image:url("/nwlib6/css/emoji/emoji/partly_sunny.png")}.em-passport_control{background-image:url("/nwlib6/css/emoji/emoji/passport_control.png")}.em-paw_prints{background-image:url("/nwlib6/css/emoji/emoji/paw_prints.png")}.em-peach{background-image:url("/nwlib6/css/emoji/emoji/peach.png")}.em-pear{background-image:url("/nwlib6/css/emoji/emoji/pear.png")}.em-pencil{background-image:url("/nwlib6/css/emoji/emoji/pencil.png")}.em-pencil2{background-image:url("/nwlib6/css/emoji/emoji/pencil2.png")}.em-penguin{background-image:url("/nwlib6/css/emoji/emoji/penguin.png")}.em-pensive{background-image:url("/nwlib6/css/emoji/emoji/pensive.png")}.em-performing_arts{background-image:url("/nwlib6/css/emoji/emoji/performing_arts.png")}.em-persevere{background-image:url("/nwlib6/css/emoji/emoji/persevere.png")}.em-person_frowning{background-image:url("/nwlib6/css/emoji/emoji/person_frowning.png")}.em-person_with_blond_hair{background-image:url("/nwlib6/css/emoji/emoji/person_with_blond_hair.png")}.em-person_with_pouting_face{background-image:url("/nwlib6/css/emoji/emoji/person_with_pouting_face.png")}.em-phone{background-image:url("/nwlib6/css/emoji/emoji/phone.png")}.em-pig{background-image:url("/nwlib6/css/emoji/emoji/pig.png")}.em-pig2{background-image:url("/nwlib6/css/emoji/emoji/pig2.png")}.em-pig_nose{background-image:url("/nwlib6/css/emoji/emoji/pig_nose.png")}.em-pill{background-image:url("/nwlib6/css/emoji/emoji/pill.png")}.em-pineapple{background-image:url("/nwlib6/css/emoji/emoji/pineapple.png")}.em-pisces{background-image:url("/nwlib6/css/emoji/emoji/pisces.png")}.em-pizza{background-image:url("/nwlib6/css/emoji/emoji/pizza.png")}.em-plus1{background-image:url("/nwlib6/css/emoji/emoji/plus1.png")}.em-point_down{background-image:url("/nwlib6/css/emoji/emoji/point_down.png")}.em-point_left{background-image:url("/nwlib6/css/emoji/emoji/point_left.png")}.em-point_right{background-image:url("/nwlib6/css/emoji/emoji/point_right.png")}.em-point_up{background-image:url("/nwlib6/css/emoji/emoji/point_up.png")}.em-point_up_2{background-image:url("/nwlib6/css/emoji/emoji/point_up_2.png")}.em-police_car{background-image:url("/nwlib6/css/emoji/emoji/police_car.png")}.em-poodle{background-image:url("/nwlib6/css/emoji/emoji/poodle.png")}.em-poop{background-image:url("/nwlib6/css/emoji/emoji/poop.png")}.em-post_office{background-image:url("/nwlib6/css/emoji/emoji/post_office.png")}.em-postal_horn{background-image:url("/nwlib6/css/emoji/emoji/postal_horn.png")}.em-postbox{background-image:url("/nwlib6/css/emoji/emoji/postbox.png")}.em-potable_water{background-image:url("/nwlib6/css/emoji/emoji/potable_water.png")}.em-pouch{background-image:url("/nwlib6/css/emoji/emoji/pouch.png")}.em-poultry_leg{background-image:url("/nwlib6/css/emoji/emoji/poultry_leg.png")}.em-pound{background-image:url("/nwlib6/css/emoji/emoji/pound.png")}.em-pouting_cat{background-image:url("/nwlib6/css/emoji/emoji/pouting_cat.png")}.em-pray{background-image:url("/nwlib6/css/emoji/emoji/pray.png")}.em-princess{background-image:url("/nwlib6/css/emoji/emoji/princess.png")}.em-punch{background-image:url("/nwlib6/css/emoji/emoji/punch.png")}.em-purple_heart{background-image:url("/nwlib6/css/emoji/emoji/purple_heart.png")}.em-purse{background-image:url("/nwlib6/css/emoji/emoji/purse.png")}.em-pushpin{background-image:url("/nwlib6/css/emoji/emoji/pushpin.png")}.em-put_litter_in_its_place{background-image:url("/nwlib6/css/emoji/emoji/put_litter_in_its_place.png")}.em-question{background-image:url("/nwlib6/css/emoji/emoji/question.png")}.em-rabbit{background-image:url("/nwlib6/css/emoji/emoji/rabbit.png")}.em-rabbit2{background-image:url("/nwlib6/css/emoji/emoji/rabbit2.png")}.em-racehorse{background-image:url("/nwlib6/css/emoji/emoji/racehorse.png")}.em-radio{background-image:url("/nwlib6/css/emoji/emoji/radio.png")}.em-radio_button{background-image:url("/nwlib6/css/emoji/emoji/radio_button.png")}.em-rage{background-image:url("/nwlib6/css/emoji/emoji/rage.png")}.em-rage1{background-image:url("/nwlib6/css/emoji/emoji/rage1.png")}.em-rage2{background-image:url("/nwlib6/css/emoji/emoji/rage2.png")}.em-rage3{background-image:url("/nwlib6/css/emoji/emoji/rage3.png")}.em-rage4{background-image:url("/nwlib6/css/emoji/emoji/rage4.png")}.em-railway_car{background-image:url("/nwlib6/css/emoji/emoji/railway_car.png")}.em-rainbow{background-image:url("/nwlib6/css/emoji/emoji/rainbow.png")}.em-raised_hand{background-image:url("/nwlib6/css/emoji/emoji/raised_hand.png")}.em-raised_hands{background-image:url("/nwlib6/css/emoji/emoji/raised_hands.png")}.em-raising_hand{background-image:url("/nwlib6/css/emoji/emoji/raising_hand.png")}.em-ram{background-image:url("/nwlib6/css/emoji/emoji/ram.png")}.em-ramen{background-image:url("/nwlib6/css/emoji/emoji/ramen.png")}.em-rat{background-image:url("/nwlib6/css/emoji/emoji/rat.png")}.em-recycle{background-image:url("/nwlib6/css/emoji/emoji/recycle.png")}.em-red_car{background-image:url("/nwlib6/css/emoji/emoji/red_car.png")}.em-red_circle{background-image:url("/nwlib6/css/emoji/emoji/red_circle.png")}.em-registered{background-image:url("/nwlib6/css/emoji/emoji/registered.png")}.em-relaxed{background-image:url("/nwlib6/css/emoji/emoji/relaxed.png")}.em-relieved{background-image:url("/nwlib6/css/emoji/emoji/relieved.png")}.em-repeat{background-image:url("/nwlib6/css/emoji/emoji/repeat.png")}.em-repeat_one{background-image:url("/nwlib6/css/emoji/emoji/repeat_one.png")}.em-restroom{background-image:url("/nwlib6/css/emoji/emoji/restroom.png")}.em-revolving_hearts{background-image:url("/nwlib6/css/emoji/emoji/revolving_hearts.png")}.em-rewind{background-image:url("/nwlib6/css/emoji/emoji/rewind.png")}.em-ribbon{background-image:url("/nwlib6/css/emoji/emoji/ribbon.png")}.em-rice{background-image:url("/nwlib6/css/emoji/emoji/rice.png")}.em-rice_ball{background-image:url("/nwlib6/css/emoji/emoji/rice_ball.png")}.em-rice_cracker{background-image:url("/nwlib6/css/emoji/emoji/rice_cracker.png")}.em-rice_scene{background-image:url("/nwlib6/css/emoji/emoji/rice_scene.png")}.em-ring{background-image:url("/nwlib6/css/emoji/emoji/ring.png")}.em-rocket{background-image:url("/nwlib6/css/emoji/emoji/rocket.png")}.em-roller_coaster{background-image:url("/nwlib6/css/emoji/emoji/roller_coaster.png")}.em-rooster{background-image:url("/nwlib6/css/emoji/emoji/rooster.png")}.em-rose{background-image:url("/nwlib6/css/emoji/emoji/rose.png")}.em-rotating_light{background-image:url("/nwlib6/css/emoji/emoji/rotating_light.png")}.em-round_pushpin{background-image:url("/nwlib6/css/emoji/emoji/round_pushpin.png")}.em-rowboat{background-image:url("/nwlib6/css/emoji/emoji/rowboat.png")}.em-ru{background-image:url("/nwlib6/css/emoji/emoji/ru.png")}.em-rugby_football{background-image:url("/nwlib6/css/emoji/emoji/rugby_football.png")}.em-runner{background-image:url("/nwlib6/css/emoji/emoji/runner.png")}.em-running{background-image:url("/nwlib6/css/emoji/emoji/running.png")}.em-running_shirt_with_sash{background-image:url("/nwlib6/css/emoji/emoji/running_shirt_with_sash.png")}.em-sa{background-image:url("/nwlib6/css/emoji/emoji/sa.png")}.em-sagittarius{background-image:url("/nwlib6/css/emoji/emoji/sagittarius.png")}.em-sailboat{background-image:url("/nwlib6/css/emoji/emoji/sailboat.png")}.em-sake{background-image:url("/nwlib6/css/emoji/emoji/sake.png")}.em-sandal{background-image:url("/nwlib6/css/emoji/emoji/sandal.png")}.em-santa{background-image:url("/nwlib6/css/emoji/emoji/santa.png")}.em-satellite{background-image:url("/nwlib6/css/emoji/emoji/satellite.png")}.em-satisfied{background-image:url("/nwlib6/css/emoji/emoji/satisfied.png")}.em-saxophone{background-image:url("/nwlib6/css/emoji/emoji/saxophone.png")}.em-school{background-image:url("/nwlib6/css/emoji/emoji/school.png")}.em-school_satchel{background-image:url("/nwlib6/css/emoji/emoji/school_satchel.png")}.em-scissors{background-image:url("/nwlib6/css/emoji/emoji/scissors.png")}.em-scorpius{background-image:url("/nwlib6/css/emoji/emoji/scorpius.png")}.em-scream{background-image:url("/nwlib6/css/emoji/emoji/scream.png")}.em-scream_cat{background-image:url("/nwlib6/css/emoji/emoji/scream_cat.png")}.em-scroll{background-image:url("/nwlib6/css/emoji/emoji/scroll.png")}.em-seat{background-image:url("/nwlib6/css/emoji/emoji/seat.png")}.em-secret{background-image:url("/nwlib6/css/emoji/emoji/secret.png")}.em-see_no_evil{background-image:url("/nwlib6/css/emoji/emoji/see_no_evil.png")}.em-seedling{background-image:url("/nwlib6/css/emoji/emoji/seedling.png")}.em-seven{background-image:url("/nwlib6/css/emoji/emoji/seven.png")}.em-shaved_ice{background-image:url("/nwlib6/css/emoji/emoji/shaved_ice.png")}.em-sheep{background-image:url("/nwlib6/css/emoji/emoji/sheep.png")}.em-shell{background-image:url("/nwlib6/css/emoji/emoji/shell.png")}.em-ship{background-image:url("/nwlib6/css/emoji/emoji/ship.png")}.em-shipit{background-image:url("/nwlib6/css/emoji/emoji/shipit.png")}.em-shirt{background-image:url("/nwlib6/css/emoji/emoji/shirt.png")}.em-shit{background-image:url("/nwlib6/css/emoji/emoji/shit.png")}.em-shoe{background-image:url("/nwlib6/css/emoji/emoji/shoe.png")}.em-shower{background-image:url("/nwlib6/css/emoji/emoji/shower.png")}.em-signal_strength{background-image:url("/nwlib6/css/emoji/emoji/signal_strength.png")}.em-six{background-image:url("/nwlib6/css/emoji/emoji/six.png")}.em-six_pointed_star{background-image:url("/nwlib6/css/emoji/emoji/six_pointed_star.png")}.em-ski{background-image:url("/nwlib6/css/emoji/emoji/ski.png")}.em-skull{background-image:url("/nwlib6/css/emoji/emoji/skull.png")}.em-sleeping{background-image:url("/nwlib6/css/emoji/emoji/sleeping.png")}.em-sleepy{background-image:url("/nwlib6/css/emoji/emoji/sleepy.png")}.em-slot_machine{background-image:url("/nwlib6/css/emoji/emoji/slot_machine.png")}.em-small_blue_diamond{background-image:url("/nwlib6/css/emoji/emoji/small_blue_diamond.png")}.em-small_orange_diamond{background-image:url("/nwlib6/css/emoji/emoji/small_orange_diamond.png")}.em-small_red_triangle{background-image:url("/nwlib6/css/emoji/emoji/small_red_triangle.png")}.em-small_red_triangle_down{background-image:url("/nwlib6/css/emoji/emoji/small_red_triangle_down.png")}.em-smile{background-image:url("/nwlib6/css/emoji/emoji/smile.png")}.em-smile_cat{background-image:url("/nwlib6/css/emoji/emoji/smile_cat.png")}.em-smiley{background-image:url("/nwlib6/css/emoji/emoji/smiley.png")}.em-smiley_cat{background-image:url("/nwlib6/css/emoji/emoji/smiley_cat.png")}.em-smiling_imp{background-image:url("/nwlib6/css/emoji/emoji/smiling_imp.png")}.em-smirk{background-image:url("/nwlib6/css/emoji/emoji/smirk.png")}.em-smirk_cat{background-image:url("/nwlib6/css/emoji/emoji/smirk_cat.png")}.em-smoking{background-image:url("/nwlib6/css/emoji/emoji/smoking.png")}.em-snail{background-image:url("/nwlib6/css/emoji/emoji/snail.png")}.em-snake{background-image:url("/nwlib6/css/emoji/emoji/snake.png")}.em-snowboarder{background-image:url("/nwlib6/css/emoji/emoji/snowboarder.png")}.em-snowflake{background-image:url("/nwlib6/css/emoji/emoji/snowflake.png")}.em-snowman{background-image:url("/nwlib6/css/emoji/emoji/snowman.png")}.em-sob{background-image:url("/nwlib6/css/emoji/emoji/sob.png")}.em-soccer{background-image:url("/nwlib6/css/emoji/emoji/soccer.png")}.em-soon{background-image:url("/nwlib6/css/emoji/emoji/soon.png")}.em-sos{background-image:url("/nwlib6/css/emoji/emoji/sos.png")}.em-sound{background-image:url("/nwlib6/css/emoji/emoji/sound.png")}.em-space_invader{background-image:url("/nwlib6/css/emoji/emoji/space_invader.png")}.em-spades{background-image:url("/nwlib6/css/emoji/emoji/spades.png")}.em-spaghetti{background-image:url("/nwlib6/css/emoji/emoji/spaghetti.png")}.em-sparkle{background-image:url("/nwlib6/css/emoji/emoji/sparkle.png")}.em-sparkler{background-image:url("/nwlib6/css/emoji/emoji/sparkler.png")}.em-sparkles{background-image:url("/nwlib6/css/emoji/emoji/sparkles.png")}.em-sparkling_heart{background-image:url("/nwlib6/css/emoji/emoji/sparkling_heart.png")}.em-speak_no_evil{background-image:url("/nwlib6/css/emoji/emoji/speak_no_evil.png")}.em-speaker{background-image:url("/nwlib6/css/emoji/emoji/speaker.png")}.em-speech_balloon{background-image:url("/nwlib6/css/emoji/emoji/speech_balloon.png")}.em-speedboat{background-image:url("/nwlib6/css/emoji/emoji/speedboat.png")}.em-squirrel{background-image:url("/nwlib6/css/emoji/emoji/squirrel.png")}.em-star{background-image:url("/nwlib6/css/emoji/emoji/star.png")}.em-star2{background-image:url("/nwlib6/css/emoji/emoji/star2.png")}.em-stars{background-image:url("/nwlib6/css/emoji/emoji/stars.png")}.em-station{background-image:url("/nwlib6/css/emoji/emoji/station.png")}.em-statue_of_liberty{background-image:url("/nwlib6/css/emoji/emoji/statue_of_liberty.png")}.em-steam_locomotive{background-image:url("/nwlib6/css/emoji/emoji/steam_locomotive.png")}.em-stew{background-image:url("/nwlib6/css/emoji/emoji/stew.png")}.em-straight_ruler{background-image:url("/nwlib6/css/emoji/emoji/straight_ruler.png")}.em-strawberry{background-image:url("/nwlib6/css/emoji/emoji/strawberry.png")}.em-stuck_out_tongue{background-image:url("/nwlib6/css/emoji/emoji/stuck_out_tongue.png")}.em-stuck_out_tongue_closed_eyes{background-image:url("/nwlib6/css/emoji/emoji/stuck_out_tongue_closed_eyes.png")}.em-stuck_out_tongue_winking_eye{background-image:url("/nwlib6/css/emoji/emoji/stuck_out_tongue_winking_eye.png")}.em-sun_with_face{background-image:url("/nwlib6/css/emoji/emoji/sun_with_face.png")}.em-sunflower{background-image:url("/nwlib6/css/emoji/emoji/sunflower.png")}.em-sunglasses{background-image:url("/nwlib6/css/emoji/emoji/sunglasses.png")}.em-sunny{background-image:url("/nwlib6/css/emoji/emoji/sunny.png")}.em-sunrise{background-image:url("/nwlib6/css/emoji/emoji/sunrise.png")}.em-sunrise_over_mountains{background-image:url("/nwlib6/css/emoji/emoji/sunrise_over_mountains.png")}.em-surfer{background-image:url("/nwlib6/css/emoji/emoji/surfer.png")}.em-sushi{background-image:url("/nwlib6/css/emoji/emoji/sushi.png")}.em-suspect{background-image:url("/nwlib6/css/emoji/emoji/suspect.png")}.em-suspension_railway{background-image:url("/nwlib6/css/emoji/emoji/suspension_railway.png")}.em-sweat{background-image:url("/nwlib6/css/emoji/emoji/sweat.png")}.em-sweat_drops{background-image:url("/nwlib6/css/emoji/emoji/sweat_drops.png")}.em-sweat_smile{background-image:url("/nwlib6/css/emoji/emoji/sweat_smile.png")}.em-sweet_potato{background-image:url("/nwlib6/css/emoji/emoji/sweet_potato.png")}.em-swimmer{background-image:url("/nwlib6/css/emoji/emoji/swimmer.png")}.em-symbols{background-image:url("/nwlib6/css/emoji/emoji/symbols.png")}.em-syringe{background-image:url("/nwlib6/css/emoji/emoji/syringe.png")}.em-tada{background-image:url("/nwlib6/css/emoji/emoji/tada.png")}.em-tanabata_tree{background-image:url("/nwlib6/css/emoji/emoji/tanabata_tree.png")}.em-tangerine{background-image:url("/nwlib6/css/emoji/emoji/tangerine.png")}.em-taurus{background-image:url("/nwlib6/css/emoji/emoji/taurus.png")}.em-taxi{background-image:url("/nwlib6/css/emoji/emoji/taxi.png")}.em-tea{background-image:url("/nwlib6/css/emoji/emoji/tea.png")}.em-telephone{background-image:url("/nwlib6/css/emoji/emoji/telephone.png")}.em-telephone_receiver{background-image:url("/nwlib6/css/emoji/emoji/telephone_receiver.png")}.em-telescope{background-image:url("/nwlib6/css/emoji/emoji/telescope.png")}.em-tennis{background-image:url("/nwlib6/css/emoji/emoji/tennis.png")}.em-tent{background-image:url("/nwlib6/css/emoji/emoji/tent.png")}.em-thought_balloon{background-image:url("/nwlib6/css/emoji/emoji/thought_balloon.png")}.em-three{background-image:url("/nwlib6/css/emoji/emoji/three.png")}.em-thumbsdown{background-image:url("/nwlib6/css/emoji/emoji/thumbsdown.png")}.em-thumbsup{background-image:url("/nwlib6/css/emoji/emoji/thumbsup.png")}.em-ticket{background-image:url("/nwlib6/css/emoji/emoji/ticket.png")}.em-tiger{background-image:url("/nwlib6/css/emoji/emoji/tiger.png")}.em-tiger2{background-image:url("/nwlib6/css/emoji/emoji/tiger2.png")}.em-tired_face{background-image:url("/nwlib6/css/emoji/emoji/tired_face.png")}.em-tm{background-image:url("/nwlib6/css/emoji/emoji/tm.png")}.em-toilet{background-image:url("/nwlib6/css/emoji/emoji/toilet.png")}.em-tokyo_tower{background-image:url("/nwlib6/css/emoji/emoji/tokyo_tower.png")}.em-tomato{background-image:url("/nwlib6/css/emoji/emoji/tomato.png")}.em-tongue{background-image:url("/nwlib6/css/emoji/emoji/tongue.png")}.em-top{background-image:url("/nwlib6/css/emoji/emoji/top.png")}.em-tophat{background-image:url("/nwlib6/css/emoji/emoji/tophat.png")}.em-tractor{background-image:url("/nwlib6/css/emoji/emoji/tractor.png")}.em-traffic_light{background-image:url("/nwlib6/css/emoji/emoji/traffic_light.png")}.em-train{background-image:url("/nwlib6/css/emoji/emoji/train.png")}.em-train2{background-image:url("/nwlib6/css/emoji/emoji/train2.png")}.em-tram{background-image:url("/nwlib6/css/emoji/emoji/tram.png")}.em-triangular_flag_on_post{background-image:url("/nwlib6/css/emoji/emoji/triangular_flag_on_post.png")}.em-triangular_ruler{background-image:url("/nwlib6/css/emoji/emoji/triangular_ruler.png")}.em-trident{background-image:url("/nwlib6/css/emoji/emoji/trident.png")}.em-triumph{background-image:url("/nwlib6/css/emoji/emoji/triumph.png")}.em-trolleybus{background-image:url("/nwlib6/css/emoji/emoji/trolleybus.png")}.em-trollface{background-image:url("/nwlib6/css/emoji/emoji/trollface.png")}.em-trophy{background-image:url("/nwlib6/css/emoji/emoji/trophy.png")}.em-tropical_drink{background-image:url("/nwlib6/css/emoji/emoji/tropical_drink.png")}.em-tropical_fish{background-image:url("/nwlib6/css/emoji/emoji/tropical_fish.png")}.em-truck{background-image:url("/nwlib6/css/emoji/emoji/truck.png")}.em-trumpet{background-image:url("/nwlib6/css/emoji/emoji/trumpet.png")}.em-tshirt{background-image:url("/nwlib6/css/emoji/emoji/tshirt.png")}.em-tulip{background-image:url("/nwlib6/css/emoji/emoji/tulip.png")}.em-turtle{background-image:url("/nwlib6/css/emoji/emoji/turtle.png")}.em-tv{background-image:url("/nwlib6/css/emoji/emoji/tv.png")}.em-twisted_rightwards_arrows{background-image:url("/nwlib6/css/emoji/emoji/twisted_rightwards_arrows.png")}.em-two{background-image:url("/nwlib6/css/emoji/emoji/two.png")}.em-two_hearts{background-image:url("/nwlib6/css/emoji/emoji/two_hearts.png")}.em-two_men_holding_hands{background-image:url("/nwlib6/css/emoji/emoji/two_men_holding_hands.png")}.em-two_women_holding_hands{background-image:url("/nwlib6/css/emoji/emoji/two_women_holding_hands.png")}.em-u5272{background-image:url("/nwlib6/css/emoji/emoji/u5272.png")}.em-u5408{background-image:url("/nwlib6/css/emoji/emoji/u5408.png")}.em-u55b6{background-image:url("/nwlib6/css/emoji/emoji/u55b6.png")}.em-u6307{background-image:url("/nwlib6/css/emoji/emoji/u6307.png")}.em-u6708{background-image:url("/nwlib6/css/emoji/emoji/u6708.png")}.em-u6709{background-image:url("/nwlib6/css/emoji/emoji/u6709.png")}.em-u6e80{background-image:url("/nwlib6/css/emoji/emoji/u6e80.png")}.em-u7121{background-image:url("/nwlib6/css/emoji/emoji/u7121.png")}.em-u7533{background-image:url("/nwlib6/css/emoji/emoji/u7533.png")}.em-u7981{background-image:url("/nwlib6/css/emoji/emoji/u7981.png")}.em-u7a7a{background-image:url("/nwlib6/css/emoji/emoji/u7a7a.png")}.em-uk{background-image:url("/nwlib6/css/emoji/emoji/uk.png")}.em-umbrella{background-image:url("/nwlib6/css/emoji/emoji/umbrella.png")}.em-unamused{background-image:url("/nwlib6/css/emoji/emoji/unamused.png")}.em-underage{background-image:url("/nwlib6/css/emoji/emoji/underage.png")}.em-unlock{background-image:url("/nwlib6/css/emoji/emoji/unlock.png")}.em-up{background-image:url("/nwlib6/css/emoji/emoji/up.png")}.em-us{background-image:url("/nwlib6/css/emoji/emoji/us.png")}.em-v{background-image:url("/nwlib6/css/emoji/emoji/v.png")}.em-vertical_traffic_light{background-image:url("/nwlib6/css/emoji/emoji/vertical_traffic_light.png")}.em-vhs{background-image:url("/nwlib6/css/emoji/emoji/vhs.png")}.em-vibration_mode{background-image:url("/nwlib6/css/emoji/emoji/vibration_mode.png")}.em-video_camera{background-image:url("/nwlib6/css/emoji/emoji/video_camera.png")}.em-video_game{background-image:url("/nwlib6/css/emoji/emoji/video_game.png")}.em-violin{background-image:url("/nwlib6/css/emoji/emoji/violin.png")}.em-virgo{background-image:url("/nwlib6/css/emoji/emoji/virgo.png")}.em-volcano{background-image:url("/nwlib6/css/emoji/emoji/volcano.png")}.em-vs{background-image:url("/nwlib6/css/emoji/emoji/vs.png")}.em-walking{background-image:url("/nwlib6/css/emoji/emoji/walking.png")}.em-waning_crescent_moon{background-image:url("/nwlib6/css/emoji/emoji/waning_crescent_moon.png")}.em-waning_gibbous_moon{background-image:url("/nwlib6/css/emoji/emoji/waning_gibbous_moon.png")}.em-warning{background-image:url("/nwlib6/css/emoji/emoji/warning.png")}.em-watch{background-image:url("/nwlib6/css/emoji/emoji/watch.png")}.em-water_buffalo{background-image:url("/nwlib6/css/emoji/emoji/water_buffalo.png")}.em-watermelon{background-image:url("/nwlib6/css/emoji/emoji/watermelon.png")}.em-wave{background-image:url("/nwlib6/css/emoji/emoji/wave.png")}.em-wavy_dash{background-image:url("/nwlib6/css/emoji/emoji/wavy_dash.png")}.em-waxing_crescent_moon{background-image:url("/nwlib6/css/emoji/emoji/waxing_crescent_moon.png")}.em-waxing_gibbous_moon{background-image:url("/nwlib6/css/emoji/emoji/waxing_gibbous_moon.png")}.em-wc{background-image:url("/nwlib6/css/emoji/emoji/wc.png")}.em-weary{background-image:url("/nwlib6/css/emoji/emoji/weary.png")}.em-wedding{background-image:url("/nwlib6/css/emoji/emoji/wedding.png")}.em-whale{background-image:url("/nwlib6/css/emoji/emoji/whale.png")}.em-whale2{background-image:url("/nwlib6/css/emoji/emoji/whale2.png")}.em-wheelchair{background-image:url("/nwlib6/css/emoji/emoji/wheelchair.png")}.em-white_check_mark{background-image:url("/nwlib6/css/emoji/emoji/white_check_mark.png")}.em-white_circle{background-image:url("/nwlib6/css/emoji/emoji/white_circle.png")}.em-white_flower{background-image:url("/nwlib6/css/emoji/emoji/white_flower.png")}.em-white_large_square{background-image:url("/nwlib6/css/emoji/emoji/white_large_square.png")}.em-white_medium_small_square{background-image:url("/nwlib6/css/emoji/emoji/white_medium_small_square.png")}.em-white_medium_square{background-image:url("/nwlib6/css/emoji/emoji/white_medium_square.png")}.em-white_small_square{background-image:url("/nwlib6/css/emoji/emoji/white_small_square.png")}.em-white_square_button{background-image:url("/nwlib6/css/emoji/emoji/white_square_button.png")}.em-wind_chime{background-image:url("/nwlib6/css/emoji/emoji/wind_chime.png")}.em-wine_glass{background-image:url("/nwlib6/css/emoji/emoji/wine_glass.png")}.em-wink{background-image:url("/nwlib6/css/emoji/emoji/wink.png")}.em-wolf{background-image:url("/nwlib6/css/emoji/emoji/wolf.png")}.em-woman{background-image:url("/nwlib6/css/emoji/emoji/woman.png")}.em-womans_clothes{background-image:url("/nwlib6/css/emoji/emoji/womans_clothes.png")}.em-womans_hat{background-image:url("/nwlib6/css/emoji/emoji/womans_hat.png")}.em-womens{background-image:url("/nwlib6/css/emoji/emoji/womens.png")}.em-worried{background-image:url("/nwlib6/css/emoji/emoji/worried.png")}.em-wrench{background-image:url("/nwlib6/css/emoji/emoji/wrench.png")}.em-x{background-image:url("/nwlib6/css/emoji/emoji/x.png")}.em-yellow_heart{background-image:url("/nwlib6/css/emoji/emoji/yellow_heart.png")}.em-yen{background-image:url("/nwlib6/css/emoji/emoji/yen.png")}.em-yum{background-image:url("/nwlib6/css/emoji/emoji/yum.png")}.em-zap{background-image:url("/nwlib6/css/emoji/emoji/zap.png")}.em-zero{background-image:url("/nwlib6/css/emoji/emoji/zero.png")}.em-zzz{background-image:url("/nwlib6/css/emoji/emoji/zzz.png")}
+.containerEmojis_show .em {
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+}
+.containerEmojis_show .emIfGif{
+    width: 30%;
+    height: 120px;
+}
+.messageBox .emIfGif{
+    width: 20px;
+    height: 20px;
+}
+.emIfGif{
+    height: 2.5em;
+    width: 2.5em;
+}
+.em-facepalmen{background-image:url("/nwlib6/css/emoji/emoji/facepalm.png")}
+
+.em-smile-gif{
+    background-image:url("/nwlib6/css/emoji/gifs/smile_80_anim_gif.gif")
+}
+.em-shock-gif{
+    background-image:url("/nwlib6/css/emoji/gifs/shock.gif")
+}
+.em-shivering-gif{
+    background-image:url("/nwlib6/css/emoji/gifs/shivering.gif")
+}
+.em-listening-gif{
+    background-image:url("/nwlib6/css/emoji/gifs/listening.gif")
+}
+.em-hungover-gif{
+    background-image:url("/nwlib6/css/emoji/gifs/hungover.gif")
+}
+.em-headphones-gif{
+    background-image:url("/nwlib6/css/emoji/gifs/headphones.gif");
+}
+.em-sad-gif{
+    background-image:url("/nwlib6/css/emoji/gifs/sad.gif");
+}
+.em-laugh-gif{
+    background-image:url("/nwlib6/css/emoji/gifs/laugh.gif");
+}
+.em-cool-gif{
+    background-image:url("/nwlib6/css/emoji/gifs/cool.gif");
+}
+.em-wink-gif{
+    background-image:url("/nwlib6/css/emoji/gifs/wink.gif");
+}
+.em-surprised-gif{
+    background-image:url("/nwlib6/css/emoji/gifs/surprised.gif");
+}
+.em-crying-gif{
+    background-image:url("/nwlib6/css/emoji/gifs/crying.gif");
+}
+.em-sweat-gif{
+    background-image:url("/nwlib6/css/emoji/gifs/sweat.gif");
+}
+.em-facepalm-gif{
+    background-image:url("/nwlib6/css/emoji/gifs/facepalm.gif");
+}
+.em-tenor-gif{
+    background-image:url("/nwlib6/css/emoji/gifs/tenor.gif");
+    width: 200px;
+    height: 100px;
+}
+.em-homer_happy-gif{
+    background-image:url("/nwlib6/css/emoji/gifs/homer_happy.gif");
+    width: 200px;
+    height: 100px;
+}
+.em-according-gif{
+    background-image:url("/nwlib6/css/emoji/gifs/according.gif");
+    width: 200px;
+    height: 100px;
+}
+.em-nobody-gif{
+    background-image:url("/nwlib6/css/emoji/gifs/nobody.gif");
+    width: 200px;
+    height: 100px;
+}
+.em-jesusSuperStar-gif{
+    background-image:url("/nwlib6/css/emoji/gifs/jesusSuperStar.gif");
+    width: 200px;
+    height: 100px;
+}
+.em-ninio_llora-gif{
+    background-image:url("/nwlib6/css/emoji/gifs/ninio_llora.gif");
+    width: 200px;
+    height: 100px;
+}
+.em-tienesrazonoffice-gif{
+    background-image:url("/nwlib6/css/emoji/gifs/tienesrazonoffice.gif");
+    width: 200px;
+    height: 100px;
+}
+.em-thankyou-gif{
+    background-image:url("/nwlib6/css/emoji/gifs/thankyou.gif");
+    width: 200px;
+    height: 100px;
+}
+.em-win1-gif{
+    background-image:url("/nwlib6/css/emoji/gifs/win1.gif");
+    width: 200px;
+    height: 100px;
+}
+.em-lenny1-gif{
+    background-image:url("/nwlib6/css/emoji/gifs/lenny1.gif");
+    width: 200px;
+    height: 100px;
+}
+.em-think1-gif{
+    background-image:url("/nwlib6/css/emoji/gifs/think1.gif");
+    width: 200px;
+    height: 100px;
+}
+.em-please1-gif{
+    background-image:url("/nwlib6/css/emoji/gifs/please1.gif");
+    width: 200px;
+    height: 100px;
+}
+.em-fp1-gif{
+    background-image:url("/nwlib6/css/emoji/gifs/fp1.gif");
+    width: 200px;
+    height: 100px;
+}
+.em-f5-gif{
+    background-image:url("/nwlib6/css/emoji/gifs/f5.gif");
+    width: 200px;
+    height: 100px;
+}
+.em-burns-gif{
+    background-image:url("/nwlib6/css/emoji/gifs/burns.gif");
+    width: 200px;
+    height: 100px;
+}
+.em-burns2-gif{
+    background-image:url("/nwlib6/css/emoji/gifs/burns2.gif");
+    width: 200px;
+    height: 100px;
+}
+.em-burns3-gif{
+    background-image:url("/nwlib6/css/emoji/gifs/burns3.gif");
+    width: 200px;
+    height: 100px;
+}
+.em-mrburns-gif{
+    background-image:url("/nwlib6/css/emoji/gifs/mrburns.gif");
+    width: 200px;
+    height: 100px;
+}
+.em-nonono-gif{
+    background-image:url("/nwlib6/css/emoji/gifs/nonono.gif");
+    width: 200px;
+    height: 100px;
+}
+.player_audio{
+    width: 100%;
+    max-width: 100%;
+    min-width: 200px;
+    position: relative;
+    height: auto;
+    display: block;
+    min-height: 35px;
+    padding: 0;
+    margin: 0!important;
+    line-height: normal;
+    font-size: 12px;
+    font-family: arial;   
+}
+
+
+
+@media screen and (max-width: 900px) {
+    .imgSpeach{padding: 0 3px;}
+    .contentChat .messageBox,
+    .contentChat input,
+    .contentChat textarea
+    {
+        /*padding: 0 30px;*/
+        /*padding: 0 10px;*/
+        padding: 0px 0px 0px 15px;
+        height: 45px;
+        font-size: 14px;
+    }
+    .contentChat textarea
+    {
+        height: 35px;
+        padding: 10px 0px 0px 15px;
+    }
+    .contentChat .messageBox {
+        padding: 10px 0px 0px 15px;
+        height: 40px;
+    }
+    .containerFileTransfer{
+        height: 45px;
+        width: 38px;
+    }
+    .footerChat button {
+        padding: 0 3px;
+        font-size: 10px;
+        width: 45px;
+    }
+    .footerChat .material-icons{
+        font-size: 21px;
+        color: #919090
+    }
+    .contentChat{
+        margin: 0;
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 0;
+    }
+}

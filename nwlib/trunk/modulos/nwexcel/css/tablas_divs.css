@@ -1,0 +1,79 @@
+/* 
+    Document   : tablas_divs
+    Created on : Jun 8, 2016, 12:59:46 PM
+    Author     : alexf
+    Description:
+        Purpose of the stylesheet follows.
+*/
+.Table  
+
+{  
+
+    display: table;  
+
+}  
+
+.Title  
+
+{  
+
+    display: table-caption;  
+
+    text-align: center;  
+
+    font-weight: bold;  
+
+    font-size: larger;  
+
+}  
+
+.Heading  
+
+{  
+
+    display: table-row;  
+
+    font-weight: bold;  
+
+    text-align: center;  
+
+}  
+
+.Row  
+
+{  
+
+    display: table-row;  
+
+}  
+
+.Cell  
+
+{  
+
+    display: table-cell;  
+
+    border: solid;  
+
+    border-width: thin;  
+
+    padding-left: 5px;  
+
+    padding-right: 5px;  
+
+    border-color: #969696;
+    /* outline: 1px solid #d6d6d6; */
+    /* border: none; */
+    height: auto;
+
+
+}
+.name_enc_column{
+    position: relative;
+    width: auto;
+    height: auto;
+    line-height: normal;   
+}
+#contain_divisor_page{
+    z-index: -1;
+}

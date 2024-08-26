@@ -1,0 +1,294 @@
+body {
+    /*transition: background-color .5s ease-in-out;*/
+    /*-moz-transition: background-color .5s ease-in-out;*/
+    /*-webkit-transition: background-color .5s ease-in-out;*/
+    /*-o-transition: background-color .5s ease-in-out;*/
+    margin: 0;
+    position: relative;
+    /*font-family: arial;*/
+    /*font-size: 100%;*/
+    padding: 0;
+    /*background-color: #000;*/
+}
+#containNwAnimate{
+    position: relative;
+}
+.imgObject{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+.box_object_play {
+    z-index: 4000;
+    position: absolute;
+    width: 120px;
+    height: 100px;
+    top: 0;
+    left: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    /*transform-origin: 0% 0%;*/
+    transform-origin: center;
+}
+#nw-animation {
+    /*position: absolute;*/
+}
+.nw-animation {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+.circleNw{
+    border-radius: 50%;    
+}
+.cuadroRedondoNw{
+    border-radius: 10%;
+}
+.capaRecortada{
+
+}
+.capaRecortadaBloque{
+    overflow: hidden;
+}
+
+.containerControlsButton{
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    z-index: 100000;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.containerControlsButtonBig {
+    width: 100%;
+    background-color: #F1F1F1;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.38);
+    padding: 5px;
+}
+
+.controlsButton{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    z-index: 100000;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px 1px #fff;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 10px;
+    float: left;
+    overflow-y: auto;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.controlsLeft:before {
+    content: ".";
+    top: 13px;
+    width: 46%;
+    height: 10px;
+    position: absolute;
+    font-size: 0px;
+    border-top: 3px solid #fff;
+    transform: rotate(-30deg);
+    left: 10px;
+}
+.controlsLeft:after {
+    content: ".";
+    top: 21px;
+    width: 46%;
+    height: 10px;
+    position: absolute;
+    font-size: 0px;
+    border-top: 3px solid #fff;
+    transform: rotate(30deg);
+    left: 5px;
+}
+.controlsRightt:before {
+    content: ".";
+    top: 13px;
+    width: 46%;
+    height: 10px;
+    position: absolute;
+    font-size: 0px;
+    border-top: 3px solid #fff;
+    transform: rotate(30deg);
+    left: 10px;
+}
+.controlsRightt:after {
+    content: ".";
+    top: 21px;
+    width: 46%;
+    height: 10px;
+    position: absolute;
+    font-size: 0px;
+    border-top: 3px solid #fff;
+    transform: rotate(-30deg);
+    left: 15px;
+}
+.fullScreen:before {
+    content: ".";
+    border: 2px dotted #FFF;
+    top: 8px;
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    font-size: 0px;
+    left: 8px;
+}
+.menuMainPresentHidden{
+    display: none;
+}
+.menuMainPresent:before {
+    content: ".";
+    border-top: 3px solid #FFF;
+    top: 11px;
+    width: 60%;
+    height: 10px;
+    position: absolute;
+    font-size: 0px;
+    left: 8px;
+}
+.menuMainPresent:after {
+    content: ".";
+    border-top: 3px solid #FFF;
+    top: 17px;
+    width: 60%;
+    height: 4px;
+    position: absolute;
+    font-size: 0px;
+    border-bottom: 3px solid #FFF;
+    left: 8px;
+}
+.presentTitle{
+    position: relative;
+    float: left;
+    margin: 0 10px;
+    font-family: arial;
+    font-size: 12px;
+}
+
+
+
+body:-webkit-full-screen {
+    width: 100%;
+    height: 100%;
+}
+.finDiapo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.89);
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+}
+.titleFinDiapo{
+    color: #fff;
+    text-align: center;
+    top: 20%;
+    position: relative;
+    font-size: 2em;
+}
+.loadAnimeInitial{
+
+}
+
+.containerMenu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 100%;
+    z-index: 10000;
+    background-color: #F4F4F4;
+    border-right: 1px solid #ccc;
+    overflow-y: auto;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.38);
+}
+.containerMenuHidden {
+    left: -200px;
+}
+.containerMenuInt {
+    position: relative;
+    margin-top: 55px;
+}
+.bloqEscena{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+}
+.bloqEscenaInt{
+    background-color: #fff;
+    position: relative;
+    margin: 5px;
+    padding: 5px;
+    height: 100px;
+    text-align: center;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px rgba(204, 204, 204, 0.47);
+    border-radius: 2px;
+    cursor: pointer;
+    overflow-y: auto;
+    color: #818181;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.bloqEscenaInt:hover {
+    box-shadow: 0px 0px 5px #6C6C6C;
+    color: #000000;
+}
+.paginaItemMenu{
+    text-align: center;
+    font-size: 10px;
+    font-family: arial;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    top: -2px;
+    position: relative;
+}
+.bloqEscenaInt h3 {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    text-transform: capitalize;
+    font-family: arial;
+    font-size: 12px;
+    margin-top: 35px;
+    font-weight: lighter;
+}
+.containImagesAnim{
+    display: none;
+}
+.showStatusLoading{
+    position: relative;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: #000;
+    padding: 10px;
+    z-index: 10000000000000000000;
+    margin: 10px;
+    font-family: arial;
+    font-size: 12px;
+}

@@ -1,0 +1,95 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 4, 2019, 1:25:54 PM
+    Author     : alexf
+*/
+:root {
+    /*--color_empresarial: #dc471e;*/
+    --color_empresarial: #123374;
+}
+body .ui-page .logotipoHeader_home img{
+    height: 19px;
+    width: auto;
+    margin: 6px;
+}
+body .ui-page .logotipoHeader_home{
+    top: 0;
+    left: 47px;
+    width: auto;
+    text-align: center;
+}
+body .ui-page .logotipoHeader_home img{
+    height: 23px;
+    top: 5px;
+    position: relative;
+}
+.centrar_mapa{
+    position: fixed;
+    /* bottom: calc(0% + 153px); */
+    /* top: auto; */
+    z-index: 10;
+    left: auto;
+    right: 10px;
+    top: 4px;
+}
+body #menuProfile i.material-icons.normal{
+    color: #333!important;
+}
+.centrar_mapa .material-icons{
+    font-size: 35px;
+    background-color: var(--color_empresarial);
+    color: #fff!important;
+    border-radius: 50%;
+    padding: 3px;
+}
+body .ui-page .my-header .btnMenuHeader {
+    background: var(--color_empresarial);
+}
+body .ui-page .my-header .btnMenuHeader .menuBarEnc {
+    color: #fff;
+}
+body .ui-page .createLogin .material-icons, body .ui-page .createLogin .nw_label {
+    color: #000!important; 
+    display: none;
+}
+body .home_background_image {
+    background-color: transparent;
+    background-size: cover!important;
+}
+body a.btnExec.btnForm.ui-shadow.ui-btn.ui-corner-all.ui-btn-inline.Btn.cambiar_clave, body a.btnExec.btnForm.ui-shadow.ui-btn.ui-corner-all.ui-btn-inline.Btn.crear_cuenta {
+    color: var(--color_empresarial)!important; 
+    box-shadow: 0px 0px 0px 0px!important;
+}
+body .titleEnc{
+    filter: brightness(0.5);
+    margin-bottom: -8px;
+}
+body .ui-page .logotipoHeader img {
+    margin-top: auto; 
+    max-width: 100%; 
+}
+body input#clave::placeholder, body input#usuario::placeholder {
+    color: #232222!important;
+}
+body input#usuario, body input#clave{
+    border-color: #aca5a5;
+    color: #000!important;
+    width: 81%;
+}
+.nw_widget_div_usuario .material-icons, .nw_widget_div_clave .material-icons {
+    left: 27px!important;
+    top: 2px!important;
+    font-size: 33px;
+}
+p.versioninlogin {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+}
+body input#usuario:focus, body input#clave:focus {
+    color: #000!important;
+}

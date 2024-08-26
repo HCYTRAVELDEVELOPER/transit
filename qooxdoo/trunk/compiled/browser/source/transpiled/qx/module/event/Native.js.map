@@ -1,0 +1,50 @@
+{
+  "version": 3,
+  "names": [
+    "qx",
+    "Bootstrap",
+    "executePendingDefers",
+    "$$dbClassInfo",
+    "define",
+    "statics",
+    "TYPES",
+    "FORWARD_METHODS",
+    "BIND_METHODS",
+    "preventDefault",
+    "keyCode",
+    "ex",
+    "returnValue",
+    "stopPropagation",
+    "cancelBubble",
+    "getType",
+    "_type",
+    "type",
+    "getTarget",
+    "getRelatedTarget",
+    "getCurrentTarget",
+    "normalize",
+    "event",
+    "element",
+    "fwdMethods",
+    "module",
+    "Native",
+    "i",
+    "l",
+    "length",
+    "bom",
+    "Event",
+    "bind",
+    "bindMethods",
+    "currentTarget",
+    "defer",
+    "qxWeb",
+    "$registerEventNormalization"
+  ],
+  "sources": [
+    "/home/andresf/workspace_qooxdoo/qooxdoo/qooxdoo-7.0/source/class/qx/module/event/Native.js"
+  ],
+  "sourcesContent": [
+    "/* ************************************************************************\n\n   qooxdoo - the new era of web development\n\n   http://qooxdoo.org\n\n   Copyright:\n     2012 1&1 Internet AG, Germany, http://www.1und1.de\n\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n\n   Authors:\n     * Daniel Wagner (danielwagner)\n\n************************************************************************ */\n\n/**\n * Common normalizations for native events\n *\n * @require(qx.module.Event)\n * @require(qx.bom.Event#getTarget)\n * @require(qx.bom.Event#getRelatedTarget)\n *\n * @group (Event_Normalization)\n */\nqx.Bootstrap.define(\"qx.module.event.Native\", {\n  statics: {\n    /**\n     * List of event types to be normalized\n     */\n    TYPES: [\"*\"],\n\n    /**\n     * List of qx.bom.Event methods to be attached to native event objects\n     * @internal\n     */\n    FORWARD_METHODS: [\"getTarget\", \"getRelatedTarget\"],\n\n    /**\n     * List of qx.module.event.Native methods to be attached to native event objects\n     * @internal\n     */\n    BIND_METHODS: [\"preventDefault\", \"stopPropagation\", \"getType\"],\n\n    /**\n     * Prevent the native default behavior of the event.\n     */\n    preventDefault() {\n      try {\n        // this allows us to prevent some key press events in IE.\n        // See bug #1049\n        this.keyCode = 0;\n      } catch (ex) {}\n\n      this.returnValue = false;\n    },\n\n    /**\n     * Stops the event's propagation to the element's parent\n     */\n    stopPropagation() {\n      this.cancelBubble = true;\n    },\n\n    /**\n     * Returns the event's type\n     *\n     * @return {String} event type\n     */\n    getType() {\n      return this._type || this.type;\n    },\n\n    /**\n     * Returns the target of the event.\n     *\n     * @signature function ()\n     * @return {Object} Any valid native event target\n     */\n    getTarget() {},\n\n    /**\n     * Computes the related target from the native DOM event\n     *\n     * @signature function ()\n     * @return {Element} The related target\n     */\n    getRelatedTarget() {},\n\n    /**\n     * Computes the current target from the native DOM event. Emulates the current target\n     * for all browsers without native support (like older IEs).\n     *\n     * @signature function ()\n     * @return {Element} The current target\n     */\n    getCurrentTarget() {},\n\n    /**\n     * Manipulates the native event object, adding methods if they're not\n     * already present\n     *\n     * @param event {Event} Native event object\n     * @param element {Element} DOM element the listener was attached to\n     * @return {Event} Normalized event object\n     * @internal\n     */\n    normalize(event, element) {\n      if (!event) {\n        return event;\n      }\n      var fwdMethods = qx.module.event.Native.FORWARD_METHODS;\n      for (var i = 0, l = fwdMethods.length; i < l; i++) {\n        event[fwdMethods[i]] = qx.bom.Event[fwdMethods[i]].bind(null, event);\n      }\n\n      var bindMethods = qx.module.event.Native.BIND_METHODS;\n      for (var i = 0, l = bindMethods.length; i < l; i++) {\n        if (typeof event[bindMethods[i]] != \"function\") {\n          event[bindMethods[i]] =\n            qx.module.event.Native[bindMethods[i]].bind(event);\n        }\n      }\n\n      event.getCurrentTarget = function () {\n        return event.currentTarget || element;\n      };\n\n      return event;\n    }\n  },\n\n  defer(statics) {\n    qxWeb.$registerEventNormalization(statics.TYPES, statics.normalize);\n  }\n});\n"
+  ],
+  "mappings": "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"
+}

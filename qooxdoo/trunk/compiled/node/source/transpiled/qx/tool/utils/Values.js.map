@@ -1,0 +1,38 @@
+{
+  "version": 3,
+  "names": [
+    "qx",
+    "Bootstrap",
+    "executePendingDefers",
+    "$$dbClassInfo",
+    "Class",
+    "define",
+    "statics",
+    "binaryIndexOf",
+    "array",
+    "searchElement",
+    "minIndex",
+    "maxIndex",
+    "length",
+    "currentIndex",
+    "currentElement",
+    "binaryStartsWith",
+    "startsWith",
+    "merge",
+    "target",
+    "sources",
+    "forEach",
+    "src",
+    "key",
+    "tool",
+    "utils",
+    "Values"
+  ],
+  "sources": [
+    "/home/andresf/workspace_qooxdoo/qooxdoo/qooxdoo-7.0/source/class/qx/tool/utils/Values.js"
+  ],
+  "sourcesContent": [
+    "/* ************************************************************************\n *\n *    qooxdoo-compiler - node.js based replacement for the Qooxdoo python\n *    toolchain\n *\n *    https://github.com/qooxdoo/qooxdoo\n *\n *    Copyright:\n *      2011-2017 Zenesis Limited, http://www.zenesis.com\n *\n *    License:\n *      MIT: https://opensource.org/licenses/MIT\n *\n *      This software is provided under the same licensing terms as Qooxdoo,\n *      please see the LICENSE file in the Qooxdoo project's top-level directory\n *      for details.\n *\n *    Authors:\n *      * John Spackman (john.spackman@zenesis.com, @johnspackman)\n *\n * *********************************************************************** */\n\nqx.Class.define(\"qx.tool.utils.Values\", {\n  statics: {\n    /**\n     * Performs a binary search on the host array.\n     *\n     * Thanks to Oliver Caldwell for this snippet, https://oli.me.uk/2013/06/08/searching-javascript-arrays-with-a-binary-search/\n     *\n     * @param {*} array The array to search.\n     * @param {*} searchElement The item to search for within the array.\n     * @return {Number} The index of the element which defaults to -1 when not found.\n     */\n    binaryIndexOf(array, searchElement) {\n      var minIndex = 0;\n      var maxIndex = array.length - 1;\n      var currentIndex;\n      var currentElement;\n\n      while (minIndex <= maxIndex) {\n        currentIndex = ((minIndex + maxIndex) / 2) | 0;\n        currentElement = array[currentIndex];\n\n        if (currentElement < searchElement) {\n          minIndex = currentIndex + 1;\n        } else if (currentElement > searchElement) {\n          maxIndex = currentIndex - 1;\n        } else {\n          return currentIndex;\n        }\n      }\n\n      return -1;\n    },\n\n    binaryStartsWith(array, searchElement) {\n      var minIndex = 0;\n      var maxIndex = array.length - 1;\n      var currentIndex;\n      var currentElement;\n\n      while (minIndex <= maxIndex) {\n        currentIndex = ((minIndex + maxIndex) / 2) | 0;\n        currentElement = array[currentIndex];\n\n        if (currentElement.startsWith(searchElement)) {\n          while (currentIndex > 0) {\n            if (!array[currentIndex - 1].startsWith(searchElement)) {\n              break;\n            }\n            currentIndex--;\n          }\n          return currentIndex;\n        }\n\n        if (currentElement < searchElement) {\n          minIndex = currentIndex + 1;\n        } else if (currentElement > searchElement) {\n          maxIndex = currentIndex - 1;\n        }\n      }\n\n      return -1;\n    },\n\n    merge(target, ...sources) {\n      if (sources) {\n        sources.forEach(src => {\n          for (let key in src) {\n            target[key] = src[key];\n          }\n        });\n      }\n      return target;\n    }\n  }\n});\n"
+  ],
+  "mappings": ";;;;;;;;;EAAAA,EAAE,CAACC,SAAH,CAAaC,oBAAb,CAAkCC,aAAlC;;EAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;EAEAH,EAAE,CAACI,KAAH,CAASC,MAAT,CAAgB,sBAAhB,EAAwC;IACtCC,OAAO,EAAE;MACP;AACJ;AACA;AACA;AACA;AACA;AACA;AACA;AACA;MACIC,aAAa,CAACC,KAAD,EAAQC,aAAR,EAAuB;QAClC,IAAIC,QAAQ,GAAG,CAAf;QACA,IAAIC,QAAQ,GAAGH,KAAK,CAACI,MAAN,GAAe,CAA9B;QACA,IAAIC,YAAJ;QACA,IAAIC,cAAJ;;QAEA,OAAOJ,QAAQ,IAAIC,QAAnB,EAA6B;UAC3BE,YAAY,GAAI,CAACH,QAAQ,GAAGC,QAAZ,IAAwB,CAAzB,GAA8B,CAA7C;UACAG,cAAc,GAAGN,KAAK,CAACK,YAAD,CAAtB;;UAEA,IAAIC,cAAc,GAAGL,aAArB,EAAoC;YAClCC,QAAQ,GAAGG,YAAY,GAAG,CAA1B;UACD,CAFD,MAEO,IAAIC,cAAc,GAAGL,aAArB,EAAoC;YACzCE,QAAQ,GAAGE,YAAY,GAAG,CAA1B;UACD,CAFM,MAEA;YACL,OAAOA,YAAP;UACD;QACF;;QAED,OAAO,CAAC,CAAR;MACD,CA9BM;;MAgCPE,gBAAgB,CAACP,KAAD,EAAQC,aAAR,EAAuB;QACrC,IAAIC,QAAQ,GAAG,CAAf;QACA,IAAIC,QAAQ,GAAGH,KAAK,CAACI,MAAN,GAAe,CAA9B;QACA,IAAIC,YAAJ;QACA,IAAIC,cAAJ;;QAEA,OAAOJ,QAAQ,IAAIC,QAAnB,EAA6B;UAC3BE,YAAY,GAAI,CAACH,QAAQ,GAAGC,QAAZ,IAAwB,CAAzB,GAA8B,CAA7C;UACAG,cAAc,GAAGN,KAAK,CAACK,YAAD,CAAtB;;UAEA,IAAIC,cAAc,CAACE,UAAf,CAA0BP,aAA1B,CAAJ,EAA8C;YAC5C,OAAOI,YAAY,GAAG,CAAtB,EAAyB;cACvB,IAAI,CAACL,KAAK,CAACK,YAAY,GAAG,CAAhB,CAAL,CAAwBG,UAAxB,CAAmCP,aAAnC,CAAL,EAAwD;gBACtD;cACD;;cACDI,YAAY;YACb;;YACD,OAAOA,YAAP;UACD;;UAED,IAAIC,cAAc,GAAGL,aAArB,EAAoC;YAClCC,QAAQ,GAAGG,YAAY,GAAG,CAA1B;UACD,CAFD,MAEO,IAAIC,cAAc,GAAGL,aAArB,EAAoC;YACzCE,QAAQ,GAAGE,YAAY,GAAG,CAA1B;UACD;QACF;;QAED,OAAO,CAAC,CAAR;MACD,CA5DM;;MA8DPI,KAAK,CAACC,MAAD,EAAS,GAAGC,OAAZ,EAAqB;QACxB,IAAIA,OAAJ,EAAa;UACXA,OAAO,CAACC,OAAR,CAAgBC,GAAG,IAAI;YACrB,KAAK,IAAIC,GAAT,IAAgBD,GAAhB,EAAqB;cACnBH,MAAM,CAACI,GAAD,CAAN,GAAcD,GAAG,CAACC,GAAD,CAAjB;YACD;UACF,CAJD;QAKD;;QACD,OAAOJ,MAAP;MACD;;IAvEM;EAD6B,CAAxC;EAtBAlB,EAAE,CAACuB,IAAH,CAAQC,KAAR,CAAcC,MAAd,CAAqBtB,aAArB,GAAqCA,aAArC"
+}

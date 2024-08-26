@@ -1,0 +1,10 @@
+.separate_calendar { 
+    display: none!important;
+}
+.enc_calendar_contros_hours {
+    top: 0px;
+    padding: 0;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}

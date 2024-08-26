@@ -1,0 +1,38 @@
+{
+  "version": 3,
+  "names": [
+    "qx",
+    "Bootstrap",
+    "executePendingDefers",
+    "$$dbClassInfo",
+    "Class",
+    "define",
+    "extend",
+    "tool",
+    "cli",
+    "commands",
+    "Command",
+    "statics",
+    "getYargsCommand",
+    "command",
+    "desc",
+    "builder",
+    "yargs",
+    "Cli",
+    "addYargsCommands",
+    "demandCommand",
+    "showHelpOnFail",
+    "help",
+    "handler",
+    "argv",
+    "members",
+    "Add"
+  ],
+  "sources": [
+    "/home/andresf/workspace_qooxdoo/qooxdoo/qooxdoo-7.0/source/class/qx/tool/cli/commands/Add.js"
+  ],
+  "sourcesContent": [
+    "/* ************************************************************************\n\n   qooxdoo - the new era of web development\n\n   http://qooxdoo.org\n\n   Copyright:\n     2017 Christian Boulanger\n\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n\n   Authors:\n     * Christian Boulanger (info@bibliograph.org, @cboulanger)\n\n************************************************************************ */\n/**\n * Adds scripts, classes, etc. to the projects\n */\nqx.Class.define(\"qx.tool.cli.commands.Add\", {\n  extend: qx.tool.cli.commands.Command,\n\n  statics: {\n    getYargsCommand() {\n      return {\n        command: \"add <command> [options]\",\n        desc: \"adds new elements to an existing qooxdoo application/library\",\n        builder(yargs) {\n          qx.tool.cli.Cli.addYargsCommands(\n            yargs,\n            [\"Class\", \"Script\"],\n            \"qx.tool.cli.commands.add\"\n          );\n\n          return yargs.demandCommand().showHelpOnFail().help();\n        },\n        handler(argv) {}\n      };\n    }\n  },\n\n  members: {\n    // place for common methods.\n  }\n});\n"
+  ],
+  "mappings": ";;;;;;;;;;;;;EAAAA,EAAE,CAACC,SAAH,CAAaC,oBAAb,CAAkCC,aAAlC;;EAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;;EACA;AACA;AACA;EACAH,EAAE,CAACI,KAAH,CAASC,MAAT,CAAgB,0BAAhB,EAA4C;IAC1CC,MAAM,EAAEN,EAAE,CAACO,IAAH,CAAQC,GAAR,CAAYC,QAAZ,CAAqBC,OADa;IAG1CC,OAAO,EAAE;MACPC,eAAe,GAAG;QAChB,OAAO;UACLC,OAAO,EAAE,yBADJ;UAELC,IAAI,EAAE,8DAFD;;UAGLC,OAAO,CAACC,KAAD,EAAQ;YACbhB,EAAE,CAACO,IAAH,CAAQC,GAAR,CAAYS,GAAZ,CAAgBC,gBAAhB,CACEF,KADF,EAEE,CAAC,OAAD,EAAU,QAAV,CAFF,EAGE,0BAHF;YAMA,OAAOA,KAAK,CAACG,aAAN,GAAsBC,cAAtB,GAAuCC,IAAvC,EAAP;UACD,CAXI;;UAYLC,OAAO,CAACC,IAAD,EAAO,CAAE;;QAZX,CAAP;MAcD;;IAhBM,CAHiC;IAsB1CC,OAAO,EAAE,CACP;IADO;EAtBiC,CAA5C;EApBAxB,EAAE,CAACO,IAAH,CAAQC,GAAR,CAAYC,QAAZ,CAAqBgB,GAArB,CAAyBtB,aAAzB,GAAyCA,aAAzC"
+}

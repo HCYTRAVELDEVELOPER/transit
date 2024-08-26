@@ -1,0 +1,28 @@
+{
+  "version": 3,
+  "names": [
+    "qx",
+    "Bootstrap",
+    "executePendingDefers",
+    "$$dbClassInfo",
+    "Class",
+    "define",
+    "extend",
+    "tool",
+    "config",
+    "Abstract",
+    "type",
+    "statics",
+    "fileName",
+    "version",
+    "construct",
+    "Compile"
+  ],
+  "sources": [
+    "/home/andresf/workspace_qooxdoo/qooxdoo/qooxdoo-7.0/source/class/qx/tool/config/Compile.js"
+  ],
+  "sourcesContent": [
+    "/* ************************************************************************\n\n   qooxdoo - the new era of web development\n\n   http://qooxdoo.org\n\n   Copyright:\n     2019 The qooxdoo developers\n\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n\n   Authors:\n     * Christian Boulanger (info@bibliograph.org, @cboulanger)\n\n************************************************************************ */\n\n/**\n * A model for the compile.json file\n */\nqx.Class.define(\"qx.tool.config.Compile\", {\n  extend: qx.tool.config.Abstract,\n  type: \"singleton\",\n  statics: {\n    config: {\n      fileName: \"compile.json\",\n      version: \"^1.0.0\"\n    }\n  },\n\n  construct() {\n    super(this.self(arguments).config);\n  }\n});\n"
+  ],
+  "mappings": ";;;;;;;;;;;;;EAAAA,EAAE,CAACC,SAAH,CAAaC,oBAAb,CAAkCC,aAAlC;;EAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;;EAEA;AACA;AACA;EACAH,EAAE,CAACI,KAAH,CAASC,MAAT,CAAgB,wBAAhB,EAA0C;IACxCC,MAAM,EAAEN,EAAE,CAACO,IAAH,CAAQC,MAAR,CAAeC,QADiB;IAExCC,IAAI,EAAE,WAFkC;IAGxCC,OAAO,EAAE;MACPH,MAAM,EAAE;QACNI,QAAQ,EAAE,cADJ;QAENC,OAAO,EAAE;MAFH;IADD,CAH+B;;IAUxCC,SAAS,GAAG;MACV,+CAAM,uBAAqBN,MAA3B;IACD;;EAZuC,CAA1C;EArBAR,EAAE,CAACO,IAAH,CAAQC,MAAR,CAAeO,OAAf,CAAuBZ,aAAvB,GAAuCA,aAAvC"
+}

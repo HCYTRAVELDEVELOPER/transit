@@ -1,0 +1,32 @@
+{
+    "$schema": "https://qooxdoo.org/schema/Manifest-2-0-0.json",
+    "info":
+            {
+                "name": "qxnw",
+                "summary": "Full library for qooxdoo",
+                "description": "The NW library for qooxdoo",
+                "homepage": "https://www.gruponw.com",
+                "license": "MIT license",
+                "authors": [
+                    {
+                        "name": "Andres Florez",
+                        "email": "direccion@gruponw.com"
+                    }
+                ],
+
+                "version": "1.0.0"
+            },
+
+    "provides":
+            {
+                "namespace": "qxnw",
+                "encoding": "utf-8",
+                "class": "source/class",
+                "resource": "source/resource",
+                "translation": "source/translation"
+            },
+
+    "requires": {
+        "@qooxdoo/framework": "^7.1.0"
+    }
+}

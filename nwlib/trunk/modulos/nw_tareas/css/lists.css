@@ -1,0 +1,75 @@
+html, body {
+    overflow: auto!important; 
+    overflow-x: auto!important; 
+    overflow-y: auto; 
+}
+
+#main_main{
+    width: 100%;
+    display: block;
+    height: 100%;
+    float: none;
+    position: relative!important;
+    z-index: 0;
+}
+#enc_main_user_dats{
+    position: relative;
+    z-index: 1;
+}
+.button_new {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000000000;
+}
+.box_enc_prids {
+    display: block;
+    height: 100%;
+    overflow-y: auto;
+}
+.box_tareasdivs {
+    float: none;
+}
+
+.box_tareas p {
+    margin: 0px;
+    border-bottom: 1px solid #F3F3F3;
+    padding: 15px;
+    background: #FFF;
+    border-top: 1px solid #FFFFFF;
+}
+.list_tarea{
+    width: 100%;
+    height: 90%;
+}
+.ui-dialog-content {
+    padding: 5px;
+    height: 96%!important;
+    overflow: hidden;
+}
+#see{
+    display: none;
+    width: 100%;
+    margin: 0;
+    padding: 5px;
+    float: none;
+    border: 0;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    height: 80%;
+    overflow: hidden;
+    overflow-y: auto;
+}
+#main {
+    height: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+    .into_hidden_more{
+        display: block;
+    }
+    .box_enc_prids{
+        margin-top: 10%;
+    }
+}

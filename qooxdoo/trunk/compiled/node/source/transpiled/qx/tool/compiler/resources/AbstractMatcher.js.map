@@ -1,0 +1,41 @@
+{
+  "version": 3,
+  "names": [
+    "qx",
+    "Bootstrap",
+    "executePendingDefers",
+    "$$dbClassInfo",
+    "Class",
+    "define",
+    "extend",
+    "core",
+    "Object",
+    "type",
+    "construct",
+    "match",
+    "lang",
+    "Type",
+    "isArray",
+    "map",
+    "elem",
+    "__match",
+    "filename",
+    "some",
+    "endsWith",
+    "test",
+    "members",
+    "matches",
+    "library",
+    "tool",
+    "compiler",
+    "resources",
+    "AbstractMatcher"
+  ],
+  "sources": [
+    "/home/andresf/workspace_qooxdoo/qooxdoo/qooxdoo-7.0/source/class/qx/tool/compiler/resources/AbstractMatcher.js"
+  ],
+  "sourcesContent": [
+    "/* ************************************************************************\n *\n *    qooxdoo-compiler - node.js based replacement for the Qooxdoo python\n *    toolchain\n *\n *    https://github.com/qooxdoo/qooxdoo\n *\n *    Copyright:\n *      2011-2019 Zenesis Limited, http://www.zenesis.com\n *\n *    License:\n *      MIT: https://opensource.org/licenses/MIT\n *\n *      This software is provided under the same licensing terms as Qooxdoo,\n *      please see the LICENSE file in the Qooxdoo project's top-level directory\n *      for details.\n *\n *    Authors:\n *      * John Spackman (john.spackman@zenesis.com, @johnspackman)\n *\n * *********************************************************************** */\n\n/**\n * Basic helper base class for matching files\n */\nqx.Class.define(\"qx.tool.compiler.resources.AbstractMatcher\", {\n  extend: qx.core.Object,\n  type: \"abstract\",\n\n  /**\n   * Constructor\n   *\n   * @param match {Array[String]|String|RegEx?} the reg ex to match filenames, or the extension,\n   * or an array of extensions\n   */\n  construct(match) {\n    super();\n    if (match) {\n      if (qx.lang.Type.isArray(match)) {\n        match = match.map(elem => {\n          if (elem[0] != \".\") {\n            elem = \".\" + elem;\n          }\n          return elem;\n        });\n        this.__match = filename => match.some(elem => filename.endsWith(elem));\n      } else if (typeof match == \"string\") {\n        if (match[0] != \".\") {\n          match = \".\" + match;\n        }\n        this.__match = filename => filename.endsWith(match);\n      } else {\n        this.__match = filename => match.test(filename);\n      }\n    }\n  },\n\n  members: {\n    __match: null,\n\n    /**\n     * Called to determine whether this handler is appropriate for the given filename;\n     * default implementation is to check the RegEx passed to the constructor\n     *\n     * @param filename {String} the name of the resource\n     * @param library {qx.tool.compiler.app.Library} the library its in\n     */\n    matches(filename, library) {\n      return this.__match !== null && this.__match(filename);\n    }\n  }\n});\n"
+  ],
+  "mappings": ";;;;;;;;;;;;;;;;EAAAA,EAAE,CAACC,SAAH,CAAaC,oBAAb,CAAkCC,aAAlC;;EAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;;EAEA;AACA;AACA;EACAH,EAAE,CAACI,KAAH,CAASC,MAAT,CAAgB,4CAAhB,EAA8D;IAC5DC,MAAM,EAAEN,EAAE,CAACO,IAAH,CAAQC,MAD4C;IAE5DC,IAAI,EAAE,UAFsD;;IAI5D;AACF;AACA;AACA;AACA;AACA;IACEC,SAAS,CAACC,KAAD,EAAQ;MACf;;MACA,IAAIA,KAAJ,EAAW;QACT,IAAIX,EAAE,CAACY,IAAH,CAAQC,IAAR,CAAaC,OAAb,CAAqBH,KAArB,CAAJ,EAAiC;UAC/BA,KAAK,GAAGA,KAAK,CAACI,GAAN,CAAUC,IAAI,IAAI;YACxB,IAAIA,IAAI,CAAC,CAAD,CAAJ,IAAW,GAAf,EAAoB;cAClBA,IAAI,GAAG,MAAMA,IAAb;YACD;;YACD,OAAOA,IAAP;UACD,CALO,CAAR;;UAMA,KAAKC,eAAL,GAAeC,QAAQ,IAAIP,KAAK,CAACQ,IAAN,CAAWH,IAAI,IAAIE,QAAQ,CAACE,QAAT,CAAkBJ,IAAlB,CAAnB,CAA3B;QACD,CARD,MAQO,IAAI,OAAOL,KAAP,IAAgB,QAApB,EAA8B;UACnC,IAAIA,KAAK,CAAC,CAAD,CAAL,IAAY,GAAhB,EAAqB;YACnBA,KAAK,GAAG,MAAMA,KAAd;UACD;;UACD,KAAKM,eAAL,GAAeC,QAAQ,IAAIA,QAAQ,CAACE,QAAT,CAAkBT,KAAlB,CAA3B;QACD,CALM,MAKA;UACL,KAAKM,eAAL,GAAeC,QAAQ,IAAIP,KAAK,CAACU,IAAN,CAAWH,QAAX,CAA3B;QACD;MACF;IACF,CA9B2D;;IAgC5DI,OAAO,EAAE;MACPL,eAAO,EAAE,IADF;;MAGP;AACJ;AACA;AACA;AACA;AACA;AACA;MACIM,OAAO,CAACL,QAAD,EAAWM,OAAX,EAAoB;QACzB,OAAO,KAAKP,eAAL,KAAiB,IAAjB,IAAyB,KAAKA,eAAL,CAAaC,QAAb,CAAhC;MACD;;IAZM;EAhCmD,CAA9D;EAzBAlB,EAAE,CAACyB,IAAH,CAAQC,QAAR,CAAiBC,SAAjB,CAA2BC,eAA3B,CAA2CzB,aAA3C,GAA2DA,aAA3D"
+}

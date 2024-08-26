@@ -1,0 +1,36 @@
+{
+  "version": 3,
+  "names": [
+    "qx",
+    "Bootstrap",
+    "executePendingDefers",
+    "$$dbClassInfo",
+    "Class",
+    "define",
+    "extend",
+    "tool",
+    "compiler",
+    "jsdoc",
+    "CommandParser",
+    "members",
+    "parseCommand",
+    "pdoc",
+    "classname",
+    "analyser",
+    "m",
+    "body",
+    "match",
+    "type",
+    "resolveType",
+    "trim",
+    "description",
+    "ThrowsParser"
+  ],
+  "sources": [
+    "/home/andresf/workspace_qooxdoo/qooxdoo/qooxdoo-7.0/source/class/qx/tool/compiler/jsdoc/ThrowsParser.js"
+  ],
+  "sourcesContent": [
+    "/* ************************************************************************\n *\n *    qooxdoo-compiler - node.js based replacement for the Qooxdoo python\n *    toolchain\n *\n *    https://github.com/qooxdoo/qooxdoo\n *\n *    Copyright:\n *      2011-2017 Zenesis Limited, http://www.zenesis.com\n *\n *    License:\n *      MIT: https://opensource.org/licenses/MIT\n *\n *      This software is provided under the same licensing terms as Qooxdoo,\n *      please see the LICENSE file in the Qooxdoo project's top-level directory\n *      for details.\n *\n *    Authors:\n *      * John Spackman (john.spackman@zenesis.com, @johnspackman)\n *\n * *********************************************************************** */\n/**\n * Parser for JSDoc \"@return\"\n */\nqx.Class.define(\"qx.tool.compiler.jsdoc.ThrowsParser\", {\n  extend: qx.tool.compiler.jsdoc.CommandParser,\n\n  members: {\n    parseCommand(pdoc, classname, analyser) {\n      var m = pdoc.body.match(/^(\\{([^}]+)\\}([\\s\\S]+)?)?$/);\n      if (m) {\n        pdoc.type = this.resolveType((m[2] || \"\").trim(), classname, analyser);\n        pdoc.description = m[3] || \"\";\n      } else {\n        delete pdoc.type;\n        delete pdoc.description;\n      }\n    }\n  }\n});\n"
+  ],
+  "mappings": ";;;;;;;;;;;;EAAAA,EAAE,CAACC,SAAH,CAAaC,oBAAb,CAAkCC,aAAlC;;EAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;;EACA;AACA;AACA;EACAH,EAAE,CAACI,KAAH,CAASC,MAAT,CAAgB,qCAAhB,EAAuD;IACrDC,MAAM,EAAEN,EAAE,CAACO,IAAH,CAAQC,QAAR,CAAiBC,KAAjB,CAAuBC,aADsB;IAGrDC,OAAO,EAAE;MACPC,YAAY,CAACC,IAAD,EAAOC,SAAP,EAAkBC,QAAlB,EAA4B;QACtC,IAAIC,CAAC,GAAGH,IAAI,CAACI,IAAL,CAAUC,KAAV,CAAgB,4BAAhB,CAAR;;QACA,IAAIF,CAAJ,EAAO;UACLH,IAAI,CAACM,IAAL,GAAY,KAAKC,WAAL,CAAiB,CAACJ,CAAC,CAAC,CAAD,CAAD,IAAQ,EAAT,EAAaK,IAAb,EAAjB,EAAsCP,SAAtC,EAAiDC,QAAjD,CAAZ;UACAF,IAAI,CAACS,WAAL,GAAmBN,CAAC,CAAC,CAAD,CAAD,IAAQ,EAA3B;QACD,CAHD,MAGO;UACL,OAAOH,IAAI,CAACM,IAAZ;UACA,OAAON,IAAI,CAACS,WAAZ;QACD;MACF;;IAVM;EAH4C,CAAvD;EAxBAtB,EAAE,CAACO,IAAH,CAAQC,QAAR,CAAiBC,KAAjB,CAAuBc,YAAvB,CAAoCpB,aAApC,GAAoDA,aAApD"
+}

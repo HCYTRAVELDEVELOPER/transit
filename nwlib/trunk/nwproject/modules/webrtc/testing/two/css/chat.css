@@ -1,0 +1,31 @@
+/* Created on : Apr 11, 2018, 1:06:04 AM Author: alexf */
+body {
+    overflow: hidden;
+}
+.conectando{
+    z-index: 10000000000;
+    top: auto;
+    left: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    bottom: 0px;
+}
+.conectando h2{
+    font-size: 14px;
+}
+.closeChat{
+    display: none;
+}
+.containerButtons{
+    display: none;
+}
+#messages{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.encOptionsNwRtc, .loadingNwChat{
+    display: block;
+}

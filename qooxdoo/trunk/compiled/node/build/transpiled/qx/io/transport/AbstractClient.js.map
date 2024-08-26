@@ -1,0 +1,53 @@
+{
+  "version": 3,
+  "names": [
+    "qx",
+    "Bootstrap",
+    "executePendingDefers",
+    "$$dbClassInfo",
+    "Class",
+    "define",
+    "extend",
+    "core",
+    "Object",
+    "type",
+    "statics",
+    "registerTransport",
+    "uriRegExp",
+    "transportClass",
+    "constructor",
+    "__transports",
+    "lang",
+    "Type",
+    "isRegExp",
+    "Error",
+    "Interface",
+    "classImplements",
+    "io",
+    "transport",
+    "ITransport",
+    "push",
+    "properties",
+    "check",
+    "members",
+    "selectTransport",
+    "transportOrUri",
+    "uri",
+    "isString",
+    "registeredTransport",
+    "reverse",
+    "match",
+    "exception",
+    "Transport",
+    "INVALID_URI",
+    "setTransport",
+    "AbstractClient"
+  ],
+  "sources": [
+    "/home/andresf/workspace_qooxdoo/qooxdoo/qooxdoo-7.0/source/class/qx/io/transport/AbstractClient.js"
+  ],
+  "sourcesContent": [
+    "/* ************************************************************************\n\n   qooxdoo - the new era of web development\n\n   http://qooxdoo.org\n\n   Copyright:\n      2020 Christian Boulanger\n\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n\n   Authors:\n     * Christian Boulanger (cboulanger)\n\n************************************************************************ */\n\n/**\n * This class provides a the base class for all clients that use the\n * transport implementations in this namespace. Since the static method\n * `registerTransport` cannot be inherited by subclasses, they mus proxy it\n * by adding `registerTransport : qx.io.transport.AbstractClient.registerTransport`\n * to their `statics` section.\n *\n */\nqx.Class.define(\"qx.io.transport.AbstractClient\", {\n  extend: qx.core.Object,\n  type: \"abstract\",\n\n  statics: {\n    /**\n     * Register a transport class for use with uris that match the given\n     * regular expression. The client will use the transport which first\n     * matches, starting with the last added transport\n     * @param {RegExp} uriRegExp\n     *    A regular expression which the URI must match\n     * @param {qx.io.transport.ITransport}  transportClass\n     *    The qooxdoo class implementing the transport\n     */\n    registerTransport(uriRegExp, transportClass) {\n      if (!this.constructor.__transports) {\n        this.constructor.__transports = [];\n      }\n      if (!qx.lang.Type.isRegExp(uriRegExp)) {\n        throw new Error(\"First argument must be a regular expression!\");\n      }\n      if (\n        !qx.Interface.classImplements(\n          transportClass,\n          qx.io.transport.ITransport\n        )\n      ) {\n        throw new Error(\n          \"Transport class must implement qx.io.transport.ITransport\"\n        );\n      }\n      this.constructor.__transports.push({\n        uriRegExp,\n        transport: transportClass\n      });\n    }\n  },\n\n  properties: {\n    /**\n     * The transport object\n     */\n    transport: {\n      check: \"qx.io.transport.ITransport\"\n    }\n  },\n\n  members: {\n    /**\n     * Given a transport object implementing {@link qx.io.transport.ITransport}\n     * select that transport; if a string URI is passed, select one that has\n     * been registered for that class of URIs.\n     * @param {qx.io.transport.ITransport|String} transportOrUri\n     * @throws qx.io.exception.Transport\n     */\n    selectTransport(transportOrUri) {\n      let transport;\n      let uri;\n      if (qx.lang.Type.isString(transportOrUri)) {\n        if (!this.constructor.__transports) {\n          throw new Error(\n            \"No transport has been registered. Put @use(qx.io.transport.X) in the doc block of your class, X being the transport class of your choice (such as qx.io.transport.Xhr for http transport).\"\n          );\n        }\n        uri = transportOrUri;\n        for (let registeredTransport of this.constructor.__transports.reverse()) {\n          if (uri.match(registeredTransport.uriRegExp)) {\n            // eslint-disable-next-line new-cap\n            transport = new registeredTransport.transport(uri);\n          }\n        }\n        if (!transport) {\n          throw new qx.io.exception.Transport(\n            `No matching transport for URI '${transportOrUri}'`,\n            qx.io.exception.Transport.INVALID_URI\n          );\n        }\n      } else {\n        if (\n          !(transportOrUri instanceof qx.core.Object) ||\n          !qx.Interface.classImplements(\n            transportOrUri.constructor,\n            qx.io.transport.ITransport\n          )\n        ) {\n          throw new Error(\n            \"Argument must be an qooxdoo object implementing qx.io.transport.ITransport\"\n          );\n        }\n        transport = transportOrUri;\n      }\n      this.setTransport(transport);\n    }\n  }\n});\n"
+  ],
+  "mappings": "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"
+}

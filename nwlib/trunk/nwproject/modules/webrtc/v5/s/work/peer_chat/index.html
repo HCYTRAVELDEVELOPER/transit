@@ -1,0 +1,139 @@
+<html>
+
+    <head>
+        <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="peerjs.min.js"></script>
+        <script type="text/javascript">
+            var counter = 0;
+            var mypeerid = null;
+            var peer = null;
+            var connection = null;
+            var incoming;
+            var id_call_other;
+            var init = function () {
+                function get() {
+                    var loc = document.location.href;
+                    var getString = loc.split('?')[1];
+                    if (typeof getString === "undefined" || getString === undefined) {
+                        return false;
+                    }
+                    var GET = getString.split('&');
+                    var get = {};
+                    for (var i = 0, l = GET.length; i < l; i++) {
+                        var tmp = GET[i].split('=');
+                        get[tmp[0]] = unescape(decodeURI(tmp[1]));
+                    }
+                    return get;
+                }
+                var get = get();
+                if (!get) {
+                    return false;
+                }
+                var myID = get.myID;
+                id_call_other = get.otherID;
+//                peer = new Peer({
+//                    host: 'liveweb.itp.io',
+//                    port: 9001,
+//                    path: '/'
+//                });
+                peer = new Peer(myID, {
+                    debug: 2
+                });
+//                peer = new Peer();
+                peer.on('open', function (id) {
+                    document.getElementById("connection").innerHTML = "My ID is " + id;
+                    console.log('My peer ID is: ' + id);
+                    mypeerid = id;
+                });
+                peer.on('connect', function () {
+                    console.log("Connected");
+                    document.getElementById("connection").innerHTML = "Say something and see if anyone is listening.";
+                });
+                // Receive from any event
+                peer.on('chatmessage', function (data) {
+                    console.log(data);
+                    incoming = data;
+                    addReceived();
+                });
+                peer.on('connection', function (conn) {
+                    connection = conn;
+                    connection.on('open', function () {
+                        document.getElementById('chatlog').innerHTML += "Connection Established";
+                    });
+                    connection.on('data', function (data) {
+                        //document.getElementById('chatlog').innerHTML += data;
+                        console.log(data);
+                        incoming = data;
+                        addReceived();
+                    });
+                });
+            };
+            var placecall = function () {
+//                connection = peer.connect(document.getElementById('other_peer_id').value);
+                connection = peer.connect(id_call_other);
+                connection.on('open', function (data) {
+                    document.getElementById('chatlog').innerHTML += "Connection Established";
+                });
+                connection.on('data', function (data) {
+                    console.log(data);
+                    incoming = data;
+                    addReceived();
+                });
+            };
+            var sendmessage = function (message) {
+                console.log("chatmessage: " + message);
+                connection.send(message);
+            };
+            function submit() {
+                addSent();
+                sendmessage(document.getElementById('message').value);
+                document.getElementById("message").value = "";
+            }
+            function addSent() {
+                counter++;
+                var div = document.createElement('div');
+                div.className = 'yourText';
+                div.id = "line " + counter;
+                document.getElementsByTagName('body')[0].appendChild(div);
+                document.getElementById(div.id).innerHTML = "<span id = 'me'>You</span>: " + document.getElementById('message').value;
+            }
+            function addReceived() {
+                counter++;
+                var div = document.createElement('div');
+                div.className = 'theirText';
+                div.id = "line " + counter;
+                document.getElementsByTagName('body')[0].appendChild(div);
+                document.getElementById(div.id).innerHTML = "<span id = 'them'>Them</span>: " + incoming;
+            }
+            function checkSubmit(e) {
+                if (e && e.keyCode == 13) {
+                    console.log("yes");
+                    submit();
+                }
+            }
+            function clearContents(element) {
+                element.value = '';
+            }
+            window.onload = init();
+        </script>
+    </head>
+
+    <body>
+        <div id="intro" class="header">
+            <h1>Test</h1>
+        </div>
+        <div id="connection" class="header">
+        </div>
+        <input type="text" id="other_peer_id" value="PeerID to Call">
+        <input type="button" value="Call" onclick="placecall()">
+        <br />
+        <div id="chatlog"></div>
+        <div id="textBox" class="box" onKeyPress="return checkSubmit(event)">
+            <p align="center">
+                <textarea id="message" name="message" class="textarea" onfocus="clearContents(this);">Press enter to submit.</textarea>
+            </p>
+        </div>
+    </body>
+
+</html>

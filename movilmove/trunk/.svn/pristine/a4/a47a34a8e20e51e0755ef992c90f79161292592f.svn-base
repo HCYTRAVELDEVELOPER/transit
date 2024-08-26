@@ -1,0 +1,3378 @@
+[
+    {
+        "original": "¿Qué desea reportar?",
+        "reemplazo": "What do you want to report?"
+    },
+    {
+        "original": "¿Está seguro de cancelar este servicio?",
+        "reemplazo": "Are you sure to cancel this service?"
+    },
+    {
+        "original": "¿Desea iniciar el servicio ",
+        "reemplazo": "Start trip"
+    },
+    {
+        "original": "¿Desea iniciar el servicio",
+        "reemplazo": "Start trip"
+    },
+    {
+        "original": "¡Vehículo en uso! Ahora podrás iniciar servicios con este vehículo",
+        "reemplazo": "Vehicle in use! Now you can start services with this vehicle."
+    },
+    {
+        "original": "¡Importante! No podrás comunicarte por el siguiente motivo:",
+        "reemplazo": "Important! You will not be able to communicate for the following reason:"
+    },
+    {
+        "original": "¡Guardado correctamente!",
+        "reemplazo": "Saved successfully!"
+    },
+    {
+        "original": "¡Gana más con",
+        "reemplazo": "Earn more with"
+    },
+    {
+        "original": "¡En sitio!",
+        "reemplazo": "In place!"
+    },
+    {
+        "original": "¡Código redimido!",
+        "reemplazo": "Code redeemed!"
+    },
+    {
+        "original": "use su ubicación todo el tiempo",
+        "reemplazo": "use your location all the time"
+    },
+    {
+        "original": "te refirió para que te unas como usuario a",
+        "reemplazo": "referred you to join as a user"
+    },
+    {
+        "original": "te refirió para que te unas como conductor a",
+        "reemplazo": "referred you to join as a driver"
+    },
+    {
+        "original": "tarjeta_credito",
+        "reemplazo": "credit card"
+    },
+    {
+        "original": "solo se podrán reservar servicios una hora despues de la hora inicio de atención",
+        "reemplazo": "Services can only be reserved one hour after the start time of service."
+    },
+    {
+        "original": "servicios tarde, click para ver",
+        "reemplazo": "late services, click to see"
+    },
+    {
+        "original": "recopila datos de ubicación para",
+        "reemplazo": "collects location data to"
+    },
+    {
+        "original": "promedio",
+        "reemplazo": "average"
+    },
+    {
+        "original": "particular",
+        "reemplazo": "special"
+    },
+    {
+        "original": "no existe o está inactivo. Log: Perfil:",
+        "reemplazo": "does not exist or is inactive. Log: Profile:"
+    },
+    {
+        "original": "mostrar servicios y compartir su ubicación con los pasajeros a bordo de un servicio en un mapa",
+        "reemplazo": "display services and share their location with passengers on board a service on a map"
+    },
+    {
+        "original": "la línea de transporte única en Colombia, enlace:",
+        "reemplazo": "the only transportation line in Colombia, link:"
+    },
+    {
+        "original": "la hora del servicio tiene que ser igual o mayor a",
+        "reemplazo": "The service time must be equal to or greater than"
+    },
+    {
+        "original": "incluso cuando la aplicación está cerrada o no está en uso",
+        "reemplazo": "even when the app is closed or not in use"
+    },
+    {
+        "original": "hasta",
+        "reemplazo": "until"
+    },
+    {
+        "original": "ha cancelado el servicio por",
+        "reemplazo": "has canceled the service for"
+    },
+    {
+        "original": "en tu saldo para próximos viajes",
+        "reemplazo": "in your balance for future trips"
+    },
+    {
+        "original": "efectivo",
+        "reemplazo": "cash"
+    },
+    {
+        "original": "días",
+        "reemplazo": "days"
+    },
+    {
+        "original": "día",
+        "reemplazo": "day"
+    },
+    {
+        "original": "cupones",
+        "reemplazo": "coupons"
+    },
+    {
+        "original": "con",
+        "reemplazo": "with"
+    },
+    {
+        "original": "cancelar servicio",
+        "reemplazo": "cancel service"
+    },
+    {
+        "original": "ahora",
+        "reemplazo": "now"
+    },
+    {
+        "original": "Volumen sonido en notificaciones de escritorio",
+        "reemplazo": "Sound volume in desktop notifications"
+    },
+    {
+        "original": "Viaje finalizado",
+        "reemplazo": "Trip completed"
+    },
+    {
+        "original": "Versión, fabricante, otras",
+        "reemplazo": "Version, manufacturer, others"
+    },
+    {
+        "original": "Versión OS: ",
+        "reemplazo": "OS version: "
+    },
+    {
+        "original": "Versión OS:",
+        "reemplazo": "OS version:"
+    },
+    {
+        "original": "Ver ",
+        "reemplazo": "See "
+    },
+    {
+        "original": "Ver",
+        "reemplazo": "See"
+    },
+    {
+        "original": "Ventanas",
+        "reemplazo": "Windows"
+    },
+    {
+        "original": "Vehículo",
+        "reemplazo": " Vehicle"
+    },
+    {
+        "original": "Valor final:",
+        "reemplazo": "Final value:"
+    },
+    {
+        "original": "Valor estimado:",
+        "reemplazo": "Estimated value:"
+    },
+    {
+        "original": "Valide las últimas novedades",
+        "reemplazo": "Validate the latest upgrades"
+    },
+    {
+        "original": "Utilidad empresa:",
+        "reemplazo": "Company profit:"
+    },
+    {
+        "original": "Utilidad conductor:",
+        "reemplazo": "Driver profit:"
+    },
+    {
+        "original": "Usuario usando",
+        "reemplazo": "User using"
+    },
+    {
+        "original": "Usar para servicios",
+        "reemplazo": "Use for services"
+    },
+    {
+        "original": "Usa tu ubicación",
+        "reemplazo": "Use your location"
+    },
+    {
+        "original": "Ubicando por GPS, por favor espere",
+        "reemplazo": "Locating via GPS, please wait"
+    },
+    {
+        "original": "Ubicación segundo plano",
+        "reemplazo": "Background location"
+    },
+    {
+        "original": "Ubicación",
+        "reemplazo": "Location"
+    },
+    {
+        "original": "Tu saldo es",
+        "reemplazo": "Your balance is"
+    },
+    {
+        "original": "Tu código de seguridad es:",
+        "reemplazo": "Your security code is:"
+    },
+    {
+        "original": "Transición de ventanas",
+        "reemplazo": "Window transition"
+    },
+    {
+        "original": "Total a pagar:",
+        "reemplazo": "Total to pay:"
+    },
+    {
+        "original": "Todas las puertas cierran y ajustan",
+        "reemplazo": "All doors close and fit snugly"
+    },
+    {
+        "original": "Tipo: ",
+        "reemplazo": "Type: "
+    },
+    {
+        "original": "Tipo:",
+        "reemplazo": "Type:"
+    },
+    {
+        "original": "Tipo servicio:",
+        "reemplazo": "Service type:"
+    },
+    {
+        "original": "Tipo servicio:",
+        "reemplazo": "Service type:"
+    },
+    {
+        "original": "Tipo servicio",
+        "reemplazo": "Service type"
+    },
+    {
+        "original": "Tipo documento",
+        "reemplazo": "Document type"
+    },
+    {
+        "original": "Tipo de cuenta",
+        "reemplazo": "Account type"
+    },
+    {
+        "original": "Tipo",
+        "reemplazo": "Type"
+    },
+    {
+        "original": "Tienes un nuevo servicio, revisa tu historial.",
+        "reemplazo": "You have a new service, check your history."
+    },
+    {
+        "original": "Tienes",
+        "reemplazo": "Have"
+    },
+    {
+        "original": "Tiene un servicio en curso, debe finalizarlo para poder iniciar otro.",
+        "reemplazo": "You have a service in progress, you must end it before you can start another one."
+    },
+    {
+        "original": "Tiempo",
+        "reemplazo": "Time"
+    },
+    {
+        "original": "Terrible",
+        "reemplazo": "Very bad"
+    },
+    {
+        "original": "Tema",
+        "reemplazo": "Theme"
+    },
+    {
+        "original": "Teléfono Propietario",
+        "reemplazo": "Owner Phone"
+    },
+    {
+        "original": "Te quedaste sin saldo recarga y sigue disfrutando de nuestros servicios",
+        "reemplazo": "You ran out of credit, recharge and continue enjoying our services"
+    },
+    {
+        "original": "Te han asignado un servicio",
+        "reemplazo": "You have been assigned a service"
+    },
+    {
+        "original": "Tarjeta_credito",
+        "reemplazo": "Credit card"
+    },
+    {
+        "original": "Tarjeta de propiedad",
+        "reemplazo": "Property card"
+    },
+    {
+        "original": "Tarjeta de Propiedad Trasera",
+        "reemplazo": "Rear Property Card"
+    },
+    {
+        "original": "Tarjeta Crédito",
+        "reemplazo": "Credit card"
+    },
+    {
+        "original": "Tarifa",
+        "reemplazo": "Fee"
+    },
+    {
+        "original": "Tarde",
+        "reemplazo": " Late"
+    },
+    {
+        "original": "Subiendo, por favor espere...",
+        "reemplazo": "Please wait"
+    },
+    {
+        "original": "Su usuario no se encuentra activo para iniciar servicios de socio conductor.",
+        "reemplazo": "Your user is not active to start driver services."
+    },
+    {
+        "original": "Su saldo es",
+        "reemplazo": "Your balance is"
+    },
+    {
+        "original": "Soporte o Evidencia",
+        "reemplazo": "Attachment"
+    },
+    {
+        "original": "Soporte",
+        "reemplazo": "Support"
+    },
+    {
+        "original": "Sonido en notificaciones de escritorio",
+        "reemplazo": "Sound in desktop notifications"
+    },
+    {
+        "original": "Sonido",
+        "reemplazo": " Sound"
+    },
+    {
+        "original": "Sin internet, compruebe su conexión",
+        "reemplazo": "No internet, check your connection"
+    },
+    {
+        "original": "Sin asignar",
+        "reemplazo": "Not assigned"
+    },
+    {
+        "original": "Simular error en server",
+        "reemplazo": "Simulate server error"
+    },
+    {
+        "original": "Simular error en cliente",
+        "reemplazo": "Simulate error in customer"
+    },
+    {
+        "original": "Si elimina su cuenta, no podrá recuperar sus datos",
+        "reemplazo": "If you remove your account, you will not be able to recover your data"
+    },
+    {
+        "original": "Servicios activos",
+        "reemplazo": "Active services"
+    },
+    {
+        "original": "Servicio:",
+        "reemplazo": "Service:"
+    },
+    {
+        "original": "Servicio en segundo plano",
+        "reemplazo": "Background service"
+    },
+    {
+        "original": "Servicio en curso, al destino:",
+        "reemplazo": "Service in progress, to destination:"
+    },
+    {
+        "original": "Servicio aceptado por el conductor",
+        "reemplazo": "Service accepted by the driver"
+    },
+    {
+        "original": "Servicio ",
+        "reemplazo": "Service "
+    },
+    {
+        "original": "Sentido",
+        "reemplazo": "Orientation"
+    },
+    {
+        "original": "Selecciones la novedad",
+        "reemplazo": "Select Issue"
+    },
+    {
+        "original": "Seleccione un motivo de cancelación",
+        "reemplazo": "Select a cancellation reason"
+    },
+    {
+        "original": "Seleccione el tema",
+        "reemplazo": "Select the theme"
+    },
+    {
+        "original": "Seleccionar foto de perfil",
+        "reemplazo": "Select profile picture"
+    },
+    {
+        "original": "Se ha varado el vehículo",
+        "reemplazo": "Damaged vehicle"
+    },
+    {
+        "original": "Se ha presentado una novedad en el sistema. ",
+        "reemplazo": "An issue has occurred in the system. "
+    },
+    {
+        "original": "Se ha presentado una novedad en el sistema.",
+        "reemplazo": "An issue has occurred in the system."
+    },
+    {
+        "original": "Se está ejecutando en segundo plano",
+        "reemplazo": "It is running in the background"
+    },
+    {
+        "original": "Se encuentra muy lejos",
+        "reemplazo": "It is far away"
+    },
+    {
+        "original": "Salida segura",
+        "reemplazo": "Safe exit"
+    },
+    {
+        "original": "Saldo - Billetera Virtual",
+        "reemplazo": "Balance - Virtual Wallet"
+    },
+    {
+        "original": "SUBIR FOTO",
+        "reemplazo": "UPLOAD PHOTO"
+    },
+    {
+        "original": "SOLICITUD",
+        "reemplazo": "APPLICATION"
+    },
+    {
+        "original": "SOAT fecha vencimiento",
+        "reemplazo": "SOAT expiration date"
+    },
+    {
+        "original": "SI",
+        "reemplazo": "YES"
+    },
+    {
+        "original": "Revisión Tecnomecánica",
+        "reemplazo": "Technomechanical Review"
+    },
+    {
+        "original": "Retraso",
+        "reemplazo": "Delay"
+    },
+    {
+        "original": "Reservado ",
+        "reemplazo": "Reserved"
+    },
+    {
+        "original": "Reservado",
+        "reemplazo": "Reserved"
+    },
+    {
+        "original": "Registrar tarjeta",
+        "reemplazo": "Register card"
+    },
+    {
+        "original": "Refiere conductores",
+        "reemplazo": "Refer drivers"
+    },
+    {
+        "original": "Refiere amigos",
+        "reemplazo": "Refer friends"
+    },
+    {
+        "original": "Referencia personal y laboral",
+        "reemplazo": "Personal and work reference"
+    },
+    {
+        "original": "Redimir cupón promocional",
+        "reemplazo": "Redeem promotional coupon"
+    },
+    {
+        "original": "Redimir",
+        "reemplazo": "Redeem"
+    },
+    {
+        "original": "Redime y viaja con nosotros a donde tu quieras.",
+        "reemplazo": "Redeem and travel with us any you want."
+    },
+    {
+        "original": "Recuerde que si no cancela a tiempo se podrán generear recargos.",
+        "reemplazo": "Remember that if you do not pay on time, surcharges may be incurred"
+    },
+    {
+        "original": "Recuerde que si no cancela a tiempo se podrán generar recargos",
+        "reemplazo": "Remember that if you do not pay on time, surcharges may be incurred"
+    },
+    {
+        "original": "Recargar Saldo",
+        "reemplazo": "Recharge Balance"
+    },
+    {
+        "original": "Recarga saldo",
+        "reemplazo": "Recharge balance"
+    },
+    {
+        "original": "Radiador con tapa ajustada",
+        "reemplazo": "Radiator cap securely fastened"
+    },
+    {
+        "original": "Puntaje",
+        "reemplazo": "Score"
+    },
+    {
+        "original": "Pulsa aquí para ver más opciones.",
+        "reemplazo": "Tap here to see more options."
+    },
+    {
+        "original": "Promociones",
+        "reemplazo": "Promotions"
+    },
+    {
+        "original": "Promedio: ",
+        "reemplazo": "Average: "
+    },
+    {
+        "original": "Promedio",
+        "reemplazo": "Average"
+    },
+    {
+        "original": "Problema",
+        "reemplazo": "Issue"
+    },
+    {
+        "original": "Preoperacional",
+        "reemplazo": "Preoperational"
+    },
+    {
+        "original": "Pre-operacional",
+        "reemplazo": "Pre-operational"
+    },
+    {
+        "original": "Porcentaje comisión:",
+        "reemplazo": "Commission percentage:"
+    },
+    {
+        "original": "Por favor espere...",
+        "reemplazo": "Please wait..."
+    },
+    {
+        "original": "Por favor activa las notificaciones para recibir mensajes de chat, nuevos servicios y otros",
+        "reemplazo": "Please activate notifications to receive chat messages, new services and others"
+    },
+    {
+        "original": "Por favor activa la ubicación precisa para poder ubicarte en el mapa",
+        "reemplazo": "Please activate the precise location to be able to locate you on the map"
+    },
+    {
+        "original": "Placa en uso",
+        "reemplazo": "Plate in use"
+    },
+    {
+        "original": "Pito",
+        "reemplazo": "Horn"
+    },
+    {
+        "original": "Permiso concedido ubicación precisa.",
+        "reemplazo": "Permission granted for precise location"
+    },
+    {
+        "original": "Permiso concedido ubicación en segundo plano.",
+        "reemplazo": "Permission granted for background location"
+    },
+    {
+        "original": "Permiso concedido notificaciones.",
+        "reemplazo": "Permission granted for notifications"
+    },
+    {
+        "original": "Pasaporte",
+        "reemplazo": "Passport"
+    },
+    {
+        "original": "Paradas adicionales",
+        "reemplazo": "Additional Stops"
+    },
+    {
+        "original": "Paradas / Pasajeros",
+        "reemplazo": "Stops / Passengers"
+    },
+    {
+        "original": "Para ver mapas de actividades rastreadas automáticamente, permita que",
+        "reemplazo": "To view maps of automatically tracked activities, allow"
+    },
+    {
+        "original": "Pagar a empresa",
+        "reemplazo": "Pay to company"
+    },
+    {
+        "original": "Pagando con tarjeta...",
+        "reemplazo": "Paying by card..."
+    },
+    {
+        "original": "PRUEBAS",
+        "reemplazo": " TEST"
+    },
+    {
+        "original": "PRODUCCIÓN",
+        "reemplazo": "PRODUCTION"
+    },
+    {
+        "original": "Otros datos",
+        "reemplazo": "Other data"
+    },
+    {
+        "original": "Oscuro",
+        "reemplazo": "Dark"
+    },
+    {
+        "original": "Origen:",
+        "reemplazo": "Origin:"
+    },
+    {
+        "original": "Observación ubicación",
+        "reemplazo": "Location observation"
+    },
+    {
+        "original": "Número de tarjeta",
+        "reemplazo": "Card number"
+    },
+    {
+        "original": "Número de cuenta",
+        "reemplazo": "Account number"
+    },
+    {
+        "original": "Nuevo servicio",
+        "reemplazo": "New service"
+    },
+    {
+        "original": "Nuestro horario de atención es de",
+        "reemplazo": "Our opening hours are"
+    },
+    {
+        "original": "Notificaciones",
+        "reemplazo": "Notifications"
+    },
+    {
+        "original": "Nombre: ",
+        "reemplazo": "Name: "
+    },
+    {
+        "original": "Nombre y número de contacto en caso de emergencia",
+        "reemplazo": "Name and contact number in case of emergency"
+    },
+    {
+        "original": "Nombre títular tarjeta",
+        "reemplazo": "Card holder name"
+    },
+    {
+        "original": "Nombre pasajero (opcional)",
+        "reemplazo": "Passenger name (optional)"
+    },
+    {
+        "original": "Nombre del pasajero (opcional)",
+        "reemplazo": "Passenger name (optional)"
+    },
+    {
+        "original": "Nombre Banco",
+        "reemplazo": "Bank Name"
+    },
+    {
+        "original": "Nombre",
+        "reemplazo": "Name"
+    },
+    {
+        "original": "No servicios",
+        "reemplazo": "Number of services"
+    },
+    {
+        "original": "No hay recientes...",
+        "reemplazo": "No recent..."
+    },
+    {
+        "original": "No alcanzo a llegar",
+        "reemplazo": "Driver not arriving"
+    },
+    {
+        "original": "Nivel del líquido refrigerante",
+        "reemplazo": "Coolant level"
+    },
+    {
+        "original": "Nivel del líquido de la dirección",
+        "reemplazo": "Steering fluid level"
+    },
+    {
+        "original": "Nivel del agua del limpiabrisas",
+        "reemplazo": "Windshield washer fluid level"
+    },
+    {
+        "original": "Nivel de aceite del motor",
+        "reemplazo": "Engine oil level"
+    },
+    {
+        "original": "Navegador",
+        "reemplazo": "Browser"
+    },
+    {
+        "original": "Métodos de pago",
+        "reemplazo": "Payment methods"
+    },
+    {
+        "original": "Mostrar notificaciones de escritorio",
+        "reemplazo": "Show desktop notifications"
+    },
+    {
+        "original": "Mostrar eventos en consola",
+        "reemplazo": "Show events in console"
+    },
+    {
+        "original": "Mostrar consola",
+        "reemplazo": "Show console"
+    },
+    {
+        "original": "Mis vehículos",
+        "reemplazo": "My vehicles"
+    },
+    {
+        "original": "Mis tarjetas de crédito",
+        "reemplazo": "my credit cards"
+    },
+    {
+        "original": "Minutos de espera:",
+        "reemplazo": "Waiting minutes:"
+    },
+    {
+        "original": "Mi perfil",
+        "reemplazo": "My profile"
+    },
+    {
+        "original": "Mes",
+        "reemplazo": " Month"
+    },
+    {
+        "original": "Mensaje...",
+        "reemplazo": "Message..."
+    },
+    {
+        "original": "Mediana",
+        "reemplazo": "Medium"
+    },
+    {
+        "original": "Marca Id",
+        "reemplazo": "Brand ID"
+    },
+    {
+        "original": "Malo",
+        "reemplazo": "Bad"
+    },
+    {
+        "original": "Lugar origen",
+        "reemplazo": "Place of origin"
+    },
+    {
+        "original": "Lugar destino",
+        "reemplazo": "Destination place"
+    },
+    {
+        "original": "Lo sentimos, no se encontraron datos.",
+        "reemplazo": "Sorry, no data found."
+    },
+    {
+        "original": "Lo sentimos, no hemos encontrado un conductor para su destino.",
+        "reemplazo": "Sorry, we have not found a driver for your destination."
+    },
+    {
+        "original": "Lo sentimos, ha excedido el límite de pasajeros, póngase en contacto con la central.",
+        "reemplazo": "Sorry, you have exceeded the passenger limit, please contact headquarters."
+    },
+    {
+        "original": "Llegaste...",
+        "reemplazo": "You arrived..."
+    },
+    {
+        "original": "Limpiabrisas funcionando",
+        "reemplazo": "Windshield wipers working"
+    },
+    {
+        "original": "Las notificaciones están actualmente desactivadas, toca para activarlas",
+        "reemplazo": "Notifications are currently disabled, tap to activate them"
+    },
+    {
+        "original": "La ubicación precisa está actualmente desactivada, toca para activarla",
+        "reemplazo": "Precise location is currently disabled, tap to activate it"
+    },
+    {
+        "original": "La API de mapas no cargó debido a que no cuenta con conexión a internet, red deficiente o nula.",
+        "reemplazo": "The Maps API did not load due to no internet connection, poor or no network."
+    },
+    {
+        "original": "LLEGADA_DESTINO",
+        "reemplazo": "ARRIVAL_DESTINATION"
+    },
+    {
+        "original": "LLEGADA_DESTINO",
+        "reemplazo": "ARRIVAL_DESTINATION"
+    },
+    {
+        "original": "LIGIA gracias por preferirnos. Esperamos que hayas disfrutado tu viaje.",
+        "reemplazo": "LIGIA thank you for choosing us. We hope you enjoyed your trip."
+    },
+    {
+        "original": "Internet estable",
+        "reemplazo": "stable internet"
+    },
+    {
+        "original": "Inicio del viaje...",
+        "reemplazo": "Start of the trip..."
+    },
+    {
+        "original": "Iniciar viaje",
+        "reemplazo": "Start trip"
+    },
+    {
+        "original": "Iniciar servicio",
+        "reemplazo": "Start service"
+    },
+    {
+        "original": "Ingrese los siguientes datos para cambiar su contraseña",
+        "reemplazo": "Enter the following information to change your password"
+    },
+    {
+        "original": "Ingrese el valor",
+        "reemplazo": "Enter the value"
+    },
+    {
+        "original": "Ingrese el número",
+        "reemplazo": "Enter the number"
+    },
+    {
+        "original": "Ingrese el Valor",
+        "reemplazo": "Enter the Value"
+    },
+    {
+        "original": "Ingresa el valor",
+        "reemplazo": "Enter the value"
+    },
+    {
+        "original": "Informe",
+        "reemplazo": "Report"
+    },
+    {
+        "original": "Imagen de licencia trasera",
+        "reemplazo": "Rear license image"
+    },
+    {
+        "original": "Imagen de licencia frontal",
+        "reemplazo": "Front license image"
+    },
+    {
+        "original": "Imagen de documento respaldo",
+        "reemplazo": "Image of backup document"
+    },
+    {
+        "original": "Imagen de documento",
+        "reemplazo": "Document image"
+    },
+    {
+        "original": "Identificación Propietario",
+        "reemplazo": "Owners Identification"
+    },
+    {
+        "original": "Hora inicio:",
+        "reemplazo": "Start Time:"
+    },
+    {
+        "original": "Hora finalización:",
+        "reemplazo": "End time:"
+    },
+    {
+        "original": "Hola! Soy Ligia, te estoy compartiendo mi viaje en Tecapser Cliente, abre el siguiente link",
+        "reemplazo": "Hi, Im Ligia, Im sharing my journey with you on Tecapser Client, open the following link"
+    },
+    {
+        "original": "Hoja de vida",
+        "reemplazo": "CV"
+    },
+    {
+        "original": "Histórico pagos",
+        "reemplazo": "Payment history"
+    },
+    {
+        "original": "Histórico de pagos",
+        "reemplazo": "Payment history"
+    },
+    {
+        "original": "Hemos detectado una conexión demasiado baja o nula, compruebe su conexión a internet",
+        "reemplazo": "We have detected too low or no connection, please check your internet connection"
+    },
+    {
+        "original": "Hay una nueva versión de la aplicación. Recomendamos actualizarla. Ingrese a la tienda de aplicaciones y actualice.",
+        "reemplazo": "There is a new version of the application. We recommend to  it. Go to the app store and ."
+    },
+    {
+        "original": "Hay una nueva versión de la aplicación, debe actualizarla para continuar",
+        "reemplazo": "There is a new version of the application, you must  it to continue"
+    },
+    {
+        "original": "Hasta:",
+        "reemplazo": "Until:"
+    },
+    {
+        "original": "Guardando, por favor espere",
+        "reemplazo": "Saving, please wait"
+    },
+    {
+        "original": "Guardando",
+        "reemplazo": "Saving"
+    },
+    {
+        "original": "Guardado correctamente. Debes esperar aprobación por parte del administrador.",
+        "reemplazo": "Saved successfully. Awaiting approval"
+    },
+    {
+        "original": "Grande",
+        "reemplazo": "Big"
+    },
+    {
+        "original": "Geocoding no procesado debido a :",
+        "reemplazo": "Geocoding not processed due to:"
+    },
+    {
+        "original": "Galería",
+        "reemplazo": "Gallery"
+    },
+    {
+        "original": "GPS en funcionamiento",
+        "reemplazo": "GPS in operation"
+    },
+    {
+        "original": "Foto del conductor y licencia",
+        "reemplazo": "Photo of driver and license"
+    },
+    {
+        "original": "Foto del SOAT",
+        "reemplazo": "Security photo"
+    },
+    {
+        "original": "Foto de perfil",
+        "reemplazo": "Profile picture"
+    },
+    {
+        "original": "Forma de pago:",
+        "reemplazo": "Way to pay:"
+    },
+    {
+        "original": "Forma de pago cambiada correctamente a ",
+        "reemplazo": "Payment method successfully changed to "
+    },
+    {
+        "original": "Firma digital",
+        "reemplazo": "Digital signature"
+    },
+    {
+        "original": "Firma",
+        "reemplazo": "Signature"
+    },
+    {
+        "original": "Finalizar servicio",
+        "reemplazo": "End service"
+    },
+    {
+        "original": "Finalizar con novedad",
+        "reemplazo": "End why Issues "
+    },
+    {
+        "original": "Fecha:",
+        "reemplazo": "Date:"
+    },
+    {
+        "original": "Fecha vencimiento Tecnomecánica",
+        "reemplazo": "Technomechanical expiration date"
+    },
+    {
+        "original": "Fecha vencimiento SOAT",
+        "reemplazo": "SOAT expiration date"
+    },
+    {
+        "original": "Fecha del servicio:",
+        "reemplazo": "Date of service:"
+    },
+    {
+        "original": "Fecha de nacimiento",
+        "reemplazo": "Date of birth"
+    },
+    {
+        "original": "Fecha Inicial",
+        "reemplazo": "Initial date"
+    },
+    {
+        "original": "Fecha Final",
+        "reemplazo": "Final date"
+    },
+    {
+        "original": "Favoritos",
+        "reemplazo": " Favorites"
+    },
+    {
+        "original": "Excelente",
+        "reemplazo": "Excelent"
+    },
+    {
+        "original": "Este es tu link, puedes copiarlo y compartirlo para que tus contactos se registren como usuario",
+        "reemplazo": "This is your link, you can copy and share it for your contacts to register as users"
+    },
+    {
+        "original": "Estaremos atentos a escucharte.",
+        "reemplazo": "We will be attentive to listen to you."
+    },
+    {
+        "original": "Estados Unidos",
+        "reemplazo": "United States"
+    },
+    {
+        "original": "Estado:",
+        "reemplazo": "Status:"
+    },
+    {
+        "original": "Estado de red",
+        "reemplazo": "Network status"
+    },
+    {
+        "original": "Espejos retrovisores funcionando",
+        "reemplazo": "Rearview mirrors working"
+    },
+    {
+        "original": "España",
+        "reemplazo": "Spain"
+    },
+    {
+        "original": "Envíe el comprobante de sus pago",
+        "reemplazo": "Send the receipt of your payment"
+    },
+    {
+        "original": "Envíe el comprobante de su pago",
+        "reemplazo": "Send the receipt of your payment"
+    },
+    {
+        "original": "En uso.",
+        "reemplazo": "In use."
+    },
+    {
+        "original": "En camino a",
+        "reemplazo": "On the way to"
+    },
+    {
+        "original": "Empresa: 56- Perfil ID: 2NaNPerfil text: Conductor - Terminal: 5888 - VITD: 1.0.2.10 Versión OS: 12",
+        "reemplazo": "Company: 56- Profile ID: 2NaNProfile text: Driver - Terminal: 5888 - VITD: 1.0.2.10 OS Version: 12"
+    },
+    {
+        "original": "Empresa: ",
+        "reemplazo": "Company: "
+    },
+    {
+        "original": "Empresa",
+        "reemplazo": "Company"
+    },
+    {
+        "original": "Eliminar mi cuenta",
+        "reemplazo": "Delete my account"
+    },
+    {
+        "original": "El usuario no existe o está inactivo",
+        "reemplazo": "The user does not exist or is inactive"
+    },
+    {
+        "original": "El usuario ha cancelado el servicio, puedes otorgar la calificación que consideres y enviar tus comentarios",
+        "reemplazo": "The user has canceled the service, you can give the rating you consider and send your comments"
+    },
+    {
+        "original": "El usuario a cancelado el servicio",
+        "reemplazo": "The user has canceled the service"
+    },
+    {
+        "original": "El usuario",
+        "reemplazo": "The user"
+    },
+    {
+        "original": "El código no existe o ya fue redimido",
+        "reemplazo": "The code does not exist or has already been redeemed"
+    },
+    {
+        "original": "El conductor",
+        "reemplazo": "Driver"
+    },
+    {
+        "original": "El cliente no llega",
+        "reemplazo": "Customer not arriving"
+    },
+    {
+        "original": "El cliente me lo ha pedido",
+        "reemplazo": "Customer request"
+    },
+    {
+        "original": "El cliente canceló el servicio",
+        "reemplazo": "The customer canceled the service"
+    },
+    {
+        "original": "Efectivo",
+        "reemplazo": " Cash"
+    },
+    {
+        "original": "Editar perfil",
+        "reemplazo": "Edit profile"
+    },
+    {
+        "original": "Editar",
+        "reemplazo": " Edit"
+    },
+    {
+        "original": "EJECUTIVO",
+        "reemplazo": "EXECUTIVE"
+    },
+    {
+        "original": "Dominio SRV",
+        "reemplazo": "SRV domain"
+    },
+    {
+        "original": "Documentos adicionales",
+        "reemplazo": " Additional documents"
+    },
+    {
+        "original": "Documento de identificación",
+        "reemplazo": "Identification document"
+    },
+    {
+        "original": "Distancia",
+        "reemplazo": "Distance"
+    },
+    {
+        "original": "Dirígete al punto de encuentro",
+        "reemplazo": "Go to the meeting point"
+    },
+    {
+        "original": "Dirección de la parada",
+        "reemplazo": "Stop address"
+    },
+    {
+        "original": "Dirección de domicilio",
+        "reemplazo": "Home address"
+    },
+    {
+        "original": "Dirección Propietario",
+        "reemplazo": "Owners Address"
+    },
+    {
+        "original": "Dirección Destino",
+        "reemplazo": "Destination Address"
+    },
+    {
+        "original": "Detener ",
+        "reemplazo": "Stop"
+    },
+    {
+        "original": "Detener",
+        "reemplazo": "Stop"
+    },
+    {
+        "original": "Destino:",
+        "reemplazo": "Destination:"
+    },
+    {
+        "original": "Desea ir a...",
+        "reemplazo": "Do you want to go to..."
+    },
+    {
+        "original": "Desea iniciar el servicio",
+        "reemplazo": "Start trip"
+    },
+    {
+        "original": "Descripción: ",
+        "reemplazo": "Description: "
+    },
+    {
+        "original": "Denegaste/omitiste la ubicación precisa, podrías presentar problemas de ubicación",
+        "reemplazo": " You denied/refused the precise location, you may present location problems"
+    },
+    {
+        "original": "Denegaste las notificaciones, podrías presentar problemas de comunicación",
+        "reemplazo": "You have denied notifications, you may have communication problems"
+    },
+    {
+        "original": "Debe seleccionar una Hora mayor o igual a la actual para reservar.Verifique por favor",
+        "reemplazo": "You must select a time equal to or greater than the current time to make a reservation. Please verify."
+    },
+    {
+        "original": "Debe seleccionar un motivo de cancelación",
+        "reemplazo": "You must select a cancellation reason"
+    },
+    {
+        "original": "Debe registrar una tarjeta de crédito para continuar. Vaya a Menú - Métodos de pago - Agregar tarjeta",
+        "reemplazo": "You must register a credit card to continue. Go to Menu - Payment Methods - Add Card"
+    },
+    {
+        "original": "Debe registrar el formato preoperacional",
+        "reemplazo": "You must register the pre-operational format"
+    },
+    {
+        "original": "De: ",
+        "reemplazo": "From: "
+    },
+    {
+        "original": "De:",
+        "reemplazo": "From:"
+    },
+    {
+        "original": "Datos bancarios",
+        "reemplazo": "Bank data"
+    },
+    {
+        "original": "Datos Principales",
+        "reemplazo": "Main Data"
+    },
+    {
+        "original": "Datos Cuenta",
+        "reemplazo": "Account Data"
+    },
+    {
+        "original": "Cópialo y compártelo con tus amigos conductores",
+        "reemplazo": "Copy it and share it with your driving friends"
+    },
+    {
+        "original": "Código",
+        "reemplazo": "Code"
+    },
+    {
+        "original": "Cédula de extranjería",
+        "reemplazo": "Foreigner ID"
+    },
+    {
+        "original": "Cédula de ciudadanía",
+        "reemplazo": "Citizenship card"
+    },
+    {
+        "original": "Cámara",
+        "reemplazo": "Camera"
+    },
+    {
+        "original": "Cupones",
+        "reemplazo": "Coupons"
+    },
+    {
+        "original": "Cuentas Bancarias",
+        "reemplazo": "Bank Accounts"
+    },
+    {
+        "original": "Corriente",
+        "reemplazo": "Current"
+    },
+    {
+        "original": "Correa del ventilador tensionada",
+        "reemplazo": "Fan belt tensioned"
+    },
+    {
+        "original": "Continuar sin fotos",
+        "reemplazo": "Continue without photos"
+    },
+    {
+        "original": "Consulte pagos pasados o en canje",
+        "reemplazo": "Check past or exchange payments"
+    },
+    {
+        "original": "Consultando servicios...",
+        "reemplazo": "Consulting services..."
+    },
+    {
+        "original": "Consultando documentos...",
+        "reemplazo": "Consulting documents..."
+    },
+    {
+        "original": "Confirmar",
+        "reemplazo": "Confirm"
+    },
+    {
+        "original": "Configurar permisos de ubicación en segundo plano ",
+        "reemplazo": "Set background location permissions"
+    },
+    {
+        "original": "Configurar permisos de ubicación en segundo plano",
+        "reemplazo": "Set background location permissions"
+    },
+    {
+        "original": "Configurar permisos de ubicación ",
+        "reemplazo": "Set location permissions"
+    },
+    {
+        "original": "Configurar permisos de ubicación",
+        "reemplazo": "Set location permissions"
+    },
+    {
+        "original": "Configurar permisos de notificaciones ",
+        "reemplazo": "Set notification permissions"
+    },
+    {
+        "original": "Configurar permisos de notificaciones",
+        "reemplazo": "Set notification permissions"
+    },
+    {
+        "original": "Configurar",
+        "reemplazo": "Set up"
+    },
+    {
+        "original": "Configuración",
+        "reemplazo": "Setting"
+    },
+    {
+        "original": "Configuraciones",
+        "reemplazo": "Settings"
+    },
+    {
+        "original": "Condiciones de funcionamiento",
+        "reemplazo": "Operating conditions"
+    },
+    {
+        "original": "Comprobar de nuevo",
+        "reemplazo": "Check again"
+    },
+    {
+        "original": "Comprobante de pago",
+        "reemplazo": "Payment receipt"
+    },
+    {
+        "original": "Comprobante de Pago",
+        "reemplazo": "Payment receipt"
+    },
+    {
+        "original": "Compartir",
+        "reemplazo": "Share"
+    },
+    {
+        "original": "Comentarios, indicaciones (opcional)",
+        "reemplazo": "Comments, instructions (optional)"
+    },
+    {
+        "original": "Comentarios de viaje/parada/mercancía",
+        "reemplazo": "Comments"
+    },
+    {
+        "original": "Cliente: ",
+        "reemplazo": "Customer: "
+    },
+    {
+        "original": "Cliente:",
+        "reemplazo": "Customer"
+    },
+    {
+        "original": "Cliente:",
+        "reemplazo": "Customer:"
+    },
+    {
+        "original": "Claro",
+        "reemplazo": "Light"
+    },
+    {
+        "original": "Ciudad origen",
+        "reemplazo": "Origin city"
+    },
+    {
+        "original": "Ciudad destino",
+        "reemplazo": "Destination city"
+    },
+    {
+        "original": "Ciudad",
+        "reemplazo": "City"
+    },
+    {
+        "original": "Chat con",
+        "reemplazo": "Chat with"
+    },
+    {
+        "original": "Chat / conductor",
+        "reemplazo": "Chat/driver"
+    },
+    {
+        "original": "Celular / móvil",
+        "reemplazo": "Phone number"
+    },
+    {
+        "original": "Categoría licencia",
+        "reemplazo": "License category"
+    },
+    {
+        "original": "Cargar más",
+        "reemplazo": "Load more"
+    },
+    {
+        "original": "Cargar más",
+        "reemplazo": "Load more"
+    },
+    {
+        "original": "Cargando histórico, espere por favor...",
+        "reemplazo": "Loading history, please wait..."
+    },
+    {
+        "original": "Cargando chat...",
+        "reemplazo": "Loading chat..."
+    },
+    {
+        "original": "Capacidad Pasajeros",
+        "reemplazo": "Passenger Capacity"
+    },
+    {
+        "original": "Cambiar tema, fuente, otras",
+        "reemplazo": "Change theme, font, others"
+    },
+    {
+        "original": "Cambiar tema",
+        "reemplazo": "Change theme"
+    },
+    {
+        "original": "Calificando...",
+        "reemplazo": "Rating"
+    },
+    {
+        "original": "CONTINUAR SIN FOTO",
+        "reemplazo": "CONTINUE WITHOUT PHOTO"
+    },
+    {
+        "original": "CANCELADO_POR_USUARIO",
+        "reemplazo": "CANCELED_BY_USER"
+    },
+    {
+        "original": "CANCELADO_POR_CONDUCTOR",
+        "reemplazo": "CANCELED_BY_DRIVER"
+    },
+    {
+        "original": "Buscar actualizaciones",
+        "reemplazo": "Check for upgrades"
+    },
+    {
+        "original": "Buscando... ",
+        "reemplazo": "Searching..."
+    },
+    {
+        "original": "Buscando...",
+        "reemplazo": "Searching..."
+    },
+    {
+        "original": "Buscando tu ubicación por favor espera",
+        "reemplazo": "Searching for your location please wait"
+    },
+    {
+        "original": "Buscando actualizaciones... Por favor espere.",
+        "reemplazo": "Checking for upgrades... Please wait."
+    },
+    {
+        "original": "Buscando Servicios",
+        "reemplazo": "Searching Services"
+    },
+    {
+        "original": "Bueno",
+        "reemplazo": "Nice"
+    },
+    {
+        "original": "Brasil",
+        "reemplazo": "Brazil"
+    },
+    {
+        "original": "Batería sin residuos",
+        "reemplazo": "Residue-free battery"
+    },
+    {
+        "original": "Banco",
+        "reemplazo": "Bank"
+    },
+    {
+        "original": "Año",
+        "reemplazo": "Year"
+    },
+    {
+        "original": "Añadir nuevo",
+        "reemplazo": "Add new"
+    },
+    {
+        "original": "Archivos",
+        "reemplazo": "Files"
+    },
+    {
+        "original": "Apellidos",
+        "reemplazo": "Last name"
+    },
+    {
+        "original": "Antecedentes judiciales",
+        "reemplazo": "Judicial records"
+    },
+    {
+        "original": "Ampliar",
+        "reemplazo": "Details"
+    },
+    {
+        "original": "Ahorros",
+        "reemplazo": "Savings"
+    },
+    {
+        "original": "Ahora",
+        "reemplazo": "Now"
+    },
+    {
+        "original": "Agregar tarjeta crédito",
+        "reemplazo": "Add credit card"
+    },
+    {
+        "original": "Administre las cuentas bancarias de pagos",
+        "reemplazo": "Manage payment bank accounts"
+    },
+    {
+        "original": "Actualizar contraseña",
+        "reemplazo": "Update password"
+    },
+    {
+        "original": "Actualizando saldos, viaje y liberando conductor...",
+        "reemplazo": "Updating balances, travel and releasing driver..."
+    },
+    {
+        "original": "Activo",
+        "reemplazo": "Asset"
+    },
+    {
+        "original": "Acerca de",
+        "reemplazo": "About"
+    },
+    {
+        "original": "Aceptaste el servicio. Revisa tu agenda para iniciar la ruta de este servicio",
+        "reemplazo": "You accepted the service. Check your agenda to start the route of this service"
+    },
+    {
+        "original": "Aceptar",
+        "reemplazo": "Accept"
+    },
+    {
+        "original": "ACTIVO",
+        "reemplazo": "ACTIVE"
+    },
+    {
+        "original": "ACEPTADO_RESERVA",
+        "reemplazo": "ACCEPTED_RESERVATION"
+    },
+    {
+        "original": "A tiempo",
+        "reemplazo": "On time"
+    },
+    {
+        "original": ". Paradas. Iniciar servicios.",
+        "reemplazo": ". Stop(s). Start service(s)."
+    },
+    {
+        "original": "++Seguridad",
+        "reemplazo": "++Security"
+    },
+    {
+        "original": " publico",
+        "reemplazo": " public"
+    },
+    {
+        "original": " Ver ",
+        "reemplazo": " See "
+    },
+    {
+        "original": " Reservado",
+        "reemplazo": "Reserved"
+    },
+    {
+        "original": " Internet estable",
+        "reemplazo": " stable internet"
+    },
+    {
+        "original": " EJECUTIVO",
+        "reemplazo": " EXECUTIVE"
+    },
+    {
+        "original": " Detener",
+        "reemplazo": "Stop"
+    },
+    {
+        "original": " Archivos",
+        "reemplazo": "Files"
+    },
+    {
+        "original": " ACTIVO",
+        "reemplazo": " ASSET"
+    },
+    {
+        "original": "Recuerde que si no cancela a tiempo se podra generear recargos.",
+        "reemplazo": "Remember that if you do not pay on time, surcharges may be incurred"
+    },
+    {
+        "original": "Firma digital",
+        "reemplazo": "Digital signature"
+    },
+    {
+        "original": "Foto de conductor",
+        "reemplazo": "Driver photo"
+    }, 
+    {
+        "original": "Licencia de conducción",
+        "reemplazo": "Driving license"
+    }, 
+    {
+        "original": "Imagen de licencia frontal",
+        "reemplazo": "Front license image"
+    }, 
+    {
+        "original": "Imagen de licencia trasera",
+        "reemplazo": "Rear license image"
+    }, 
+    {
+        "original": "Foto de conductor y licencia",
+        "reemplazo": "Photo of driver and license"
+    }, 
+    {
+        "original": "Hoja de vida",
+        "reemplazo": "CV"
+    }, 
+    {
+        "original": "Antecedentes judiciales",
+        "reemplazo": "Judicial background"
+    }, 
+    {
+        "original": "Guardar",
+        "reemplazo": "Save"
+    }, 
+    {
+        "original": "Guardando, por favor espere...",
+        "reemplazo": "Saving, please wait..."
+    }, 
+    {
+        "original": "Llegaré en",
+        "reemplazo": "I will arrive in"
+    }, 
+    {
+        "original": "Por favor espere",
+        "reemplazo": "Please wait"
+    }, 
+    {
+        "original": "Viaje aceptado",
+        "reemplazo": "Accepted trip"
+    }, 
+    {
+        "original": "Tu conductor ha llegado",
+        "reemplazo": "Your driver has arrived"
+    }, 
+    {
+        "original": "Ha iniciado tu viaje",
+        "reemplazo": "Your journey has begun"
+    }, 
+    {
+        "original": "Tu viaje ha finalizado",
+        "reemplazo": "Your trip is over"
+    }, 
+    {
+        "original": "ID",
+        "reemplazo": "ID"
+    }, 
+    {
+        "original": "Foto del vehículo",
+        "reemplazo": "Vehicle photo"
+    }, 
+    {
+        "original": "Placa",
+        "reemplazo": "Plate"
+    }, 
+    {
+        "original": "Marca",
+        "reemplazo": "Brand"
+    }, 
+    {
+        "original": "Modelo",
+        "reemplazo": "Model"
+    }, 
+    {
+        "original": "Color",
+        "reemplazo": "Color"
+    }, 
+    {
+        "original": "Foto de SOAT",
+        "reemplazo": "SOATs photo"
+    }, 
+    {
+        "original": "Fecha vencimiento SOAT",
+        "reemplazo": "SOAT expiration date"
+    }, 
+    {
+        "original": "Tarjeta de propiedad",
+        "reemplazo": "Property card"
+    }, 
+    {
+        "original": "Aceptar",
+        "reemplazo": "Accept"
+    }, 
+    {
+        "original": "Guardando, por favor espere...",
+        "reemplazo": "Saving, please wait..."
+    }, 
+    {
+        "original": "Código",
+        "reemplazo": "Code"
+    }, 
+    {
+        "original": "Enviar",
+        "reemplazo": "Send"
+    }, 
+    {
+        "original": "Dirección",
+        "reemplazo": "Address"
+    }, 
+    {
+        "original": "Listo",
+        "reemplazo": "OK"
+    }, 
+    {
+        "original": "Frame",
+        "reemplazo": "Frame"
+    }, 
+    {
+        "original": "Mapa",
+        "reemplazo": "Map"
+    }, 
+    {
+        "original": "ID",
+        "reemplazo": "ID"
+    }, 
+    {
+        "original": "Motivo",
+        "reemplazo": "Reason"
+    },  
+    {
+        "original": "Observaciones",
+        "reemplazo": "Observations"
+    },  
+    {
+        "original": "Cancelar",
+        "reemplazo": "Cancel"
+    }, 
+    {
+        "original": "Servicio cancelado",
+        "reemplazo": "Canceled service"
+    }, 
+    {
+        "original": "Calificar",
+        "reemplazo": "Qualify"
+    }, 
+    {
+        "original": "Valor de tu viaje",
+        "reemplazo": "Value of your trip"
+    }, 
+    {
+        "original": "Nombre como se ve en la tarjeta",
+        "reemplazo": "Name as seen on card"
+    }, 
+    {
+        "original": "Documento",
+        "reemplazo": "Document"
+    }, 
+    {
+        "original": "Correo electrónico",
+        "reemplazo": "Email"
+    }, 
+    {
+        "original": "Banco",
+        "reemplazo": "Bank"
+    }, 
+    {
+        "original": "Número de tarjeta",
+        "reemplazo": "Card number"
+    }, 
+    {
+        "original": "Mes de vto",
+        "reemplazo": "Expiration month"
+    }, 
+    {
+        "original": "CCV",
+        "reemplazo": "CCV"
+    }, 
+    {
+        "original": "País",
+        "reemplazo": "Country"
+    }, 
+    {
+        "original": "Guardar",
+        "reemplazo": "Save"
+    }, 
+    {
+        "original": "Eliminando...",
+        "reemplazo": "Deleting..."
+    }, 
+    {
+        "original": "Cargando visitas...",
+        "reemplazo": "Loading visits..."
+    },  
+    {
+        "original": "Tarjeta de propiedad",
+        "reemplazo": "Property card"
+    }, 
+    {
+        "original": "Numero de licencia",
+        "reemplazo": "License number"
+    }, 
+    {
+        "original": "Imagen de licencia frontal",
+        "reemplazo": "Front license image"
+    }, 
+    {
+        "original": "Imagen de licencia trasera",
+        "reemplazo": "Rear license image"
+    }, 
+    {
+        "original": "Selfie de conductor y licencia",
+        "reemplazo": "Driver and license selfie"
+    }, 
+    {
+        "original": "Hoja de vida",
+        "reemplazo": "CV"
+    }, 
+    {
+        "original": "Antecedentes",
+        "reemplazo": "Background"
+    }, 
+    {
+        "original": "Foto perfil",
+        "reemplazo": "Profile photo"
+    }, 
+    {
+        "original": "Pasados",
+        "reemplazo": "Past"
+    }, 
+    {
+        "original": "Activos",
+        "reemplazo": "Assets"
+    }, 
+    {
+        "original": "Próximos",
+        "reemplazo": "Next"
+    }, 
+    {
+        "original": "Reportar problema",
+        "reemplazo": "Report problem"
+    }, 
+    {
+        "original": "Cancelar",
+        "reemplazo": "Cancel"
+    }, 
+    {
+        "original": "Iniciar",
+        "reemplazo": "Start"
+    }, 
+    {
+        "original": "Cargando...",
+        "reemplazo": "Loading..."
+    }, 
+    {
+        "original": "Debe ingresar el valor del servicio",
+        "reemplazo": "You must enter the value of the service"
+    }, 
+    {
+        "original": "El servicio no está disponible",
+        "reemplazo": "The service is not available"
+    }, 
+    {
+        "original": "Estás lejos del punto de encuentro para iniciar el viaje",
+        "reemplazo": "You are far from the meeting point to start the trip"
+    }, 
+    {
+        "original": "Forma de pago actualizada correctamente",
+        "reemplazo": "Payment method updated correctly"
+    }, 
+    {
+        "original": "El usuario ha cancelado el servicio",
+        "reemplazo": "The user has canceled the service"
+    }, 
+    {
+        "original": "Vehículo guardado correctamente",
+        "reemplazo": "Vehicle stored correctly"
+    }, 
+    {
+        "original": "El código no existe o ya fue redimido",
+        "reemplazo": "The code does not exist or has already been redeemed"
+    }, 
+    {
+        "original": "Servicio cancelado",
+        "reemplazo": "Canceled service"
+    }, 
+    {
+        "original": "Eliminado correctamente",
+        "reemplazo": "Successfully removed"
+    },
+    {
+        "original": "Foto del SOAT",
+        "reemplazo": "SOATs photo"
+    }, 
+    {
+        "original": "Foto",
+        "reemplazo": "Photo"
+    }, 
+    {
+        "original": "Soat",
+        "reemplazo": "Soat"
+    }, 
+    {
+        "original": "Selfi de conductor y licencia",
+        "reemplazo": "Driver and license selfie"
+    },
+    {
+        "original": "Personalizar nombre de lugar",
+        "reemplazo": "Customize place name"
+    }, 
+    {
+        "original": "Editar",
+        "reemplazo": "Edit"
+    }, 
+    {
+        "original": "Agregar tarjeta crédito",
+        "reemplazo": "Add credit card"
+    }, 
+    {
+        "original": "Finalizando",
+        "reemplazo": "Finishing"
+    }, 
+    {
+        "original": "Comentarios",
+        "reemplazo": "Comments"
+    }, 
+    {
+        "original": "Redimir",
+        "reemplazo": "To redeem"
+    }, 
+    {
+        "original": "Cargando ...",
+        "reemplazo": "Loading ..."
+    }, 
+    {
+        "original": "Calificación de viaje",
+        "reemplazo": "Trip rating"
+    }, 
+    {
+        "original": "Price",
+        "reemplazo": "Price"
+    }, 
+    {
+        "original": "Cuotas",
+        "reemplazo": "Fees"
+    }, 
+    {
+        "original": "Nombre",
+        "reemplazo": "Name"
+    }, 
+    {
+        "original": "Apellido",
+        "reemplazo": "Last name"
+    }, 
+    {
+        "original": "Tipo Documento",
+        "reemplazo": "Document Type"
+    }, 
+    {
+        "original": "Mes",
+        "reemplazo": "Month"
+    }, 
+    {
+        "original": "Nuevo",
+        "reemplazo": "New"
+    }, 
+    {
+        "original": "De",
+        "reemplazo": "From"
+    }, 
+    {
+        "original": "Hasta",
+        "reemplazo": "To"
+    }, 
+    {
+        "original": "Reportar un problema",
+        "reemplazo": "Report a problem"
+    }, 
+    {
+        "original": "Cancelar servicio",
+        "reemplazo": "Cancel service"
+    }, 
+    {
+        "original": "El usuario no existe o está inactivo",
+        "reemplazo": "The user does not exist or is inactive"
+    }, 
+    {
+        "original": "Ingrese el número de mascotas a transportar",
+        "reemplazo": "Enter the number of pets to transport"
+    }, 
+    {
+        "original": "Por favor seleccione un servicio",
+        "reemplazo": "Please select a service"
+    }, 
+    {
+        "original": "Faltan algunos campos por completar",
+        "reemplazo": "Some fields are missing to complete"
+    }, 
+    {
+        "original": "El conductor ha cancelado el servicio",
+        "reemplazo": "The driver has canceled the service"
+    }, 
+    {
+        "original": "Enviado correctamente",
+        "reemplazo": "Submitted successfully"
+    }, 
+    {
+        "original": "Seleccione un motivo de cancelación",
+        "reemplazo": "Select a cancellation reason"
+    }, 
+    {
+        "original": "Revise los campos obligatorios",
+        "reemplazo": "Review required fields"
+    }, 
+    {
+        "original": "Debe seleccionar un banco",
+        "reemplazo": "You must select a bank"
+    }, 
+    {
+        "original": "Creada correctamente",
+        "reemplazo": "Successfully created"
+    },
+    {
+        "original": "Buscando...",
+        "reemplazo": "Searching..."
+    }, 
+    {
+        "original": "Información",
+        "reemplazo": "Information"
+    }, 
+    {
+        "original": "Un momento, estamos actualizando datos de sesión...",
+        "reemplazo": "Wait, we re updating session data..."
+    }, 
+    {
+        "original": "Por favor espere...",
+        "reemplazo": "Please wait..."
+    }, 
+    {
+        "original": "Foto de perfil",
+        "reemplazo": "Profile picture"
+    }, 
+    {
+        "original": "Seleccionar foto de perfil",
+        "reemplazo": "Select profile photo"
+    }, 
+    {
+        "original": "Seleccionar foto de perfil",
+        "reemplazo": "Select profile photo"
+    }, 
+    {
+        "original": "Datos Principales",
+        "reemplazo": "Main data"
+    }, 
+    {
+        "original": "Correo",
+        "reemplazo": "Email"
+    }, 
+    {
+        "original": "Apellidos",
+        "reemplazo": "Surnames"
+    }, 
+    {
+        "original": "Tipo de documento",
+        "reemplazo": "Document type"
+    }, 
+    {
+        "original": "Documento de identificación",
+        "reemplazo": "Identification document"
+    }, 
+    {
+        "original": "Género",
+        "reemplazo": "Gender"
+    }, 
+    {
+        "original": "Fecha de nacimiento",
+        "reemplazo": "Birthdate"
+    }, 
+    {
+        "original": "Correo de Gmail",
+        "reemplazo": "Gmail mail"
+    }, 
+    {
+        "original": "Adjunto opcional",
+        "reemplazo": "Optional attachment"
+    }, 
+    {
+        "original": "Ubicación",
+        "reemplazo": "Location"
+    }, 
+    {
+        "original": "Departamento",
+        "reemplazo": "Departament"
+    }, 
+    {
+        "original": "Ciudad",
+        "reemplazo": "City"
+    }, 
+    {
+        "original": "Por favor espere...",
+        "reemplazo": "Please wait..."
+    }, 
+    {
+        "original": "Clave nueva",
+        "reemplazo": "New password"
+    }, 
+    {
+        "original": "Repita su clave nueva",
+        "reemplazo": "Repeat your new password"
+    }, 
+    {
+        "original": "Número de cuenta",
+        "reemplazo": "Número de cuenta"
+    }, 
+    {
+        "original": "Ingrese el número",
+        "reemplazo": "Enter the number"
+    }, 
+    {
+        "original": "Nombre Banco",
+        "reemplazo": "Bank Name"
+    }, 
+    {
+        "original": "Tipo de cuenta",
+        "reemplazo": "Account type"
+    }, 
+    {
+        "original": "saldo",
+        "reemplazo": "balance"
+    }, 
+    {
+        "original": "Mi saldo",
+        "reemplazo": "My balance"
+    }, 
+    {
+        "original": "Valor mínimo a retirar",
+        "reemplazo": "Minimum value to withdraw"
+    }, 
+    {
+        "original": "Valor",
+        "reemplazo": "Value"
+    }, 
+    {
+        "original": "Ingrese el valor",
+        "reemplazo": "Enter the value"
+    }, 
+    {
+        "original": "Id",
+        "reemplazo": "Id"
+    }, 
+    {
+        "original": "Comprobante de pago",
+        "reemplazo": "Proof of payment"
+    }, 
+    {
+        "original": "saldo",
+        "reemplazo": "balance"
+    }, 
+    {
+        "original": "Mi saldo",
+        "reemplazo": "My balance"
+    }, 
+    {
+        "original": "Valor",
+        "reemplazo": "Value"
+    }, 
+    {
+        "original": "Fecha de pago",
+        "reemplazo": "Payment date"
+    }, 
+    {
+        "original": "Comprobante de pago",
+        "reemplazo": "Proof of payment"
+    }, 
+    {
+        "original": "Por favor espere...",
+        "reemplazo": "Please wait..."
+    }, 
+    {
+        "original": "Rótulos de fila",
+        "reemplazo": "Row labels"
+    }, 
+    {
+        "original": "Página",
+        "reemplazo": "Page"
+    }, 
+    {
+        "original": "Terminal",
+        "reemplazo": "Headquarter"
+    }, 
+    {
+        "original": "Empresa",
+        "reemplazo": "Company"
+    }, 
+    {
+        "original": "Perfil",
+        "reemplazo": "Profile"
+    }, 
+    {
+        "original": "Perfil crear cuenta",
+        "reemplazo": "Profile create account"
+    }, 
+    {
+        "original": "Foto de perfil",
+        "reemplazo": "Profile picture"
+    }, 
+    {
+        "original": "Registrarme",
+        "reemplazo": "Register"
+    }, 
+    {
+        "original": "Regístrate con Facebook",
+        "reemplazo": "Sign up with Facebook"
+    }, 
+    {
+        "original": "57",
+        "reemplazo": "1"
+    }, 
+    {
+        "original": "Número móvil",
+        "reemplazo": "Cellphone number"
+    }, 
+    {
+        "original": "Ingresa tu número móvil",
+        "reemplazo": "Enter your mobile number"
+    }, 
+    {
+        "original": "Siguiente",
+        "reemplazo": "Next"
+    }, 
+    {
+        "original": "Salir",
+        "reemplazo": "Go out"
+    }, 
+    {
+        "original": "Código de 6 dígitos",
+        "reemplazo": "6 digit code"
+    }, 
+    {
+        "original": "Reenviar código",
+        "reemplazo": "Resend code"
+    }, 
+    {
+        "original": "Ir la app",
+        "reemplazo": "Go the app"
+    }, 
+    {
+        "original": "Perfil tipo",
+        "reemplazo": "Profile type"
+    }, 
+    {
+        "original": "Código de seguridad",
+        "reemplazo": "Security code"
+    }, 
+    {
+        "original": "Iniciar sesión",
+        "reemplazo": "Log in"
+    }, 
+    {
+        "original": "Continuar con Facebook",
+        "reemplazo": "Continue with Facebook"
+    }, 
+    {
+        "original": "Generar código",
+        "reemplazo": "Generate code"
+    }, 
+    {
+        "original": "Crear cuenta",
+        "reemplazo": "Create Account"
+    }, 
+    {
+        "original": "Ingrese su correo",
+        "reemplazo": "Enter your email"
+    }, 
+    {
+        "original": "Solicitar código",
+        "reemplazo": "Request code"
+    }, 
+    {
+        "original": "Ingresar código",
+        "reemplazo": "Enter code"
+    }, 
+    {
+        "original": "Ingrese el código",
+        "reemplazo": "Enter the code"
+    }, 
+    {
+        "original": "Enviar código",
+        "reemplazo": "Send code"
+    }, 
+    {
+        "original": "Volver",
+        "reemplazo": "Return"
+    }, 
+    {
+        "original": "Usuario",
+        "reemplazo": "User"
+    }, 
+    {
+        "original": "Mueva el mapa o digite una dirección para seleccionar la ubicación",
+        "reemplazo": "Move the map or enter an address to select the location"
+    }, 
+    {
+        "original": "Mueva el mapa o digite una dirección",
+        "reemplazo": "Move the map or enter an address"
+    }, 
+    {
+        "original": "Por favor espere...",
+        "reemplazo": "Please wait..."
+    }, 
+    {
+        "original": "Maestro versiones",
+        "reemplazo": "Master versions"
+    }, 
+    {
+        "original": "Updater NwMaker",
+        "reemplazo": "Updater NwMaker"
+    }, 
+    {
+        "original": "Simular error en cliente",
+        "reemplazo": "Simulate error in client"
+    }, 
+    {
+        "original": "Simular error en server",
+        "reemplazo": "Simulate server error"
+    }, 
+    {
+        "original": "Examples fields forms",
+        "reemplazo": "Examples fields forms"
+    }, 
+    {
+        "original": "Examples list",
+        "reemplazo": "Examples list"
+    }, 
+    {
+        "original": "Examples list columns",
+        "reemplazo": "Examples list columns"
+    }, 
+    {
+        "original": "Print Bluetooth",
+        "reemplazo": "Print Bluetooth"
+    }, 
+    {
+        "original": "Test notification",
+        "reemplazo": "Test notification"
+    }, 
+    {
+        "original": "Mostrar consola",
+        "reemplazo": "Show console"
+    }, 
+    {
+        "original": "Mostrar eventos en consola",
+        "reemplazo": "Show events in console"
+    }, 
+    {
+        "original": "Dominio SRV",
+        "reemplazo": "SRV Domain"
+    }, 
+    {
+        "original": "Testing",
+        "reemplazo": "Testing"
+    }, 
+    {
+        "original": "Imagen",
+        "reemplazo": "Image"
+    }, 
+    {
+        "original": "Abrir",
+        "reemplazo": "Open"
+    }, 
+    {
+        "original": "Buscar",
+        "reemplazo": "Search"
+    }, 
+    {
+        "original": "Seleccionar",
+        "reemplazo": "Select"
+    }, 
+    {
+        "original": "Versión",
+        "reemplazo": "Version"
+    }, 
+    {
+        "original": "Sistema operativo",
+        "reemplazo": "OS"
+    }, 
+    {
+        "original": "Descripción",
+        "reemplazo": "Description"
+    }, 
+    {
+        "original": "Fecha",
+        "reemplazo": "Date"
+    }, 
+    {
+        "original": "Texto con Mask patter",
+        "reemplazo": "Text with Mask patter"
+    }, 
+    {
+        "original": "Money",
+        "reemplazo": "Money"
+    }, 
+    {
+        "original": "Uploader by frame",
+        "reemplazo": "Uploader by frame"
+    }, 
+    {
+        "original": "field uploader",
+        "reemplazo": "field uploader"
+    }, 
+    {
+        "original": "field selectBox",
+        "reemplazo": "field selectBox"
+    }, 
+    {
+        "original": "Field button",
+        "reemplazo": "Field button"
+    }, 
+    {
+        "original": "Field checkBox",
+        "reemplazo": "Field checkBox"
+    }, 
+    {
+        "original": "field label, el de abajo es switch",
+        "reemplazo": "field label, the one below is switch"
+    }, 
+    {
+        "original": "field switch",
+        "reemplazo": "field switch"
+    }, 
+    {
+        "original": "Inhabilitar todo",
+        "reemplazo": "Disable all"
+    }, 
+    {
+        "original": "Field dateField",
+        "reemplazo": "Field dateField"
+    }, 
+    {
+        "original": "Field dateTime",
+        "reemplazo": "Field dateTime"
+    }, 
+    {
+        "original": "Field time",
+        "reemplazo": "Field time"
+    }, 
+    {
+        "original": "Field numeric",
+        "reemplazo": "Field numeric"
+    }, 
+    {
+        "original": "Visitantes",
+        "reemplazo": "Visitors"
+    }, 
+    {
+        "original": "Dialog",
+        "reemplazo": "Dialog"
+    }, 
+    {
+        "original": "User",
+        "reemplazo": "User"
+    }, 
+    {
+        "original": "Token",
+        "reemplazo": "Token"
+    }, 
+    {
+        "original": "Title",
+        "reemplazo": "Title"
+    }, 
+    {
+        "original": "Body",
+        "reemplazo": "Body"
+    }, 
+    {
+        "original": "CallBack",
+        "reemplazo": "CallBack"
+    }, 
+    {
+        "original": "Send",
+        "reemplazo": "Send"
+    }, 
+    {
+        "original": "Firma",
+        "reemplazo": "Signature"
+    }, 
+    {
+        "original": "Limpiar",
+        "reemplazo": "Clean"
+    }, 
+    {
+        "original": "Imprimiendo...",
+        "reemplazo": "Printing..."
+    }, 
+    {
+        "original": "Dispositivos",
+        "reemplazo": "Devices"
+    }, 
+    {
+        "original": "Busca tu archivo a subir",
+        "reemplazo": "Find your file to upload"
+    }, 
+    {
+        "original": "Sonido en notificaciones de escritorio",
+        "reemplazo": "Sound in desktop notifications"
+    }, 
+    {
+        "original": "Volumen sonido en notificaciones de escritorio",
+        "reemplazo": "Sound volume in desktop notifications"
+    }, 
+    {
+        "original": "Mostrar notificaciones de escritorio",
+        "reemplazo": "Show desktop notifications"
+    }, 
+    {
+        "original": "Zoom",
+        "reemplazo": "Zoom"
+    }, 
+    {
+        "original": "Default Page Transition",
+        "reemplazo": "Default Page Transition"
+    }, 
+    {
+        "original": "Tema",
+        "reemplazo": "Theme"
+    }, 
+    {
+        "original": "No puede retirar valores negativos",
+        "reemplazo": "You cannot remove negative values"
+    }, 
+    {
+        "original": "No tienes saldo a pagar",
+        "reemplazo": "You have no balance to pay"
+    }, 
+    {
+        "original": "No puedes pagar valores negativos",
+        "reemplazo": "You cannot pay negative values"
+    }, 
+    {
+        "original": "No existe el correo de red social del usuario",
+        "reemplazo": "The users social network email does not exist"
+    }, 
+    {
+        "original": "El plugin launchnavigator no está instalado",
+        "reemplazo": "The launchnavigator plugin is not installed"
+    }, 
+    {
+        "original": "El monto debe ser un número entero mayor a 0",
+        "reemplazo": "The amount must be an integer greater than 0"
+    }, 
+    {
+        "original": "No hay configuración de claves activas payWompi",
+        "reemplazo": "No active key configuration payWompi"
+    }, 
+    {
+        "original": "Hola esto es un dialog normal",
+        "reemplazo": "Hello, this is a normal dialog"
+    }, 
+    {
+        "original": "Hola esto es un nw_dialog",
+        "reemplazo": "Hello this is a nw_dialog"
+    }, 
+    {
+        "original": "Debe seleccionar un motivo de cancelación",
+        "reemplazo": "You must select a cancellation reason"
+    }, 
+    {
+        "original": "Imprimir por bluetooth no está disponible para versión web",
+        "reemplazo": "Print via Bluetooth is not available for web version"
+    }, 
+    {
+        "original": "Enviado correctamente a impresora",
+        "reemplazo": "Successfully sent to printer"
+    }, 
+    {
+        "original": "En construcción",
+        "reemplazo": "In construction"
+    }, 
+    {
+        "original": "Debe instalar el complemento fileChooser",
+        "reemplazo": "You must install the fileChooser plugin"
+    }, 
+    {
+        "original": "No hay configuración de claves activas",
+        "reemplazo": "No active key configuration"
+    },
+    {
+        "original": "Faltan caracteres, mínimo",
+        "reemplazo": "Missing characters, minimum"
+    }, 
+    {
+        "original": "Requerido",
+        "reemplazo": "Required"
+    }, 
+    {
+        "original": "Idioma",
+        "reemplazo": "Language"
+    }, 
+    {
+        "original": "Seguridad",
+        "reemplazo": "Security"
+    }, 
+    {
+        "original": "Vencimiento de recarga",
+        "reemplazo": "Recharge expiration"
+    }, 
+    {
+        "original": "Su recarga vence el",
+        "reemplazo": "Your recharge expires on"
+    }, 
+    {
+        "original": "Fecha última recarga",
+        "reemplazo": "Last recharge date"
+    }, 
+    {
+        "original": "Total recargas",
+        "reemplazo": "Total recharges"
+    }, 
+    {
+        "original": "Retirar fondos",
+        "reemplazo": "Withdraw funds"
+    }, 
+    {
+        "original": "Solicite retiro de fondos",
+        "reemplazo": "Request withdrawal of funds"
+    }, 
+    {
+        "original": "Histórico de retiros",
+        "reemplazo": "Withdrawal history"
+    }, 
+    {
+        "original": "Consulte retiros pasados o en canje",
+        "reemplazo": "Check past withdrawals or redemptions"
+    }, 
+    {
+        "original": "Cerrar sesión",
+        "reemplazo": "Sign off"
+    }, 
+    {
+        "original": "Histórico retiros",
+        "reemplazo": "Historical withdrawals"
+    }, 
+    {
+        "original": "Descargar",
+        "reemplazo": "Discharge"
+    }, 
+    {
+        "original": "Abrir en nueva ventana",
+        "reemplazo": "Open in new window"
+    }, 
+    {
+        "original": "Hemos encontrado la versión",
+        "reemplazo": "We have found the version"
+    }, 
+    {
+        "original": "su versión actual es la",
+        "reemplazo": "Its current version is"
+    }, 
+    {
+        "original": "Espera un momento, estamos actualizando la aplicación",
+        "reemplazo": "Wait a moment, we are updating the application"
+    }, 
+    {
+        "original": "Sin versión nueva de caché",
+        "reemplazo": "No new cache version"
+    }, 
+    {
+        "original": "El código de verificación se ha enviado al",
+        "reemplazo": "The verification code has been sent to"
+    }, 
+    {
+        "original": "Entendido",
+        "reemplazo": "Understood"
+    }, 
+    {
+        "original": "Domingo",
+        "reemplazo": "Sunday"
+    }, 
+    {
+        "original": "Lunes",
+        "reemplazo": "Monday"
+    }, 
+    {
+        "original": "Martes",
+        "reemplazo": "Tuesday"
+    }, 
+    {
+        "original": "Miércoles",
+        "reemplazo": "Wednesday"
+    }, 
+    {
+        "original": "Jueves",
+        "reemplazo": "Thursday"
+    }, 
+    {
+        "original": "Viernes",
+        "reemplazo": "Friday"
+    }, 
+    {
+        "original": "Sábado",
+        "reemplazo": "Saturday"
+    }, 
+    {
+        "original": "a las",
+        "reemplazo": "at"
+    }, 
+    {
+        "original": "del",
+        "reemplazo": "from"
+    }, 
+    {
+        "original": "Enero",
+        "reemplazo": "January"
+    }, 
+    {
+        "original": "Febrero",
+        "reemplazo": "February"
+    }, 
+    {
+        "original": "Marzo",
+        "reemplazo": "March"
+    }, 
+    {
+        "original": "Abril",
+        "reemplazo": "April"
+    }, 
+    {
+        "original": "Mayo",
+        "reemplazo": "May"
+    }, 
+    {
+        "original": "Junio",
+        "reemplazo": "June"
+    }, 
+    {
+        "original": "Julio",
+        "reemplazo": "July"
+    }, 
+    {
+        "original": "Agosto",
+        "reemplazo": "August"
+    }, 
+    {
+        "original": "Septiembre",
+        "reemplazo": "September"
+    }, 
+    {
+        "original": "Octubre",
+        "reemplazo": "October"
+    }, 
+    {
+        "original": "Noviembre",
+        "reemplazo": "November"
+    }, 
+    {
+        "original": "Diciembre",
+        "reemplazo": "December"
+    }, 
+    {
+        "original": "Ingrese el código que fue enviado a su correo registrado",
+        "reemplazo": "Enter the code that was sent to your registered email"
+    }, 
+    {
+        "original": "Examinar",
+        "reemplazo": "Examine"
+    }, 
+    {
+        "original": "No tiene actualizaciones",
+        "reemplazo": "It has no updates"
+    }, 
+    {
+        "original": "Nueva actualización disponible",
+        "reemplazo": "New update available"
+    }, 
+    {
+        "original": "Seleccione el idioma",
+        "reemplazo": "Select language"
+    },
+    {
+        "original": " -  VITD: ",
+        "reemplazo": ""
+    }, 
+    {
+        "original": "<p style='text-align: center;'>Firma digital</p>",
+        "reemplazo": "<p style='text-align: center;'>Digital signature</p>"
+    }, 
+    {
+        "original": "Seleccione",
+        "reemplazo": "Select"
+    },
+    {
+        "original": "Cargando precios",
+        "reemplazo": "Loading prices"
+    }, 
+    {
+        "original": "Nuevo mensaje de ",
+        "reemplazo": "New message from"
+    }, 
+    {
+        "original": "Comentario",
+        "reemplazo": "Comment"
+    },
+    {
+        "original": "Servicio cancelado,  el coste de cancelación es de  + data.recargo +  COP.",
+        "reemplazo": "Canceled service, the cancellation cost is + data.surcharge + COP."
+    }, 
+    {
+        "original": "No ha configurado la forma de pago. Consulte con el administrador del sistema",
+        "reemplazo": "You have not configured the payment method. Check with your system administrator"
+    }, 
+    {
+        "original": "Lo sentimos, no tenemos cobertura para el sitio indicado",
+        "reemplazo": "Sorry, we do not have coverage for the indicated site"
+    }, 
+    {
+        "original": "Lo sentimos, no hay cobertura para tu zona",
+        "reemplazo": "Sorry, there is no coverage for your area"
+    }, 
+    {
+        "original": "La ciudad de origen está vacía, verifique por favor la dirección ingresada.",
+        "reemplazo": "The city of origin is empty, please verify the address entered."
+    }, 
+    {
+        "original": "La ciudad o municipio de destino está vacía, verifique por favor la dirección ingresada.",
+        "reemplazo": "The destination city or municipality is empty, please verify the address entered."
+    },
+    {
+        "original": "Volver a intentar",
+        "reemplazo": "Try again"
+    },
+    {
+        "original": "Cancelar viaje",
+        "reemplazo": "Cancel trip"
+    },
+    {
+        "original": "<div class=det_cant_mas>Ingresa el número de mascotas<br></div>",
+        "reemplazo": "<div class=det_cant_mas>Enter the number of pets<br></div>"
+    },
+    {
+        "original": "Error inesperado, ",
+        "reemplazo": "Unexpected error, "
+    },
+    {
+        "original": "Dejando offline",
+        "reemplazo": "leaving offline"
+    }, 
+    {
+        "original": "Nuevo mensaje de ",
+        "reemplazo": "New message from "
+    }, 
+    {
+        "original": "Activado",
+        "reemplazo": "Activated"
+    }, 
+    {
+        "original": "De",
+        "reemplazo": "Of"
+    }, 
+    {
+        "original": "Hasta",
+        "reemplazo": "Until"
+    }, 
+    {
+        "original": "Puntaje",
+        "reemplazo": "Score"
+    }, 
+    {
+        "original": "Comentario",
+        "reemplazo": "Comment"
+    }, 
+    {
+        "original": "Por favor active el vehículo con el que se va a trabajar.",
+        "reemplazo": "Please activate the vehicle you are going to work with."
+    }, 
+    {
+        "original": "Aceptaste el servicio. Revisa tu agenda para iniciar la ruta de este servicio",
+        "reemplazo": "You accepted the service. Check your agenda to start the route of this service"
+    }, 
+    {
+        "original": "<strong>¡Código redimido!</strong><br /><br />Tienes  + r.valor +  en tu saldo para próximos viajes",
+        "reemplazo": "<strong>Code redeemed!</strong><br /><br />You have + r.valor + in your balance for future trips"
+    }, 
+    {
+        "original": "Activado correctamente",
+        "reemplazo": "Successfully activated"
+    }, 
+    {
+        "original": "Por favor active el vehículo con el que se va a trabajar.",
+        "reemplazo": "Please activate the vehicle you are going to work with."
+    }, 
+    {
+        "original": "Aceptaste el servicio. Revisa tu agenda para iniciar la ruta de este servicio",
+        "reemplazo": "You accepted the service. Check your agenda to start the route of this service"
+    },
+    {
+        "original": "No Maletas",
+        "reemplazo": "No Suitcases"
+    }, 
+    {
+        "original": "No Personas",
+        "reemplazo": "No people"
+    }, 
+    {
+        "original": "Centro costos",
+        "reemplazo": "Cost center"
+    }, 
+    {
+        "original": "No hemos podido ubicar tu ciudad",
+        "reemplazo": "We have not been able to locate your city"
+    }, 
+    {
+        "original": "Busca tu ciudad actual",
+        "reemplazo": "Search your current city"
+    }, 
+    {
+        "original": "Digita tu ciudad",
+        "reemplazo": "Enter your city"
+    }, 
+    {
+        "original": "Detalle servicio",
+        "reemplazo": "Service detail"
+    }, 
+    {
+        "original": "Número Auxiliares",
+        "reemplazo": "Auxiliary Number"
+    }, 
+    {
+        "original": "Observaciones generales del servicio",
+        "reemplazo": "General observations of the service"
+    }, 
+    {
+        "original": "Datos Recogida",
+        "reemplazo": "Data Collection"
+    }, 
+    {
+        "original": "Contacto",
+        "reemplazo": "Contact"
+    }, 
+    {
+        "original": "Teléfono",
+        "reemplazo": "Phone"
+    }, 
+    {
+        "original": "Datos Entrega",
+        "reemplazo": "Delivery Data"
+    }, 
+    {
+        "original": "Datos mercancía",
+        "reemplazo": "Merchandise data"
+    }, 
+    {
+        "original": "Descripción de la carga que transportas",
+        "reemplazo": "Description of the cargo you transport"
+    }, 
+    {
+        "original": "Cantidad",
+        "reemplazo": "Amount"
+    }, 
+    {
+        "original": "Volumen",
+        "reemplazo": "Volume"
+    }, 
+    {
+        "original": "Peso",
+        "reemplazo": "Weight"
+    }, 
+    {
+        "original": "Valor Declarado",
+        "reemplazo": "Declared Value"
+    }, 
+    {
+        "original": "Detalle adicional",
+        "reemplazo": "Additional detail"
+    }, 
+    {
+        "original": "Salida Periferia",
+        "reemplazo": "Periphery Output"
+    }, 
+    {
+        "original": "Despacho Nacional",
+        "reemplazo": "National Office"
+    }, 
+    {
+        "original": "Retorno",
+        "reemplazo": "Return"
+    }, 
+    {
+        "original": "Cargue",
+        "reemplazo": "Load"
+    }, 
+    {
+        "original": "Descargue",
+        "reemplazo": "Download"
+    }, 
+    {
+        "original": "Confirma el valor del servicio",
+        "reemplazo": "Confirm the value of the service"
+    }, 
+    {
+        "original": "Calificación",
+        "reemplazo": "Qualification"
+    }, 
+    {
+        "original": "Abordó",
+        "reemplazo": "On board"
+    }, 
+    {
+        "original": "Conductor user",
+        "reemplazo": "Driver user"
+    }, 
+    {
+        "original": "Conductor",
+        "reemplazo": "Driver"
+    }, 
+    {
+        "original": "Conductor foto",
+        "reemplazo": "Driver photo"
+    }, 
+    {
+        "original": "Próximos Reservas",
+        "reemplazo": "Upcoming Reservations"
+    }, 
+    {
+        "original": "Activos En ruta",
+        "reemplazo": "Assets On route"
+    }, 
+    {
+        "original": "Pasados Histórico",
+        "reemplazo": "Historical Pasts"
+    }, 
+    {
+        "original": "Crear parada",
+        "reemplazo": "Create stop"
+    }, 
+    {
+        "original": "index_arrayParadas",
+        "reemplazo": "index_arrayParadas"
+    }, 
+    {
+        "original": "index_arrayParadas",
+        "reemplazo": ""
+    }, 
+    {
+        "original": "Latitud",
+        "reemplazo": "Latitude"
+    }, 
+    {
+        "original": "Longitud",
+        "reemplazo": "Length"
+    }, 
+    {
+        "original": "Se guardo correctamente.",
+        "reemplazo": "It was saved correctly."
+    }, 
+    {
+        "original": "Finalizar",
+        "reemplazo": "Finish"
+    }, 
+    {
+        "original": "<strong>¡Código redimido!</strong>",
+        "reemplazo": "<strong>Code redeemed!</strong>"
+    }, 
+    {
+        "original": "La oferta ya no está disponible",
+        "reemplazo": "Offer is no longer available"
+    }, 
+    {
+        "original": "Ingresa la dirección de partida",
+        "reemplazo": "Enter the departure address"
+    }, 
+    {
+        "original": "Debe completar las direcciones de partida y/o destino",
+        "reemplazo": "You must complete the departure and/or destination addresses"
+    }, 
+    {
+        "original": "El servicio no tiene configurado un pasajero",
+        "reemplazo": "The service does not have a passenger configured"
+    }, 
+    {
+        "original": "La fecha no puede menor a la actual",
+        "reemplazo": "The date cannot be less than the current date"
+    }, 
+    {
+        "original": "Se ha reprogramado correctamente.",
+        "reemplazo": "It has been successfully rescheduled."
+    }, 
+    {
+        "original": "Parada cancelada correctamente.",
+        "reemplazo": "Stop canceled correctly."
+    }, 
+    {
+        "original": "Servicio cancelado,  el coste de cancelación es de  + data.recargo +  ",
+        "reemplazo": "Canceled service, the cancellation cost is + data.recargo +"
+    }, 
+    {
+        "original": "El servicio no existe",
+        "reemplazo": "The service does not exist"
+    }, 
+    {
+        "original": "Un momento, la API no ha cargado",
+        "reemplazo": "Wait, the API hasn't loaded"
+    }, 
+    {
+        "original": "Debe completar los datos de dirección de origen y destino",
+        "reemplazo": "You must complete the source and destination address data"
+    }, 
+    {
+        "original": "Parada cancelada correctamente.",
+        "reemplazo": "Stop canceled correctly."
+    }, 
+    {
+        "original": "Parada creada correctamente.",
+        "reemplazo": "Stop created successfully."
+    }, 
+    {
+        "original": "Parada  modificada correctamente.",
+        "reemplazo": "Correctly modified stop."
+    }, 
+    {
+        "original": "Parada eliminada correctamente.",
+        "reemplazo": "Stop removed successfully."
+    }, 
+    {
+        "original": "Se guardo correctamente.",
+        "reemplazo": "It was saved correctly."
+    }, 
+    {
+        "original": "La oferta ya no está disponible",
+        "reemplazo": "Offer is no longer available"
+    }, 
+    {
+        "original": "Ingresa la dirección de partida",
+        "reemplazo": "Enter the departure address"
+    }, 
+    {
+        "original": "Debe completar las direcciones de partida y/o destino",
+        "reemplazo": "You must complete the departure and/or destination addresses"
+    }, 
+    {
+        "original": "El servicio no tiene configurado un pasajero",
+        "reemplazo": "The service does not have a passenger configured"
+    }, 
+    {
+        "original": "La fecha no puede menor a la actual",
+        "reemplazo": "The date cannot be less than the current date"
+    }, 
+    {
+        "original": "Se ha reprogramado correctamente.",
+        "reemplazo": "It has been successfully rescheduled."
+    }, 
+    {
+        "original": "Parada cancelada correctamente.",
+        "reemplazo": "Stop canceled correctly."
+    }, 
+    {
+        "original": "El servicio no existe",
+        "reemplazo": "The service does not exist"
+    }, 
+    {
+        "original": "Un momento, la API no ha cargado",
+        "reemplazo": "Wait, the API hasn't loaded"
+    }, 
+    {
+        "original": "Debe completar los datos de dirección de origen y destino",
+        "reemplazo": "You must complete the source and destination address data"
+    }, 
+    {
+        "original": "Parada cancelada correctamente.",
+        "reemplazo": "Stop canceled correctly."
+    }, 
+    {
+        "original": "Parada creada correctamente.",
+        "reemplazo": "Stop created successfully."
+    }, 
+    {
+        "original": "Parada  modificada correctamente.",
+        "reemplazo": "Correctly modified stop."
+    }, 
+    {
+        "original": "Parada eliminada correctamente.",
+        "reemplazo": "Stop removed successfully."
+    }, 
+    {
+        "original": "Inmediato",
+        "reemplazo": "Immediate"
+    }, 
+    {
+        "original": "Programado",
+        "reemplazo": "Programmed"
+    }, 
+    {
+        "original": "Hola",
+        "reemplazo": "Hi"
+    }, 
+    {
+        "original": "Minutos de espera máximo",
+        "reemplazo": "Maximum waiting minutes"
+    }, 
+    {
+        "original": "Buscando",
+        "reemplazo": "Searching"
+    }, 
+    {
+        "original": "Ingrese datos del servicio",
+        "reemplazo": "Enter service data"
+    }, 
+    {
+        "original": "Servicio programado",
+        "reemplazo": "Scheduled service"
+    }, 
+    {
+        "original": "fecha",
+        "reemplazo": "date"
+    }, 
+    {
+        "original": "Valor base",
+        "reemplazo": "Base value"
+    }, 
+    {
+        "original": "Peajes",
+        "reemplazo": "Tolls"
+    }, 
+    {
+        "original": "Otros recargos",
+        "reemplazo": "Other surcharges"
+    }, 
+    {
+        "original": "Descuento",
+        "reemplazo": "Discount"
+    }, 
+    {
+        "original": "Valor mínimo",
+        "reemplazo": "Minimum value"
+    }, 
+    {
+        "original": "Impuestos",
+        "reemplazo": "Taxes"
+    }, 
+    {
+        "original": "Auxs de carga",
+        "reemplazo": "Charging aux"
+    }, 
+    {
+        "original": "Origen y destino",
+        "reemplazo": "Origin and destination"
+    }, 
+    {
+        "original": "Dirección origen",
+        "reemplazo": "Origin address"
+    }, 
+    {
+        "original": "Tu conductor está en camino",
+        "reemplazo": "Your driver is on the way"
+    }, 
+    {
+        "original": "Pasajero / Parada",
+        "reemplazo": "Passenger / Stop"
+    }, 
+    {
+        "original": "Tiempo estimado",
+        "reemplazo": "Estimated time"
+    }, 
+    {
+        "original": "Seleccione el motivo de la cancelación",
+        "reemplazo": "Select the reason for cancellation"
+    }, 
+    {
+        "original": "Servicio: ",
+        "reemplazo": "Service:"
+    }, 
+    {
+        "original": "Parada / Pasajero: ",
+        "reemplazo": "Stop / Passenger:"
+    }, 
+    {
+        "original": "Casa",
+        "reemplazo": "Home"
+    }, 
+    {
+        "original": "Trabajo",
+        "reemplazo": "Job"
+    }, 
+    {
+        "original": "Inmediato",
+        "reemplazo": "Immediate"
+    }, 
+    {
+        "original": "Programado",
+        "reemplazo": "Programmed"
+    }, 
+    {
+        "original": "Buscando conductor, por favor espera",
+        "reemplazo": "Looking for driver, please wait"
+    }, 
+    {
+        "original": "Minutos de espera máximo",
+        "reemplazo": "Maximum waiting minutes"
+    }, 
+    {
+        "original": "Buscando",
+        "reemplazo": "Searching"
+    }, 
+    {
+        "original": "Ingrese datos del servicio",
+        "reemplazo": "Enter service data"
+    }, 
+    {
+        "original": "Servicio programado",
+        "reemplazo": "Scheduled service"
+    }, 
+    {
+        "original": "Peajes",
+        "reemplazo": "Tolls"
+    }, 
+    {
+        "original": "Otros recargos",
+        "reemplazo": "Other surcharges"
+    }, 
+    {
+        "original": "Descuento",
+        "reemplazo": "Discount"
+    }, 
+    {
+        "original": "Valor mínimo",
+        "reemplazo": "Minimum value"
+    }, 
+    {
+        "original": "Dirección origen",
+        "reemplazo": "Origin address"
+    }, 
+    {
+        "original": "Tu conductor está en camino",
+        "reemplazo": "Your driver is on the way"
+    }, 
+    {
+        "original": "Tiempo estimado",
+        "reemplazo": "Estimated time"
+    }, 
+    {
+        "original": "Seleccione el motivo de la cancelación",
+        "reemplazo": "Select the reason for cancellation"
+    }, 
+    {
+        "original": "Servicio: ",
+        "reemplazo": "Service:"
+    }, 
+    {
+        "original": "Casa",
+        "reemplazo": "Home"
+    }, 
+    {
+        "original": "Trabajo",
+        "reemplazo": "Work"
+    }
+]

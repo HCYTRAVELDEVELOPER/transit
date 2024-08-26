@@ -1,0 +1,133 @@
+/* ************************************************************************
+ 
+ Copyright:
+ 2015 Netwoods.net, http://www.netwoods.net
+ 
+ License:
+ LGPL: http://www.gnu.org/licenses/lgpl.html
+ EPL: http://www.eclipse.org/org/documents/epl-v10.php
+ See the LICENSE file in the project's top-level directory for details.
+ 
+ Authors:
+ * Andrés Flórez (andresf)
+ 
+ ************************************************************************ */
+qx.Class.define("qxnw.security.registro.l_registro", {
+    extend: qxnw.lists,
+    construct: function () {
+        var self = this;
+        this.base(arguments);
+        this.setButtonsAutomatic(true);
+        this.createBase();
+        var columns = [
+            {
+                label: self.tr("ID"),
+                caption: "id"
+            },
+            {
+                label: self.tr("Tabla"),
+                caption: "tabla"
+            },
+            {
+                label: self.tr("Query"),
+                caption: "query"
+            },
+            {
+                label: self.tr("Acción"),
+                caption: "accion"
+            },
+            {
+                label: self.tr("Usuario"),
+                caption: "usuario"
+            },
+            {
+                label: self.tr("Nombr usuario"),
+                caption: "nombre_usuario"
+            },
+            {
+                label: self.tr("Fecha"),
+                caption: "fecha"
+            },
+            {
+                label: self.tr("Empresa"),
+                caption: "nom_empresa"
+            },
+            {
+                label: self.tr("Empresa"),
+                caption: "empresa"
+            }
+        ];
+
+        self.setColumns(columns);
+
+        self.hideColumn("id");
+        self.hideColumn("empresa");
+
+        var filters = [
+            {
+                name: "filtro",
+                caption: "filtro",
+                label: self.tr("Buscar..."),
+                type: "textField"
+            },
+            {
+                name: "accion",
+                caption: "accion",
+                label: self.tr("Acción"),
+                type: "selectBox"
+            },
+            {
+                name: "fecha_inicial",
+                caption: "fecha_inicial",
+                label: self.tr("Fecha inicial"),
+                type: "dateTimeField",
+                required: true
+            },
+            {
+                name: "fecha_final",
+                caption: "fecha_final",
+                label: self.tr("Fecha final"),
+                type: "dateTimeField",
+                required: true
+            }
+        ];
+        self.createFilters(filters);
+
+        var d = {};
+        d["TODOS"] = self.tr("Todos");
+        d["INSERT"] = self.tr("Inserta");
+        d["UPDATE"] = self.tr("Actualiza");
+        d["DELETE"] = self.tr("Borra");
+        self.populateSelectFromArray("accion", d);
+
+        self.ui.part2.setEnabled(false);
+        self.ui.part3.setEnabled(false);
+        self.ui.part4.setEnabled(false);
+
+        self.ui.exportButton.setEnabled(true);
+
+        self.ui.updateButton.addListener("click", function () {
+            self.applyFilters();
+        });
+        self.ui.searchButton.addListener("execute", function () {
+            self.applyFilters();
+        });
+    },
+    destruct: function () {
+    },
+    members: {
+        applyFilters: function applyFilters() {
+            var self = this;
+            if (!self.validate()) {
+                return;
+            }
+            var data = {};
+            data.filters = self.getFiltersData();
+            var rpc = new qxnw.rpc(self.getRpcUrl(), "nw_security", true);
+            var func = function (r) {
+                self.setModelData(r);
+            };
+            rpc.exec("getRegistro", data, func);
+        }
+    }
+});

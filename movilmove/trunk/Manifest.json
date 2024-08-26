@@ -1,0 +1,31 @@
+{
+    "$schema": "https://qooxdoo.org/schema/Manifest-2-0-0.json",
+    "info":
+            {
+                "name": "movilmove",
+                "summary": "Custom Application",
+                "description": "This is a skeleton for a custom application with qooxdoo.",
+                "homepage": "http://some.homepage.url/",
+                "license": "SomeLicense",
+                "authors":
+                        [
+                            {
+                                "name": "First Author (uid)",
+                                "email": "first.author@some.domain"
+                            }
+                        ],
+                "version": "master",
+                "qooxdoo-versions": ["5.0"]
+            },
+    "provides":
+            {
+                "namespace": "movilmove",
+                "encoding": "utf-8",
+                "class": "source/class",
+                "resource": "source/resource",
+                "translation": "source/translation",
+                "type": "application"
+            }
+}
+
+

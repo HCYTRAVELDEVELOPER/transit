@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    font-family: monospace;
+    color: #413C58;
+    font-size: 12pt;
+    background-color: #1F0322;
+}
+
+h1 {
+    margin: 0;
+    font-family: monospace;
+    color: #F0BCD4;
+    font-size: 36pt;
+    background-color: #1F0322;
+}
+
+#me {
+    margin: 0;
+    font-family: monospace;
+    color: #FFFFFF;
+    font-size: 13pt;
+    background-color: #992542;
+}
+
+#them {
+    margin: 0;
+    font-family: monospace;
+    color: #FFFFFF;
+    font-size: 13pt;
+    background-color: #63175A;
+}
+
+div.center {
+    width: 50%;
+    margin-left: 100px;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+div.header {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+div.box {
+    color: #8A1C7C;
+    font-size: 12pt;
+    width: 100%;
+    position: absolute;
+    right: 30;
+    bottom: 30;
+}
+
+div.yourText {
+    color: #DA4167;
+    font-size: 12pt;
+    font-weight: normal;
+    width: 50%;
+    margin-left: 30px;
+    margin-top: 10px;
+    float: left;
+}
+
+div.theirText {
+    color: #8A1C7C;
+    font-size: 12pt;
+    width: 50%;
+    margin-left: 30px;
+    margin-top: 10px;
+    float: left;
+}
+
+textarea {
+    width: 300px;
+    padding: 10px;
+    font-size: 12pt;
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+}

@@ -1,0 +1,86 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 31/05/2023, 10:34:25 a. m.
+    Author     : alexf
+*/
+
+/*@media screen and (orientation:portrait){*/
+.ui-mobile .ui-page {
+    min-height: 100%!important;
+    max-height: 100%!important;
+    height: 100%!important;
+}
+/*}*/
+body {
+    overscroll-behaviour: contain;
+}
+#foo .headerEnc_relative {
+
+}
+body .ui-page .my-header .btnMenuHeader,
+.backInShowServices,
+body .ui-page .logotipoHeader_home,
+html .ui-page .centrar_mapa,
+.encCustomerComp,
+.panelHomeLeft,
+.ui-header.ui-bar-a.my-header.header.headerEnc_relative.ui-bar-inherit,
+body .contenedor_address_show,
+#form_l_visitantes .nw_widget_div_backAdondevamos_show
+{
+    /*top: 50px!important;*/
+    /*margin-left: 20px!important;*/
+    /*max-width: calc(100% - 20px);*/
+    position: absolute;
+    /*top: 5px;*/
+    /*top: 40px!important;*/
+}
+body .ui-page .my-header .btnMenuHeader {
+    z-index: 100000000;
+}
+
+.ui-header.ui-bar-a.my-header.header.headerEnc_relative.ui-bar-inherit:before {
+    content: ".";
+    position: absolute;
+    top: -35px;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background-color: var(--color_empresarial);
+}
+html .ui-page .ui-navbar .btnForm {
+    font-size: 10px;
+    font-weight: lighter!important;
+}
+.contentCenter, .containerCenterHome {
+    margin-top: 70px!important;
+}
+body .containBtnsShareWarn{
+    top: 90px;
+    z-index: 10;
+}
+
+
+.backInShowServices_show{
+    top: 35px!important;
+}
+#form_l_visitantes .nw_widget_div_backAdondevamos_show{
+    top: 35px!important;
+}
+body .contenedor_address_show{
+    top: 35px!important;
+}
+
+
+body .panelHomeLeft{
+    top: 35px!important;
+    max-height: calc(100% - 135px)!important;
+}
+
+body .f_chat .headerEnc_relative{
+    max-height: 35px;
+    /* overflow: hidden; */
+    font-size: 12px;
+}

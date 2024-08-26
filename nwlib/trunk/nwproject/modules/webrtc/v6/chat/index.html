@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Learn how to use the Firebase platform on the Web">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chat NW</title>
+
+        <link rel="stylesheet" href="styles/material.css">
+        <!--<link rel="stylesheet" href="styles/material.orange-indigo.min.css">-->
+        <!--<script defer src="scripts/material.min.js"></script>-->
+        <link rel="stylesheet" href="styles/main.css?v=45">
+        <link rel="stylesheet" href="styles/personalize.css?v=45">
+
+        <style>
+            body {
+                margin: 0;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="myContainerChat"></div>
+
+        <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+        <!--<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-auth.js"></script>-->
+        <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-storage.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-messaging.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-firestore.js"></script>
+        <script>
+//            var firebaseConfig = {
+//                apiKey: "AIzaSyBYFSGZ4dcrxCpa6K1-nbGJs3DcDfpmi6k",
+//                authDomain: "chat-43efa.firebaseapp.com",
+//                databaseURL: "https://chat-43efa.firebaseio.com",
+//                projectId: "chat-43efa",
+//                storageBucket: "chat-43efa.appspot.com",
+//                messagingSenderId: "111021014435",
+//                appId: "1:111021014435:web:e7f8c001e86398165d2e16",
+//                measurementId: "G-N6JV4CVH84"
+//            };
+            var get = getGET();
+            var up = getUserData();
+            console.log("up", up);
+            console.log("get", get);
+            var host = window.location.hostname;
+            console.log("refinancia");
+            var firebaseConfig = {
+                //refinancia
+                apiKey: "AIzaSyC3VBxbBHOt_XrIqD8SDk8MZ_nND8XtpaA",
+                authDomain: "chat-refinancia.firebaseapp.com",
+                projectId: "chat-refinancia",
+                storageBucket: "chat-refinancia.appspot.com",
+                messagingSenderId: "784427717452",
+                appId: "1:784427717452:web:67d4f852a6492c647ef5e9"
+            };
+            var usenw = false;
+            if (typeof up !== "undefined") {
+                if (typeof up.empresa !== "undefined") {
+                    if (up.empresa.toString() === "1") {
+                        usenw = true;
+                    }
+                }
+            }
+            if (get) {
+                if (get.terminal === "1") {
+                    usenw = true;
+                }
+            }
+            if (usenw) {
+                //producción nw
+                console.log("producción nw");
+                var firebaseConfig = {
+                    apiKey: "AIzaSyBYFSGZ4dcrxCpa6K1-nbGJs3DcDfpmi6k",
+                    authDomain: "chat-43efa.firebaseapp.com",
+                    databaseURL: "https://chat-43efa.firebaseio.com",
+                    projectId: "chat-43efa",
+                    storageBucket: "chat-43efa.appspot.com",
+                    messagingSenderId: "111021014435",
+                    appId: "1:111021014435:web:e7f8c001e86398165d2e16",
+                    measurementId: "G-N6JV4CVH84"
+                };
+            }
+            if (host === "localhost" || host === "localhost:8383" || host === "192.168.10.19" || host === "nwtask.loc") {
+                console.log("PRUEBAS FIREBASE CREDENCIALES");
+                //pruebas
+                var firebaseConfig = {
+                    apiKey: "AIzaSyC1ZZdP1KLUW5xB0NiZlEqavdg7TlrDNK8",
+                    authDomain: "chat-test-c220f.firebaseapp.com",
+                    databaseURL: "https://chat-test-c220f-default-rtdb.firebaseio.com",
+                    projectId: "chat-test-c220f",
+                    storageBucket: "chat-test-c220f.appspot.com",
+                    messagingSenderId: "652497765599",
+                    appId: "1:652497765599:web:725707540bb84a6ef0956a"
+                };
+            }
+//            if (typeof get.configAditional != "undefined") {
+//                var decodedString = atob(get.configAditional);
+//                var data = JSON.parse(decodedString);
+//                console.log("data", data);
+//                if (data.usa_firebase == "SI") {
+//                    firebaseConfig = {
+//                        apiKey: "AIzaSyCANJzxDNeSj-MFeOdEtOEmapAiR0r5Yvw",
+//                        authDomain: "movilmove-services.firebaseapp.com",
+//                        projectId: "movilmove-services",
+//                        storageBucket: "movilmove-services.appspot.com",
+//                        messagingSenderId: "766196491813",
+//                        appId: "1:766196491813:web:9f1e67fa80f885094d01cc"
+//                    };
+//                    if (data.usa_firebase_modo_pruebas == "SI") {
+//                        //movilmove test services 21nov2023
+//                        firebaseConfig = {
+//                            apiKey: "AIzaSyDficCW6wxBnN_9uuwrp7yUBQVukXmhMBg",
+//                            authDomain: "movilmove-services-test.firebaseapp.com",
+//                            projectId: "movilmove-services-test",
+//                            storageBucket: "movilmove-services-test.appspot.com",
+//                            messagingSenderId: "496616900417",
+//                            appId: "1:496616900417:web:13ae352d745983daed03c0"
+//                        };
+//                        console.log("Use firebase Movilmove TEST");
+//                    } else {
+//                        console.log("Use firebase Movilmove PRODUCCIÓN");
+//                    }
+//                }
+//            }
+
+            firebase.initializeApp(firebaseConfig);
+//            firebase.analytics();
+            function getUserData() {
+                return localStorage;
+            }
+            function getGET(url) {
+                var loc = document.location.href;
+                if (typeof url !== "undefined") {
+                    loc = url;
+                }
+                var getString = loc.split('?')[1];
+                if (getString == undefined) {
+                    return false;
+                }
+                var GET = getString.split('&');
+                var get = {};
+                for (var i = 0, l = GET.length; i < l; i++) {
+                    var tmp = GET[i].split('=');
+                    get[tmp[0]] = unescape(decodeURI(tmp[1]));
+                }
+                return get;
+            }
+        </script>
+        <script src="scripts/frb-nw-utils.js?v=45"></script>
+        <script src="scripts/frb-nw.js?v=45"></script>
+        <script>
+            wnw.initialize({
+                container: ".myContainerChat"
+            });
+        </script>
+    </body>
+</html>

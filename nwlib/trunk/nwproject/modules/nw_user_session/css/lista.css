@@ -1,0 +1,26 @@
+/* 
+    Document   : style2
+    Created on : Apr 7, 2016, 10:19:01 PM
+    Author     : alexf
+    Description:
+        Purpose of the stylesheet follows.
+*/
+.liMenuDash {
+    float: none;
+    width: auto!important;
+    height: auto!important;
+    overflow: hidden;
+}
+.imgMenuDash {
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin: 5px 15px 0px 0px;
+}
+.liMenuDash h3, .liMenuDash p {
+    text-align: left;
+}
+.descriptionModuleBloq{
+    position: relative;
+    display: table;
+}

@@ -1,0 +1,72 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 17, 2019, 1:18:33 PM
+    Author     : alexf
+*/
+
+.contain_menu_li_touch_bottom{
+    max-width: 90%;
+    left: 5%;
+    box-shadow: none;
+    /*overflow: hidden;*/
+    padding: 0;
+}
+.contain_menu_li_touch_bottom .menu_li_touch{
+    background-color: #f2f2f2!important;
+    margin: 0;
+    border-radius: 0;
+    color: #0076ff!important;
+    border-top: 1px solid #dddde0;
+    text-align: center!important;
+    display: block;
+    padding: 16px 10px;
+}
+.ui-page .contain_menu_li_touch .ui_btn_icon_left .material-icons{
+    color: #0076ff!important;
+}
+.contain_menu_li_touch_bottom .menu_li_touch_cancel{
+    border-top: 1px solid #e9e9e9;
+    margin-top: 7px;
+    margin-bottom: 5px;
+    border-radius: 12px;
+    font-weight: bold;
+}
+.contain_menu_li_touch_bottom .menu_li_touch:first-child {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.contain_menu_li_touch_bottom .menu_li_touch:nth-last-child(2) {
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.popup_pil_text{
+    background-color: #f2f2f2!important;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.popup_pil_btns{
+    background-color: #f2f2f2!important;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.popup_pil_int .btnForm{
+    /*color: #0076ff!important;*/
+    /*border-top: 1px solid #e0e0e0!important;*/
+    /*margin: 0;*/
+    /*border-radius: 0;*/
+    /*width: 100%;*/
+    /*font-weight: lighter;*/
+}
+
+.popup_pil_int .width_midd{
+    width: 50%;
+}
+.popup_pil_int .btnpil_cancel{
+    border-right: 1px solid #e0e0e0!important;
+}

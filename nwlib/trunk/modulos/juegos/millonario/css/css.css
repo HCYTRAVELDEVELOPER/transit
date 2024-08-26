@@ -1,0 +1,352 @@
+html {
+    position: relative;
+    width: 100%;
+    height: 100%;    
+}
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    font-size: 12px;
+    width: 100%;
+    height: 100%;
+    background: #0e084e;
+    color: #fff;
+    background: rgb(30,87,153);
+    background: -moz-linear-gradient(-45deg,  rgb(30,87,153) 0%, rgb(14,8,78) 100%);
+    background: -webkit-linear-gradient(-45deg,  rgb(30,87,153) 0%,rgb(14,8,78) 100%);
+    background: linear-gradient(135deg,  rgb(30,87,153) 0%,rgb(14,8,78) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#0e084e',GradientType=1 );
+
+}
+.container{
+    position: relative;
+    margin: auto;
+    max-width: 1200px;
+    overflow: hidden;
+}
+.titleHomeLogo{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    /*position: fixed;*/
+    display: none;
+}
+.titleHomeLogoInt{
+    position: relative;
+    height: 250px;
+    width: 250px;
+    text-align: center;
+    margin: auto;
+    border-radius: 50%;
+    background-color: #fff;
+    background: rgb(242,246,248);
+    background: -moz-linear-gradient(-45deg, rgb(242,246,248) 0%, rgb(216,225,231) 50%, rgb(181,198,208) 51%, rgb(224,239,249) 100%);
+    background: -webkit-linear-gradient(-45deg, rgb(242,246,248) 0%,rgb(216,225,231) 50%,rgb(181,198,208) 51%,rgb(224,239,249) 100%);
+    background: linear-gradient(135deg, rgb(242,246,248) 0%,rgb(216,225,231) 50%,rgb(181,198,208) 51%,rgb(224,239,249) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f6f8', endColorstr='#e0eff9',GradientType=1 );
+    overflow: hidden;
+}
+.titleHomeLogo h1 {
+    line-height: 5;
+    font-size: 3em;
+    color: #131F64;
+    text-shadow: 0px 0px 5px #FFF;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.containMainNivelsHome{
+    position: relative;
+    float: right;
+    background: #111;
+    width: 15%;
+    color: #fff;
+    border: 0px solid #ccc;
+    box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.2);
+    border-radius: 0px;
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    padding: 15px 10px;
+}
+.containMainNivelsHome ul {
+    margin: 0;
+    padding: 0;
+}
+.containMainNivelsHome li {
+    list-style: none;
+    padding: 8px;
+    text-align: left;
+    margin: 0px;
+}
+#playButton{
+    position: relative;
+    float: left;
+    width: 85%;
+}
+#boxPlayPreg{
+    position: relative;
+    /*width: 70%;*/
+    margin: auto;
+}
+.enc_pregunta{
+    color: #fff;
+    padding: 15px;
+    margin: auto;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border: 2px solid #ccc;
+    box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.2);
+    text-align: center;
+    /*    background: #0e084e;  Old browsers 
+        background: -moz-linear-gradient(top,  #0e084e 0%, #55538f 48%, #33308e 100%);  FF3.6+ 
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0e084e), color-stop(48%,#55538f), color-stop(100%,#33308e));  Chrome,Safari4+ 
+        background: -webkit-linear-gradient(top,  #0e084e 0%,#55538f 48%,#33308e 100%);  Chrome10+,Safari5.1+ 
+        background: -o-linear-gradient(top,  #0e084e 0%,#55538f 48%,#33308e 100%);  Opera 11.10+ 
+        background: -ms-linear-gradient(top,  #0e084e 0%,#55538f 48%,#33308e 100%);  IE10+ 
+        background: linear-gradient(to bottom,  #0e084e 0%,#55538f 48%,#33308e 100%);  W3C 
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e084e', endColorstr='#33308e',GradientType=0 );  IE6-9 */
+
+}
+.contendResponses{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    color: #000;
+}
+.contendResponses li{
+    float: left;
+    width: 50%;
+    list-style: none;
+}
+.responseFinal{
+    background: transparent!important;
+    width: 85%!important;
+    text-align: center;
+    font-size: 2em;
+    color: red!important;
+    float: left;
+}
+.playDialog{
+    background: orangered;
+    width: 100px;
+    margin: auto;
+    padding: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.responseFinalBien {
+    color: rgb(255, 102, 0)!important;
+}
+.selected{
+    background: orange;
+    color: #fff;
+}
+.ayudas{
+    overflow: hidden;
+    position: relative;
+    margin: -50px auto 0 auto;
+    width: 90%;
+}
+.ayudas h3{
+    margin: 0;
+    padding: 5px;
+}
+.ayudas div{
+    position: relative;
+    float: left;
+    margin: 5px;
+    color: #fff;
+    padding: 15px;
+    background: #0e084e;
+    background: -moz-linear-gradient(top, #0e084e 0%, #55538f 48%, #33308e 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0e084e), color-stop(48%,#55538f), color-stop(100%,#33308e));
+    background: -webkit-linear-gradient(top, #0e084e 0%,#55538f 48%,#33308e 100%);
+    background: -o-linear-gradient(top, #0e084e 0%,#55538f 48%,#33308e 100%);
+    background: -ms-linear-gradient(top, #0e084e 0%,#55538f 48%,#33308e 100%);
+    background: linear-gradient(to bottom, #0e084e 0%,#55538f 48%,#33308e 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e084e', endColorstr='#33308e',GradientType=0 );
+    border: 2px solid #ccc;
+    box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    text-align: center;
+    font-weight: bold;
+    width: 100px;
+    height: 100px;
+    top: 90px;
+}
+.nada {
+    pointer-events: none;
+}
+.playButton{
+    position: relative;
+    background: orange;
+    color: #fff;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    line-height: normal;
+    font-size: 1em;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bold;
+}
+.nivel_seguro{
+    font-size: 16px;
+    font-weight: bold;
+    color: orange;
+}
+.ganandobien{
+    font-weight: bold;
+    color: #fff;
+    background: orange;
+}
+.lineRespInt{
+    width: 80%;
+    margin: 10px auto;
+    list-style: none;
+    color: #fff;
+    padding: 25px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border: 2px solid #ccc;
+    box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.2);
+    font-size: 12px;
+    cursor: pointer;
+    /*    background: #0e084e;  Old browsers 
+        background: -moz-linear-gradient(top,  #0e084e 0%, #55538f 48%, #33308e 100%);  FF3.6+ 
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0e084e), color-stop(48%,#55538f), color-stop(100%,#33308e));  Chrome,Safari4+ 
+        background: -webkit-linear-gradient(top,  #0e084e 0%,#55538f 48%,#33308e 100%);  Chrome10+,Safari5.1+ 
+        background: -o-linear-gradient(top,  #0e084e 0%,#55538f 48%,#33308e 100%);  Opera 11.10+ 
+        background: -ms-linear-gradient(top,  #0e084e 0%,#55538f 48%,#33308e 100%);  IE10+ 
+        background: linear-gradient(to bottom,  #0e084e 0%,#55538f 48%,#33308e 100%);  W3C 
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e084e', endColorstr='#33308e',GradientType=0 );  IE6-9 */
+    cursor: pointer;
+}
+.lineRespInt:hover{
+    opacity: 0.8;
+}
+.correctaDiv{
+    background: rgb(12, 182, 12)!important;
+}
+.time{
+    margin: auto!important;
+    float: right!important;
+    right: 0px;
+    padding: 10px!important;
+    font-size: 2em;
+    width: 100px;
+    height: 25px;
+    border-radius: 25px!important;
+}
+.rightFull{
+
+}
+.leftFullAction{
+
+}
+.porVuela{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #999;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.51);
+    display: none;
+}
+.porVuelaText{
+    top: 0;
+    background: #111;
+    position: relative;
+    text-align: center;
+    width: 30%;
+    margin: auto;
+    overflow: hidden;
+    display: block;
+    border-radius: 5px;
+    padding: 10px 0px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.7);
+    border: 1px solid #3A3838;
+    font-size: 14px;
+    font-weight: lighter;
+}
+.containMainNivelsHomeDialog{
+    background: #1D1D1D;
+    margin: 0px 5px 10px 0px;
+    padding: 5px;
+    border: 1px solid #333;
+    width: 150px;
+    float: left;
+}
+.divDialogPuntaj{
+    float: right;
+    width: 200px;
+    margin: 10px;
+}
+.porVuelaText ul {
+    margin: 0;
+    padding: 0;
+}
+.porVuelaText li {
+
+}
+.HelpUsada{
+    pointer-events: none;
+    opacity: 0.2;
+}
+
+@media screen and (max-width: 900px) {
+    .porVuelaText{
+        width: 100%;
+    }
+    .lineRespInt{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+        height: 50px;
+    }
+    .rightFullAction{
+        display: none;
+    } 
+    .rightFull{
+        display: block;
+        width: 100%;
+        float: none;
+        box-sizing: border-box;
+    }    
+    .contendResponsesResponse {
+        position: fixed;
+        bottom: 30px;
+        text-align: center;
+        width: 100%;
+    }
+    .responseFinal{
+        width: 100%!important;
+        box-sizing: border-box;
+    }
+    .leftFull{
+        display: none;
+    }
+    .leftFullAction{
+        width: 100%!important;
+    }
+    #boxPlayPreg{
+        width: 90%;
+    }
+}

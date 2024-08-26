@@ -1,0 +1,252 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 10, 2018, 7:37:09 PM
+    Author     : duvanb
+*/
+
+#container-nwmaker {
+    position: relative;
+    z-index: 3;
+}
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Regular', sans-serif;
+    font-size: 14px;
+    background: #f5f5f5;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+* {
+    margin: 0;
+}
+/*////////////////////////////////////////////////////////////////LOGIN*/
+.titleencloginmaker{
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    display: table;
+    width: 100%;
+    margin: 10px 0px 20px 0px;
+}
+.titleencloginmaker:before, .titleencloginmaker:after {
+    border-top: 1px solid #C0C0C0;
+    content: "";
+    display: table-cell;
+    position: relative;
+    top: 0.6em;
+    width: 30%;
+}
+.containerInitSession {
+    position: relative;
+    margin: auto;
+    max-width: 900px;
+    padding: 60px;
+    overflow: hidden;
+}
+
+.bloqueInitSessionNew {
+    position: relative;
+    width: auto;
+    float: none;
+    max-width: 350px;
+    margin: auto;
+}
+.apply_css_loginBox {
+    padding: 50px;
+    flex-shrink: 0;
+    background: #fff;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 79%, rgba(229,229,229,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 79%,rgba(229,229,229,1) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 79%,rgba(229,229,229,1) 100%);
+}
+.logoEncloginmaker{
+    position: relative;
+}
+.containLogotipoLogin{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0px 0px 25px 0px;
+}
+.iniciarSessionFaceboookNwMaker {
+    /*    position: relative;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        cursor: pointer;
+        background-color: #4568b2;
+         border-bottom: 0.2rem solid #293e6b; 
+        background-image: url(/nwlib6/icons/facebook_2.png);
+        background-repeat: no-repeat;
+        background-size: 22px;
+        background-position: 11px center;
+        max-width: 188px;
+        margin: auto;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        vertical-align: middle;
+        padding: 10px 0px 10px 0px;
+        text-indent: 39px;
+        font-weight: bold;
+        font-size: 13px;
+        margin-bottom: 10px;
+        min-height: 42px;
+        line-height: 40px;
+        padding: 0;*/
+
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    background: #4568b2;
+    color: white;
+    width: 100%;
+    border-radius: 2px;
+    border: thin solid #4568b2;
+    -webkit-box-shadow: 1px 1px 1px grey;
+    box-shadow: 1px 1px 1px grey;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.iniciarSessionFaceboookNwMaker img {
+    background: white;
+    border-radius: 2px;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    margin-right: 10px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.containerInitSession .footerButtonsNwForms {
+    text-align: center;
+    background: transparent;
+    border: 0;
+}
+.containerInitSession .divContainInputIntern {
+    margin: 0;
+}
+.containerInitSession  .addHeaderNote {
+    margin: 0;
+    padding: 0;
+}
+.bg-color-login-nwmaker{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 1;
+}
+.bg-img-login-nwmaker{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 0;
+}
+.maxContainerDuoLogmaker{
+    padding: 60px 0;
+    max-width: 1100px;
+}
+.containerDuoLogmaker{
+    float: right;
+    box-sizing: border-box;
+    width: 50%;
+    max-width: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: 0;
+}
+.linkAPolitics, .linkASuscribe{
+    color: #0078d3;
+    text-decoration: underline;
+}
+.valactiveenc{
+    /*background-color: rgba(0, 0, 0, 0.05);*/
+    opacity: 0.5;
+}
+.nw-google-api-button{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    background: #4285f4;
+    color: white;
+    width: 100%;
+    border-radius: 2px;
+    border: thin solid #4285f4;
+    -webkit-box-shadow: 1px 1px 1px grey;
+    box-shadow: 1px 1px 1px grey;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.nw-google-api-button img {
+    background: white;
+    border-radius: 2px;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    margin-right: 10px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+.iframeCrearCuentaFormExtern{
+    position: relative;
+    border: 0;
+    width: 100%;
+    height: 550px;
+}
+/*////////////////////////////////////////////////////////////////END LOGIN*/
+
+@media screen and (max-width: 900px) {
+    .containerInitSession{
+        padding: 0;
+        overflow: auto;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .bloqueInitSession{
+        float: none!important;
+        width: auto!important;
+        padding: 0px!important;
+        margin: 5px auto;
+        border: 0!important;
+    }
+}

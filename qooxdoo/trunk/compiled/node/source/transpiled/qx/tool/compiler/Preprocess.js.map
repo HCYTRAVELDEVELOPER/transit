@@ -1,0 +1,51 @@
+{
+  "version": 3,
+  "names": [
+    "qx",
+    "Bootstrap",
+    "executePendingDefers",
+    "$$dbClassInfo",
+    "fs",
+    "require",
+    "Class",
+    "define",
+    "extend",
+    "core",
+    "Object",
+    "construct",
+    "path",
+    "__path",
+    "members",
+    "run",
+    "outputTo",
+    "cb",
+    "t",
+    "readFile",
+    "encoding",
+    "err",
+    "data",
+    "_process",
+    "writeFile",
+    "replace",
+    "match",
+    "quotes",
+    "cmd",
+    "body",
+    "quote",
+    "result",
+    "split",
+    "forEach",
+    "line",
+    "index",
+    "tool",
+    "compiler",
+    "Preprocess"
+  ],
+  "sources": [
+    "/home/andresf/workspace_qooxdoo/qooxdoo/qooxdoo-7.0/source/class/qx/tool/compiler/Preprocess.js"
+  ],
+  "sourcesContent": [
+    "/* ************************************************************************\n *\n *    qooxdoo-compiler - node.js based replacement for the Qooxdoo python\n *    toolchain\n *\n *    https://github.com/qooxdoo/qooxdoo\n *\n *    Copyright:\n *      2011-2017 Zenesis Limited, http://www.zenesis.com\n *\n *    License:\n *      MIT: https://opensource.org/licenses/MIT\n *\n *      This software is provided under the same licensing terms as Qooxdoo,\n *      please see the LICENSE file in the Qooxdoo project's top-level directory\n *      for details.\n *\n *    Authors:\n *      * John Spackman (john.spackman@zenesis.com, @johnspackman)\n *\n * *********************************************************************** */\n\nvar fs = require(\"fs\");\n\nqx.Class.define(\"qx.tool.compiler.Preprocess\", {\n  extend: qx.core.Object,\n\n  construct(path) {\n    super();\n    this.__path = path;\n  },\n\n  members: {\n    __path: null,\n\n    run(outputTo, cb) {\n      var t = this;\n      fs.readFile(this.__path, { encoding: \"utf8\" }, function (err, data) {\n        if (err) {\n          cb(err);\n        } else {\n          t._process(data, function (data) {\n            if (typeof outputTo == \"string\") {\n              fs.writeFile(outputTo, data, { encoding: \"utf8\" }, cb);\n            } else if (typeof outputTo == \"function\") {\n              outputTo(data, cb);\n            } else {\n              cb(null, data);\n            }\n          });\n        }\n      });\n    },\n\n    _process(data, cb) {\n      data = data.replace(\n        /(''|\"\")?\\/\\*#([^\\n]+)([\\s\\S]*)\\*\\//gm,\n        function (match, quotes, cmd, body) {\n          var quote = quotes[0];\n          if (quote == \"'\") {\n            body = body.replace(/'/gm, \"\\\\'\");\n          } else {\n            body = body.replace(/\"/gm, '\\\\\"');\n          }\n          var result = \"\";\n          body.split(\"\\n\").forEach(function (line, index) {\n            if (index == 0) {\n              return;\n            }\n            if (index > 1) {\n              result += \" + \\n\";\n            }\n            result += quote + line + \"\\\\n\" + quote;\n          });\n          return result;\n        }\n      );\n\n      cb(data);\n    }\n  }\n});\n"
+  ],
+  "mappings": ";;;;;;;;;;;;;EAAAA,EAAE,CAACC,SAAH,CAAaC,oBAAb,CAAkCC,aAAlC;;EAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;EAEA,IAAIC,EAAE,GAAGC,OAAO,CAAC,IAAD,CAAhB;;EAEAL,EAAE,CAACM,KAAH,CAASC,MAAT,CAAgB,6BAAhB,EAA+C;IAC7CC,MAAM,EAAER,EAAE,CAACS,IAAH,CAAQC,MAD6B;;IAG7CC,SAAS,CAACC,IAAD,EAAO;MACd;MACA,KAAKC,cAAL,GAAcD,IAAd;IACD,CAN4C;;IAQ7CE,OAAO,EAAE;MACPD,cAAM,EAAE,IADD;;MAGPE,GAAG,CAACC,QAAD,EAAWC,EAAX,EAAe;QAChB,IAAIC,CAAC,GAAG,IAAR;QACAd,EAAE,CAACe,QAAH,CAAY,KAAKN,cAAjB,EAAyB;UAAEO,QAAQ,EAAE;QAAZ,CAAzB,EAA+C,UAAUC,GAAV,EAAeC,IAAf,EAAqB;UAClE,IAAID,GAAJ,EAAS;YACPJ,EAAE,CAACI,GAAD,CAAF;UACD,CAFD,MAEO;YACLH,CAAC,CAACK,QAAF,CAAWD,IAAX,EAAiB,UAAUA,IAAV,EAAgB;cAC/B,IAAI,OAAON,QAAP,IAAmB,QAAvB,EAAiC;gBAC/BZ,EAAE,CAACoB,SAAH,CAAaR,QAAb,EAAuBM,IAAvB,EAA6B;kBAAEF,QAAQ,EAAE;gBAAZ,CAA7B,EAAmDH,EAAnD;cACD,CAFD,MAEO,IAAI,OAAOD,QAAP,IAAmB,UAAvB,EAAmC;gBACxCA,QAAQ,CAACM,IAAD,EAAOL,EAAP,CAAR;cACD,CAFM,MAEA;gBACLA,EAAE,CAAC,IAAD,EAAOK,IAAP,CAAF;cACD;YACF,CARD;UASD;QACF,CAdD;MAeD,CApBM;;MAsBPC,QAAQ,CAACD,IAAD,EAAOL,EAAP,EAAW;QACjBK,IAAI,GAAGA,IAAI,CAACG,OAAL,CACL,sCADK,EAEL,UAAUC,KAAV,EAAiBC,MAAjB,EAAyBC,GAAzB,EAA8BC,IAA9B,EAAoC;UAClC,IAAIC,KAAK,GAAGH,MAAM,CAAC,CAAD,CAAlB;;UACA,IAAIG,KAAK,IAAI,GAAb,EAAkB;YAChBD,IAAI,GAAGA,IAAI,CAACJ,OAAL,CAAa,KAAb,EAAoB,KAApB,CAAP;UACD,CAFD,MAEO;YACLI,IAAI,GAAGA,IAAI,CAACJ,OAAL,CAAa,KAAb,EAAoB,KAApB,CAAP;UACD;;UACD,IAAIM,MAAM,GAAG,EAAb;UACAF,IAAI,CAACG,KAAL,CAAW,IAAX,EAAiBC,OAAjB,CAAyB,UAAUC,IAAV,EAAgBC,KAAhB,EAAuB;YAC9C,IAAIA,KAAK,IAAI,CAAb,EAAgB;cACd;YACD;;YACD,IAAIA,KAAK,GAAG,CAAZ,EAAe;cACbJ,MAAM,IAAI,OAAV;YACD;;YACDA,MAAM,IAAID,KAAK,GAAGI,IAAR,GAAe,KAAf,GAAuBJ,KAAjC;UACD,CARD;UASA,OAAOC,MAAP;QACD,CApBI,CAAP;QAuBAd,EAAE,CAACK,IAAD,CAAF;MACD;;IA/CM;EARoC,CAA/C;EAxBAtB,EAAE,CAACoC,IAAH,CAAQC,QAAR,CAAiBC,UAAjB,CAA4BnC,aAA5B,GAA4CA,aAA5C"
+}

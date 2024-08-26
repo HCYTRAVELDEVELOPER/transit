@@ -1,0 +1,20 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 4, 2019, 1:25:54 PM
+    Author     : alexf
+*/
+:root {
+    --color_empresarial: #b70202;
+}
+body .ui-page .logotipoHeader_home img{
+    height: 19px;
+    width: auto;
+    margin: 6px;
+}
+body .ui-page .logotipoHeader_home {
+    top: -30px;
+}

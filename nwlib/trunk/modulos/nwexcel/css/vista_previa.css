@@ -1,0 +1,57 @@
+/* 
+    Document   : vista_previa
+    Created on : Oct 22, 2015, 9:50:49 AM
+    Author     : alexf
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.varGlobal{
+    border: 0!important;
+}
+.th_rows, .th_enc, .formulas_enc, #footer
+{
+    display: none!important;
+}
+.show_normal, html, body, #contenedor, #form_general, #body_contain
+{
+    position: relative!important;
+    width: 1090px!important;
+    height: auto!important;
+    overflow: initial!important;
+    margin: initial!important;
+    display: block!important;
+}
+.enc_print{
+    position: relative!important;
+    width: 1090px!important;
+    height: auto!important;
+    overflow: initial!important;
+    margin: initial!important;
+    display: block;    
+}
+.show_hidden_overflow, #body_contain
+{
+    overflow: hidden!important;
+}
+.td_normal, td, tr 
+{
+    outline: 0!important;
+    pointer-events: none!important;
+    border: 0;
+}
+.divisor_page_vista_previa, .divisor_page
+{
+    left: 0!important;
+    margin: 0!important;
+    /*width: 999px;*/
+}
+.select_rows_marge {
+    background: initial;
+    border: initial;
+}
+select {
+    background: transparent!important;
+    border: 0!important;
+    -webkit-appearance: none!important;
+}

@@ -1,0 +1,38 @@
+{
+  "version": 3,
+  "names": [
+    "qx",
+    "Bootstrap",
+    "executePendingDefers",
+    "$$dbClassInfo",
+    "Class",
+    "define",
+    "extend",
+    "tool",
+    "compiler",
+    "resources",
+    "AbstractMatcher",
+    "type",
+    "members",
+    "isDoNotCopy",
+    "filename",
+    "needsConvert",
+    "target",
+    "asset",
+    "srcFilename",
+    "destFilename",
+    "isThemeFile",
+    "getDestFilename",
+    "compile",
+    "Error",
+    "classname",
+    "ResourceConverter"
+  ],
+  "sources": [
+    "/home/andresf/workspace_qooxdoo/qooxdoo/qooxdoo-7.0/source/class/qx/tool/compiler/resources/ResourceConverter.js"
+  ],
+  "sourcesContent": [
+    "/* ************************************************************************\n *\n *    qooxdoo-compiler - node.js based replacement for the Qooxdoo python\n *    toolchain\n *\n *    https://github.com/qooxdoo/qooxdoo\n *\n *    Copyright:\n *      2011-2017 Zenesis Limited, http://www.zenesis.com\n *\n *    License:\n *      MIT: https://opensource.org/licenses/MIT\n *\n *      This software is provided under the same licensing terms as Qooxdoo,\n *      please see the LICENSE file in the Qooxdoo project's top-level directory\n *      for details.\n *\n *    Authors:\n *      * John Spackman (john.spackman@zenesis.com, @johnspackman)\n *\n * *********************************************************************** */\n\n/**\n * Instances of ResourceConverter are used by the resource manager to transfer resources into\n * the target output, where they require something more than just copying (eg SCSS compilation)\n */\nqx.Class.define(\"qx.tool.compiler.resources.ResourceConverter\", {\n  extend: qx.tool.compiler.resources.AbstractMatcher,\n  type: \"abstract\",\n\n  members: {\n    /**\n     * Allows the converter to decide to not copy the resource at all\n     */\n    isDoNotCopy(filename) {\n      return false;\n    },\n\n    /**\n     * Detects whether the file needs to be recompiled/coverted/analysed/ etc, and is done after\n     * checks determine whether the file datetime stamp indicate it's necessary\n     *\n     * @param target {Target} the target\n     * @param asset {Asset} the asset to copy\n     * @param srcFilename {String} full path to the file\n     * @param destFilename {String} full path to the destination file\n     * @param isThemeFile {Booelan} true if the file is a theme file (as opposed to a normal resource file)\n     *\n     * @return {Boolean}\n     */\n    async needsConvert(target, asset, srcFilename, destFilename, isThemeFile) {\n      return false;\n    },\n\n    /**\n     * Returns the destination filename, or null if default is to be used\n     *\n     * @param target {Target} the target\n     * @param asset {Asset} the asset to copy\n     * @return {String?} full path to the file\n     */\n    getDestFilename(target, asset) {\n      return null;\n    },\n\n    /**\n     * Allows a file to be recompiled/coverted/analysed/ etc; must return a Promise which resolves\n     * when complete.  Data can be stored in the resource database by modifying the fileInfo\n     *\n     * @param target {Target} the target\n     * @param asset {Asset} the asset to copy\n     * @param srcFilename {String} full path to the file\n     * @param destFilename {String} full path to the destination file\n     * @param isThemeFile {Boolean} whether the file is in a theme\n     * @return {String[]} list of filenames that are required for the compilation (dependencies); may be null\n     */\n    async compile(target, asset, srcFilename, destFilename, isThemeFile) {\n      throw new Error(\"No implementation for \" + this.classname + \".convert\");\n    }\n  }\n});\n"
+  ],
+  "mappings": ";;;;;;;;;;;;EAAAA,EAAE,CAACC,SAAH,CAAaC,oBAAb,CAAkCC,aAAlC;;EAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;;EAEA;AACA;AACA;AACA;EACAH,EAAE,CAACI,KAAH,CAASC,MAAT,CAAgB,8CAAhB,EAAgE;IAC9DC,MAAM,EAAEN,EAAE,CAACO,IAAH,CAAQC,QAAR,CAAiBC,SAAjB,CAA2BC,eAD2B;IAE9DC,IAAI,EAAE,UAFwD;IAI9DC,OAAO,EAAE;MACP;AACJ;AACA;MACIC,WAAW,CAACC,QAAD,EAAW;QACpB,OAAO,KAAP;MACD,CANM;;MAQP;AACJ;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;MACI,MAAMC,YAAN,CAAmBC,MAAnB,EAA2BC,KAA3B,EAAkCC,WAAlC,EAA+CC,YAA/C,EAA6DC,WAA7D,EAA0E;QACxE,OAAO,KAAP;MACD,CAtBM;;MAwBP;AACJ;AACA;AACA;AACA;AACA;AACA;MACIC,eAAe,CAACL,MAAD,EAASC,KAAT,EAAgB;QAC7B,OAAO,IAAP;MACD,CAjCM;;MAmCP;AACJ;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;MACI,MAAMK,OAAN,CAAcN,MAAd,EAAsBC,KAAtB,EAA6BC,WAA7B,EAA0CC,YAA1C,EAAwDC,WAAxD,EAAqE;QACnE,MAAM,IAAIG,KAAJ,CAAU,2BAA2B,KAAKC,SAAhC,GAA4C,UAAtD,CAAN;MACD;;IAhDM;EAJqD,CAAhE;EA1BAxB,EAAE,CAACO,IAAH,CAAQC,QAAR,CAAiBC,SAAjB,CAA2BgB,iBAA3B,CAA6CtB,aAA7C,GAA6DA,aAA7D"
+}

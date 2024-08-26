@@ -1,0 +1,50 @@
+{
+  "version": 3,
+  "names": [
+    "qx",
+    "Bootstrap",
+    "executePendingDefers",
+    "$$dbClassInfo",
+    "Class",
+    "define",
+    "extend",
+    "io",
+    "jsonrpc",
+    "protocol",
+    "Notification",
+    "statics",
+    "__current_request_id",
+    "getCurrentId",
+    "Request",
+    "resetId",
+    "properties",
+    "id",
+    "check",
+    "value",
+    "lang",
+    "Type",
+    "isNumber",
+    "parseInt",
+    "construct",
+    "method",
+    "params",
+    "undefined",
+    "set",
+    "__promise",
+    "Promise",
+    "members",
+    "getPromise",
+    "handleTransportException",
+    "exception",
+    "reject",
+    "e",
+    "warn"
+  ],
+  "sources": [
+    "/home/andresf/workspace_qooxdoo/qooxdoo/qooxdoo-7.0/source/class/qx/io/jsonrpc/protocol/Request.js"
+  ],
+  "sourcesContent": [
+    "/* ************************************************************************\n\n   qooxdoo - the new era of web development\n\n   http://qooxdoo.org\n\n   Copyright:\n      2020 Christian Boulanger\n\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n\n   Authors:\n     * Christian Boulanger (cboulanger)\n\n************************************************************************ */\n\n/**\n * A JSON-RPC v2.0 request object\n *\n * @see https://www.jsonrpc.org/specification#request_object\n */\nqx.Class.define(\"qx.io.jsonrpc.protocol.Request\", {\n  extend: qx.io.jsonrpc.protocol.Notification,\n  statics: {\n    /**\n     * Static counter for all request ids\n     */\n    __current_request_id: 0,\n\n    getCurrentId() {\n      return qx.io.jsonrpc.protocol.Request.__current_request_id;\n    },\n\n    resetId() {\n      qx.io.jsonrpc.protocol.Request.__current_request_id = 0;\n    }\n  },\n\n  properties: {\n    /**\n     * The integer id of the request\n     */\n    id: {\n      check: value =>\n        qx.lang.Type.isNumber(value) && parseInt(value, 10) === value\n    }\n  },\n\n  /**\n   * JSON-RPC request constructor\n   * @param {String} method\n   * @param {Array|Object?} params\n   * @param {Number?} id\n   *    Optional integer id. If not provided, an auto-incremented id will be\n   *    used.\n   */\n  construct(method, params, id) {\n    super(method, params);\n    if (id === undefined) {\n      id = ++qx.io.jsonrpc.protocol.Request.__current_request_id;\n    }\n    this.set({ id });\n    this.__promise = new qx.Promise();\n  },\n\n  members: {\n    __promise: null,\n\n    /**\n     * Getter for promise which resolves with the result to the request\n     * @return {qx.Promise}\n     */\n    getPromise() {\n      return this.__promise;\n    },\n\n    /**\n     * Determines how an exception during transport is handled. Standard\n     * behavior is to reject the request's promise with that exception.\n     * Classes inheriting from this class might handle it differently, i.e.\n     * by allowing the transport to retry after a timeout occurred.\n     * @param {qx.io.exception.Transport} exception\n     */\n    handleTransportException(exception) {\n      try {\n        this.getPromise().reject(exception);\n      } catch (e) {\n        this.warn(\"Promise has already been rejected\");\n      }\n    }\n  }\n});\n"
+  ],
+  "mappings": ";;;;;;;;;;;;;;;;;EAAAA,EAAE,CAACC,SAAH,CAAaC,oBAAb,CAAkCC,aAAlC;;EAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;;EAEA;AACA;AACA;AACA;AACA;EACAH,EAAE,CAACI,KAAH,CAASC,MAAT,CAAgB,gCAAhB,EAAkD;IAChDC,MAAM,EAAEN,EAAE,CAACO,EAAH,CAAMC,OAAN,CAAcC,QAAd,CAAuBC,YADiB;IAEhDC,OAAO,EAAE;MACP;AACJ;AACA;MACIC,4BAAoB,EAAE,CAJf;;MAMPC,YAAY,GAAG;QACb,OAAOb,EAAE,CAACO,EAAH,CAAMC,OAAN,CAAcC,QAAd,CAAuBK,OAAvB,CAA+BF,4BAAtC;MACD,CARM;;MAUPG,OAAO,GAAG;QACRf,EAAE,CAACO,EAAH,CAAMC,OAAN,CAAcC,QAAd,CAAuBK,OAAvB,CAA+BF,4BAA/B,GAAsD,CAAtD;MACD;;IAZM,CAFuC;IAiBhDI,UAAU,EAAE;MACV;AACJ;AACA;MACIC,EAAE,EAAE;QACFC,KAAK,EAAEC,KAAK,IACVnB,EAAE,CAACoB,IAAH,CAAQC,IAAR,CAAaC,QAAb,CAAsBH,KAAtB,KAAgCI,QAAQ,CAACJ,KAAD,EAAQ,EAAR,CAAR,KAAwBA;MAFxD;IAJM,CAjBoC;;IA2BhD;AACF;AACA;AACA;AACA;AACA;AACA;AACA;IACEK,SAAS,CAACC,MAAD,EAASC,MAAT,EAAiBT,EAAjB,EAAqB;MAC5B,2DAAMQ,MAAN,EAAcC,MAAd;;MACA,IAAIT,EAAE,KAAKU,SAAX,EAAsB;QACpBV,EAAE,GAAG,EAAEjB,EAAE,CAACO,EAAH,CAAMC,OAAN,CAAcC,QAAd,CAAuBK,OAAvB,CAA+BF,4BAAtC;MACD;;MACD,KAAKgB,GAAL,CAAS;QAAEX;MAAF,CAAT;MACA,KAAKY,iBAAL,GAAiB,IAAI7B,EAAE,CAAC8B,OAAP,EAAjB;IACD,CA1C+C;;IA4ChDC,OAAO,EAAE;MACPF,iBAAS,EAAE,IADJ;;MAGP;AACJ;AACA;AACA;MACIG,UAAU,GAAG;QACX,OAAO,KAAKH,iBAAZ;MACD,CATM;;MAWP;AACJ;AACA;AACA;AACA;AACA;AACA;MACII,wBAAwB,CAACC,SAAD,EAAY;QAClC,IAAI;UACF,KAAKF,UAAL,GAAkBG,MAAlB,CAAyBD,SAAzB;QACD,CAFD,CAEE,OAAOE,CAAP,EAAU;UACV,KAAKC,IAAL,CAAU,mCAAV;QACD;MACF;;IAxBM;EA5CuC,CAAlD;EAvBArC,EAAE,CAACO,EAAH,CAAMC,OAAN,CAAcC,QAAd,CAAuBK,OAAvB,CAA+BX,aAA/B,GAA+CA,aAA/C"
+}

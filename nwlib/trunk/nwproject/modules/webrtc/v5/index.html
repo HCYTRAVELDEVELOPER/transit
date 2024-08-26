@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv='Content-Type' content='text/html;charset=utf-8' />
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <title>Ringow</title>
+        <!--        <script src="https://rtcmulticonnection.herokuapp.com/dist/RTCMultiConnection.min.js"></script>
+                <script src="https://rtcmulticonnection.herokuapp.com/socket.io/socket.io.js"></script>-->
+    </head>
+    <body>
+        <div id="loadingNwChat" class="loadingNwChat" style="position: fixed;top: 0;left: 0;width: 100%;height: 100%;background-color: #ffffff;z-index: 100000000;">
+            <div class="cEftVf" style="top: 40%;position: relative;"></div>
+            <style>
+                @-webkit-keyframes iECmZH {
+                    0% {
+                        -webkit-transform: rotate(0deg);
+                        -ms-transform: rotate(0deg);
+                        transform: rotate(0deg);
+                    }
+                    100% {
+                        -webkit-transform: rotate(360deg);
+                        -ms-transform: rotate(360deg);
+                        transform: rotate(360deg);
+                    }
+                }
+
+                @keyframes iECmZH {
+                    0% {
+                        -webkit-transform: rotate(0deg);
+                        -ms-transform: rotate(0deg);
+                        transform: rotate(0deg);
+                    }
+                    100% {
+                        -webkit-transform: rotate(360deg);
+                        -ms-transform: rotate(360deg);
+                        transform: rotate(360deg);
+                    }
+                }
+                .cEftVf {
+                    margin-left: auto;
+                    margin-right: auto;
+                    border: 4px solid #358EFF;
+                    border-top: 4px solid transparent;
+                    height: 3rem;
+                    width: 3rem;
+                    box-sizing: border-box;
+                    -webkit-animation: iECmZH 1100ms infinite linear;
+                    animation: iECmZH 1100ms infinite linear;
+                    border-radius: 50%;
+                }
+            </style>
+        </div>
+        <div class="containerNwpeer2Peer" id="containerNwpeer2Peer"></div>
+        <canvas id="myCanvas"  style="position: fixed;background-color: red;z-index: 100;display: none;"></canvas>
+        <script>
+
+
+            function loadedRTCMulticonnection() {
+                alert("LOADED!");
+                console.log("LOADED!");
+            }
+
+            (function (global) {
+                loadAll();
+                function loadAll() {
+                    if (typeof rtcNw === "undefined") {
+                        setTimeout(function () {
+                            loadAll();
+                        }, 100);
+                    } else {
+                        if (typeof NWMMain == "undefined") {
+                            setTimeout(function () {
+                                loadAll();
+                            }, 100);
+                            return;
+                        }
+                        NWMMain = new NWMMain();
+                        NWMMain.listenEvent("load", function () {
+                            console.log("LOADED!");
+                            rtcNw.prepare(".containerNwpeer2Peer", function () {
+
+                            });
+                        });
+                        NWMMain.onStart();
+                    }
+                }
+            })(this);
+        </script>
+
+        <script src="https://turn.gruponw.com:9001/socket.io/socket.io.js"></script>
+        <!--        <script src="https://webrtc.loc:9001/dist/RTCMultiConnection.min.js"></script>
+                <script src="https://webrtc.loc:9001/socket.io/socket.io.js"></script>-->
+        <script async defer src='/nwlib6/nwproject/core/main.nwmaker.js' id='nwmaker_vc' ></script>
+        <script async defer src='/nwlib6/nwproject/core/utils.nwmaker.js' id='nwmaker_vc' ></script>
+        <script async defer src='/nwlib6/nwproject/core/rpc.nwmaker.js' id='nwmaker_vc' ></script>
+        <script async defer src='js/app.js?v=22' id='ringow_v_3' ></script>
+        <script async defer src='js/srv.js?v=22'></script>
+    </body>
+</html>

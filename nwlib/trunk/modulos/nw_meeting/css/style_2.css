@@ -1,0 +1,188 @@
+.div_redondButton {
+    position: relative;
+    width: auto;
+    height: auto;
+    border: 1px solid rgb(230, 235, 239);
+    float: left;
+    margin: 5px;
+    padding: 3px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.container_body_inter {
+    margin: 0px;
+    background: #fff;
+}
+.div_proximas{
+
+}
+.showInt{
+    
+}
+div_home{
+
+}
+.div_meeting_list {
+    width: auto;
+    height: auto;
+    float: none;
+    transition: all 0.5s ease 0s;
+}
+.div_historial_reu{
+    display: none;
+    transition: all 0.5s ease 0s;
+}
+.div_reus_home_dashb{
+    transition: all 0.5s ease 0s;
+}
+.div_meeting_list:hover {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.26);
+    z-index: 1000;
+}
+.div_meeting_list_inter {
+    /*background: #fff!important;*/
+    /*color: inherit!important;*/
+    box-shadow: none!important;
+    /* border: 1px solid #E5E7EA!important; */
+    border: 0!important;
+    outline: 1px solid #e5e7ea;
+    height: auto;
+    margin: 1px;
+    padding-bottom: 15px;
+}
+.otros_mee_list {
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 70%;
+}
+.otros_mee_list h2 {
+    float: left;
+    font-size: 12px;
+    width: 15%;
+}
+.div_place_and_objetive{
+    position: relative;
+    width: 80%;
+}
+.div_place_and_objetive p{
+
+}
+.div_place_and_objetive, .otros_mee_list h2 {
+    text-align: left;
+    float: left;
+    font-weight: lighter;
+    line-height: 3;
+}
+.p_objetive{
+    position: relative;
+    width: 86%;
+    float: left;
+    margin: 5px;
+}
+.p_place{
+
+}
+.p_place b{
+
+}
+.p_creador{
+    position: relative;
+    float: left;
+    margin: 3px 5px;
+    color: #999999;
+    width: 100%; 
+    font-size: 11px;
+    /*text-align: right;*/
+    /*position: absolute;*/
+    bottom: 0;
+    right: 0;    
+}
+.div_reus_home_h1 {
+    border: 0;
+    background-color: #F6F6F6;
+    padding: 10px;
+    font-size: 15px;
+    /*border-bottom: 1px solid #D9D9D9;*/
+    margin: 0px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.fecha_mee_list h2, .fecha_mee_list h3 {
+    float: left;
+    margin-right: 10px;
+    border-right: 1px solid #e6e6e6;
+    padding-right: 10px;
+}
+.fecha_mee_list h2 {
+    font-size: 18px;
+}
+.fecha_mee_list h4 {
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+.l_left, .l_right, .l_center {
+    display: none;
+}
+.title_mee_list {
+    background: transparent;
+    color: inherit;
+    text-align: left;
+    padding: 5px 5px;
+    font-weight: 600;
+    font-size: 12px;
+    border: 0;
+    text-transform: uppercase;
+    margin: 5px 1px;
+    margin-top: 15px;
+    padding-bottom: 15px;
+}
+.fecha_mee_list{
+    text-align: left;
+    margin: 5px;
+    overflow: hidden;
+    float: left;
+    width: 18%;
+    min-width: 160px;
+}
+.meeting_overlay_list {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    top: 0;
+    background: transparent;
+    width: 100px;
+    right: 0;
+    left: auto;
+}
+.iniciar_reu_home{
+
+}
+.cancelar_reu_home, .buttonViewReu{
+    background: transparent!important;
+    color: inherit!important;
+    font-weight: lighter!important;
+    text-transform: inherit!important;
+    font-size: 11px!important;
+}
+.buttonViewReu{
+
+}
+.meeting_overlay_list ul {
+    /*margin-top: 25px;*/
+}
+.meeting_overlay_list li {
+    border: 0;
+    padding: 5px;
+    font-size: 10px;
+    /* text-align: right; */
+    /*background: #0255A5;*/
+    background: rgb(75, 158, 215);
+    margin: 10px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}

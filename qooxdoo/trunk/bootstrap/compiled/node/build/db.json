@@ -1,0 +1,4919 @@
+{
+  "libraries": {
+    "qx": "7.1.0"
+  },
+  "environmentHash": "652261beda0cfc5000954681b5256019fd93303c",
+  "compilerVersion": "7.2.1",
+  "classInfo": {
+    "qx.core.BaseInit": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.core.Environment": {
+          "load": true,
+          "defer": "load"
+        },
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.bom.client.Engine": {
+          "load": true
+        },
+        "qx.log.Logger": {},
+        "qx.bom.client.OperatingSystem": {
+          "load": true
+        },
+        "qx.Bootstrap": {},
+        "qx.event.handler.Application": {}
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "environment": {
+        "provided": [],
+        "required": {
+          "engine.name": {
+            "className": "qx.bom.client.Engine"
+          },
+          "engine.version": {
+            "className": "qx.bom.client.Engine"
+          },
+          "os.name": {
+            "className": "qx.bom.client.OperatingSystem"
+          },
+          "qx.debug.startupTimings": {},
+          "qx.application": {}
+        }
+      },
+      "hasDefer": null
+    },
+    "qx.tool.cli.Application": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.application.Basic": {
+          "load": true
+        },
+        "qx.tool.cli.Cli": {},
+        "qx.tool.compiler.Console": {},
+        "qx.log.Logger": {
+          "defer": "runtime"
+        }
+      },
+      "extends": "qx.application.Basic",
+      "include": [],
+      "implement": [],
+      "hasDefer": true,
+      "assets": [
+        "qx/tool/*"
+      ]
+    },
+    "qx.tool.cli.Cli": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.tool.utils.Promisify": {
+          "load": true
+        },
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Object": {
+          "load": true,
+          "construct": true
+        },
+        "qx.log.appender.NodeConsole": {
+          "construct": true
+        },
+        "qx.tool.config.Utils": {},
+        "qx.log.Logger": {},
+        "qx.tool.compiler.Console": {},
+        "qx.lang.Array": {},
+        "qx.tool.config.Compile": {},
+        "qx.tool.config.Lockfile": {},
+        "qx.tool.cli.api.CompilerApi": {},
+        "qx.tool.utils.Json": {},
+        "qx.tool.cli.commands.package.Install": {},
+        "qx.tool.utils.Utils": {},
+        "qx.lang.Type": {},
+        "qx.tool.config.Manifest": {},
+        "qx.tool.cli.api.LibraryApi": {},
+        "qx.lang.Object": {},
+        "qx.tool.compiler.resources.ScssConverter": {}
+      },
+      "extends": "qx.core.Object",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.cli.ConfigDb": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Object": {
+          "load": true,
+          "construct": true
+        },
+        "qx.tool.utils.Json": {},
+        "qx.tool.utils.Utils": {}
+      },
+      "extends": "qx.core.Object",
+      "include": [],
+      "implement": [],
+      "hasDefer": true
+    },
+    "qx.tool.cli.LibraryApplication": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.tool.cli.Cli": {},
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.application.Basic": {
+          "load": true
+        }
+      },
+      "extends": "qx.application.Basic",
+      "include": [],
+      "implement": [],
+      "hasDefer": null,
+      "assets": [
+        "qx/tool/*"
+      ]
+    },
+    "qx.tool.cli.Watch": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Object": {
+          "load": true,
+          "construct": true
+        },
+        "qx.tool.utils.Utils": {},
+        "qx.Promise": {},
+        "qx.tool.compiler.Console": {
+          "defer": "runtime"
+        },
+        "qx.tool.config.Compile": {},
+        "qx.tool.utils.files.Utils": {}
+      },
+      "extends": "qx.core.Object",
+      "include": [],
+      "implement": [],
+      "hasDefer": true
+    },
+    "qx.tool.cli.api.AbstractApi": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Object": {
+          "load": true
+        },
+        "qx.tool.compiler.Console": {}
+      },
+      "extends": "qx.core.Object",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.cli.api.CompilerApi": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.tool.utils.Promisify": {
+          "load": true
+        },
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.tool.cli.api.AbstractApi": {
+          "load": true,
+          "construct": true
+        },
+        "qx.tool.utils.Json": {}
+      },
+      "extends": "qx.tool.cli.api.AbstractApi",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.cli.api.LibraryApi": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.tool.cli.api.AbstractApi": {
+          "load": true
+        }
+      },
+      "extends": "qx.tool.cli.api.AbstractApi",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.cli.api.Test": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Object": {
+          "load": true,
+          "construct": true
+        },
+        "qx.Promise": {}
+      },
+      "extends": "qx.core.Object",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.cli.commands.Add": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.tool.cli.commands.Command": {
+          "load": true
+        },
+        "qx.tool.cli.Cli": {},
+        "qx.core.Object": {
+          "load": true
+        }
+      },
+      "extends": "qx.tool.cli.commands.Command",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.cli.commands.Clean": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.tool.cli.commands.Command": {
+          "load": true
+        },
+        "qx.tool.config.Compile": {},
+        "qx.tool.cli.commands.Package": {},
+        "qx.tool.compiler.Console": {},
+        "qx.core.Object": {
+          "load": true
+        }
+      },
+      "extends": "qx.tool.cli.commands.Command",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.cli.commands.Command": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Object": {
+          "load": true,
+          "construct": true
+        },
+        "qx.tool.cli.ConfigDb": {},
+        "qx.tool.utils.Utils": {},
+        "qx.tool.migration.Runner": {},
+        "qx.tool.compiler.Console": {},
+        "qx.tool.config.Utils": {
+          "load": true,
+          "usage": "dynamic"
+        }
+      },
+      "extends": "qx.core.Object",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.cli.commands.Compile": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.tool.utils.Promisify": {
+          "load": true
+        },
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.tool.cli.commands.Command": {
+          "load": true
+        },
+        "qx.tool.cli.ConfigDb": {},
+        "qx.tool.compiler.Console": {
+          "defer": "runtime"
+        },
+        "qx.tool.cli.Cli": {},
+        "qx.tool.utils.Utils": {},
+        "qx.Promise": {},
+        "qx.tool.utils.files.Utils": {},
+        "qx.tool.compiler.targets.BuildTarget": {},
+        "qx.tool.cli.Watch": {},
+        "qx.lang.Array": {},
+        "qx.tool.compiler.app.Library": {},
+        "qx.tool.config.Utils": {},
+        "qx.tool.compiler.makers.AppMaker": {},
+        "qx.lang.Object": {},
+        "qx.tool.compiler.app.Application": {},
+        "qx.lang.String": {},
+        "qx.tool.compiler.app.Part": {},
+        "qx.tool.compiler.ClassFile": {},
+        "qx.tool.config.Manifest": {},
+        "qx.tool.cli.commands.package.Install": {},
+        "qx.tool.compiler.targets.SourceTarget": {},
+        "qx.core.Object": {
+          "load": true
+        }
+      },
+      "extends": "qx.tool.cli.commands.Command",
+      "include": [],
+      "implement": [],
+      "hasDefer": true
+    },
+    "qx.tool.cli.commands.Config": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.tool.utils.Promisify": {
+          "load": true
+        },
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.tool.cli.commands.Command": {
+          "load": true
+        },
+        "qx.tool.compiler.Console": {},
+        "qx.tool.cli.ConfigDb": {},
+        "qx.tool.utils.Utils": {},
+        "qx.core.Object": {
+          "load": true
+        }
+      },
+      "extends": "qx.tool.cli.commands.Command",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.cli.commands.Create": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.tool.cli.commands.Command": {
+          "load": true
+        },
+        "qx.tool.utils.Utils": {},
+        "qx.tool.config.Utils": {},
+        "qx.tool.compiler.Console": {},
+        "qx.core.Object": {
+          "load": true
+        }
+      },
+      "extends": "qx.tool.cli.commands.Command",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.cli.commands.Deploy": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.tool.cli.commands.Compile": {
+          "load": true
+        },
+        "qx.tool.compiler.Console": {
+          "defer": "runtime"
+        },
+        "qx.lang.Object": {},
+        "qx.tool.utils.Promisify": {},
+        "qx.tool.utils.files.Utils": {},
+        "qx.tool.utils.Utils": {},
+        "qx.Promise": {}
+      },
+      "extends": "qx.tool.cli.commands.Compile",
+      "include": [],
+      "implement": [],
+      "hasDefer": true
+    },
+    "qx.tool.cli.commands.Es6ify": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.tool.cli.commands.Command": {
+          "load": true
+        },
+        "qx.lang.Type": {},
+        "qx.tool.compiler.Console": {},
+        "qx.tool.compiler.Es6ify": {},
+        "qx.core.Object": {
+          "load": true
+        }
+      },
+      "extends": "qx.tool.cli.commands.Command",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.cli.commands.Lint": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.tool.utils.Promisify": {
+          "load": true
+        },
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.tool.cli.commands.Command": {
+          "load": true
+        },
+        "qx.tool.cli.Cli": {},
+        "qx.tool.compiler.Console": {},
+        "qx.tool.utils.Utils": {},
+        "qx.Promise": {},
+        "qx.tool.compiler.app.Library": {},
+        "qx.core.Object": {
+          "load": true
+        }
+      },
+      "extends": "qx.tool.cli.commands.Command",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.cli.commands.Migrate": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.tool.cli.commands.Package": {
+          "load": true
+        },
+        "qx.tool.migration.Runner": {},
+        "qx.tool.compiler.Console": {}
+      },
+      "extends": "qx.tool.cli.commands.Package",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.cli.commands.Package": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.tool.utils.Promisify": {
+          "load": true
+        },
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.tool.cli.commands.Command": {
+          "load": true
+        },
+        "qx.tool.cli.Cli": {},
+        "qx.tool.config.Lockfile": {},
+        "qx.tool.config.Manifest": {},
+        "qx.tool.compiler.Console": {},
+        "qx.tool.cli.ConfigDb": {},
+        "qx.tool.utils.Utils": {},
+        "qx.core.Object": {
+          "load": true
+        }
+      },
+      "extends": "qx.tool.cli.commands.Command",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.cli.commands.Pkg": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.tool.cli.commands.Package": {
+          "load": true
+        },
+        "qx.tool.cli.Cli": {}
+      },
+      "extends": "qx.tool.cli.commands.Package",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.cli.commands.Run": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.tool.cli.commands.Compile": {
+          "load": true
+        },
+        "qx.tool.compiler.Console": {
+          "defer": "runtime"
+        },
+        "qx.tool.utils.Utils": {}
+      },
+      "extends": "qx.tool.cli.commands.Compile",
+      "include": [],
+      "implement": [],
+      "hasDefer": true
+    },
+    "qx.tool.cli.commands.Serve": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.tool.utils.Promisify": {
+          "load": true
+        },
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.tool.cli.commands.Compile": {
+          "load": true
+        },
+        "qx.tool.utils.Website": {},
+        "qx.tool.compiler.Console": {
+          "defer": "runtime"
+        },
+        "qx.tool.config.Utils": {}
+      },
+      "extends": "qx.tool.cli.commands.Compile",
+      "include": [],
+      "implement": [],
+      "hasDefer": true
+    },
+    "qx.tool.cli.commands.Test": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.tool.cli.commands.Serve": {
+          "load": true,
+          "construct": true
+        },
+        "qx.tool.cli.commands.Compile": {},
+        "qx.core.Assert": {},
+        "qx.tool.cli.api.Test": {},
+        "qx.tool.compiler.Console": {}
+      },
+      "extends": "qx.tool.cli.commands.Serve",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.cli.commands.add.Class": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.tool.cli.commands.Command": {
+          "load": true
+        },
+        "qx.tool.config.Manifest": {},
+        "qx.tool.utils.Utils": {},
+        "qx.core.Object": {
+          "load": true
+        }
+      },
+      "extends": "qx.tool.cli.commands.Command",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.cli.commands.add.Script": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.tool.cli.commands.Command": {
+          "load": true
+        },
+        "qx.tool.config.Manifest": {},
+        "qx.tool.utils.Utils": {},
+        "qx.core.Object": {
+          "load": true
+        }
+      },
+      "extends": "qx.tool.cli.commands.Command",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.cli.commands.package.Install": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.tool.utils.Promisify": {
+          "load": true
+        },
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.tool.cli.commands.Package": {
+          "load": true
+        },
+        "qx.tool.compiler.Console": {},
+        "qx.tool.utils.Utils": {},
+        "qx.lang.Type": {},
+        "qx.tool.cli.commands.package.Update": {},
+        "qx.tool.cli.commands.package.List": {},
+        "qx.tool.config.Manifest": {},
+        "qx.tool.utils.Json": {},
+        "qx.tool.config.Compile": {},
+        "qx.tool.config.Lockfile": {},
+        "qx.Promise": {},
+        "qx.core.Assert": {}
+      },
+      "extends": "qx.tool.cli.commands.Package",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.cli.commands.package.List": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.tool.cli.commands.Package": {
+          "load": true
+        },
+        "qx.tool.compiler.Console": {},
+        "qx.tool.utils.Utils": {},
+        "qx.lang.Type": {},
+        "qx.tool.config.Manifest": {},
+        "qx.tool.utils.Json": {}
+      },
+      "extends": "qx.tool.cli.commands.Package",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.cli.commands.package.Migrate": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.tool.cli.commands.Migrate": {
+          "load": true
+        },
+        "qx.tool.compiler.Console": {}
+      },
+      "extends": "qx.tool.cli.commands.Migrate",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.cli.commands.package.Publish": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.tool.cli.commands.Package": {
+          "load": true
+        },
+        "qx.tool.utils.Utils": {},
+        "qx.tool.cli.ConfigDb": {},
+        "qx.tool.compiler.Console": {},
+        "qx.tool.config.Registry": {},
+        "qx.tool.config.Abstract": {},
+        "qx.tool.config.Manifest": {},
+        "qx.tool.utils.Json": {}
+      },
+      "extends": "qx.tool.cli.commands.Package",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.cli.commands.package.Remove": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.tool.cli.commands.Package": {
+          "load": true
+        },
+        "qx.tool.utils.Utils": {},
+        "qx.tool.compiler.Console": {},
+        "qx.tool.utils.Json": {},
+        "qx.tool.config.Manifest": {},
+        "qx.tool.config.Compile": {}
+      },
+      "extends": "qx.tool.cli.commands.Package",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.cli.commands.package.Update": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.tool.cli.commands.Package": {
+          "load": true
+        },
+        "qx.tool.compiler.Console": {},
+        "qx.tool.cli.ConfigDb": {},
+        "qx.tool.utils.Utils": {},
+        "qx.tool.utils.Json": {},
+        "qx.tool.config.Manifest": {},
+        "qx.tool.config.Lockfile": {}
+      },
+      "extends": "qx.tool.cli.commands.Package",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.cli.commands.package.Upgrade": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.tool.cli.commands.Package": {
+          "load": true
+        },
+        "qx.tool.cli.commands.package.Update": {},
+        "qx.tool.cli.commands.package.List": {},
+        "qx.tool.compiler.Console": {},
+        "qx.tool.cli.commands.package.Install": {},
+        "qx.lang.Type": {},
+        "qx.tool.utils.Utils": {}
+      },
+      "extends": "qx.tool.cli.commands.Package",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.compiler.Analyser": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.tool.utils.LogManager": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Object": {
+          "load": true,
+          "construct": true
+        },
+        "qx.tool.utils.IndexedArray": {
+          "construct": true
+        },
+        "qx.tool.compiler.resources.Manager": {},
+        "qx.tool.utils.Json": {},
+        "qx.tool.utils.Promisify": {},
+        "qx.tool.compiler.Console": {},
+        "qx.tool.compiler.jsdoc.Parser": {},
+        "qx.lang.Type": {},
+        "qx.lang.String": {},
+        "qx.lang.Array": {},
+        "qx.tool.compiler.ClassFile": {},
+        "qx.tool.utils.files.Utils": {},
+        "qx.tool.compiler.app.Cldr": {},
+        "qx.tool.compiler.app.Translation": {},
+        "qx.Promise": {},
+        "qx.tool.config.Utils": {}
+      },
+      "extends": "qx.core.Object",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.compiler.ClassFile": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.tool.utils.LogManager": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.lang.Type": {},
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Object": {
+          "load": true,
+          "construct": true
+        },
+        "qx.tool.compiler.Console": {
+          "construct": true
+        },
+        "qx.lang.Object": {},
+        "qx.tool.utils.Utils": {},
+        "qx.lang.Array": {},
+        "qx.tool.compiler.jsdoc.Parser": {}
+      },
+      "extends": "qx.core.Object",
+      "include": [],
+      "implement": [],
+      "hasDefer": true
+    },
+    "qx.tool.compiler.Console": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Object": {
+          "load": true
+        },
+        "qx.lang.String": {
+          "defer": "runtime"
+        }
+      },
+      "extends": "qx.core.Object",
+      "include": [],
+      "implement": [],
+      "hasDefer": true
+    },
+    "qx.tool.compiler.Es6ify": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Object": {
+          "load": true,
+          "construct": true
+        },
+        "qx.lang.Object": {},
+        "qx.tool.compiler.Console": {},
+        "qx.lang.Array": {}
+      },
+      "extends": "qx.core.Object",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.compiler.Preprocess": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Object": {
+          "load": true,
+          "construct": true
+        }
+      },
+      "extends": "qx.core.Object",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.compiler.TargetError": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        }
+      },
+      "extends": "Error",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.compiler.app.Application": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Object": {
+          "load": true,
+          "construct": true
+        },
+        "qx.lang.Array": {
+          "construct": true
+        },
+        "qx.lang.Type": {
+          "construct": true
+        },
+        "qx.tool.compiler.Console": {},
+        "qx.tool.utils.IndexedArray": {},
+        "qx.core.Assert": {},
+        "qx.tool.utils.Values": {}
+      },
+      "extends": "qx.core.Object",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.compiler.app.Cldr": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.tool.utils.LogManager": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Object": {
+          "load": true
+        },
+        "qx.tool.utils.Utils": {},
+        "qx.lang.Type": {}
+      },
+      "extends": "qx.core.Object",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.compiler.app.Library": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.tool.utils.LogManager": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Object": {
+          "load": true,
+          "construct": true
+        },
+        "qx.tool.compiler.Console": {},
+        "qx.tool.utils.files.Utils": {},
+        "qx.tool.utils.Json": {},
+        "qx.tool.compiler.app.WebFont": {}
+      },
+      "extends": "qx.core.Object",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.compiler.app.Part": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Object": {
+          "load": true,
+          "construct": true
+        }
+      },
+      "extends": "qx.core.Object",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.compiler.app.Translation": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.tool.utils.LogManager": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Object": {
+          "load": true,
+          "construct": true
+        },
+        "qx.tool.utils.files.Utils": {},
+        "qx.lang.Type": {},
+        "qx.tool.utils.Promisify": {}
+      },
+      "extends": "qx.core.Object",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.compiler.app.WebFont": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.tool.utils.LogManager": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Object": {
+          "load": true,
+          "construct": true
+        },
+        "qx.tool.compiler.Console": {}
+      },
+      "extends": "qx.core.Object",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.compiler.jsdoc.ChildControlParser": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.tool.compiler.jsdoc.CommandParser": {
+          "load": true
+        }
+      },
+      "extends": "qx.tool.compiler.jsdoc.CommandParser",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.compiler.jsdoc.CommandParser": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Object": {
+          "load": true
+        }
+      },
+      "extends": "qx.core.Object",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.compiler.jsdoc.ParamParser": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.tool.compiler.jsdoc.CommandParser": {
+          "load": true
+        }
+      },
+      "extends": "qx.tool.compiler.jsdoc.CommandParser",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.compiler.jsdoc.Parser": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Object": {
+          "load": true
+        },
+        "qx.tool.compiler.Console": {},
+        "qx.tool.compiler.jsdoc.ParamParser": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.tool.compiler.jsdoc.ReturnParser": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.tool.compiler.jsdoc.ThrowsParser": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.tool.compiler.jsdoc.ChildControlParser": {
+          "load": true,
+          "usage": "dynamic"
+        }
+      },
+      "extends": "qx.core.Object",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.compiler.jsdoc.ReturnParser": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.tool.compiler.jsdoc.CommandParser": {
+          "load": true
+        }
+      },
+      "extends": "qx.tool.compiler.jsdoc.CommandParser",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.compiler.jsdoc.ThrowsParser": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.tool.compiler.jsdoc.CommandParser": {
+          "load": true
+        }
+      },
+      "extends": "qx.tool.compiler.jsdoc.CommandParser",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.compiler.makers.AbstractAppMaker": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.tool.compiler.makers.Maker": {
+          "load": true
+        },
+        "qx.core.Object": {
+          "load": true
+        }
+      },
+      "extends": "qx.tool.compiler.makers.Maker",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.compiler.makers.AppMaker": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.tool.utils.LogManager": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.tool.compiler.makers.AbstractAppMaker": {
+          "load": true,
+          "construct": true
+        },
+        "qx.tool.compiler.app.Application": {
+          "construct": true
+        },
+        "qx.tool.utils.Values": {},
+        "qx.tool.compiler.ClassFile": {},
+        "qx.tool.config.Utils": {},
+        "qx.tool.utils.Utils": {},
+        "qx.tool.compiler.Console": {},
+        "qx.tool.compiler.targets.TypeScriptWriter": {},
+        "qx.core.Object": {
+          "load": true
+        }
+      },
+      "extends": "qx.tool.compiler.makers.AbstractAppMaker",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.compiler.makers.Maker": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Object": {
+          "load": true,
+          "construct": true
+        },
+        "qx.tool.utils.files.Utils": {},
+        "qx.tool.compiler.Analyser": {}
+      },
+      "extends": "qx.core.Object",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.compiler.resources.AbstractMatcher": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Object": {
+          "load": true,
+          "construct": true
+        },
+        "qx.lang.Type": {
+          "construct": true
+        }
+      },
+      "extends": "qx.core.Object",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.compiler.resources.Asset": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Object": {
+          "load": true,
+          "construct": true
+        },
+        "qx.lang.Array": {},
+        "qx.tool.utils.Promisify": {},
+        "qx.tool.utils.files.Utils": {},
+        "qx.tool.utils.Utils": {}
+      },
+      "extends": "qx.core.Object",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.compiler.resources.ImageLoader": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.tool.utils.Promisify": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.tool.utils.LogManager": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.tool.compiler.resources.ResourceLoader": {
+          "load": true,
+          "construct": true
+        },
+        "qx.core.Object": {
+          "load": true
+        }
+      },
+      "extends": "qx.tool.compiler.resources.ResourceLoader",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.compiler.resources.Manager": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.tool.utils.LogManager": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Object": {
+          "load": true,
+          "construct": true
+        },
+        "qx.tool.compiler.resources.ImageLoader": {
+          "construct": true
+        },
+        "qx.tool.compiler.resources.MetaLoader": {
+          "construct": true
+        },
+        "qx.tool.compiler.resources.ScssConverter": {
+          "construct": true
+        },
+        "qx.tool.compiler.resources.ScssIncludeConverter": {
+          "construct": true
+        },
+        "qx.tool.utils.Json": {},
+        "qx.tool.compiler.Console": {},
+        "qx.tool.utils.Values": {},
+        "qx.lang.Type": {},
+        "qx.Promise": {},
+        "qx.tool.utils.files.Utils": {},
+        "qx.tool.compiler.resources.Asset": {},
+        "qx.tool.utils.Promisify": {},
+        "qx.lang.Array": {}
+      },
+      "extends": "qx.core.Object",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.compiler.resources.MetaLoader": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.tool.compiler.resources.ResourceLoader": {
+          "load": true,
+          "construct": true
+        },
+        "qx.tool.utils.Json": {}
+      },
+      "extends": "qx.tool.compiler.resources.ResourceLoader",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.compiler.resources.ResourceConverter": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.tool.compiler.resources.AbstractMatcher": {
+          "load": true
+        },
+        "qx.core.Object": {
+          "load": true
+        },
+        "qx.lang.Type": {
+          "load": true
+        }
+      },
+      "extends": "qx.tool.compiler.resources.AbstractMatcher",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.compiler.resources.ResourceLoader": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.tool.compiler.resources.AbstractMatcher": {
+          "load": true
+        },
+        "qx.core.Object": {
+          "load": true
+        },
+        "qx.lang.Type": {
+          "load": true
+        }
+      },
+      "extends": "qx.tool.compiler.resources.AbstractMatcher",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.compiler.resources.ScssConverter": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.tool.utils.Promisify": {
+          "load": true
+        },
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.tool.compiler.resources.ResourceConverter": {
+          "load": true,
+          "construct": true
+        },
+        "qx.tool.utils.files.Utils": {},
+        "qx.tool.compiler.resources.ScssFile": {}
+      },
+      "extends": "qx.tool.compiler.resources.ResourceConverter",
+      "include": [],
+      "implement": [],
+      "hasDefer": null,
+      "assets": [
+        "qx/tool/loadsass.js"
+      ],
+      "externals": [
+        "qx/tool/loadsass.js"
+      ]
+    },
+    "qx.tool.compiler.resources.ScssFile": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.tool.utils.Promisify": {
+          "load": true
+        },
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Object": {
+          "load": true,
+          "construct": true
+        },
+        "qx.Promise": {},
+        "qx.tool.compiler.Console": {}
+      },
+      "extends": "qx.core.Object",
+      "include": [],
+      "implement": [],
+      "hasDefer": null,
+      "assets": [
+        "qx/tool/loadsass.js"
+      ],
+      "externals": [
+        "qx/tool/loadsass.js"
+      ]
+    },
+    "qx.tool.compiler.resources.ScssIncludeConverter": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.tool.compiler.resources.ResourceConverter": {
+          "load": true
+        },
+        "qx.tool.compiler.resources.ScssConverter": {},
+        "qx.tool.utils.files.Utils": {}
+      },
+      "extends": "qx.tool.compiler.resources.ResourceConverter",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.compiler.targets.BuildTarget": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.tool.compiler.targets.Target": {
+          "load": true
+        },
+        "qx.tool.compiler.targets.meta.Uglify": {},
+        "qx.core.Object": {
+          "load": true
+        }
+      },
+      "extends": "qx.tool.compiler.targets.Target",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.compiler.targets.SourceCodeCopier": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.tool.utils.Promisify": {
+          "load": true
+        },
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Object": {
+          "load": true,
+          "construct": true
+        },
+        "qx.tool.utils.files.Utils": {}
+      },
+      "extends": "qx.core.Object",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.compiler.targets.SourceTarget": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.tool.compiler.targets.Target": {
+          "load": true
+        },
+        "qx.core.Object": {
+          "load": true
+        }
+      },
+      "extends": "qx.tool.compiler.targets.Target",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.compiler.targets.Target": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.tool.utils.Promisify": {
+          "load": true
+        },
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Object": {
+          "load": true,
+          "construct": true
+        },
+        "qx.tool.compiler.targets.meta.ApplicationMeta": {},
+        "qx.tool.utils.Utils": {},
+        "qx.tool.compiler.targets.meta.BootJs": {},
+        "qx.tool.compiler.targets.meta.PolyfillJs": {},
+        "qx.tool.compiler.targets.meta.Browserify": {},
+        "qx.tool.compiler.app.Application": {},
+        "qx.tool.compiler.targets.meta.Javascript": {},
+        "qx.tool.compiler.Console": {},
+        "qx.Promise": {},
+        "qx.tool.compiler.app.Cldr": {},
+        "qx.tool.utils.files.Utils": {}
+      },
+      "extends": "qx.core.Object",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.compiler.targets.TypeScriptWriter": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Object": {
+          "load": true,
+          "construct": true
+        },
+        "qx.tool.utils.IndexedArray": {},
+        "qx.tool.compiler.Console": {},
+        "qx.tool.utils.Utils": {},
+        "qx.lang.Type": {}
+      },
+      "extends": "qx.core.Object",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.compiler.targets.meta.AbstractJavascriptMeta": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.tool.utils.Promisify": {
+          "load": true
+        },
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Object": {
+          "load": true,
+          "construct": true
+        },
+        "qx.tool.utils.Utils": {}
+      },
+      "extends": "qx.core.Object",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.compiler.targets.meta.ApplicationMeta": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Object": {
+          "load": true,
+          "construct": true
+        },
+        "qx.tool.utils.Promisify": {},
+        "qx.tool.compiler.targets.meta.Part": {},
+        "qx.tool.compiler.targets.meta.Package": {}
+      },
+      "extends": "qx.core.Object",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.compiler.targets.meta.BootJs": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.tool.utils.Promisify": {
+          "load": true
+        },
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.tool.compiler.targets.meta.AbstractJavascriptMeta": {
+          "load": true,
+          "construct": true
+        },
+        "qx.core.Object": {
+          "load": true
+        }
+      },
+      "extends": "qx.tool.compiler.targets.meta.AbstractJavascriptMeta",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.compiler.targets.meta.Browserify": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.tool.utils.Promisify": {
+          "load": true
+        },
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.tool.compiler.targets.meta.AbstractJavascriptMeta": {
+          "load": true,
+          "construct": true
+        },
+        "qx.tool.compiler.Console": {},
+        "qx.core.Object": {
+          "load": true
+        }
+      },
+      "extends": "qx.tool.compiler.targets.meta.AbstractJavascriptMeta",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.compiler.targets.meta.Javascript": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.tool.utils.Promisify": {
+          "load": true
+        },
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.tool.compiler.targets.meta.AbstractJavascriptMeta": {
+          "load": true,
+          "construct": true
+        },
+        "qx.core.Object": {
+          "load": true
+        }
+      },
+      "extends": "qx.tool.compiler.targets.meta.AbstractJavascriptMeta",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.compiler.targets.meta.Package": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Object": {
+          "load": true,
+          "construct": true
+        },
+        "qx.tool.compiler.targets.meta.PackageJavascript": {
+          "construct": true
+        },
+        "qx.lang.Type": {},
+        "qx.lang.Array": {}
+      },
+      "extends": "qx.core.Object",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.compiler.targets.meta.PackageJavascript": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.tool.compiler.targets.meta.AbstractJavascriptMeta": {
+          "load": true,
+          "construct": true
+        },
+        "qx.tool.utils.Utils": {},
+        "qx.core.Object": {
+          "load": true
+        }
+      },
+      "extends": "qx.tool.compiler.targets.meta.AbstractJavascriptMeta",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.compiler.targets.meta.Part": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Object": {
+          "load": true,
+          "construct": true
+        }
+      },
+      "extends": "qx.core.Object",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.compiler.targets.meta.PolyfillJs": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.tool.utils.Promisify": {
+          "load": true
+        },
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.tool.compiler.targets.meta.AbstractJavascriptMeta": {
+          "load": true,
+          "construct": true
+        },
+        "qx.core.Object": {
+          "load": true
+        }
+      },
+      "extends": "qx.tool.compiler.targets.meta.AbstractJavascriptMeta",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.compiler.targets.meta.Uglify": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.tool.utils.Promisify": {
+          "load": true
+        },
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.tool.compiler.targets.meta.AbstractJavascriptMeta": {
+          "load": true,
+          "construct": true
+        },
+        "qx.tool.utils.Utils": {},
+        "qx.tool.compiler.Console": {},
+        "qx.core.Object": {
+          "load": true
+        }
+      },
+      "extends": "qx.tool.compiler.targets.meta.AbstractJavascriptMeta",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.config.Abstract": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.tool.utils.Promisify": {
+          "load": true
+        },
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Object": {
+          "load": true,
+          "construct": true
+        },
+        "qx.lang.Type": {
+          "construct": true
+        },
+        "qx.tool.utils.Json": {},
+        "qx.tool.compiler.Console": {},
+        "qx.tool.utils.Utils": {},
+        "qx.util.ResourceManager": {},
+        "qx.tool.config.Manifest": {}
+      },
+      "extends": "qx.core.Object",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.config.Compile": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.tool.config.Abstract": {
+          "load": true,
+          "construct": true
+        },
+        "qx.core.Object": {
+          "load": true
+        },
+        "qx.lang.Type": {
+          "load": true
+        }
+      },
+      "extends": "qx.tool.config.Abstract",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.config.Lockfile": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.tool.config.Abstract": {
+          "load": true,
+          "construct": true
+        },
+        "qx.tool.cli.commands.Package": {
+          "load": true
+        },
+        "qx.core.Object": {
+          "load": true
+        },
+        "qx.lang.Type": {
+          "load": true
+        }
+      },
+      "extends": "qx.tool.config.Abstract",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.config.Manifest": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.tool.config.Abstract": {
+          "load": true,
+          "construct": true
+        },
+        "qx.core.Object": {
+          "load": true
+        },
+        "qx.lang.Type": {
+          "load": true
+        }
+      },
+      "extends": "qx.tool.config.Abstract",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.config.Registry": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.tool.config.Abstract": {
+          "load": true,
+          "construct": true
+        },
+        "qx.core.Object": {
+          "load": true
+        },
+        "qx.lang.Type": {
+          "load": true
+        }
+      },
+      "extends": "qx.tool.config.Abstract",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.config.Utils": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.tool.utils.Promisify": {
+          "load": true
+        },
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.tool.config.Registry": {},
+        "qx.tool.utils.Json": {},
+        "qx.lang.Type": {},
+        "qx.tool.config.Manifest": {},
+        "qx.tool.config.Compile": {},
+        "qx.tool.utils.Utils": {},
+        "qx.log.Logger": {},
+        "qx.tool.config.Abstract": {}
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.migration.BaseMigration": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.tool.utils.Promisify": {
+          "load": true
+        },
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Object": {
+          "load": true,
+          "construct": true
+        },
+        "qx.tool.config.Utils": {},
+        "qx.tool.compiler.Console": {},
+        "qx.core.Assert": {},
+        "qx.tool.config.Abstract": {},
+        "qx.tool.cli.commands.package.Upgrade": {}
+      },
+      "extends": "qx.core.Object",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.migration.M6_0_0": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.tool.utils.Promisify": {
+          "load": true
+        },
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.tool.migration.BaseMigration": {
+          "load": true
+        },
+        "qx.tool.config.Registry": {},
+        "qx.tool.cli.commands.Package": {},
+        "qx.tool.cli.ConfigDb": {},
+        "qx.tool.config.Utils": {},
+        "qx.lang.Type": {},
+        "qx.tool.compiler.Console": {},
+        "qx.tool.config.Compile": {},
+        "qx.core.Object": {
+          "load": true
+        }
+      },
+      "extends": "qx.tool.migration.BaseMigration",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.migration.M7_0_0": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.tool.utils.Promisify": {
+          "load": true
+        },
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.tool.migration.BaseMigration": {
+          "load": true
+        },
+        "qx.tool.config.Utils": {},
+        "qx.core.Object": {
+          "load": true
+        }
+      },
+      "extends": "qx.tool.migration.BaseMigration",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.migration.Runner": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Object": {
+          "load": true
+        },
+        "qx.tool.config.Utils": {}
+      },
+      "extends": "qx.core.Object",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.utils.IndexedArray": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Object": {
+          "load": true,
+          "construct": true
+        }
+      },
+      "extends": "qx.core.Object",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.utils.Json": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.tool.utils.Promisify": {
+          "load": true
+        },
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.tool.utils.json.Parser": {},
+        "qx.tool.utils.json.Stringify": {},
+        "qx.lang.Type": {},
+        "qx.tool.compiler.Console": {}
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.utils.LogManager": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.tool.utils.Logger": {
+          "require": true
+        },
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Object": {
+          "load": true,
+          "construct": true
+        },
+        "qx.tool.utils.Json": {}
+      },
+      "extends": "qx.core.Object",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.utils.Logger": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Object": {
+          "load": true,
+          "construct": true
+        },
+        "qx.tool.utils.LogManager": {}
+      },
+      "extends": "qx.core.Object",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.utils.Promisify": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.Promise": {}
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "hasDefer": true
+    },
+    "qx.tool.utils.Utils": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Object": {
+          "load": true
+        },
+        "qx.log.Logger": {},
+        "qx.Promise": {},
+        "qx.util.ResourceManager": {}
+      },
+      "extends": "qx.core.Object",
+      "include": [],
+      "implement": [],
+      "hasDefer": true
+    },
+    "qx.tool.utils.Values": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        }
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.utils.Website": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.tool.utils.Promisify": {
+          "load": true
+        },
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Object": {
+          "load": true,
+          "construct": true
+        },
+        "qx.util.ResourceManager": {
+          "construct": true
+        },
+        "qx.tool.utils.files.Utils": {},
+        "qx.tool.compiler.Console": {},
+        "qx.tool.cli.commands.Create": {},
+        "qx.tool.cli.commands.package.Install": {}
+      },
+      "extends": "qx.core.Object",
+      "include": [],
+      "implement": [],
+      "hasDefer": null,
+      "assets": [
+        "qx/tool/loadsass.js"
+      ],
+      "externals": [
+        "qx/tool/loadsass.js"
+      ]
+    },
+    "qx.tool.utils.files.FindFiles": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Object": {
+          "load": true,
+          "construct": true
+        }
+      },
+      "extends": "qx.core.Object",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.utils.files.Utils": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Object": {
+          "load": true
+        },
+        "qx.Promise": {},
+        "qx.tool.utils.Utils": {}
+      },
+      "extends": "qx.core.Object",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.utils.json.Parser": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.tool.utils.json.Tokenizer": {
+          "load": true
+        },
+        "qx.core.Object": {
+          "load": true
+        }
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.utils.json.Stringify": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Object": {
+          "load": true
+        },
+        "qx.tool.utils.json.Writer": {},
+        "qx.lang.Type": {},
+        "qx.tool.utils.json.Tokenizer": {}
+      },
+      "extends": "qx.core.Object",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.utils.json.Tokenizer": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Object": {
+          "load": true,
+          "construct": true
+        },
+        "qx.tool.utils.json.Parser": {}
+      },
+      "extends": "qx.core.Object",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.tool.utils.json.Writer": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Object": {
+          "load": true,
+          "construct": true
+        }
+      },
+      "extends": "qx.core.Object",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.theme.Simple": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Theme": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.theme.simple.Color": {
+          "load": true
+        },
+        "qx.theme.simple.Decoration": {
+          "load": true
+        },
+        "qx.theme.simple.Font": {
+          "load": true
+        },
+        "qx.theme.simple.Appearance": {
+          "load": true
+        },
+        "qx.theme.icon.Tango": {
+          "load": true
+        }
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "hasDefer": null,
+      "themeMeta": {
+        "color": "qx.theme.simple.Color",
+        "decoration": "qx.theme.simple.Decoration",
+        "font": "qx.theme.simple.Font",
+        "appearance": "qx.theme.simple.Appearance",
+        "icon": "qx.theme.icon.Tango"
+      }
+    },
+    "qx.core.Environment": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Bootstrap": {
+          "load": true,
+          "usage": "dynamic"
+        }
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "hasDefer": true
+    },
+    "qx.Class": {
+      "mtime": "2022-05-10T18:04:54.006Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Interface": {
+          "require": true,
+          "defer": "runtime"
+        },
+        "qx.Mixin": {
+          "require": true,
+          "defer": "runtime"
+        },
+        "qx.lang.normalize.Array": {
+          "require": true,
+          "defer": "runtime"
+        },
+        "qx.lang.normalize.Date": {
+          "require": true,
+          "defer": "runtime"
+        },
+        "qx.lang.normalize.Error": {
+          "require": true,
+          "defer": "runtime"
+        },
+        "qx.lang.normalize.Function": {
+          "require": true,
+          "defer": "runtime"
+        },
+        "qx.lang.normalize.String": {
+          "require": true,
+          "defer": "runtime"
+        },
+        "qx.lang.normalize.Object": {
+          "require": true,
+          "defer": "runtime"
+        },
+        "qx.lang.normalize.Number": {
+          "require": true,
+          "defer": "runtime"
+        },
+        "qx.core.Environment": {
+          "load": true,
+          "defer": "load",
+          "usage": "dynamic"
+        },
+        "qx.Bootstrap": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Property": {
+          "load": true
+        },
+        "qx.util.OOUtil": {
+          "load": true
+        },
+        "qx.lang.Type": {},
+        "qx.lang.Function": {}
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "environment": {
+        "provided": [],
+        "required": {
+          "qx.debug": {
+            "load": true
+          }
+        }
+      },
+      "hasDefer": true
+    },
+    "qx.bom.client.Engine": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Bootstrap": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Environment": {
+          "defer": "runtime"
+        }
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "environment": {
+        "provided": [
+          "engine.version",
+          "engine.name"
+        ],
+        "required": {}
+      },
+      "hasDefer": true
+    },
+    "qx.log.Logger": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.dev.StackTrace": {
+          "require": true,
+          "defer": "runtime"
+        },
+        "qx.Bootstrap": {
+          "load": true,
+          "usage": "dynamic",
+          "defer": "runtime"
+        },
+        "qx.lang.Array": {},
+        "qx.log.appender.RingBuffer": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.lang.Function": {}
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "hasDefer": true
+    },
+    "qx.bom.client.OperatingSystem": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Bootstrap": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Environment": {
+          "defer": "runtime"
+        }
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "environment": {
+        "provided": [
+          "os.name",
+          "os.version"
+        ],
+        "required": {}
+      },
+      "hasDefer": true
+    },
+    "qx.Bootstrap": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.data.IListData": {},
+        "qx.util.OOUtil": {}
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.event.handler.Application": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.bom.client.Engine": {
+          "require": true,
+          "load": true,
+          "defer": "runtime"
+        },
+        "qx.core.Environment": {
+          "load": true,
+          "defer": "load"
+        },
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Object": {
+          "load": true,
+          "construct": true
+        },
+        "qx.event.IEventHandler": {
+          "load": true
+        },
+        "qx.core.IDisposable": {
+          "load": true
+        },
+        "qx.event.Registration": {
+          "load": true,
+          "defer": "runtime"
+        },
+        "qx.lang.Function": {},
+        "qx.bom.client.Browser": {
+          "load": true
+        },
+        "qx.bom.Event": {},
+        "qx.bom.client.Runtime": {
+          "load": true
+        },
+        "qx.event.GlobalError": {
+          "load": true
+        }
+      },
+      "extends": "qx.core.Object",
+      "include": [],
+      "implement": [
+        "qx.event.IEventHandler",
+        "qx.core.IDisposable"
+      ],
+      "environment": {
+        "provided": [],
+        "required": {
+          "engine.name": {
+            "className": "qx.bom.client.Engine"
+          },
+          "browser.documentmode": {
+            "className": "qx.bom.client.Browser"
+          },
+          "runtime.name": {
+            "className": "qx.bom.client.Runtime"
+          },
+          "qx.globalErrorHandling": {
+            "className": "qx.event.GlobalError"
+          }
+        }
+      },
+      "hasDefer": true
+    },
+    "qx.application.Basic": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.core.BaseInit": {},
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Object": {
+          "load": true
+        },
+        "qx.application.IApplication": {
+          "load": true
+        }
+      },
+      "extends": "qx.core.Object",
+      "include": [],
+      "implement": [
+        "qx.application.IApplication"
+      ],
+      "hasDefer": null
+    },
+    "qx.core.Object": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.core.ObjectRegistry": {
+          "require": true
+        },
+        "qx.core.Environment": {
+          "load": true,
+          "defer": "load"
+        },
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.data.MBinding": {
+          "load": true
+        },
+        "qx.core.MLogging": {
+          "load": true
+        },
+        "qx.core.MEvent": {
+          "load": true
+        },
+        "qx.core.MProperty": {
+          "load": true
+        },
+        "qx.core.MObjectId": {
+          "load": true
+        },
+        "qx.core.MAssert": {
+          "load": true
+        },
+        "qx.core.Property": {
+          "load": true
+        },
+        "qx.core.IDisposable": {},
+        "qx.util.Uuid": {},
+        "qx.event.Registration": {},
+        "qx.util.DisposeUtil": {}
+      },
+      "extends": "Object",
+      "include": [
+        "qx.core.Environment",
+        "qx.data.MBinding",
+        "qx.core.MLogging",
+        "qx.core.MEvent",
+        "qx.core.MProperty",
+        "qx.core.MObjectId",
+        "qx.core.MAssert"
+      ],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.log.appender.NodeConsole": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Assert": {},
+        "qx.log.Logger": {
+          "defer": "runtime"
+        }
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "hasDefer": true
+    },
+    "qx.lang.Array": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.lang.normalize.Date": {
+          "require": true
+        },
+        "qx.core.Environment": {
+          "load": true,
+          "defer": "load"
+        },
+        "qx.Bootstrap": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.bom.client.Engine": {
+          "load": true
+        },
+        "qx.data.Array": {},
+        "qx.lang.Type": {}
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "environment": {
+        "provided": [],
+        "required": {
+          "engine.name": {
+            "className": "qx.bom.client.Engine"
+          }
+        }
+      },
+      "hasDefer": null
+    },
+    "qx.lang.Type": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Bootstrap": {
+          "load": true,
+          "usage": "dynamic"
+        }
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.lang.Object": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.lang.normalize.Object": {
+          "require": true
+        },
+        "qx.Bootstrap": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.lang.Type": {}
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.Promise": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Object": {
+          "load": true,
+          "construct": true
+        },
+        "qx.core.Assert": {
+          "construct": true
+        },
+        "qx.data.Array": {},
+        "qx.lang.Array": {},
+        "qx.log.Logger": {},
+        "qx.bom.Event": {},
+        "qx.lang.Type": {},
+        "qx.event.GlobalError": {},
+        "qx.core.Environment": {
+          "defer": "runtime"
+        }
+      },
+      "extends": "qx.core.Object",
+      "include": [],
+      "implement": [],
+      "environment": {
+        "provided": [
+          "qx.promise.warnings",
+          "qx.promise.longStackTraces"
+        ],
+        "required": {}
+      },
+      "hasDefer": true
+    },
+    "qx.lang.String": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.lang.normalize.String": {
+          "require": true,
+          "defer": "runtime"
+        },
+        "qx.Bootstrap": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.lang.Function": {}
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "hasDefer": true
+    },
+    "qx.core.Assert": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.lang.Type": {
+          "require": true
+        },
+        "qx.Bootstrap": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.AssertionError": {},
+        "qx.lang.Json": {},
+        "qx.lang.Number": {},
+        "qx.lang.String": {}
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.util.ResourceManager": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.core.Environment": {
+          "load": true,
+          "defer": "load"
+        },
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Object": {
+          "load": true,
+          "construct": true
+        },
+        "qx.bom.client.Device": {},
+        "qx.bom.client.Engine": {
+          "load": true,
+          "defer": "load"
+        },
+        "qx.bom.client.Transport": {
+          "load": true,
+          "defer": "load"
+        },
+        "qx.util.LibraryManager": {
+          "defer": "runtime"
+        }
+      },
+      "extends": "qx.core.Object",
+      "include": [],
+      "implement": [],
+      "environment": {
+        "provided": [],
+        "required": {
+          "engine.name": {
+            "className": "qx.bom.client.Engine",
+            "defer": true
+          },
+          "io.ssl": {
+            "className": "qx.bom.client.Transport",
+            "defer": true
+          }
+        }
+      },
+      "hasDefer": true
+    },
+    "qx.Theme": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.core.Environment": {
+          "load": true,
+          "defer": "load",
+          "usage": "dynamic"
+        },
+        "qx.Bootstrap": {
+          "load": true,
+          "usage": "dynamic"
+        }
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "environment": {
+        "provided": [],
+        "required": {
+          "qx.debug": {
+            "load": true
+          }
+        }
+      },
+      "hasDefer": null
+    },
+    "qx.theme.simple.Color": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.core.Environment": {
+          "load": true,
+          "defer": "load",
+          "usage": "dynamic"
+        },
+        "qx.Theme": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.bom.client.Css": {
+          "load": true
+        }
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "environment": {
+        "provided": [],
+        "required": {
+          "css.rgba": {
+            "load": true,
+            "className": "qx.bom.client.Css"
+          }
+        }
+      },
+      "hasDefer": null
+    },
+    "qx.theme.simple.Decoration": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Theme": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.test.MDecoration": {
+          "load": true
+        }
+      },
+      "extends": null,
+      "include": [
+        "qx.test.MDecoration"
+      ],
+      "implement": [],
+      "hasDefer": null,
+      "aliases": {
+        "decoration": "qx/decoration/Simple"
+      }
+    },
+    "qx.theme.simple.Font": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Theme": {
+          "load": true,
+          "usage": "dynamic"
+        }
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.theme.simple.Appearance": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Theme": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.test.MAppearance": {
+          "load": true
+        },
+        "qx.theme.simple.Image": {}
+      },
+      "extends": null,
+      "include": [
+        "qx.test.MAppearance"
+      ],
+      "implement": [],
+      "hasDefer": null,
+      "assets": [
+        "qx/icon/${qx.icontheme}/16/apps/office-calendar.png",
+        "qx/icon/${qx.icontheme}/16/places/folder-open.png",
+        "qx/icon/${qx.icontheme}/16/places/folder.png",
+        "qx/icon/${qx.icontheme}/16/mimetypes/text-plain.png",
+        "qx/icon/${qx.icontheme}/16/actions/view-refresh.png",
+        "qx/icon/${qx.icontheme}/16/actions/window-close.png",
+        "qx/icon/${qx.icontheme}/16/actions/dialog-cancel.png",
+        "qx/icon/${qx.icontheme}/16/actions/dialog-ok.png"
+      ]
+    },
+    "qx.theme.icon.Tango": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Theme": {
+          "load": true,
+          "usage": "dynamic"
+        }
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "hasDefer": null,
+      "aliases": {
+        "icon": "qx/icon/Tango"
+      }
+    },
+    "qx.Interface": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.lang.normalize.Array": {
+          "require": true
+        },
+        "qx.core.Environment": {
+          "load": true,
+          "defer": "load",
+          "usage": "dynamic"
+        },
+        "qx.Bootstrap": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.util.OOUtil": {}
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "environment": {
+        "provided": [],
+        "required": {
+          "qx.debug": {
+            "load": true
+          }
+        }
+      },
+      "hasDefer": null
+    },
+    "qx.Mixin": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.lang.normalize.Array": {
+          "require": true
+        },
+        "qx.core.Environment": {
+          "load": true,
+          "defer": "load",
+          "usage": "dynamic"
+        },
+        "qx.Bootstrap": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.util.OOUtil": {}
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "environment": {
+        "provided": [],
+        "required": {
+          "qx.debug": {
+            "load": true
+          }
+        }
+      },
+      "hasDefer": null
+    },
+    "qx.lang.normalize.Array": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.bom.client.EcmaScript": {
+          "require": true,
+          "defer": "runtime"
+        },
+        "qx.Bootstrap": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Environment": {
+          "defer": "runtime"
+        }
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "hasDefer": true
+    },
+    "qx.lang.normalize.Date": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.core.Environment": {
+          "load": true,
+          "defer": "load"
+        },
+        "qx.Bootstrap": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.bom.client.EcmaScript": {
+          "load": true,
+          "defer": "load"
+        }
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "environment": {
+        "provided": [],
+        "required": {
+          "ecmascript.date.now": {
+            "defer": true,
+            "className": "qx.bom.client.EcmaScript"
+          },
+          "ecmascript.date.parse": {
+            "defer": true,
+            "className": "qx.bom.client.EcmaScript"
+          }
+        }
+      },
+      "hasDefer": true
+    },
+    "qx.lang.normalize.Error": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.core.Environment": {
+          "load": true,
+          "defer": "load"
+        },
+        "qx.Bootstrap": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.bom.client.EcmaScript": {
+          "load": true,
+          "defer": "load"
+        }
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "environment": {
+        "provided": [],
+        "required": {
+          "ecmascript.error.toString": {
+            "defer": true,
+            "className": "qx.bom.client.EcmaScript"
+          }
+        }
+      },
+      "hasDefer": true
+    },
+    "qx.lang.normalize.Function": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.core.Environment": {
+          "load": true,
+          "defer": "load"
+        },
+        "qx.Bootstrap": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.bom.client.EcmaScript": {
+          "load": true,
+          "defer": "load"
+        }
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "environment": {
+        "provided": [],
+        "required": {
+          "ecmascript.function.bind": {
+            "defer": true,
+            "className": "qx.bom.client.EcmaScript"
+          }
+        }
+      },
+      "hasDefer": true
+    },
+    "qx.lang.normalize.String": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.core.Environment": {
+          "load": true,
+          "defer": "load"
+        },
+        "qx.Bootstrap": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.bom.client.EcmaScript": {
+          "load": true,
+          "defer": "load"
+        }
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "environment": {
+        "provided": [],
+        "required": {
+          "ecmascript.string.trim": {
+            "defer": true,
+            "className": "qx.bom.client.EcmaScript"
+          },
+          "ecmascript.string.startsWith": {
+            "defer": true,
+            "className": "qx.bom.client.EcmaScript"
+          },
+          "ecmascript.string.endsWith": {
+            "defer": true,
+            "className": "qx.bom.client.EcmaScript"
+          },
+          "ecmascript.string.codePointAt": {
+            "defer": true,
+            "className": "qx.bom.client.EcmaScript"
+          },
+          "ecmascript.string.fromCodePoint": {
+            "defer": true,
+            "className": "qx.bom.client.EcmaScript"
+          }
+        }
+      },
+      "hasDefer": true
+    },
+    "qx.lang.normalize.Object": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.core.Environment": {
+          "load": true,
+          "defer": "load"
+        },
+        "qx.Bootstrap": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.bom.client.EcmaScript": {
+          "load": true,
+          "defer": "load"
+        }
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "environment": {
+        "provided": [],
+        "required": {
+          "ecmascript.object.keys": {
+            "defer": true,
+            "className": "qx.bom.client.EcmaScript"
+          },
+          "ecmascript.object.values": {
+            "defer": true,
+            "className": "qx.bom.client.EcmaScript"
+          },
+          "ecmascript.object.is": {
+            "defer": true,
+            "className": "qx.bom.client.EcmaScript"
+          },
+          "ecmascript.object.assign": {
+            "defer": true,
+            "className": "qx.bom.client.EcmaScript"
+          }
+        }
+      },
+      "hasDefer": true
+    },
+    "qx.lang.normalize.Number": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.core.Environment": {
+          "load": true,
+          "defer": "load"
+        },
+        "qx.Bootstrap": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.bom.client.EcmaScript": {
+          "load": true,
+          "defer": "load"
+        }
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "environment": {
+        "provided": [],
+        "required": {
+          "ecmascript.number.EPSILON": {
+            "defer": true,
+            "className": "qx.bom.client.EcmaScript"
+          }
+        }
+      },
+      "hasDefer": true
+    },
+    "qx.core.Property": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.core.Environment": {
+          "load": true,
+          "defer": "load",
+          "usage": "dynamic"
+        },
+        "qx.Bootstrap": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.event.type.Data": {},
+        "qx.event.dispatch.Direct": {},
+        "qx.Promise": {},
+        "qx.lang.String": {},
+        "qx.Class": {}
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "environment": {
+        "provided": [],
+        "required": {
+          "qx.debug": {
+            "load": true
+          }
+        }
+      },
+      "hasDefer": null
+    },
+    "qx.util.OOUtil": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Bootstrap": {
+          "load": true,
+          "usage": "dynamic"
+        }
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.lang.Function": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.lang.Array": {
+          "require": true
+        },
+        "qx.core.Environment": {
+          "load": true,
+          "defer": "load"
+        },
+        "qx.Bootstrap": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.event.GlobalError": {
+          "load": true
+        }
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "environment": {
+        "provided": [],
+        "required": {
+          "qx.globalErrorHandling": {
+            "className": "qx.event.GlobalError"
+          }
+        }
+      },
+      "hasDefer": null
+    },
+    "qx.dev.StackTrace": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.lang.normalize.String": {
+          "require": true,
+          "defer": "runtime"
+        },
+        "qx.core.Environment": {
+          "load": true,
+          "defer": "load"
+        },
+        "qx.Bootstrap": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.bom.client.EcmaScript": {
+          "load": true
+        },
+        "qx.lang.Array": {},
+        "qx.lang.Function": {},
+        "qx.core.ObjectRegistry": {},
+        "qx.lang.Type": {}
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "environment": {
+        "provided": [],
+        "required": {
+          "ecmascript.error.stacktrace": {
+            "className": "qx.bom.client.EcmaScript"
+          }
+        }
+      },
+      "hasDefer": true
+    },
+    "qx.log.appender.RingBuffer": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Bootstrap": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.util.RingBuffer": {
+          "load": true
+        }
+      },
+      "extends": "qx.util.RingBuffer",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.data.IListData": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Interface": {
+          "load": true,
+          "usage": "dynamic"
+        }
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.event.IEventHandler": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Interface": {
+          "load": true,
+          "usage": "dynamic"
+        }
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.core.IDisposable": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Interface": {
+          "load": true,
+          "usage": "dynamic"
+        }
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.event.Registration": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.event.Manager": {
+          "require": true
+        },
+        "qx.dom.Node": {
+          "require": true
+        },
+        "qx.lang.Function": {
+          "require": true
+        },
+        "qx.core.Environment": {
+          "load": true,
+          "defer": "load",
+          "usage": "dynamic"
+        },
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.ObjectRegistry": {},
+        "qx.event.type.Event": {},
+        "qx.event.Pool": {},
+        "qx.event.Utils": {},
+        "qx.Promise": {}
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "environment": {
+        "provided": [],
+        "required": {
+          "qx.promise": {
+            "load": true
+          }
+        }
+      },
+      "hasDefer": null
+    },
+    "qx.bom.client.Browser": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Bootstrap": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.bom.client.Engine": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.bom.client.OperatingSystem": {},
+        "qx.core.Environment": {
+          "defer": "runtime"
+        }
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "environment": {
+        "provided": [
+          "browser.name",
+          "browser.version",
+          "browser.documentmode",
+          "browser.quirksmode"
+        ],
+        "required": {}
+      },
+      "hasDefer": true
+    },
+    "qx.bom.Event": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.core.Environment": {
+          "load": true,
+          "defer": "load"
+        },
+        "qx.Bootstrap": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.bom.client.Event": {
+          "load": true
+        },
+        "qx.bom.client.Engine": {
+          "load": true
+        },
+        "qx.bom.client.Browser": {
+          "load": true
+        },
+        "qx.bom.client.CssTransition": {
+          "load": true
+        },
+        "qx.bom.Style": {},
+        "qx.lang.String": {}
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "environment": {
+        "provided": [],
+        "required": {
+          "event.passive": {
+            "className": "qx.bom.client.Event"
+          },
+          "engine.name": {
+            "className": "qx.bom.client.Engine"
+          },
+          "browser.name": {
+            "className": "qx.bom.client.Browser"
+          },
+          "browser.documentmode": {
+            "className": "qx.bom.client.Browser"
+          },
+          "css.transition": {
+            "className": "qx.bom.client.CssTransition"
+          }
+        }
+      },
+      "hasDefer": null
+    },
+    "qx.bom.client.Runtime": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Bootstrap": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.bom.client.Browser": {},
+        "qx.core.Environment": {
+          "defer": "runtime"
+        }
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "environment": {
+        "provided": [
+          "runtime.name"
+        ],
+        "required": {}
+      },
+      "hasDefer": true
+    },
+    "qx.event.GlobalError": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Bootstrap": {
+          "load": true,
+          "usage": "dynamic",
+          "defer": "runtime"
+        },
+        "qx.core.WindowError": {},
+        "qx.core.GlobalError": {}
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "environment": {
+        "provided": [
+          "qx.globalErrorHandling"
+        ],
+        "required": {
+          "qx.globalErrorHandling": {
+            "className": "qx.event.GlobalError"
+          }
+        }
+      },
+      "hasDefer": true
+    },
+    "qx.application.IApplication": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Interface": {
+          "load": true,
+          "usage": "dynamic"
+        }
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.core.ObjectRegistry": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Bootstrap": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.log.Logger": {}
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "hasDefer": true
+    },
+    "qx.data.MBinding": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.core.Environment": {
+          "load": true,
+          "defer": "load",
+          "usage": "dynamic"
+        },
+        "qx.Mixin": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.data.SingleValueBinding": {},
+        "qx.Promise": {}
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "environment": {
+        "provided": [],
+        "required": {
+          "qx.promise": {
+            "load": true
+          }
+        }
+      },
+      "hasDefer": null
+    },
+    "qx.core.MLogging": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Mixin": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.log.Logger": {
+          "load": true
+        },
+        "qx.lang.Array": {}
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.core.MEvent": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.event.dispatch.Direct": {},
+        "qx.event.handler.Object": {},
+        "qx.Mixin": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.event.Registration": {
+          "load": true
+        },
+        "qx.Promise": {},
+        "qx.event.type.Data": {}
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.core.MProperty": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Mixin": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Property": {},
+        "qx.Bootstrap": {}
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.core.MObjectId": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Mixin": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Object": {}
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.core.MAssert": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.core.Assert": {
+          "require": true
+        },
+        "qx.Mixin": {
+          "load": true,
+          "usage": "dynamic"
+        }
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.util.Uuid": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Object": {
+          "load": true
+        }
+      },
+      "extends": "qx.core.Object",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.util.DisposeUtil": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.ObjectRegistry": {}
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.data.Array": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Object": {
+          "load": true,
+          "construct": true
+        },
+        "qx.data.marshal.MEventBubbling": {
+          "load": true
+        },
+        "qx.data.IListData": {
+          "load": true
+        },
+        "qx.lang.Array": {
+          "construct": true
+        }
+      },
+      "extends": "qx.core.Object",
+      "include": [
+        "qx.data.marshal.MEventBubbling"
+      ],
+      "implement": [
+        "qx.data.IListData"
+      ],
+      "hasDefer": null
+    },
+    "qx.core.AssertionError": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Bootstrap": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.type.BaseError": {
+          "load": true,
+          "construct": true
+        },
+        "qx.dev.StackTrace": {
+          "construct": true
+        }
+      },
+      "extends": "qx.type.BaseError",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.lang.Json": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.core.Environment": {
+          "load": true,
+          "defer": "load"
+        },
+        "qx.Bootstrap": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.bom.client.Runtime": {
+          "load": true
+        }
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "environment": {
+        "provided": [],
+        "required": {
+          "runtime.name": {
+            "className": "qx.bom.client.Runtime"
+          }
+        }
+      },
+      "hasDefer": null
+    },
+    "qx.lang.Number": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        }
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.bom.client.Device": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Bootstrap": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Environment": {
+          "defer": "runtime"
+        }
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "environment": {
+        "provided": [
+          "device.name",
+          "device.touch",
+          "device.type",
+          "device.pixelRatio"
+        ],
+        "required": {}
+      },
+      "hasDefer": true
+    },
+    "qx.bom.client.Transport": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Bootstrap": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.bom.client.Engine": {},
+        "qx.core.Environment": {
+          "defer": "runtime"
+        }
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "environment": {
+        "provided": [
+          "io.maxrequests",
+          "io.ssl",
+          "io.xhr"
+        ],
+        "required": {}
+      },
+      "hasDefer": true
+    },
+    "qx.util.LibraryManager": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Object": {
+          "load": true
+        }
+      },
+      "extends": "qx.core.Object",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.bom.client.Css": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.bom.Style": {
+          "require": true,
+          "defer": "runtime"
+        },
+        "qx.core.Environment": {
+          "load": true,
+          "defer": "load"
+        },
+        "qx.Bootstrap": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.bom.client.Engine": {
+          "load": true
+        },
+        "qx.bom.client.Browser": {}
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "environment": {
+        "provided": [
+          "css.textoverflow",
+          "css.placeholder",
+          "css.borderradius",
+          "css.boxshadow",
+          "css.gradient.linear",
+          "css.gradient.radial",
+          "css.gradient.legacywebkit",
+          "css.boxmodel",
+          "css.rgba",
+          "css.borderimage",
+          "css.borderimage.standardsyntax",
+          "css.usermodify",
+          "css.userselect",
+          "css.userselect.none",
+          "css.appearance",
+          "css.float",
+          "css.boxsizing",
+          "css.inlineblock",
+          "css.opacity",
+          "css.textShadow",
+          "css.alphaimageloaderneeded",
+          "css.pointerevents",
+          "css.flexboxSyntax"
+        ],
+        "required": {
+          "engine.name": {
+            "className": "qx.bom.client.Engine"
+          }
+        }
+      },
+      "hasDefer": true
+    },
+    "qx.test.MDecoration": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Theme": {
+          "load": true,
+          "usage": "dynamic"
+        }
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.test.MAppearance": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Theme": {
+          "load": true,
+          "usage": "dynamic"
+        }
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.theme.simple.Image": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Object": {
+          "load": true
+        }
+      },
+      "extends": "qx.core.Object",
+      "include": [],
+      "implement": [],
+      "hasDefer": null,
+      "assets": [
+        "qx/decoration/Simple/*",
+        "qx/static/blank.png"
+      ]
+    },
+    "qx.bom.client.EcmaScript": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Bootstrap": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Environment": {
+          "defer": "runtime"
+        }
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "environment": {
+        "provided": [
+          "ecmascript.array.indexof",
+          "ecmascript.array.lastindexof",
+          "ecmascript.array.foreach",
+          "ecmascript.array.filter",
+          "ecmascript.array.map",
+          "ecmascript.array.some",
+          "ecmascript.array.find",
+          "ecmascript.array.findIndex",
+          "ecmascript.array.every",
+          "ecmascript.array.reduce",
+          "ecmascript.array.reduceright",
+          "ecmascript.array.includes",
+          "ecmascript.date.now",
+          "ecmascript.date.parse",
+          "ecmascript.error.toString",
+          "ecmascript.error.stacktrace",
+          "ecmascript.function.bind",
+          "ecmascript.object.keys",
+          "ecmascript.object.values",
+          "ecmascript.object.is",
+          "ecmascript.object.assign",
+          "ecmascript.number.EPSILON",
+          "ecmascript.string.startsWith",
+          "ecmascript.string.endsWith",
+          "ecmascript.string.trim",
+          "ecmascript.string.codePointAt",
+          "ecmascript.string.fromCodePoint",
+          "ecmascript.promise.native",
+          "ecmascript.function.async",
+          "ecmascript.mutationobserver",
+          "ecmascript.bigint",
+          "ecmascript.bigint.tolocalestring"
+        ],
+        "required": {}
+      },
+      "hasDefer": true
+    },
+    "qx.event.type.Data": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.event.type.Event": {
+          "load": true
+        }
+      },
+      "extends": "qx.event.type.Event",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.event.dispatch.Direct": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Object": {
+          "load": true
+        },
+        "qx.event.IEventDispatcher": {
+          "load": true
+        },
+        "qx.event.Registration": {
+          "load": true,
+          "defer": "runtime"
+        },
+        "qx.event.type.Event": {},
+        "qx.event.Utils": {}
+      },
+      "extends": "qx.core.Object",
+      "include": [],
+      "implement": [
+        "qx.event.IEventDispatcher"
+      ],
+      "hasDefer": true
+    },
+    "qx.util.RingBuffer": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Bootstrap": {
+          "load": true,
+          "usage": "dynamic"
+        }
+      },
+      "extends": "Object",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.event.Manager": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.bom.Event": {
+          "require": true,
+          "construct": true
+        },
+        "qx.core.Environment": {
+          "load": true,
+          "defer": "load",
+          "construct": true
+        },
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.IDisposable": {
+          "load": true
+        },
+        "qx.core.ObjectRegistry": {
+          "construct": true
+        },
+        "qx.event.GlobalError": {
+          "load": true,
+          "construct": true
+        },
+        "qx.util.DeferredCall": {
+          "construct": true
+        },
+        "qx.core.Assert": {},
+        "qx.lang.Array": {},
+        "qx.event.IEventHandler": {},
+        "qx.log.Logger": {},
+        "qx.event.Pool": {},
+        "qx.event.Utils": {},
+        "qx.util.DisposeUtil": {}
+      },
+      "extends": "Object",
+      "include": [],
+      "implement": [
+        "qx.core.IDisposable"
+      ],
+      "environment": {
+        "provided": [],
+        "required": {
+          "qx.globalErrorHandling": {
+            "construct": true,
+            "className": "qx.event.GlobalError"
+          }
+        }
+      },
+      "hasDefer": null
+    },
+    "qx.dom.Node": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Bootstrap": {
+          "load": true,
+          "usage": "dynamic"
+        }
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.event.type.Event": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.event.Registration": {},
+        "qx.core.Environment": {
+          "load": true,
+          "defer": "load",
+          "usage": "dynamic"
+        },
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Object": {
+          "load": true
+        },
+        "qx.event.Pool": {},
+        "qx.Promise": {}
+      },
+      "extends": "qx.core.Object",
+      "include": [],
+      "implement": [],
+      "environment": {
+        "provided": [],
+        "required": {
+          "qx.promise": {
+            "load": true
+          }
+        }
+      },
+      "hasDefer": null
+    },
+    "qx.event.Pool": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.util.ObjectPool": {
+          "load": true,
+          "construct": true
+        },
+        "qx.core.Object": {
+          "load": true
+        }
+      },
+      "extends": "qx.util.ObjectPool",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.event.Utils": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.core.Environment": {
+          "load": true,
+          "defer": "load",
+          "usage": "dynamic"
+        },
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Object": {
+          "load": true
+        },
+        "qx.lang.Type": {}
+      },
+      "extends": "qx.core.Object",
+      "include": [],
+      "implement": [],
+      "environment": {
+        "provided": [],
+        "required": {
+          "qx.promise": {
+            "load": true
+          }
+        }
+      },
+      "hasDefer": null
+    },
+    "qx.bom.client.Event": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Bootstrap": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.bom.client.Engine": {},
+        "qx.bom.Event": {},
+        "qx.core.Environment": {
+          "defer": "runtime"
+        }
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "environment": {
+        "provided": [
+          "event.touch",
+          "event.mouseevent",
+          "event.mousecreateevent",
+          "event.dispatchevent",
+          "event.customevent",
+          "event.mspointer",
+          "event.help",
+          "event.hashchange",
+          "event.mousewheel",
+          "event.auxclick",
+          "event.passive"
+        ],
+        "required": {}
+      },
+      "hasDefer": true
+    },
+    "qx.bom.client.CssTransition": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Bootstrap": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.bom.Style": {},
+        "qx.bom.Event": {},
+        "qx.core.Environment": {
+          "defer": "runtime"
+        }
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "environment": {
+        "provided": [
+          "css.transition"
+        ],
+        "required": {}
+      },
+      "hasDefer": true
+    },
+    "qx.bom.Style": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.lang.String": {
+          "require": true,
+          "defer": "runtime"
+        },
+        "qx.Bootstrap": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.dom.Node": {}
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "hasDefer": true
+    },
+    "qx.core.WindowError": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Bootstrap": {
+          "load": true,
+          "usage": "dynamic"
+        }
+      },
+      "extends": "Error",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.core.GlobalError": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Bootstrap": {
+          "load": true,
+          "usage": "dynamic",
+          "construct": true
+        },
+        "qx.core.Assert": {
+          "construct": true
+        }
+      },
+      "extends": "Error",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.data.SingleValueBinding": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.AssertionError": {},
+        "qx.core.Object": {},
+        "qx.log.Logger": {},
+        "qx.lang.String": {},
+        "qx.lang.Function": {},
+        "qx.data.IListData": {},
+        "qx.core.ValidationError": {},
+        "qx.lang.Type": {},
+        "qx.lang.Array": {},
+        "qx.core.ObjectRegistry": {}
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.event.handler.Object": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Object": {
+          "load": true
+        },
+        "qx.event.IEventHandler": {
+          "load": true
+        },
+        "qx.event.Registration": {
+          "load": true,
+          "defer": "runtime"
+        }
+      },
+      "extends": "qx.core.Object",
+      "include": [],
+      "implement": [
+        "qx.event.IEventHandler"
+      ],
+      "hasDefer": true
+    },
+    "qx.data.marshal.MEventBubbling": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Mixin": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Object": {},
+        "qx.Class": {},
+        "qx.lang.Function": {},
+        "qx.data.IListData": {}
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.type.BaseError": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Bootstrap": {
+          "load": true,
+          "usage": "dynamic"
+        }
+      },
+      "extends": "Error",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.event.IEventDispatcher": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Interface": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.event.type.Event": {}
+      },
+      "extends": null,
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.util.DeferredCall": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.util.DeferredCallManager": {
+          "require": true,
+          "construct": true
+        },
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Object": {
+          "load": true,
+          "construct": true
+        }
+      },
+      "extends": "qx.core.Object",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.util.ObjectPool": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Object": {
+          "load": true,
+          "construct": true
+        },
+        "qx.core.IDisposable": {
+          "load": true
+        }
+      },
+      "extends": "qx.core.Object",
+      "include": [],
+      "implement": [
+        "qx.core.IDisposable"
+      ],
+      "hasDefer": null
+    },
+    "qx.core.ValidationError": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.type.BaseError": {
+          "load": true
+        }
+      },
+      "extends": "qx.type.BaseError",
+      "include": [],
+      "implement": [],
+      "hasDefer": null
+    },
+    "qx.util.DeferredCallManager": {
+      "mtime": "2022-05-03T19:06:50.854Z",
+      "libraryName": "qx",
+      "dependsOn": {
+        "qx.Class": {
+          "load": true,
+          "usage": "dynamic"
+        },
+        "qx.core.Object": {
+          "load": true
+        },
+        "qx.core.IDisposable": {
+          "load": true
+        },
+        "qx.lang.Function": {
+          "construct": true
+        },
+        "qx.lang.Object": {},
+        "qx.event.GlobalError": {
+          "load": true,
+          "usage": "dynamic"
+        }
+      },
+      "extends": "qx.core.Object",
+      "include": [],
+      "implement": [
+        "qx.core.IDisposable"
+      ],
+      "hasDefer": null
+    }
+  },
+  "manglePrefixes": {
+    "nextPrefix": 103,
+    "classPrefixes": {
+      "qx.core.BaseInit": "__P_2_",
+      "qx.tool.cli.Cli": "__P_3_",
+      "qx.tool.cli.ConfigDb": "__P_4_",
+      "qx.tool.cli.Watch": "__P_5_",
+      "qx.tool.cli.api.CompilerApi": "__P_6_",
+      "qx.tool.cli.commands.Clean": "__P_7_",
+      "qx.tool.cli.commands.Compile": "__P_8_",
+      "qx.tool.cli.commands.Config": "__P_9_",
+      "qx.tool.cli.commands.Deploy": "__P_10_",
+      "qx.tool.cli.commands.Lint": "__P_11_",
+      "qx.tool.cli.commands.Package": "__P_12_",
+      "qx.tool.cli.commands.Run": "__P_13_",
+      "qx.tool.cli.commands.Serve": "__P_14_",
+      "qx.tool.cli.commands.Test": "__P_15_",
+      "qx.tool.cli.commands.package.Install": "__P_16_",
+      "qx.tool.cli.commands.package.List": "__P_17_",
+      "qx.tool.cli.commands.package.Publish": "__P_18_",
+      "qx.tool.cli.commands.package.Remove": "__P_19_",
+      "qx.tool.cli.commands.package.Update": "__P_20_",
+      "qx.tool.compiler.Analyser": "__P_21_",
+      "qx.tool.compiler.ClassFile": "__P_22_",
+      "qx.tool.compiler.Console": "__P_23_",
+      "qx.tool.compiler.Es6ify": "__P_24_",
+      "qx.tool.compiler.Preprocess": "__P_25_",
+      "qx.tool.compiler.app.Application": "__P_26_",
+      "qx.tool.compiler.app.Library": "__P_27_",
+      "qx.tool.compiler.app.Translation": "__P_28_",
+      "qx.tool.compiler.app.WebFont": "__P_29_",
+      "qx.tool.compiler.jsdoc.Parser": "__P_30_",
+      "qx.tool.compiler.makers.AbstractAppMaker": "__P_31_",
+      "qx.tool.compiler.makers.AppMaker": "__P_32_",
+      "qx.tool.compiler.makers.Maker": "__P_33_",
+      "qx.tool.compiler.resources.AbstractMatcher": "__P_34_",
+      "qx.tool.compiler.resources.Asset": "__P_35_",
+      "qx.tool.compiler.resources.Manager": "__P_36_",
+      "qx.tool.compiler.resources.ScssFile": "__P_37_",
+      "qx.tool.compiler.targets.SourceCodeCopier": "__P_38_",
+      "qx.tool.compiler.targets.Target": "__P_39_",
+      "qx.tool.compiler.targets.TypeScriptWriter": "__P_40_",
+      "qx.tool.compiler.targets.meta.AbstractJavascriptMeta": "__P_41_",
+      "qx.tool.compiler.targets.meta.ApplicationMeta": "__P_42_",
+      "qx.tool.compiler.targets.meta.BootJs": "__P_43_",
+      "qx.tool.compiler.targets.meta.Browserify": "__P_44_",
+      "qx.tool.compiler.targets.meta.Package": "__P_45_",
+      "qx.tool.compiler.targets.meta.PackageJavascript": "__P_46_",
+      "qx.tool.compiler.targets.meta.Part": "__P_47_",
+      "qx.tool.compiler.targets.meta.PolyfillJs": "__P_48_",
+      "qx.tool.compiler.targets.meta.Uglify": "__P_49_",
+      "qx.tool.config.Abstract": "__P_50_",
+      "qx.tool.config.Utils": "__P_51_",
+      "qx.tool.utils.IndexedArray": "__P_52_",
+      "qx.tool.utils.LogManager": "__P_53_",
+      "qx.tool.utils.Utils": "__P_54_",
+      "qx.tool.utils.Website": "__P_55_",
+      "qx.tool.utils.files.FindFiles": "__P_56_",
+      "qx.tool.utils.json.Tokenizer": "__P_57_",
+      "qx.tool.utils.json.Writer": "__P_58_",
+      "qx.core.Environment": "__P_59_",
+      "qx.Class": "__P_60_",
+      "qx.bom.client.Engine": "__P_61_",
+      "qx.log.Logger": "__P_62_",
+      "qx.bom.client.OperatingSystem": "__P_63_",
+      "qx.Bootstrap": "__P_64_",
+      "qx.event.handler.Application": "__P_65_",
+      "qx.core.Object": "__P_66_",
+      "qx.log.appender.NodeConsole": "__P_67_",
+      "qx.lang.Object": "__P_68_",
+      "qx.Promise": "__P_69_",
+      "qx.lang.String": "__P_70_",
+      "qx.core.Assert": "__P_71_",
+      "qx.util.ResourceManager": "__P_72_",
+      "qx.Theme": "__P_73_",
+      "qx.Interface": "__P_74_",
+      "qx.Mixin": "__P_75_",
+      "qx.core.Property": "__P_76_",
+      "qx.dev.StackTrace": "__P_77_",
+      "qx.event.Registration": "__P_78_",
+      "qx.bom.client.Browser": "__P_79_",
+      "qx.event.GlobalError": "__P_80_",
+      "qx.core.ObjectRegistry": "__P_81_",
+      "qx.core.MLogging": "__P_82_",
+      "qx.core.MEvent": "__P_83_",
+      "qx.core.MObjectId": "__P_84_",
+      "qx.util.DisposeUtil": "__P_85_",
+      "qx.data.Array": "__P_86_",
+      "qx.core.AssertionError": "__P_87_",
+      "qx.bom.client.Device": "__P_88_",
+      "qx.util.LibraryManager": "__P_89_",
+      "qx.bom.client.Css": "__P_90_",
+      "qx.event.type.Data": "__P_91_",
+      "qx.util.RingBuffer": "__P_92_",
+      "qx.event.Manager": "__P_93_",
+      "qx.event.Utils": "__P_94_",
+      "qx.bom.Style": "__P_95_",
+      "qx.core.WindowError": "__P_96_",
+      "qx.core.GlobalError": "__P_97_",
+      "qx.data.SingleValueBinding": "__P_98_",
+      "qx.data.marshal.MEventBubbling": "__P_99_",
+      "qx.type.BaseError": "__P_100_",
+      "qx.util.DeferredCall": "__P_101_",
+      "qx.util.ObjectPool": "__P_102_",
+      "qx.util.DeferredCallManager": "__P_103_"
+    }
+  }
+}

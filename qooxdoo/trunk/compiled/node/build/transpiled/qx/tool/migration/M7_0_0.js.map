@@ -1,0 +1,53 @@
+{
+  "version": 3,
+  "names": [
+    "qx",
+    "Bootstrap",
+    "executePendingDefers",
+    "$$dbClassInfo",
+    "process",
+    "require",
+    "path",
+    "semver",
+    "fs",
+    "tool",
+    "utils",
+    "Promisify",
+    "Class",
+    "define",
+    "extend",
+    "migration",
+    "BaseMigration",
+    "members",
+    "migrateManifest",
+    "dryRun",
+    "getRunner",
+    "getDryRun",
+    "verbose",
+    "getVerbose",
+    "updateManifest",
+    "manifestModel",
+    "config",
+    "Utils",
+    "getManifestModels",
+    "set",
+    "warnOnly",
+    "load",
+    "keyExists",
+    "markAsPending",
+    "unset",
+    "markAsApplied",
+    "save",
+    "updateSchemaUnlessDryRun",
+    "updateQxDependencyUnlessDryRun",
+    "setValidate",
+    "M7_0_0"
+  ],
+  "sources": [
+    "/home/andresf/workspace_qooxdoo/qooxdoo/qooxdoo-7.0/source/class/qx/tool/migration/M7_0_0.js"
+  ],
+  "sourcesContent": [
+    "/* ************************************************************************\n\n   qooxdoo - the new era of web development\n\n   http://qooxdoo.org\n\n   Copyright:\n     2021 The authors\n\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n\n   Authors:\n     * Christian Boulanger (info@bibliograph.org, @cboulanger)\n\n************************************************************************ */\n\nconst process = require(\"process\");\nconst path = require(\"upath\");\nconst semver = require(\"semver\");\nconst fs = qx.tool.utils.Promisify.fs;\n\n/**\n * Migration class for updating from v6 to v7\n */\nqx.Class.define(\"qx.tool.migration.M7_0_0\", {\n  extend: qx.tool.migration.BaseMigration,\n  members: {\n    async migrateManifest() {\n      let dryRun = this.getRunner().getDryRun();\n      let verbose = this.getRunner().getVerbose();\n      // Update all Manifests\n      let updateManifest = false;\n      for (const manifestModel of await qx.tool.config.Utils.getManifestModels()) {\n        await manifestModel\n          .set({\n            warnOnly: true\n          })\n          .load();\n        if (manifestModel.keyExists(\"requires.@qooxdoo/compiler\")) {\n          if (dryRun) {\n            this.markAsPending(\n              \"@qooxdoo/compiler dependency will be removed from Manifest.\"\n            );\n          } else {\n            manifestModel.unset(\"requires.@qooxdoo/compiler\");\n            this.markAsApplied();\n            await manifestModel.save();\n          }\n        }\n        // update schema\n        await this.updateSchemaUnlessDryRun(\n          manifestModel,\n          \"https://qooxdoo.org/schema/Manifest-2-0-0.json\"\n        );\n\n        // update qooxdoo version\n        await this.updateQxDependencyUnlessDryRun(manifestModel);\n\n        // save Manifest file\n        if (!dryRun) {\n          manifestModel.setValidate(false); // shouldn't be necessary\n          await manifestModel.save();\n        }\n      }\n    }\n  }\n});\n"
+  ],
+  "mappings": ";;;;;;;;;;;;;;;;EAAAA,EAAE,CAACC,SAAH,CAAaC,oBAAb,CAAkCC,aAAlC;;EAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;EAEA,MAAMC,OAAO,GAAGC,OAAO,CAAC,SAAD,CAAvB;;EACA,MAAMC,IAAI,GAAGD,OAAO,CAAC,OAAD,CAApB;;EACA,MAAME,MAAM,GAAGF,OAAO,CAAC,QAAD,CAAtB;;EACA,MAAMG,EAAE,GAAGR,EAAE,CAACS,IAAH,CAAQC,KAAR,CAAcC,SAAd,CAAwBH,EAAnC;EAEA;AACA;AACA;;EACAR,EAAE,CAACY,KAAH,CAASC,MAAT,CAAgB,0BAAhB,EAA4C;IAC1CC,MAAM,EAAEd,EAAE,CAACS,IAAH,CAAQM,SAAR,CAAkBC,aADgB;IAE1CC,OAAO,EAAE;MACP,MAAMC,eAAN,GAAwB;QACtB,IAAIC,MAAM,GAAG,KAAKC,SAAL,GAAiBC,SAAjB,EAAb;QACA,IAAIC,OAAO,GAAG,KAAKF,SAAL,GAAiBG,UAAjB,EAAd,CAFsB,CAGtB;;QACA,IAAIC,cAAc,GAAG,KAArB;;QACA,KAAK,MAAMC,aAAX,IAA4B,MAAMzB,EAAE,CAACS,IAAH,CAAQiB,MAAR,CAAeC,KAAf,CAAqBC,iBAArB,EAAlC,EAA4E;UAC1E,MAAMH,aAAa,CAChBI,GADG,CACC;YACHC,QAAQ,EAAE;UADP,CADD,EAIHC,IAJG,EAAN;;UAKA,IAAIN,aAAa,CAACO,SAAd,CAAwB,4BAAxB,CAAJ,EAA2D;YACzD,IAAIb,MAAJ,EAAY;cACV,KAAKc,aAAL,CACE,6DADF;YAGD,CAJD,MAIO;cACLR,aAAa,CAACS,KAAd,CAAoB,4BAApB;cACA,KAAKC,aAAL;cACA,MAAMV,aAAa,CAACW,IAAd,EAAN;YACD;UACF,CAhByE,CAiB1E;;;UACA,MAAM,KAAKC,wBAAL,CACJZ,aADI,EAEJ,gDAFI,CAAN,CAlB0E,CAuB1E;;UACA,MAAM,KAAKa,8BAAL,CAAoCb,aAApC,CAAN,CAxB0E,CA0B1E;;UACA,IAAI,CAACN,MAAL,EAAa;YACXM,aAAa,CAACc,WAAd,CAA0B,KAA1B,EADW,CACuB;;YAClC,MAAMd,aAAa,CAACW,IAAd,EAAN;UACD;QACF;MACF;;IAtCM;EAFiC,CAA5C;EA1BApC,EAAE,CAACS,IAAH,CAAQM,SAAR,CAAkByB,MAAlB,CAAyBrC,aAAzB,GAAyCA,aAAzC"
+}

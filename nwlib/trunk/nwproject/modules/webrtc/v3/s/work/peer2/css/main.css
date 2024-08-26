@@ -1,0 +1,297 @@
+/* Author: alexf*/
+.containButonsVideoAudio {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    /*display: flex;*/
+    align-items: center;
+    padding: 0px;
+    box-sizing: border-box;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.34);
+}
+.containButonsVideoAudio button{
+    position: relative;
+    padding: 0px 10px;
+    cursor: pointer;
+    margin: 0px 5px 0px 5px;
+    border: 0;
+    background-color: transparent;
+}
+.containMyVideo{
+    position: relative;
+    z-index: 2;
+}
+.containVideoOther{
+    position: relative;
+    z-index: 1;
+}
+.js-video-myself{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+.js-video-partner{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-color: #2c2c2c;
+}
+.videoPartnerShareScreen{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: none;
+    /*background-color: red;*/
+    display: block;
+}
+.videoPartnerShareScreen_show{
+    display: block;
+}
+.videoPartnerMaximice{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*display: flex;*/
+    align-items: center;
+    text-align: right;
+    z-index: 1;
+}
+.videoPartnerMaximiceButton{
+    margin: auto;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0.36);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    /*display: none;*/   
+}
+.videoPartnerMinimizeButton{
+    display: none;
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    background-color: transparent;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0.36);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+.containVideoOther:hover .videoPartnerMaximiceButton{
+    /*display: block;*/
+}
+.containVideoOther_maximice{
+    z-index: 10000;
+}
+.contain_no_connected{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 15;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.23);
+    display: none;
+    flex-direction: column;
+}
+.no_connected{
+    position: relative;
+    margin: auto;
+    padding: 15px 30px;
+    box-sizing: border-box;
+    font-size: 20px;
+    cursor: pointer;
+    border: 0;
+    background-color: red;
+    -webkit-box-shadow: 0 0 18px rgba(0,0,0,.5);
+    -moz-box-shadow: 0 0 18px rgba(0,0,0,.5);
+    -o-box-shadow: 0 0 18px rgba(0,0,0,.5);
+    -moz-osx-box-shadow: 0 0 18px rgba(0,0,0,.5);
+    -ms-box-shadow: 0 0 18px rgba(0,0,0,.5);
+    box-shadow: 0 0 18px rgba(0,0,0,.5);
+    background-color: #1f8ceb;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 9px;
+}
+.contain_waiting{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /* z-index: 15; */
+    z-index: 2;
+    z-index: 4;
+    background-color: rgba(0, 0, 0, 0.23); 
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    display: none;
+    pointer-events: none;
+}
+.contain_waiting_text{
+    position: relative;
+    margin: auto;
+    padding: 0;
+    font-size: 30px;
+    color: #fff;
+}
+.iconRecording {
+    width: 11px;
+    height: 11px;
+    background-color: red;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    box-shadow: 0px 0px 0px 1px red;
+    border: 2px solid #1a1a1a;
+}
+.containUploadProgress{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 10000000;
+    color: #fff;
+}
+.containTime{
+    color: #fff;
+    padding: 3px;
+    font-size: 13px;
+}
+.containNoExtensionChrome{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    display: flex;
+}
+.containNoExtensionChrome_text{
+    position: relative;
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 18px rgba(0,0,0,.5);
+    -moz-box-shadow: 0 0 18px rgba(0,0,0,.5);
+    -o-box-shadow: 0 0 18px rgba(0,0,0,.5);
+    -moz-osx-box-shadow: 0 0 18px rgba(0,0,0,.5);
+    -ms-box-shadow: 0 0 18px rgba(0,0,0,.5);
+    box-shadow: 0 0 18px rgba(0,0,0,.5);
+}
+.linkDownloadExten{
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    padding: 4px 5px;
+    border: 0;
+    background-color: #1f8ceb;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 9px;
+    margin: 5px;
+}
+.containNoExtensionChrome_text button{
+    position: relative;
+    padding: 15px 30px;
+    font-size: 20px;
+    border: 0;
+    -webkit-box-shadow: 0 0 18px rgba(0,0,0,.5);
+    -moz-box-shadow: 0 0 18px rgba(0,0,0,.5);
+    -o-box-shadow: 0 0 18px rgba(0,0,0,.5);
+    -moz-osx-box-shadow: 0 0 18px rgba(0,0,0,.5);
+    -ms-box-shadow: 0 0 18px rgba(0,0,0,.5);
+    box-shadow: 0 0 18px rgba(0,0,0,.5);
+    background-color: #1f8ceb;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 9px;
+    display: block;
+    margin: 50px auto 0px auto;
+}
+.toolTipNwOne{
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    position: absolute;
+    width: auto;
+    height: auto;
+    background: #1a1a1a;
+    pointer-events: none;
+    padding: 5px;
+    font-size: 10px;
+    color: #fff;
+    border-radius: 5px;
+    opacity: 0;
+    border: 1px solid #5f5f5f;
+    top: 0px;
+    left: 0;
+    font-size: 11px;
+    width: max-content;
+}
+.elementTooltipHover:hover .toolTipNwOne{
+    top: -28px;
+    opacity: 1;
+}
+.btn_connect_onlycall{
+    background-color: #4ebc4e;
+}
+.messageGray{
+    color: gray;
+    font-style: italic;
+}
+.MsgFullSala{
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.containerMsgFullSalaInt{
+    text-align: center;
+    margin: auto;
+    font-size: 42px;
+    width: fit-content;
+    padding: 10px;
+    color: #fff;
+    position: relative;
+}
+@media screen and (max-width: 900px) {
+    .js-video-myself {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+    }
+    .videoPartnerMaximice{
+        display: none;
+    }
+}

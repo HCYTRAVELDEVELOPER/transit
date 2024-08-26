@@ -1,0 +1,19 @@
+<script src="https://www.WebRTC-Experiment.com/getScreenId.js"></script>
+<script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+<video controls autoplay></video>
+<script>
+    getScreenId(function (error, sourceId, screen_constraints) {
+        navigator.mediaDevices.getUserMedia(screen_constraints).then(function (stream) {
+//            document.querySelector('video').src = URL.createObjectURL(stream);
+            var video = document.querySelector('video');
+
+            if ('srcObject' in video) {
+                video.srcObject = stream;
+            } else {
+                video.src = window.URL.createObjectURL(stream) // for older browsers
+            }
+        }).catch(function (error) {
+            console.error(error);
+        });
+    });
+</script>

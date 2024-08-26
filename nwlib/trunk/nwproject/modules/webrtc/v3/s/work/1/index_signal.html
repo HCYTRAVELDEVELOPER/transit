@@ -1,0 +1,106 @@
+<html>
+  <body>
+    <style>
+      #outgoing {
+        width: 600px;
+        word-wrap: break-word;
+        white-space: normal;
+      }
+    </style>
+     <form class="one">
+      <textarea id="incoming"></textarea>
+      <button type="submit">submit</button>
+    </form>
+     <form class="two">
+      <textarea id="incoming_two"></textarea>
+      <button type="submit">submit</button>
+    </form>
+    <script src="simplepeer.min.js"></script>
+    <script>
+
+var get= get();
+
+var peer1 = new SimplePeer({  initiator: location.hash === '#1',
+  channelConfig: {},
+  channelName: '1',
+  config: { iceServers: [{ urls: 'stun:stun.l.google.com:19302' }, { urls: 'stun:global.stun.twilio.com:3478?transport=udp' }] },
+  offerOptions: {},
+  answerOptions: {},
+  sdpTransform: function (sdp) { return sdp },
+  stream: true,
+  streams: [],
+  trickle: true,
+  allowHalfTrickle: false,
+  objectMode: false })
+var peer2 = new SimplePeer({  initiator: location.hash === '#2',
+  channelConfig: {},
+  channelName: '1',
+  config: { iceServers: [{ urls: 'stun:stun.l.google.com:19302' }, { urls: 'stun:global.stun.twilio.com:3478?transport=udp' }] },
+  offerOptions: {},
+  answerOptions: {},
+  sdpTransform: function (sdp) { return sdp },
+  stream: true,
+  streams: [],
+  trickle: true,
+  allowHalfTrickle: false,
+  objectMode: false })
+
+peer1.on('signal', data => {
+  // when peer1 has signaling data, give it to peer2 somehow
+  peer2.signal(data);
+});
+
+peer2.on('signal', data => {
+  // when peer2 has signaling data, give it to peer1 somehow
+  peer1.signal(data)
+})
+
+peer1.on('connect', () => {
+  // wait for 'connect' event before using the data channel
+//  peer1.send('hey peer2, si recibe el mensaje???')
+    document.querySelector('.one').addEventListener('submit', ev => {
+        ev.preventDefault()
+        var d = document.querySelector('#incoming').value;
+  peer1.send(d);
+      });
+})
+
+peer2.on('connect', () => {
+  // wait for 'connect' event before using the data channel
+//  peer1.send('hey peer2, si recibe el mensaje???')
+    document.querySelector('.two').addEventListener('submit', ev => {
+        ev.preventDefault()
+        var d = document.querySelector('#incoming_two').value;
+  peer2.send(d);
+      });
+})
+
+peer1.on('data', data => {
+  // got a data channel message
+  console.log('peer2 dice: ' + data)
+});
+
+peer2.on('data', data => {
+  // got a data channel message
+  console.log('peer1 dice: ' + data)
+});
+
+
+function get() {
+       var loc = document.location.href;
+        var getString = loc.split('?')[1];
+        if (getString == undefined) {
+            return false;
+        }
+        var GET = getString.split('&');
+        var get = {};
+        for (var i = 0, l = GET.length; i < l; i++) {
+            var tmp = GET[i].split('=');
+            get[tmp[0]] = unescape(decodeURI(tmp[1]));
+        }
+        return get;
+}
+
+    </script>
+  </body>
+</html>

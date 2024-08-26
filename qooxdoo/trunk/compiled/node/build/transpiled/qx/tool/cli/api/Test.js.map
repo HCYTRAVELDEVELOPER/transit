@@ -1,0 +1,45 @@
+{
+  "version": 3,
+  "names": [
+    "qx",
+    "Bootstrap",
+    "executePendingDefers",
+    "$$dbClassInfo",
+    "Class",
+    "define",
+    "extend",
+    "core",
+    "Object",
+    "construct",
+    "name",
+    "testFunction",
+    "setName",
+    "setTestFunction",
+    "properties",
+    "check",
+    "description",
+    "event",
+    "exitCode",
+    "nullable",
+    "init",
+    "needsServer",
+    "members",
+    "execute",
+    "f",
+    "getTestFunction",
+    "Promise",
+    "resolve",
+    "call",
+    "tool",
+    "cli",
+    "api",
+    "Test"
+  ],
+  "sources": [
+    "/home/andresf/workspace_qooxdoo/qooxdoo/qooxdoo-7.0/source/class/qx/tool/cli/api/Test.js"
+  ],
+  "sourcesContent": [
+    "/**\n * This is used to add an test case for qx test\n */\nqx.Class.define(\"qx.tool.cli.api.Test\", {\n  extend: qx.core.Object,\n  construct(name, testFunction) {\n    super();\n    this.setName(name);\n    if (testFunction) {\n      this.setTestFunction(testFunction);\n    }\n  },\n  properties: {\n    /**\n     * Name of the process\n     */\n    name: {\n      check: \"String\"\n    },\n\n    /**\n     * A description of the test.\n     * For documentation purpose\n     */\n    description: {\n      check: \"String\",\n      event: \"changeDescription\"\n    },\n\n    /**\n     * The exit code of the test.\n     *\n     */\n    exitCode: {\n      check: \"Number\",\n      event: \"changeExitCode\",\n      nullable: true,\n      init: null\n    },\n\n    /**\n     * Is the webserver instance needed for this test?\n     */\n    needsServer: {\n      check: \"Boolean\",\n      nullable: false,\n      init: true\n    },\n\n    /**\n     * The test function called by qx test\n     *\n     */\n    testFunction: {\n      check: \"Function\",\n      nullable: false,\n      init: () => {}\n    }\n  },\n\n  members: {\n    /**\n     * Execute the test\n     *\n     * @returns: Promise\n     *\n     * Can be overriden\n     */\n    execute() {\n      let f = this.getTestFunction();\n      return qx.Promise.resolve(f.call(this, this));\n    }\n  }\n});\n"
+  ],
+  "mappings": ";;;;;;;;;;;;;;EAAAA,EAAE,CAACC,SAAH,CAAaC,oBAAb,CAAkCC,aAAlC;;EAAA;AACA;AACA;EACAH,EAAE,CAACI,KAAH,CAASC,MAAT,CAAgB,sBAAhB,EAAwC;IACtCC,MAAM,EAAEN,EAAE,CAACO,IAAH,CAAQC,MADsB;;IAEtCC,SAAS,CAACC,IAAD,EAAOC,YAAP,EAAqB;MAC5B;MACA,KAAKC,OAAL,CAAaF,IAAb;;MACA,IAAIC,YAAJ,EAAkB;QAChB,KAAKE,eAAL,CAAqBF,YAArB;MACD;IACF,CARqC;;IAStCG,UAAU,EAAE;MACV;AACJ;AACA;MACIJ,IAAI,EAAE;QACJK,KAAK,EAAE;MADH,CAJI;;MAQV;AACJ;AACA;AACA;MACIC,WAAW,EAAE;QACXD,KAAK,EAAE,QADI;QAEXE,KAAK,EAAE;MAFI,CAZH;;MAiBV;AACJ;AACA;AACA;MACIC,QAAQ,EAAE;QACRH,KAAK,EAAE,QADC;QAERE,KAAK,EAAE,gBAFC;QAGRE,QAAQ,EAAE,IAHF;QAIRC,IAAI,EAAE;MAJE,CArBA;;MA4BV;AACJ;AACA;MACIC,WAAW,EAAE;QACXN,KAAK,EAAE,SADI;QAEXI,QAAQ,EAAE,KAFC;QAGXC,IAAI,EAAE;MAHK,CA/BH;;MAqCV;AACJ;AACA;AACA;MACIT,YAAY,EAAE;QACZI,KAAK,EAAE,UADK;QAEZI,QAAQ,EAAE,KAFE;QAGZC,IAAI,EAAE,MAAM,CAAE;MAHF;IAzCJ,CAT0B;IAyDtCE,OAAO,EAAE;MACP;AACJ;AACA;AACA;AACA;AACA;AACA;MACIC,OAAO,GAAG;QACR,IAAIC,CAAC,GAAG,KAAKC,eAAL,EAAR;QACA,OAAOzB,EAAE,CAAC0B,OAAH,CAAWC,OAAX,CAAmBH,CAAC,CAACI,IAAF,CAAO,IAAP,EAAa,IAAb,CAAnB,CAAP;MACD;;IAXM;EAzD6B,CAAxC;EAHA5B,EAAE,CAAC6B,IAAH,CAAQC,GAAR,CAAYC,GAAZ,CAAgBC,IAAhB,CAAqB7B,aAArB,GAAqCA,aAArC"
+}

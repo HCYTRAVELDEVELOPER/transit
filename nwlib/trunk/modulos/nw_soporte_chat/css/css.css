@@ -1,0 +1,149 @@
+.nw_button_chat{
+/*    position: fixed;
+    bottom: 0;
+    right: 0;*/
+}
+.nw_button_chat:hover{
+    cursor: pointer;
+}
+.bloques_two{
+    width: 48%!important;
+    max-width: 100%!important;
+    height: 400px!important;
+}
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    font-size: 12px;
+    color: #555;
+    background: transparent;
+}
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-button{
+    /*background: #999;*/
+}
+
+::-webkit-scrollbar-track {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: #e6e6e6;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #ccc;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: #999;
+}
+::-webkit-scrollbar-corner{
+    background: #999;
+}
+#contend {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+}
+.enc{
+    position: relative;
+    overflow: hidden;
+    background: #ECECEC;
+    padding: 10px;
+    box-shadow: 0px 0px 5px #B4B4B4;
+    /*width: 98%;*/
+    margin: auto;
+    margin-bottom: 30px;
+}
+.others{
+    position: relative;
+    float: left;
+    margin: 5px;
+    padding: 0px;
+    background: #fff;
+    box-shadow: 1px 1px 5px #e6e6e6;
+    overflow: hidden;
+    max-height: 300px;
+    max-width: 35%;
+}
+.others table{
+    /*width: 100%;*/
+    padding: 0;
+    margin: 0;
+    border-collapse: collapse;
+}
+.others td{
+    border: 1px solid #EBEBEB;
+}
+.others th{
+    border: 1px solid #D5D3D3;
+    background: #F0F0F0;
+}
+#chart_div_line{
+    margin: 0 auto;
+    padding: 0px;
+    background: #fff;
+    box-shadow: 1px 1px 5px;
+    width: 100%;
+    height: 300px;
+    float: left;
+    overflow: hidden;
+}
+h1{
+    font-size: 1.3em;
+    font-weight: 700;
+    padding: 10px;
+    margin: 0;
+    background: #DFDFDF;
+}
+.now{
+    text-align: center;
+    font-size: 4em;
+    background: transparent;
+}
+table {
+    table-layout: fixed;
+    width: 450px;
+}
+th, td {
+    border: 1px solid black;
+    padding: 4px;
+    white-space: pre;
+    white-space: pre-wrap;
+    white-space: pre-line;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -hp-pre-wrap;
+    word-wrap: break-word; 
+}
+div.contiene_tabla {
+    height: 200px;
+    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 100%;
+}
+@media screen and (max-width:600px){
+    .others{
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+        margin-top: 15px;
+        height: 100%;
+        max-height: 100%;
+    }
+    div.contiene_tabla{
+        height: 100%;
+    }
+    table{
+        width: 100%;
+    }
+}

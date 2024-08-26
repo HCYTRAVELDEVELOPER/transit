@@ -1,0 +1,389 @@
+/* 
+    Author     : alexf
+*/
+.containWebRtcNw .clear {
+    clear: both;
+}
+.containWebRtcNw {
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+    vertical-align: baseline;
+    font-size: 13px;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.contain_me,
+.contenedor,
+.containerChat
+{
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.containWebRtcNw button {
+    padding: 9px 13px;
+    margin: 2px 2px;
+    border-radius: 2px;
+    background-color: #fff;
+    border: 0;
+    font-size: 1.3em;
+}
+.containerButtonJoin{
+    position: absolute;
+    z-index: 3;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #fff;
+    text-shadow: 0px 0px 5px #000;
+}
+.containerButtonJoin p{
+    font-size: 2em;
+}
+.join{
+
+}
+.contenedorMain{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #1e1e1e;
+}
+.contain_me{
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-height: 250px;
+    max-width: 250px;
+    z-index: 1;
+}
+.contain_me_alone {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+#localVideo{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+.contenedor{
+    position: relative;
+    width: 100%; 
+    height: 100%; 
+    display: inline-block;
+}
+.contenedor video{
+    position: relative;
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: max-content;
+    object-fit: contain;
+    object-position: center;
+}
+#remotes{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    display: none;
+}
+.containerButtons{
+    position: absolute;
+    position: relative;
+    bottom: 0;
+    bottom: -57px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+    display: none;
+}
+.containerButtonVolver{
+    position: relative;
+    text-align: center;
+    color: #fff;
+    background-color: #2d2c2c;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.volver_a_llamar{
+    font-size: 1.5em;
+}
+.containerChat{
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    bottom: -100%;
+    max-width: 400px;
+}
+.containerChatVisible{
+    bottom: 0px;
+}
+.containerChat iframe {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+.encChat{
+    position: relative;
+    top: 0px;
+    z-index: 1;
+    background-color: #1f8ceb;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 55px;
+    height: auto;
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    -webkit-box-shadow: 0 0 18px rgba(0,0,0,.5);
+    -moz-box-shadow: 0 0 18px rgba(0,0,0,.5);
+    -o-box-shadow: 0 0 18px rgba(0,0,0,.5);
+    -moz-osx-box-shadow: 0 0 18px rgba(0,0,0,.5);
+    -ms-box-shadow: 0 0 18px rgba(0,0,0,.5);
+    box-shadow: 0 0 18px rgba(0,0,0,.5);
+    display: flex;
+    flex-wrap: wrap;
+}
+.iconsEnc{
+    cursor: pointer;
+    float: right;
+    position: relative;
+    margin: 5px 4px;
+    font-size: 28px;
+    height: 26px;
+}
+.closeChat{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.callEnc, .videocallEnc, .openChat{
+    display: none;
+}
+body .openChat{
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    margin: 0;
+}
+.encPhoto{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    float: left;
+    border-radius: 50%;
+    margin: 3px 4px;
+    background-image: url(/nwlib6/nwproject/modules/nw_user_session/img/icon_user.png);
+    background-size: cover;
+    background-position: center;
+    background-color: #fff;
+}
+.encName, .myName{
+    position: relative;
+    margin: 11px 0px 0px 3px;
+    max-width: 50%;
+    overflow: hidden;
+    font-size: 10px;
+    font-weight: lighter;
+    line-height: 11px;
+    white-space: pre-wrap;
+    /* max-width: 90px; */
+    max-height: 22px;
+}
+.encName{
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+}
+.myName{
+    min-width: 100%;
+}
+.terminar_before_container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-height: calc(100% - 55px);
+}
+body .terminar_before{
+    color: #fff;
+    background-color: red;
+    position: relative;
+    margin: auto;
+    top: 40%;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    padding: 0;
+    cursor: pointer;
+}
+body .terminar{
+    color: #fff;
+    background-color: red;
+}
+.btn_conts{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 6px;
+    display: block;
+    border-radius: 5px;
+    margin: 10px 0 0px 0px;
+    cursor: pointer;
+}
+.contestar_a{
+    background-color: green;
+}
+.rechazar_a{
+    background-color: red;
+}
+.btn_conts .material-icons{
+    border-right: 1px solid rgba(255, 255, 255, 0.42);
+    padding-right: 3px;
+    margin-right: 3px;
+}
+.btn_conts span{
+    display: inline-block;
+    top: -6px;
+    position: relative;
+    left: 0px;
+    font-weight: bold;
+}
+.callvioce_container{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    background-color: #00cd30;
+    margin: auto;
+    left: 0;
+    top: 25%;
+}
+.btnvoice_active{
+    position: relative;
+    color: #fff;
+    padding: 5px;
+}
+.contentChat .buttonBot{
+    background-color: #2767c3;
+    color: #fff;
+    border: 1px solid #3156c2;
+    padding: 6px 10px;
+    display: block;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+.callendedfoot{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+.hiddenButton{
+    display: none!important;
+}
+.encChatMinimiced{
+    height: 80px;
+}
+.encChatMinimiced .encPhoto{
+    height: 50px;
+    width: 50px;
+}
+.encStatus{
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 20px;
+    height: 20px;
+    background-color: #c3c3c3;
+    z-index: 1;
+    border-radius: 50%;
+}
+.changeStatusActive{
+    background-color: #00ff37;
+}
+@media screen and (max-width: 900px) {
+    .terminar_before_container{
+        max-height: 40%;
+    }
+    .contenedorMain{   
+        max-height: calc(100% - 15px);
+        max-width: calc(100% - 15px);
+        background-color: #1e1e1e;
+        margin: auto;
+    }
+    .encChat_fix{
+        position: fixed;
+        height: 32px;
+        font-size: 14px;
+        max-width: calc(100% - 15px);
+    }
+    .encChat_fix .material-icons{
+        font-size: 20px;
+    }
+    .contain_me {
+        left: auto;
+        right: 0px;
+        max-height: 120px;
+        max-width: 120px;
+        top: 31px;
+    }
+    #remotes{
+        max-height: calc(100% - 35px);
+        top: 33px;
+    }
+    .contain_me_alone {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .contenedorMainMiddle {
+        height: 50%!important;
+    }
+    .containerChatMiddle{
+        height: 50%;
+    }
+    .containerChat{
+        max-width: 100%;
+    }
+    .containerButtons .button{
+        font-size: 11px;
+        padding: 5px 8px;
+    }
+    .containerButtons .material-icons{
+        font-size: 20px;
+    }
+}
+.terminar_before .material-icons{
+    font-size: 32px;
+}

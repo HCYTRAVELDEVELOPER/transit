@@ -1,0 +1,260 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 4, 2019, 1:25:54 PM
+    Author     : alexf
+*/
+:root {
+    --color_empresarial: #151328;
+    --color_verde: #f5c52f;
+    --color_texto_btn_enc: #ffffff;
+}
+.createLoginFoo .logotipoHeader img{
+    width: 100%;
+    height: auto;
+    max-height: initial;
+    border-radius: 10px;
+    max-width: 209px;
+}
+body .createLoginFoo .titleEnc{
+    background: transparent;
+    color: #ffffff!important;
+}
+html body .btn_head_back{
+    color: var(--color_texto_btn_enc)!important;
+}
+html body .btn_head_back .material-icons{
+    color: var(--color_texto_btn_enc)!important;
+}
+html body .ui-title{
+    color: var(--color_texto_btn_enc)!important;
+}
+html body .ui-page .btnForm{
+    /*color: var(--color_verde)!important;*/
+}
+html body .ui-page .add_parada{
+    color: var(--color_empresarial)!important;
+}
+html body .ui-page .btn_head_back{
+    color: var(--color_texto_btn_enc)!important;
+}
+body .ui-page .logotipoHeader_home{
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+body .ui-page .logotipoHeader_home img{
+    height: 47px!important;
+    top: -5px;
+    width: 108px!important;
+    position: relative;
+    object-fit: contain;
+    object-position: left;
+}
+body .f_crear_viaje .logotipoHeader_home img{
+    box-shadow: 0px 0px 5px #000;
+    border-radius: 10px;
+    top: -1px;
+    left: 10px;
+    width: 160px!important;
+    height: auto!important;
+    background-color: #fff;
+}
+.centrar_mapa{
+    position: fixed;
+    /* bottom: calc(0% + 153px); */
+    /* top: auto; */
+    z-index: 10;
+    left: auto;
+    right: 10px;
+    top: 4px;
+}
+html body .ui-page .centrar_mapa .material-icons{
+    font-size: 35px;
+    background-color: var(--color_empresarial);
+    color: var(--color_verde)!important;
+    border-radius: 50%;
+    padding: 3px;
+}
+body .listFavAdd .spanIconFavir {
+    background-color: var(--color_empresarial);
+    color: var(--color_verde);
+}
+body .ui-slider-switch .ui-slider-label-b,body .ui-slider-switch .ui-slider-label-a,
+body .ui-page-theme-a .ui-slider-track .ui-btn-active {
+    background-color: var(--color_verde);
+    color: #ffffff;
+}
+html body .ui-page .nw_widget_div_pedir button{
+    box-shadow: 0px 0px 5px var(--color_verde);
+    background-color: var(--color_verde);
+    color: #ffffff!important;
+}
+body .spanSaldo i.material-icons{
+    color: var(--color_verde);
+    border: 1px solid var(--color_verde);
+}
+body .cont-radar p {
+    background: var(--color_empresarial);
+    color: var(--color_verde);
+}
+.cont-radar circle {
+    /*fill: var(--color_empresarial);*/
+    fill: var(--color_verde);
+}
+button.btnExec.btnForm.ui-shadow.ui-btn.ui-corner-all.ui-btn-inline.Btn.ui_btn_icon_left.aceptar.ui-btn-position-center{
+    color: var(--color_texto_btn_enc)!important;
+}
+.ui-page .ui_btn_icon_left .material-icons{
+    /*color: var(--color_texto_btn_enc)!important;*/
+    color: initial!important;
+}
+html body .ui-page .logotipoHeader_home{
+    top: 6px;
+    overflow: initial;
+    text-align: left;
+}
+.setTitle span {
+    color: var(--color_texto_btn_enc)!important;
+}
+
+/*.contentCenter .contenedor_refiere_conductores .nw_label_my_link_description,*/
+.contentCenter .contenedor_refiere_amigos .nw_label_my_link_description,
+.contentCenter .contenedor_promociones .nw_label_my_link_description,
+.contentCenter .contenedor_recargas .nw_label_my_link_description {
+    color: var(--color_texto_btn_enc)!important;
+}
+
+/*.contentCenter .contenedor_refiere_amigos_buttons .my_link_shared_driver,*/
+.contentCenter .contenedor_refiere_amigos_buttons .my_link_shared,
+.contentCenter .contenedor_refiere_amigos_buttons .redimir{
+    color: var(--color_texto_btn_enc)!important;
+}
+
+.ui-page .ui-btn-corner-all .material-icons{
+    color: var(--color_texto_btn_enc)!important;
+}
+
+
+.cont-radar #radar-pattern {
+    stroke: var(--color_empresarial);
+}
+.cont-radar #radar-bg path:nth-child(2n) {
+    fill: var(--color_empresarial);
+}
+.cont-radar #radar-hand {
+    stroke: var(--color_empresarial);
+}
+html body .ui-page .my-header .btnMenuHeader {
+    background: var(--color_empresarial);
+}
+html body .ui-page .my-header .btnMenuHeader .menuBarEnc {
+    color: var(--color_verde);
+}
+html body .contenedor_adondevamos{
+    background-color: var(--color_verde);
+}
+html body .dataUserLeft{
+    background-color: #f5c52f;
+    color: #151328!important;
+}
+html body .ui-page .nw_widget_div_labelname_adondevas {
+    border: 0;
+}
+html body .contenedor_adondevamos .button_adondevas .material-icons {
+    color: var(--color_empresarial)!important;
+}
+.spanValueEnd{
+    font-size: 22px;
+}
+body .contenedor_service_recargas .nw_widget_div_my_link_saldo .containerLabel,
+body .contenedor_service_recargas .nw_widget_div_my_link_planes .containerLabel {
+    background: var(--color_empresarial);
+}
+body #contenedor_recargas_buttons_actions button#recargar {
+    background: var(--color_empresarial);
+}
+body .saldo_tit_tot {
+    color: var(--color_empresarial);
+}
+body .ui-header.ui-bar-a.my-header.header.headerEnc_relative.ui-bar-inherit {
+    height: 50px;
+}
+body #payConekta .logotipoHeader img{
+    width: 65px;
+    top: -4px;
+    position: relative;
+}
+html body .createLoginFoo .cambiar_clave,
+html body .createLoginFoo .crear_cuenta
+{
+    background: transparent!important;
+    -webkit-box-shadow: 0 1px 3px rgb(0 0 0 / 15%)!important;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,.15)!important;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 15%)!important;
+    color: #ffffff!important;
+}
+
+html body .contenedor_btn_fijar .ui-input-text button{
+    background-color: var(--color_verde);
+    color: #fff!important;
+}
+html body .estimadoInt{
+    border: 1px solid var(--color_verde)!important;
+}
+html body .f_crear_viaje .ui-controlgroup-controls .ui-radio-off,
+html body .f_crear_viaje .ui-controlgroup-controls .ui-radio-on{
+    border: 1px solid var(--color_verde)!important;
+}
+
+html body .ui-page .nw_widget_div_labelname_adondevas .ui-input-text .labelname_adondevas{
+    color: var(--color_empresarial);
+}
+html body .ui-page .driver_en_camino_show .nw_widget_div_cancelar_pedido_en_ruta button{
+    color: #ffffff!important;
+}
+body .btn_chat_initservice,
+body .Infotel,
+body span.infoDriverText,
+body .btn_sharetravel_initservice,
+body .btn_warning_initservice{
+    color: var(--color_verde)!important;
+}
+body .btn_chat_initservice,
+body .Infotel
+{
+    background-color: var(--color_empresarial)!important;
+}
+html body .f_calificar_estrellas .nw_widget_div_puntaje .label_radio_nw .material-icons{
+    color: var(--color_verde)!important;
+}
+html body .ui-page .buscando_driver .nw_widget_div_cancelar_pedido button{
+    color: #fff!important;
+}
+html body .contenedor_adondevamos .button_adondevas{
+    color: #000!important;
+}
+.home_background_image:before {
+    content: ".";
+    background-color: rgb(255 255 255 / 26%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-height: 100px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+.createLoginFoo .logotipoHeader {
+    margin: 16px 0px 0px 0px;
+}
+.encCustomerComp{
+    top: 60px;
+    right: auto;
+    left: 66px;
+}

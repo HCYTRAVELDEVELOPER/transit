@@ -1,0 +1,132 @@
+
+    Orden de un comentario de tabla:
+
+//  1: Tipo de campo (texField,dateField,checkBox,etc)
+//  2: Tabla (texto) o clase y función. ie. "usuarios.consultarInactivos". Si no se usa usar cero (0)
+//  3: Visible o invisible (boolean)
+//  4: Requerida o no (boolean)
+//  5. MODE. Si no se usa usar cero (0)
+//  6. Label. Si no se usa usar cero (0)
+//  7. Filtro (boolean)
+//  8. ENABLED (boolean)
+
+/************************************************************************************************************/
+
+String para descripción de la tabla
+
+  [
+                {
+                    "navTables": [
+                        {
+                            "title": "Productos Asociados",
+                            "table": "nw_productos_planes",
+                            "name": "configuracion",
+                            "reference": "id_plan"
+                        },
+                        {
+                            "title": "Hojas",
+                            "table": "nw_paginas_propuesta",
+                            "name": "planes",
+                            "reference": "plan"
+                        }
+                    ],
+                    "config": {
+                        	"cleanSpecialWords": false, // (borrar estos comentarios al ponerlos en la tabla) LIMPIAR PALABRAS CLAVE SQL INJECTION
+                        	"cleanHtml": false, // (borrar estos comentarios al ponerlos en la tabla) LIMPIAR HTML
+				"uniqueFields": "orden", //(borrar estos comentarios al ponerlos en la tabla) COMPROBACIÓN DE CAMPOS ÚNICOS
+				"masterOpenModal": true //(borrar estos comentarios al ponerlos en la tabla) MAESTRO MODAL
+                    },
+                    "columns": [ //EN DESARROLLO...
+                        {
+                            "label": "ID",
+                            "caption": "id",
+                            "visible": false
+                        },
+                        {
+                            "label": "Proceso",
+                            "caption": "proceso",
+                            "description": "selectBox,sit_rndc_procesos"
+                        }
+                    ],
+                    "contextMenu": [
+                        {
+                            "label": "Enviar al RNDC",
+                            "icon": "document-send",
+                            "slot": "slotRNDCTrailers",
+                            "question": false,
+                            "questionAsk": "¿Está segur@ de enviar al RNDC?"
+                        }
+                    ],
+		    "selectBoxArrays": [
+            		{
+                            "name": "mostrar_destacados",
+		            "data": {
+		                    "SELECCIONE": "Seleccione",
+		                    "SI": "SI",
+		                    "NO": "NO"
+                            }
+            		}
+		    ],
+                    "conditions": [
+                        {
+                            "widget": "spinner_name",  // "spinner_one,spinner_two"
+                            "action": "setMax",
+                            "value": 20
+                        },
+                        {
+                            "widget": "spinner_name", // "spinner_one,spinner_two"
+                            "action": "setMin"
+                            "value": 10
+                        },
+                        {
+                            "where": "ciudad",
+                            "action": "colorHeader",
+                            "color": "red"
+                        },
+                        {
+                            "where": "select_box",
+                            "action": "startGroup",
+                            "color": "red",
+                            "border": "green",
+                            "mode": "horizontal"
+                        },
+                        {
+                            "where": "visible",
+                            "action": "endGroup"
+                        },
+                        {
+                            "where": "profile=74",
+                            "widget": "empleado",
+                            "action": "hide"
+                        },
+                        {
+                            "widget": "textArea",
+                            "action": "no_filter_special_characteres"
+                        },
+                        {
+                            "where": "profile=74",
+                            "widget": "domain_id",
+                            "value": "24",
+                            "action": "set"
+                        },
+                        {
+                            "where": "profile=74",
+                            "widget": "domain_id,quota",
+                            "action": "disable"
+                        },
+                        {
+                            "widget": "token_field",
+                            "action": "disable_only"
+                        },
+                        {
+                            "where": "changeSelection",
+                            "widget": "token_field",
+                            "action": "populateSelectBox",
+                            "widget_receive": "select_box",
+                            "conector_table": "ciudades",
+                            "conector_field": "pais",
+                            "order_by": "nombre" //OPCIONAL
+                        }
+                    ]
+                }
+  ]

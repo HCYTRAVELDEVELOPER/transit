@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=Operaciones Grupo NW:: Versión: 4.1
+Exec=google-chrome --app=http://nwadmin.gruponw.com/
+Icon=/home/andresf/Escritorio/logo_netwoods.png
+StartupWMClass=nwadmin.gruponw.com
+Name[es_CO]=QXNW_System

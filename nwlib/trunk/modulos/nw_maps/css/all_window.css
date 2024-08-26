@@ -1,0 +1,143 @@
+body,html{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+#contenedor_total{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.show_list {
+    width: 200px;
+    position: fixed;
+    color: #fff;
+    padding: 5px;
+    right: 0px;
+    top: 0px;
+    background-color: #333;
+    background-color: rgba(0,0,0,0.6);
+    background-image: url(../images/pattern.png);
+    -webkit-transform-style: flat;
+    -webkit-backface-visibility: hidden;
+}
+
+.contend_maps {
+
+}
+.list_maps {
+    position: fixed;
+    bottom: 0%;
+    z-index: 1000;
+    width: auto;
+    float: none;
+    height: 100px;
+    left: 0px;
+    padding: 5px;
+    margin: 0;
+    padding: 0;
+    -webkit-transform-style: flat;
+    -webkit-backface-visibility: hidden;
+}
+.ul_contend_flours{
+    overflow: auto;
+}
+.show_map{
+    /*    width: 100%;
+        padding: 0;
+        margin: 0;
+        float: none;*/
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    float: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+.slider {
+    /*    left: auto;
+        right: 10px;*/
+    background: rgba(0,0,0,0.4);
+    height: 25px!important;
+    /*    -webkit-transform: rotate(90deg);
+        top: 140px; 
+        left: -145px; */
+}
+
+
+
+.h1_full_text {
+    font-size: 16px;
+    color: #ccc;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+}
+
+.ul_contend_flours{
+    /*    height: 100%;
+        background: #333;*/
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+}
+.list_maps li {
+    /*    width: 100%;
+        height: 120px;
+        box-shadow: none;
+        background: transparent;*/
+    width: 100px;
+    height: 100px;
+    box-shadow: none;
+    background: transparent;
+}
+.img_flour{
+    background-color: transparent;
+    overflow: hidden;
+    height: 90px;
+}
+
+.img_flour img {
+    width: 100%;
+    height: auto;
+}
+.text_flour p {
+    position: absolute;
+    bottom: 0;
+    background: #000;
+    width: 100%;
+}
+.text_flour {
+    height: auto;
+}
+.map {
+    background-size: auto 100%!important;
+    cursor: -webkit-grab;
+    width: 100%!important;
+    height: 100%!important;
+    /*transition: all 0.5s ease 0s;*/
+}
+.cursor_move {
+    cursor: move;
+}
+.no-cursor{
+    cursor: none;
+}
+.info_local {
+    top: -170px;
+    left: -120px;   
+}
+.img_load {
+    box-shadow: 0px 0px 80px 20px #000;
+    border-radius: 2%;
+}
+.controls_zoom {
+    position: fixed!important;
+}

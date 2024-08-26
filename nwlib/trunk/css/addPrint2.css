@@ -1,0 +1,366 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 25/10/2017, 08:09:12 PM
+    Author     : duvanb
+*/
+* {
+    cursor: default!important;
+    /*pointer-events: none!important;*/
+}
+* {
+    font-size: 11px!important;   
+    font-family: Arial;
+}
+body {
+    position: relative;
+    margin: auto;
+    padding: 0px;
+    font-family: Arial!important;
+}
+.encPrintAdd{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    border-collapse: collapse!important;
+    text-align: center;
+}
+.colsenc{
+    position: relative;
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+.encimgTitle{
+    width: 20%;
+}
+.encimgTitle img {
+    height: 100px;
+}
+.encTipoTitle{
+    width: 60%;
+}
+.dateEnc{
+    width: 20%;
+}
+.dateEnc p{
+
+}
+
+#divBtnsNw{
+    position: relative;
+}
+#divBtnsNw * {
+    /* background: #000!important; */
+    /* border: 0!important; */
+    /* box-shadow: none!important; */
+    /* border-radius: 0!important; */
+    /* margin: 0!important; */
+    /* padding: 0!important; */
+    /* line-height: normal!important; */
+}
+.qx-table-scroller-header {
+    background: #dbdbdb!important;
+    /*width: 200%!important;*/
+}
+.qooxdoo-table-cell {
+    position: absolute;
+    /* height: 100%!important; */
+    /* top: 0!important; */
+    /* width: 100%!important; */
+    /* box-sizing: border-box!important; */
+    padding: 3px!important;
+    /* outline: 1px solid #ccc!important; */
+    height: 100%!important;
+}
+.qx-toolbar, .require_qxnw, .qx-table-statusbar{
+    display: none;
+}
+
+.qx-group, .qx-window-pane {
+    background: #fff!important;
+    width: 100%!important;
+    left: 0px!important;
+    /*border: 1px solid #000!important;*/
+}
+.qx-group * :not(.qx-table-scroller-header){
+    /*color: #000!important;*/ 
+    /*background-color: transparent!important;*/ 
+    border: 0!important;
+    overflow: hidden!important;
+    overflow: initial!important;
+}
+.nw_container_fields_form *{
+    color: #000!important;
+}
+
+.qx-group > div:not(.qx-table-scroller-header){
+    color: #000!important;
+    background-color: transparent!important;
+    overflow: initial!important;
+    word-break: break-word;
+    height: auto!important;
+    white-space: initial!important;
+}
+.qx-group > div:first-child {
+    /*width: 100%!important;*/
+}
+input, textarea {
+    /*border: 0;*/
+    /*border: 1px solid #ccc!important;*/
+    /*outline: 1px solid #ccc!important;*/
+    /*pointer-events: none!important;*/
+    background: transparent!important;
+}
+.qx-button *, .qx-button-disabled * {
+    background-image: none!important;
+    font-weight: lighter!important;
+    color: #000!important;
+}
+textarea {
+    height: auto!important;
+    /*min-height: 100px;*/
+}
+.qx-table-header-cell{
+    margin: 0!important;
+    padding: 0!important;
+}
+.qx-table-header-cell div:first-child{
+    position: relative!important;
+    left: 0!important;
+    text-align: left!important;
+    height: 100%!important;
+    vertical-align: top!important;
+    /*top: 0!important;*/
+    margin: 0!important;
+    width: 100%!important;
+    box-sizing: border-box!important;
+    /*padding: 3px!important;*/
+    /*outline: 1px solid #ccc!important;*/
+}
+.nw_container_fields_form div:first-child {
+    font-weight: bold;
+}
+
+.containerForm{
+    position: relative;
+    width: auto!important;
+    height: auto!important;
+    /*margin-bottom: 25px;*/
+}
+.isgruoupinitial, .containerFields > div {
+    position: relative!important;
+    top: 0!important;
+    left: 0!important;
+}
+.titleGroup {
+    position: relative;
+    /*text-align: center;*/
+    font-weight: bold;
+    padding: 10px;
+}
+.containerFields{
+    position: relative;
+}
+hr {
+    display: none;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: transparent;
+}
+.convertedInputs{
+    position: absolute;
+    background: #ebebe4!important; 
+    background: transparent!important; 
+    width: max-content;
+    word-break: break-word;
+    box-sizing: border-box;
+    max-width: 980px;
+    text-align: justify;
+}
+.fotoUser{
+    position: relative;
+    outline: 1px solid #ccc;
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+    background-color: fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.containerFirmas{
+    position: relative;
+    width: 100%;
+    border-collapse: collapse;
+}
+.containerFirmas td {
+    position: relative;
+    width: 50%;
+    border: 1px solid;
+}
+
+
+
+.qxuigroupboxGroupBox, body {
+    min-width: 1000px;
+    max-width: 1000px;
+}
+.fieldsOrgan {
+    position: relative!important;
+    height: auto!important;
+    width: auto!important;
+    left: 0!important;
+    top: 0!important;
+    box-sizing: border-box!important;
+    padding: 0px 0px!important;
+}
+.fieldsOrgan .nwContainFields div,
+.fieldsOrgan .nwContainFields input
+{
+    position: relative!important;
+    height: auto!important;
+    width: auto!important;
+    left: 0!important;
+    top: 0!important;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box!important;
+    padding: 0px 2px!important;
+    /*margin: 0!important;*/
+    border: 0!important;
+}
+.fieldsOrgan .nwContainFields div{
+    /*    margin: 1px 2px;*/
+}
+.fieldsOrgan .nwContainFields input,
+.fieldsOrgan .nwContainFields .convertedInputs
+{
+    background: transparent!important;    
+    margin: 1px 2px;
+}
+.fieldsOrgan .nw_container_fields_form{
+    /*border-left: 1px solid #ccc!important;*/
+    /*margin: 3px 3px 3px 3px;*/
+    /*padding: 3px 7px!important;*/    
+}
+.fieldsOrgan .nwContainFields {
+    position: relative!important;
+    height: auto!important;
+    width: auto!important;
+    left: 0!important;
+    top: 0!important;
+    padding: 0px 0px;
+    margin-top: 18px!important;
+}
+.fieldsOrgan .qxnwwidgetscheckBox,
+.fieldsOrgan .qxnwwidgetscheckBox div
+{
+    min-width: 10px!important;
+    min-height: 10px!important;
+    outline: 1px solid #9a9a9a;
+    margin-right: 2px;
+    padding: 0px!important;
+    top: 1px!important;
+}
+.qx-checkbox-disabled_padre_padre,
+.qx-checkbox-disabled_bloqueCheck_padre_padre,
+.qxnwwidgetscheckBox_qx-checkbox-disabled_padre_padre,
+.qxnwwidgetscheckBox_qx-checkbox-disabled_bloqueCheck_padre_padre
+{
+    margin: 0!important;
+    padding: 0!important;
+    display: inline-flex!important;
+}
+.qx-checkbox-disabled_padre_padre *,
+.qx-checkbox-disabled_bloqueCheck_padre_padre *,
+.qxnwwidgetscheckBox_qx-checkbox-disabled_padre_padre *, 
+.qxnwwidgetscheckBox_qx-checkbox-disabled_bloqueCheck_padre_padre *{
+    margin-top: 0!important;
+    top: 0!important;
+    vertical-align: text-top;
+}
+table.jqplot-table-legend { 
+    max-height: 250px; 
+    padding-right: 20px; 
+    overflow: auto; 
+    display: block;
+    z-index: 10000;
+}
+.jqplot-target {
+    color: black!important;
+}
+
+.jqplot-point-label {
+    background-color: #dbd9f7;
+    border: 1.5px solid #aaaaaa;
+    padding: 1px 3px;
+    color: black;
+}
+
+.jqplot-pie-series {
+    background-color: #dbd9f7;
+    border: 1.5px solid #aaaaaa;
+    padding: 1px 3px;
+    color: black;
+}
+.convertedInputs_input{
+
+}
+.containFile{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-weight: lighter;
+    /* text-decoration: underline; */
+}
+.containFile:before {
+    content: "Archivo adjunto";
+}
+.qx-group .tablenw{
+    overflow: hidden!important;
+}
+.groupTable{
+
+}
+.qx-input{
+
+}
+.titleType{
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+.qx-toolbar_padre{
+    display: none!important;
+}
+.qx-checkbox-disabled, .qx-checkbox{
+    min-width: 10px;
+    min-height: 10px;
+    min-width: 10px!important;
+    min-height: 10px!important;
+    outline: 1px solid #9a9a9a;
+    margin-right: 2px;
+    padding: 0px!important;
+    top: 1px!important;
+}
+.clear {
+    clear: both;
+}
+.fieldsOrgan .nwContainFields .lineMidle, .fieldsOrganlineMidle:after{
+    content: ".";
+    border-bottom: 1px solid #e2e2e2!important;
+    width: 100%!important;
+    margin: 4px 0;
+    position: relative;
+    display: block;
+}
+.fieldsOrganEnded{
+    
+}

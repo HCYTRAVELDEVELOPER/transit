@@ -1,0 +1,307 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 4, 2019, 1:25:54 PM
+    Author     : alexf
+*/
+:root {
+    --color_empresarial: #525355;
+    --color_verde: #1253A7;
+}
+html body .createLoginFoo .logotipoHeader img{
+    width: 100%;
+    height: auto;
+    max-height: initial;
+    border-radius: 10px;
+    /* background-color: #ffffff; */
+    /* box-shadow: 0px 0px 5px; */
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    /* max-width: 106px; */
+    /* border-radius: 50%; */
+    padding: 0;
+    max-width: 240px;
+    margin-top: -50px;
+}
+body .createLoginFoo .titleEnc{
+    background: transparent;
+    color: var(--color_empresarial)!important;
+    margin-top: 20px;
+}
+html body .btn_head_back{
+    /*color: #000!important;*/
+}
+html body .btn_head_back .material-icons{
+    /*color: #000!important;*/
+}
+html body .ui-title{
+    /*color: #000!important;*/
+}
+html body .ui-page .btnForm{
+    /*color: #000!important;*/
+}
+body .ui-page .logotipoHeader_home{
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+body .ui-page .logotipoHeader_home img{
+    height: 47px!important;
+    top: -5px;
+    width: 108px!important;
+    position: relative;
+    object-fit: contain;
+    object-position: left;
+}
+body .f_crear_viaje .logotipoHeader_home img{
+    /* box-shadow: 0px 0px 5px #000; */
+    border-radius: 15px;
+    top: -2px;
+    left: 5px;
+    width: auto!important;
+    height: auto!important;
+    max-height: 38px;
+    /* background-color: #7F7F7F; */
+    /* background-color: #c1c1c1; */
+    /* background-color: #F9D730; */
+    /*background-color: #000;*/
+    background-color: var(--color_empresarial);
+    padding: 5px;
+}
+.centrar_mapa{
+    position: fixed;
+    /* bottom: calc(0% + 153px); */
+    /* top: auto; */
+    z-index: 10;
+    left: auto;
+    right: 10px;
+    top: 4px;
+}
+html body .ui-page .centrar_mapa .material-icons{
+    font-size: 35px;
+    background-color: var(--color_empresarial);
+    color: var(--color_verde)!important;
+    border-radius: 50%;
+    padding: 3px;
+}
+body .listFavAdd .spanIconFavir {
+    background-color: var(--color_empresarial);
+    color: var(--color_verde);
+}
+body .ui-slider-switch .ui-slider-label-b,body .ui-slider-switch .ui-slider-label-a,
+body .ui-page-theme-a .ui-slider-track .ui-btn-active {
+    background-color: var(--color_verde);
+    color: #ffffff;
+}
+html body .ui-page .nw_widget_div_pedir button{
+    box-shadow: 0px 0px 5px var(--color_verde);
+    background-color: var(--color_verde);
+    color: #ffffff!important;
+}
+body .spanSaldo i.material-icons{
+    color: var(--color_verde);
+    border: 1px solid var(--color_verde);
+}
+body .cont-radar p {
+    background: var(--color_empresarial);
+    color: var(--color_verde);
+}
+.cont-radar circle {
+    /*fill: var(--color_empresarial);*/
+    fill: var(--color_verde);
+}
+button.btnExec.btnForm.ui-shadow.ui-btn.ui-corner-all.ui-btn-inline.Btn.ui_btn_icon_left.aceptar.ui-btn-position-center{
+    color: #000!important;
+}
+.ui-page .ui_btn_icon_left .material-icons{
+    color: #000!important;
+}
+html body .ui-page .logotipoHeader_home{
+    top: 6px;
+    overflow: initial;
+}
+.setTitle span {
+    color: #000!important;
+}
+
+/*.contentCenter .contenedor_refiere_conductores .nw_label_my_link_description,*/
+.contentCenter .contenedor_refiere_amigos .nw_label_my_link_description,
+.contentCenter .contenedor_promociones .nw_label_my_link_description,
+.contentCenter .contenedor_recargas .nw_label_my_link_description {
+    color: #000!important;
+}
+
+/*.contentCenter .contenedor_refiere_amigos_buttons .my_link_shared_driver,*/
+.contentCenter .contenedor_refiere_amigos_buttons .my_link_shared,
+.contentCenter .contenedor_refiere_amigos_buttons .redimir{
+    /*color: #000!important;*/
+}
+
+.ui-page .ui-btn-corner-all .material-icons{
+    /*color: #000!important;*/
+}
+
+
+.cont-radar #radar-pattern {
+    stroke: var(--color_empresarial);
+}
+.cont-radar #radar-bg path:nth-child(2n) {
+    fill: var(--color_empresarial);
+}
+.cont-radar #radar-hand {
+    stroke: var(--color_empresarial);
+}
+html body .ui-page .my-header .btnMenuHeader {
+    background: var(--color_empresarial);
+}
+html body .ui-page .my-header .btnMenuHeader .menuBarEnc {
+    color: var(--color_verde);
+}
+html body .contenedor_adondevamos{
+    background-color: var(--color_verde);
+}
+html body .dataUserLeft{
+    /*color: #000000;*/
+}
+html body .ui-page .nw_widget_div_labelname_adondevas {
+    border: 0;
+}
+html body .contenedor_adondevamos .button_adondevas .material-icons {
+    /*color: #f64514;*/
+}
+.spanValueEnd{
+    font-size: 22px;
+}
+body .contenedor_service_recargas .nw_widget_div_my_link_saldo .containerLabel,
+body .contenedor_service_recargas .nw_widget_div_my_link_planes .containerLabel {
+    background: var(--color_empresarial);
+}
+body #contenedor_recargas_buttons_actions button#recargar {
+    background: var(--color_empresarial);
+}
+body .saldo_tit_tot {
+    color: var(--color_empresarial);
+}
+body .ui-header.ui-bar-a.my-header.header.headerEnc_relative.ui-bar-inherit {
+    height: 50px;
+}
+body #payConekta .logotipoHeader img{
+    width: 65px;
+    top: -4px;
+    position: relative;
+}
+html body .createLoginFoo .cambiar_clave,
+html body .createLoginFoo .crear_cuenta
+{
+    color: #262424!important;
+    /*background: #262424!important;*/
+    /*-webkit-box-shadow: 0 1px 3px rgb(0 0 0 / 15%)!important;*/
+    /*-moz-box-shadow: 0 1px 3px rgba(0,0,0,.15)!important;*/
+    /*box-shadow: 0 1px 3px rgb(0 0 0 / 15%)!important;*/
+    /*color: #ffffff!important;*/
+    border-radius: 20px!important;
+}
+
+html body .contenedor_btn_fijar .ui-input-text button{
+    background-color: var(--color_verde);
+    color: #fff!important;
+}
+html body .estimadoInt{
+    border: 1px solid var(--color_verde)!important;
+}
+html body .f_crear_viaje .ui-controlgroup-controls .ui-radio-off,
+html body .f_crear_viaje .ui-controlgroup-controls .ui-radio-on{
+    border: 1px solid var(--color_verde)!important;
+}
+
+html body .ui-page .nw_widget_div_labelname_adondevas .ui-input-text .labelname_adondevas{
+    color: #ffffff;
+}
+html body .ui-page .driver_en_camino_show .nw_widget_div_cancelar_pedido_en_ruta button{
+    color: #ffffff!important;
+}
+body .btn_chat_initservice,
+body .Infotel,
+body span.infoDriverText,
+body .btn_sharetravel_initservice,
+body .btn_warning_initservice{
+    color: var(--color_verde)!important;
+}
+body .btn_chat_initservice,
+body .Infotel
+{
+    background-color: var(--color_empresarial)!important;
+}
+html body .f_calificar_estrellas .nw_widget_div_puntaje .label_radio_nw .material-icons{
+    color: var(--color_verde)!important;
+}
+html body .ui-page .buscando_driver .nw_widget_div_cancelar_pedido button{
+    color: #fff!important;
+}
+body h1.titleEnc{
+
+}
+html body #foo.createLoginFoo .headerEnc_relative{
+    /*background-color: var(--color_empresarial)!important;*/
+}
+html body #foo.createLoginFoo {
+    background-color: #fff!important;
+}
+html body .Infotel{
+    display: none;
+}
+html body .f_crear_parada .btnForm,
+html body .f_crear_parada .btnForm .material-icons
+{
+    color: #fff!important;
+}
+body .ui-page .createLogin .material-icons, body .ui-page .createLogin .nw_label,
+body #usuario,
+body #clave
+{
+    color: #000!important;
+}
+input#clave::placeholder{
+    color: gray!important;
+    background: transparent;
+}
+input#usuario::placeholder {
+    color: gray!important;
+    background: transparent;
+}
+
+a.btnExec.btnForm.ui-shadow.ui-btn.ui-corner-all.ui-btn-inline.Btn.aceptar.btn_maxwidth{
+    color: #fff!important;
+    font-weight: bold;
+}
+html body .createLoginFoo .logotipoHeader{
+    margin: auto!important;
+    padding: 0!important;
+}
+
+html .createLoginFoo #form_createLogin .nw_label,
+html .createLoginFoo #form_createLogin .elinicon
+{
+    display: none;
+}
+
+html .contentCenterInLogin .createLogin .cambiar_clave{
+    margin-top: 0!important;
+    position: absolute;
+    top: -17px;
+    color: gray!important;
+    left: 0px;
+}
+a.btnExec.btnForm.ui-shadow.ui-btn.ui-corner-all.ui-btn-inline.Btn.aceptar.btn_maxwidth {
+    margin-top: 37px!important;
+    margin-bottom: 10px!important;
+}
+a.btnExec.btnForm.ui-shadow.ui-btn.ui-corner-all.ui-btn-inline.Btn.crear_cuenta{
+    background: #2B83A5!important;
+    color: #fff!important;
+}

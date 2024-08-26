@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Security-Policy" content="default-src 'unsafe-inline' android-webview-video-poster: 'unsafe-eval' 'self' data: gap: *; style-src 'self' 'unsafe-inline' *; media-src *; connect-src *">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta charset="utf-8">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <style>
+            @font-face {
+                font-family: 'Material Icons';
+                font-style: normal;
+                font-weight: 400;
+                src: url('nwmaker/css/fonts/material_icons/MaterialIcons-Regular.eot');
+                src: local('☺'),
+                    url('nwmaker/css/fonts/material_icons/MaterialIcons-Regular.woff2') format('woff2'),
+                    url('nwmaker/css/fonts/material_icons/MaterialIcons-Regular.woff') format('woff'),
+                    url('nwmaker/css/fonts/material_icons/MaterialIcons-Regular.ttf') format('truetype')
+            }
+            body {
+                background: #ffffff!important;
+            }
+            .ui-page .my-header {
+                background-color: transparent;
+                border: 0;
+            }
+            #foo {
+                /*background-color: transparent!important;*/
+            }
+            .loadingNwChat{
+                background: transparent!important;
+            }
+            .cEftVf{
+                border: 4px solid #f64514!important;
+                border-top: 4px solid transparent!important;
+            }
+            .createAccountFoo, .createLoginFoo{
+                /*background: #ffffff!important;*/
+            }
+            html body .createAccountFoo .btn_maxwidth,
+            html body .createLoginFoo .btn_maxwidth{
+                background-color: green!important
+            }
+            .createAccountFoo .headerEnc_relative,
+            .createLoginFoo .headerEnc_relative
+            {
+                position: relative!important;
+            }
+            .createAccountFoo .contentCenter,
+            .createLoginFoo .contentCenter
+            {
+                margin: auto!important;
+                padding: 0px 15px!important;
+            }
+            .createAccountFoo .aceptar,
+            .createLoginFoo .aceptar
+            {
+                background-color: green!important;
+                color: #fff!important;
+            }
+            .createAccountFoo .logotipoHeader img,
+            .createLoginFoo .logotipoHeader img
+            {
+                max-width: 150px;
+            }
+        </style>
+        <link rel="stylesheet" type="text/css" href="js/libs/jquery-mobile/jquery.mobile.min.css">
+        <script type="text/javascript" src="js/libs/jquery/jquery.min.js"></script>
+        <script type="text/javascript" src="js/libs/jquery-mobile/jquery.mobile.js"></script>
+        <link rel="stylesheet" type="text/css" href="/lib_mobile/driver/nwmaker/css/nwmaker-2.css?v=0019">
+        <link rel="stylesheet" type="text/css" href="/lib_mobile/driver/css/main.css?v=0019">
+        <link rel="stylesheet" type="text/css" href="/lib_mobile/driver/css/main_extern.css?v=0019">
+        <title>Service</title>
+    </head>
+    <body>
+        <div data-role='page' id='foo'>
+            <div data-role='header' class='ui-header header headerHome ui-bar-a my-header' >
+                <button href='#leftpanel1' class='ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left btnMenuHeader' style="display: none;" ></button>
+                <h1 class='logotipoHeader'></h1>
+            </div>
+            <div role='main' class='ui-content contentCenter'></div>
+        </div>
+        <div class="swiperight"></div>
+        <div class='home_background_color'></div>
+        <div class='home_background_image'></div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script>
+            versionInAppLibDevice = "0019";
+            domainLib = "/lib_mobile/driver/nwmaker/";
+        </script>
+        <script type="text/javascript" src="/lib_mobile/driver/nwmaker/nwmaker-2.min.min.js?v=0019"></script>
+    </body>
+</html>

@@ -1,0 +1,118 @@
+/* 
+    Created on : 31/05/2023, 10:34:25 a. m.
+    Author     : alexf
+*/
+:root {
+    /*--alto_barra_iphone: 30px;*/
+    --alto_barra_iphone: 55px;
+    --top_barra_iphone: 45px;
+    --top_barra_iphone_menos: -45px;
+    --top_max_chat: 90px;
+    --top_max_center: 95px;
+}
+/*@media screen and (orientation:portrait){*/
+.ui-mobile .ui-page {
+    min-height: 100%!important;
+    max-height: 100%!important;
+    height: 100%!important;
+}
+/*}*/
+body {
+    overscroll-behaviour: contain;
+}
+#foo .headerEnc_relative {
+
+}
+body .ui-page .my-header .btnMenuHeader,
+.backInShowServices,
+body .ui-page .logotipoHeader_home,
+.encCustomerComp,
+.panelHomeLeft,
+.ui-header.ui-bar-a.my-header.header.headerEnc_relative.ui-bar-inherit
+{
+    top: var(--top_barra_iphone)!important;
+}
+/*.ui-header.ui-bar-a.my-header.header.headerEnc_relative.ui-bar-inherit {
+    min-height: 72px!important;
+}*/
+.ui-header.ui-bar-a.my-header.header.headerEnc_relative.ui-bar-inherit:before {
+    content: ".";
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 100%;
+    top: var(--top_barra_iphone_menos);
+    height: var(--alto_barra_iphone);
+    background-color: var(--color_empresarial);
+    font-size: 0px;
+}
+html .ui-page .ui-navbar .btnForm {
+    font-size: 10px;
+    font-weight: lighter!important;
+}
+.contentCenter, .containerCenterHome {
+    /*margin-top: 70px!important;*/
+}
+
+body .ui-page .my-header .btnMenuHeader,
+body .ui-page .logotipoHeader_home,
+body .ui-page .headerHome .ui-navbar
+{
+    /*top: 40px!important;*/
+    top: var(--top_barra_iphone)!important;
+    position: fixed!important;
+    right: 0;
+}
+
+
+body .centrar_mapa{
+    position: relative;
+    left: auto;
+    top: auto;
+    right: auto;
+    bottom: auto;
+}
+
+.nwmaker_notifications_firebase {
+    top: 60px !important;
+    left: 9px !important;
+}
+
+
+body .panelHomeLeft{
+    /*top: 35px!important;*/
+    top: var(--top_barra_iphone)!important;
+    max-height: calc(100% - 135px)!important;
+}
+
+.notifyBarEnc{
+    /*top: 35px!important;*/
+    top: var(--top_barra_iphone)!important;
+    max-height: calc(100% - 35px)!important;
+}
+body .containtParadaItms{
+    /*top: 35px!important;*/
+    top: var(--top_barra_iphone)!important;
+    max-height: calc(100% - 140px)!important;
+}
+
+body .f_chat .headerEnc_relative{
+    /*max-height: 35px!important;*/
+    max-height: var(--top_barra_iphone)!important;
+    /* overflow: hidden; */
+    font-size: 12px!important;
+}
+
+body .ui-header.ui-bar-a.my-header.header.headerEnc_relative.ui-bar-inherit{
+    top: var(--top_barra_iphone);
+    z-index: 2;
+}
+
+body .frame_chat_form{
+    max-height: calc(100% - var(--top_max_chat));
+}
+
+html body .ui-page .contentCenter{
+    margin-top: var(--top_max_center)!important;
+    max-height: calc(100% - var(--top_max_center)) !important;
+}

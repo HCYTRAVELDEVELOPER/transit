@@ -1,0 +1,138 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 4, 2019, 1:25:54 PM
+    Author     : alexf
+*/
+:root {
+    --color_empresarial: #82001a;
+}
+body .ui-page .logotipoHeader_home{
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+body .ui-page .logotipoHeader img {
+    margin-top: 10px;
+}
+body .createLoginFoo .logotipoHeader img {
+    /* height: auto; */
+    /*max-width: 400px;*/
+    border-radius: 29%;
+    /*box-shadow: 0px 0px 7px 2px rgb(0 0 0 / 56%);*/
+    /*background-color: #fff;*/
+
+    padding: 11px;
+}
+body .centrar_mapa .material-icons {
+    font-size: 35px;
+    background-color: var(--color_empresarial);
+}
+
+
+html body .ui-page .logotipoHeader_home img {
+    height: 45px;
+    top: -6px;
+    position: relative;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 10px;
+    /*box-shadow: 0px 0px 5px #000;*/
+    background-color: transparent!important;
+    padding: 5px;
+}
+body #leftpanel1 .ui-panel-inner{
+    background: #fff;
+}
+body .textlinksNavLeft{
+    color: #000;
+}
+
+.centrar_mapa{
+    position: fixed;
+    /* bottom: calc(0% + 153px); */
+    /* top: auto; */
+    z-index: 10;
+    left: auto;
+    right: 10px;
+    top: 4px;
+}
+.centrar_mapa .material-icons{
+    font-size: 35px;
+    background-color: #f64512;
+    color: #fff!important;
+    border-radius: 50%;
+    padding: 3px;
+}
+body .ui-page .my-header .btnMenuHeader {
+    background: #f64514;
+}
+body .ui-page .my-header .btnMenuHeader .menuBarEnc {
+    color: #fff;
+}
+html body .contenedor_adondevamos .button_adondevas .material-icons {
+    /*color: #f64514;*/
+}
+
+body .home_background_image{
+    background-size: cover;
+}
+
+
+html body #foo.createLoginFoo {
+    background-color: #49001b!important;
+}
+html body #foo.createLoginFoo .headerEnc_relative{
+    background-color: #49001b !important;
+}
+body .titleEncContain{
+    color: #fff;
+    margin-top: 22px;
+    font-size: 20px;
+}
+.titleEnc_user {
+    color: white;
+}
+
+html body .ui-page .createLogin .material-icons,
+html body .ui-page .createLogin .nw_label {
+    color: white;
+    font-weight: normal;
+}
+
+html .createLoginFoo input#usuario.text.nw_textField,
+html .createLoginFoo input#clave.text.nw_textField
+{
+    background-color: #ededed!important;
+    color: #000!important;
+}
+html .createLoginFoo input#usuario.text.nw_textField::placeholder,
+html .createLoginFoo input#clave.text.nw_textField::placeholder
+{
+    color: gray!important;
+}
+
+html .ui-page .ui-btn-corner-all .material-icons{
+    color: #fff!important;
+}
+
+body .contentCenterInLogin .containBtnFooter .aceptar {
+    margin-top: -10px;
+}
+body .contentCenterInLogin .containBtnFooter .cambiar_clave {
+    margin-top: 10px !important;
+}
+.nwmaker_notifications_firebase{
+    top: -65px;
+    left: 12px;
+}
+.rowName_sentido {
+    display: none !important;
+}
+button.btnExec.btnForm.needsclick.ui-shadow.ui-btn.ui-corner-all.ui-btn-inline.Btn.ui_btn_icon_left.aceptar.ui-btn-position-bottom {
+    color: red !important;
+}

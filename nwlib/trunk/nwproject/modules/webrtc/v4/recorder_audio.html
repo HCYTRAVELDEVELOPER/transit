@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+        <a id="download">Download</a>
+        <audio id="player" muted="true" controls></audio>
+        <script>
+
+            navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia;
+            init();
+
+            function init() {
+                console.log("init")
+                var shouldStop = false;
+                var stopped = false;
+                var player = document.getElementById('player');
+                var downloadLink = document.getElementById('download');
+                var stopButton = document.getElementById('stop');
+                var startButton = document.getElementById('start');
+
+                startButton.addEventListener('click', function () {
+                    start();
+                })
+
+                stopButton.addEventListener('click', function () {
+                    shouldStop = true;
+                    console.log("mediaRecorder", mediaRecorder)
+                    mediaRecorder.stop();
+                });
+
+                function start() {
+                    shouldStop = false;
+                    navigator.mediaDevices.getUserMedia({audio: true, video: false}).then(function (stream) {
+                        console.log("[DEMO] :: Get user media ok... Enumerate devices...");
+                        handleSuccess(stream);
+                    }).catch(function (error) {
+                        alert("[DEMO] :: Unable to have access to media devices", error);
+                    });
+                }
+
+                var handleSuccess = function (stream) {
+                    console.log("handleSuccess", stream);
+//                if ('srcObject' in player) {
+//                    player.srcObject = stream;
+//                } else {
+//                    player.src = window.URL.createObjectURL(stream);
+//                }
+
+                    var options = {mimeType: 'video/webm;codecs=vp9'};
+                    var recordedChunks = [];
+                    mediaRecorder = new MediaRecorder(stream, options);
+
+                    mediaRecorder.addEventListener('dataavailable', function (e) {
+                        console.log(e);
+                        if (e.data.size > 0) {
+                            recordedChunks.push(e.data);
+                        }
+
+
+                        if (shouldStop === true && stopped === false) {
+                            mediaRecorder.stop();
+                            stopped = true;
+                        }
+                    });
+
+                    mediaRecorder.addEventListener('stop', function () {
+                        console.log("mediaRecorder stop");
+                        var blob = new Blob(recordedChunks);
+                        var url = URL.createObjectURL(blob);
+                        downloadLink.href = url;
+                        downloadLink.download = 'acetest.wav';
+
+                        if ('srcObject' in player) {
+                            player.srcObject = mediaRecorder;
+                        } else {
+                            player.src = window.URL.createObjectURL(mediaRecorder);
+                        }
+                    });
+                    mediaRecorder.start();
+                };
+            }
+
+        </script>
+
+    </body>
+</html>

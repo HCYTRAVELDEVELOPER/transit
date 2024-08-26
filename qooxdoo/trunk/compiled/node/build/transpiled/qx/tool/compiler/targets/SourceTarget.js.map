@@ -1,0 +1,36 @@
+{
+  "version": 3,
+  "names": [
+    "qx",
+    "Bootstrap",
+    "executePendingDefers",
+    "$$dbClassInfo",
+    "Class",
+    "define",
+    "extend",
+    "tool",
+    "compiler",
+    "targets",
+    "Target",
+    "properties",
+    "copyResources",
+    "check",
+    "init",
+    "members",
+    "_writeApplication",
+    "getCopyResources",
+    "appMeta",
+    "getAppMeta",
+    "syncAssets",
+    "toString",
+    "getOutputDir",
+    "SourceTarget"
+  ],
+  "sources": [
+    "/home/andresf/workspace_qooxdoo/qooxdoo/qooxdoo-7.0/source/class/qx/tool/compiler/targets/SourceTarget.js"
+  ],
+  "sourcesContent": [
+    "/* ************************************************************************\n *\n *    qooxdoo-compiler - node.js based replacement for the Qooxdoo python\n *    toolchain\n *\n *    https://github.com/qooxdoo/qooxdoo\n *\n *    Copyright:\n *      2011-2017 Zenesis Limited, http://www.zenesis.com\n *\n *    License:\n *      MIT: https://opensource.org/licenses/MIT\n *\n *      This software is provided under the same licensing terms as Qooxdoo,\n *      please see the LICENSE file in the Qooxdoo project's top-level directory\n *      for details.\n *\n *    Authors:\n *      * John Spackman (john.spackman@zenesis.com, @johnspackman)\n *\n * ************************************************************************/\n/**\n * Compiles a target where source files and resources are loaded in place\n */\nqx.Class.define(\"qx.tool.compiler.targets.SourceTarget\", {\n  extend: qx.tool.compiler.targets.Target,\n\n  properties: {\n    /**\n     * Whether to copy resources in source builds.\n     */\n    copyResources: {\n      check: \"Boolean\",\n      init: true\n    }\n  },\n\n  members: {\n    /*\n     * @Override\n     */\n    async _writeApplication() {\n      if (this.getCopyResources()) {\n        let appMeta = this.getAppMeta();\n        await appMeta.syncAssets();\n      }\n      return await super._writeApplication();\n    },\n\n    /*\n     * @Override\n     */\n    toString() {\n      return \"Source Target: \" + this.getOutputDir();\n    }\n  }\n});\n"
+  ],
+  "mappings": ";;;;;;;;;;;;EAAAA,EAAE,CAACC,SAAH,CAAaC,oBAAb,CAAkCC,aAAlC;;EAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;;EACA;AACA;AACA;EACAH,EAAE,CAACI,KAAH,CAASC,MAAT,CAAgB,uCAAhB,EAAyD;IACvDC,MAAM,EAAEN,EAAE,CAACO,IAAH,CAAQC,QAAR,CAAiBC,OAAjB,CAAyBC,MADsB;IAGvDC,UAAU,EAAE;MACV;AACJ;AACA;MACIC,aAAa,EAAE;QACbC,KAAK,EAAE,SADM;QAEbC,IAAI,EAAE;MAFO;IAJL,CAH2C;IAavDC,OAAO,EAAE;MACP;AACJ;AACA;MACI,MAAMC,iBAAN,GAA0B;QACxB,IAAI,KAAKC,gBAAL,EAAJ,EAA6B;UAC3B,IAAIC,OAAO,GAAG,KAAKC,UAAL,EAAd;UACA,MAAMD,OAAO,CAACE,UAAR,EAAN;QACD;;QACD,OAAO,6FAAP;MACD,CAVM;;MAYP;AACJ;AACA;MACIC,QAAQ,GAAG;QACT,OAAO,oBAAoB,KAAKC,YAAL,EAA3B;MACD;;IAjBM;EAb8C,CAAzD;EAxBAtB,EAAE,CAACO,IAAH,CAAQC,QAAR,CAAiBC,OAAjB,CAAyBc,YAAzB,CAAsCpB,aAAtC,GAAsDA,aAAtD"
+}

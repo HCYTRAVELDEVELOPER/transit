@@ -1,0 +1,6 @@
+
+PARA LEER UNA FUNCIÓN DE UN PHP
+loadFunction(func, div, parameters)
+func: la función a traer de php
+div: el div donde se va a meter el resultado
+parameters: ...

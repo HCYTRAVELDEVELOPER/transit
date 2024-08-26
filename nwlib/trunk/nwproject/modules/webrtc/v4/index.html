@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv='Content-Type' content='text/html;charset=utf-8' />
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <title>Ringow</title>
+    </head>
+    <body>
+        <div id="loadingNwChat" class="loadingNwChat" style="position: fixed;top: 0;left: 0;width: 100%;height: 100%;background-color: #ffffff;z-index: 100000000;">
+            <div class="cEftVf" style="top: 40%;position: relative;"></div>
+            <style>
+                @-webkit-keyframes iECmZH {
+                    0% {
+                        -webkit-transform: rotate(0deg);
+                        -ms-transform: rotate(0deg);
+                        transform: rotate(0deg);
+                    }
+                    100% {
+                        -webkit-transform: rotate(360deg);
+                        -ms-transform: rotate(360deg);
+                        transform: rotate(360deg);
+                    }
+                }
+
+                @keyframes iECmZH {
+                    0% {
+                        -webkit-transform: rotate(0deg);
+                        -ms-transform: rotate(0deg);
+                        transform: rotate(0deg);
+                    }
+                    100% {
+                        -webkit-transform: rotate(360deg);
+                        -ms-transform: rotate(360deg);
+                        transform: rotate(360deg);
+                    }
+                }
+                .cEftVf {
+                    margin-left: auto;
+                    margin-right: auto;
+                    border: 4px solid #358EFF;
+                    border-top: 4px solid transparent;
+                    height: 3rem;
+                    width: 3rem;
+                    box-sizing: border-box;
+                    -webkit-animation: iECmZH 1100ms infinite linear;
+                    animation: iECmZH 1100ms infinite linear;
+                    border-radius: 50%;
+                }
+            </style>
+        </div>
+        <div class="containerNwpeer2Peer"></div>
+        <canvas id="myCanvas"  style="position: fixed;background-color: red;z-index: 100;display: none;"></canvas>
+
+        <link rel="stylesheet" type="text/css" href="css/chat.css?v=89">
+        <script>
+            window.getExternalIceServers = true;
+        </script>
+        <script src="js/hark.js"></script>
+        <script src="js/RTCMultiConnection.min.js"  async ></script>
+        <script src="js/socket.io.js"  async ></script>
+        <!--<script async defer src="js/utils.js?v=72"></script>-->
+        <!--<script async defer src='js/connection.js?v=72' ></script>-->
+        <script async defer src='js/app.js?v=89' id='ringow_v_3' ></script>
+        <script async defer src='js/srv.js?v=89' ></script>
+        <script>
+            (function (global) {
+                loadAll();
+                function loadAll() {
+                    if (typeof rtcNw === "undefined") {
+                        setTimeout(function () {
+                            loadAll();
+                        }, 100);
+                    } else {
+                        var parameters = {};
+//            parameters.room = room;
+//            parameters.onlyChat = true;
+//            parameters.myID = up.usuario;
+//            parameters.otherID = data.usuario_cliente;
+//            parameters.rutaFiles = "webrtc/v4/";
+                        parameters.loadCssChatOut = true;
+//                        parameters.loadJsUtilsOut = true;
+//                        parameters.loadJsConnectionOut = true;
+//            parameters.domain = config.domain_rpc;
+
+                        rtcNw.prepare(".containerNwpeer2Peer", function () {
+                            rtcNw.construct();
+                            rtcNw.initialize(function () {
+                                loadSrv();
+                            });
+                        }, parameters);
+                    }
+                }
+
+                function loadSrv() {
+                    if (typeof srv === "undefined") {
+                        setTimeout(function () {
+                            loadSrv();
+                        }, 100);
+                    } else {
+                        srv.initialize();
+                    }
+                }
+            })(this);
+        </script>
+    </body>
+</html>

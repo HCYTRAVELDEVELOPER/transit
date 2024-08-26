@@ -1,0 +1,90 @@
+.contenedor_others_right{
+    display: none;
+}
+.box_publication {
+    display: none;
+}
+.contenedor_publications{
+    width: 100%!important;
+}
+.contend_user{
+    position: relative;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px;
+}
+.back{
+    position: relative;
+    margin: 0;
+    text-align: right;
+}
+.back a{
+    position: relative;
+    color: #fff;
+    border: 1px solid rgba(45, 102, 195, 0);
+    text-shadow: 0 1px 0 rgba(0,0,0,0.5);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15), inset 0 1px 2px rgba(255, 255, 255, 0.2);
+    padding: 5px;
+    border-radius: 2px;
+    background: #0276bf;
+    background: -webkit-gradient(linear,0 0,0 100%,from(#0d8ada) to(#0276bf));
+    background: -webkit-linear-gradient(#0d8ada,#0276bf);
+    background: -moz-linear-gradient(#0d8ada,#0276bf);
+    background: -ms-linear-gradient(#0d8ada,#0276bf);
+    background: -o-linear-gradient(#0d8ada,#0276bf);
+    background: linear-gradient(#0d8ada,#0276bf);
+    -pie-background: linear-gradient(#0d8ada,#0276bf);
+}
+h2{
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.photo_post{
+
+}
+.box_users{
+    border: 1px solid #fff;
+    padding: 5px;
+    overflow: hidden;
+    background: #FFF;
+}
+.user_enc{
+    position: relative;
+    float: left;
+    width: 20%;
+}
+.user_photo{
+    position: relative;
+    text-align: center;
+}
+.user_photo img{
+    width: 100%;
+}
+.user_name{
+    position: relative;
+    margin: 10px;
+}
+.user_info_basic{
+    position: relative;
+    margin: 10px;
+}
+.user_postest{
+    float: right;
+    width: 75%;
+}
+.user_logros{
+}
+.user_competitividad{
+}
+@media screen and (max-width: 1000px) {
+    .user_name{
+        width: 50%;
+    }   
+    .user_postest{
+        width: 100%;
+    }
+    .box_users{
+        width: 100%;
+    }
+}

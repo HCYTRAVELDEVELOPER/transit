@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns:v="urn:schemas-microsoft-com:vml">
+    <head>
+
+    </head>
+    <body>
+        <div style="max-width: 800px; padding-top: 10px; padding-left: 20px;">
+            <table style="width:100%; max-width: 800px" border="0" width="100%" cellspacing="0" cellpadding="0" background="">
+                <tbody>
+                    <tr>
+                        <td>
+                            <h3>Datos de Acceso a {empresa}</h3>
+                        </td>
+                    </tr>s
+                    <tr>
+                        <td>
+                            <p>Recibe un cordial saludo, {nombre}, estos son <strong>tus datos de acceso</strong> a la FENAVISKILLS:</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><br /><strong>Usuario: </strong>{usuario}</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Clave: </strong>{clave}<br /><br /></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>
+                                <span style="line-height:1.6em">Ingresar para cargar sus cursos es muy simple.</span>
+                            </p>
+                            <ol>
+                                <li>Digite en el navegador <a href="http://{HTTP_HOST}">{HTTP_HOST}</a></li>
+                                <li>Digite sus datos de acceso y presiona sobre el bot&oacute;n &#39;Ingresar&#39;</li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Cordialmente,</p>
+                            <p>
+                                FenaviSkills
+                                <br />
+                                 www.fenaviskills.com<img src="https:// www.fenaviskills.com" style="height:1px; width:1px" />
+                            </p>
+                           <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+          </body>
+        </html>

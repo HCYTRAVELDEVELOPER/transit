@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns:v="urn:schemas-microsoft-com:vml">
+    <head>
+
+    </head>
+    <body style="background-color: #A5C4D9;">
+        <div style="max-width: 800px; padding-top: 10px; padding-left: 20px; background-image: url('https://www.gruponw.com/nwlib6/img/registro.jpg');">
+            <table style="width:100%; max-width: 800px" border="0" width="100%" cellspacing="0" cellpadding="0" background="">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="https://www.gruponw.com" target="_blank">
+                                <img alt="QXNW, más que una herramienta." src="{logo}" title="Clic para ir a gruponw.com" /> 
+                            </a>
+                            <br />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>Datos de Acceso a {empresa}</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Recibe un cordial saludo, {nombre}, estos son <strong>tus datos de acceso</strong> a la plataforma:</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><br /><strong>Usuario: </strong>{usuario}</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Clave: </strong>{clave}<br /><br /></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>
+                                <span style="line-height:1.6em">En tan solo tres pasos podr&aacute;s ingresar. Es muy simple.</span>
+                            </p>
+                            <ol>
+                                <li>Digita en el navegador <a href="http://{HTTP_HOST}">{HTTP_HOST}</a></li>
+                                <li>Presiona sobre el v&iacute;nculo &#39;Ingresar&#39; ubicado en la esquina superior derecha</li>
+                                <li>Digita tus datos de acceso y presiona sobre el bot&oacute;n &#39;Ingresar&#39;</li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Cordialmente,</p>
+                            <p>
+                                Equipo de {empresa}
+                                <br />
+                                www.gruponw.com<img src="https://www.gruponw.com" style="height:1px; width:1px" />
+                            </p>
+                           <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+          </body>
+        </html>

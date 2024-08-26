@@ -1,0 +1,305 @@
+<?php
+
+class stripeApi {
+
+    public static $version = "v1";
+    public static $url = "https://api.stripe.com";
+    public static $clave_secreta = null;
+    public static $empresa = "";
+
+    public static function credentialsStripeApi($p) {
+        $p = nwMaker::getData($p);
+        $db = NWDatabase::database();
+        $ca = new NWDbQuery($db);
+
+        $return = array();
+        $ca->prepareSelect("edo_stripe_config", "*", "empresa=:empresa and activo=:activo");
+        $ca->bindValue(":empresa", $p["empresa"]);
+        $ca->bindValue(":activo", 'SI');
+        if (!$ca->exec()) {
+            return nwMaker::error($ca->lastErrorText());
+        }
+        if ($ca->size() == 0) {
+            $return["code"] = 99;
+            $return["message"] = "No es posible realizar el pago";
+            return $return;
+        } else {
+            $s = $ca->flush();
+            self::$empresa = $p["empresa"];
+            self::$clave_secreta = $s["llavePrivada"];
+            self::$version = $s["version"];
+            self::$url = $s["url"];
+        }
+    }
+
+    public static function saveApiStripe($p) {
+        $p = nwMaker::getData($p);
+
+        // Consulta configuración Stripe clave secreta
+        self::credentialsStripeApi($p);
+        $return = array();
+        if (self::$clave_secreta !== "") {
+            $return["code"] = 99;
+            $return["message"] = "No es posible realizar el pago";
+        }
+
+        $p["proceso"] = "PAGO_VIAJE";
+        $res = self::process($p);
+        return $res;
+    }
+
+    public static function process($p) {
+        $p = nwMaker::getData($p);
+
+        require_once $_SERVER['DOCUMENT_ROOT'] . 'app/pagos/stripe/vendor/autoload.php';
+        \Stripe\Stripe::setApiKey(self::$clave_secreta);
+        $customer_id = null;
+        $new = null;
+        $token_id = null;
+        $payment = true;
+
+        if (isset($p["usuario_cliente"])) {
+            $p["email"] = $p["usuario_cliente"];
+            $p["perfil"] = 1;
+            $valor = $p["precio_viaje"];
+            $res = explode('.', $valor);
+            $p["valor"] = $res[0] . $res[1];
+        }
+
+        if (!isset($p["cobro"]) && $p["cobro"] !== true) {
+            $payment = false;
+            $p["status"] = "OK";
+            $p["valor"] = 0000;
+        }
+
+        // Se valida si existe el pasajero/customer
+        $cus = self::getCustomerStripe($p);
+        if ($cus > 0) {
+            $customer_id = $cus["id_customer"];
+            $p["customer_id"] = $customer_id;
+            $p["token_card"] = $cus["token_card"];
+        } else {
+            $new = true;
+            try {
+                //Se crea el token de la terjeta
+                if ($p["test"] == "SI") {
+                    $token_card["id"] = "tok_mastercard_debit";
+                } else {
+                    $token_card = \Stripe\Token::create([
+                                'card' => [
+                                    'number' => $p["numero_tarjeta"],
+                                    'exp_month' => $p["mes_vencimiento"],
+                                    'exp_year' => $p["anio_vencimiento_text"],
+                                    'cvc' => $p["codigo_seguridad"]
+                                ]
+                    ]);
+                }
+                // Se crea el cliente si no existe
+                $customer = \Stripe\Customer::create([
+                            'name' => $p["nombre_tarjeta"],
+                            'email' => $p["email"],
+                            'source' => $token_card["id"]
+                ]);
+
+                $customer_id = $customer["id"];
+                $p["customer_id"] = $customer_id;
+                $token_id = $token_card["id"];
+                $p["token_card"] = $token_id;
+            } catch (Exception $e) {
+                return $e->getError()->message;
+            }
+        }
+
+
+        if ($new) {
+            $saveCutom = self::saveCustomerStripe($p);
+            if ($saveCutom !== true) {
+                return $saveCutom;
+            }
+        }
+
+        // Se realiza el pago
+        if ($payment !== false) {
+            try {
+                $pay = \Stripe\Charge::create([
+                            'amount' => $p["valor"],
+                            'currency' => 'usd',
+                            'source' => $token_id,
+                            'customer' => $customer_id,
+                            'description' => $p["description"]
+                ]);
+
+                $p["id_pay"] = $pay["id"];
+                if ($pay["status"] == "succeeded") {
+                    $p["status"] = "OK";
+                    $p["payment"] = true;
+                } else {
+                    $p["status"] = "Rechazada";
+                    $p["payment"] = false;
+                }
+            } catch (\Stripe\Exception\ApiErrorException $e) {
+                return $e->getError()->message;
+            }
+            self::savePayment($p);
+        } else {
+            $p["codigo_seguridad"] = "";
+            self::saveCreditCardPayment($p);
+        }
+
+        return $p;
+    }
+
+    public static function getCustomerStripe($p) {
+        $p = nwMaker::getData($p);
+        $db = NWDatabase::database();
+        $ca = new NWDbQuery($db);
+
+        $ca->prepareSelect("edo_stripe_customer", "*", "empresa=:empresa and perfil=:perfil and email=:email");
+        $ca->bindValue(":empresa", $p["empresa"]);
+        $ca->bindValue(":perfil", $p["perfil"]);
+        $ca->bindValue(":email", $p["email"]);
+        if (!$ca->exec()) {
+            return nwMaker::error($ca->lastErrorText());
+        }
+        if ($ca->size() == 0) {
+            return 0;
+        } else {
+            return $ca->flush();
+        }
+    }
+
+    public static function saveCustomerStripe($p) {
+        $p = nwMaker::getData($p);
+        $db = NWDatabase::database();
+        $ca = new NWDbQuery($db);
+        $fecha = date("Y-m-d H:i:s");
+        if (isset($p["z_fromlib_fecha_hora_actual_navigator_cliente"])) {
+            $fecha = $p["z_fromlib_fecha_hora_actual_navigator_cliente"];
+        }
+        $ca->prepareInsert("edo_stripe_customer", "name,email,fecha,id_customer,perfil,empresa,token_card");
+        $ca->bindValue(":name", $p["nombre_tarjeta"]);
+        $ca->bindValue(":email", $p["email"]);
+        $ca->bindValue(":fecha", $fecha);
+        $ca->bindValue(":id_customer", $p["customer_id"]);
+        $ca->bindValue(":perfil", $p["perfil"]);
+        $ca->bindValue(":empresa", $p["empresa"]);
+        $ca->bindValue(":token_card", $p["token_card"]);
+        if (!$ca->exec()) {
+            return nwMaker::error($ca->lastErrorText(), true);
+        }
+        return true;
+    }
+
+    public static function saveCreditCardPayment($p) {
+//        return NWJSonRpcServer::console($p);
+        $db = NWDatabase::database();
+        $ca = new NWDbQuery($db);
+        $fecha = date("Y-m-d H:i:s");
+        if (isset($p["z_fromlib_fecha_hora_actual_navigator_cliente"])) {
+            $fecha = $p["z_fromlib_fecha_hora_actual_navigator_cliente"];
+        }
+        $empresa = $p["empresa"];
+        $perfil = $p["perfil"];
+        $documento = $p["documento"];
+        $usuario = $p["usuario"];
+        $status = $p["status"];
+        $email = $p['email'];
+        if ($status === "OK") {
+            $status = "APPROVED";
+        }
+        $where = "numero_tarjeta=:numero_tarjeta and usuario=:usuario";
+        if ($empresa !== null) {
+            $where .= " and empresa=:empresa ";
+        }
+        if ($perfil !== null) {
+            $where .= " and perfil=:perfil ";
+        }
+        $where .= " order by id desc limit 1 ";
+        $ca->prepareSelect("nwmaker_tarjetascredito", "id", $where);
+        $ca->bindValue(":numero_tarjeta", $p['numero_tarjeta']);
+        $ca->bindValue(":usuario", $usuario);
+        $ca->bindValue(":empresa", $empresa, true, true);
+        $ca->bindValue(":perfil", $perfil, true, true);
+        if (!$ca->exec()) {
+            return nwMaker::error($ca->lastErrorText());
+        }
+        $token_id = null;
+        $customer_id = null;
+        $codigo_seguridad = null;
+        if (isset($p["codigo_seguridad"])) {
+            if ($p["codigo_seguridad"] !== null && $p["codigo_seguridad"] !== false && $p["codigo_seguridad"] !== "") {
+                $codigo_seguridad = $p["codigo_seguridad"];
+            }
+        }
+        $fecha_vencimiento = null;
+        if (isset($p["fecha_vencimiento"])) {
+            if ($p["fecha_vencimiento"] !== null && $p["fecha_vencimiento"] !== false && $p["fecha_vencimiento"] !== "") {
+                $fecha_vencimiento = $p["fecha_vencimiento"];
+            }
+        }
+        $fields = "usuario,numero_tarjeta,codigo_seguridad,fecha_vencimiento,fecha,nombre,nombre_banco,documento,nombre_tarjeta,pais,currency,empresa,perfil,status,pago_unico_mensual";
+        if (isset($p["token_id"])) {
+            $fields .= ",token_id";
+            $token_id = $p["token_card"];
+        }
+        if (isset($p["customer_id"])) {
+            $fields .= ",customer_id_conekta";
+            $customer_id = $p["customer_id"];
+        }
+        if ($ca->size() === 0) {
+            $id_card = master::getNextSequence("nwmaker_tarjetascredito_id_seq", $db);
+            $ca->prepareInsert("nwmaker_tarjetascredito", $fields . ",id");
+        } else {
+            $r = $ca->flush();
+            $id_card = $r["id"];
+            $ca->prepareUpdate("nwmaker_tarjetascredito", $fields, "id=:id");
+        }
+        $rest = substr($p['numero_tarjeta'], -4);
+        $ca->bindValue(":id", $id_card);
+        $ca->bindValue(":fecha", $fecha);
+        $ca->bindValue(":usuario", $p['email']);
+        $ca->bindValue(":documento", $documento);
+        $ca->bindValue(":nombre_tarjeta", $p['nombre_tarjeta']);
+        $ca->bindValue(":pais", $p['pais']);
+        $ca->bindValue(":currency", $p['currency']);
+        $ca->bindValue(":numero_tarjeta", $p['numero_tarjeta']);
+        $ca->bindValue(":codigo_seguridad", $codigo_seguridad, true, true);
+        $ca->bindValue(":fecha_vencimiento", $fecha_vencimiento);
+        $ca->bindValue(":nombre_banco", $p['nombre_banco']);
+        $ca->bindValue(":nombre", $p['nombre_banco'] . " **** **** **** " . $rest);
+        $ca->bindValue(":empresa", $empresa, true, true);
+        $ca->bindValue(":perfil", $perfil, true, true);
+        $ca->bindValue(":status", $status, true, true);
+        $ca->bindValue(":pago_unico_mensual", $p["pago_unico_mensual"]);
+        $ca->bindValue(":token_id", $token_id);
+        $ca->bindValue(":customer_id_conekta", $customer_id);
+        if (!$ca->exec()) {
+            $db->rollback();
+            return nwMaker::error($ca->lastErrorText());
+        }
+
+        return true;
+    }
+
+    public static function savePayment($p) {
+//        return NWJSonRpcServer::console($p);
+        $db = NWDatabase::database();
+        $ca = new NWDbQuery($db);
+        $fecha = date("Y-m-d H:i:s");
+        if (isset($p["z_fromlib_fecha_hora_actual_navigator_cliente"])) {
+            $fecha = $p["z_fromlib_fecha_hora_actual_navigator_cliente"];
+        }
+        $id_card = $p["id_tarjeta_credito"];
+
+        $ca->prepareInsert("nwmaker_tarjetascredito_pagos", "id_tarjeta,correo,valor,fecha");
+        $ca->bindValue(":id_tarjeta", $id_card);
+        $ca->bindValue(":correo", $p['email']);
+        $ca->bindValue(":valor", $p["precio_viaje"]);
+        $ca->bindValue(":fecha", $fecha);
+        if (!$ca->exec()) {
+            $db->rollback();
+            return nwMaker::error($ca->lastErrorText());
+        }
+        return true;
+    }
+}

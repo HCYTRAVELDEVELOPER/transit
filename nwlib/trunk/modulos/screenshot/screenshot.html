@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Netwoods Colombia diseño web software bogotá colombia</title>
+    </head>
+    <body>
+        <script type="text/javascript" src="/nwlib/modulos/screenshot/html2canvas.js"></script>
+        <script type="text/javascript">
+             document.write("<a onclick='javascript: crear();'>Tomar Captura de Pantalla de esta página AQUÍ!!!</a>");
+            function crear() {
+                html2canvas(document.body, {
+                    onrendered: function(canvas) {
+//                        document.body.appendChild(canvas);
+                        var dato = canvas.toDataURL("image/jpeg");
+                        dato = dato.replace("image/jpeg", "image/octet-stream");
+                        document.location.href = dato;
+                    }
+                });
+            }
+        </script>
+        <div id="contend_no_found" class="contend_no_found"> 
+            Lo sentimos, la página que estás buscando no está disponible o cambió de dirección.
+            <h1 class="h1_carga">
+                <a class="enlace_powered" href="http://www.netwoods.net" target="_blank">Powered By <span style="color:red;">Net</span><span style="color:#e9e9e9;">woods</span></a>
+            </h1>
+        </div>
+        <div id="sortable">
+            <div class="divs 1"><p class="pp"></p></div>
+            <div class="divs 2">Que divertido</div>
+            <div class="divs 3">Hola mundo</div>
+        </div>
+
+        <script>
+            $(function() {
+                var availableTags = [
+                    "ActionScript",
+                    "AppleScript",
+                    "Asp",
+                    "BASIC",
+                    "C",
+                    "C++",
+                    "Clojure",
+                    "COBOL",
+                    "ColdFusion",
+                    "Erlang",
+                    "Fortran",
+                    "Groovy",
+                    "Haskell",
+                    "Java",
+                    "JavaScript",
+                    "Lisp",
+                    "Perl",
+                    "PHP",
+                    "Python",
+                    "Ruby",
+                    "Scala",
+                    "Scheme"
+                ];
+                $("#tags").autocomplete({
+                    source: availableTags
+                });
+            });
+        </script>
+        <div class="ui-widget">
+            <label for="tags">Tags: </label>
+            <input id="tags">
+        </div>
+
+    </body>
+</html>

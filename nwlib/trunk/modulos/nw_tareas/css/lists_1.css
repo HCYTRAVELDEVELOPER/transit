@@ -1,0 +1,29 @@
+#enc_main_user_dats{
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    height: 50px;
+    background: #f7f7f7;
+    z-index: 10000;
+}
+
+.box_enc_prids {
+    display: block;
+    height: 100%;
+    overflow-y: auto;
+}
+.box_tareasdivs {
+    float: none;
+}
+.box_tareas p {
+    margin: 0px;
+    padding: 3px 5px;
+    color: #5E5E5E;
+    font-weight: lighter!important;
+}
+.messaje_no_leido{
+    background: #fff;
+}
+.messaje_no_leido h2{
+    font-weight: 700;
+}

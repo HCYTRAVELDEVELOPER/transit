@@ -1,0 +1,228 @@
+.bx-pager{
+    text-align: center;
+    position: relative;
+    padding: 0px;
+    top:10px;
+}
+.bx-prev{
+    display: none;	
+}
+.bx-next{
+    display: none;	
+}
+
+.pager-link{
+    background: #666;
+    margin: 3px;
+    border-radius: 50%;
+    height: 11px;
+    width: 10px;
+    position: relative;
+    color: #666 !important;
+    padding: 3px 7px!important;	
+}
+.pager-link:hover{
+    background: #999;
+}
+.pager-active{
+    background: orange !important;	
+    color:orange !important;	;
+}
+.bx-child{
+    width: 350px!important;
+}
+
+#slider1{
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.producto_fila_dos{
+    position: relative;
+    float: left;
+    padding:0;
+    margin: auto;
+    width: 100%;
+}
+.image_pr_dos a{
+    color: #fff;
+    text-transform: uppercase;
+    background: #ff821b;
+    background: -moz-linear-gradient(top, #ff821b 0%, #c05801 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff821b), color-stop(100%,#c05801));
+    background: -webkit-linear-gradient(top, #ff821b 0%,#c05801 100%);
+    background: -o-linear-gradient(top, #ff821b 0%,#c05801 100%);
+    background: -ms-linear-gradient(top, #ff821b 0%,#c05801 100%);
+    background: linear-gradient(top, #ff821b 0%,#c05801 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff821b', endColorstr='#c05801',GradientType=0 );
+    border: 1px solid #ae4f00;
+    padding: 3px;
+    font-size: 12px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    text-decoration: none;
+    top: 0px;
+    position: relative;
+    right: 10px;
+    float: right;
+}
+.image_pr_dos img{
+
+}
+.todos_prod_art_dos {
+    color: #fff !important;
+    text-transform: uppercase;
+    background: #ff821b;
+    background: -moz-linear-gradient(top, #ff821b 0%, #c05801 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff821b), color-stop(100%,#c05801));
+    background: -webkit-linear-gradient(top, #ff821b 0%,#c05801 100%);
+    background: -o-linear-gradient(top, #ff821b 0%,#c05801 100%);
+    background: -ms-linear-gradient(top, #ff821b 0%,#c05801 100%);
+    background: linear-gradient(top, #ff821b 0%,#c05801 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff821b', endColorstr='#c05801',GradientType=0 );
+    border: 1px solid #ae4f00;
+    padding: 3px;
+    font-size: 12px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    text-decoration: none;
+    top: 0px;
+    position: relative;
+    right: 10px;
+    float: right;
+    display: none;
+}
+.p_name_dos{
+    background: #000;
+    color: #fff;
+    position: absolute;
+    bottom: 90px;
+    width: 100%;
+    z-index:-0;	
+}
+.p_name_dos:hover{
+    z-index:100000;	
+}
+
+.span_name2{
+    position: relative;
+    padding: 5px;	
+}
+.span_name2 h4{
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+    text-align: left;
+}
+.span_name2 p{
+    font-size: 10px;
+    margin: 3px;
+    padding: 0;
+    text-align: left;
+}
+/*--------------------------animacion stylos------------------------------------------------------------*/
+.animate {
+    -moz-transition: all 0.3s ease-out;  /*FF3.7+*/
+    -o-transition: all 0.3s ease-out;  /*Opera 10.5*/
+    -webkit-transition: all 0.3s ease-out;  /*Saf3.2+, Chrome*/
+    transition: all 0.3s ease-out;
+}
+/*Boton*/
+.image_pr_dos{
+    position: absolute;
+    height: 100%;
+    margin-top: 0px;
+    overflow: hidden;
+    border-radius: 5px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    float: left;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/*Tooltip estado inicial*/
+.tooltip{
+    position: absolute;
+    opacity: 0;
+    bottom: -150px;
+    left: 0px;
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 100px;
+    padding: 5px;
+    font-size: 12px;
+
+}
+.tooltip h3{
+    font-size: 13px;
+    color: #fff;
+    line-height: 15px !important;
+}
+.tooltip h4{
+}
+
+/*Acción del botón sobre el tooltip*/
+.image_pr_dos:hover .tooltip{
+    opacity:0.9;
+    bottom:0px;right:0px;
+}
+
+#slider1 li{
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0;
+    list-style: none;
+    border-bottom: 1px solid #417AA5;
+    height: 70px;
+}
+.bx-wrapper{
+
+}
+.bx-window{
+}
+.title_nov_h2{
+    color: #fff;
+    padding: 3px 5px;
+    font-size: 18px;
+    border-bottom: 1px dotted #78AED7;
+    margin: 5px;
+    font-weight: lighter;
+    line-height: normal;
+}
+.bgSlid{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/nwlib6/dashboard/modulos/slider/nwadmin_home_banner1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px -40px;
+    z-index: -1;
+    opacity: 1;
+}
+.slider1{
+
+}
+#contend_prods_home_dos {
+    position: relative;
+    background: #4488bb;
+    color: #fff;
+    padding: 0px;
+    margin: 0 auto;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    /*float: right;*/
+    /*width: 22%;*/
+}

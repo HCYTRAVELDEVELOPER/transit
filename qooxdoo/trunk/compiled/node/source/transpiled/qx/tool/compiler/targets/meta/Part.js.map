@@ -1,0 +1,49 @@
+{
+  "version": 3,
+  "names": [
+    "qx",
+    "Bootstrap",
+    "executePendingDefers",
+    "$$dbClassInfo",
+    "Class",
+    "define",
+    "extend",
+    "core",
+    "Object",
+    "construct",
+    "target",
+    "name",
+    "partIndex",
+    "__target",
+    "__name",
+    "__partIndex",
+    "__packages",
+    "__packageLookup",
+    "members",
+    "addPackage",
+    "pkg",
+    "toHashCode",
+    "push",
+    "hasPackage",
+    "Boolean",
+    "getDefaultPackage",
+    "serializeInto",
+    "parts",
+    "arr",
+    "forEach",
+    "String",
+    "getPackageIndex",
+    "tool",
+    "compiler",
+    "targets",
+    "meta",
+    "Part"
+  ],
+  "sources": [
+    "/home/andresf/workspace_qooxdoo/qooxdoo/qooxdoo-7.0/source/class/qx/tool/compiler/targets/meta/Part.js"
+  ],
+  "sourcesContent": [
+    "/* ************************************************************************\n *\n *    qooxdoo-compiler - node.js based replacement for the Qooxdoo python\n *    toolchain\n *\n *    https://github.com/qooxdoo/qooxdoo-compiler\n *\n *    Copyright:\n *      2011-2021 Zenesis Limited, http://www.zenesis.com\n *\n *    License:\n *      MIT: https://opensource.org/licenses/MIT\n *\n *      This software is provided under the same licensing terms as Qooxdoo,\n *      please see the LICENSE file in the Qooxdoo project's top-level directory\n *      for details.\n *\n *    Authors:\n *      * John Spackman (john.spackman@zenesis.com, @johnspackman)\n *\n * ************************************************************************/\n\n/**\n * A Part collects together all of the javascript files required for a single\n * part (load on demand) and merges them together as required.\n */\nqx.Class.define(\"qx.tool.compiler.targets.meta.Part\", {\n  extend: qx.core.Object,\n\n  /**\n   * Constructor\n   *\n   * @param target {Target} the target doing the compilation\n   * @param name {String} the name of the part\n   * @param partIndex {Integer}\n   */\n  construct(target, name, partIndex) {\n    super();\n    this.__target = target;\n    this.__name = name;\n    this.__partIndex = partIndex;\n    this.__packages = [];\n    this.__packageLookup = {};\n  },\n\n  members: {\n    __target: null,\n    __name: null,\n    __partIndex: -1,\n    __packages: null,\n    __packageLookup: null,\n\n    addPackage(pkg) {\n      if (!this.__packageLookup[pkg.toHashCode()]) {\n        this.__packages.push(pkg);\n        this.__packageLookup[pkg.toHashCode()] = pkg;\n      }\n    },\n\n    hasPackage(pkg) {\n      return Boolean(this.__packageLookup[pkg.toHashCode()]);\n    },\n\n    getDefaultPackage() {\n      return this.__packages[0] || null;\n    },\n\n    serializeInto(parts) {\n      let arr = (parts[this.__name] = []);\n      this.__packages.forEach(pkg => arr.push(String(pkg.getPackageIndex())));\n    }\n  }\n});\n"
+  ],
+  "mappings": ";;;;;;;;;;;;;EAAAA,EAAE,CAACC,SAAH,CAAaC,oBAAb,CAAkCC,aAAlC;;EAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;;EAEA;AACA;AACA;AACA;EACAH,EAAE,CAACI,KAAH,CAASC,MAAT,CAAgB,oCAAhB,EAAsD;IACpDC,MAAM,EAAEN,EAAE,CAACO,IAAH,CAAQC,MADoC;;IAGpD;AACF;AACA;AACA;AACA;AACA;AACA;IACEC,SAAS,CAACC,MAAD,EAASC,IAAT,EAAeC,SAAf,EAA0B;MACjC;MACA,KAAKC,gBAAL,GAAgBH,MAAhB;MACA,KAAKI,cAAL,GAAcH,IAAd;MACA,KAAKI,mBAAL,GAAmBH,SAAnB;MACA,KAAKI,kBAAL,GAAkB,EAAlB;MACA,KAAKC,uBAAL,GAAuB,EAAvB;IACD,CAjBmD;;IAmBpDC,OAAO,EAAE;MACPL,gBAAQ,EAAE,IADH;MAEPC,cAAM,EAAE,IAFD;MAGPC,mBAAW,EAAE,CAAC,CAHP;MAIPC,kBAAU,EAAE,IAJL;MAKPC,uBAAe,EAAE,IALV;;MAOPE,UAAU,CAACC,GAAD,EAAM;QACd,IAAI,CAAC,KAAKH,uBAAL,CAAqBG,GAAG,CAACC,UAAJ,EAArB,CAAL,EAA6C;UAC3C,KAAKL,kBAAL,CAAgBM,IAAhB,CAAqBF,GAArB;;UACA,KAAKH,uBAAL,CAAqBG,GAAG,CAACC,UAAJ,EAArB,IAAyCD,GAAzC;QACD;MACF,CAZM;;MAcPG,UAAU,CAACH,GAAD,EAAM;QACd,OAAOI,OAAO,CAAC,KAAKP,uBAAL,CAAqBG,GAAG,CAACC,UAAJ,EAArB,CAAD,CAAd;MACD,CAhBM;;MAkBPI,iBAAiB,GAAG;QAClB,OAAO,KAAKT,kBAAL,CAAgB,CAAhB,KAAsB,IAA7B;MACD,CApBM;;MAsBPU,aAAa,CAACC,KAAD,EAAQ;QACnB,IAAIC,GAAG,GAAID,KAAK,CAAC,KAAKb,cAAN,CAAL,GAAqB,EAAhC;;QACA,KAAKE,kBAAL,CAAgBa,OAAhB,CAAwBT,GAAG,IAAIQ,GAAG,CAACN,IAAJ,CAASQ,MAAM,CAACV,GAAG,CAACW,eAAJ,EAAD,CAAf,CAA/B;MACD;;IAzBM;EAnB2C,CAAtD;EA1BA/B,EAAE,CAACgC,IAAH,CAAQC,QAAR,CAAiBC,OAAjB,CAAyBC,IAAzB,CAA8BC,IAA9B,CAAmCjC,aAAnC,GAAmDA,aAAnD"
+}

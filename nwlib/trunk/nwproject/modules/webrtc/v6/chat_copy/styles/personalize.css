@@ -1,0 +1,237 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 5, 2020, 1:06:22 PM
+    Author     : alexf
+*/
+a {
+    color: inherit;
+}
+.mdl-layout__header {
+    display: none!important;
+}
+#messages-card-container {
+    max-width: 100%;
+}
+#messages-card {
+    width: 100%;
+}
+#messages{
+    background: rgba(243, 240, 240, 0.55);
+    padding: 0px 16px 10px 16px;
+    margin: auto;
+    position: relative;
+    padding-top: 10px;
+}
+.cargarmas{
+    position: absolute;
+    top: -3px;
+    left: 40%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 0;
+    font-weight: bold;
+    font-size: 14px;
+    color: #fff;
+    background-color: #42a69a;
+    cursor: pointer;
+    display: none;
+}
+#message-form{
+    padding: 0px 8px 0px 16px;
+    box-sizing: border-box;
+    border-top: 1px solid #f0f0f0;
+    box-shadow: 0px -9px 5px #f0f0f0;
+}
+#message-form button{
+    width: auto;
+    margin: 15px 0 0 10px;
+    padding: 0px 5px;
+    text-align: center;
+    min-width: initial;
+}
+#message-form .buttonSend{
+    margin: 15px 0 0 10px;
+    padding: 0px 0px;
+    text-align: center;
+    min-width: initial;
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    min-width: 34px;
+    min-height: 34px;
+}
+#message-form .buttonSend .material-icons{
+    font-size: 16px;
+    padding: 0;
+    display: block;
+    position: relative;
+    margin: auto;
+    top: 0;
+    left: 0;
+}
+#message-form .mdl-textfield{
+    width: 100%;
+}
+/*#message-form{
+    padding: 0px 60px 0px 16px;
+    background-color: #f0f0f0;
+    width: 100%;
+    position: relative;
+}
+#message-form:before {
+    content: ".";
+    position: absolute;
+    background: #fff;
+    width: calc(100% - 54px);
+    height: 42px;
+    z-index: 0;
+    top: 12px;
+    border-radius: 25px;
+    left: 5px;
+}
+.mdl-textfield__input{
+    border: 0px;
+}
+.mdl-textfield--floating-label.is-dirty .mdl-textfield__label {
+    display: none;
+}
+.mdl-textfield--floating-label.is-focused .mdl-textfield__label{
+    display: none;
+}
+*/
+#image-form{
+    position: absolute;
+    right: 10px;
+}
+
+.mdl-card__supporting-text{
+    padding: 0;
+}
+.message-container{
+    display: flex;
+    flex-direction: column;
+    border: 0;
+}
+.message--mee{
+    align-items: flex-end;
+    margin-right: 20px;
+}
+.message--other{
+    align-items: flex-start;
+}
+.message--mee .name{
+    text-align: right;
+    margin-right: 37px;
+    position: relative;
+}
+.message--mee a{
+    color: #fff;
+}
+.message--mee .message-into{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;   
+}
+.message--mee .message{
+    /*background-color: #edcfcf;*/
+    background-color: #8d3b70;
+    color: #50565d;
+    color: #fff;
+    border-radius: 5px;
+    padding: 7px;
+    max-width: calc(100% - 70px);
+    width: auto;
+    margin-right: 7px;
+    word-break: break-word;
+}
+.message--other .message{
+    background-color: #e6ecf0;
+    color: #50565d;
+    border-radius: 5px;
+    padding: 7px;
+}
+.message-container .pic {
+    margin-right: 7px;
+    background-size: cover;
+    background-position: center;
+}
+.message--mee .pic{
+    margin-right: 0px;
+}
+.fecha{
+    font-size: 11px;
+    color: #bbb;
+    top: -5px;
+    position: relative;
+}
+.message--other .fecha{
+    padding-left: 40px;
+}
+.message--mee .fecha{
+    margin-right: 37px;
+    position: relative;
+}
+#image-form #submitImage .material-icons{
+    top: -1px;
+    font-size: 25px;
+    margin: auto;
+    left: 2px;
+}
+#image-form .mdl-color--amber-400{
+    background-color: #8d3b70 !important;
+    border-radius: 50%!important;
+    width: 36px!important;
+    height: 36px!important;
+    min-width: 36px!important;
+    min-height: 36px!important;
+}
+.imgInMsg{
+    cursor: pointer;
+}
+.mdl-layout__content{
+    overflow: hidden;
+}
+.speak_mic_cancel {
+    position: relative;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    margin: 20px auto 0px auto;
+    width: max-content;
+    padding: 5px 15px;
+    border-radius: 5px;
+    background-color: #3ea9e9;
+    color: #fff;
+    cursor: pointer;
+    margin: 0 5px;
+}
+.speak_mic_container_cancel {
+    position: relative;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.divTextEscuchando {
+    position: relative;
+    margin: 10px;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 660px) {
+    #messages-card-container,
+    #messages-card
+    {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+    }
+}

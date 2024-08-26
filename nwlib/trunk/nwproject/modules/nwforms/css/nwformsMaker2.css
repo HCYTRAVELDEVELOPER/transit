@@ -1,0 +1,49 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 1, 2017, 11:12:01 PM
+    Author     : alexf
+*/
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #E7E7E7;
+}
+.containerNwForm{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+    font-size: 12px;
+}
+.containerNwForm .nwFormsMaker {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: 10px auto;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+.containerNwForm .ui-button {
+    display: block;
+    margin: auto;
+    padding: 15px;
+    font-size: 14px;
+}
+.containerNwForm .footerButtonsNwForms {
+    background: transparent;
+    border: 0;
+    margin: 10px;
+}
+.containerNwForm .labelforradionwform {
+    margin: 5px;
+    top: 0px;
+}
+.containerNwForm input[type="radio"], .containerNwForm  input[type="checkbox"] {
+    top: 3px!important;
+}

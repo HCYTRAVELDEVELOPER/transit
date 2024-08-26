@@ -1,0 +1,114 @@
+.noatendidos{
+    position: relative;
+    font-size: 10px;
+    font-weight: lighter!important;
+    opacity: 0.9;
+    border-top: 1px solid #e1e1e1;
+    background-color: #F4F4F4;
+}
+.contain_users_dom{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+.user_chat {
+    width: 100%;
+    float: none;
+    height: auto;
+    font-size: inherit;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+.user_chat h3 {
+    text-align: left;
+    margin: 5px;
+    padding: 3px;
+}
+.img_user_chat{
+    width: 50px;
+    float: left;
+}
+.user_chat p {
+    text-align: left;
+}
+.buttons_dom{
+    position: relative;
+}
+.buttons_domBT {
+    position: relative;
+    float: right;
+    transform: rotate(0deg);
+    -webkit-animation: animeButtonLLamada 1s infinite;
+    -moz-animation: animeButtonLLamada 1s infinite;
+    -o-animation: animeButtonLLamada 1s infinite;
+    animation: animeButtonLLamada 1s infinite;
+    -ms-animation: animeButtonLLamada 1s infinite;
+    filter: animeButtonLLamada 1s infinite;
+}
+#div_doms {
+
+}
+#div_doms h4 {
+    position: relative;
+    margin: 0;
+    padding: 15px;
+    background: firebrick;
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    line-height: initial;
+}
+.num_dom{
+    font-size: 2em;
+}
+.pedidoscancelados{
+    background: #E84841!important;
+    position: relative;
+    color: #fff;
+    font-weight: bold!important;
+}
+.pedidoscanceladosyaceptados{
+    opacity: 0.5!important;
+}
+
+
+/*ani person1*/
+@-webkit-keyframes animeButtonLLamada{
+    0% {top: 0px;-webkit-transform: rotate(0deg);}	
+25% {-webkit-transform: rotate(10deg);}
+50% {top: 3px;}
+75% {-webkit-transform: rotate(-10deg);}
+100% {top: 0px;transform: rotate(0deg);}
+}
+
+@-moz-keyframes animeButtonLLamada{
+    0% {top: 0px;-moz-transform: rotate(0deg);}	
+25% {-moz-transform: rotate(10deg);}
+50% {top: 3px;}
+75% {-moz-transform: rotate(-10deg);}
+100% {top: 0px;-moz-transform: rotate(0deg);}
+}
+
+@-o-keyframes animeButtonLLamada{
+    0% {top: 0px;-o-transform: rotate(0deg);}	
+25% {-o-transform: rotate(10deg);}
+50% {top: 3px;}
+75% {-o-transform: rotate(-10deg);}
+100% {top: 0px;-o-transform: rotate(0deg);}
+}
+
+@-ms-keyframes animeButtonLLamada{
+    0% {top: 0px;-ms-transform: rotate(0deg);}	
+25% {-ms-transform: rotate(10deg);}
+50% {top: 3px;}
+75% {-ms-transform: rotate(-10deg);}
+100% {top: 0px;-ms-transform: rotate(0deg);}
+}
+@keyframes animeButtonLLamada{
+    0% {top: 0px;transform: rotate(0deg);}	
+25% {transform: rotate(10deg);}
+50% {top: 3px;}
+75% {transform: rotate(-10deg);}
+100% {top: 0px;transform: rotate(0deg);}
+}

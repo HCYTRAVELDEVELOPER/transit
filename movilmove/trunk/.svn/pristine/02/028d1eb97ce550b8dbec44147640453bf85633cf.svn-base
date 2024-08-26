@@ -1,0 +1,177 @@
+nw.Class.define("l_navtable_paradas", {
+    extend: nw.lists,
+    construct: function (canvas, datos) {
+        var self = this;
+        self.showContextMenu = true;
+        self.canvas = canvas;
+        var columns = [
+            {
+                name: "id",
+                label: "ID",
+                visible: true
+            },
+            {
+                name: "direccion",
+                label: "Dirección"
+            },
+            {
+                name: "nombre_pasajero",
+                label: ""
+            },
+            {
+                name: "telefono",
+                label: ""
+            },
+            {
+                name: "ciudad_parada",
+                label: ""
+            },
+            {
+                name: "estado_html",
+                label: ""
+            },
+            {
+                name: "novedad",
+                label: ""
+            },
+            {
+                name: "novedad_observaciones",
+                label: ""
+            },
+            {
+                name: "fecha_final",
+                label: ""
+            },
+            {
+                name: "descripcion_carga",
+                label: ""
+//                visible: false
+            },
+            {
+                name: "usuario_pasajero",
+                label: "Usuario app: "
+//                visible: false
+            },
+            {
+                name: "latitud",
+                label: "Latitud",
+                visible: false
+            },
+            {
+                name: "longitud",
+                label: "Longitud",
+                visible: false
+            },
+            {
+                name: "iniciar_chat",
+                label: "",
+                type: "button"
+            }
+        ];
+        self.setColumns(columns);
+        self.clicRow = function () {
+            var data = self.selectedRecord();
+            console.log(data);
+        };
+        if (datos) {
+            self.applyFilters(datos.id);
+        }
+
+        var click = 'click'; //touchstart click
+        var col = "iniciar_chat";
+//        $(self.canvas).on(click, ".rowName_" + col, function () {
+//            $(this.parentElement).trigger({type: 'click'});
+//            self.iniciarViaje();
+//        });
+        (function () {
+            $(self.canvas).delegate(".rowName_" + col, click, function (e, ev) {
+                $(this.parentElement).trigger({type: 'click'});
+//            callback(this);
+                self.openChat();
+            });
+        })();
+//        self.actionCol("iniciar_chat", function () {
+//            self.iniciarViaje();
+//        });
+
+        return self;
+    },
+    destruct: function () {
+    },
+    members: {
+        contextMenu: function contextMenu() {
+            var self = this;
+            var native = false;
+            var typemenu = "vertical"; //normal vertical, bottom
+//            self.contextmenu_native = false;
+            var m = new nw.contextmenu(self, typemenu, native);
+            var data = self.selectedRecord();
+            console.log(data);
+            if (main.configCliente.telefono_pasajero_visible_para_conductor !== "NO") {
+                if (nw.evalueData(data.telefono)) {
+//                    var indicativo = "57";
+//                    if (nw.evalueData(config.indicativo)) {
+//                        indicativo = config.indicativo;
+//                    }
+//                    var telefono = indicativo + data.telefono;
+//                    m.addAction("<a href='tel:+" + telefono + "'>Llamar</a>", "material-icons call normal", function (e) {
+                    m.addAction("Llamar", "material-icons call normal", function (e) {
+//                        main.llamarCelular(data.telefono);
+                        var indicativo = "57";
+                        if (nw.evalueData(config.indicativo)) {
+                            indicativo = config.indicativo;
+                        }
+                        var telefono = "tel:";
+                        telefono += indicativo.toString();
+                        telefono += data.telefono.toString();
+                        window.location.href = telefono;
+                    });
+                }
+            }
+            m.addAction("Chat con pasajero", "material-icons chat normal", function (e) {
+                self.openChat();
+            });
+        },
+        openChat: function openChat() {
+            var self = this;
+            var data = self.selectedRecord();
+            var ds = {};
+            ds.id = "_parada_" + data.id;
+            ds.cliente_nombre = "Chat pasajero";
+            if (nw.evalueData(data.nombre_pasajero)) {
+                ds.cliente_nombre = data.nombre_pasajero;
+            }
+            ds.all_data = data;
+            console.log("dsdsdsdsds", ds);
+            console.log("data", data);
+            var d = new f_chat();
+            d.construct(ds);
+//                main.dataServiceOpenHistory = data;
+        },
+        applyFilters: function applyFilters(id_enc) {
+            nw.loading();
+            var self = this;
+            var up = nw.userPolicies.getUserData();
+            var data = {};
+            data.id_service = id_enc;
+            data.empresa = up.empresa;
+            console.log("applyFilters:::dataSend", data);
+            var rpc = new nw.rpc(self.getRpcUrl(), "servicios_conductor");
+            rpc.setAsync(true);
+            rpc.setLoading(false);
+            var func = function (r) {
+                console.log("applyFilters:::responseServer", r);
+                nw.loadingRemove({"container": self.canvas});
+
+                r = nw.lists.addValueInModel(r, "iniciar_chat", "<i class='material-icons'>chat_bubble_outline</i> Chat");
+                var ar = [];
+                for (var i = 0; i < r.length; i++) {
+                    r[i].estado_html = nw.tr(r[i].estado);
+                    ar.push(r[i]);
+                }
+                self.setModelData(ar);
+            };
+            rpc.exec("paradasAdicionalesAppHistorial", data, func);
+        }
+    }
+});

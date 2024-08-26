@@ -1,0 +1,36 @@
+{
+  "version": 3,
+  "names": [
+    "qx",
+    "Bootstrap",
+    "executePendingDefers",
+    "$$dbClassInfo",
+    "define",
+    "statics",
+    "TYPES",
+    "BIND_METHODS",
+    "getScale",
+    "_original",
+    "scale",
+    "normalize",
+    "event",
+    "element",
+    "bindMethods",
+    "module",
+    "Pinch",
+    "i",
+    "l",
+    "length",
+    "bind",
+    "defer",
+    "qxWeb",
+    "$registerEventNormalization"
+  ],
+  "sources": [
+    "/home/andresf/workspace_qooxdoo/qooxdoo/qooxdoo-7.0/source/class/qx/module/event/Pinch.js"
+  ],
+  "sourcesContent": [
+    "/* ************************************************************************\n\n   qooxdoo - the new era of web development\n\n   http://qooxdoo.org\n\n   Copyright:\n     2014 1&1 Internet AG, Germany, http://www.1und1.de\n\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n\n   Authors:\n     * Daniel Wagner (danielwagner)\n\n************************************************************************ */\n\n/**\n * Normalization for the pinch gesture.\n *\n * @require(qx.module.Event)\n *\n * @group (Event_Normalization)\n */\nqx.Bootstrap.define(\"qx.module.event.Pinch\", {\n  statics: {\n    /**\n     * List of event types to be normalized\n     */\n    TYPES: [\"pinch\"],\n\n    BIND_METHODS: [\"getScale\"],\n\n    /**\n     * Returns the calculated scale of this event.\n     *\n     * @return {Float} the scale value of this event.\n     */\n    getScale() {\n      return this._original.scale;\n    },\n\n    /**\n     * Manipulates the native event object, adding methods if they're not\n     * already present\n     *\n     * @param event {Event} Native event object\n     * @param element {Element} DOM element the listener was attached to\n     * @return {Event} Normalized event object\n     * @internal\n     */\n    normalize(event, element) {\n      if (!event) {\n        return event;\n      }\n      // apply mouse event normalizations\n      var bindMethods = qx.module.event.Pinch.BIND_METHODS;\n      for (var i = 0, l = bindMethods.length; i < l; i++) {\n        if (typeof event[bindMethods[i]] != \"function\") {\n          event[bindMethods[i]] =\n            qx.module.event.Pinch[bindMethods[i]].bind(event);\n        }\n      }\n\n      return event;\n    }\n  },\n\n  defer(statics) {\n    qxWeb.$registerEventNormalization(\n      qx.module.event.Pinch.TYPES,\n      statics.normalize\n    );\n  }\n});\n"
+  ],
+  "mappings": ";;;;;;;;;;;;;;;;EAAAA,EAAE,CAACC,SAAH,CAAaC,oBAAb,CAAkCC,aAAlC;;EAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;;EAEA;AACA;AACA;AACA;AACA;AACA;AACA;EACAH,EAAE,CAACC,SAAH,CAAaG,MAAb,CAAoB,uBAApB,EAA6C;IAC3CC,OAAO,EAAE;MACP;AACJ;AACA;MACIC,KAAK,EAAE,CAAC,OAAD,CAJA;MAMPC,YAAY,EAAE,CAAC,UAAD,CANP;;MAQP;AACJ;AACA;AACA;AACA;MACIC,QAAQ,GAAG;QACT,OAAO,KAAKC,SAAL,CAAeC,KAAtB;MACD,CAfM;;MAiBP;AACJ;AACA;AACA;AACA;AACA;AACA;AACA;AACA;MACIC,SAAS,CAACC,KAAD,EAAQC,OAAR,EAAiB;QACxB,IAAI,CAACD,KAAL,EAAY;UACV,OAAOA,KAAP;QACD,CAHuB,CAIxB;;;QACA,IAAIE,WAAW,GAAGd,EAAE,CAACe,MAAH,CAAUH,KAAV,CAAgBI,KAAhB,CAAsBT,YAAxC;;QACA,KAAK,IAAIU,CAAC,GAAG,CAAR,EAAWC,CAAC,GAAGJ,WAAW,CAACK,MAAhC,EAAwCF,CAAC,GAAGC,CAA5C,EAA+CD,CAAC,EAAhD,EAAoD;UAClD,IAAI,OAAOL,KAAK,CAACE,WAAW,CAACG,CAAD,CAAZ,CAAZ,IAAgC,UAApC,EAAgD;YAC9CL,KAAK,CAACE,WAAW,CAACG,CAAD,CAAZ,CAAL,GACEjB,EAAE,CAACe,MAAH,CAAUH,KAAV,CAAgBI,KAAhB,CAAsBF,WAAW,CAACG,CAAD,CAAjC,EAAsCG,IAAtC,CAA2CR,KAA3C,CADF;UAED;QACF;;QAED,OAAOA,KAAP;MACD;;IAxCM,CADkC;;IA4C3CS,KAAK,CAAChB,OAAD,EAAU;MACbiB,KAAK,CAACC,2BAAN,CACEvB,EAAE,CAACe,MAAH,CAAUH,KAAV,CAAgBI,KAAhB,CAAsBV,KADxB,EAEED,OAAO,CAACM,SAFV;IAID;;EAjD0C,CAA7C;EAzBAX,EAAE,CAACe,MAAH,CAAUH,KAAV,CAAgBI,KAAhB,CAAsBb,aAAtB,GAAsCA,aAAtC"
+}

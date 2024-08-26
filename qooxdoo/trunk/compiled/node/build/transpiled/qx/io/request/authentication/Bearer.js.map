@@ -1,0 +1,34 @@
+{
+  "version": 3,
+  "names": [
+    "qx",
+    "Bootstrap",
+    "executePendingDefers",
+    "$$dbClassInfo",
+    "Class",
+    "define",
+    "extend",
+    "core",
+    "Object",
+    "implement",
+    "io",
+    "request",
+    "authentication",
+    "IAuthentication",
+    "construct",
+    "token",
+    "__credentials",
+    "members",
+    "getAuthHeaders",
+    "key",
+    "value",
+    "Bearer"
+  ],
+  "sources": [
+    "/home/andresf/workspace_qooxdoo/qooxdoo/qooxdoo-7.0/source/class/qx/io/request/authentication/Bearer.js"
+  ],
+  "sourcesContent": [
+    "/* ************************************************************************\n\n   qooxdoo - the new era of web development\n\n   http://qooxdoo.org\n\n   Copyright:\n     2004-2011 1&1 Internet AG, Germany, http://www.1und1.de\n\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n\n   Authors:\n     * Tristan Koch (tristankoch)\n     * Christian Boulanger (cboulanger)\n\n************************************************************************ */\n\n/**\n * Bearer (token) authentication.\n */\nqx.Class.define(\"qx.io.request.authentication.Bearer\", {\n  extend: qx.core.Object,\n\n  implement: qx.io.request.authentication.IAuthentication,\n\n  /**\n   * @param token {string} The token to use.\n   */\n  construct(token) {\n    this.__credentials = token;\n  },\n\n  members: {\n    __credentials: null,\n\n    /**\n     * Headers to include for bearer (token) authentication.\n     * @return {Map} Map containing the authentication credentials\n     */\n    getAuthHeaders() {\n      return [{ key: \"Authorization\", value: \"Bearer \" + this.__credentials }];\n    }\n  }\n});\n"
+  ],
+  "mappings": ";;;;;;;;;;;;;;;EAAAA,EAAE,CAACC,SAAH,CAAaC,oBAAb,CAAkCC,aAAlC;;EAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;;EAEA;AACA;AACA;EACAH,EAAE,CAACI,KAAH,CAASC,MAAT,CAAgB,qCAAhB,EAAuD;IACrDC,MAAM,EAAEN,EAAE,CAACO,IAAH,CAAQC,MADqC;IAGrDC,SAAS,EAAET,EAAE,CAACU,EAAH,CAAMC,OAAN,CAAcC,cAAd,CAA6BC,eAHa;;IAKrD;AACF;AACA;IACEC,SAAS,CAACC,KAAD,EAAQ;MACf,KAAKC,SAAL,GAAqBD,KAArB;IACD,CAVoD;;IAYrDE,OAAO,EAAE;MACPD,SAAa,EAAE,IADR;;MAGP;AACJ;AACA;AACA;MACIE,cAAc,GAAG;QACf,OAAO,CAAC;UAAEC,GAAG,EAAE,eAAP;UAAwBC,KAAK,EAAE,YAAY,KAAKJ;QAAhD,CAAD,CAAP;MACD;;IATM;EAZ4C,CAAvD;EAtBAhB,EAAE,CAACU,EAAH,CAAMC,OAAN,CAAcC,cAAd,CAA6BS,MAA7B,CAAoClB,aAApC,GAAoDA,aAApD"
+}

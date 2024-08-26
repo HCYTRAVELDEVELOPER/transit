@@ -1,0 +1,38 @@
+.js .photostack {
+    height: 300px!important;
+}
+.photostack figure {
+    width: 190px!important;
+    height: 190px!important;
+    padding: 10px 40px 40px 40px!important;
+    margin: -25px 0!important;
+}
+.ul_contend_flours {
+    background: #f9f9f9!important;
+}
+.class1 {
+    padding: 0;
+    margin: 0;   
+}
+.class2 {
+    height: 200px;
+}
+.text_flour h1 {
+    margin: 0;
+    font-weight: lighter;
+    font-size: 15px;
+    overflow: hidden;
+    max-height: 40px;
+}
+.text_flour {
+
+}
+
+.display_none{
+    display: none!important;
+}
+.class3{
+    width: 85%;
+    height: 190px;
+    top: 0;
+}

@@ -1,0 +1,7 @@
+{
+    "require": {
+        "phpoffice/phpspreadsheet": "^1.8",
+	"cache/simple-cache-bridge": "^1.1",
+        "cache/apcu-adapter": "^1.1"
+    }
+}

@@ -1,0 +1,492 @@
+/* Author: alexf*/
+.containButonsVideoAudio {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    /*display: flex;*/
+    align-items: center;
+    padding: 0px;
+    box-sizing: border-box;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.34);
+}
+.containButonsVideoAudio button{
+    position: relative;
+    padding: 0px 10px;
+    cursor: pointer;
+    margin: 0px 5px 0px 5px;
+    border: 0;
+    background-color: transparent;
+}
+.containMyVideo{
+    position: relative;
+    z-index: 2;
+    background-color: #000;
+}
+.containVideoOther{
+    position: relative;
+    z-index: 1;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.js-video-myself{
+    /*position: fixed;*/
+    position: relative;
+    top: 0;
+    left: 0;
+    width: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transform: rotateY(180deg);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+/*.js-video-myself-mini {
+    width: 200px;
+    height: 200px;
+}*/
+.js-video-partner{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*height: auto;*/
+    height: 100%;
+    /*height: 50%;*/
+    /*width: 50%;*/
+    object-fit: contain;
+    background-color: #2c2c2c;
+    z-index: 1;
+}
+.videoPartnerShareScreen{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: none;
+    /*background-color: red;*/
+    display: block;
+}
+.videoPartnerShareScreen_show{
+    display: block;
+}
+.videoPartnerMaximice{
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* width: 100%; */
+    /* height: 100%; */
+    /* display: flex; */
+    align-items: center;
+    text-align: right;
+    z-index: 1;
+    height: auto;
+    width: auto;
+}
+.videoPartnerMaximiceButton{
+    margin: auto;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0.36);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    /*display: none;*/   
+    position: relative;
+}
+.videoPartnerMinimizeButton{
+    display: none;
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    background-color: transparent;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0.36);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+.containVideoOther:hover .videoPartnerMaximiceButton{
+    /*display: block;*/
+}
+.containVideoOther_maximice{
+    z-index: 10000;
+}
+.contain_no_connected{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 15;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.23);
+    display: none;
+    flex-direction: column;
+}
+.no_connected{
+    position: relative;
+    margin: auto;
+    padding: 15px 30px;
+    box-sizing: border-box;
+    font-size: 20px;
+    cursor: pointer;
+    border: 0;
+    background-color: red;
+    -webkit-box-shadow: 0 0 18px rgba(0,0,0,.5);
+    -moz-box-shadow: 0 0 18px rgba(0,0,0,.5);
+    -o-box-shadow: 0 0 18px rgba(0,0,0,.5);
+    -moz-osx-box-shadow: 0 0 18px rgba(0,0,0,.5);
+    -ms-box-shadow: 0 0 18px rgba(0,0,0,.5);
+    box-shadow: 0 0 18px rgba(0,0,0,.5);
+    background-color: #1f8ceb;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 9px;
+}
+.contain_waiting{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /* z-index: 15; */
+    z-index: 2;
+    z-index: 4;
+    background-color: rgba(0, 0, 0, 0.23); 
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    display: none;
+    pointer-events: none;
+}
+.contain_waiting_text{
+    position: relative;
+    margin: auto;
+    padding: 0;
+    font-size: 30px;
+    color: #fff;
+}
+.iconRecording {
+    width: 11px;
+    height: 11px;
+    background-color: red;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    box-shadow: 0px 0px 0px 1px red;
+    border: 2px solid #1a1a1a;
+}
+.containUploadProgress{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 10000000;
+    color: #fff;
+}
+.containTime{
+    color: #fff;
+    padding: 3px;
+    font-size: 13px;
+}
+.containNoExtensionChrome{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    display: flex;
+}
+.containNoExtensionChrome_text{
+    position: relative;
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 18px rgba(0,0,0,.5);
+    -moz-box-shadow: 0 0 18px rgba(0,0,0,.5);
+    -o-box-shadow: 0 0 18px rgba(0,0,0,.5);
+    -moz-osx-box-shadow: 0 0 18px rgba(0,0,0,.5);
+    -ms-box-shadow: 0 0 18px rgba(0,0,0,.5);
+    box-shadow: 0 0 18px rgba(0,0,0,.5);
+}
+.linkDownloadExten{
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    padding: 4px 5px;
+    border: 0;
+    background-color: #1f8ceb;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 9px;
+    margin: 5px;
+}
+.containNoExtensionChrome_text button{
+    position: relative;
+    padding: 15px 30px;
+    font-size: 20px;
+    border: 0;
+    -webkit-box-shadow: 0 0 18px rgba(0,0,0,.5);
+    -moz-box-shadow: 0 0 18px rgba(0,0,0,.5);
+    -o-box-shadow: 0 0 18px rgba(0,0,0,.5);
+    -moz-osx-box-shadow: 0 0 18px rgba(0,0,0,.5);
+    -ms-box-shadow: 0 0 18px rgba(0,0,0,.5);
+    box-shadow: 0 0 18px rgba(0,0,0,.5);
+    background-color: #1f8ceb;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 9px;
+    display: block;
+    margin: 50px auto 0px auto;
+}
+.toolTipNwOne{
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    position: absolute;
+    width: auto;
+    height: auto;
+    background: #1a1a1a;
+    pointer-events: none;
+    padding: 5px;
+    font-size: 10px;
+    color: #fff;
+    border-radius: 5px;
+    opacity: 0;
+    border: 1px solid #5f5f5f;
+    top: 0px;
+    left: 0;
+    font-size: 11px;
+    width: max-content;
+}
+.elementTooltipHover:hover .toolTipNwOne{
+    top: -28px;
+    opacity: 1;
+}
+.btn_connect_onlycall{
+    background-color: #4ebc4e;
+}
+.messageGray{
+    color: gray;
+    font-style: italic;
+}
+.MsgFullSala{
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.containerMsgFullSalaInt{
+    text-align: center;
+    margin: auto;
+    font-size: 42px;
+    width: fit-content;
+    padding: 10px;
+    color: #fff;
+    position: relative;
+}
+.containVideoOtherAudio{
+    background-color: #fff;
+}
+.audioIsCalling{
+    width: 100%;
+    text-align: center;
+    color: #575757;
+    font-size: 20px;
+    margin-top: 30px;
+    position: relative;
+    font-weight: bold;
+}
+.audioIsCalling:before {
+    content: ".";
+    width: 100px;
+    height: 100px;
+    background-color: #f9c934;
+    display: block;
+    position: relative;
+    margin: auto;
+    border-radius: 50%;
+    color: transparent;
+    margin-bottom: 10px;
+}
+.video_stream_contain{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: auto;    
+    text-align: center;
+    outline: 1px solid #696868;
+    box-shadow: 0px 0px 5px rgba(251, 250, 250, 0.4);
+    border-radius: 5px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.js-video-myself_contain{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.js-video-myself_contain-mini{
+    width: 200px;
+    height: 150px;
+}
+.nameVideoUser{
+    /*bottom: 0;*/ 
+    left: 0;
+    width: 100%;
+    position: relative;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.45);
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    /* display: flex; */
+    align-items: center;
+    top: 0;
+    z-index: 2;
+}
+.nameVideoUser_span{
+    position: relative;
+    margin: auto;
+    width: 20px;
+    height: auto;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.nameVideoUser_audio{
+    border-radius: 50%;
+    height: 20px;
+    display: inline-block;
+}
+.nameVideoUser_span img{
+    position: relative;
+    margin: auto;
+    width: 20px;
+    height: auto;
+}
+.countParticipants{
+    color: #fff;
+    display: block;
+    position: absolute;
+    top: 23px;
+    left: 27px;
+    font-size: 10px;
+    font-weight: bold;
+}
+.div_stream_camera{
+
+}
+.div_stream_audio{
+    background-color: gray;
+    background-image: url(/nwlib6/nwproject/modules/webrtc/v4/img/mic_on.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+}
+.videoNameCenter {
+    content: ".";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border-radius: 50%;
+    margin: auto;
+    left: calc(50% - 50px);
+    top: calc(50% - 50px);
+    border: 1px solid #fff;
+    font-size: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    z-index: 0;
+    pointer-events: none;
+}
+.videoNameCenter_span{
+
+}
+.nameVideoUser_maximice{
+    cursor: pointer;
+}
+.nameVideoUser_minimice{
+    cursor: pointer;
+    display: none;
+}
+.videoContain_minimiced{
+    width: auto!important;
+    height: 150px!important;
+}
+.videoContain_maximiced{
+    width: 100%!important;
+    position: fixed!important;
+    top: 0!important;
+    left: 0!important;
+    height: 100%!important;
+    z-index: 1;
+}
+.videoSpeaking .nameVideoUser_audio{
+    background-color: red;
+}
+.videoSpeaking .videoNameCenter{
+    box-shadow: 0px 0px 15px 5px #ffffff;
+}
+.containConfigurations{
+    position: absolute;
+    top: 0;
+    right: 50px;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+.containConfigAudioVideoDiv{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    margin: 3px 10px;
+}
+.containConfigAudioVideoDiv select {
+    position: relative;
+    display: block;
+    max-width: 100px;
+}
+
+@media screen and (max-width: 900px) {
+    .js-video-myself {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+    }
+    .videoPartnerMaximice{
+        display: none;
+    }
+}

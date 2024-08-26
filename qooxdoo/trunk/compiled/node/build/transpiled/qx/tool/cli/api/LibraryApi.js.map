@@ -1,0 +1,31 @@
+{
+  "version": 3,
+  "names": [
+    "qx",
+    "Bootstrap",
+    "executePendingDefers",
+    "$$dbClassInfo",
+    "Class",
+    "define",
+    "extend",
+    "tool",
+    "cli",
+    "api",
+    "AbstractApi",
+    "properties",
+    "compilerApi",
+    "nullable",
+    "check",
+    "members",
+    "load",
+    "afterLibrariesLoaded",
+    "LibraryApi"
+  ],
+  "sources": [
+    "/home/andresf/workspace_qooxdoo/qooxdoo/qooxdoo-7.0/source/class/qx/tool/cli/api/LibraryApi.js"
+  ],
+  "sourcesContent": [
+    "/* ************************************************************************\n *\n *    qooxdoo-compiler - node.js based replacement for the Qooxdoo python\n *    toolchain\n *\n *    https://github.com/qooxdoo/qooxdoo\n *\n *    Copyright:\n *      2011-2019 Zenesis Limited, http://www.zenesis.com\n *\n *    License:\n *      MIT: https://opensource.org/licenses/MIT\n *\n *      This software is provided under the same licensing terms as Qooxdoo,\n *      please see the LICENSE file in the Qooxdoo project's top-level directory\n *      for details.\n *\n *    Authors:\n *      * John Spackman (john.spackman@zenesis.com, @johnspackman)\n *\n * *********************************************************************** */\n/**\n * Provides an API for an individual library\n */\nqx.Class.define(\"qx.tool.cli.api.LibraryApi\", {\n  extend: qx.tool.cli.api.AbstractApi,\n\n  properties: {\n    /** The Compiler API */\n    compilerApi: {\n      nullable: false,\n      check: \"qx.tool.cli.api.CompilerApi\"\n    }\n  },\n\n  members: {\n    /**\n     * Called to load any library-specific configuration and update the compilerConfig\n     *\n     * @overridden\n     */\n    async load() {\n      return super.load();\n    },\n\n    /**\n     * Called after all libraries have been loaded and added to the compilation data\n     */\n    async afterLibrariesLoaded() {\n      // Nothing\n    }\n  }\n});\n"
+  ],
+  "mappings": ";;;;;;;;;;;;EAAAA,EAAE,CAACC,SAAH,CAAaC,oBAAb,CAAkCC,aAAlC;;EAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;;EACA;AACA;AACA;EACAH,EAAE,CAACI,KAAH,CAASC,MAAT,CAAgB,4BAAhB,EAA8C;IAC5CC,MAAM,EAAEN,EAAE,CAACO,IAAH,CAAQC,GAAR,CAAYC,GAAZ,CAAgBC,WADoB;IAG5CC,UAAU,EAAE;MACV;MACAC,WAAW,EAAE;QACXC,QAAQ,EAAE,KADC;QAEXC,KAAK,EAAE;MAFI;IAFH,CAHgC;IAW5CC,OAAO,EAAE;MACP;AACJ;AACA;AACA;AACA;MACI,MAAMC,IAAN,GAAa;QACX;MACD,CARM;;MAUP;AACJ;AACA;MACI,MAAMC,oBAAN,GAA6B,CAC3B;MACD;;IAfM;EAXmC,CAA9C;EAxBAjB,EAAE,CAACO,IAAH,CAAQC,GAAR,CAAYC,GAAZ,CAAgBS,UAAhB,CAA2Bf,aAA3B,GAA2CA,aAA3C"
+}

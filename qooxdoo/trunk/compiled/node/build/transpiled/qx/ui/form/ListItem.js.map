@@ -1,0 +1,53 @@
+{
+  "version": 3,
+  "names": [
+    "qx",
+    "Bootstrap",
+    "executePendingDefers",
+    "$$dbClassInfo",
+    "Class",
+    "define",
+    "extend",
+    "ui",
+    "basic",
+    "Atom",
+    "implement",
+    "form",
+    "IModel",
+    "IListItem",
+    "include",
+    "MModelProperty",
+    "construct",
+    "label",
+    "icon",
+    "model",
+    "setModel",
+    "addListener",
+    "_onPointerOver",
+    "_onPointerOut",
+    "events",
+    "action",
+    "properties",
+    "appearance",
+    "refine",
+    "init",
+    "members",
+    "_forwardStates",
+    "focused",
+    "hovered",
+    "selected",
+    "dragover",
+    "addState",
+    "removeState",
+    "destruct",
+    "removeListener",
+    "ListItem"
+  ],
+  "sources": [
+    "/home/andresf/workspace_qooxdoo/qooxdoo/qooxdoo-7.0/source/class/qx/ui/form/ListItem.js"
+  ],
+  "sourcesContent": [
+    "/* ************************************************************************\n\n   qooxdoo - the new era of web development\n\n   http://qooxdoo.org\n\n   Copyright:\n     2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n\n   Authors:\n     * Sebastian Werner (wpbasti)\n     * Andreas Ecker (ecker)\n\n************************************************************************ */\n\n/**\n * A item for a list. Could be added to all List like widgets but also\n * to the {@link qx.ui.form.SelectBox} and {@link qx.ui.form.ComboBox}.\n */\nqx.Class.define(\"qx.ui.form.ListItem\", {\n  extend: qx.ui.basic.Atom,\n  implement: [qx.ui.form.IModel, qx.ui.form.IListItem],\n  include: [qx.ui.form.MModelProperty],\n\n  /*\n  *****************************************************************************\n     CONSTRUCTOR\n  *****************************************************************************\n  */\n\n  /**\n   * @param label {String} Label to use\n   * @param icon {String?null} Icon to use\n   * @param model {String?null} The items value\n   */\n  construct(label, icon, model) {\n    super(label, icon);\n\n    if (model != null) {\n      this.setModel(model);\n    }\n\n    this.addListener(\"pointerover\", this._onPointerOver, this);\n    this.addListener(\"pointerout\", this._onPointerOut, this);\n  },\n\n  /*\n  *****************************************************************************\n     EVENTS\n  *****************************************************************************\n  */\n\n  events: {\n    /** (Fired by {@link qx.ui.form.List}) */\n    action: \"qx.event.type.Event\"\n  },\n\n  /*\n  *****************************************************************************\n     PROPERTIES\n  *****************************************************************************\n  */\n\n  properties: {\n    appearance: {\n      refine: true,\n      init: \"listitem\"\n    }\n  },\n\n  /* eslint-disable @qooxdoo/qx/no-refs-in-members */\n  members: {\n    // overridden\n    /**\n     * @lint ignoreReferenceField(_forwardStates)\n     */\n    _forwardStates: {\n      focused: true,\n      hovered: true,\n      selected: true,\n      dragover: true\n    },\n\n    /**\n     * Event handler for the pointer over event.\n     */\n    _onPointerOver() {\n      this.addState(\"hovered\");\n    },\n\n    /**\n     * Event handler for the pointer out event.\n     */\n    _onPointerOut() {\n      this.removeState(\"hovered\");\n    }\n  },\n\n  destruct() {\n    this.removeListener(\"pointerover\", this._onPointerOver, this);\n    this.removeListener(\"pointerout\", this._onPointerOut, this);\n  }\n});\n"
+  ],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;EAAAA,EAAE,CAACC,SAAH,CAAaC,oBAAb,CAAkCC,aAAlC;;EAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;;EAEA;AACA;AACA;AACA;EACAH,EAAE,CAACI,KAAH,CAASC,MAAT,CAAgB,qBAAhB,EAAuC;IACrCC,MAAM,EAAEN,EAAE,CAACO,EAAH,CAAMC,KAAN,CAAYC,IADiB;IAErCC,SAAS,EAAE,CAACV,EAAE,CAACO,EAAH,CAAMI,IAAN,CAAWC,MAAZ,EAAoBZ,EAAE,CAACO,EAAH,CAAMI,IAAN,CAAWE,SAA/B,CAF0B;IAGrCC,OAAO,EAAE,CAACd,EAAE,CAACO,EAAH,CAAMI,IAAN,CAAWI,cAAZ,CAH4B;;IAKrC;AACF;AACA;AACA;AACA;;IAEE;AACF;AACA;AACA;AACA;IACEC,SAAS,CAACC,KAAD,EAAQC,IAAR,EAAcC,KAAd,EAAqB;MAC5B,wCAAMF,KAAN,EAAaC,IAAb;;MAEA,IAAIC,KAAK,IAAI,IAAb,EAAmB;QACjB,KAAKC,QAAL,CAAcD,KAAd;MACD;;MAED,KAAKE,WAAL,CAAiB,aAAjB,EAAgC,KAAKC,cAArC,EAAqD,IAArD;MACA,KAAKD,WAAL,CAAiB,YAAjB,EAA+B,KAAKE,aAApC,EAAmD,IAAnD;IACD,CAzBoC;;IA2BrC;AACF;AACA;AACA;AACA;IAEEC,MAAM,EAAE;MACN;MACAC,MAAM,EAAE;IAFF,CAjC6B;;IAsCrC;AACF;AACA;AACA;AACA;IAEEC,UAAU,EAAE;MACVC,UAAU,EAAE;QACVC,MAAM,EAAE,IADE;QAEVC,IAAI,EAAE;MAFI;IADF,CA5CyB;;IAmDrC;IACAC,OAAO,EAAE;MACP;;MACA;AACJ;AACA;MACIC,cAAc,EAAE;QACdC,OAAO,EAAE,IADK;QAEdC,OAAO,EAAE,IAFK;QAGdC,QAAQ,EAAE,IAHI;QAIdC,QAAQ,EAAE;MAJI,CALT;;MAYP;AACJ;AACA;MACIb,cAAc,GAAG;QACf,KAAKc,QAAL,CAAc,SAAd;MACD,CAjBM;;MAmBP;AACJ;AACA;MACIb,aAAa,GAAG;QACd,KAAKc,WAAL,CAAiB,SAAjB;MACD;;IAxBM,CApD4B;;IA+ErCC,QAAQ,GAAG;MACT,KAAKC,cAAL,CAAoB,aAApB,EAAmC,KAAKjB,cAAxC,EAAwD,IAAxD;MACA,KAAKiB,cAAL,CAAoB,YAApB,EAAkC,KAAKhB,aAAvC,EAAsD,IAAtD;IACD;;EAlFoC,CAAvC;EAvBAvB,EAAE,CAACO,EAAH,CAAMI,IAAN,CAAW6B,QAAX,CAAoBrC,aAApB,GAAoCA,aAApC"
+}

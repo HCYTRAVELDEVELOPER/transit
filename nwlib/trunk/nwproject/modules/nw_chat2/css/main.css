@@ -1,0 +1,577 @@
+@import '/nwlib6/css/emoji/emoji.css';
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#container-nwchat2 {
+    position: relative;
+    overflow: hidden;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    font-size: 12px;
+    font-family: arial;
+}
+#container-all {
+    position: relative;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    /*height: 100%;*/
+}
+.addHeaderNote {
+    margin: 0;
+    padding: 0;
+}
+.chats_conversations{
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    width: 100%;
+}
+.photo{
+    position: relative;
+    background: #fff;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #f1f0f0;
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 30px;
+    margin-right: 5px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    background-image: url(/nwlib6/nwproject/modules/nw_user_session/img/icon_user.png);
+    overflow: hidden;
+}
+.photo_visitante {
+    float: right;
+    margin-left: 5px;
+    background-image: url(/nwlib6/nwproject/modules/nw_user_session/img/icon_user.png);
+}
+.videollamada{
+    position: relative;
+    display: inline-block;
+    background: #15bc15;
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.loadMore{
+    position: absolute;
+    /* background: #828282; */
+    top: 0;
+    left: 0;
+    position: relative;
+    float: right;
+    padding: 3px;
+    display: block;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.message_all{
+    position: relative;
+    float: left;
+    max-width: 80%;
+}
+.message_visitvisitante {
+    float: right;
+}
+.message_only{
+    background: #efefef;
+    position: relative;
+    padding: 5px;
+    border-radius: 5px;
+    word-break: break-word;
+}
+.message_only_visitante{
+    background: rgb(0, 114, 206);
+    color: #fff;
+}
+.message_visitvisitante span {
+    color: #fff;
+}
+/*.usuario{
+    padding: 0;
+    margin: 0;
+    color: #A5A3A3;
+    font-size: 10px;
+    position: relative;
+}
+.usuario span{
+    font-weight: bold;
+    color: #000;
+    display: none;
+}
+.mensaje{
+    position: relative;
+    padding: 0;
+    margin: 3px;
+    word-break: break-word;
+    font-size: 13px;
+}
+.inactive{
+    position: relative;
+    background: #F86D00;
+    padding: 5px;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}*/
+.container-center-conversations{
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: #fff;
+    width: 100%;
+    position: relative;
+    top: 0!important;
+}
+
+#container-conversations {
+    position: relative;
+    overflow: hidden;    
+}
+
+.container-box-bottom {
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    border-top: 1px solid #ccc;
+    background: #fff;
+}
+#container-css-oculto{
+    display: none;
+}
+#container-conversations .footerButtonsNwForms{
+    display: none;
+}
+.containNwChat2{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.bar-enc-conversation {
+    position: relative;
+    z-index: 1000;
+    background: #efefef;
+    padding: 0px;
+    box-shadow: 0px 0px 2.5px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+.bar-enc-conversation p{
+    padding: 0;
+    font-size: 11px;
+    margin: 0px 5px;
+    opacity: 0.7;
+}
+.operator-foto-enc{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 5px;
+    float: left;
+}
+.enc-close-chat{
+    position: relative;
+    background: #0072ce;
+    color: #fff;
+    padding: 8px;
+}
+
+
+#container-conversations .divContainInputIntern {
+    margin: 0;
+    padding: 3px;
+    margin-bottom: 3px;
+}
+#container-conversations .divContainInput p{
+    display: none;
+}
+.footerButtonsNwForms {
+    background: transparent;
+    border: 0;
+    text-align: center;
+}
+#container-conversations .button_nwform{
+    background: #0072ce;
+    color: #fff;
+    border: 0;
+}
+.fecha_conversation{
+    margin: 1px 4px 0px 5px;
+    padding: 0;
+    font-size: 10px;
+    color: #8b8a8a;
+}
+.fecha_conversation_visitante{
+    text-align: right;
+}
+.enc_log {
+    position: relative;
+    padding: 10px;
+}
+#pasa_form{
+    position: relative;
+    padding: 10px; 
+}
+.showInfoBySeccionInWindow{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 100000000;
+}
+.subtitles{
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    line-height: 34px;
+    text-align: center;   
+}
+.addHtmlList p{
+    margin: 10px;
+}
+.tableListMakerMobil .containerButtonListEnc{
+    display: none;
+}
+.colsMobil_show_menu {
+    display: block;
+}
+.colsMenuInt {
+    /*    position: fixed;
+        top: 7px;
+        right: 20px;*/
+}
+.container-mensaje-disconected{
+    position: relative;
+    overflow-y: auto;
+    /*height: 100%;*/
+    overflow-x: hidden;
+}
+.container-mensaje-disconected h3, .container-mensaje-disconected p{
+    margin: 0 5px;
+    padding: 0;
+}
+.container-mensaje-disconected .divContainInputIntern{
+    margin: 5px 10px;
+    padding: 0;
+}
+.container-mensaje-disconected #nwform textarea{
+    height: 90px;
+}
+.volverahacerllamada{
+    position: relative;
+    margin: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    color: #585858;
+    cursor: pointer;
+}
+
+.colsMenu{
+    top: 0px;
+}
+.envia_msg{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    color: #656565;
+    text-align: left;
+    font-size: 9px;
+}
+.envia_msg_visitante{
+    text-align: right;
+}
+.envia_msg_gray{
+    color: #656565; 
+}
+.envia_msg_green{
+    color: green; 
+}
+.envia_msg_blue{
+    color: #0072ce;
+}
+.container-credits{
+    position: relative;
+    height: 20px;
+    background: #f1f1f1;
+    z-index: 10000000000;
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    text-align: right;
+    font-size: 10px;
+    color: #474747;
+}
+.container-credits a {
+    position: relative;
+    display: block;
+    padding: 2px 5px;
+    text-decoration: none;
+    color: indianred;
+}
+.img_log_enc{
+    position: relative;
+    width: 100px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: inline-block;
+}
+.dispositivo_conversation{
+    margin: 1px 4px 0px 5px;
+    padding: 0;
+    font-size: 10px;
+    color: #8b8a8a;  
+}
+.containerConvers{
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: #fff;
+    width: 100%;
+    position: relative;
+    top: 0;
+    height: 100%;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+.enc-div-chat {
+    position: relative;
+    background: #a5a5a5;
+    color: #fff;
+    padding: 0px;
+    overflow: hidden;
+    max-height: 50px;
+}
+.enc-div-chat span {
+    float: left;
+    display: inline-block;
+    word-break: break-all;
+}
+.containOpCalls {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    float: left;
+}
+.buttonEncAct{
+    position: relative;
+    font-size: 18px;
+    margin: 0 2px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.buttonEncAct:hover {
+    background: rgba(255, 255, 255, 0.58);
+}
+.contain_input_name_texto p{
+    display: none;
+}
+.conectadoCall{
+    position: relative;
+    font-size: 26px;
+    width: 100%;
+    /*float: left;*/
+    text-align: center;
+    top: 80px;
+}
+.finalizarCh{
+    position: relative;
+    background: red;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100px;
+    margin: 80px auto;
+    padding: 5px;
+    height: 100px;
+    border-radius: 50%;
+}
+.finalizarCh span{
+    position: relative;
+    top: 36px;
+    font-size: 22px;
+}
+.message_visitvisitante .linksInText{
+    color: #fff;
+    font-weight: bold;
+}
+
+.containNwChat2 .preViewFileUploader{
+    width: 30px;
+    height: 30px;
+}
+.containNwChat2 .footerButtonsNwForms{
+    display: none;
+}
+.containNwChat2 #uploader_adjunto{
+    font-size: 0px!important;
+    background: transparent!important;
+}
+.containNwChat2 #uploader_adjunto:after{
+    content: "Adjuntar";
+    position: relative;
+    color: #fff;
+    top: -6px;
+    padding: 3px;
+    cursor: pointer;
+
+
+    font-size: 0px;
+    width: 25px;
+    height: 18px;
+    min-height: initial;
+    margin: 0px;
+    text-indent: initial;
+    float: left;
+    border: 0px;
+    background-color: #fff;
+    background-image: url(/nwlib6/css/emoji/upload_btn.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.adjuntoFileNwChat2{
+
+}
+.closeEmojis{
+    position: relative;
+    width: 100%;
+    display: block;
+    text-align: right;
+    cursor: pointer;
+}
+.emojiSelect{
+    cursor: pointer;
+    margin: 1px;
+}
+.containEmojis{
+    position: absolute;
+    bottom: 100px;
+    right: 10px;
+    width: 90%;
+    height: 250px;
+    z-index: 10000000;
+    background: #fff;
+    padding: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.24);
+    overflow-y: auto;
+}
+.nameEncNwChat{
+    position: relative;
+    font-size: 13px;
+    margin-left: 5px;
+    color: #fff;
+    max-width: 200px;
+    max-height: 18px;
+    overflow: hidden;
+}
+.nameEncNwChat_min{
+    padding: 10px;
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    margin: 0;
+}
+.miniWindowNwChat {
+    top: -35px;
+}
+.miniWindowNwChat .containerConvers, 
+.miniWindowNwChat .buttonEncAct, 
+.miniWindowNwChat .container-box-bottom,
+.miniWindowNwChat .colsMenu_nwchat
+{
+    display: none!important;
+}
+.containMenOff{
+
+}
+.containMenOff h3 {
+    margin: 0;
+    padding: 5px;
+}
+.containMenOff p{
+    margin: 0;
+    padding: 5px;   
+}
+.clicforgocall{
+    position: relative;
+    background: green;
+    color: #fff;
+    padding: 5px;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.containNwChat2 .contain_input_name_adjunto .newLoadingNw{
+    position: absolute!important;
+    top: 0px;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .enc-div-chat {
+        padding: 5px 0;
+    }
+    .container-box-bottom{
+        position: fixed!important;
+        width: 100%!important;
+    }
+/*    .containerConvers .addHeaderNote{
+        padding-bottom: 200px;
+    }*/
+    .bar-enc-conversation {
+        overflow: initial;
+    }
+    .container-credits {
+        bottom: 0px;
+    }
+    .containNwChat2{
+        z-index: 1000000000000000000000000;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        max-width: 100%;
+        max-height: 100%;
+        box-shadow: none;
+        border: 0;
+    }
+}
